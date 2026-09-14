@@ -1,0 +1,58 @@
+Reference,Value,Footprint,Quantity,Qualification
+J1,12V FUSED INPUT,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",1,External 2A fast fuse; current-limited laboratory supply
+Q1,IRFZ44N TO-220,Package_TO_SOT_THT:TO-220-3_Vertical,1,Gate/drain/source; metal tab VIN
+D1,1N5822 40V 3A,Diode_THT:D_DO-201AD_P15.24mm_Horizontal,1,"Pin 1 cathode band, pin 2 anode"
+L1,330uH >=3A Isat VERIFY,Buck:Inductor_25mm_P10mm_VERIFY,1,"Check actual dimensions, DCR and saturation before ordering PCB"
+L2,330uH >=3A Isat VERIFY,Buck:Inductor_25mm_P10mm_VERIFY,1,"Check actual dimensions, DCR and saturation before ordering PCB"
+RS1,0.050R 1% 1W,Resistor_SMD:R_2512_6332Metric,1,Kelvin sense at pads; CRCW2512 0R050 or verified equivalent
+J2,LOAD + / -,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",1,
+C1,100uF 25V,Capacitor_THT:CP_Radial_D8.0mm_P3.50mm,1,Input bulk; positive pin 1
+C2,100uF 25V,Capacitor_THT:CP_Radial_D8.0mm_P3.50mm,1,Input bulk; positive pin 1
+C3,100nF 50V,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,1,
+C4,10uF 35V low ESR,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,1,Exact 20uF total target; verify ripple rating and measured capacitance
+C5,10uF 35V low ESR,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,1,Exact 20uF total target; verify ripple rating and measured capacitance
+U1,IR2110PBF DIP14,Package_DIP:DIP-14_W7.62mm,1,
+D2,UF4004,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,1,Bootstrap: cathode to BOOT
+C6,1uF 50V X7R,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,1,
+C7,100nF 50V,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,1,
+C8,100nF 50V,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,1,
+R1,10R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+R2,10k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+U2,L7805CV,Package_TO_SOT_THT:TO-220-3_Vertical,1,Input / ground / output; evaluate dissipation
+C9,330nF 50V,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,1,
+C10,100nF 50V,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,1,
+C11,10uF 25V,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,1,
+U3,SN74HCT14N,Package_DIP:DIP-14_W7.62mm,1,HCT TTL thresholds; do not substitute HC at 5V
+R3,10k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+R4,1k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+C12,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,1,
+U4,SN74HCT00N,Package_DIP:DIP-14_W7.62mm,1,Set-dominant NAND latch; SD = NOT(RUN AND NFAULT)
+C13,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,1,
+R5,10k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+R6,10k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+R7,4.7k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+U5,LM393P,Package_DIP:DIP-8_W7.62mm,1,Two open-collector outputs wired together; overcurrent OR overvoltage
+C14,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,1,
+R8,15k 1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+R9,10k 1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+C15,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,1,
+R10,31k 1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+R11,10k 1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+U6,INA180A1IDBVR,Package_TO_SOT_SMD:SOT-23-5,1,Pinout A ONLY; gain 20 V/V; sense RS1 pads directly
+C16,100nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,1,
+Q2,2N3904,Package_TO_SOT_THT:TO-92_Inline_Wide,1,E/B/C pin order must match purchased manufacturer
+R12,10k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+R13,10k,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+R14,3k 1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+R15,1k 1%,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,1,
+C17,1nF,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm,1,
+J3,STM32 CABLE 2x5,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical,1,Key/polarize cable; external Blue Pill not integrated
+TP1,VIN,TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm,1,
+TP2,GND,TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm,1,
+TP3,SW,TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm,1,
+TP4,GATE,TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm,1,
+TP5,VOUT,TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm,1,
+TP6,ISENSE,TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm,1,
+TP7,SD,TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm,1,
+TP8,NTRIP,TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm,1,
+TP9,MCU_PWM,TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm,1,

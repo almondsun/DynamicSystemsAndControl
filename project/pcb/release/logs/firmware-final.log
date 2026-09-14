@@ -1,0 +1,9 @@
+make: Entering directory '/home/mitin/code/uni/DynamicSystemsAndControl/project/firmware'
+make: Nothing to be done for 'all'.
+cc -std=c11 -Wall -Wextra -Werror -fsanitize=address,undefined -g runtime.c ../hardware/buck_control.c test_runtime.c -lm -o ../../artifacts/buck-pcb-validation/firmware/test_runtime
+../../artifacts/buck-pcb-validation/firmware/test_runtime
+PASS: start interlocks, ramp, applied-command capture timing, buffer bounds, stale ADC, fault latch, startup timeout, invalid calibration
+cc -std=c11 -Wall -Wextra -Werror ../hardware/buck_control.c ../hardware/test_buck_control.c -lm -o ../../artifacts/buck-pcb-validation/firmware/test_control
+../../artifacts/buck-pcb-validation/firmware/test_control
+PASS: polarity, bounds, anti-windup, recovery, disabled state and fault latch
+make: Leaving directory '/home/mitin/code/uni/DynamicSystemsAndControl/project/firmware'

@@ -1,0 +1,8 @@
+ref_up dt=2.5e-07 peak_IL=1.389548 A mode=3 hardware_fault=0
+open_up dt=5e-07 peak_IL=1.160074 A mode=2 hardware_fault=0
+open_down dt=5e-07 peak_IL=1.411207 A mode=2 hardware_fault=0
+ref_up dt=5e-07 peak_IL=1.389588 A mode=3 hardware_fault=0
+ref_down dt=5e-07 peak_IL=1.236495 A mode=3 hardware_fault=0
+load_up dt=5e-07 peak_IL=1.236495 A mode=3 hardware_fault=0
+load_down dt=5e-07 peak_IL=1.549272 A mode=3 hardware_fault=0
+PASS: six scenarios, no simulated protection trips, PI final error <20mV, timestep convergence <20mV

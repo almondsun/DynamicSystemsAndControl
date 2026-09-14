@@ -1,0 +1,62 @@
+{
+  "engine": "tectonic 0.15.0Tectonic 0.15.0",
+  "validation": {
+    "plant_magnitude_at_crossover_V": 12.085663179055134,
+    "Kp": 0.026165528637673057,
+    "Ki": 78.49658591301917,
+    "status": "PASS"
+  },
+  "source_sha256": {
+    "open_up": {
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/matlab/open_1.csv": "d051433b15f009463963d17e2b8c00b4ab93f1a718076795c2750159083d9360",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/open_up_pwm.csv": "2a607e6feaee1d67a5666fef9b676cec31f9c7b26515ee349105bf0bb66bef8c",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/open_up/waveform.txt": "fc7a494e150cc52e6d46a611b42b5b03182a89a25bc57600649066fa0834895e"
+    },
+    "open_down": {
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/matlab/open_-1.csv": "6cc646e8a85e323c532bff15462eab27f9f4359c4dc5bc4dd08759946409dfbb",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/open_down_pwm.csv": "9fe716b284bbcbb6d07a6bb94cdefae826fecd479a5bb23db0c0ab416b6a6c61",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/open_down/waveform.txt": "f8bf5fdfb90e7b35c8136a53fc9160fd7c9b6699ad4250c5905a2e79c04672bf"
+    },
+    "ref_up": {
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/matlab/ref_up.csv": "9be415898f5a6508e88b170d2ad59aae1867e7a38b15c94497264b106fb5b1a3",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/ref_up_pwm.csv": "735f1675b985e5ee5ce2938916a7a55c536c5180123b623ba0a50ebec3869427",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/ref_up/waveform.txt": "e9e4d9bf4dc3b673053b8344b3ebfcad9ceab4d5179f8814b9a823cf1c03300e"
+    },
+    "ref_down": {
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/matlab/ref_down.csv": "3b501128b8c2f2d1337a114ebf6e4420478ab9bce7a5661bb01a78f6a279b43b",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/ref_down_pwm.csv": "d64348d859a4e46bf51c86180edaeda88cc272bfdfaf5435cc61cdb720a6ab92",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/ref_down/waveform.txt": "4080cc15bc45d55be196ad60e86a6ce5966564a3f079dd18476957715738baa6"
+    },
+    "load_up": {
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/matlab/load_up.csv": "2b90059753dce61c40150675b6f4eec9e6cd17c4134f71c4679c3d157bbc2a24",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/load_up_pwm.csv": "89f367c8e8e46438a30d3a5cd9731e6d97d64f8d62708865cc5a2d57053ad7db",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/load_up/waveform.txt": "268ead051246a74b0512a8455c3087dd9d2727395ff103a7f1692f0c88b0f0ff"
+    },
+    "load_down": {
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/matlab/load_down.csv": "f623d2ebfb73295172fb52c2aab7b0eda7eedeb4e5606565a719b814530d3f04",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/load_down_pwm.csv": "2430ecab37b0b381775c0fddf83f1292f65ac26d3efef8131cddb1f9612d9f55",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/load_down/waveform.txt": "4edb2c7b1ff10f47c8de4d9185323855ab499354cc2e7aedb31ad47f50b6bba6"
+    },
+    "hardware_assets": {
+      "pcb-3d.png": "3fca49c0ce82954cd611b45caefefd47c3c075f8f384311bc5841be198a4b1f0",
+      "pcb-top.png": "ab06907401ad4df2cafff53849afd3d81db4162d11ff8656d1650c25b96be3ad",
+      "layout.svg": "032565239bf7c6d369e959215274a6c06b4f1270ea6f5c72419a1b64b0615122",
+      "power-summary.pdf": "269c1d50854f55d708444dcb65940067b900c24fc2506d0f06ab2bc3249e81cc",
+      "power-summary.png": "d61ee9a2d2f053d284d79afcb606d33361bdf5b89216c11a46c369e49da05c74",
+      "wiring.pdf": "64c5e68a2f005bf1643a2f11e33687d448dce9ce6dfc616ae5e2b398bb0d6029",
+      "wiring.png": "9e77924d3fe4c9f6adbbe35ba55fa9297966659893313cab38d79f2d250c7b15",
+      "layout.pdf": "4c743b0f54ce90958d2412d97616b20e992b472beb3ee298056fa748fcc47fcd"
+    },
+    "metrics": {
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/matlab/results.json": "9a69ffc51efcbe0beb1c4d7ff6e3c934dd494b0d4f74f44057bbee07fae18338",
+      "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/simulation/results.json": "03c7d83b641ea61f2b7afdc767ccc6e311291ff114ac87dd87ea881521b6ec93"
+    }
+  },
+  "display_reduction": "Endpoints and bin extrema only; metrics unchanged; ripple detail 29--29.5 ms.",
+  "reports": {
+    "1": "simulation; original BJT circuit distinguished from PCB",
+    "2": "CAD prepared; laboratory measurements pending",
+    "3": "simulation; PCB estimate separately identified",
+    "4": "firmware compiled; physical integration and measurements pending"
+  }
+}

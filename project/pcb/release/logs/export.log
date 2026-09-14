@@ -1,0 +1,65 @@
+07:50:48: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+Found 0 violations
+Saved ERC Report to artifacts/buck-pcb-validation/erc-final.rpt
+07:50:49: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+07:50:49: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+Found 0 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to artifacts/buck-pcb-validation/drc-final.rpt
+/usr/src/debug/kicad/kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+/usr/src/debug/kicad/kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+/usr/src/debug/kicad/kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+PASS: pin/net parity, footprint pad counts, solder-mask openings, routing widths, vias, board dimensions and latch truth table
+{
+  "parts": 57,
+  "connected_pads": 152,
+  "vias": 4,
+  "track_width_range_mm": [
+    0.225,
+    0.6
+  ],
+  "copper_layers": 2,
+  "board_dimensions_mm": [
+    99,
+    99
+  ],
+  "ERC_and_DRC": "see separate native reports",
+  "latch_truth_table": "PASS",
+  "trip_estimate_A": [
+    1.8254538858759297,
+    2.183604225081118
+  ],
+  "OVP_estimate_V": [
+    7.561276664492798,
+    8.867436681443696
+  ],
+  "physical_tests": "NOT RUN",
+  "fabrication_release": "HOLD: received component qualification and soldered prototype required"
+}
+07:50:51: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+Plotted to 'project/pcb/release/schematic.pdf'.
+Done.
+07:50:51: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+Plotted to 'project/pcb/release/assembly.pdf'.
+Done.
+07:50:51: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+Plotted to 'project/pcb/release/fabrication-review/buck-F_Cu.gtl'.
+Plotted to 'project/pcb/release/fabrication-review/buck-B_Cu.gbl'.
+Plotted to 'project/pcb/release/fabrication-review/buck-F_Silkscreen.gto'.
+Plotted to 'project/pcb/release/fabrication-review/buck-B_Silkscreen.gbo'.
+Plotted to 'project/pcb/release/fabrication-review/buck-F_Mask.gts'.
+Plotted to 'project/pcb/release/fabrication-review/buck-B_Mask.gbs'.
+Plotted to 'project/pcb/release/fabrication-review/buck-Edge_Cuts.gm1'.
+07:50:52: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+Created file 'project/pcb/release/fabrication-review/buck-PTH.drl'
+Created file 'project/pcb/release/fabrication-review/buck-NPTH.drl'
+Created file 'project/pcb/release/fabrication-review/buck-PTH-drl_map.pdf'.
+Created file 'project/pcb/release/fabrication-review/buck-NPTH-drl_map.pdf'.
+Done.
+07:50:52: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+Plotted to 'project/pcb/release/board-front.svg'.
+Done.
+07:50:53: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+Plotted to 'project/pcb/release/board-back.svg'.
+Done.

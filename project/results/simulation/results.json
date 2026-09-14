@@ -1,0 +1,190 @@
+{
+  "matlab_source": "/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/matlab",
+  "parameters": {
+    "Vin": 12,
+    "L": 0.00066,
+    "C": 2e-05,
+    "R": 6,
+    "fs": 10000,
+    "Ts": 0.0001,
+    "V0": 6,
+    "dp0": 0.5,
+    "wc": 1000,
+    "wz": 3000,
+    "Kp": 0.026165528637673057,
+    "Ki": 78.49658591301917,
+    "dmin": 0.05,
+    "dmax": 0.95
+  },
+  "switched": {
+    "open_up": {
+      "mean_final_V": 4.800000000000001,
+      "tail_error_V": 0.0,
+      "peak_deviation_V": 1.1192302678673887,
+      "overshoot_percent": 17.318572566357687,
+      "settling_s": 0.0010500000000000006,
+      "settling_band_V": 0.023999999999999987,
+      "min_current_A": 0.5093480441723863,
+      "ripple_pp_V": 0.27307656040311645
+    },
+    "open_down": {
+      "mean_final_V": 7.199999999999997,
+      "tail_error_V": 2.6645352591003757e-15,
+      "peak_deviation_V": 1.0832754017788773,
+      "overshoot_percent": 16.874286063910255,
+      "settling_s": 0.0009499999999999995,
+      "settling_band_V": 0.023999999999999987,
+      "min_current_A": 0.8605087191748244,
+      "ripple_pp_V": 0.2730765604031138
+    },
+    "ref_up": {
+      "mean_final_V": 6.999999800469413,
+      "tail_error_V": 1.9953058671973167e-07,
+      "peak_deviation_V": 0.999986350592553,
+      "overshoot_percent": 0.0,
+      "settling_s": 0.004150000000000001,
+      "settling_band_V": 0.02,
+      "min_current_A": 0.7691378226543806,
+      "ripple_pp_V": 0.27655406606821503
+    },
+    "ref_down": {
+      "mean_final_V": 5.000000164962711,
+      "tail_error_V": 1.6496271104671223e-07,
+      "peak_deviation_V": 1.000013649407447,
+      "overshoot_percent": 0.0,
+      "settling_s": 0.00405,
+      "settling_band_V": 0.02,
+      "min_current_A": 0.6090931555613499,
+      "ripple_pp_V": 0.2765540683482784
+    },
+    "load_up": {
+      "mean_final_V": 5.999999973082492,
+      "tail_error_V": 2.691750822236827e-08,
+      "peak_deviation_V": 0.5597644894856311,
+      "overshoot_percent": null,
+      "settling_s": 0.0008500000000000001,
+      "settling_band_V": 0.12,
+      "min_current_A": 0.5242331944690034,
+      "ripple_pp_V": 0.2860711417365719
+    },
+    "load_down": {
+      "mean_final_V": 6.000000024207278,
+      "tail_error_V": 2.420727795993116e-08,
+      "peak_deviation_V": 0.6909719753648149,
+      "overshoot_percent": null,
+      "settling_s": 0.0008500000000000001,
+      "settling_band_V": 0.12,
+      "min_current_A": 0.7892245926524679,
+      "ripple_pp_V": 0.2822749138693463
+    }
+  },
+  "circuit": {
+    "open_up": {
+      "mean_final_V": 4.5059693432123185,
+      "tail_error_V": 0.29403065678768225,
+      "peak_deviation_V": 0.8175295192648759,
+      "overshoot_percent": null,
+      "settling_s": null,
+      "settling_band_V": 0.023999999999999987,
+      "ripple_pp_V": 0.2799799099999998,
+      "vgs_min_V": 0.338390306,
+      "vgs_max_V": 11.5498001,
+      "min_current_A": 0.45762512,
+      "max_current_A": 1.18644245,
+      "actual_step_metrics": {
+        "mean_final_V": 4.5059693432123185,
+        "tail_error_V": 0.0,
+        "peak_deviation_V": 1.1115601760525582,
+        "overshoot_percent": 16.433189189759283,
+        "settling_s": 0.0009499999999999995,
+        "settling_band_V": 0.0239110121818803
+      },
+      "rmse_absolute_V": 0.2934071914658967,
+      "max_absolute_error_V": 0.29751003207378,
+      "rmse_incremental_V": 0.005989950811523075,
+      "rmse_step_percent": 24.45059928882473
+    },
+    "open_down": {
+      "mean_final_V": 6.896919317637696,
+      "tail_error_V": 0.3030806823623031,
+      "peak_deviation_V": 1.3770185484863484,
+      "overshoot_percent": null,
+      "settling_s": null,
+      "settling_band_V": 0.023999999999999987,
+      "ripple_pp_V": 0.28071307,
+      "vgs_min_V": 0.35377086,
+      "vgs_max_V": 11.5750134,
+      "min_current_A": 0.807146179,
+      "max_current_A": 1.44024993,
+      "actual_step_metrics": {
+        "mean_final_V": 6.896919317637696,
+        "tail_error_V": 0.0,
+        "peak_deviation_V": 1.0739378661240453,
+        "overshoot_percent": 16.013297570800574,
+        "settling_s": 0.0009499999999999995,
+        "settling_band_V": 0.023907987306627253
+      },
+      "rmse_absolute_V": 0.30253339355191855,
+      "max_absolute_error_V": 0.31700006770586064,
+      "rmse_incremental_V": 0.006945779332861534,
+      "rmse_step_percent": 25.211116129326548
+    },
+    "ref_up": {
+      "mean_final_V": 6.999995152846062,
+      "tail_error_V": 4.8471539377814565e-06,
+      "peak_deviation_V": 0.9662563728465239,
+      "overshoot_percent": 0.011744129230795153,
+      "settling_s": 0.0049499999999999995,
+      "settling_band_V": 0.02,
+      "ripple_pp_V": 0.2785980099999996,
+      "vgs_min_V": 0.356342823,
+      "vgs_max_V": 11.5723935,
+      "min_current_A": 0.792641153,
+      "max_current_A": 1.3914581
+    },
+    "ref_down": {
+      "mean_final_V": 5.000011017190448,
+      "tail_error_V": 1.1017190447937253e-05,
+      "peak_deviation_V": 0.9692751559690249,
+      "overshoot_percent": 0.011728738813054918,
+      "settling_s": 0.0049499999999999995,
+      "settling_band_V": 0.02,
+      "ripple_pp_V": 0.28780728,
+      "vgs_min_V": 0.347263648,
+      "vgs_max_V": 11.5581516,
+      "min_current_A": 0.601321206,
+      "max_current_A": 1.23550593
+    },
+    "load_up": {
+      "mean_final_V": 5.999985368231836,
+      "tail_error_V": 1.4631768164186099e-05,
+      "peak_deviation_V": 0.48691143404774007,
+      "overshoot_percent": null,
+      "settling_s": 0.0006499999999999995,
+      "settling_band_V": 0.12,
+      "ripple_pp_V": 0.29257668999999975,
+      "vgs_min_V": 0.344244498,
+      "vgs_max_V": 11.5587035,
+      "min_current_A": 0.538279271,
+      "max_current_A": 1.23550569
+    },
+    "load_down": {
+      "mean_final_V": 6.000015945028747,
+      "tail_error_V": 1.5945028747132994e-05,
+      "peak_deviation_V": 0.6045686777341972,
+      "overshoot_percent": null,
+      "settling_s": 0.0006499999999999995,
+      "settling_band_V": 0.12,
+      "ripple_pp_V": 0.28946836000000076,
+      "vgs_min_V": 0.356342828,
+      "vgs_max_V": 11.5789283,
+      "min_current_A": 0.794854111,
+      "max_current_A": 1.53573365
+    }
+  },
+  "checks": [
+    "ngspice: six scenarios and half-step convergence <5 mV",
+    "PWM: six scenarios, CCM, mean final error <20 mV, closed-loop settling <10 ms, reference overshoot <10%"
+  ],
+  "convergence_max_cycle_mean_V": 0.0009266237510630049
+}

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Source this only in a dedicated build subprocess; never reset user HOME/path.
+BUCK_REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
+BUCK_TOOLS="$BUCK_REPO/artifacts/buck-tools/cad-root/usr"
+export LD_LIBRARY_PATH="$BUCK_TOOLS/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export PYTHONPATH="$BUCK_TOOLS/lib/python3.14/site-packages${PYTHONPATH:+:$PYTHONPATH}"
+export KICAD_FOOTPRINT_DIR="$BUCK_TOOLS/share/kicad/footprints"
+export KICAD10_FOOTPRINT_DIR="$KICAD_FOOTPRINT_DIR"
+export KICAD10_SYMBOL_DIR="$BUCK_TOOLS/share/kicad/symbols"
+export KICAD_CONFIG_HOME="$BUCK_REPO/artifacts/buck-pcb-validation/kicad-config"
+export XDG_CACHE_HOME="$BUCK_REPO/artifacts/buck-pcb-validation/cache"
+export XDG_DATA_HOME="$BUCK_REPO/artifacts/buck-pcb-validation/data"
+export XDG_STATE_HOME="$BUCK_REPO/artifacts/buck-pcb-validation/state"
+export KICAD_PATH="$BUCK_TOOLS/share/kicad"
+export PATH="$BUCK_TOOLS/bin:$PATH"

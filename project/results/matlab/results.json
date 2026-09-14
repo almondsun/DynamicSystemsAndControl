@@ -1,0 +1,70 @@
+{
+  "parameters": {
+    "Vin": 12,
+    "L": 0.00066,
+    "C": 2E-5,
+    "R": 6,
+    "fs": 10000,
+    "Ts": 0.0001,
+    "V0": 6,
+    "dp0": 0.5,
+    "wc": 1000,
+    "wz": 3000,
+    "Kp": 0.026165528637673057,
+    "Ki": 78.496585913019175,
+    "dmin": 0.05,
+    "dmax": 0.95
+  },
+  "poles": [
+    [
+      -4166.6666666666661,
+      7641.7579552393991
+    ],
+    [
+      -4166.6666666666661,
+      -7641.7579552393991
+    ]
+  ],
+  "wn_rad_s": 8703.8827977848923,
+  "zeta": 0.47871355387816905,
+  "gain_margin_db": null,
+  "phase_margin_deg": 102.07456482754108,
+  "phase_cross_rad_s": null,
+  "gain_cross_rad_s": 1000.0186268492814,
+  "closed_step": {
+    "RiseTime": 0.0026129469741526389,
+    "TransientTime": 0.0048315082275456646,
+    "SettlingTime": 0.0048315082275456646,
+    "SettlingMin": 0.90062076522840206,
+    "SettlingMax": 0.99941042197429331,
+    "Overshoot": 0,
+    "Undershoot": -0,
+    "Peak": 0.99941042197429331,
+    "PeakTime": 0.0094628229781102621
+  },
+  "digital_pole_radius": 0.91539605074854924,
+  "cases": {
+    "ref_up": {
+      "final_error_V": 1.9427204911437457E-7,
+      "tail_max_error_V": 8.7236418107039526E-6,
+      "peak_deviation_V": 1
+    },
+    "ref_down": {
+      "final_error_V": 1.94272050002553E-7,
+      "tail_max_error_V": 8.723641811592131E-6,
+      "peak_deviation_V": 1
+    },
+    "load_up": {
+      "final_error_V": 2.0264512734513573E-8,
+      "tail_max_error_V": 8.6960737810670707E-7,
+      "peak_deviation_V": 0.52756457883183927
+    },
+    "load_down": {
+      "final_error_V": 2.1075014622340404E-8,
+      "tail_max_error_V": 1.0147291389372981E-6,
+      "peak_deviation_V": 0.6661502632391274
+    }
+  },
+  "robust_cases": 27,
+  "validation": "PASS: signs, final values, 4 closed-loop cases, 27 parameter combinations"
+}

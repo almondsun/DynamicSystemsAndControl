@@ -1,0 +1,48 @@
+* Buck completo: PWM, driver inversor, MOSFET, diodo, L, C y sensor.
+* Modelos genericos ilustrativos, NO modelos certificados de fabricantes.
+* Valores nominales figura 1: 12 V, 660 uH, 20 uF, 6 ohm, 10 kHz.
+Vinput vin 0 12
+Breference ref 0 V = (time<10m ? 6 : 6)
+Bdprime dp 0 V = (time<10m ? 0.5 : 0.6)
+Bpwm pwm 0 V = 5*(V(dp)>(time*10000-floor(time*10000)))
+Rbase pwm base 1k
+Qpull drive base 0 NPN2222
+Rpull boot drive 1.2k
+Dboot vin boot D4148
+Cboot boot sw 1u
+Qsource boot drive gate NPN3904
+Qsink 0 drive gate PNP2907
+Mpower vin gate sw sw MOSBUCK W=1 L=1
+Dfree 0 sw DSCHOTTKY
+Lpower sw lr 660u
+Rinductor lr out 0.1
+Resr out cap 0.05
+Coutput cap 0 20u
+Bload out 0 I = V(out)/((time<10m ? 6 : 6))
+* Sensor divider, buffered ideal reconstruction in volts for PI equations.
+RsenseTop out sense 30k
+RsenseBottom sense 0 10k
+Efeedback feedback 0 sense 0 4
+Berror error 0 V = V(ref)-V(feedback)
+* Integral state has units of duty. Conditional integration anti-windup.
+Braw raw 0 V = 0.5+0.026165528637673057*V(error)+V(integral)
+Bint 0 integral I = ((V(raw)>0.95)*(V(error)>0)+(V(raw)<0.05)*(V(error)<0))>0 ? 0 : 0*V(error)
+Cint integral 0 1 IC=0
+Rint integral 0 1e12
+.ic V(integral)=0
+.model MOSBUCK NMOS (LEVEL=1 VTO=3 KP=8 RD=0.02 RS=0.02 CGSO=400p CGDO=100p LAMBDA=0.01)
+.model DSCHOTTKY D (IS=20u N=1.05 RS=0.03 CJO=200p BV=40 IBV=1m)
+.model D4148 D (IS=2.5n N=1.75 RS=0.6 CJO=4p TT=4n BV=100)
+.model NPN2222 NPN (IS=1e-14 BF=150 VAF=100 CJE=20p CJC=8p TF=0.5n TR=50n)
+.model NPN3904 NPN (IS=1e-14 BF=200 VAF=100 CJE=10p CJC=4p TF=0.3n)
+.model PNP2907 PNP (IS=1e-14 BF=150 VAF=80 CJE=20p CJC=8p TF=0.5n)
+.options reltol=1e-5 abstol=1e-9 vntol=1e-7 method=gear
+.control
+set noaskquit
+set wr_singlescale
+set wr_vecnames
+tran 250n 30m 0 250n
+wrdata waveform.txt v(out) i(Lpower) v(dp) v(gate,sw) v(ref) v(sw)
+quit
+.endc
+.end

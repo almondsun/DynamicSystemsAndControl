@@ -1,0 +1,28 @@
+# Local toolchains, raw validation runs, and build caches
+/artifacts/
+**/slprj/
+*.slxc
+*.asv
+*.autosave
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+
+# Editor state and intermediate document files
+*.kicad_prl
+*.lck
+~*.lck
+*-backups/
+*.aux
+*.out
+*.xdv
+*.synctex.gz
+
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example
+*.pem
+*.key

@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "filename": "buck.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "name": "Default",
+        "clearance": 0.25,
+        "track_width": 0.3,
+        "via_diameter": 1.2,
+        "via_drill": 0.6,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_width": 0.3,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25
+      },
+      {
+        "name": "Power",
+        "clearance": 0.25,
+        "track_width": 0.6,
+        "via_diameter": 1.2,
+        "via_drill": 0.6,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_width": 0.3,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25
+      }
+    ],
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "VIN"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "SW"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "LMID"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "IP"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VOUT"
+      }
+    ],
+    "meta": {
+      "version": 4
+    }
+  }
+}

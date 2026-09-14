@@ -1,0 +1,26 @@
+{
+  "parts": 57,
+  "connected_pads": 152,
+  "vias": 4,
+  "track_width_range_mm": [
+    0.225,
+    0.6
+  ],
+  "copper_layers": 2,
+  "board_dimensions_mm": [
+    99,
+    99
+  ],
+  "ERC_and_DRC": "see separate native reports",
+  "latch_truth_table": "PASS",
+  "trip_estimate_A": [
+    1.8254538858759297,
+    2.183604225081118
+  ],
+  "OVP_estimate_V": [
+    7.561276664492798,
+    8.867436681443696
+  ],
+  "physical_tests": "NOT RUN",
+  "fabrication_release": "HOLD: received component qualification and soldered prototype required"
+}

@@ -1,0 +1,961 @@
+[
+  {
+    "ref": "J1",
+    "value": "12V FUSED INPUT",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+    "xy": [
+      17,
+      18
+    ],
+    "pins": {
+      "1": "VIN",
+      "2": "GND"
+    },
+    "section": 1,
+    "note": "External 2A fast fuse; current-limited laboratory supply",
+    "rotation": 0
+  },
+  {
+    "ref": "Q1",
+    "value": "IRFZ44N TO-220",
+    "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "xy": [
+      40,
+      19
+    ],
+    "pins": {
+      "1": "GATE",
+      "2": "VIN",
+      "3": "SW"
+    },
+    "section": 1,
+    "note": "Gate/drain/source; metal tab VIN",
+    "rotation": 0
+  },
+  {
+    "ref": "D1",
+    "value": "1N5822 40V 3A",
+    "footprint": "Diode_THT:D_DO-201AD_P15.24mm_Horizontal",
+    "xy": [
+      49,
+      28
+    ],
+    "pins": {
+      "1": "SW",
+      "2": "GND"
+    },
+    "section": 1,
+    "note": "Pin 1 cathode band, pin 2 anode",
+    "rotation": 180
+  },
+  {
+    "ref": "L1",
+    "value": "330uH >=3A Isat VERIFY",
+    "footprint": "Buck:Inductor_25mm_P10mm_VERIFY",
+    "xy": [
+      70,
+      23
+    ],
+    "pins": {
+      "1": "SW",
+      "2": "LMID"
+    },
+    "section": 1,
+    "note": "Check actual dimensions, DCR and saturation before ordering PCB",
+    "rotation": 0
+  },
+  {
+    "ref": "L2",
+    "value": "330uH >=3A Isat VERIFY",
+    "footprint": "Buck:Inductor_25mm_P10mm_VERIFY",
+    "xy": [
+      96,
+      23
+    ],
+    "pins": {
+      "1": "LMID",
+      "2": "IP"
+    },
+    "section": 1,
+    "note": "Check actual dimensions, DCR and saturation before ordering PCB",
+    "rotation": 0
+  },
+  {
+    "ref": "RS1",
+    "value": "0.050R 1% 1W",
+    "footprint": "Resistor_SMD:R_2512_6332Metric",
+    "xy": [
+      92,
+      41
+    ],
+    "pins": {
+      "1": "IP",
+      "2": "VOUT"
+    },
+    "section": 1,
+    "note": "Kelvin sense at pads; CRCW2512 0R050 or verified equivalent",
+    "rotation": 0
+  },
+  {
+    "ref": "J2",
+    "value": "LOAD + / -",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+    "xy": [
+      101,
+      51
+    ],
+    "pins": {
+      "1": "VOUT",
+      "2": "GND"
+    },
+    "section": 1,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "C1",
+    "value": "100uF 25V",
+    "footprint": "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm",
+    "xy": [
+      20,
+      28
+    ],
+    "pins": {
+      "1": "VIN",
+      "2": "GND"
+    },
+    "section": 1,
+    "note": "Input bulk; positive pin 1",
+    "rotation": 0
+  },
+  {
+    "ref": "C2",
+    "value": "100uF 25V",
+    "footprint": "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm",
+    "xy": [
+      29,
+      20
+    ],
+    "pins": {
+      "1": "VIN",
+      "2": "GND"
+    },
+    "section": 1,
+    "note": "Input bulk; positive pin 1",
+    "rotation": 0
+  },
+  {
+    "ref": "C3",
+    "value": "100nF 50V",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "xy": [
+      20,
+      36
+    ],
+    "pins": {
+      "1": "VIN",
+      "2": "GND"
+    },
+    "section": 1,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "C4",
+    "value": "10uF 35V low ESR",
+    "footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "xy": [
+      96,
+      62
+    ],
+    "pins": {
+      "1": "VOUT",
+      "2": "GND"
+    },
+    "section": 1,
+    "note": "Exact 20uF total target; verify ripple rating and measured capacitance",
+    "rotation": 0
+  },
+  {
+    "ref": "C5",
+    "value": "10uF 35V low ESR",
+    "footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "xy": [
+      104,
+      62
+    ],
+    "pins": {
+      "1": "VOUT",
+      "2": "GND"
+    },
+    "section": 1,
+    "note": "Exact 20uF total target; verify ripple rating and measured capacitance",
+    "rotation": 0
+  },
+  {
+    "ref": "U1",
+    "value": "IR2110PBF DIP14",
+    "footprint": "Package_DIP:DIP-14_W7.62mm",
+    "xy": [
+      48,
+      48
+    ],
+    "pins": {
+      "1": null,
+      "2": "GND",
+      "3": "VIN",
+      "4": null,
+      "5": "SW",
+      "6": "BOOT",
+      "7": "HO",
+      "8": null,
+      "9": "+5V",
+      "10": "HIN",
+      "11": "SD",
+      "12": "GND",
+      "13": "GND",
+      "14": null
+    },
+    "section": 2,
+    "note": "",
+    "rotation": 180
+  },
+  {
+    "ref": "D2",
+    "value": "UF4004",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "xy": [
+      25,
+      43
+    ],
+    "pins": {
+      "1": "BOOT",
+      "2": "VIN"
+    },
+    "section": 2,
+    "note": "Bootstrap: cathode to BOOT",
+    "rotation": 0
+  },
+  {
+    "ref": "C6",
+    "value": "1uF 50V X7R",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "xy": [
+      52,
+      37
+    ],
+    "pins": {
+      "1": "BOOT",
+      "2": "SW"
+    },
+    "section": 2,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "C7",
+    "value": "100nF 50V",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "xy": [
+      51,
+      46
+    ],
+    "pins": {
+      "1": "VIN",
+      "2": "GND"
+    },
+    "section": 2,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "C8",
+    "value": "100nF 50V",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "xy": [
+      31,
+      34
+    ],
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "section": 2,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "R1",
+    "value": "10R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      53,
+      30
+    ],
+    "pins": {
+      "1": "HO",
+      "2": "GATE"
+    },
+    "section": 2,
+    "note": "",
+    "rotation": 90
+  },
+  {
+    "ref": "R2",
+    "value": "10k",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      39,
+      23
+    ],
+    "pins": {
+      "1": "GATE",
+      "2": "SW"
+    },
+    "section": 2,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "U2",
+    "value": "L7805CV",
+    "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "xy": [
+      17,
+      48
+    ],
+    "pins": {
+      "1": "VIN",
+      "2": "GND",
+      "3": "+5V"
+    },
+    "section": 2,
+    "note": "Input / ground / output; evaluate dissipation",
+    "rotation": 0
+  },
+  {
+    "ref": "C9",
+    "value": "330nF 50V",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "xy": [
+      16,
+      40
+    ],
+    "pins": {
+      "1": "VIN",
+      "2": "GND"
+    },
+    "section": 2,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "C10",
+    "value": "100nF 50V",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "xy": [
+      15,
+      60
+    ],
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "section": 2,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "C11",
+    "value": "10uF 25V",
+    "footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "xy": [
+      25,
+      57
+    ],
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "section": 2,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "U3",
+    "value": "SN74HCT14N",
+    "footprint": "Package_DIP:DIP-14_W7.62mm",
+    "xy": [
+      30,
+      73
+    ],
+    "pins": {
+      "1": "DPRIME",
+      "2": "HIN",
+      "3": "GND",
+      "4": null,
+      "5": "GND",
+      "6": null,
+      "7": "GND",
+      "8": null,
+      "9": "GND",
+      "10": null,
+      "11": "GND",
+      "12": null,
+      "13": "GND",
+      "14": "+5V"
+    },
+    "section": 2,
+    "note": "HCT TTL thresholds; do not substitute HC at 5V",
+    "rotation": 0
+  },
+  {
+    "ref": "R3",
+    "value": "10k",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      19,
+      69
+    ],
+    "pins": {
+      "1": "DPRIME",
+      "2": "+5V"
+    },
+    "section": 2,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "R4",
+    "value": "1k",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      19,
+      76
+    ],
+    "pins": {
+      "1": "MCU_PWM",
+      "2": "DPRIME"
+    },
+    "section": 2,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "C12",
+    "value": "100nF",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "xy": [
+      31,
+      68
+    ],
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "section": 2,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "U4",
+    "value": "SN74HCT00N",
+    "footprint": "Package_DIP:DIP-14_W7.62mm",
+    "xy": [
+      53,
+      73
+    ],
+    "pins": {
+      "1": "RESET",
+      "2": "NTRIP",
+      "3": "NRESET",
+      "4": "RUN",
+      "5": "NFAULT",
+      "6": "SD",
+      "7": "GND",
+      "8": "FAULT",
+      "9": "NTRIP",
+      "10": "NFAULT",
+      "11": "NFAULT",
+      "12": "NRESET",
+      "13": "FAULT",
+      "14": "+5V"
+    },
+    "section": 3,
+    "note": "Set-dominant NAND latch; SD = NOT(RUN AND NFAULT)",
+    "rotation": 0
+  },
+  {
+    "ref": "C13",
+    "value": "100nF",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "xy": [
+      55,
+      68
+    ],
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "R5",
+    "value": "10k",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      41,
+      94
+    ],
+    "pins": {
+      "1": "RUN",
+      "2": "GND"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "R6",
+    "value": "10k",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      52,
+      94
+    ],
+    "pins": {
+      "1": "RESET",
+      "2": "GND"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "R7",
+    "value": "4.7k",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      65,
+      88
+    ],
+    "pins": {
+      "1": "NTRIP",
+      "2": "+5V"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "U5",
+    "value": "LM393P",
+    "footprint": "Package_DIP:DIP-8_W7.62mm",
+    "xy": [
+      78,
+      73
+    ],
+    "pins": {
+      "1": "NTRIP",
+      "2": "ISENSE",
+      "3": "VREF",
+      "4": "GND",
+      "5": "VREF",
+      "6": "OVSENSE",
+      "7": "NTRIP",
+      "8": "+5V"
+    },
+    "section": 3,
+    "note": "Two open-collector outputs wired together; overcurrent OR overvoltage",
+    "rotation": 0
+  },
+  {
+    "ref": "C14",
+    "value": "100nF",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "xy": [
+      78,
+      67
+    ],
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "R8",
+    "value": "15k 1%",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      65,
+      57
+    ],
+    "pins": {
+      "1": "+5V",
+      "2": "VREF"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "R9",
+    "value": "10k 1%",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      65,
+      62
+    ],
+    "pins": {
+      "1": "VREF",
+      "2": "GND"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "C15",
+    "value": "100nF",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "xy": [
+      65,
+      68
+    ],
+    "pins": {
+      "1": "VREF",
+      "2": "GND"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "R10",
+    "value": "31k 1%",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      88,
+      87
+    ],
+    "pins": {
+      "1": "VOUT",
+      "2": "OVSENSE"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "R11",
+    "value": "10k 1%",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      88,
+      94
+    ],
+    "pins": {
+      "1": "OVSENSE",
+      "2": "GND"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "U6",
+    "value": "INA180A1IDBVR",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "xy": [
+      86,
+      48
+    ],
+    "pins": {
+      "1": "ISENSE",
+      "2": "GND",
+      "3": "IP",
+      "4": "VOUT",
+      "5": "+5V"
+    },
+    "section": 3,
+    "note": "Pinout A ONLY; gain 20 V/V; sense RS1 pads directly",
+    "rotation": 0
+  },
+  {
+    "ref": "C16",
+    "value": "100nF",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "xy": [
+      79,
+      54
+    ],
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "Q2",
+    "value": "2N3904",
+    "footprint": "Package_TO_SOT_THT:TO-92_Inline_Wide",
+    "xy": [
+      69,
+      94
+    ],
+    "pins": {
+      "1": "GND",
+      "2": "FB",
+      "3": "NFAULT_MCU"
+    },
+    "section": 3,
+    "note": "E/B/C pin order must match purchased manufacturer",
+    "rotation": 0
+  },
+  {
+    "ref": "R12",
+    "value": "10k",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      66,
+      81
+    ],
+    "pins": {
+      "1": "FAULT",
+      "2": "FB"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "R13",
+    "value": "10k",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      78,
+      98
+    ],
+    "pins": {
+      "1": "+3V3",
+      "2": "NFAULT_MCU"
+    },
+    "section": 3,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "R14",
+    "value": "3k 1%",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      59,
+      103
+    ],
+    "pins": {
+      "1": "VOUT",
+      "2": "VSENSE"
+    },
+    "section": 4,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "R15",
+    "value": "1k 1%",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "xy": [
+      72,
+      103
+    ],
+    "pins": {
+      "1": "VSENSE",
+      "2": "GND"
+    },
+    "section": 4,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "C17",
+    "value": "1nF",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "xy": [
+      85,
+      103
+    ],
+    "pins": {
+      "1": "VSENSE",
+      "2": "GND"
+    },
+    "section": 4,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "J3",
+    "value": "STM32 CABLE 2x5",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical",
+    "xy": [
+      20,
+      94
+    ],
+    "pins": {
+      "1": "+5V",
+      "2": "GND",
+      "3": "MCU_PWM",
+      "4": "RUN",
+      "5": "RESET",
+      "6": "NFAULT_MCU",
+      "7": "VSENSE",
+      "8": "GND",
+      "9": "+3V3",
+      "10": "GND"
+    },
+    "section": 4,
+    "note": "Key/polarize cable; external Blue Pill not integrated",
+    "rotation": 0
+  },
+  {
+    "ref": "TP1",
+    "value": "VIN",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "xy": [
+      13,
+      30
+    ],
+    "pins": {
+      "1": "VIN"
+    },
+    "section": 4,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "TP2",
+    "value": "GND",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "xy": [
+      13,
+      36
+    ],
+    "pins": {
+      "1": "GND"
+    },
+    "section": 4,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "TP3",
+    "value": "SW",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "xy": [
+      57,
+      34
+    ],
+    "pins": {
+      "1": "SW"
+    },
+    "section": 4,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "TP4",
+    "value": "GATE",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "xy": [
+      54,
+      19
+    ],
+    "pins": {
+      "1": "GATE"
+    },
+    "section": 4,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "TP5",
+    "value": "VOUT",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "xy": [
+      104,
+      72
+    ],
+    "pins": {
+      "1": "VOUT"
+    },
+    "section": 4,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "TP6",
+    "value": "ISENSE",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "xy": [
+      92,
+      72
+    ],
+    "pins": {
+      "1": "ISENSE"
+    },
+    "section": 4,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "TP7",
+    "value": "SD",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "xy": [
+      63,
+      91
+    ],
+    "pins": {
+      "1": "SD"
+    },
+    "section": 4,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "TP8",
+    "value": "NTRIP",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "xy": [
+      77,
+      88
+    ],
+    "pins": {
+      "1": "NTRIP"
+    },
+    "section": 4,
+    "note": "",
+    "rotation": 0
+  },
+  {
+    "ref": "TP9",
+    "value": "MCU_PWM",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "xy": [
+      13,
+      87
+    ],
+    "pins": {
+      "1": "MCU_PWM"
+    },
+    "section": 4,
+    "note": "",
+    "rotation": 0
+  }
+]

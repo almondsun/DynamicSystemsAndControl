@@ -1,0 +1,26 @@
+{
+  "documents": {
+    "project/reports/final/entrega_1.pdf": {
+      "pages": 3,
+      "sha256": "5cef74e5840ce05be6e42b8ce92a7a6c02ced4b0104d230b8a99c19cffa46a9f"
+    },
+    "project/reports/final/entrega_2.pdf": {
+      "pages": 3,
+      "sha256": "ff3bcf25f29ccec8190d025b0607400a4b29fab146dc26a4535fdd5cf50aa7dc"
+    },
+    "project/reports/final/entrega_3.pdf": {
+      "pages": 4,
+      "sha256": "ec6eb37ff9b3d594bc3b915b99d96f13a1ad1194e7c071544699535ccec457e0"
+    },
+    "project/reports/final/entrega_4.pdf": {
+      "pages": 3,
+      "sha256": "fc6a441c3890fbb03e341c6f962c95423a16f44960c747a9842071c0dffc1dee"
+    },
+    "project/pcb/release/hardware-appendix.pdf": {
+      "pages": 11,
+      "sha256": "3dcd7471f0193a55f62e89536c5f1efd202175893e42924652e6ff488c90a9c0"
+    }
+  },
+  "visual_review": "all pages; see docs/report-refresh-validation.md",
+  "physical_tests": "not performed"
+}

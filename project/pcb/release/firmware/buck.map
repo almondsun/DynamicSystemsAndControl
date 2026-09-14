@@ -1,0 +1,525 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmax.o)
+                              /tmp/ccoUTt9Z.o (fmaxf)
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmin.o)
+                              /tmp/ccoUTt9Z.o (fminf)
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fpclassify.o)
+                              /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmax.o) (__fpclassifyf)
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
+                              /tmp/ccdNQRJX.o (__aeabi_fmul)
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+                              /tmp/ccku49Ij.o (__aeabi_fsub)
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_muldivsf3.o)
+                              /tmp/ccku49Ij.o (__aeabi_fdiv)
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_cmpsf2.o)
+                              /tmp/ccku49Ij.o (__aeabi_fcmpeq)
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_unordsf2.o)
+                              /tmp/ccku49Ij.o (__aeabi_fcmpun)
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+                              /tmp/ccdNQRJX.o (__aeabi_f2uiz)
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+                              /tmp/ccku49Ij.o (memset)
+
+Merging object attributes
+
+
+Discarded input sections
+
+ .group         0x00000000        0xc /tmp/ccdNQRJX.o
+ .group         0x00000000        0xc /tmp/ccdNQRJX.o
+ .group         0x00000000        0xc /tmp/ccdNQRJX.o
+ .group         0x00000000        0xc /tmp/ccdNQRJX.o
+ .group         0x00000000        0xc /tmp/ccdNQRJX.o
+ .group         0x00000000        0xc /tmp/ccdNQRJX.o
+ .group         0x00000000        0xc /tmp/ccdNQRJX.o
+ .group         0x00000000        0xc /tmp/ccdNQRJX.o
+ .group         0x00000000        0xc /tmp/ccdNQRJX.o
+ .text          0x00000000        0x0 /tmp/ccdNQRJX.o
+ .data          0x00000000        0x0 /tmp/ccdNQRJX.o
+ .bss           0x00000000        0x0 /tmp/ccdNQRJX.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccku49Ij.o
+ .text          0x00000000        0x0 /tmp/ccku49Ij.o
+ .data          0x00000000        0x0 /tmp/ccku49Ij.o
+ .bss           0x00000000        0x0 /tmp/ccku49Ij.o
+ .debug_macro   0x00000000      0xad8 /tmp/ccku49Ij.o
+ .debug_macro   0x00000000       0x22 /tmp/ccku49Ij.o
+ .debug_macro   0x00000000       0x22 /tmp/ccku49Ij.o
+ .debug_macro   0x00000000       0x8e /tmp/ccku49Ij.o
+ .debug_macro   0x00000000       0x51 /tmp/ccku49Ij.o
+ .debug_macro   0x00000000      0x103 /tmp/ccku49Ij.o
+ .debug_macro   0x00000000       0x6a /tmp/ccku49Ij.o
+ .debug_macro   0x00000000      0x1df /tmp/ccku49Ij.o
+ .debug_macro   0x00000000      0x190 /tmp/ccku49Ij.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .group         0x00000000        0xc /tmp/ccoUTt9Z.o
+ .text          0x00000000        0x0 /tmp/ccoUTt9Z.o
+ .data          0x00000000        0x0 /tmp/ccoUTt9Z.o
+ .bss           0x00000000        0x0 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000      0xad8 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000       0x22 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000       0x22 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000       0x24 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000       0x3c /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000       0x34 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000      0x190 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000      0x364 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000       0x16 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000       0x4a /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000       0x34 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000       0x10 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000       0x58 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000      0x1de /tmp/ccoUTt9Z.o
+ .debug_macro   0x00000000      0x19b /tmp/ccoUTt9Z.o
+ .text          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmax.o)
+ .data          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmax.o)
+ .bss           0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmax.o)
+ .text          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmin.o)
+ .data          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmin.o)
+ .bss           0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmin.o)
+ .text          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fpclassify.o)
+ .data          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fpclassify.o)
+ .bss           0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fpclassify.o)
+ .text          0x00000000      0x168 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
+ .data          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
+ .bss           0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
+ .debug_line    0x00000000       0xbd /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
+ .debug_line_str
+                0x00000000       0x93 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
+ .debug_info    0x00000000       0x3f /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
+ .debug_abbrev  0x00000000       0x26 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
+ .debug_aranges
+                0x00000000       0x20 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
+ .debug_str     0x00000000       0xb5 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
+ .debug_frame   0x00000000       0x24 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
+ .ARM.attributes
+                0x00000000       0x1d /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_mulsf3.o)
+ .data          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .bss           0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .data          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .bss           0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .data          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .bss           0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .data          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .bss           0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .data          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+ .bss           0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+ .text          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+ .data          0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00010000         xr
+RAM              0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /tmp/ccdNQRJX.o
+LOAD /tmp/ccku49Ij.o
+LOAD /tmp/ccoUTt9Z.o
+LOAD /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a
+START GROUP
+LOAD /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a
+LOAD /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a
+LOAD /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a
+END GROUP
+START GROUP
+LOAD /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a
+LOAD /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a
+LOAD /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libnosys.a
+END GROUP
+                0x20005000                        _estack = (ORIGIN (RAM) + LENGTH (RAM))
+
+.isr_vector     0x08000000      0x130
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x130 /tmp/ccdNQRJX.o
+                0x08000000                vectors
+
+.text           0x08000130     0x138d
+ *(.text*)
+ .text.Default_Handler
+                0x08000130       0x10 /tmp/ccdNQRJX.o
+                0x08000130                Default_Handler
+ .text.disable  0x08000140       0x24 /tmp/ccdNQRJX.o
+ .text.tx.constprop.0
+                0x08000164       0x18 /tmp/ccdNQRJX.o
+ .text.text     0x0800017c       0x20 /tmp/ccdNQRJX.o
+ .text.number   0x0800019c       0x44 /tmp/ccdNQRJX.o
+ .text.TIM1_UP_IRQHandler
+                0x080001e0      0x11c /tmp/ccdNQRJX.o
+                0x080001e0                TIM1_UP_IRQHandler
+ .text.startup.main
+                0x080002fc      0x478 /tmp/ccdNQRJX.o
+                0x080002fc                main
+ .text.Reset_Handler
+                0x08000774       0x40 /tmp/ccdNQRJX.o
+                0x08000774                Reset_Handler
+ .text.runtime_stop
+                0x080007b4       0x1c /tmp/ccku49Ij.o
+                0x080007b4                runtime_stop
+ .text.runtime_init
+                0x080007d0       0x1c /tmp/ccku49Ij.o
+                0x080007d0                runtime_init
+ .text.runtime_start
+                0x080007ec      0x104 /tmp/ccku49Ij.o
+                0x080007ec                runtime_start
+ .text.runtime_capture
+                0x080008f0       0x16 /tmp/ccku49Ij.o
+                0x080008f0                runtime_capture
+ *fill*         0x08000906        0x2 
+ .text.runtime_tick
+                0x08000908      0x244 /tmp/ccku49Ij.o
+                0x08000908                runtime_tick
+ .text.buck_reset
+                0x08000b4c        0xc /tmp/ccoUTt9Z.o
+                0x08000b4c                buck_reset
+ .text.buck_update
+                0x08000b58      0x134 /tmp/ccoUTt9Z.o
+                0x08000b58                buck_update
+ .text.fmaxf    0x08000c8c       0x2c /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmax.o)
+                0x08000c8c                fmaxf
+ .text.fminf    0x08000cb8       0x2c /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmin.o)
+                0x08000cb8                fminf
+ .text.__fpclassifyf
+                0x08000ce4       0x34 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fpclassify.o)
+                0x08000ce4                __fpclassifyf
+ .text          0x08000d18      0x21c /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+                0x08000d18                __aeabi_frsub
+                0x08000d20                __subsf3
+                0x08000d20                __aeabi_fsub
+                0x08000d24                __aeabi_fadd
+                0x08000d24                __addsf3
+                0x08000e84                __aeabi_ui2f
+                0x08000e84                __floatunsisf
+                0x08000e8c                __aeabi_i2f
+                0x08000e8c                __floatsisf
+                0x08000ea8                __floatundisf
+                0x08000ea8                __aeabi_ul2f
+                0x08000eb8                __floatdisf
+                0x08000eb8                __aeabi_l2f
+ .text          0x08000f34      0x2a0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_muldivsf3.o)
+                0x08000f34                __mulsf3
+                0x08000f34                __aeabi_fmul
+                0x0800109c                __divsf3
+                0x0800109c                __aeabi_fdiv
+ .text          0x080011d4       0xec /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_cmpsf2.o)
+                0x080011d4                __gtsf2
+                0x080011d4                __gesf2
+                0x080011dc                __lesf2
+                0x080011dc                __ltsf2
+                0x080011e4                __nesf2
+                0x080011e4                __eqsf2
+                0x080011e4                __cmpsf2
+                0x08001244                __aeabi_cfrcmple
+                0x0800124c                __aeabi_cfcmple
+                0x0800124c                __aeabi_cfcmpeq
+                0x0800125c                __aeabi_fcmpeq
+                0x08001270                __aeabi_fcmplt
+                0x08001284                __aeabi_fcmple
+                0x08001298                __aeabi_fcmpge
+                0x080012ac                __aeabi_fcmpgt
+ .text          0x080012c0       0x2c /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_unordsf2.o)
+                0x080012c0                __aeabi_fcmpun
+                0x080012c0                __unordsf2
+ .text          0x080012ec       0x40 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+                0x080012ec                __aeabi_f2uiz
+                0x080012ec                __fixunssfsi
+ .text.memset   0x0800132c       0x8c /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+                0x0800132c                memset
+ *(.rodata*)
+ .rodata.main.str1.1
+                0x080013b8      0x105 /tmp/ccdNQRJX.o
+                                0x108 (size before relaxing)
+
+.glue_7         0x080014c0        0x0
+ .glue_7        0x080014c0        0x0 linker stubs
+
+.glue_7t        0x080014c0        0x0
+ .glue_7t       0x080014c0        0x0 linker stubs
+
+.vfp11_veneer   0x080014c0        0x0
+ .vfp11_veneer  0x080014c0        0x0 linker stubs
+
+.v4_bx          0x080014c0        0x0
+ .v4_bx         0x080014c0        0x0 linker stubs
+
+.iplt           0x080014c0        0x0
+ .iplt          0x080014c0        0x0 /tmp/ccdNQRJX.o
+
+.rel.dyn        0x080014c0        0x0
+ .rel.iplt      0x080014c0        0x0 /tmp/ccdNQRJX.o
+
+.ARM.exidx
+ *(.ARM.exidx*)
+                0x080014bd                        _sidata = LOADADDR (.data)
+
+.data           0x20000000        0x0 load address 0x080014bd
+                0x20000000                        _sdata = .
+ *(.data*)
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _edata = .
+
+.igot.plt       0x20000000        0x0 load address 0x080014bd
+ .igot.plt      0x20000000        0x0 /tmp/ccdNQRJX.o
+
+.bss            0x20000000     0x1890 load address 0x080014bd
+                0x20000000                        _sbss = .
+ *(.bss*)
+ .bss.last_adc  0x20000000        0x2 /tmp/ccdNQRJX.o
+ *fill*         0x20000002        0x2 
+ .bss.irq_cycles_max
+                0x20000004        0x4 /tmp/ccdNQRJX.o
+ .bss.half      0x20000008        0x4 /tmp/ccdNQRJX.o
+ .bss.adc       0x2000000c       0x50 /tmp/ccdNQRJX.o
+ .bss.control   0x2000005c     0x1834 /tmp/ccdNQRJX.o
+ *(COMMON)
+                0x20001890                        . = ALIGN (0x4)
+                0x20001890                        _ebss = .
+                0x00000001                        ASSERT ((_ebss <= (_estack - 0x1000)), Less than 4KB available stack)
+OUTPUT(../../artifacts/buck-pcb-validation/firmware/buck.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000     0x198f
+ .debug_info    0x00000000      0xc55 /tmp/ccdNQRJX.o
+ .debug_info    0x00000c55      0x683 /tmp/ccku49Ij.o
+ .debug_info    0x000012d8      0x309 /tmp/ccoUTt9Z.o
+ .debug_info    0x000015e1       0xca /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_info    0x000016ab       0x57 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .debug_info    0x00001702       0xdb /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_info    0x000017dd       0x3c /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .debug_info    0x00001819       0x3c /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+ .debug_info    0x00001855      0x13a /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+
+.debug_abbrev   0x00000000      0x8c9
+ .debug_abbrev  0x00000000      0x40f /tmp/ccdNQRJX.o
+ .debug_abbrev  0x0000040f      0x1d5 /tmp/ccku49Ij.o
+ .debug_abbrev  0x000005e4      0x160 /tmp/ccoUTt9Z.o
+ .debug_abbrev  0x00000744       0x28 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_abbrev  0x0000076c       0x28 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .debug_abbrev  0x00000794       0x28 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_abbrev  0x000007bc       0x28 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .debug_abbrev  0x000007e4       0x28 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+ .debug_abbrev  0x0000080c       0xbd /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+
+.debug_loclists
+                0x00000000      0x97b
+ .debug_loclists
+                0x00000000      0x460 /tmp/ccdNQRJX.o
+ .debug_loclists
+                0x00000460      0x261 /tmp/ccku49Ij.o
+ .debug_loclists
+                0x000006c1      0x109 /tmp/ccoUTt9Z.o
+ .debug_loclists
+                0x000007ca       0x40 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmax.o)
+ .debug_loclists
+                0x0000080a       0x40 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmin.o)
+ .debug_loclists
+                0x0000084a       0x30 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fpclassify.o)
+ .debug_loclists
+                0x0000087a      0x101 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+
+.debug_aranges  0x00000000      0x180
+ .debug_aranges
+                0x00000000       0x58 /tmp/ccdNQRJX.o
+ .debug_aranges
+                0x00000058       0x40 /tmp/ccku49Ij.o
+ .debug_aranges
+                0x00000098       0x28 /tmp/ccoUTt9Z.o
+ .debug_aranges
+                0x000000c0       0x20 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_aranges
+                0x000000e0       0x20 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .debug_aranges
+                0x00000100       0x20 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_aranges
+                0x00000120       0x20 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .debug_aranges
+                0x00000140       0x20 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+ .debug_aranges
+                0x00000160       0x20 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+
+.debug_rnglists
+                0x00000000      0x206
+ .debug_rnglists
+                0x00000000      0x164 /tmp/ccdNQRJX.o
+ .debug_rnglists
+                0x00000164       0x3b /tmp/ccku49Ij.o
+ .debug_rnglists
+                0x0000019f       0x1a /tmp/ccoUTt9Z.o
+ .debug_rnglists
+                0x000001b9       0x13 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmax.o)
+ .debug_rnglists
+                0x000001cc       0x13 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmin.o)
+ .debug_rnglists
+                0x000001df       0x13 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fpclassify.o)
+ .debug_rnglists
+                0x000001f2       0x14 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+
+.debug_macro    0x00000000     0x1e08
+ .debug_macro   0x00000000       0xcb /tmp/ccdNQRJX.o
+ .debug_macro   0x000000cb      0xad8 /tmp/ccdNQRJX.o
+ .debug_macro   0x00000ba3       0x22 /tmp/ccdNQRJX.o
+ .debug_macro   0x00000bc5       0x22 /tmp/ccdNQRJX.o
+ .debug_macro   0x00000be7       0x8e /tmp/ccdNQRJX.o
+ .debug_macro   0x00000c75       0x51 /tmp/ccdNQRJX.o
+ .debug_macro   0x00000cc6      0x103 /tmp/ccdNQRJX.o
+ .debug_macro   0x00000dc9       0x6a /tmp/ccdNQRJX.o
+ .debug_macro   0x00000e33      0x1df /tmp/ccdNQRJX.o
+ .debug_macro   0x00001012      0x190 /tmp/ccdNQRJX.o
+ .debug_macro   0x000011a2      0x130 /tmp/ccku49Ij.o
+ .debug_macro   0x000012d2       0x16 /tmp/ccku49Ij.o
+ .debug_macro   0x000012e8       0x74 /tmp/ccku49Ij.o
+ .debug_macro   0x0000135c       0x24 /tmp/ccku49Ij.o
+ .debug_macro   0x00001380       0x3c /tmp/ccku49Ij.o
+ .debug_macro   0x000013bc       0x34 /tmp/ccku49Ij.o
+ .debug_macro   0x000013f0      0x364 /tmp/ccku49Ij.o
+ .debug_macro   0x00001754       0x16 /tmp/ccku49Ij.o
+ .debug_macro   0x0000176a       0x4a /tmp/ccku49Ij.o
+ .debug_macro   0x000017b4       0x34 /tmp/ccku49Ij.o
+ .debug_macro   0x000017e8       0x10 /tmp/ccku49Ij.o
+ .debug_macro   0x000017f8       0x58 /tmp/ccku49Ij.o
+ .debug_macro   0x00001850      0x1de /tmp/ccku49Ij.o
+ .debug_macro   0x00001a2e      0x19b /tmp/ccku49Ij.o
+ .debug_macro   0x00001bc9       0xe6 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00001caf       0x6e /tmp/ccoUTt9Z.o
+ .debug_macro   0x00001d1d       0x94 /tmp/ccoUTt9Z.o
+ .debug_macro   0x00001db1       0x57 /tmp/ccoUTt9Z.o
+
+.debug_line     0x00000000     0x2054
+ .debug_line    0x00000000      0xfbc /tmp/ccdNQRJX.o
+ .debug_line    0x00000fbc      0x710 /tmp/ccku49Ij.o
+ .debug_line    0x000016cc      0x3f7 /tmp/ccoUTt9Z.o
+ .debug_line    0x00001ac3      0x103 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_line    0x00001bc6      0x123 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .debug_line    0x00001ce9       0x9a /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_line    0x00001d83       0x57 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .debug_line    0x00001dda       0x5e /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+ .debug_line    0x00001e38      0x21c /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+
+.debug_str      0x00000000     0x7a1f
+ .debug_str     0x00000000     0x7a1f /tmp/ccdNQRJX.o
+                               0x4521 (size before relaxing)
+ .debug_str     0x00007a1f        0x0 /tmp/ccku49Ij.o
+                               0x7723 (size before relaxing)
+ .debug_str     0x00007a1f        0x0 /tmp/ccoUTt9Z.o
+                               0x69d4 (size before relaxing)
+ .debug_str     0x00007a1f        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+                                0x13f (size before relaxing)
+ .debug_str     0x00007a1f        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_muldivsf3.o)
+                                 0xcb (size before relaxing)
+ .debug_str     0x00007a1f        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_cmpsf2.o)
+                                0x154 (size before relaxing)
+ .debug_str     0x00007a1f        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_unordsf2.o)
+                                 0xb9 (size before relaxing)
+ .debug_str     0x00007a1f        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+                                 0xba (size before relaxing)
+ .debug_str     0x00007a1f        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+                                0x1cd (size before relaxing)
+
+.comment        0x00000000       0x3c
+ .comment       0x00000000       0x3c /tmp/ccdNQRJX.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 /tmp/ccku49Ij.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 /tmp/ccoUTt9Z.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+                                 0x1f (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x2d /tmp/ccdNQRJX.o
+ .ARM.attributes
+                0x0000002d       0x2d /tmp/ccku49Ij.o
+ .ARM.attributes
+                0x0000005a       0x2d /tmp/ccoUTt9Z.o
+ .ARM.attributes
+                0x00000087       0x2d /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmax.o)
+ .ARM.attributes
+                0x000000b4       0x2d /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmin.o)
+ .ARM.attributes
+                0x000000e1       0x2d /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fpclassify.o)
+ .ARM.attributes
+                0x0000010e       0x1d /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x0000012b       0x1d /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .ARM.attributes
+                0x00000148       0x1d /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .ARM.attributes
+                0x00000165       0x1d /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .ARM.attributes
+                0x00000182       0x1d /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+ .ARM.attributes
+                0x0000019f       0x2d /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+
+.debug_frame    0x00000000      0x3f4
+ .debug_frame   0x00000000       0xd4 /tmp/ccdNQRJX.o
+ .debug_frame   0x000000d4       0xa4 /tmp/ccku49Ij.o
+ .debug_frame   0x00000178       0x44 /tmp/ccoUTt9Z.o
+ .debug_frame   0x000001bc       0x2c /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmax.o)
+ .debug_frame   0x000001e8       0x2c /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fmin.o)
+ .debug_frame   0x00000214       0x20 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libm.a(libm_a-sf_fpclassify.o)
+ .debug_frame   0x00000234       0x4c /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_frame   0x00000280       0x38 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .debug_frame   0x000002b8       0xc8 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_frame   0x00000380       0x24 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .debug_frame   0x000003a4       0x24 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+ .debug_frame   0x000003c8       0x2c /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libg.a(libc_a-memset.o)
+
+.debug_line_str
+                0x00000000       0x93
+ .debug_line_str
+                0x00000000       0x93 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_line_str
+                0x00000093        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_muldivsf3.o)
+                                 0x93 (size before relaxing)
+ .debug_line_str
+                0x00000093        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_cmpsf2.o)
+                                 0x93 (size before relaxing)
+ .debug_line_str
+                0x00000093        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_unordsf2.o)
+                                 0x93 (size before relaxing)
+ .debug_line_str
+                0x00000093        0x0 /home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/cad-root/usr/bin/../lib/gcc/arm-none-eabi/16.2.0/thumb/v7-m/nofp/libgcc.a(_arm_fixunssfsi.o)
+                                 0x93 (size before relaxing)

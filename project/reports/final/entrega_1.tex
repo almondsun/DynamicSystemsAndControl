@@ -1,0 +1,155 @@
+\RequirePackage[T1]{fontenc}
+\documentclass[conference,letterpaper]{IEEEtran}
+\usepackage[spanish,es-nodecimaldot,es-tabla,es-noshorthands]{babel}
+\usepackage{amsmath,amssymb,siunitx,booktabs,tabularx}
+\usepackage{tikz,circuitikz,pgfplots}
+\usetikzlibrary{arrows.meta,positioning,babel}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\usepackage{float}
+\usepackage[nospread]{flushend}
+\usepackage[hidelinks]{hyperref}
+\raggedbottom
+\interdisplaylinepenalty=2500
+\setlength{\emergencystretch}{1em}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcommand{\plotstyle}{ }
+\begin{document}
+\special{pdf:minorversion 7}
+\title{Modelado y validación de un convertidor Buck}\author{\IEEEauthorblockN{Martín Ramírez Espinosa, Jerónimo Vargas Orozco\\Andrew Esteban Henao Becerra, Mateo Alexander Cardenas Cuesta}
+\IEEEauthorblockA{Universidad Nacional de Colombia, Sede Manizales\\\texttt{maramirezes@unal.edu.co}, \texttt{jevargaso@unal.edu.co}\\\texttt{anhenaobe@unal.edu.co}, \texttt{macardenascu@unal.edu.co}}}
+\hypersetup{pdftitle={Modelado y validación de un convertidor Buck},pdfauthor={Martín Ramírez Espinosa, Jerónimo Vargas Orozco, Andrew Esteban Henao Becerra, Mateo Alexander Cardenas Cuesta}}\maketitle
+\begin{center}\small Entrega 1: Modelo y simulación\end{center}
+\begin{abstract}Se deriva el modelo del Buck desde sus estados de conmutación. Se comparan la función de transferencia, el PWM ideal y un circuito completo ante dos escalones del complemento del ciclo de trabajo. Se separan sesgo estático, error incremental y rizado. Los resultados son de simulación.\end{abstract}
+\section{Parámetros y circuito}
+\begin{table}[H]\caption{Parámetros de la guía}\label{tab:nominal}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}\begin{tabularx}{\columnwidth}{LY}\toprule
+Magnitud & Valor\\\midrule
+$V_{\mathrm{in}}$ & $12\,\mathrm{V}$\\
+$L$; $C$ & $660\,\mu\mathrm{H}$; $20\,\mu\mathrm{F}$\\
+$R$; $f_s$ & $6\,\Omega$; $10\,\mathrm{kHz}$\\
+$D'=0.5$ & $V_o=6\,\mathrm{V}$; $I_L=1\,\mathrm{A}$\\\bottomrule\end{tabularx}\end{table}
+Se usan los valores de la guía \cite{guide}. La Fig.~\ref{fig:power} representa el circuito simulado. Se suponen DCR $r_L=0.1\,\Omega$ y ESR $r_C=0.05\,\Omega$; los semiconductores usan modelos genéricos. No son parámetros medidos.
+
+\begin{figure}[H]\centering\resizebox{\columnwidth}{!}{\begin{circuitikz}[american,font=\small]
+\draw (0,0) node[ground]{} to[V,invert,l=$12\,\mathrm{V}$] (0,3) -- (1,3)
+node[nmos,rotate=90,anchor=D](M){};
+\draw (M.S) -- (3,3) node[circ,label=above:$sw$]{} to[L,l=$660\,\mu\mathrm{H}$] (5,3)
+to[R,l=$r_L$] (7,3) node[circ,label=above:$v_o$]{} -- (10,3);
+\draw (3,0) node[ground]{} to[D,l=$D_f$] (3,3);
+\draw (7,3) to[R,l=$r_C$] (7,1.6) to[C,l=$20\,\mu\mathrm{F}$] (7,0) node[ground]{};
+\draw (8.5,3) to[R,l=$6\,\Omega$] (8.5,0) node[ground]{};
+\draw (10,3) to[R,l=$30\,\mathrm{k}\Omega$] (10,1.5) node[circ,label=right:$v_s$]{} to[R,l=$10\,\mathrm{k}\Omega$] (10,0) node[ground]{};
+\draw (M.G) -- ++(0,-.4) node[below]{$g$};
+\end{circuitikz}}\caption{Etapa de potencia y sensor del netlist. El driver excita $g$; el divisor entrega $v_s=v_o/4$.}\label{fig:power}\end{figure}
+\begin{figure}[H]\centering\resizebox{\columnwidth}{!}{\begin{circuitikz}[american,font=\small]
+\draw (0,4) node[left]{$V_{\mathrm{in}}$} to[D,l=1N4148] (3,4) node[circ,label=above:$boot$]{} -- (7.4,4);
+\draw (7.4,4) to[C,l=$1\,\mu\mathrm{F}$] (7.4,2.4) node[right]{$sw$};
+\draw (3,4) to[R,l=$1.2\,\mathrm{k}\Omega$] (3,2.3) -- (3,2);
+\node[npn,anchor=C] (Q1) at (3,2) {$Q_1$};
+\draw (Q1.E) -- ++(0,-.25) node[ground]{};
+\draw (Q1.B) to[R,l_=$1\,\mathrm{k}\Omega$] ++(-2,0) node[left]{PWM};
+\node[npn] (Q2) at (5.2,3.1) {$Q_2$};
+\node[pnp] (Q3) at (5.2,.7) {$Q_3$};
+\draw (Q2.C) |- (3,4);
+\draw (Q3.C) -- ++(0,-.5) node[ground]{};
+\draw (Q2.B) -- (3.7,3.1) -- (3.7,.7) -- (Q3.B);
+\draw (3,2.3) -- (3.7,2.3) node[circ]{};
+\draw (Q2.E) -- (6,1.9) -- (Q3.E);
+\draw (6,1.9) -- (7,1.9) node[right]{$g$};
+\end{circuitikz}}\caption{Driver inversor y bootstrap del netlist. Q1: 2N2222; Q2: 2N3904; Q3: 2N2907, con modelos genéricos. $sw$ es el nodo de conmutación.}\label{fig:driver}\end{figure}
+\section{Derivación del modelo}
+$i_L(t)$ y $v_o(t)$ son instantáneas; una barra indica promedio sobre $T_s$, mayúscula indica equilibrio y tilde indica perturbación. Se supone conducción continua (CCM), fuente constante y elementos ideales. Las ecuaciones ON/OFF son:
+
+\begin{equation}\label{eq:onoff}L\frac{di_L}{dt}=\begin{cases}V_{\mathrm{in}}-v_o,&\mathrm{ON},\\-v_o,&\mathrm{OFF},\end{cases}\end{equation}
+\begin{equation}\label{eq:capacitor}C\frac{dv_o}{dt}=i_L-\frac{v_o}{R}\quad\text{en ambos estados}.\end{equation}
+El driver invierte PWM: $d=1-d'$. Promediando los intervalos con pesos $d$ y $1-d$:
+
+\begin{equation}\label{eq:average}\begin{aligned}L\dot{\bar i}_L&=V_{\mathrm{in}}(1-d')-\bar v_o,\\C\dot{\bar v}_o&=\bar i_L-\bar v_o/R.\end{aligned}\end{equation}
+\begin{equation}\label{eq:equilibrium}V_o=V_{\mathrm{in}}(1-D'),\qquad I_L=V_o/R.\end{equation}
+Sustituir $\bar i_L=I_L+\tilde i_L$, $\bar v_o=V_o+\tilde v_o$ y $d'=D'+\tilde d'$ da el estado incremental $\tilde x=[\tilde i_L\;\tilde v_o]^{\mathsf T}$:
+
+\begin{equation}\label{eq:state}\begin{aligned}\dot{\tilde x}&=\begin{bmatrix}0&-1/L\\1/C&-1/(RC)\end{bmatrix}\tilde x+\begin{bmatrix}-V_{\mathrm{in}}/L\\0\end{bmatrix}\tilde d',\\\tilde v_o&=\begin{bmatrix}0&1\end{bmatrix}\tilde x.\end{aligned}\end{equation}
+Eliminando $\bar i_L$ se obtiene $LC\ddot{\bar v}_o+(L/R)\dot{\bar v}_o+\bar v_o=V_{\mathrm{in}}(1-d^{\prime})$. Con condiciones iniciales incrementales nulas:
+
+\begin{equation}\label{eq:plant}G_{d'}(s)=\frac{\widetilde V_o(s)}{\widetilde D'(s)}=\frac{-V_{\mathrm{in}}}{LCs^2+(L/R)s+1}.\end{equation}
+\begin{equation}\label{eq:numeric}G_{d'}(s)=\frac{-9.090909\times10^8}{s^2+8333.333s+7.575758\times10^7}.\end{equation}
+La tensión total es $6\,\mathrm{V}$ más la respuesta incremental. No se debe aplicar el duty absoluto al modelo incremental. Para $R$ constante, las ecuaciones promediadas son afines y también describen los escalones finitos dentro de sus hipótesis.
+
+\section{Respuesta dinámica y conducción}
+La forma canónica de segundo orden \cite{dynamics} permite identificar:
+
+\begin{equation}\label{eq:dynamic}\omega_n=\frac1{\sqrt{LC}},\quad\zeta=\frac{\sqrt{L/C}}{2R},\quad\omega_d=\omega_n\sqrt{1-\zeta^2}.\end{equation}
+$\omega_n=8703.883\,\mathrm{rad/s}$, $\zeta=0.47871$ y polos $-4166.667\pm j7641.758\,\mathrm{s}^{-1}$. No hay ceros finitos. La planta es estable y subamortiguada; su ganancia CC es $-12\,\mathrm{V}$ por unidad de $d^{\prime}$.
+
+\begin{equation}\label{eq:stepmetrics}\begin{aligned}M_p&=100e^{-\pi\zeta/\sqrt{1-\zeta^2}}=18.03\%,\\t_p&=\pi/\omega_d=0.411\,\mathrm{ms},\\t_{s,2\%}&\simeq4/(\zeta\omega_n)=0.960\,\mathrm{ms}.\end{aligned}\end{equation}
+Para $\tilde d^{\prime}=a\,u(t-t_0)$ y $\tau=t-t_0\geq0$:
+
+\begin{equation}\label{eq:response}\begin{aligned}\tilde v_o(\tau)&=-12a[1-e^{-\zeta\omega_n\tau}h(\tau)],\\h(\tau)&=\cos(\omega_d\tau)+\frac{\zeta\omega_n}{\omega_d}\sin(\omega_d\tau).\end{aligned}\end{equation}
+Así, $a=+0.1$ lleva a $4.8\,\mathrm{V}$ y $a=-0.1$ a $7.2\,\mathrm{V}$. En el punto nominal, despreciando ESR:
+
+\begin{equation}\label{eq:ripple}\begin{aligned}\Delta i_{L,\mathrm{pp}}&\simeq\frac{V_{\mathrm{in}}d(1-d)}{Lf_s}=0.455\,\mathrm{A},\\i_{L,\min}&\simeq I_L-\Delta i_{L,\mathrm{pp}}/2=0.773\,\mathrm{A},\\\Delta v_{o,\mathrm{pp}}&\simeq\frac{\Delta i_{L,\mathrm{pp}}}{8Cf_s}=0.284\,\mathrm{V},\\L_{\mathrm{crit}}&=\frac{R(1-d)}{2f_s}=150\,\mu\mathrm{H}.\end{aligned}\end{equation}
+$i_{L,\min}>0$ y $L>L_{\mathrm{crit}}$ apoyan CCM nominal. El rizado no forma parte de la función de transferencia.
+
+\section{Método de comparación}
+MATLAB \cite{matlab} usa \texttt{lsim}, salida cada $2\,\mu\mathrm{s}$ y estado incremental inicial nulo. El PWM ideal integra cada tramo ON/OFF mediante exponenciales matriciales. ngspice 44.2 \cite{ngspice} usa Gear, tolerancia relativa $10^{-5}$ y paso máximo $500\,\mathrm{ns}$; parte desde reposo y se estabiliza antes del evento en $10\,\mathrm{ms}$.
+
+Cada escalón se ejecuta por separado. Se calculan medias de periodos completos de $100\,\mu\mathrm{s}$. La ventana de error es 10--$20\,\mathrm{ms}$ y la base incremental es la media de 9--$10\,\mathrm{ms}$.
+
+Se compara la media por periodo $\bar v_c[k]$ con el modelo $v_m[k]$ interpolado en el centro de cada periodo. Para $N$ muestras:
+
+\begin{equation}\label{eq:errors}\begin{aligned}e_k&=\bar v_c[k]-v_m[k],\\E_{\mathrm{RMS}}&=\sqrt{\frac1N\sum_{k=1}^N e_k^2},\quad E_{\max}=\max_k|e_k|.\end{aligned}\end{equation}
+El error incremental resta a cada curva su propia media previa al evento, $v_{c,0}$ o $v_{m,0}$:
+
+\begin{equation}\label{eq:incremental}e_{\Delta,k}=(\bar v_c[k]-v_{c,0})-(v_m[k]-v_{m,0}).\end{equation}
+$E_{\mathrm{RMS},\Delta}$ usa la misma raíz cuadrática con $e_{\Delta,k}$. El error normalizado es $100E_{\mathrm{RMS}}/|\Delta V_{\mathrm{ideal}}|$, donde el cambio nominal tiene magnitud $1.2\,\mathrm{V}$.
+
+\section{Resultados y discusión}
+\begin{table}[H]\caption{Error del circuito respecto al modelo ideal}\label{tab:open-errors}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}\begin{tabularx}{\columnwidth}{LYY}\toprule
+Magnitud & $\Delta d^{\prime}=+0.1$ & $\Delta d^{\prime}=-0.1$\\\midrule
+$V_{o,\mathrm{ideal}}$ (V) & 4.800 & 7.200\\
+$\bar v_{o,\infty}$ (V) & 4.5060 & 6.8969\\
+$E_{\mathrm{RMS}}$ (V) & 0.2934 & 0.3025\\
+$E_{\mathrm{RMS},\Delta}$ (V) & 0.0060 & 0.0069\\
+$E_{\max}$ (V) & 0.2975 & 0.3170\\
+Error normalizado (\%) & 24.4506 & 25.2111\\\bottomrule\end{tabularx}\end{table}
+Las Figs.~\ref{fig:open_up} y \ref{fig:open_down} muestran el sesgo estacionario cercano a $0.30\,\mathrm{V}$, mientras el error incremental es de 6--$7\,\mathrm{mV}$. Las pérdidas y el driver desplazan el equilibrio; la dinámica dominante permanece próxima a la ideal. No se fuerza la curva del circuito a iniciar en $6\,\mathrm{V}$.
+
+\begin{figure}[H]\centering\begin{tikzpicture}\begin{groupplot}[group style={group size=1 by 2,vertical sep=12mm},width=.96\columnwidth,height=3.8cm,grid=major,tick label style={font=\scriptsize},label style={font=\footnotesize}]
+\nextgroupplot[xmin=8,xmax=24,xlabel={$t$ (ms)},ylabel={$\bar v_o$ (V)},legend style={font=\scriptsize,at={(.5,1.02)},anchor=south,legend columns=3,/tikz/every even column/.append style={column sep=2pt}}]
+\addplot[blue,solid,thick] table[x=t,y=v,col sep=comma]{data/open_up_model.csv};
+\addplot[orange,dashed,thick] table[x=t,y=v,col sep=comma]{data/open_up_pwm.csv};
+\addplot[black,densely dotted,thick] table[x=t,y=v,col sep=comma]{data/open_up_circuit.csv};
+\legend{Modelo ideal,PWM ideal,Circuito}\addplot[gray,dashdotted,forget plot] coordinates {(10,4.8)(30,4.8)};
+\nextgroupplot[xmin=29,xmax=29.5,xlabel={$t$ (ms)},ylabel={$v_o$ (V)},scaled x ticks=false,xtick={29,29.2,29.4}]
+\addplot[black,thin] table[x=t,y=v,col sep=comma]{data/open_up_ripple.csv};\end{groupplot}\end{tikzpicture}\caption{Escalón $d^{\prime}:0.5\to0.6$. Arriba: medias y destino ideal; abajo: rizado estacionario del circuito.}\label{fig:open_up}\end{figure}
+\begin{figure}[H]\centering\begin{tikzpicture}\begin{groupplot}[group style={group size=1 by 2,vertical sep=12mm},width=.96\columnwidth,height=3.8cm,grid=major,tick label style={font=\scriptsize},label style={font=\footnotesize}]
+\nextgroupplot[xmin=8,xmax=24,xlabel={$t$ (ms)},ylabel={$\bar v_o$ (V)},legend style={font=\scriptsize,at={(.5,1.02)},anchor=south,legend columns=3,/tikz/every even column/.append style={column sep=2pt}}]
+\addplot[blue,solid,thick] table[x=t,y=v,col sep=comma]{data/open_down_model.csv};
+\addplot[orange,dashed,thick] table[x=t,y=v,col sep=comma]{data/open_down_pwm.csv};
+\addplot[black,densely dotted,thick] table[x=t,y=v,col sep=comma]{data/open_down_circuit.csv};
+\legend{Modelo ideal,PWM ideal,Circuito}\addplot[gray,dashdotted,forget plot] coordinates {(10,7.2)(30,7.2)};
+\nextgroupplot[xmin=29,xmax=29.5,xlabel={$t$ (ms)},ylabel={$v_o$ (V)},scaled x ticks=false,xtick={29,29.2,29.4}]
+\addplot[black,thin] table[x=t,y=v,col sep=comma]{data/open_down_ripple.csv};\end{groupplot}\end{tikzpicture}\caption{Escalón $d^{\prime}:0.5\to0.4$, aplicado en $10\,\mathrm{ms}$. Se conserva el signo de la respuesta.}\label{fig:open_down}\end{figure}
+\begin{table}[H]\caption{Dinámica del circuito respecto de su propio final}\label{tab:open-dynamics}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}\begin{tabularx}{\columnwidth}{LYY}\toprule
+Magnitud & $+0.1$ & $-0.1$\\\midrule
+$t_s$ (ms) & 0.950 & 0.950\\
+$M_p$ (\%) & 16.43 & 16.01\\
+Rizado pico a pico (V) & 0.280 & 0.281\\
+$i_{L,\min}$ (A) & 0.458 & 0.807\\\bottomrule\end{tabularx}\end{table}
+El circuito no alcanza el destino ideal: su $t_s$ usa una banda del 2\% de su propio cambio final. En el PWM ideal, $t_s=1.05$ y $0.95\,\mathrm{ms}$, con $M_p=17.32\%$ y $16.87\%$. Las medias tienen resolución temporal de $0.1\,\mathrm{ms}$.
+
+Reducir el paso máximo a $250\,\mathrm{ns}$ en el escalón ascendente de $d^{\prime}$ cambia las medias como máximo $0.927\,\mathrm{mV}$. Esto comprueba convergencia numérica para ese caso, no exactitud física de los parámetros.
+
+\section{Relación con la placa diseñada}
+El circuito completo evaluado aquí conserva el driver discreto BJT y sus modelos genéricos. La placa posterior usa IR2110, inversión HCT14, dos inductores de $330\,\mu\mathrm{H}$ en serie y shunt de $0.05\,\Omega$. El divisor pasa de $30/10\,\mathrm{k}\Omega$ a $3/1\,\mathrm{k}\Omega$. Se conserva $d=1-d^{\prime}$, pero cambian pérdidas y retardos. Por ello estas curvas no validan por sí solas la placa IR2110; su estimación separada se presenta en la entrega 3.
+
+\section{Conclusiones}
+El modelo reproduce el sentido y la oscilación amortiguada de ambos escalones. Separar sesgo y error incremental sustenta su uso para diseño de baja frecuencia. La validación física exige medir componentes y repetir los ensayos en laboratorio.
+
+\begin{thebibliography}{9}
+\bibitem{guide}J. D. Bastidas Rodríguez, ``Proyecto de Curso: Convertidor Buck con control de tensión de salida, Universidad Nacional de Colombia, mayo 2025, pp. 1--3.
+\bibitem{dynamics}Material de Sistemas Dinámicos y Control, ``Dynamic Response, Universidad Nacional de Colombia, material de clase.
+\bibitem{matlab}MathWorks, \emph{MATLAB, Simulink y Control System Toolbox}, R2026a, documentación de \texttt{lsim}, \texttt{margin}, \texttt{feedback}, \texttt{c2d} y \texttt{stepinfo}, 2026.
+\bibitem{ngspice}The ngspice team, \emph{ngspice User Manual}, versión 44.2. Disponible: \url{https://ngspice.sourceforge.io/docs.html}.
+\end{thebibliography}\end{document}

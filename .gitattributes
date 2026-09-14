@@ -1,0 +1,9 @@
+# Keep document, model and executable formats out of text diffs.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.zip binary
+*.slx binary
+*.mat binary
+*.bin binary
+*.elf binary

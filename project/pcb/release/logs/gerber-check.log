@@ -1,0 +1,27 @@
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/venv/lib/python3.14/site-packages/gerbonara/excellon.py:576: SyntaxWarning: /home/mitin/code/uni/DynamicSystemsAndControl/project/pcb/release/fabrication-review/buck-NPTH.drl:10 "G90": G90 header statement found after end of header
+  warnings.warn(f'{self.filename}:{self.lineno} "{self.line}": {msg}', SyntaxWarning)
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/venv/lib/python3.14/site-packages/gerbonara/excellon.py:576: SyntaxWarning: /home/mitin/code/uni/DynamicSystemsAndControl/project/pcb/release/fabrication-review/buck-PTH.drl:22 "G90": G90 header statement found after end of header
+  warnings.warn(f'{self.filename}:{self.lineno} "{self.line}": {msg}', SyntaxWarning)
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/venv/lib/python3.14/site-packages/gerbonara/apertures.py:465: UserWarning: Aperture definition using macro RoundRect has more parameters than the macro uses.
+  warnings.warn(f'Aperture definition using macro {self.macro.name} has more parameters than the macro uses.')
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/venv/lib/python3.14/site-packages/gerbonara/layers.py:979: UserWarning: Layer "top paste" not found. Found layers: top copper, top mask, top silk, bottom copper, bottom mask, bottom silk, mechanical outline
+  warnings.warn(f'Layer "{side} {use}" not found. Found layers: {", ".join(side + " " + use for side, use in self.graphic_layers)}')
+/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-tools/venv/lib/python3.14/site-packages/gerbonara/layers.py:979: UserWarning: Layer "bottom paste" not found. Found layers: top copper, top mask, top silk, bottom copper, bottom mask, bottom silk, mechanical outline
+  warnings.warn(f'Layer "{side} {use}" not found. Found layers: {", ".join(side + " " + use for side, use in self.graphic_layers)}')
+{
+  "reader": "gerbonara 1.6.3",
+  "bounds_mm": [
+    [
+      9.975,
+      -109.025
+    ],
+    [
+      109.025,
+      -9.975
+    ]
+  ],
+  "plated_holes": 158,
+  "nonplated_holes": 0,
+  "copper_layers": 2,
+  "status": "PASS: exports readable; dimensions/layers/drill counts agree"
+}

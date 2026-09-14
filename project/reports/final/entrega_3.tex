@@ -1,0 +1,181 @@
+\RequirePackage[T1]{fontenc}
+\documentclass[conference,letterpaper]{IEEEtran}
+\usepackage[spanish,es-nodecimaldot,es-tabla,es-noshorthands]{babel}
+\usepackage{amsmath,amssymb,siunitx,booktabs,tabularx}
+\usepackage{tikz,circuitikz,pgfplots}
+\usetikzlibrary{arrows.meta,positioning,babel}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\usepackage{float}
+\usepackage[nospread]{flushend}
+\usepackage[hidelinks]{hyperref}
+\raggedbottom
+\interdisplaylinepenalty=2500
+\setlength{\emergencystretch}{1em}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcommand{\plotstyle}{ }
+\begin{document}
+\special{pdf:minorversion 7}
+\title{Diseño y validación del regulador PI}\author{\IEEEauthorblockN{Martín Ramírez Espinosa, Jerónimo Vargas Orozco\\Andrew Esteban Henao Becerra, Mateo Alexander Cardenas Cuesta}
+\IEEEauthorblockA{Universidad Nacional de Colombia, Sede Manizales\\\texttt{maramirezes@unal.edu.co}, \texttt{jevargaso@unal.edu.co}\\\texttt{anhenaobe@unal.edu.co}, \texttt{macardenascu@unal.edu.co}}}
+\hypersetup{pdftitle={Diseño y validación del regulador PI},pdfauthor={Martín Ramírez Espinosa, Jerónimo Vargas Orozco, Andrew Esteban Henao Becerra, Mateo Alexander Cardenas Cuesta}}\maketitle
+\begin{center}\small Entrega 3: Control de tensión de salida\end{center}
+\begin{abstract}Se diseña un PI mediante respuesta en frecuencia para regular 6 V. Se documentan signo, saturación, anti-windup y discretización. Cuatro escenarios de referencia y carga se contrastan en modelos promediados, PWM digital y circuito completo. Los resultados son exclusivamente numéricos.\end{abstract}
+\section{Especificaciones y signo del lazo}
+La guía pide un compensador de la familia PID y cuatro escenarios \cite{guide}. Se elige PI ($K_d=0$). Las siguientes metas son decisiones de diseño y se aplican a la tensión media por periodo.
+
+\begin{table}[H]\caption{Metas de diseño}\label{tab:specs}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}\begin{tabularx}{\columnwidth}{LY}\toprule
+Magnitud & Criterio\\\midrule
+Referencia nominal & $6\,\mathrm{V}$\\
+Error final & $<20\,\mathrm{mV}$\\
+$t_s$ en referencia & $<10\,\mathrm{ms}$; banda $\pm20\,\mathrm{mV}$\\
+$M_p$ en referencia & $<10\%$ del escalón de $1\,\mathrm{V}$\\
+$t_s$ en carga & $<10\,\mathrm{ms}$; banda $\pm0.12\,\mathrm{V}$\\
+Pico en carga & $<0.8\,\mathrm{V}$\\
+Duty físico & $0.05\leq d\leq0.95$\\
+Margen de fase & $>60^\circ$ (modelo continuo)\\\bottomrule\end{tabularx}\end{table}
+Se define $e=r-\bar v_o$ y se diseña sobre $G_d=-G_{d^{\prime}}$, positiva. El compensador hacia $d^{\prime}$ es $H=-K$; así $G_{d^{\prime}}H=G_dK$. La Fig.~\ref{fig:control} muestra el complemento explícito.
+
+\begin{equation}\label{eq:controller}\begin{aligned}K(s)&=K_p+\frac{K_i}{s},\\d^{\prime}&=1-\operatorname{sat}(0.5+K_pe+z).\end{aligned}\end{equation}
+\begin{figure}[H]\centering\resizebox{\columnwidth}{!}{\begin{tikzpicture}[font=\footnotesize,>=Stealth,
+b/.style={draw,align=center,minimum height=7mm}]
+\node[draw,circle,inner sep=1pt] (sum) at (0,0) {$\Sigma$};
+\node[b] (pi) at (1.15,0) {PI};
+\node[b] (inv) at (2.45,0) {$1-d$};
+\node[b] (pwm) at (4.2,0) {PWM\\driver};
+\node[b] (plant) at (6.05,0) {Buck};
+\draw[->] (-.6,0) node[left]{$r$} -- (sum);
+\draw[->] (sum) -- node[above]{$e$} (pi);
+\draw[->] (pi) -- node[above]{$d$} (inv);
+\draw[->] (inv) -- node[above]{$d^{\prime}$} (pwm);
+\draw[->] (pwm) -- node[above]{$d$} (plant);
+\draw[->] (plant) -- (6.85,0) node[right]{$v_o$};
+\draw[->] (6.65,0) |- (3.4,-1) node[below]{sensor y promedio} -| node[pos=.97,left]{$-$} (sum);
+\end{tikzpicture}}\caption{Lazo de regulación. PI incluye sesgo, saturación y anti-windup. PWM y driver convierten $d^{\prime}$ en duty físico $d$.}\label{fig:control}\end{figure}
+\section{Diseño por respuesta en frecuencia}
+Se aplica la condición de cruce de clase \cite{frequency}. Se fijan $\omega_c=1000\,\mathrm{rad/s}$ ($159.15\,\mathrm{Hz}$) y $\omega_z=3000\,\mathrm{rad/s}$, muy por debajo de $f_s=10\,\mathrm{kHz}$:
+
+\begin{equation}\label{eq:design}\begin{aligned}A_c&=1-LC\omega_c^2,\quad B_c=L\omega_c/R,\\|G_d(j\omega_c)|&=\frac{V_{\mathrm{in}}}{\sqrt{A_c^2+B_c^2}}=12.08566\,\mathrm{V},\\K_p&=\frac{1}{|G_d(j\omega_c)|\sqrt{1+(\omega_z/\omega_c)^2}},\\K_i&=\omega_zK_p.\end{aligned}\end{equation}
+\begin{equation}\label{eq:gains}\begin{aligned}K_p&=0.026165529\,\mathrm{V}^{-1},\\K_i&=78.496586\,(\mathrm{V\,s})^{-1},\\T_i&=K_p/K_i=0.333333\,\mathrm{ms}.\end{aligned}\end{equation}
+$\angle G_d(j\omega_c)=-6.3606^\circ$ y $\angle K(j\omega_c)=-71.5651^\circ$. MATLAB \cite{matlab} obtiene margen de fase $102.075^\circ$ y cruce $1000.019\,\mathrm{rad/s}$ (Fig.~\ref{fig:bode}).
+
+\begin{figure}[H]\centering\begin{tikzpicture}\begin{groupplot}[group style={group size=1 by 2,vertical sep=9mm},width=.96\columnwidth,height=3.6cm,scale only axis=false,xmode=log,xmin=10,xmax=100000,grid=major,tick label style={font=\scriptsize},label style={font=\footnotesize}]
+\nextgroupplot[ylabel={Magnitud (dB)}]
+\addplot[blue,thick] table[x=w,y=mag,col sep=comma]{data/bode.csv};
+\addplot[gray,dashed] coordinates {(10,0)(100000,0)};
+\draw[dashed,orange] (axis cs:1000,-50)--(axis cs:1000,45);
+\nextgroupplot[ylabel={Fase ($^\circ$)},xlabel={$\omega$ ($\mathrm{rad/s}$)}]
+\addplot[blue,thick] table[x=w,y=phase,col sep=comma]{data/bode.csv};
+\addplot[gray,dashed] coordinates {(10,-180)(100000,-180)};
+\draw[dashed,orange] (axis cs:1000,-180)--(axis cs:1000,-40);
+\end{groupplot}\end{tikzpicture}\caption{Lazo continuo $K(j\omega)G_d(j\omega)$; línea vertical en $\omega_c$. No hay cruce finito de $-180^\circ$.}\label{fig:bode}\end{figure}
+El margen de ganancia nominal es infinito dentro del modelo continuo; no incluye retardos ni polos parásitos del hardware. La integral corrige errores constantes y se omite la derivada para evitar amplificar ruido y rizado.
+
+\begin{equation}\label{eq:closed}\begin{aligned}T(s)&=\frac{V_{\mathrm{in}}(K_ps+K_i)}{D_{\mathrm{cl}}(s)},\\D_{\mathrm{cl}}(s)&=LCs^3+(L/R)s^2\\&\quad+(1+V_{\mathrm{in}}K_p)s+V_{\mathrm{in}}K_i.\end{aligned}\end{equation}
+La respuesta continua tiene subida 10--90\% de $2.613\,\mathrm{ms}$, establecimiento al 2\% de $4.832\,\mathrm{ms}$ y sobreimpulso nulo.
+
+\section{Perturbaciones y algoritmo digital}
+La carga cambia a $7.2$ o $4.8\,\Omega$ manteniendo $r=6\,\mathrm{V}$. Para corriente adicional extraída de la salida:
+
+\begin{equation}\label{eq:disturbance}\frac{\widetilde V_o}{\widetilde I_{\mathrm{carga}}}=\frac{-Ls}{LCs^2+(L/R)s+1}\frac1{1+G_dK}.\end{equation}
+La aproximación $\tilde i_{\mathrm{carga}}\simeq-V_o\tilde R/R^2$ es local. Los ensayos de $\pm20\%$ usan $R(t)$ directamente. Al aumentar $R$, la tensión sube inicialmente porque disminuye la corriente de carga.
+
+\begin{equation}\label{eq:discrete}\begin{aligned}u_k&=0.5+K_pe_k+z_k,\\d_k^{\mathrm{cmd}}&=\min(0.95,\max(0.05,u_k)),\\z_{k+1}&=\begin{cases}z_k,&\mathcal S_k,\\z_k+K_iT_se_k,&\text{en otro caso},\end{cases}\\\mathcal S_k&=(u_k\geq0.95\land e_k>0)\\&\quad\lor(u_k\leq0.05\land e_k<0).\end{aligned}\end{equation}
+El integrador se congela sólo si profundiza la saturación. Se usa $T_s=100\,\mu\mathrm{s}$, medida media del periodo completado y orden aplicada $d_k^{\mathrm{ap}}=d_{k-1}^{\mathrm{cmd}}$. En el equilibrio ideal: $V_o=6\,\mathrm{V}$, $I_L=1\,\mathrm{A}$ y $z_0=0$.
+
+\begin{figure}[H]\centering\resizebox{\columnwidth}{!}{\begin{tikzpicture}[font=\footnotesize,>=Stealth]
+\draw[->] (0,0) -- (7.6,0) node[right]{$t$};
+\foreach \x/\lab in {0/{k-1},2.4/k,4.8/{k+1},7.2/{k+2}} {
+\draw (\x,-.1)--(\x,.1) node[above]{$\lab$};}
+\draw[<->] (0,-.5)--node[below]{media $\bar v_{k-1}$}(2.4,-.5);
+\node[align=center] at (2.4,-1.35) {cálculo\\$d_k^{\mathrm{cmd}}$};
+\draw[->] (2.4,-1.8)--node[below]{precarga: $T_s$}(4.8,-1.8);
+\draw[<->] (4.8,-.5)--node[below]{$d_k^{\mathrm{cmd}}$ aplicado}(7.2,-.5);
+\end{tikzpicture}}\caption{Temporización digital: cálculo con la media anterior y orden aplicada un periodo después. El promedio también modifica la dinámica de medida.}\label{fig:timing}\end{figure}
+\section{Validación y alcance}
+MATLAB usa \texttt{ode45}, tolerancias relativa $10^{-8}$ y absoluta $10^{-10}$, paso máximo $10\,\mu\mathrm{s}$ y tramos separados en el evento de $10\,\mathrm{ms}$. Simulink representa las mismas ecuaciones. ngspice emplea PI continuo y parte desde reposo; el PWM ideal usa PI digital con promedio y retardo. Las gráficas identifican estas realizaciones distintas.
+
+La máxima diferencia MATLAB--Simulink es $43.414\,\mu\mathrm{V}$. El modelo lineal ZOH con retardo de un periodo tiene radio de polos $0.915396<1$. Son estables las 27 combinaciones de $R,L,C$ al 80, 100 y 120\%, tanto continuas como discretas. La malla no prueba todas las tolerancias ni la transición CCM/DCM.
+
+\section{Resultados}
+El error final es $|\operatorname{media}_{25\text{--}30\,\mathrm{ms}}(\bar v_o)-r_f|$. El establecimiento se obtiene del último incumplimiento de la banda desde el evento, con resolución $T_s$. El sobreimpulso se normaliza por $1\,\mathrm{V}$ en referencia; en carga se mide $\max|\bar v_o-6|$. Las Figs.~\ref{fig:ref_up}--\ref{fig:load_down} muestran los cuatro casos.
+
+\begin{table}[H]\caption{PWM ideal con PI digital}\label{tab:pwm}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}\begin{tabularx}{\columnwidth}{LYYYY}\toprule
+Caso & $t_s$ (ms) & $|e_\infty|$ (mV) & $M_p$/pico & Rizado (V)\\\midrule
+$6\to7\,\mathrm{V}$ & 4.15 & 0.0002 & 0.000\% & 0.277\\
+$6\to5\,\mathrm{V}$ & 4.05 & 0.0002 & 0.000\% & 0.277\\
+$R:+20\%$ & 0.85 & 0.0000 & 0.560 V & 0.286\\
+$R:-20\%$ & 0.85 & 0.0000 & 0.691 V & 0.282\\\bottomrule\end{tabularx}\end{table}
+\begin{table}[H]\caption{Circuito con PI continuo}\label{tab:circuit}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}\begin{tabularx}{\columnwidth}{LYYYY}\toprule
+Caso & $t_s$ (ms) & $|e_\infty|$ (mV) & $M_p$/pico & Rizado (V)\\\midrule
+$6\to7\,\mathrm{V}$ & 4.95 & 0.0048 & 0.012\% & 0.279\\
+$6\to5\,\mathrm{V}$ & 4.95 & 0.0110 & 0.012\% & 0.288\\
+$R:+20\%$ & 0.65 & 0.0146 & 0.487 V & 0.293\\
+$R:-20\%$ & 0.65 & 0.0159 & 0.605 V & 0.289\\\bottomrule\end{tabularx}\end{table}
+El rizado es pico a pico. Los errores medios menores que $0.02\,\mathrm{mV}$ son precisión numérica del modelo, no una garantía para ADC reales. Ambas realizaciones cumplen las metas nominales.
+
+\begin{figure}[H]\centering\begin{tikzpicture}\begin{groupplot}[group style={group size=1 by 2,vertical sep=12mm},width=.96\columnwidth,height=3.8cm,grid=major,tick label style={font=\scriptsize},label style={font=\footnotesize}]
+\nextgroupplot[xmin=8,xmax=24,xlabel={$t$ (ms)},ylabel={$\bar v_o$ (V)},legend style={font=\scriptsize,at={(.5,1.02)},anchor=south,legend columns=3,/tikz/every even column/.append style={column sep=2pt}}]
+\addplot[blue,solid,thick] table[x=t,y=v,col sep=comma]{data/ref_up_model.csv};
+\addplot[orange,dashed,thick] table[x=t,y=v,col sep=comma]{data/ref_up_pwm.csv};
+\addplot[black,densely dotted,thick] table[x=t,y=v,col sep=comma]{data/ref_up_circuit.csv};
+\legend{Promediado,PWM digital,Circuito}\addplot[gray,dashdotted,forget plot] coordinates {(10,6.98)(30,6.98)};\addplot[gray,dashdotted,forget plot] coordinates {(10,7.02)(30,7.02)};
+\nextgroupplot[xmin=29,xmax=29.5,xlabel={$t$ (ms)},ylabel={$v_o$ (V)},scaled x ticks=false,xtick={29,29.2,29.4}]
+\addplot[black,thin] table[x=t,y=v,col sep=comma]{data/ref_up_ripple.csv};\end{groupplot}\end{tikzpicture}\caption{Respuesta a $6\to7\,\mathrm{V}$. Arriba: medias y banda de establecimiento; abajo: rizado estacionario del circuito.}\label{fig:ref_up}\end{figure}
+\begin{figure}[H]\centering\begin{tikzpicture}\begin{groupplot}[group style={group size=1 by 2,vertical sep=12mm},width=.96\columnwidth,height=3.8cm,grid=major,tick label style={font=\scriptsize},label style={font=\footnotesize}]
+\nextgroupplot[xmin=8,xmax=24,xlabel={$t$ (ms)},ylabel={$\bar v_o$ (V)},legend style={font=\scriptsize,at={(.5,1.02)},anchor=south,legend columns=3,/tikz/every even column/.append style={column sep=2pt}}]
+\addplot[blue,solid,thick] table[x=t,y=v,col sep=comma]{data/ref_down_model.csv};
+\addplot[orange,dashed,thick] table[x=t,y=v,col sep=comma]{data/ref_down_pwm.csv};
+\addplot[black,densely dotted,thick] table[x=t,y=v,col sep=comma]{data/ref_down_circuit.csv};
+\legend{Promediado,PWM digital,Circuito}\addplot[gray,dashdotted,forget plot] coordinates {(10,4.98)(30,4.98)};\addplot[gray,dashdotted,forget plot] coordinates {(10,5.02)(30,5.02)};
+\nextgroupplot[xmin=29,xmax=29.5,xlabel={$t$ (ms)},ylabel={$v_o$ (V)},scaled x ticks=false,xtick={29,29.2,29.4}]
+\addplot[black,thin] table[x=t,y=v,col sep=comma]{data/ref_down_ripple.csv};\end{groupplot}\end{tikzpicture}\caption{Respuesta a $6\to5\,\mathrm{V}$. Arriba: medias y banda de establecimiento; abajo: rizado estacionario del circuito.}\label{fig:ref_down}\end{figure}
+\begin{figure}[H]\centering\begin{tikzpicture}\begin{groupplot}[group style={group size=1 by 2,vertical sep=12mm},width=.96\columnwidth,height=3.8cm,grid=major,tick label style={font=\scriptsize},label style={font=\footnotesize}]
+\nextgroupplot[xmin=8,xmax=24,xlabel={$t$ (ms)},ylabel={$\bar v_o$ (V)},legend style={font=\scriptsize,at={(.5,1.02)},anchor=south,legend columns=3,/tikz/every even column/.append style={column sep=2pt}}]
+\addplot[blue,solid,thick] table[x=t,y=v,col sep=comma]{data/load_up_model.csv};
+\addplot[orange,dashed,thick] table[x=t,y=v,col sep=comma]{data/load_up_pwm.csv};
+\addplot[black,densely dotted,thick] table[x=t,y=v,col sep=comma]{data/load_up_circuit.csv};
+\legend{Promediado,PWM digital,Circuito}\addplot[gray,dashdotted,forget plot] coordinates {(10,5.88)(30,5.88)};\addplot[gray,dashdotted,forget plot] coordinates {(10,6.12)(30,6.12)};
+\nextgroupplot[xmin=29,xmax=29.5,xlabel={$t$ (ms)},ylabel={$v_o$ (V)},scaled x ticks=false,xtick={29,29.2,29.4}]
+\addplot[black,thin] table[x=t,y=v,col sep=comma]{data/load_up_ripple.csv};\end{groupplot}\end{tikzpicture}\caption{Respuesta a $R:+20\%$. Arriba: medias y banda de establecimiento; abajo: rizado estacionario del circuito.}\label{fig:load_up}\end{figure}
+\begin{figure}[H]\centering\begin{tikzpicture}\begin{groupplot}[group style={group size=1 by 2,vertical sep=12mm},width=.96\columnwidth,height=3.8cm,grid=major,tick label style={font=\scriptsize},label style={font=\footnotesize}]
+\nextgroupplot[xmin=8,xmax=24,xlabel={$t$ (ms)},ylabel={$\bar v_o$ (V)},legend style={font=\scriptsize,at={(.5,1.02)},anchor=south,legend columns=3,/tikz/every even column/.append style={column sep=2pt}}]
+\addplot[blue,solid,thick] table[x=t,y=v,col sep=comma]{data/load_down_model.csv};
+\addplot[orange,dashed,thick] table[x=t,y=v,col sep=comma]{data/load_down_pwm.csv};
+\addplot[black,densely dotted,thick] table[x=t,y=v,col sep=comma]{data/load_down_circuit.csv};
+\legend{Promediado,PWM digital,Circuito}\addplot[gray,dashdotted,forget plot] coordinates {(10,5.88)(30,5.88)};\addplot[gray,dashdotted,forget plot] coordinates {(10,6.12)(30,6.12)};
+\nextgroupplot[xmin=29,xmax=29.5,xlabel={$t$ (ms)},ylabel={$v_o$ (V)},scaled x ticks=false,xtick={29,29.2,29.4}]
+\addplot[black,thin] table[x=t,y=v,col sep=comma]{data/load_down_ripple.csv};\end{groupplot}\end{tikzpicture}\caption{Respuesta a $R:-20\%$. Arriba: medias y banda de establecimiento; abajo: rizado estacionario del circuito.}\label{fig:load_down}\end{figure}
+El circuito tiene menores picos de carga y mayor establecimiento en referencia que el PWM digital. Difieren tanto pérdidas como temporización; no se atribuye toda la diferencia a los semiconductores. La integral corrige el sesgo, pero no elimina el rizado de conmutación.
+
+\section{Vínculo con el procedimiento de clase}
+El capítulo 10 de clase, sección 7, lámina 90, describe el PI y recomienda normalmente un cero muy inferior al cruce para reducir su pérdida de fase \cite{frequency}. Aquí se adopta deliberadamente $\omega_z=3000\,\mathrm{rad/s}>\omega_c=1000\,\mathrm{rad/s}$: el PI aporta aproximadamente $-71.565^\circ$ y la planta $-6.36^\circ$, dejando $102.07^\circ$ de margen continuo. La elección aumenta la acción integral y se acepta por el margen calculado y los ensayos numéricos; no reproduce la recomendación usual de ubicación del cero. El procedimiento conserva selección de cruce, normalización de ganancia, verificación de margen y comprobación transitoria.
+
+\section{Estimación adicional de la realización STM32}
+Se seleccionó STM32F103C8T6 externo, con PI C, ADC de 12 bits, 20 muestras por periodo y PWM de $10\,\mathrm{kHz}$. La simulación adicional ejecuta el algoritmo C e incluye media, cuantización y un periodo de retardo; no sustituye las curvas anteriores.
+
+\begin{table}[H]\caption{Alcance de cada realización}\label{tab:model-scope}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}\begin{tabularx}{\columnwidth}{LY}\toprule
+Realización & Hipótesis principales\\\midrule
+Promediado / continuo & Planta ideal; PI continuo\\
+PWM ideal / digital & Media y retardo; conmutación ideal\\
+ngspice / BJT & PI continuo; DCR 0.1 y ESR 0.05 ohm\\
+Estimación PCB / C & DCR 0.20, ESR 0.15, shunt 0.05 ohm; ADC y retardo\\\bottomrule\end{tabularx}\end{table}
+La estimación PCB usa $R_{\mathrm{DS}}=0.022\,\Omega$, $V_F=0.45\,\mathrm{V}$ y retardos de encendido/apagado de 120/94 ns como supuestos. Euler usa paso de $0.5\,\mu\mathrm{s}$ con fracción de flanco PWM; parte de energía nula y aplica el evento tras 800 ms. Se muestran 40 ms con evento en 10 ms. No modela saturación, térmica, EMI ni la recarga real del bootstrap.
+
+\begin{table}[H]\caption{Resultados adicionales estimados; no medidos}\label{tab:pcb-results}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.18}\begin{tabularx}{\columnwidth}{LYY}\toprule
+Caso & $t_s$ (ms) & $|e_\infty|$ (mV)\\\midrule
+6 a 7 V & 4.30 & 0.364\\
+6 a 5 V & 4.30 & 0.988\\
+6 a 7.2 ohm & 0.80 & 0.253\\
+6 a 4.8 ohm & 0.90 & 0.176\\\bottomrule\end{tabularx}\end{table}
+Las bandas son $\pm20\,\mathrm{mV}$ en referencia y $\pm0.12\,\mathrm{V}$ en carga. Seis escenarios no activan la protección simulada; corriente máxima $1.549272\,\mathrm{A}$. Reducir el paso a $0.25\,\mu\mathrm{s}$ cambia la media como máximo $1.345\,\mathrm{mV}$ en referencia ascendente. Los umbrales nominales de protección no son tolerancias garantizadas.
+
+\section{Conclusiones}
+El PI cumple los escenarios nominales y mantiene estabilidad en la malla evaluada. El signo inversor, los límites y el anti-windup son explícitos. La validación física requiere verificar adquisición, retardo y apagado y repetir los cuatro casos.
+
+\begin{thebibliography}{9}
+\bibitem{guide}J. D. Bastidas Rodríguez, ``Proyecto de Curso: Convertidor Buck con control de tensión de salida, Universidad Nacional de Colombia, mayo 2025, pp. 1--3.
+\bibitem{frequency}Material de Sistemas Dinámicos y Control, ``The Frequency-Response Design Method, cap. 10, material de clase.
+\bibitem{matlab}MathWorks, \emph{MATLAB, Simulink y Control System Toolbox}, R2026a, documentación de \texttt{lsim}, \texttt{margin}, \texttt{feedback}, \texttt{c2d} y \texttt{stepinfo}, 2026.
+\end{thebibliography}\end{document}

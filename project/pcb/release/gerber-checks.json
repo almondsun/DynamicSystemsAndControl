@@ -1,0 +1,17 @@
+{
+  "reader": "gerbonara 1.6.3",
+  "bounds_mm": [
+    [
+      9.975,
+      -109.025
+    ],
+    [
+      109.025,
+      -9.975
+    ]
+  ],
+  "plated_holes": 158,
+  "nonplated_holes": 0,
+  "copper_layers": 2,
+  "status": "PASS: exports readable; dimensions/layers/drill counts agree"
+}

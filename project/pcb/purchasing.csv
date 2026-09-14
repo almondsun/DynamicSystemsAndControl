@@ -1,0 +1,70 @@
+group,references,item,installed,spares,buy_qty,unit_COP,total_COP,price_status,source,qualification
+PCB,J1,12V FUSED INPUT,1,0,1,1500,1500,planning allowance; NOT a quote,pending supplier quote,External 2A fast fuse; current-limited laboratory supply
+PCB,Q1,IRFZ44N TO-220,1,1,2,1800,3600,planning allowance; NOT a quote,pending supplier quote,Gate/drain/source; metal tab VIN
+PCB,D1,1N5822 40V 3A,1,1,2,404.6,809.2,observed 2026-09-14; reconfirm,https://www.didacticaselectronicas.com/shop/1n5822-tp-diodo-schottky-40v-3a-do-201ad-4261,"Pin 1 cathode band, pin 2 anode"
+PCB,L1,330uH >=3A Isat VERIFY,1,0,1,3871.07,3871.07,observed 2026-09-14; reconfirm; dimensions/Isat unqualified,https://www.didacticaselectronicas.com/shop/bob-v-65125-330uh-bobina-toroidal-vertical-de-330uh-5a-24437,"Check actual dimensions, DCR and saturation before ordering PCB"
+PCB,L2,330uH >=3A Isat VERIFY,1,0,1,3871.07,3871.07,observed 2026-09-14; reconfirm; dimensions/Isat unqualified,https://www.didacticaselectronicas.com/shop/bob-v-65125-330uh-bobina-toroidal-vertical-de-330uh-5a-24437,"Check actual dimensions, DCR and saturation before ordering PCB"
+PCB,RS1,0.050R 1% 1W,1,1,2,2500,5000,planning allowance; NOT a quote,pending supplier quote,Kelvin sense at pads; CRCW2512 0R050 or verified equivalent
+PCB,J2,LOAD + / -,1,0,1,1500,1500,planning allowance; NOT a quote,pending supplier quote,
+PCB,C1,100uF 25V,1,0,1,1000,1000,planning allowance; NOT a quote,pending supplier quote,Input bulk; positive pin 1
+PCB,C2,100uF 25V,1,0,1,1000,1000,planning allowance; NOT a quote,pending supplier quote,Input bulk; positive pin 1
+PCB,C3,100nF 50V,1,0,1,250,250,planning allowance; NOT a quote,pending supplier quote,
+PCB,C4,10uF 35V low ESR,1,1,2,1000,2000,planning allowance; NOT a quote; exact MPN/ripple rating unqualified,pending supplier quote,Exact 20uF total target; verify ripple rating and measured capacitance
+PCB,C5,10uF 35V low ESR,1,1,2,1000,2000,planning allowance; NOT a quote; exact MPN/ripple rating unqualified,pending supplier quote,Exact 20uF total target; verify ripple rating and measured capacitance
+PCB,U1,IR2110PBF DIP14,1,1,2,10890.88,21781.76,observed 2026-09-14; reconfirm,https://www.didacticaselectronicas.com/shop/ir2110-driver-mosfet-ir2110-500v-2a-6383,
+PCB,D2,UF4004,1,0,1,400,400,planning allowance; NOT a quote,pending supplier quote,Bootstrap: cathode to BOOT
+PCB,C6,1uF 50V X7R,1,0,1,800,800,planning allowance; NOT a quote,pending supplier quote,
+PCB,C7,100nF 50V,1,0,1,250,250,planning allowance; NOT a quote,pending supplier quote,
+PCB,C8,100nF 50V,1,0,1,250,250,planning allowance; NOT a quote,pending supplier quote,
+PCB,R1,10R,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,R2,10k,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,U2,L7805CV,1,0,1,1500,1500,planning allowance; NOT a quote,pending supplier quote,Input / ground / output; evaluate dissipation
+PCB,C9,330nF 50V,1,0,1,250,250,planning allowance; NOT a quote,pending supplier quote,
+PCB,C10,100nF 50V,1,0,1,250,250,planning allowance; NOT a quote,pending supplier quote,
+PCB,C11,10uF 25V,1,0,1,1000,1000,planning allowance; NOT a quote,pending supplier quote,
+PCB,U3,SN74HCT14N,1,0,1,1800,1800,planning allowance; NOT a quote,pending supplier quote,HCT TTL thresholds; do not substitute HC at 5V
+PCB,R3,10k,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,R4,1k,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,C12,100nF,1,0,1,250,250,planning allowance; NOT a quote,pending supplier quote,
+PCB,U4,SN74HCT00N,1,0,1,1800,1800,planning allowance; NOT a quote,pending supplier quote,Set-dominant NAND latch; SD = NOT(RUN AND NFAULT)
+PCB,C13,100nF,1,0,1,250,250,planning allowance; NOT a quote,pending supplier quote,
+PCB,R5,10k,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,R6,10k,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,R7,4.7k,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,U5,LM393P,1,0,1,1200,1200,planning allowance; NOT a quote,pending supplier quote,Two open-collector outputs wired together; overcurrent OR overvoltage
+PCB,C14,100nF,1,0,1,250,250,planning allowance; NOT a quote,pending supplier quote,
+PCB,R8,15k 1%,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,R9,10k 1%,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,C15,100nF,1,0,1,250,250,planning allowance; NOT a quote,pending supplier quote,
+PCB,R10,31k 1%,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,R11,10k 1%,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,U6,INA180A1IDBVR,1,1,2,6500,13000,planning allowance; NOT a quote,pending supplier quote,Pinout A ONLY; gain 20 V/V; sense RS1 pads directly
+PCB,C16,100nF,1,0,1,250,250,planning allowance; NOT a quote,pending supplier quote,
+PCB,Q2,2N3904,1,0,1,300,300,planning allowance; NOT a quote,pending supplier quote,E/B/C pin order must match purchased manufacturer
+PCB,R12,10k,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,R13,10k,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,R14,3k 1%,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,R15,1k 1%,1,0,1,100,100,planning allowance; NOT a quote,pending supplier quote,
+PCB,C17,1nF,1,0,1,250,250,planning allowance; NOT a quote,pending supplier quote,
+PCB,J3,STM32 CABLE 2x5,1,0,1,700,700,planning allowance; NOT a quote,pending supplier quote,Key/polarize cable; external Blue Pill not integrated
+PCB,TP1,VIN,1,0,1,50,50,planning allowance; NOT a quote,pending supplier quote,
+PCB,TP2,GND,1,0,1,50,50,planning allowance; NOT a quote,pending supplier quote,
+PCB,TP3,SW,1,0,1,50,50,planning allowance; NOT a quote,pending supplier quote,
+PCB,TP4,GATE,1,0,1,50,50,planning allowance; NOT a quote,pending supplier quote,
+PCB,TP5,VOUT,1,0,1,50,50,planning allowance; NOT a quote,pending supplier quote,
+PCB,TP6,ISENSE,1,0,1,50,50,planning allowance; NOT a quote,pending supplier quote,
+PCB,TP7,SD,1,0,1,50,50,planning allowance; NOT a quote,pending supplier quote,
+PCB,TP8,NTRIP,1,0,1,50,50,planning allowance; NOT a quote,pending supplier quote,
+PCB,TP9,MCU_PWM,1,0,1,50,50,planning allowance; NOT a quote,pending supplier quote,
+controller,MCU,STM32F103C8T6 USB-C D-STM32F103C8T6-C,1,1,2,10890.88,21781.76,"observed; verify clone, flash, crystal and ADC",https://www.didacticaselectronicas.com/shop/d-stm32f103c8t6-c-tarjeta-de-desarrollo-stm32f103c8t6-usb-tipo-c-39492,Verify received component before assembly
+controller,SWD,Waveshare WS-10053 ST-LINK V2 mini,1,0,1,39259.29,39259.29,observed; verify connector/power pin,https://www.didacticaselectronicas.com/shop/ws-10053-programador-y-compilador-stm-st-link-v2-mini-10292,Verify received component before assembly
+controller,UART,"USB-UART 3.3V logic, TX/RX/GND",1,0,1,9000,9000,"allowance; verify logic levels, not only power jumper",pending supplier quote,Verify received component before assembly
+controller,CABLE,Polarized J3 harness and SWD/UART jumpers,1,0,1,4000,4000,allowance,pending supplier quote,Verify received component before assembly
+load,RL1 RL2,12 ohm 10 W ceramic,2,0,2,963.9,1927.8,observed price; insufficient observed stock,https://www.didacticaselectronicas.com/shop/r-12r-10w-resistencia-ceramica-12r-10w-35841,Verify received component before assembly
+load,RL3,1.2 ohm 5 W ceramic,1,0,1,1500,1500,allowance,pending supplier quote,Verify received component before assembly
+load,RL4 RL5,12 ohm 5 W ceramic,2,0,2,1200,2400,allowance,pending supplier quote,Verify received component before assembly
+load,S1 S2,Switch >=3A at 24V DC,2,0,2,3500,7000,allowance; verify DC rating,pending supplier quote,Verify received component before assembly
+load,WIRING,Insulated load-bank wiring and supports,1,0,1,4000,4000,allowance,pending supplier quote,Verify received component before assembly
+PCB,F1,External fast fuse 2A 5x20 mm,1,2,3,500,1500,allowance; mandatory external input fuse,pending supplier quote,Verify received component before assembly
+PCB,FH1,Inline insulated 5x20 fuseholder with leads,1,0,1,3000,3000,allowance,pending supplier quote,Verify received component before assembly
+PCB,MISC,"DIP sockets, insulating board support and coil fasteners",1,0,1,6000,6000,allowance,pending supplier quote,Verify received component before assembly

@@ -1,0 +1,7 @@
+test_known_state_space_response (test_experiment_analysis.CaptureValidation.test_known_state_space_response) ... ok
+test_reject_bad_data (test_experiment_analysis.CaptureValidation.test_reject_bad_data) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.005s
+
+OK

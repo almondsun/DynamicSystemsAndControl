@@ -1,0 +1,16 @@
+             parameters: [1×1 struct]
+                  poles: [2×2 double]
+               wn_rad_s: 8.7039e+03
+                   zeta: 0.4787
+         gain_margin_db: Inf
+       phase_margin_deg: 102.0746
+      phase_cross_rad_s: NaN
+       gain_cross_rad_s: 1.0000e+03
+            closed_step: [1×1 struct]
+    digital_pole_radius: 0.9154
+                  cases: [1×1 struct]
+           robust_cases: 27
+             validation: 'PASS: signs, final values, 4 closed-loop cases, 27 parameter combinations'
+
+OUTPUT_FOLDER=/home/mitin/code/uni/DynamicSystemsAndControl/artifacts/buck-final-validation-02/matlab
+PASS: delivered Simulink model, four scenarios and duty bounds

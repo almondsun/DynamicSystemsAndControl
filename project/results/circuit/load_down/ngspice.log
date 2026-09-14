@@ -1,0 +1,88 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * buck completo: pwm, driver inversor, mosfet, diodo, l, c y sensor.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vin                                         12
+ref                                          6
+dp                                    0.343007
+raw                                   0.656993
+pwm                                          5
+base                                  0.729575
+drive                                0.0376371
+boot                                   11.3091
+sw                                 7.29227e-11
+gate                                 0.0388627
+lr                                 7.29227e-11
+out                                 7.1727e-11
+cap                                 7.1727e-11
+sense                              1.79318e-11
+feedback                            7.1727e-11
+error                                        6
+integral                                     0
+braw#branch                                  0
+berror#branch                                0
+bpwm#branch                        -0.00427043
+bdprime#branch                               0
+breference#branch                            0
+lpower#branch                      1.19563e-11
+efeedback#branch                             0
+vinput#branch                      -0.00939289
+
+ Reference value :  7.00018e-04
+ Reference value :  1.39996e-03
+ Reference value :  2.04739e-03
+ Reference value :  2.74742e-03
+ Reference value :  3.40039e-03
+ Reference value :  4.10002e-03
+ Reference value :  4.83965e-03
+ Reference value :  5.50003e-03
+ Reference value :  6.20001e-03
+ Reference value :  6.89956e-03
+ Reference value :  7.54763e-03
+ Reference value :  8.24693e-03
+ Reference value :  8.90003e-03
+ Reference value :  9.60002e-03
+ Reference value :  1.03000e-02
+ Reference value :  1.09471e-02
+ Reference value :  1.16472e-02
+ Reference value :  1.23471e-02
+ Reference value :  1.30000e-02
+ Reference value :  1.37000e-02
+ Reference value :  1.44000e-02
+ Reference value :  1.51000e-02
+ Reference value :  1.58000e-02
+ Reference value :  1.65000e-02
+ Reference value :  1.71625e-02
+ Reference value :  1.78925e-02
+ Reference value :  1.85893e-02
+ Reference value :  1.93000e-02
+ Reference value :  1.99620e-02
+ Reference value :  2.06475e-02
+ Reference value :  2.13884e-02
+ Reference value :  2.21000e-02
+ Reference value :  2.28000e-02
+ Reference value :  2.35474e-02
+ Reference value :  2.42473e-02
+ Reference value :  2.49475e-02
+ Reference value :  2.56474e-02
+ Reference value :  2.64000e-02
+ Reference value :  2.71000e-02
+ Reference value :  2.78047e-02
+ Reference value :  2.85473e-02
+ Reference value :  2.92473e-02
+ Reference value :  2.99475e-02
+No. of Data Rows : 296092
+ngspice-44.2 done
+
+Warning: can't find the initialization file spinit.

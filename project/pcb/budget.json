@@ -1,0 +1,16 @@
+{
+  "currency": "COP",
+  "date": "2026-09-14",
+  "status": "Mixed observed item prices and unquoted allowances; delivered total unknown",
+  "component_subtotals": {
+    "PCB": 85633.1,
+    "controller": 74041.05,
+    "load": 16827.8
+  },
+  "pcb_and_international_shipping_allowance": 80000,
+  "domestic_shipping_allowance": 25000,
+  "estimated_before_contingency": 281501.95,
+  "remaining_from_350000_target": 68498.05,
+  "target_per_student": 87500,
+  "students": 4
+}
