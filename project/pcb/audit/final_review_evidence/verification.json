@@ -1,0 +1,189 @@
+{
+  "kicad": "10.0.4",
+  "environment": "Windows / PowerShell; KiCad Python 3.11",
+  "branch": "Kicad-PCB",
+  "source": "project/pcb/redesign/buck.kicad_pcb",
+  "backup": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\pcb-final-20261026-235708\\initial-cad.zip",
+  "backup_sha256": "471cc320bc2410afc24477f97e02a6c316692ab6a8131bb1e6373127b0c7a1ad",
+  "footprints": 57,
+  "nets": 40,
+  "segments": 219,
+  "vias": 33,
+  "copper_polygons": 16,
+  "unchanged_tracks": false,
+  "unchanged_placement_and_pads": true,
+  "unchanged_copper_polygons": true,
+  "unchanged_netlist": true,
+  "drc_before": {
+    "counts": {
+      "error": 5,
+      "warning": 5
+    },
+    "types": {
+      "malformed_courtyard": 1,
+      "items_not_allowed": 2,
+      "missing_courtyard": 1,
+      "silk_overlap": 2,
+      "unconnected_items": 4
+    },
+    "parity": 0,
+    "ignored_checks": [
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      }
+    ]
+  },
+  "drc_after": {
+    "counts": {
+      "warning": 3,
+      "error": 2
+    },
+    "types": {
+      "items_not_allowed": 2,
+      "missing_courtyard": 1,
+      "unconnected_items": 2
+    },
+    "parity": 0,
+    "ignored_checks": [
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      }
+    ]
+  },
+  "changed_source_files": [
+    "project/pcb/redesign/buck.kicad_pcb",
+    "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/DBV0005A_N.kicad_mod"
+  ],
+  "final_source_sha256": {
+    "project/pcb/redesign/buck.kicad_pcb": "6737ae711bbe7d18ee4e9eb0e26c4e952d268db72c4e2b36b5567f657c844c86",
+    "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/DBV0005A_N.kicad_mod": "383686009722e6a014b81fc10273e8a7f20ffbac251fb473eb65f9490889a833"
+  },
+  "all_other_backed_up_files_unchanged": true,
+  "electrical_changes_applied": true,
+  "physical_tests_performed": false,
+  "copper_calculation": {
+    "model": "R=rho*L/(w*t); 55 C, rho=1.724e-8*(1+.00393*35), t=30 um, w=0.8*drawn width. Sensitivity, not measured.",
+    "IP_shared_mm": 11.75,
+    "IP_shared_resistance_ohm": 0.004800697989583333,
+    "LMID_mm": 24.45,
+    "LMID_resistance_ohm": 0.009989537518750001
+  },
+  "original_tracks_preserved": true,
+  "approved_additions": [
+    {
+      "uuid": "0e12904e-4edd-439e-a7c8-8b8735b394dc",
+      "net": "GND",
+      "layer": "F.Cu",
+      "start": [
+        183.25,
+        71.275
+      ],
+      "end": [
+        183.25,
+        72.5
+      ],
+      "width": 0.25,
+      "type": "PCB_TRACK",
+      "length": 1.225
+    },
+    {
+      "uuid": "15e8037a-8585-4567-a2a9-acb8572a8193",
+      "net": "GND",
+      "layer": "F.Cu",
+      "start": [
+        183.25,
+        72.5
+      ],
+      "end": [
+        183.25,
+        72.5
+      ],
+      "width": 0.8,
+      "type": "PCB_VIA",
+      "drill": 0.4
+    },
+    {
+      "uuid": "18ad5dbd-fb75-448d-b2ee-3e05df074595",
+      "net": "GND",
+      "layer": "F.Cu",
+      "start": [
+        166.215,
+        64.7862
+      ],
+      "end": [
+        165.0,
+        64.7862
+      ],
+      "width": 0.25,
+      "type": "PCB_TRACK",
+      "length": 1.215
+    },
+    {
+      "uuid": "2e85b2ea-d8eb-4e20-b1be-a7cd8e7efad1",
+      "net": "GND",
+      "layer": "F.Cu",
+      "start": [
+        165.0,
+        64.7862
+      ],
+      "end": [
+        165.0,
+        64.7862
+      ],
+      "width": 0.8,
+      "type": "PCB_VIA",
+      "drill": 0.4
+    },
+    {
+      "uuid": "60a98c71-7068-4f31-8eb1-1436535d76e1",
+      "net": "GND",
+      "layer": "F.Cu",
+      "start": [
+        177.625,
+        66.4362
+      ],
+      "end": [
+        177.625,
+        67.5
+      ],
+      "width": 0.25,
+      "type": "PCB_TRACK",
+      "length": 1.0638
+    },
+    {
+      "uuid": "d0363c9e-eada-49dd-8162-5f9256ed24a0",
+      "net": "GND",
+      "layer": "F.Cu",
+      "start": [
+        177.625,
+        67.5
+      ],
+      "end": [
+        177.625,
+        67.5
+      ],
+      "width": 0.8,
+      "type": "PCB_VIA",
+      "drill": 0.4
+    }
+  ],
+  "authorization": "User: si, adelante, approving three documented GND escapes and reassessment of remaining islands."
+}

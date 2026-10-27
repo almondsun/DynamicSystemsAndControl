@@ -1,0 +1,61 @@
+{
+  "status": "QUOTE_FILES_RECONCILED; PENDING_MANUFACTURING_REVIEW",
+  "source": "project/pcb/redesign/buck.kicad_pro",
+  "source_board_sha256": "b36ae24a2b7476bdffe4aea791b446df31d33e03d4c126b70946e8e1632c1835",
+  "source_unchanged": true,
+  "original_and_export_geometry_equal": true,
+  "footprints": 57,
+  "selected_smt": 41,
+  "bom_rows": 24,
+  "bom_designators": 41,
+  "cpl_designators": 41,
+  "classification_counts": {
+    "ASSEMBLED_BY_JLC": 41,
+    "PENDING": 7,
+    "NOT_FITTED": 9
+  },
+  "manual_confirmed": 0,
+  "tht_pending": 7,
+  "bare_test_pads": 9,
+  "external_components": 2,
+  "dnp": 0,
+  "layers": 2,
+  "thickness_mm": 1.6,
+  "dimensions_mm": [
+    105.54999999999998,
+    81.05
+  ],
+  "drill_counts": {
+    "buck-PTH.drl": 81,
+    "buck-NPTH.drl": 0
+  },
+  "drill_native_alignment": true,
+  "smd_copper_mask_paste_alignment": {
+    "buck-F_Cu.gtl": {
+      "expected_smd_pad_centers": 131,
+      "missing": []
+    },
+    "buck-F_Mask.gts": {
+      "expected_smd_pad_centers": 131,
+      "missing": []
+    },
+    "buck-F_Paste.gtp": {
+      "expected_smd_pad_centers": 134,
+      "missing": []
+    }
+  },
+  "drc": {
+    "warning": 5
+  },
+  "unconnected": 0,
+  "parity": 0,
+  "erc": {
+    "warning": 2
+  },
+  "live_pcba_stock": "NO VERIFICADA",
+  "rotation_machine_validation": "PENDING_JLC_VIEWER",
+  "package_family_check": true,
+  "land_pattern_approval": false,
+  "drill_max_coordinate_rounding_mm": 0.0005000000000023874,
+  "csv_readback_validated": true
+}

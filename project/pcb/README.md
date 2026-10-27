@@ -13,6 +13,10 @@ es independiente del programa del STM32.
 
 ## Archivos para compartir con el equipo
 
+- [Auditoría SMD/JLCPCB e índice de documentación actual](audit/README.md): inventario de 57 referencias, requisitos calculados de los 35 pasivos y selección comercial pendiente.
+- [Bloqueos antes de cambiar el circuito o fabricar](audit/open_issues.md) y [comportamiento esperado y pruebas](audit/expected_behavior.md). Los resultados de revisión A que siguen abajo son históricos; no constituyen una validación de los nuevos candidatos SMD.
+- [Organización de documentos y bibliotecas descargadas](audit/organization_by_type.md) y [uso del organizador local](docs/vendor-assets-organizer.md). Las descargas originales y bibliotecas comerciales permanecen fuera de Git.
+
 - [Anexo visual de hardware](release/hardware-appendix.pdf): 3D, plano, conexiones y esquemas completos.
 - [Cuatro informes IEEE actualizados](../reports/final/) y [auditoría de requisitos](docs/requirements-audit.md).
 - [Vista 3D isométrica](release/report-assets/pcb-3d.png) y [superior](release/report-assets/pcb-top.png). Son vistas CAD; geometría de inductores y referencias de capacitores pendientes de calificación.

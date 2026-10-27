@@ -1,0 +1,1610 @@
+{
+  "components": 57,
+  "assigned": 39,
+  "symbol_replacements": [
+    "C11",
+    "Q2"
+  ],
+  "classifications": {
+    "FOOTPRINT_ONLY": 37,
+    "PENDING": 17,
+    "BLOCKED": 1,
+    "SYMBOL_REPLACEMENT": 2
+  },
+  "net_count": 38,
+  "net_names_changed": [],
+  "raw_pin_differences": [
+    {
+      "net": "FB",
+      "removed": [
+        [
+          "Q2",
+          "2"
+        ]
+      ],
+      "added": [
+        [
+          "Q2",
+          "1"
+        ]
+      ]
+    },
+    {
+      "net": "GND",
+      "removed": [
+        [
+          "Q2",
+          "1"
+        ]
+      ],
+      "added": [
+        [
+          "Q2",
+          "2"
+        ]
+      ]
+    }
+  ],
+  "unexpected_functional_differences": [],
+  "component_pin_counts": [
+    {
+      "ref": "C4",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "RS1",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "J1",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "D1",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "L1",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C1",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C2",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C3",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "J2",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "L2",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C5",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "Q1",
+      "old_count": 3,
+      "new_count": 3
+    },
+    {
+      "ref": "U1",
+      "old_count": 16,
+      "new_count": 16
+    },
+    {
+      "ref": "R2",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "U2",
+      "old_count": 3,
+      "new_count": 3
+    },
+    {
+      "ref": "D2",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "R1",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C11",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C9",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "R4",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "R3",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "U3",
+      "old_count": 14,
+      "new_count": 14
+    },
+    {
+      "ref": "C7",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C12",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C6",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C10",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C8",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C13",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "R7",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "U6",
+      "old_count": 5,
+      "new_count": 5
+    },
+    {
+      "ref": "R8",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "U4",
+      "old_count": 14,
+      "new_count": 14
+    },
+    {
+      "ref": "R12",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "Q2",
+      "old_count": 3,
+      "new_count": 3
+    },
+    {
+      "ref": "R10",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C16",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "U5",
+      "old_count": 8,
+      "new_count": 8
+    },
+    {
+      "ref": "C15",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "R13",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "R9",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "R5",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "R11",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "R6",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "C14",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "TP5",
+      "old_count": 1,
+      "new_count": 1
+    },
+    {
+      "ref": "R14",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "TP9",
+      "old_count": 1,
+      "new_count": 1
+    },
+    {
+      "ref": "TP3",
+      "old_count": 1,
+      "new_count": 1
+    },
+    {
+      "ref": "TP2",
+      "old_count": 1,
+      "new_count": 1
+    },
+    {
+      "ref": "TP1",
+      "old_count": 1,
+      "new_count": 1
+    },
+    {
+      "ref": "TP6",
+      "old_count": 1,
+      "new_count": 1
+    },
+    {
+      "ref": "R15",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "TP7",
+      "old_count": 1,
+      "new_count": 1
+    },
+    {
+      "ref": "TP8",
+      "old_count": 1,
+      "new_count": 1
+    },
+    {
+      "ref": "C17",
+      "old_count": 2,
+      "new_count": 2
+    },
+    {
+      "ref": "J3",
+      "old_count": 10,
+      "new_count": 10
+    },
+    {
+      "ref": "TP4",
+      "old_count": 1,
+      "new_count": 1
+    }
+  ],
+  "pin_count_changes": [],
+  "all_instance_and_pin_uuids_preserved": true,
+  "wires_labels_hierarchy_unchanged": true,
+  "passive_values_unchanged": true,
+  "local_footprints": {
+    "Buck_SMD:CAP_SVF_C6_PAN": {
+      "path": "libraries\\footprints\\Buck_SMD.pretty\\CAP_SVF_C6_PAN.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-2.7051",
+            "0"
+          ],
+          "size": [
+            "3.0988",
+            "1.2192"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "2.7051",
+            "0"
+          ],
+          "size": [
+            "3.0988",
+            "1.2192"
+          ]
+        }
+      ],
+      "sha256": "d61c53dc1206ee83d579aa179a283dc29ea60838defc5076dade6230918ff7f2"
+    },
+    "Resistor_SMD:R_2512_6332Metric": {
+      "path": "libraries\\footprints\\Resistor_SMD.pretty\\R_2512_6332Metric.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-2.9625",
+            "0"
+          ],
+          "size": [
+            "1.225",
+            "3.35"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "2.9625",
+            "0"
+          ],
+          "size": [
+            "1.225",
+            "3.35"
+          ]
+        }
+      ],
+      "sha256": "1119422645d02b90335f0823ea09000b31f8593831e9ac717fe99379a4c418fc"
+    },
+    "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal": {
+      "path": "libraries\\footprints\\TerminalBlock_Phoenix.pretty\\TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "0",
+            "0"
+          ],
+          "size": [
+            "2.6",
+            "2.6"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "5",
+            "0"
+          ],
+          "size": [
+            "2.6",
+            "2.6"
+          ]
+        }
+      ],
+      "sha256": "e6dc741f010fdd32a1310ba570a2a2f891d2869071d9881e8f8095ff262e3638"
+    },
+    "Diode_SMD:D_SMA": {
+      "path": "libraries\\footprints\\Diode_SMD.pretty\\D_SMA.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-2",
+            "0"
+          ],
+          "size": [
+            "2.5",
+            "1.8"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "2",
+            "0"
+          ],
+          "size": [
+            "2.5",
+            "1.8"
+          ]
+        }
+      ],
+      "sha256": "dc03836b612fd8bc22b3d863c11ee50a66a6ca3593445d5a24c04eb632a165e2"
+    },
+    "Buck:Inductor_25mm_P10mm_VERIFY": {
+      "path": "Buck.pretty\\Inductor_25mm_P10mm_VERIFY.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-5",
+            "0"
+          ],
+          "size": [
+            "3",
+            "3"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "5",
+            "0"
+          ],
+          "size": [
+            "3",
+            "3"
+          ]
+        }
+      ],
+      "sha256": "1d25258346039611375b1393f0a354b28e47e5758cd61b3673a34e640684d3ea"
+    },
+    "Buck_SMD:PCAP_SVP_E7_PAN": {
+      "path": "libraries\\footprints\\Buck_SMD.pretty\\PCAP_SVP_E7_PAN.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-3.4544",
+            "0"
+          ],
+          "size": [
+            "3.302",
+            "1.2192"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "3.4544",
+            "0"
+          ],
+          "size": [
+            "3.302",
+            "1.2192"
+          ]
+        }
+      ],
+      "sha256": "4133bcffe152c9efd3ab1369213a467ca3f8c964d9a8ef938607262bbe308312"
+    },
+    "Capacitor_SMD:C_0603_1608Metric": {
+      "path": "libraries\\footprints\\Capacitor_SMD.pretty\\C_0603_1608Metric.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-0.775",
+            "0"
+          ],
+          "size": [
+            "0.9",
+            "0.95"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "0.775",
+            "0"
+          ],
+          "size": [
+            "0.9",
+            "0.95"
+          ]
+        }
+      ],
+      "sha256": "c7b676d47427ea715f702e4cdfd08c069da0c08404f4015f57b0becd40e08491"
+    },
+    "Package_TO_SOT_THT:TO-220-3_Vertical": {
+      "path": "libraries\\footprints\\Package_TO_SOT_THT.pretty\\TO-220-3_Vertical.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "0",
+            "0"
+          ],
+          "size": [
+            "1.905",
+            "2"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "2.54",
+            "0"
+          ],
+          "size": [
+            "1.905",
+            "2"
+          ]
+        },
+        {
+          "number": "3",
+          "at": [
+            "5.08",
+            "0"
+          ],
+          "size": [
+            "1.905",
+            "2"
+          ]
+        }
+      ],
+      "sha256": "82d40d785f3bf495ae18a37a973c6bfc8e7bb4d1ab11ee039629245228b2d66d"
+    },
+    "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm": {
+      "path": "libraries\\footprints\\Package_SO.pretty\\SOIC-16W_7.5x10.3mm_P1.27mm.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-4.65",
+            "-4.445"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "-4.65",
+            "-3.175"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "3",
+          "at": [
+            "-4.65",
+            "-1.905"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "4",
+          "at": [
+            "-4.65",
+            "-0.635"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "5",
+          "at": [
+            "-4.65",
+            "0.635"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "6",
+          "at": [
+            "-4.65",
+            "1.905"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "7",
+          "at": [
+            "-4.65",
+            "3.175"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "8",
+          "at": [
+            "-4.65",
+            "4.445"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "9",
+          "at": [
+            "4.65",
+            "4.445"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "10",
+          "at": [
+            "4.65",
+            "3.175"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "11",
+          "at": [
+            "4.65",
+            "1.905"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "12",
+          "at": [
+            "4.65",
+            "0.635"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "13",
+          "at": [
+            "4.65",
+            "-0.635"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "14",
+          "at": [
+            "4.65",
+            "-1.905"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "15",
+          "at": [
+            "4.65",
+            "-3.175"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        },
+        {
+          "number": "16",
+          "at": [
+            "4.65",
+            "-4.445"
+          ],
+          "size": [
+            "2.05",
+            "0.6"
+          ]
+        }
+      ],
+      "sha256": "f767515adc18a94641f18c3c4cb2f7d2a274bbdf07f1369315bc203c8497bd30"
+    },
+    "Resistor_SMD:R_0603_1608Metric": {
+      "path": "libraries\\footprints\\Resistor_SMD.pretty\\R_0603_1608Metric.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-0.825",
+            "0"
+          ],
+          "size": [
+            "0.8",
+            "0.95"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "0.825",
+            "0"
+          ],
+          "size": [
+            "0.8",
+            "0.95"
+          ]
+        }
+      ],
+      "sha256": "a4e6a5d2c97c868fab11527116164acbe90d955ccc04e9e6900bb03dfd0547cf"
+    },
+    "Package_TO_SOT_SMD:TO-252-2": {
+      "path": "libraries\\footprints\\Package_TO_SOT_SMD.pretty\\TO-252-2.kicad_mod",
+      "pads": [
+        {
+          "number": "",
+          "at": [
+            "-0.415",
+            "-1.525"
+          ],
+          "size": [
+            "3.05",
+            "2.75"
+          ]
+        },
+        {
+          "number": "",
+          "at": [
+            "-0.415",
+            "1.525"
+          ],
+          "size": [
+            "3.05",
+            "2.75"
+          ]
+        },
+        {
+          "number": "",
+          "at": [
+            "2.935",
+            "-1.525"
+          ],
+          "size": [
+            "3.05",
+            "2.75"
+          ]
+        },
+        {
+          "number": "",
+          "at": [
+            "2.935",
+            "1.525"
+          ],
+          "size": [
+            "3.05",
+            "2.75"
+          ]
+        },
+        {
+          "number": "1",
+          "at": [
+            "-5.04",
+            "-2.28"
+          ],
+          "size": [
+            "2.2",
+            "1.2"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "1.26",
+            "0"
+          ],
+          "size": [
+            "6.4",
+            "5.8"
+          ]
+        },
+        {
+          "number": "3",
+          "at": [
+            "-5.04",
+            "2.28"
+          ],
+          "size": [
+            "2.2",
+            "1.2"
+          ]
+        }
+      ],
+      "sha256": "88fc7cd32de3004e63b060db1ed6a9da605443fea0069568609ef5f399e0d73e"
+    },
+    "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal": {
+      "path": "libraries\\footprints\\Diode_THT.pretty\\D_DO-41_SOD81_P10.16mm_Horizontal.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "0",
+            "0"
+          ],
+          "size": [
+            "2.2",
+            "2.2"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "10.16",
+            "0"
+          ],
+          "size": [
+            "2.2",
+            "2.2"
+          ]
+        }
+      ],
+      "sha256": "7184029566c8db78af631103b7a0b0d2efd468771658d5f81c8a7093eee46efc"
+    },
+    "Resistor_SMD:R_0805_2012Metric": {
+      "path": "libraries\\footprints\\Resistor_SMD.pretty\\R_0805_2012Metric.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-0.9125",
+            "0"
+          ],
+          "size": [
+            "1.025",
+            "1.4"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "0.9125",
+            "0"
+          ],
+          "size": [
+            "1.025",
+            "1.4"
+          ]
+        }
+      ],
+      "sha256": "bde1698b45a28d25a9b859ba55d7bdfa86e7d9f916014c2225d33b7f654cce88"
+    },
+    "Capacitor_SMD:C_0805_2012Metric": {
+      "path": "libraries\\footprints\\Capacitor_SMD.pretty\\C_0805_2012Metric.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-0.95",
+            "0"
+          ],
+          "size": [
+            "1",
+            "1.45"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "0.95",
+            "0"
+          ],
+          "size": [
+            "1",
+            "1.45"
+          ]
+        }
+      ],
+      "sha256": "cca3b41ac4a534fcafd0b8b5eadf1c297d3d48685281ebf96b0abe510ae11581"
+    },
+    "Buck_SMD:D14": {
+      "path": "libraries\\footprints\\Buck_SMD.pretty\\D14.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-2.4638",
+            "-3.81"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "-2.4638",
+            "-2.54"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "3",
+          "at": [
+            "-2.4638",
+            "-1.27"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "4",
+          "at": [
+            "-2.4638",
+            "0"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "5",
+          "at": [
+            "-2.4638",
+            "1.27"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "6",
+          "at": [
+            "-2.4638",
+            "2.54"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "7",
+          "at": [
+            "-2.4638",
+            "3.81"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "8",
+          "at": [
+            "2.4638",
+            "3.81"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "9",
+          "at": [
+            "2.4638",
+            "2.54"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "10",
+          "at": [
+            "2.4638",
+            "1.27"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "11",
+          "at": [
+            "2.4638",
+            "0"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "12",
+          "at": [
+            "2.4638",
+            "-1.27"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "13",
+          "at": [
+            "2.4638",
+            "-2.54"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        },
+        {
+          "number": "14",
+          "at": [
+            "2.4638",
+            "-3.81"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ]
+        }
+      ],
+      "sha256": "849e2ba3806efec501bb39326f3bbf3a9d67fb0759352b04d3af35ab0dbfd77a"
+    },
+    "Buck_SMD:DBV0005A_N": {
+      "path": "libraries\\footprints\\Buck_SMD.pretty\\DBV0005A_N.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-1.375001",
+            "-0.950001",
+            "90"
+          ],
+          "size": [
+            "0.599999",
+            "1"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "-1.375001",
+            "0",
+            "90"
+          ],
+          "size": [
+            "0.599999",
+            "1"
+          ]
+        },
+        {
+          "number": "3",
+          "at": [
+            "-1.375001",
+            "0.949998",
+            "90"
+          ],
+          "size": [
+            "0.599999",
+            "1"
+          ]
+        },
+        {
+          "number": "4",
+          "at": [
+            "1.374999",
+            "0.949998",
+            "90"
+          ],
+          "size": [
+            "0.599999",
+            "1"
+          ]
+        },
+        {
+          "number": "5",
+          "at": [
+            "1.374999",
+            "-0.950001",
+            "90"
+          ],
+          "size": [
+            "0.599999",
+            "1"
+          ]
+        }
+      ],
+      "sha256": "f0ef98a574f46f8239f7c7560007c8c3d36061a18eb5a47257469416c1962054"
+    },
+    "Package_TO_SOT_SMD:SOT-23": {
+      "path": "libraries\\footprints\\Package_TO_SOT_SMD.pretty\\SOT-23.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-0.9375",
+            "-0.95"
+          ],
+          "size": [
+            "1.475",
+            "0.6"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "-0.9375",
+            "0.95"
+          ],
+          "size": [
+            "1.475",
+            "0.6"
+          ]
+        },
+        {
+          "number": "3",
+          "at": [
+            "0.9375",
+            "0"
+          ],
+          "size": [
+            "1.475",
+            "0.6"
+          ]
+        }
+      ],
+      "sha256": "61fa0a64b96c42fe0b79e5153803cdb5dbd8d213d37007cbceccf3f06e2e7dcd"
+    },
+    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal": {
+      "path": "libraries\\footprints\\Resistor_THT.pretty\\R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "0",
+            "0"
+          ],
+          "size": [
+            "1.6",
+            "1.6"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "7.62",
+            "0"
+          ],
+          "size": [
+            "1.6",
+            "1.6"
+          ]
+        }
+      ],
+      "sha256": "ebecc4b267b633b087390bdff5542781b1c8e7ea92d453fa07ba7cbdeabf995b"
+    },
+    "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm": {
+      "path": "libraries\\footprints\\Capacitor_THT.pretty\\C_Disc_D5.0mm_W2.5mm_P5.00mm.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "0",
+            "0"
+          ],
+          "size": [
+            "1.6",
+            "1.6"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "5",
+            "0"
+          ],
+          "size": [
+            "1.6",
+            "1.6"
+          ]
+        }
+      ],
+      "sha256": "0b0d851c0a52f6615efca9e64de9d903a572dda2b06ab77e7fe8195d69ce54d5"
+    },
+    "Buck_SMD:D0008A-MFG": {
+      "path": "libraries\\footprints\\Buck_SMD.pretty\\D0008A-MFG.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-2.7",
+            "-1.905"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "-2.7",
+            "-0.635"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ]
+        },
+        {
+          "number": "3",
+          "at": [
+            "-2.7",
+            "0.635"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ]
+        },
+        {
+          "number": "4",
+          "at": [
+            "-2.7",
+            "1.905"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ]
+        },
+        {
+          "number": "5",
+          "at": [
+            "2.7",
+            "1.905"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ]
+        },
+        {
+          "number": "6",
+          "at": [
+            "2.7",
+            "0.635"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ]
+        },
+        {
+          "number": "7",
+          "at": [
+            "2.7",
+            "-0.635"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ]
+        },
+        {
+          "number": "8",
+          "at": [
+            "2.7",
+            "-1.905"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ]
+        }
+      ],
+      "sha256": "7396f17d56fb8452ce13a55b11f2bf6a3d139aa59fc054278a09fe2e8620f382"
+    },
+    "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm": {
+      "path": "libraries\\footprints\\TestPoint.pretty\\TestPoint_THTPad_D2.0mm_Drill1.0mm.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "0",
+            "0"
+          ],
+          "size": [
+            "2",
+            "2"
+          ]
+        }
+      ],
+      "sha256": "0e88fb871081bc1323426c0cb7cbc2398d5e2aaa48a4ffec4d1e9028bf686aeb"
+    },
+    "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical": {
+      "path": "libraries\\footprints\\Connector_PinHeader_2.54mm.pretty\\PinHeader_2x05_P2.54mm_Vertical.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "0",
+            "0"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "2.54",
+            "0"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "3",
+          "at": [
+            "0",
+            "2.54"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "4",
+          "at": [
+            "2.54",
+            "2.54"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "5",
+          "at": [
+            "0",
+            "5.08"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "6",
+          "at": [
+            "2.54",
+            "5.08"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "7",
+          "at": [
+            "0",
+            "7.62"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "8",
+          "at": [
+            "2.54",
+            "7.62"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "9",
+          "at": [
+            "0",
+            "10.16"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "10",
+          "at": [
+            "2.54",
+            "10.16"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        }
+      ],
+      "sha256": "500b4a2598b490e040708f2ceab04d07dae4b19ab3a4f67e7211fa31e0059b4c"
+    }
+  },
+  "model_paths": [
+    {
+      "footprint": "Buck_SMD:CAP_SVF_C6_PAN",
+      "model": "${KIPRJMOD}/libraries/3dmodels/Panasonic_C6.stp",
+      "exists": true
+    },
+    {
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+      "exists": true
+    },
+    {
+      "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.step",
+      "exists": true
+    },
+    {
+      "footprint": "Diode_SMD:D_SMA",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Diode_SMD.3dshapes/D_SMA.step",
+      "exists": true
+    },
+    {
+      "footprint": "Buck_SMD:PCAP_SVP_E7_PAN",
+      "model": "${KIPRJMOD}/libraries/3dmodels/Panasonic_E7.stp",
+      "exists": true
+    },
+    {
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "exists": true
+    },
+    {
+      "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step",
+      "exists": true
+    },
+    {
+      "footprint": "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Package_SO.3dshapes/SOIC-16W_7.5x10.3mm_P1.27mm.step",
+      "exists": true
+    },
+    {
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "exists": true
+    },
+    {
+      "footprint": "Package_TO_SOT_SMD:TO-252-2",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Package_TO_SOT_SMD.3dshapes/TO-252-2.step",
+      "exists": true
+    },
+    {
+      "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.step",
+      "exists": true
+    },
+    {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "exists": true
+    },
+    {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "exists": true
+    },
+    {
+      "footprint": "Buck_SMD:D14",
+      "model": "${KIPRJMOD}/libraries/3dmodels/D0014A.stp",
+      "exists": true
+    },
+    {
+      "footprint": "Buck_SMD:DBV0005A_N",
+      "model": "${KIPRJMOD}/libraries/3dmodels/DBV0005A.stp",
+      "exists": true
+    },
+    {
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "exists": true
+    },
+    {
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.step",
+      "exists": true
+    },
+    {
+      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Capacitor_THT.3dshapes/C_Disc_D5.0mm_W2.5mm_P5.00mm.step",
+      "exists": true
+    },
+    {
+      "footprint": "Buck_SMD:D0008A-MFG",
+      "model": "${KIPRJMOD}/libraries/3dmodels/D0008A.stp",
+      "exists": true
+    },
+    {
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical",
+      "model": "${KIPRJMOD}/libraries/3dmodels/standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x05_P2.54mm_Vertical.step",
+      "exists": true
+    }
+  ],
+  "protected_files_checked": 259,
+  "protected_files_changed": [],
+  "source_documents_unchanged": true,
+  "baseline_erc_violations": [],
+  "new_erc_violations": [],
+  "electrical_approval": false
+}

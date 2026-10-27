@@ -1,0 +1,170 @@
+{
+  "passive_refs": [
+    "C1",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "L1",
+    "L2",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "RS1"
+  ],
+  "count": 35,
+  "bom_values_equal_definition": true,
+  "tables": [
+    {
+      "file": "passives_requirements.md",
+      "rows": 10,
+      "columns": 5
+    },
+    {
+      "file": "passives_requirements.md",
+      "rows": 8,
+      "columns": 9
+    },
+    {
+      "file": "passives_requirements.md",
+      "rows": 8,
+      "columns": 10
+    },
+    {
+      "file": "passives_requirements.md",
+      "rows": 3,
+      "columns": 8
+    },
+    {
+      "file": "passives_requirements.md",
+      "rows": 3,
+      "columns": 8
+    },
+    {
+      "file": "passives_requirements.md",
+      "rows": 5,
+      "columns": 8
+    },
+    {
+      "file": "passives_requirements.md",
+      "rows": 7,
+      "columns": 8
+    },
+    {
+      "file": "passives_requirements.md",
+      "rows": 11,
+      "columns": 8
+    },
+    {
+      "file": "passives_requirements.md",
+      "rows": 16,
+      "columns": 7
+    },
+    {
+      "file": "passives_requirements.md",
+      "rows": 6,
+      "columns": 4
+    },
+    {
+      "file": "passives_requirements.md",
+      "rows": 35,
+      "columns": 5
+    },
+    {
+      "file": "expected_behavior.md",
+      "rows": 11,
+      "columns": 5
+    },
+    {
+      "file": "expected_behavior.md",
+      "rows": 8,
+      "columns": 5
+    },
+    {
+      "file": "expected_behavior.md",
+      "rows": 9,
+      "columns": 5
+    },
+    {
+      "file": "expected_behavior.md",
+      "rows": 7,
+      "columns": 5
+    },
+    {
+      "file": "expected_behavior.md",
+      "rows": 7,
+      "columns": 3
+    },
+    {
+      "file": "jlc_passives_candidates.md",
+      "rows": 9,
+      "columns": 7
+    },
+    {
+      "file": "jlc_passives_candidates.md",
+      "rows": 9,
+      "columns": 6
+    },
+    {
+      "file": "jlc_passives_candidates.md",
+      "rows": 7,
+      "columns": 6
+    },
+    {
+      "file": "jlc_passives_candidates.md",
+      "rows": 8,
+      "columns": 3
+    },
+    {
+      "file": "jlc_passives_candidates.md",
+      "rows": 4,
+      "columns": 3
+    },
+    {
+      "file": "datasheet_compliance.md",
+      "rows": 9,
+      "columns": 4
+    },
+    {
+      "file": "datasheet_compliance.md",
+      "rows": 26,
+      "columns": 5
+    }
+  ],
+  "branch": "Kicad-PCB",
+  "protected_files_unchanged": 18,
+  "changed_protected_files": [],
+  "new_time_simulation": false,
+  "hardware_tested": false,
+  "docs_sha256": {
+    "passives_requirements.md": "bbb89ca6833fa8e8e1846f833b72b6a2fa21a1e7913e9c384f0f27ccee44a8c9",
+    "expected_behavior.md": "30d013ff193775f8f58f8624acf2ccb55fb6655b0bfe1abf6d2e96041f3b85c6",
+    "jlc_passives_candidates.md": "8e0c5231aed5f77172ab828587d5e20a52c5a1642e79d7efbc79203735a2a3c8",
+    "datasheet_compliance.md": "f284bb2ea58ccf90599276ac5ecc8b7bcd1f2eecdf1b7143f7fbe7a403d3a463",
+    "open_issues.md": "fd6468884b1e09438928648f323acb3b4274b0b6e029ea9c7c34a9bb89e8b273"
+  }
+}

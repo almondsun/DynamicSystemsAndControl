@@ -10,6 +10,7 @@ Coursework and final Buck-converter project at Universidad Nacional de Colombia,
 - [PCB design and build instructions](project/pcb/README.md)
 - [STM32 firmware](project/firmware/README.md)
 - [Requirements audit and next steps](project/pcb/docs/requirements-audit.md)
+- [Buck SMD/JLCPCB audit: inventory, passive requirements and open issues](project/pcb/audit/README.md)
 - [Team review package](project/pcb/release/buck-team-review.zip)
 
 The design targets 12 V input, 6 V nominal output and 10 kHz PWM. Reports distinguish numerical simulations and CAD checks from experimental evidence. Component qualification, prototype assembly and physical testing remain pending; PCB fabrication is on hold.

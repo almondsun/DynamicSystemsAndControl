@@ -1,0 +1,26 @@
+{
+  "sdk": "10.0.4",
+  "loaded": [
+    "Buck_SMD:PCAP_SVP_E7_PAN",
+    "Capacitor_SMD:C_0603_1608Metric",
+    "Buck_SMD:CAP_SVF_C6_PAN",
+    "Diode_SMD:D_SMA",
+    "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+    "Buck:Inductor_25mm_P10mm_VERIFY",
+    "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "Resistor_SMD:R_2512_6332Metric",
+    "Capacitor_SMD:C_1206_3216Metric",
+    "Capacitor_SMD:C_0805_2012Metric",
+    "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "Resistor_SMD:R_0805_2012Metric",
+    "Resistor_SMD:R_0603_1608Metric",
+    "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm",
+    "Package_TO_SOT_SMD:TO-252-2",
+    "Buck_SMD:D14",
+    "Package_TO_SOT_SMD:SOT-23",
+    "Buck_SMD:D0008A-MFG",
+    "Buck_SMD:DBV0005A_N",
+    "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical",
+    "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+  ]
+}

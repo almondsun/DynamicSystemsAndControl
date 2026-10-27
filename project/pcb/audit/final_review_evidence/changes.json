@@ -1,0 +1,539 @@
+[
+  {
+    "uuid": "0ae81dc4-1c20-47c6-9ca1-5e10533e0cc5",
+    "before": null,
+    "after": {
+      "uuid": "0ae81dc4-1c20-47c6-9ca1-5e10533e0cc5",
+      "type": "PCB_TEXT",
+      "layer": "F.Silkscreen",
+      "text": "J3 NUCLEO",
+      "pos": [
+        201.8,
+        75.5
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "visible": true,
+      "angle": 0.0
+    }
+  },
+  {
+    "uuid": "16fc0043-9d4f-4522-8781-c785ff784ce4",
+    "before": {
+      "uuid": "16fc0043-9d4f-4522-8781-c785ff784ce4",
+      "text": "C4",
+      "pos": [
+        191.25,
+        87.0551
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 90.0,
+      "ref": "C4"
+    },
+    "after": {
+      "uuid": "16fc0043-9d4f-4522-8781-c785ff784ce4",
+      "text": "C4",
+      "pos": [
+        191.25,
+        81.5
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 0.0,
+      "ref": "C4"
+    }
+  },
+  {
+    "uuid": "19d6a959-499b-43b8-a064-afa56184077c",
+    "before": {
+      "uuid": "19d6a959-499b-43b8-a064-afa56184077c",
+      "text": "C5",
+      "pos": [
+        199.95,
+        87.0551
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 90.0,
+      "ref": "C5"
+    },
+    "after": {
+      "uuid": "19d6a959-499b-43b8-a064-afa56184077c",
+      "text": "C5",
+      "pos": [
+        199.95,
+        81.5
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 0.0,
+      "ref": "C5"
+    }
+  },
+  {
+    "uuid": "3f698ca8-f423-4e07-9c81-292b510c3d0c",
+    "before": null,
+    "after": {
+      "uuid": "3f698ca8-f423-4e07-9c81-292b510c3d0c",
+      "type": "PCB_TEXT",
+      "layer": "F.Silkscreen",
+      "text": "VOUT +",
+      "pos": [
+        196.0,
+        105.2
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "visible": true,
+      "angle": 0.0
+    }
+  },
+  {
+    "uuid": "64912d5f-ed54-4ee6-901c-9b87ed2a4764",
+    "before": null,
+    "after": {
+      "uuid": "64912d5f-ed54-4ee6-901c-9b87ed2a4764",
+      "type": "PCB_TEXT",
+      "layer": "F.Silkscreen",
+      "text": "USB EXTERNO",
+      "pos": [
+        201.8,
+        77.3
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "visible": true,
+      "angle": 0.0
+    }
+  },
+  {
+    "uuid": "7137c265-b997-4789-ba4a-396088d18d8a",
+    "before": {
+      "uuid": "7137c265-b997-4789-ba4a-396088d18d8a",
+      "type": "PCB_SHAPE",
+      "layer": "F.Courtyard",
+      "start": [
+        166.174999,
+        77.300001
+      ],
+      "end": [
+        167.175,
+        77.300001
+      ],
+      "width": 0.1,
+      "shape": 0,
+      "net": "",
+      "ref": "U6"
+    },
+    "after": {
+      "uuid": "7137c265-b997-4789-ba4a-396088d18d8a",
+      "type": "PCB_SHAPE",
+      "layer": "F.Fab",
+      "start": [
+        166.174999,
+        77.300001
+      ],
+      "end": [
+        167.175,
+        77.300001
+      ],
+      "width": 0.1,
+      "shape": 0,
+      "net": "",
+      "ref": "U6"
+    }
+  },
+  {
+    "uuid": "73c091e3-a71c-4958-8e24-db48cb55d332",
+    "before": {
+      "uuid": "73c091e3-a71c-4958-8e24-db48cb55d332",
+      "text": "U4",
+      "pos": [
+        170.025,
+        67.25
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 270.0,
+      "ref": "U4"
+    },
+    "after": {
+      "uuid": "73c091e3-a71c-4958-8e24-db48cb55d332",
+      "text": "U4",
+      "pos": [
+        164.0,
+        64.0
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 0.0,
+      "ref": "U4"
+    }
+  },
+  {
+    "uuid": "7ddff702-8d30-48e2-9d58-61fc0392ebb6",
+    "before": {
+      "uuid": "7ddff702-8d30-48e2-9d58-61fc0392ebb6",
+      "text": "C2",
+      "pos": [
+        126.05,
+        59.65
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 270.0,
+      "ref": "C2"
+    },
+    "after": {
+      "uuid": "7ddff702-8d30-48e2-9d58-61fc0392ebb6",
+      "text": "C2",
+      "pos": [
+        126.05,
+        65.8
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 0.0,
+      "ref": "C2"
+    }
+  },
+  {
+    "uuid": "88ee4ff5-5c18-436c-9baa-9b756660d1ae",
+    "before": {
+      "uuid": "88ee4ff5-5c18-436c-9baa-9b756660d1ae",
+      "text": "U3",
+      "pos": [
+        178.525,
+        48.0112
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 90.0,
+      "ref": "U3"
+    },
+    "after": {
+      "uuid": "88ee4ff5-5c18-436c-9baa-9b756660d1ae",
+      "text": "U3",
+      "pos": [
+        178.525,
+        43.4
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 0.0,
+      "ref": "U3"
+    }
+  },
+  {
+    "uuid": "92c58593-a40c-4d8c-90c7-5ba89d08f325",
+    "before": {
+      "uuid": "92c58593-a40c-4d8c-90c7-5ba89d08f325",
+      "text": "C1",
+      "pos": [
+        114.85,
+        59.65
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 270.0,
+      "ref": "C1"
+    },
+    "after": {
+      "uuid": "92c58593-a40c-4d8c-90c7-5ba89d08f325",
+      "text": "C1",
+      "pos": [
+        114.85,
+        65.8
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 0.0,
+      "ref": "C1"
+    }
+  },
+  {
+    "uuid": "9ce7485e-8c54-4783-a00b-7fd2256145bf",
+    "before": null,
+    "after": {
+      "uuid": "9ce7485e-8c54-4783-a00b-7fd2256145bf",
+      "type": "PCB_TEXT",
+      "layer": "F.Silkscreen",
+      "text": "VIN +",
+      "pos": [
+        116.0,
+        46.1
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "visible": true,
+      "angle": 0.0
+    }
+  },
+  {
+    "uuid": "bc04ac97-2ec6-49be-a6c7-9b3c4d7550a6",
+    "before": {
+      "uuid": "bc04ac97-2ec6-49be-a6c7-9b3c4d7550a6",
+      "type": "PCB_SHAPE",
+      "layer": "F.Courtyard",
+      "start": [
+        166.675001,
+        77.8
+      ],
+      "end": [
+        166.675001,
+        76.799999
+      ],
+      "width": 0.1,
+      "shape": 0,
+      "net": "",
+      "ref": "U6"
+    },
+    "after": {
+      "uuid": "bc04ac97-2ec6-49be-a6c7-9b3c4d7550a6",
+      "type": "PCB_SHAPE",
+      "layer": "F.Fab",
+      "start": [
+        166.675001,
+        77.8
+      ],
+      "end": [
+        166.675001,
+        76.799999
+      ],
+      "width": 0.1,
+      "shape": 0,
+      "net": "",
+      "ref": "U6"
+    }
+  },
+  {
+    "uuid": "c40bc861-9f25-4a8c-98ee-d64a65c081b1",
+    "before": {
+      "uuid": "c40bc861-9f25-4a8c-98ee-d64a65c081b1",
+      "type": "PCB_TEXT",
+      "layer": "F.Silkscreen",
+      "text": "*",
+      "pos": [
+        175.5368,
+        64.5322
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "visible": true,
+      "angle": 270.0,
+      "ref": "U4"
+    },
+    "after": {
+      "uuid": "c40bc861-9f25-4a8c-98ee-d64a65c081b1",
+      "type": "PCB_TEXT",
+      "layer": "F.Fab",
+      "text": "*",
+      "pos": [
+        175.5368,
+        64.5322
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "visible": true,
+      "angle": 270.0,
+      "ref": "U4"
+    }
+  },
+  {
+    "uuid": "c55885e6-5a6b-48e6-986c-c95875223802",
+    "before": {
+      "uuid": "c55885e6-5a6b-48e6-986c-c95875223802",
+      "text": "Q1",
+      "pos": [
+        141.4,
+        56.16
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 90.0,
+      "ref": "Q1"
+    },
+    "after": {
+      "uuid": "c55885e6-5a6b-48e6-986c-c95875223802",
+      "text": "Q1",
+      "pos": [
+        139.5,
+        49.5
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "layer": "F.Silkscreen",
+      "visible": true,
+      "angle": 0.0,
+      "ref": "Q1"
+    }
+  },
+  {
+    "uuid": "d3192bda-ca0b-49da-aaea-dd2e9c5bed9e",
+    "before": null,
+    "after": {
+      "uuid": "d3192bda-ca0b-49da-aaea-dd2e9c5bed9e",
+      "type": "PCB_TEXT",
+      "layer": "F.Silkscreen",
+      "text": "GND -",
+      "pos": [
+        204.95,
+        105.2
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "visible": true,
+      "angle": 0.0
+    }
+  },
+  {
+    "uuid": "f6a0c094-42ad-4f21-816d-ab024102ccb9",
+    "before": {
+      "uuid": "f6a0c094-42ad-4f21-816d-ab024102ccb9",
+      "type": "PCB_TEXT",
+      "layer": "F.Silkscreen",
+      "text": "*",
+      "pos": [
+        173.0132,
+        50.729
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "visible": true,
+      "angle": 90.0,
+      "ref": "U3"
+    },
+    "after": {
+      "uuid": "f6a0c094-42ad-4f21-816d-ab024102ccb9",
+      "type": "PCB_TEXT",
+      "layer": "F.Fab",
+      "text": "*",
+      "pos": [
+        173.0132,
+        50.729
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "visible": true,
+      "angle": 90.0,
+      "ref": "U3"
+    }
+  },
+  {
+    "uuid": "ff0f8adb-d095-4ccb-bf8e-c92da228b8d4",
+    "before": null,
+    "after": {
+      "uuid": "ff0f8adb-d095-4ccb-bf8e-c92da228b8d4",
+      "type": "PCB_TEXT",
+      "layer": "F.Silkscreen",
+      "text": "GND -",
+      "pos": [
+        109.75,
+        46.1
+      ],
+      "size": [
+        1.0,
+        1.0
+      ],
+      "thickness": 0.15,
+      "visible": true,
+      "angle": 0.0
+    }
+  }
+]

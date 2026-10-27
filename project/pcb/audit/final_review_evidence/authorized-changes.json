@@ -1,0 +1,51 @@
+[
+  {
+    "ref": "U4",
+    "pad": "7",
+    "net": "GND",
+    "end_mm": [
+      165.0,
+      64.7862
+    ],
+    "width_mm": 0.25,
+    "via_mm": [
+      0.8,
+      0.4
+    ],
+    "track_uuid": "18ad5dbd-fb75-448d-b2ee-3e05df074595",
+    "via_uuid": "2e85b2ea-d8eb-4e20-b1be-a7cd8e7efad1",
+    "reason": "Original candidate overlapped long U4 pad; lateral escape preserves no-via-in-pad rule."
+  },
+  {
+    "ref": "R6",
+    "pad": "2",
+    "net": "GND",
+    "end_mm": [
+      177.625,
+      67.5
+    ],
+    "width_mm": 0.25,
+    "via_mm": [
+      0.8,
+      0.4
+    ],
+    "track_uuid": "60a98c71-7068-4f31-8eb1-1436535d76e1",
+    "via_uuid": "d0363c9e-eada-49dd-8162-5f9256ed24a0"
+  },
+  {
+    "ref": "C16",
+    "pad": "2",
+    "net": "GND",
+    "end_mm": [
+      183.25,
+      72.5
+    ],
+    "width_mm": 0.25,
+    "via_mm": [
+      0.8,
+      0.4
+    ],
+    "track_uuid": "0e12904e-4edd-439e-a7c8-8b8735b394dc",
+    "via_uuid": "15e8037a-8585-4567-a2a9-acb8572a8193"
+  }
+]

@@ -1,0 +1,369 @@
+{
+  "changes": [
+    {
+      "ref": "C6",
+      "file": "buck_2.kicad_sch",
+      "before": {
+        "Reference": "C6",
+        "Value": "1uF 50V X7R",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Samsung CL21B105KBFNNNE",
+        "Candidate_LCSC": "C28323",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA.  No se demuestra objetivo Ceff≥1 µF. Evaluar C6 en 10–13 V DC, tiempos off de 5µs, carga inicial y VBS/VGS; reservar posibilidad segundo MLCC sin poblar a ciegas.",
+        "Original_Value": "1uF 50V X7R",
+        "MPN": "Samsung CL21B105KBFNNNE",
+        "LCSC": "C28323"
+      },
+      "after": {
+        "Reference": "C6",
+        "Value": "2.2uF 50V X7R 10%",
+        "Footprint": "Capacitor_SMD:C_1206_3216Metric",
+        "Datasheet": "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL31B225KBHNNN",
+        "Description": "",
+        "Migration_Status": "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN",
+        "Candidate_MPN": "CL31B225KBHNNNE",
+        "Candidate_LCSC": "C50254",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "2.2uF nominal adopted. VB-VS connectivity unchanged. Ceff, VBS minimum, startup and recharge NOT validated.",
+        "Original_Value": "1uF 50V X7R",
+        "MPN": "CL31B225KBHNNNE",
+        "LCSC": "C50254",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "JLCPCB_Class": "Basic (verified 2026-10-25)",
+        "Commercial_URL": "https://jlcpcb.com/partdetail/C50254",
+        "Previous_Review_Value": "1uF 50V X7R"
+      }
+    },
+    {
+      "ref": "R10",
+      "file": "buck_3.kicad_sch",
+      "before": {
+        "Reference": "R10",
+        "Value": "31k 1%",
+        "Footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "Vishay CRCW060330K9FKEA",
+        "Candidate_LCSC": "C844354",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "MPN propuesto 30.9k incompatible con 31k original sin aceptar cambio. No se asigna MPN ni huella nuevos. Valor no es original 31kΩ; V_OVP nominal=8,18 V en vez de 8,20 V, diferencia 0,24 %; requiere aceptar funcionalmente cambio."
+      },
+      "after": {
+        "Reference": "R10",
+        "Value": "30.9k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "${KIPRJMOD}/libraries/datasheets/Vishay_DCRCW.pdf",
+        "Description": "",
+        "Migration_Status": "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN",
+        "Candidate_MPN": "CRCW060330K9FKEA",
+        "Candidate_LCSC": "C844354",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "30.9k accepted by user. Nominal OVP 8.20 to 8.18V.",
+        "MPN": "CRCW060330K9FKEA",
+        "LCSC": "C844354",
+        "Manufacturer": "Vishay",
+        "Commercial_URL": "https://jlcpcb.com/partdetail/VishayIntertech-CRCW060330K9FKEA/C844354",
+        "Previous_Review_Value": "31k 1%"
+      }
+    },
+    {
+      "ref": "C16",
+      "file": "buck_3.kicad_sch",
+      "before": {
+        "Reference": "C16",
+        "Value": "100nF",
+        "Footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "Yageo CC0603KRX7R9BB224",
+        "Candidate_LCSC": "C107083",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "MPN propuesto 220nF incompatible con 100nF original sin aceptar cambio. No se asigna MPN ni huella nuevos. Valor elegido 220 nF difiere de esquema histórico 100nF. Ceff≥100nF no demostrada: DC bias/edad/posición; confirmar aceptación del cambio."
+      },
+      "after": {
+        "Reference": "C16",
+        "Value": "220nF 50V X7R 10%",
+        "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "Datasheet": "${KIPRJMOD}/libraries/datasheets/Yageo_CC0603KRX7R9BB224.pdf",
+        "Description": "",
+        "Migration_Status": "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN",
+        "Candidate_MPN": "CC0603KRX7R9BB224",
+        "Candidate_LCSC": "C107083",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "220nF nominal change accepted by user. Ceff >=100nF remains to be established.",
+        "MPN": "CC0603KRX7R9BB224",
+        "LCSC": "C107083",
+        "Manufacturer": "Yageo",
+        "Commercial_URL": "https://jlcpcb.com/partdetail/C107083",
+        "Previous_Review_Value": "100nF"
+      }
+    },
+    {
+      "ref": "R14",
+      "file": "buck_4.kicad_sch",
+      "before": {
+        "Reference": "R14",
+        "Value": "3k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF3001T5E",
+        "Candidate_LCSC": "C4211",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA.  A 20V la potencia equivalente continua casi agota derating; determinar energía de pulso. Además VSENSE≈5,0V pone en riesgo PA0.",
+        "Original_Value": "3k 1%",
+        "MPN": "UNI-ROYAL 0603WAF3001T5E",
+        "LCSC": "C4211"
+      },
+      "after": {
+        "Reference": "R14",
+        "Value": "15k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN",
+        "Candidate_MPN": "0603WAF1502T5E",
+        "Candidate_LCSC": "C22809",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "15k candidate adopted for evaluation; ADC power-off/fault protection unresolved.",
+        "Original_Value": "3k 1%",
+        "MPN": "0603WAF1502T5E",
+        "LCSC": "C22809",
+        "Manufacturer": "UNI-ROYAL",
+        "Commercial_URL": "https://jlcpcb.com/partdetail/C22809",
+        "Previous_Review_Value": "3k 1%"
+      }
+    },
+    {
+      "ref": "R15",
+      "file": "buck_4.kicad_sch",
+      "before": {
+        "Reference": "R15",
+        "Value": "1k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF1001T5E",
+        "Candidate_LCSC": "C21190",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA.  El componente soporta potencia, pero el divisor R14/R15 no protege el ADC en transitorios.",
+        "Original_Value": "1k 1%",
+        "MPN": "UNI-ROYAL 0603WAF1001T5E",
+        "LCSC": "C21190"
+      },
+      "after": {
+        "Reference": "R15",
+        "Value": "2.2k 1%",
+        "Footprint": "Resistor_SMD:R_0603_1608Metric",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN",
+        "Candidate_MPN": "0603WAF2201T5E",
+        "Candidate_LCSC": "C4190",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "2.2k candidate adopted for evaluation; ADC gain 0.1279069767; protection unresolved.",
+        "Original_Value": "1k 1%",
+        "MPN": "0603WAF2201T5E",
+        "LCSC": "C4190",
+        "Manufacturer": "UNI-ROYAL",
+        "Commercial_URL": "https://www.lcsc.com/product-detail/C4190.html",
+        "Previous_Review_Value": "1k 1%"
+      }
+    },
+    {
+      "ref": "J3",
+      "file": "buck_4.kicad_sch",
+      "before": {
+        "Reference": "J3",
+        "Value": "STM32 CABLE 2x5",
+        "Footprint": "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "61201021621",
+        "Candidate_LCSC": "No verificado",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      },
+      "after": {
+        "Reference": "J3",
+        "Value": "NUCLEO-L432KC EXT USB",
+        "Footprint": "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN",
+        "Candidate_MPN": "TBD keyed IDC header 2x5 2.54mm",
+        "Candidate_LCSC": "NOT SELECTED",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "External NUCLEO powered via USB. No Buck 5V/VIN connection. NUC_3V3 supplies R13 pull-up only. PA0/PWM signal protection and board solder bridges remain blocking.",
+        "MPN": "TBD keyed IDC header 2x5 2.54mm",
+        "Manufacturer": "TBD",
+        "LCSC": "NOT SELECTED",
+        "Cable_Pinout": "1 UART_TX D1 PA9;2 GND;3 PWM D9 PA8;4 RUN D3 PB0;5 LATCH_RESET D6 PB1;6 NFAULT D4 PB7;7 VSENSE A0 PA0;8 GND;9 NUC_3V3 output from CN4.14;10 UART_RX D0 PA10;NO 5V OR VIN",
+        "Assembly": "NUCLEO external; NOT assembled by JLCPCB; header MPN/land provisional",
+        "Previous_Review_Value": "STM32 CABLE 2x5"
+      }
+    }
+  ],
+  "copied_footprints": [
+    {
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Capacitor_SMD.pretty\\C_1206_3216Metric.kicad_mod",
+      "source_sha256": "420c3ac494743fbc47653b6e7d0107d51620e25c77eaf73f083e799807fd1381",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "-1.475",
+            "0"
+          ],
+          "size": [
+            "1.15",
+            "1.8"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "1.475",
+            "0"
+          ],
+          "size": [
+            "1.15",
+            "1.8"
+          ]
+        }
+      ]
+    },
+    {
+      "footprint": "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Connector_IDC.pretty\\IDC-Header_2x05_P2.54mm_Vertical.kicad_mod",
+      "source_sha256": "f09638eab7c3f56c55d63753960d7174980fad732c3fd58e20245e349484239e",
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            "0",
+            "0"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            "2.54",
+            "0"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "3",
+          "at": [
+            "0",
+            "2.54"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "4",
+          "at": [
+            "2.54",
+            "2.54"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "5",
+          "at": [
+            "0",
+            "5.08"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "6",
+          "at": [
+            "2.54",
+            "5.08"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "7",
+          "at": [
+            "0",
+            "7.62"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "8",
+          "at": [
+            "2.54",
+            "7.62"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "9",
+          "at": [
+            "0",
+            "10.16"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        },
+        {
+          "number": "10",
+          "at": [
+            "2.54",
+            "10.16"
+          ],
+          "size": [
+            "1.7",
+            "1.7"
+          ]
+        }
+      ]
+    }
+  ],
+  "allowed_net_changes": {
+    "J3.1": "+5V -> UART_TX",
+    "J3.10": "GND -> UART_RX",
+    "+3V3": "NUC_3V3 (all endpoints retained)"
+  }
+}

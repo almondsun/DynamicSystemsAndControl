@@ -1,19 +1,191 @@
-(kicad_sch (version 20250114) (generator "eeschema")
-(uuid 94b2b377-c0d1-5fce-91fa-ae8f86f36484) (paper "A4") (title_block (title "Buck 12V / 6V - REVIEW ONLY") (rev "A") (company "UNAL Manizales")) (lib_symbols)
-(sheet (at 30 55) (size 130 18) (stroke (width .1524) (type default)) (fill (color 0 0 0 0)) (uuid e29e3f6c-31ac-5304-9825-4ea039ba59c0)
-          (property "Sheetname" "Power stage" (at 30 54 0) (effects (font (size 1.27 1.27))))
-          (property "Sheetfile" "buck_1.kicad_sch" (at 30 75 0) (effects (font (size 1.27 1.27))))
-          (instances (project "buck" (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484" (page "2")))))
-(sheet (at 30 80) (size 130 18) (stroke (width .1524) (type default)) (fill (color 0 0 0 0)) (uuid fbdf1364-0f3f-5e5b-98a0-861b21661de2)
-          (property "Sheetname" "Gate driver and supplies" (at 30 79 0) (effects (font (size 1.27 1.27))))
-          (property "Sheetfile" "buck_2.kicad_sch" (at 30 100 0) (effects (font (size 1.27 1.27))))
-          (instances (project "buck" (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484" (page "3")))))
-(sheet (at 30 105) (size 130 18) (stroke (width .1524) (type default)) (fill (color 0 0 0 0)) (uuid 45634feb-701a-5cd8-91ce-d8feeefcff15)
-          (property "Sheetname" "Independent protection" (at 30 104 0) (effects (font (size 1.27 1.27))))
-          (property "Sheetfile" "buck_3.kicad_sch" (at 30 125 0) (effects (font (size 1.27 1.27))))
-          (instances (project "buck" (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484" (page "4")))))
-(sheet (at 30 130) (size 130 18) (stroke (width .1524) (type default)) (fill (color 0 0 0 0)) (uuid cfe27333-b53c-553c-abde-2d207f66651e)
-          (property "Sheetname" "STM32 interface and test points" (at 30 129 0) (effects (font (size 1.27 1.27))))
-          (property "Sheetfile" "buck_4.kicad_sch" (at 30 150 0) (effects (font (size 1.27 1.27))))
-          (instances (project "buck" (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484" (page "5")))))
-(sheet_instances (path "/" (page "1"))))
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "94b2b377-c0d1-5fce-91fa-ae8f86f36484")
+	(paper "A4")
+	(title_block
+		(title "Buck 12V / 6V - REVIEW ONLY")
+		(rev "A")
+		(company "UNAL Manizales")
+	)
+	(lib_symbols)
+	(sheet
+		(at 30 105)
+		(size 130 18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "45634feb-701a-5cd8-91ce-d8feeefcff15")
+		(property "Sheetname" "Independent protection"
+			(at 30 104 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sheetfile" "buck_3.kicad_sch"
+			(at 30 125 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "buck"
+				(path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30 130)
+		(size 130 18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "cfe27333-b53c-553c-abde-2d207f66651e")
+		(property "Sheetname" "STM32 interface and test points"
+			(at 30 129 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sheetfile" "buck_4.kicad_sch"
+			(at 30 150 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "buck"
+				(path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30 55)
+		(size 130 18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e29e3f6c-31ac-5304-9825-4ea039ba59c0")
+		(property "Sheetname" "Power stage"
+			(at 30 54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sheetfile" "buck_1.kicad_sch"
+			(at 30 75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "buck"
+				(path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30 80)
+		(size 130 18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "fbdf1364-0f3f-5e5b-98a0-861b21661de2")
+		(property "Sheetname" "Gate driver and supplies"
+			(at 30 79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sheetfile" "buck_2.kicad_sch"
+			(at 30 100 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "buck"
+				(path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

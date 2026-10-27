@@ -1,0 +1,605 @@
+[
+  [
+    {
+      "kind": "PAD",
+      "uuid": "b890517b-a79d-4313-98bd-6dacd50a06eb",
+      "description": "R11.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "383a76d0-f7f2-45dd-a703-c32b34bbb807",
+      "description": "TP2.1"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "e624fbac-2cec-433d-98b7-ccc069febe0d",
+      "description": "Q2.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "83f5aad9-49a2-4590-91a4-93655615064a",
+      "description": "R6.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "3187542e-b1eb-4d7f-a651-25f587156de6",
+      "description": "C1.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "a6e957af-0ac1-4a9f-b1ce-05877dcf25ba",
+      "description": "R9.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "378bdf2d-c2c4-45d2-9689-c0e1bbcb8f57",
+      "description": "C5.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "da9c7cac-e0e7-40da-8f62-3c63706481e8",
+      "description": "C10.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "934950ba-9ff5-4117-9b91-221d7b7af7af",
+      "description": "C11.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "42cb1a5e-575e-427a-a5b7-e0469a8802d5",
+      "description": "C3.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "02e0f391-f040-4892-b8ec-f987c8fc4a08",
+      "description": "C13.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "4681c5ea-fb83-453c-9479-de97ba2c3bcb",
+      "description": "C15.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "8534446d-f1f8-4af7-8fd5-3d9d5e08cded",
+      "description": "U1.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "5f634c24-824d-47c5-aa32-aedcf0c1f6b7",
+      "description": "U1.14"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "a0a6eef9-ab88-4341-a336-a51346efe724",
+      "description": "U1.15"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "278849e9-bcad-42f8-ac3b-c6fdaecad056",
+      "description": "U6.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "aaa3e571-c130-421f-b03d-1f1872bbe288",
+      "description": "C7.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "4aa6134b-3ea4-4cf0-bcb8-4afeb7a5f0fa",
+      "description": "C12.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "bf7b12eb-7306-4137-8370-8a5f0028f7ba",
+      "description": "C2.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "11719e50-16a5-469f-868f-12113a92fd5c",
+      "description": "J2.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "ae00e7f1-3242-408e-b886-410de10a3fba",
+      "description": "J3.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "d51a8a03-97b2-4805-ba9c-007a0db7810c",
+      "description": "J3.8"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "803e0ad2-460b-4bf8-961a-7e9e53b618c8",
+      "description": "U5.4"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "1997085f-2873-4953-8102-761fad3de605",
+      "description": "C8.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "62a7fed9-5040-411d-93d0-6d99c467b2ed",
+      "description": "C14.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "15a9069d-1ec7-4d94-bba4-e31ba4abe143",
+      "description": "D1.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "80a1dba2-43c2-4728-b51f-65bbcead008d",
+      "description": "U4.7"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "db641f00-6ff4-4f3f-9e9d-2c9a825d5cea",
+      "description": "C9.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "13d8cc6e-d284-442f-b73f-7a9d2545160f",
+      "description": "U2.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "2333cfc9-6ef9-45c4-b073-090a87822445",
+      "description": "J1.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "76454533-46e6-4295-919d-fef467f2de0b",
+      "description": "C4.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "d6fd701b-d68a-4f64-99c9-545e1db3ed84",
+      "description": "C16.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "2131ac25-d7c5-4d0a-a086-e12971df9baa",
+      "description": "R5.2"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "067ef2f0-4f50-4115-a7b4-b796b44a7e2e",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "095d7b1a-ab06-4e43-95e7-dd317c5f8f91",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "0e12904e-4edd-439e-a7c8-8b8735b394dc",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "11b0a25c-0862-4903-9a16-c98f4480f1ec",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "18ad5dbd-fb75-448d-b2ee-3e05df074595",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "2b8b7dd0-c15b-4f12-be24-d2ca7347f6d6",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "2bca2d27-deac-4326-89cd-f9dc37e7db46",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "36865385-e885-4a1c-ab9f-5071f57f8ad6",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "4ea9f6ad-1e11-4e56-adf4-48a621367ccd",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "561f3bcc-6648-4f9e-9a2b-e0fb49d3954e",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "60a98c71-7068-4f31-8eb1-1436535d76e1",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "77debd58-3df4-402b-9204-4a9bc1903c30",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "7d74a328-d078-477a-a0e4-df4be94966be",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "ac8cbdcd-8e84-4b5e-b481-498f38da191e",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "b92ae746-a7ae-49e2-8434-ff63cd778eb7",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "c11dee20-f158-4700-a7ff-6d47d48f7aba",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "d031d29f-92f5-4f09-b29b-3ec904e81c14",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "e5e13c88-f4c2-4918-9bc1-290415f5d7ff",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "ef22c858-e748-454c-8de5-0a66e1aaf435",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "1275bd0c-d9d1-40d0-8eee-cad00b30940c",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "15e8037a-8585-4567-a2a9-acb8572a8193",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "190c6b7f-fa7f-4ab8-9d99-85f56f236eb4",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "2e85b2ea-d8eb-4e20-b1be-a7cd8e7efad1",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "41ebb927-1faf-45b3-8d2e-f9585547071d",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "47bde461-3228-450c-8a9c-3482fdd7328d",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "63799a96-0be9-41b8-8182-4e5ebb715758",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "8f6506a7-bde2-45ed-b6cf-c2ac8a70dadd",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "9e40c59a-63cd-415c-b546-96deb5fadd5f",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "c8d1cf23-337b-468f-83a8-25bddffa5bc0",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "d0363c9e-eada-49dd-8162-5f9256ed24a0",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "df346ed6-c34a-45ff-87cb-ed339b61cbd5",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_VIA",
+      "uuid": "ff4a4029-5538-4009-bd92-ca46148170d4",
+      "description": "PCB_VIA"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "01055f4c-d84a-4c5a-b8a0-5eb9bcb732ea",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "56bd6911-6a02-4e6b-8c79-f13f8d65bbd5",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "87000bae-d82d-4da7-b6a8-696d277e2ee0",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "8e2dd9ae-e2eb-49d5-951d-82a8fdb761cd",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "9f1331bf-bf71-4a92-81e9-76e032100bfc",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "9f58b786-12b5-42b2-9053-e1f9d93b34be",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "ad9089f0-08cc-4bf4-9b9c-16cc2ffdc323",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "c9d7344c-729b-4e51-9f39-c9c1ee97e82f",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "PCB_TRACK",
+      "uuid": "cf415a62-63ae-4fae-bfe4-e48366c482d9",
+      "description": "PCB_TRACK"
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 0,
+      "bbox_mm": [
+        173.885002,
+        75.650413,
+        182.713582,
+        79.8445
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 2,
+      "bbox_mm": [
+        176.2505,
+        71.0055,
+        183.7995,
+        76.5995
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 3,
+      "bbox_mm": [
+        157.944854,
+        66.2255,
+        159.3495,
+        69.7
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 4,
+      "bbox_mm": [
+        171.9205,
+        65.3867,
+        186.687441,
+        68.97553
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 5,
+      "bbox_mm": [
+        203.241463,
+        66.359408,
+        205.02059,
+        68.138536
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 6,
+      "bbox_mm": [
+        164.1755,
+        61.826716,
+        166.215,
+        65.924386
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 7,
+      "bbox_mm": [
+        171.675,
+        60.5755,
+        181.798817,
+        65.4857
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 8,
+      "bbox_mm": [
+        168.864155,
+        53.8505,
+        201.978536,
+        65.4857
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 9,
+      "bbox_mm": [
+        128.4555,
+        49.6555,
+        156.835857,
+        55.734095
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 10,
+      "bbox_mm": [
+        164.1755,
+        45.768286,
+        169.9945,
+        55.501714
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 12,
+      "bbox_mm": [
+        105.9005,
+        31.9505,
+        210.4495,
+        111.2495
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "B.Cu",
+      "index": 0,
+      "bbox_mm": [
+        203.241463,
+        66.359408,
+        205.02059,
+        68.138536
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "B.Cu",
+      "index": 1,
+      "bbox_mm": [
+        203.241463,
+        64.321463,
+        205.020591,
+        66.100591
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "B.Cu",
+      "index": 2,
+      "bbox_mm": [
+        203.436249,
+        58.739408,
+        205.02059,
+        60.518536
+      ]
+    },
+    {
+      "kind": "zone_island",
+      "layer": "B.Cu",
+      "index": 3,
+      "bbox_mm": [
+        105.9005,
+        31.9505,
+        210.4495,
+        111.2495
+      ]
+    }
+  ],
+  [
+    {
+      "kind": "PAD",
+      "uuid": "694b1e8c-25d2-4c84-a3cc-f893abb0a21d",
+      "description": "U3.3"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "3bd225f6-9eec-4b8f-ae8c-b82b011680f1",
+      "description": "U3.5"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "fed8e734-81d1-4327-ad4a-a9a3db8e7d7c",
+      "description": "U3.7"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "1110bd55-4f40-446e-a141-c923b1e348f9",
+      "description": "U3.9"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "162c9b32-3b2f-4fe6-9887-a7bd3eacd8ed",
+      "description": "U3.11"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "f9aaf647-dbcc-4a83-91e4-5d3237713625",
+      "description": "U3.13"
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 11,
+      "bbox_mm": [
+        175.1845,
+        44.726113,
+        192.2245,
+        54.875432
+      ]
+    }
+  ],
+  [
+    {
+      "kind": "PAD",
+      "uuid": "fc3ad2a5-88fd-4fdf-9fc6-b2139fbed679",
+      "description": "C17.2"
+    },
+    {
+      "kind": "PAD",
+      "uuid": "8bb7960d-e97f-413f-a8c6-2b51cb0caacd",
+      "description": "R15.2"
+    },
+    {
+      "kind": "zone_island",
+      "layer": "F.Cu",
+      "index": 1,
+      "bbox_mm": [
+        184.188258,
+        66.23,
+        190.6745,
+        77.97856
+      ]
+    }
+  ]
+]

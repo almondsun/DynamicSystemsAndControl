@@ -1,0 +1,4440 @@
+(kicad_sch
+  (version 20260306)
+  (generator "eeschema")
+  (generator_version "10.0")
+  (uuid "39758c43-fbf8-5353-8a68-68bcc8fe2409")
+  (paper "A3")
+  (title_block
+    (title "STM32 interface and test points - REV A / HOLD FABRICATION")
+    (rev "A")
+    (company "UNAL Manizales - Sistemas Dinamicos y Control")
+  )
+  (lib_symbols
+    (symbol "Buck:C17"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "1nF"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "C17_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -1.27 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -1.27 -3.81)
+            (xy -1.27 3.81)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy 10.16 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.27 -3.81)
+            (xy 1.27 3.81)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "C17_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:J3"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 9.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "STM32 CABLE 2x5"
+        (at 0 -9.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "J3_0_1"
+        (rectangle
+          (start -10.16 6.35)
+          (end 10.16 -6.35)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "J3_1_1"
+        (pin passive line
+          (at -12.7 3.81 0)
+          (length 2.54)
+          (name "+5V"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -12.7 1.27 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -12.7 -1.27 0)
+          (length 2.54)
+          (name "MCU_PWM"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -12.7 -3.81 0)
+          (length 2.54)
+          (name "RUN"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "4"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -12.7 -6.35 0)
+          (length 2.54)
+          (name "RESET"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "5"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 3.81 180)
+          (length 2.54)
+          (name "NFAULT_MCU"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "6"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 1.27 180)
+          (length 2.54)
+          (name "VSENSE"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "7"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 -1.27 180)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "8"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 -3.81 180)
+          (length 2.54)
+          (name "+3V3"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "9"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 -6.35 180)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "10"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:R14"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "3k 1%"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "R14_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -3.81 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -3.81 1.27)
+          (end 3.81 -1.27)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 3.81 0)
+            (xy 10.16 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "R14_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:R15"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "1k 1%"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "R15_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -3.81 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -3.81 1.27)
+          (end 3.81 -1.27)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 3.81 0)
+            (xy 10.16 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "R15_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:TP1"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "T"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "VIN"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "TP1_0_1"
+        (rectangle
+          (start -10.16 2.54)
+          (end 10.16 -2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "TP1_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name "VIN"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:TP2"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "T"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "GND"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "TP2_0_1"
+        (rectangle
+          (start -10.16 2.54)
+          (end 10.16 -2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "TP2_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:TP3"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "T"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "SW"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "TP3_0_1"
+        (rectangle
+          (start -10.16 2.54)
+          (end 10.16 -2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "TP3_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name "SW"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:TP4"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "T"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "GATE"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "TP4_0_1"
+        (rectangle
+          (start -10.16 2.54)
+          (end 10.16 -2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "TP4_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name "GATE"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:TP5"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "T"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "VOUT"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "TP5_0_1"
+        (rectangle
+          (start -10.16 2.54)
+          (end 10.16 -2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "TP5_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name "VOUT"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:TP6"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "T"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "ISENSE"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "TP6_0_1"
+        (rectangle
+          (start -10.16 2.54)
+          (end 10.16 -2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "TP6_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name "ISENSE"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:TP7"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "T"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "SD"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "TP7_0_1"
+        (rectangle
+          (start -10.16 2.54)
+          (end 10.16 -2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "TP7_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name "SD"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:TP8"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "T"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "NTRIP"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "TP8_0_1"
+        (rectangle
+          (start -10.16 2.54)
+          (end 10.16 -2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "TP8_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name "NTRIP"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:TP9"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "T"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "MCU_PWM"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "TP9_0_1"
+        (rectangle
+          (start -10.16 2.54)
+          (end 10.16 -2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "TP9_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name "MCU_PWM"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck_Redesign:J3_NUCLEO_L432KC"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 9.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "NUCLEO-L432KC EXT USB"
+        (at 0 -9.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "J3_NUCLEO_L432KC_0_1"
+        (rectangle
+          (start -10.16 6.35)
+          (end 10.16 -6.35)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "J3_NUCLEO_L432KC_1_1"
+        (pin passive line
+          (at -12.7 3.81 0)
+          (length 2.54)
+          (name "UART_TX"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -12.7 1.27 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -12.7 -1.27 0)
+          (length 2.54)
+          (name "MCU_PWM"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -12.7 -3.81 0)
+          (length 2.54)
+          (name "RUN"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "4"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -12.7 -6.35 0)
+          (length 2.54)
+          (name "RESET"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "5"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 3.81 180)
+          (length 2.54)
+          (name "NFAULT_MCU"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "6"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 1.27 180)
+          (length 2.54)
+          (name "VSENSE"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "7"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 -1.27 180)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "8"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 -3.81 180)
+          (length 2.54)
+          (name "NUC_3V3"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "9"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 -6.35 180)
+          (length 2.54)
+          (name "UART_RX"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "10"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+  )
+  (wire
+    (pts
+      (xy 38.1 35.56)
+      (xy 33.02 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "165d24ef-b490-566e-a2fa-a1d7b168b0fd")
+  )
+  (wire
+    (pts
+      (xy 360.68 41.91)
+      (xy 365.76 41.91)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "16ecb9a1-fa9d-5a9d-9b9b-e388d7197313")
+  )
+  (wire
+    (pts
+      (xy 335.28 41.91)
+      (xy 330.2 41.91)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "28df5327-7c26-508f-b0c5-49273960ed29")
+  )
+  (wire
+    (pts
+      (xy 360.68 39.37)
+      (xy 365.76 39.37)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "298d11fa-2abf-51bf-a49c-35c189f11b20")
+  )
+  (wire
+    (pts
+      (xy 162.56 35.56)
+      (xy 167.64 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "3db114e9-47ef-58ba-96fa-dde444c0c3c0")
+  )
+  (wire
+    (pts
+      (xy 38.1 78.74)
+      (xy 33.02 78.74)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "423f5d75-bb31-5d58-bc02-f7fd3152c007")
+  )
+  (wire
+    (pts
+      (xy 38.1 121.92)
+      (xy 33.02 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "43c20572-247c-53f8-8883-c7f563c56077")
+  )
+  (wire
+    (pts
+      (xy 137.16 78.74)
+      (xy 132.08 78.74)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "4f1093a8-9b5b-5cef-93d2-562fc040c797")
+  )
+  (wire
+    (pts
+      (xy 137.16 121.92)
+      (xy 132.08 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "5a55ba5b-60ae-5ee8-bc89-0e7ade8595eb")
+  )
+  (wire
+    (pts
+      (xy 236.22 35.56)
+      (xy 231.14 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "5c8ccc6c-1b59-5133-967e-66a619baf7d2")
+  )
+  (wire
+    (pts
+      (xy 335.28 78.74)
+      (xy 330.2 78.74)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "89dcd8fe-9522-595b-84dd-627b678fcfde")
+  )
+  (wire
+    (pts
+      (xy 137.16 35.56)
+      (xy 132.08 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "8e4c89fe-792c-5ee3-9844-b6c05ef465f7")
+  )
+  (wire
+    (pts
+      (xy 335.28 34.29)
+      (xy 330.2 34.29)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "912fb948-c041-5c64-884d-c7d8a24d9509")
+  )
+  (wire
+    (pts
+      (xy 261.62 35.56)
+      (xy 266.7 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "96ba10e9-d5a7-5e9f-a668-2910128e40f0")
+  )
+  (wire
+    (pts
+      (xy 236.22 121.92)
+      (xy 231.14 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "978992f8-5f00-5be1-8f2a-fb421f5139ec")
+  )
+  (wire
+    (pts
+      (xy 335.28 36.83)
+      (xy 330.2 36.83)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "9886cc93-d326-5b98-88fd-1bf5d1566361")
+  )
+  (wire
+    (pts
+      (xy 335.28 121.92)
+      (xy 330.2 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "98deddb4-49b7-5541-ab12-aa3b7496ab4e")
+  )
+  (wire
+    (pts
+      (xy 38.1 165.1)
+      (xy 33.02 165.1)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "a8f73af2-6ac4-5b67-80db-7e46981abca5")
+  )
+  (wire
+    (pts
+      (xy 335.28 39.37)
+      (xy 330.2 39.37)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "ac839c21-4c6e-5214-bade-142cb7293331")
+  )
+  (wire
+    (pts
+      (xy 236.22 78.74)
+      (xy 231.14 78.74)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "ad0b096b-827a-5a2c-91d4-1eb3e3684dfe")
+  )
+  (wire
+    (pts
+      (xy 335.28 31.75)
+      (xy 330.2 31.75)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "c7ea245f-5ad2-5bcb-9070-d553000a15ef")
+  )
+  (wire
+    (pts
+      (xy 360.68 31.75)
+      (xy 365.76 31.75)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "df75b09e-77db-58bb-a0e1-bf5dc246a8ca")
+  )
+  (wire
+    (pts
+      (xy 63.5 35.56)
+      (xy 68.58 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "e0e90ec8-be36-53ed-8d46-1cf38e4bb8c8")
+  )
+  (wire
+    (pts
+      (xy 360.68 34.29)
+      (xy 365.76 34.29)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "f0abd46b-5e18-565d-b4c0-fe01dda647ed")
+  )
+  (wire
+    (pts
+      (xy 360.68 36.83)
+      (xy 365.76 36.83)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "f1291dca-4b1e-535f-8cd0-ff7d0210a2bb")
+  )
+  (global_label "MCU_PWM"
+    (shape passive)
+    (at 330.2 36.83 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "14441e6e-f40d-52b3-938c-8295e5401018")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 330.2 36.83 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VSENSE"
+    (shape passive)
+    (at 231.14 35.56 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "186b04d0-3299-50b3-a485-864522ed6ad2")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 231.14 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "NFAULT_MCU"
+    (shape passive)
+    (at 365.76 31.75 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "226ccd3c-1711-528c-87ca-8d18e209ba98")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 365.76 31.75 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VSENSE"
+    (shape passive)
+    (at 132.08 35.56 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "22ee7d4b-6452-5ec9-bc4c-ad6f182fc3f9")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 132.08 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "SW"
+    (shape passive)
+    (at 231.14 78.74 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "3324ea7f-8729-5ee8-ab28-37c2119d78a2")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 231.14 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "NUC_3V3"
+    (shape passive)
+    (at 365.76 39.37 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "58a5cdf1-8f04-5b13-9f89-ea5f57e87800")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 365.76 39.37 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "UART_RX"
+    (shape passive)
+    (at 365.76 41.91 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "6d39e42b-ab90-5e66-afb2-37cbe637a79c")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 365.76 41.91 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 132.08 78.74 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "76570024-ab26-5e10-ba00-06d5eb12c4b0")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 132.08 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "NTRIP"
+    (shape passive)
+    (at 330.2 121.92 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "7670c65a-32c9-5d12-8521-4f6eb2956b8f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 330.2 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "SD"
+    (shape passive)
+    (at 231.14 121.92 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "7bec4623-51a1-58a0-a887-a0cac63395d2")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 231.14 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 365.76 36.83 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "7c6433dd-2040-5c72-b325-925b33285e29")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 365.76 36.83 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 167.64 35.56 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "8d269d65-0a5a-5f26-a106-bcadf138e162")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 167.64 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "RUN"
+    (shape passive)
+    (at 330.2 39.37 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "93870644-fbff-508b-92e8-9bff569879cd")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 330.2 39.37 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GATE"
+    (shape passive)
+    (at 330.2 78.74 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "a6f9ac73-9c7f-5489-a7e8-ab0d02899454")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 330.2 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VOUT"
+    (shape passive)
+    (at 33.02 121.92 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "a91d6316-42b3-59fc-b11e-dcd852110c6c")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 33.02 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 330.2 34.29 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "abb52c31-0777-56b1-a2e4-a731b5e1a810")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 330.2 34.29 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VIN"
+    (shape passive)
+    (at 33.02 78.74 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "b5ac811f-0b79-57c3-a598-60e5482e854f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 33.02 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 266.7 35.56 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "c09be8ac-35db-5284-b3fc-7a16207af41c")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 266.7 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "RESET"
+    (shape passive)
+    (at 330.2 41.91 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "ccb35df1-4b3b-5cf6-864b-89c4724402a4")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 330.2 41.91 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VSENSE"
+    (shape passive)
+    (at 365.76 34.29 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "cdfe2c76-0be8-51cc-a774-5d709f15a882")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 365.76 34.29 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VSENSE"
+    (shape passive)
+    (at 68.58 35.56 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "d90710bb-dde0-5e07-aea6-8c04a9e067cb")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 68.58 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "ISENSE"
+    (shape passive)
+    (at 132.08 121.92 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "e6985efb-0dbe-5564-8517-20bcd6f3238d")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 132.08 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VOUT"
+    (shape passive)
+    (at 33.02 35.56 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "e91cedfe-c51a-5fc2-9fee-ef71afa9b092")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 33.02 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "UART_TX"
+    (shape passive)
+    (at 330.2 31.75 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "e9dc5a73-b0d0-5c78-b15d-e258cd10fc35")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 330.2 31.75 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "MCU_PWM"
+    (shape passive)
+    (at 33.02 165.1 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "f6013059-ebba-5010-9a45-4de670be1a92")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 33.02 165.1 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:TP5")
+    (at 50.8 121.92 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "0b9a5136-4f43-56ac-9904-59e245d2848c")
+    (property "Reference" "TP5"
+      (at 50.8 115.38 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "VOUT"
+      (at 50.8 128.46 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+      (at 50.8 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 50.8 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 50.8 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "26291b15-de5b-4010-b814-618db9752985")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "TP5")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "No definido"
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "No verificado"
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:R14")
+    (at 50.8 35.56 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "1281fbf9-9c5d-5d43-86c1-20b4634c9c6a")
+    (property "Reference" "R14"
+      (at 50.8 29.02 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "15k 1%"
+      (at 50.8 42.1 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 50.8 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 50.8 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 50.8 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "8d6c8cdd-c656-4aa8-a9fa-6eab85f7a6b2")
+    )
+    (pin "2"
+      (uuid "e04ac165-b8d0-491d-9ac0-5e8cf61f4649")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "R14")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "0603WAF1502T5E"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C22809"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "15k candidate adopted for evaluation; ADC power-off/fault protection unresolved."
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Original_Value" "3k 1%"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0603WAF1502T5E"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C22809"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Commercial_URL" "https://jlcpcb.com/partdetail/C22809"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Previous_Review_Value" "3k 1%"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:TP9")
+    (at 50.8 165.1 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "51476402-99a3-5677-aadf-0e787191e734")
+    (property "Reference" "TP9"
+      (at 50.8 158.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "MCU_PWM"
+      (at 50.8 171.64 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+      (at 50.8 165.1 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 50.8 165.1 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 50.8 165.1 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "7fef32f9-8f9d-4f20-9975-457cbc750ec7")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "TP9")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 50.8 165.1 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "No definido"
+      (at 50.8 165.1 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "No verificado"
+      (at 50.8 165.1 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 50.8 165.1 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      (at 50.8 165.1 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:TP3")
+    (at 248.92 78.74 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "6ab45211-144f-5d28-929f-a75eaf7e0ea9")
+    (property "Reference" "TP3"
+      (at 248.92 72.2 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "SW"
+      (at 248.92 85.28 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+      (at 248.92 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 248.92 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 248.92 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "03eb49c9-831b-4179-bda8-6799a0af7544")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "TP3")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 248.92 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "No definido"
+      (at 248.92 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "No verificado"
+      (at 248.92 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 248.92 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      (at 248.92 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:TP2")
+    (at 149.86 78.74 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "82d47b14-d7c9-563b-8e73-1b63333e18a3")
+    (property "Reference" "TP2"
+      (at 149.86 72.2 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "GND"
+      (at 149.86 85.28 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+      (at 149.86 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 149.86 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 149.86 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "4c6c9b9c-0ff3-4e88-a986-421394f219c3")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "TP2")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "No definido"
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "No verificado"
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:TP1")
+    (at 50.8 78.74 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "86789bec-f455-52f8-9dd2-75d2e232ebac")
+    (property "Reference" "TP1"
+      (at 50.8 72.2 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "VIN"
+      (at 50.8 85.28 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+      (at 50.8 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 50.8 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 50.8 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "49a0fe80-34ba-4d20-b637-1971b81cdfcb")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "TP1")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 50.8 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "No definido"
+      (at 50.8 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "No verificado"
+      (at 50.8 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 50.8 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      (at 50.8 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:TP6")
+    (at 149.86 121.92 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "909512b2-d506-5b26-a64d-47d7c50a0e37")
+    (property "Reference" "TP6"
+      (at 149.86 115.38 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "ISENSE"
+      (at 149.86 128.46 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+      (at 149.86 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 149.86 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 149.86 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "57a35636-b407-47e6-989f-d9c331f40f32")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "TP6")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "No definido"
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "No verificado"
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:R15")
+    (at 149.86 35.56 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "9fa0a876-aa52-55af-8d6b-7653e344fb74")
+    (property "Reference" "R15"
+      (at 149.86 29.02 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "2.2k 1%"
+      (at 149.86 42.1 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 149.86 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 149.86 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 149.86 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "9888c18a-590c-47c0-b340-fdacf537dfee")
+    )
+    (pin "2"
+      (uuid "065e01fe-a2e4-47aa-8e82-406de4bda7a1")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "R15")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "0603WAF2201T5E"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C4190"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "2.2k candidate adopted for evaluation; ADC gain 0.1279069767; protection unresolved."
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Original_Value" "1k 1%"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "0603WAF2201T5E"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C4190"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Manufacturer" "UNI-ROYAL"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Commercial_URL" "https://www.lcsc.com/product-detail/C4190.html"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Previous_Review_Value" "1k 1%"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:TP7")
+    (at 248.92 121.92 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "a594e3c6-c7a4-536d-8948-d10f2142a4a3")
+    (property "Reference" "TP7"
+      (at 248.92 115.38 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "SD"
+      (at 248.92 128.46 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+      (at 248.92 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 248.92 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 248.92 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "b203f232-a01c-4c1d-b0f0-185bd909a8ab")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "TP7")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "No definido"
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "No verificado"
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:TP8")
+    (at 347.98 121.92 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "b01364d3-be97-525b-a7e0-616402e27f96")
+    (property "Reference" "TP8"
+      (at 347.98 115.38 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "NTRIP"
+      (at 347.98 128.46 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+      (at 347.98 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 347.98 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 347.98 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "4159a4bc-b56e-4e17-9a9d-47c7a93a3b14")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "TP8")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "No definido"
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "No verificado"
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:C17")
+    (at 248.92 35.56 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "ce0cae8b-9bbc-56e5-9072-194ff2f4c9b4")
+    (property "Reference" "C17"
+      (at 248.92 29.02 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "1nF"
+      (at 248.92 42.1 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 248.92 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 248.92 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 248.92 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "2"
+      (uuid "f2a7cf8c-a35d-4c86-a826-8be41111a16e")
+    )
+    (pin "1"
+      (uuid "459e16a7-0c9b-4fda-93f9-0dc4a3de256a")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "C17")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "Fenghua 0603CG102J500NT"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C1636"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "El filtro atenúa 10kHz solo 0,11 %; revisar adquisición ADC y seguridad frente a sobrevoltaje, independiente del rating del capacitor."
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Original_Value" "1nF"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "Fenghua 0603CG102J500NT"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C1636"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck_Redesign:J3_NUCLEO_L432KC")
+    (at 347.98 35.56 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "dba037a7-2769-5568-b108-cda852ab7035")
+    (property "Reference" "J3"
+      (at 347.98 25.21 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "NUCLEO-L432KC EXT USB"
+      (at 347.98 45.91 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
+      (at 347.98 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 347.98 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 347.98 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "3"
+      (uuid "425f6f59-e2f2-489b-a41c-c1f374799068")
+    )
+    (pin "1"
+      (uuid "3995967e-f53c-4574-9ded-e926d5b383d0")
+    )
+    (pin "2"
+      (uuid "26f2b6ce-686b-4e9c-a2f0-07752b6098e4")
+    )
+    (pin "4"
+      (uuid "678f93bd-595e-4201-bede-0c6daf17cf70")
+    )
+    (pin "5"
+      (uuid "6dbbd23e-153c-420d-a99f-16a593cf06fa")
+    )
+    (pin "7"
+      (uuid "46d58937-1b73-4d0a-9e50-877403527fba")
+    )
+    (pin "8"
+      (uuid "2b6e3c71-dc21-4a96-885c-31ed16b2212f")
+    )
+    (pin "10"
+      (uuid "e12d773d-3d66-435b-bf62-e4ddd79ba483")
+    )
+    (pin "9"
+      (uuid "034b5b1b-9f4c-4fa9-b092-7372cd26ec90")
+    )
+    (pin "6"
+      (uuid "6052bf7d-62e6-4f9a-a0c6-e063ebf6a748")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "J3")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "TBD keyed IDC header 2x5 2.54mm"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "NOT SELECTED"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "External NUCLEO powered via USB. No Buck 5V/VIN connection. NUC_3V3 supplies R13 pull-up only. PA0/PWM signal protection and board solder bridges remain blocking."
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "TBD keyed IDC header 2x5 2.54mm"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Manufacturer" "TBD"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "NOT SELECTED"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Cable_Pinout" "1 UART_TX D1 PA9;2 GND;3 PWM D9 PA8;4 RUN D3 PB0;5 LATCH_RESET D6 PB1;6 NFAULT D4 PB7;7 VSENSE A0 PA0;8 GND;9 NUC_3V3 output from CN4.14;10 UART_RX D0 PA10;NO 5V OR VIN"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Assembly" "NUCLEO external; NOT assembled by JLCPCB; header MPN/land provisional"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Previous_Review_Value" "STM32 CABLE 2x5"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:TP4")
+    (at 347.98 78.74 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "ed1dfb76-4646-585a-bc20-4dcc74d31d7d")
+    (property "Reference" "TP4"
+      (at 347.98 72.2 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "GATE"
+      (at 347.98 85.28 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+      (at 347.98 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 347.98 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 347.98 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "8abf6198-6439-4fed-b7c5-dd867e50b888")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e"
+          (reference "TP4")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "No definido"
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "No verificado"
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+)

@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T22:14:15",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.4",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/94b2b377-c0d1-5fce-91fa-ae8f86f36484",
+            "violations": []
+        },
+        {
+            "path": "/Power stage/",
+            "uuid_path": "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0",
+            "violations": []
+        },
+        {
+            "path": "/Gate driver and supplies/",
+            "uuid_path": "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/fbdf1364-0f3f-5e5b-98a0-861b21661de2",
+            "violations": []
+        },
+        {
+            "path": "/Independent protection/",
+            "uuid_path": "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/45634feb-701a-5cd8-91ce-d8feeefcff15",
+            "violations": []
+        },
+        {
+            "path": "/STM32 interface and test points/",
+            "uuid_path": "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e",
+            "violations": []
+        }
+    ],
+    "source": "buck.kicad_sch"
+}

@@ -1,0 +1,332 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T10:06:03",
+    "ignored_checks": [
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.4",
+    "schematic_parity": [],
+    "source": "buck.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Vía [GND] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 30.0
+                    },
+                    "uuid": "3f70c369-2ed7-4f3a-8bc3-d1797990e1df"
+                },
+                {
+                    "description": "Vía [GND] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 40.0
+                    },
+                    "uuid": "f5fb4389-ffdf-4df4-bc21-ba81b76d0544"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pista [SW] en (F.Cu), longitud 10.0000 mm",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 20.0
+                    },
+                    "uuid": "1607d1b7-f76f-4d92-b065-c9688fe86e3e"
+                },
+                {
+                    "description": "Vía [SW] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 20.0
+                    },
+                    "uuid": "6444905f-bf13-4b12-b0d4-217984abf26b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Ancho de anular (restricciones de configuración de placa ancho anular min 0.1500 mm; real 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Vía [GND] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 30.0
+                    },
+                    "uuid": "3f70c369-2ed7-4f3a-8bc3-d1797990e1df"
+                }
+            ],
+            "severity": "error",
+            "type": "annular_width"
+        },
+        {
+            "description": "Infracción de margen (regla 'SW separation from analog' margen 0.5000 mm; real 0.3000 mm)",
+            "items": [
+                {
+                    "description": "Pista [SW] en (F.Cu), longitud 10.0000 mm",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 20.0
+                    },
+                    "uuid": "1607d1b7-f76f-4d92-b065-c9688fe86e3e"
+                },
+                {
+                    "description": "Pista [VSENSE] en (F.Cu), longitud 10.0000 mm",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 21.425
+                    },
+                    "uuid": "34576e02-7f1c-488d-90e1-5679a042d47e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Infracción de margen de agujero (regla 'No open via holes in SMD pads' margen 0.2000 mm; real 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Vía [GND] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 40.0
+                    },
+                    "uuid": "f5fb4389-ffdf-4df4-bc21-ba81b76d0544"
+                },
+                {
+                    "description": "Pad 1 [GND] de WITNESS1 en F.Cu",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 40.0
+                    },
+                    "uuid": "c1f4f854-b846-477b-8520-8fa556616024"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Tamaño de agujero fuera del rango (restricciones de configuración de placa agujero mínimo 0.3000 mm; real 0.2000 mm)",
+            "items": [
+                {
+                    "description": "Vía [GND] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 30.0
+                    },
+                    "uuid": "3f70c369-2ed7-4f3a-8bc3-d1797990e1df"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "Diámetro de vía (restricciones de configuración de placa diámetro mínimo 0.6000 mm; real 0.4000 mm)",
+            "items": [
+                {
+                    "description": "Vía [GND] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 30.0
+                    },
+                    "uuid": "3f70c369-2ed7-4f3a-8bc3-d1797990e1df"
+                }
+            ],
+            "severity": "error",
+            "type": "via_diameter"
+        },
+        {
+            "description": "Elementos no permitidos (regla 'Gate loop layer change needs review')",
+            "items": [
+                {
+                    "description": "Vía [GATE] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 40.0,
+                        "y": 20.0
+                    },
+                    "uuid": "c887cf46-264a-4c67-aca5-443b201550a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Elementos no permitidos (regla 'SW layer change needs review')",
+            "items": [
+                {
+                    "description": "Vía [SW] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 20.0
+                    },
+                    "uuid": "6444905f-bf13-4b12-b0d4-217984abf26b"
+                }
+            ],
+            "severity": "warning",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Vía [GATE] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 40.0,
+                        "y": 20.0
+                    },
+                    "uuid": "c887cf46-264a-4c67-aca5-443b201550a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Vía [GND] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 30.0
+                    },
+                    "uuid": "3f70c369-2ed7-4f3a-8bc3-d1797990e1df"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Vía [GND] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 40.0
+                    },
+                    "uuid": "f5fb4389-ffdf-4df4-bc21-ba81b76d0544"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Pista [SW] en (F.Cu), longitud 10.0000 mm",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 20.0
+                    },
+                    "uuid": "1607d1b7-f76f-4d92-b065-c9688fe86e3e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Vía [SW] en F.Cu - B.Cu",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 20.0
+                    },
+                    "uuid": "6444905f-bf13-4b12-b0d4-217984abf26b"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Pista [VIN] en (F.Cu), longitud 10.0000 mm",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 10.0
+                    },
+                    "uuid": "35fd012c-4ddc-4921-860c-0172b4b882f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Pista [VSENSE] en (F.Cu), longitud 10.0000 mm",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 21.425
+                    },
+                    "uuid": "34576e02-7f1c-488d-90e1-5679a042d47e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Huella WITNESS1",
+                    "pos": {
+                        "x": 45.0,
+                        "y": 40.0
+                    },
+                    "uuid": "ae6baf97-d607-4e9f-ba34-0edf7ffad9c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Ancho de pista (regla 'VIN width review outside pads' ancho mínimo 3.0000 mm; real 0.5000 mm)",
+            "items": [
+                {
+                    "description": "Pista [VIN] en (F.Cu), longitud 10.0000 mm",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 10.0
+                    },
+                    "uuid": "35fd012c-4ddc-4921-860c-0172b4b882f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_width"
+        }
+    ]
+}

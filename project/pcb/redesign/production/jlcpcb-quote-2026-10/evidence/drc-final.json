@@ -1,0 +1,121 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T00:43:08",
+    "ignored_checks": [
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.4",
+    "schematic_parity": [],
+    "source": "buck.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Items not allowed (rule 'Gate loop layer change needs review')",
+            "items": [
+                {
+                    "description": "Via [HO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 148.8,
+                        "y": 55.8
+                    },
+                    "uuid": "95187a20-abb5-41e9-85df-ac3931b25e76"
+                }
+            ],
+            "severity": "warning",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed (rule 'Gate loop layer change needs review')",
+            "items": [
+                {
+                    "description": "Via [HO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 157.45,
+                        "y": 60.8
+                    },
+                    "uuid": "feab11f8-88a8-4112-9903-034c0ba6908c"
+                }
+            ],
+            "severity": "warning",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 160.6,
+                        "y": 72.4
+                    },
+                    "uuid": "ac0c951f-7e56-4647-9164-c203e0328a44"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'VOUT +' on F.Silkscreen",
+                    "pos": {
+                        "x": 196.0,
+                        "y": 105.2
+                    },
+                    "uuid": "3f698ca8-f423-4e07-9c81-292b510c3d0c"
+                },
+                {
+                    "description": "PTH pad 1 [VOUT] of J2",
+                    "pos": {
+                        "x": 199.95,
+                        "y": 105.2
+                    },
+                    "uuid": "5f73bb6f-199b-4134-a783-71b509421f55"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'GND -' on F.Silkscreen",
+                    "pos": {
+                        "x": 204.95,
+                        "y": 105.2
+                    },
+                    "uuid": "d3192bda-ca0b-49da-aaea-dd2e9c5bed9e"
+                },
+                {
+                    "description": "PTH pad 2 [GND] of J2",
+                    "pos": {
+                        "x": 204.95,
+                        "y": 105.2
+                    },
+                    "uuid": "11719e50-16a5-469f-868f-12113a92fd5c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

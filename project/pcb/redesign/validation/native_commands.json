@@ -1,0 +1,75 @@
+{
+  "version": {
+    "command": [
+      "C:/Program Files/KiCad/10.0/bin/kicad-cli.exe",
+      "version"
+    ],
+    "exit_code": 0,
+    "stdout": "10.0.4\r\n",
+    "stderr": "22:14:07: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\r\n22:14:07: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)\r\n"
+  },
+  "original_erc_complete": {
+    "command": [
+      "C:/Program Files/KiCad/10.0/bin/kicad-cli.exe",
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--exit-code-violations",
+      "-o",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\buck_smd_assignment_20261025\\original_erc_complete.json",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\original\\buck.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "Se encontraron 0 violaciones\r\nInforme ERC guardado en C:/dev/7mo/control/DynamicSystemsAndControl/artifacts/buck_smd_assignment_20261025/original_erc_complete.json\r\n",
+    "stderr": "22:14:07: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\r\n22:14:07: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)\r\n\r\nFontconfig error: No writable cache directories\r\n\tC:/Users/justa/AppData/Local/fontconfig/cache\r\n\tC:/Users/justa/.cache/fontconfig\r\n\tC:/Users/justa/.fontconfig\r\n"
+  },
+  "new_netlist": {
+    "command": [
+      "C:/Program Files/KiCad/10.0/bin/kicad-cli.exe",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "-o",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\buck_smd_assignment_20261025\\redesign.net.xml",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\buck.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "22:14:08: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\r\n22:14:08: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)\r\n\r\nFontconfig error: No writable cache directories\r\n\tC:/Users/justa/AppData/Local/fontconfig/cache\r\n\tC:/Users/justa/.cache/fontconfig\r\n\tC:/Users/justa/.fontconfig\r\n"
+  },
+  "new_erc": {
+    "command": [
+      "C:/Program Files/KiCad/10.0/bin/kicad-cli.exe",
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--exit-code-violations",
+      "-o",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\buck_smd_assignment_20261025\\redesign_erc.json",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\buck.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "Se encontraron 0 violaciones\r\nInforme ERC guardado en C:/dev/7mo/control/DynamicSystemsAndControl/artifacts/buck_smd_assignment_20261025/redesign_erc.json\r\n",
+    "stderr": "22:14:10: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\r\n22:14:10: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)\r\n\r\nFontconfig error: No writable cache directories\r\n\tC:/Users/justa/AppData/Local/fontconfig/cache\r\n\tC:/Users/justa/.cache/fontconfig\r\n\tC:/Users/justa/.fontconfig\r\n"
+  },
+  "review_pdf": {
+    "command": [
+      "C:/Program Files/KiCad/10.0/bin/kicad-cli.exe",
+      "sch",
+      "export",
+      "pdf",
+      "-o",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\schematic_review.pdf",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\buck.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "Trazado a 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\schematic_review.pdf'.\r\nListo.\r\n",
+    "stderr": "22:14:12: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\r\n22:14:12: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)\r\n\r\nFontconfig error: No writable cache directories\r\n\tC:/Users/justa/AppData/Local/fontconfig/cache\r\n\tC:/Users/justa/.cache/fontconfig\r\n\tC:/Users/justa/.fontconfig\r\n"
+  }
+}

@@ -1,0 +1,180 @@
+[
+  {
+    "command": [
+      "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+      "version"
+    ],
+    "returncode": 0,
+    "stdout": "10.0.4\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+      "pcb",
+      "drc",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\jlcpcb-quote-20261027-004235\\source\\buck.kicad_pcb",
+      "--schematic-parity",
+      "--refill-zones",
+      "--save-board",
+      "--severity-all",
+      "--all-track-errors",
+      "--format",
+      "json",
+      "--output",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\evidence\\drc-export.json"
+    ],
+    "returncode": 0,
+    "stdout": "Found 5 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to C:/dev/7mo/control/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-quote-2026-10/evidence/drc-export.json\nSaved board\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+      "sch",
+      "erc",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\jlcpcb-quote-20261027-004235\\source\\buck.kicad_sch",
+      "--severity-all",
+      "--format",
+      "json",
+      "--output",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\evidence\\erc.json"
+    ],
+    "returncode": 0,
+    "stdout": "Found 2 violations\nSaved ERC Report to C:/dev/7mo/control/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-quote-2026-10/evidence/erc.json\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+      "sch",
+      "export",
+      "netlist",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\jlcpcb-quote-20261027-004235\\source\\buck.kicad_sch",
+      "--format",
+      "kicadxml",
+      "--output",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\evidence\\schematic.xml"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+      "pcb",
+      "export",
+      "gerbers",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\jlcpcb-quote-20261027-004235\\source\\buck.kicad_pcb",
+      "--layers",
+      "F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,F.Paste,B.Paste,Edge.Cuts",
+      "--output",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers/"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers\\buck-F_Cu.gtl'.\nPlotted to 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers\\buck-B_Cu.gbl'.\nPlotted to 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers\\buck-F_Paste.gtp'.\nPlotted to 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers\\buck-B_Paste.gbp'.\nPlotted to 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers\\buck-F_Silkscreen.gto'.\nPlotted to 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers\\buck-B_Silkscreen.gbo'.\nPlotted to 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers\\buck-F_Mask.gts'.\nPlotted to 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers\\buck-B_Mask.gbs'.\nPlotted to 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers\\buck-Edge_Cuts.gm1'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+      "pcb",
+      "export",
+      "drill",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\jlcpcb-quote-20261027-004235\\source\\buck.kicad_pcb",
+      "--format",
+      "excellon",
+      "--drill-origin",
+      "absolute",
+      "--excellon-units",
+      "mm",
+      "--excellon-zeros-format",
+      "decimal",
+      "--excellon-separate-th",
+      "--generate-report",
+      "--report-path",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\evidence\\drill-report.txt",
+      "--output",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers/"
+    ],
+    "returncode": 0,
+    "stdout": "Created file 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers\\buck-PTH.drl'\nCreated file 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\gerbers\\buck-NPTH.drl'\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+      "pcb",
+      "export",
+      "pos",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\jlcpcb-quote-20261027-004235\\source\\buck.kicad_pcb",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--output",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\evidence\\positions-native.csv"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\evidence\\positions-native.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+      "pcb",
+      "export",
+      "svg",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\jlcpcb-quote-20261027-004235\\source\\buck.kicad_pcb",
+      "--layers",
+      "F.Cu,F.Silkscreen,Edge.Cuts",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--output",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\evidence\\front-native.svg"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\evidence\\front-native.svg'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+      "pcb",
+      "export",
+      "svg",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\jlcpcb-quote-20261027-004235\\source\\buck.kicad_pcb",
+      "--layers",
+      "B.Cu,B.Silkscreen,Edge.Cuts",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "--mirror",
+      "--output",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\evidence\\back-native.svg"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to 'C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\evidence\\back-native.svg'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+      "pcb",
+      "drc",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\artifacts\\jlcpcb-quote-20261027-004235\\source\\buck.kicad_pcb",
+      "--schematic-parity",
+      "--severity-all",
+      "--all-track-errors",
+      "--format",
+      "json",
+      "--output",
+      "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\production\\jlcpcb-quote-2026-10\\evidence\\drc-final.json"
+    ],
+    "returncode": 0,
+    "stdout": "Found 5 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to C:/dev/7mo/control/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-quote-2026-10/evidence/drc-final.json\n",
+    "stderr": ""
+  }
+]

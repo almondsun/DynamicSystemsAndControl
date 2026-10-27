@@ -1,0 +1,11 @@
+{
+  "migration_work_completed": true,
+  "electrical_approval": false,
+  "firmware_flashed": false,
+  "schematic_coherent": true,
+  "erc_errors": 0,
+  "erc_warnings": 2,
+  "protected_files_unchanged": 273,
+  "net_comparison": "only documented differences",
+  "pcb_rules_started": false
+}

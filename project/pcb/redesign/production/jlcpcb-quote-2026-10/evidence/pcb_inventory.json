@@ -1,0 +1,4686 @@
+{
+  "footprints": [
+    {
+      "ref": "R11",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "01311c58-a8a4-4afb-bdd0-dbc80287673f",
+      "position_mm": [
+        155.75,
+        78.9
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R11",
+        "Value": "10k 1%",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "Candidate_LCSC": "C25804",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Tolerancia/TCR y valor final R10 afectan umbral OVP.",
+        "Original_Value": "10k 1%",
+        "MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "LCSC": "C25804"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "OVSENSE",
+          "position_mm": [
+            155.75,
+            78.075
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            155.75,
+            79.725
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "TP2",
+      "value": "GND",
+      "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+      "uuid": "032b2109-caad-44fe-8fb4-e0eeb4523775",
+      "position_mm": [
+        137.3,
+        69.6
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 0,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "TP2",
+        "Value": "GND",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "No definido",
+        "Candidate_LCSC": "No verificado",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Fuera de migraci\u00f3n SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "position_mm": [
+            137.3,
+            69.6
+          ],
+          "size_mm": [
+            2.0,
+            2.0
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "R10",
+      "value": "30.9k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "09bbd498-a3e3-4ea1-9a19-984bab1cfd57",
+      "position_mm": [
+        159.965,
+        78.9
+      ],
+      "rotation": 90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R10",
+        "Value": "30.9k 1%",
+        "Datasheet": "${KIPRJMOD}/libraries/datasheets/Vishay_DCRCW.pdf",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN",
+        "Candidate_MPN": "CRCW060330K9FKEA",
+        "Candidate_LCSC": "C844354",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "30.9k accepted by user. Nominal OVP 8.20 to 8.18V.",
+        "MPN": "CRCW060330K9FKEA",
+        "LCSC": "C844354",
+        "Manufacturer": "Vishay",
+        "Commercial_URL": "https://jlcpcb.com/partdetail/VishayIntertech-CRCW060330K9FKEA/C844354",
+        "Previous_Review_Value": "31k 1%"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VOUT",
+          "position_mm": [
+            159.965,
+            79.725
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "OVSENSE",
+          "position_mm": [
+            159.965,
+            78.075
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "TP6",
+      "value": "ISENSE",
+      "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+      "uuid": "0ad7a0fc-ceb4-409b-a4bc-63f94ab4c186",
+      "position_mm": [
+        154.85,
+        83.25
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 0,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "TP6",
+        "Value": "ISENSE",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "No definido",
+        "Candidate_LCSC": "No verificado",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Fuera de migraci\u00f3n SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "ISENSE",
+          "position_mm": [
+            154.85,
+            83.25
+          ],
+          "size_mm": [
+            2.0,
+            2.0
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "R13",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "0b6b4826-5775-4db7-823a-10d1458ed700",
+      "position_mm": [
+        183.35,
+        78.025
+      ],
+      "rotation": 90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R13",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "Candidate_LCSC": "C25804",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Pull-up NFAULT_MCU a 3,3 V, no a 5 V.",
+        "Original_Value": "10k",
+        "MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "LCSC": "C25804"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "NUC_3V3",
+          "position_mm": [
+            183.35,
+            78.85
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "NFAULT_MCU",
+          "position_mm": [
+            183.35,
+            77.2
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "Q2",
+      "value": "MMBT3904",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "uuid": "1022e74c-7a5f-4064-a33d-6b4f7bfcc20a",
+      "position_mm": [
+        177.9625,
+        77.2
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "Q2",
+        "Value": "MMBT3904",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "package/gullwing",
+        "Migration_Status": "SYMBOL_REPLACEMENT / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "MMBT3904",
+        "Candidate_LCSC": "C20526",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "S\u00edmbolo adaptado de Buck:Q2 para Changjing: 1E->2E,2B->1B,3C->3C. Sin mover cables, pines ni UUID de instancia.",
+        "Original_Value": "2N3904",
+        "MPN": "MMBT3904",
+        "LCSC": "C20526"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "FB",
+          "position_mm": [
+            177.025,
+            76.25
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            177.025,
+            78.15
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "3",
+          "net": "NFAULT_MCU",
+          "position_mm": [
+            178.9,
+            77.2
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "R6",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "1319980b-9d42-442f-b34d-e2bad13fbe2a",
+      "position_mm": [
+        177.625,
+        65.6112
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R6",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "Candidate_LCSC": "C25804",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Pull-down RESET y estado arranque.",
+        "Original_Value": "10k",
+        "MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "LCSC": "C25804"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "RESET",
+          "position_mm": [
+            177.625,
+            64.7862
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            177.625,
+            66.4362
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "C1",
+      "value": "100uF 25V",
+      "footprint": "Buck_SMD:PCAP_SVP_E7_PAN",
+      "uuid": "21bdd53b-1e92-4329-9902-5848bed523af",
+      "position_mm": [
+        114.85,
+        59.65
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C1",
+        "Value": "100uF 25V",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Panasonic 25SVPF100M",
+        "Candidate_LCSC": "C136279",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Margen I_ripple 3,73\u00d7 y VDC 1,89\u00d7. Verificar C_banco efectiva\u2265160 \u00b5F con vida/temperatura y ESR @10k; land E7 y polaridad. 160 \u00b5F es m\u00ednimo por tolerancia inicial, no de vida.",
+        "Original_Value": "100uF 25V",
+        "MPN": "Panasonic 25SVPF100M",
+        "LCSC": "C136279"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN",
+          "position_mm": [
+            114.85,
+            56.1956
+          ],
+          "size_mm": [
+            3.302,
+            1.2192
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            114.85,
+            63.1044
+          ],
+          "size_mm": [
+            3.302,
+            1.2192
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "R7",
+      "value": "4.7k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "2482f9dd-bbd3-4563-83f1-7210ee766823",
+      "position_mm": [
+        172.65,
+        75.525
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R7",
+        "Value": "4.7k",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF4701T5E",
+        "Candidate_LCSC": "C23162",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "VOL salida open collector LM393B.",
+        "Original_Value": "4.7k",
+        "MPN": "UNI-ROYAL 0603WAF4701T5E",
+        "LCSC": "C23162"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "NTRIP",
+          "position_mm": [
+            172.65,
+            74.7
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "+5V",
+          "position_mm": [
+            172.65,
+            76.35
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "R8",
+      "value": "15k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "2b1a9f65-1c4c-4cc1-a2f3-d4f516d0003b",
+      "position_mm": [
+        157.25,
+        66.425
+      ],
+      "rotation": 90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R8",
+        "Value": "15k 1%",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF1502T5E",
+        "Candidate_LCSC": "C22809",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Umbral VREF influido por tolerancia y TCR pareja R8/R9.",
+        "Original_Value": "15k 1%",
+        "MPN": "UNI-ROYAL 0603WAF1502T5E",
+        "LCSC": "C22809"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "+5V",
+          "position_mm": [
+            157.25,
+            67.25
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "VREF",
+          "position_mm": [
+            157.25,
+            65.6
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "TP5",
+      "value": "VOUT",
+      "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+      "uuid": "2b6c9bf2-85fe-4c91-a114-e8097e9169fa",
+      "position_mm": [
+        183.75,
+        84.2
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 0,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "TP5",
+        "Value": "VOUT",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "No definido",
+        "Candidate_LCSC": "No verificado",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Fuera de migraci\u00f3n SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VOUT",
+          "position_mm": [
+            183.75,
+            84.2
+          ],
+          "size_mm": [
+            2.0,
+            2.0
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "C6",
+      "value": "2.2uF 50V X7R 10%",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "uuid": "31dfbabb-ac88-42b1-903e-9dbb7ead693f",
+      "position_mm": [
+        152.425,
+        58.075
+      ],
+      "rotation": 180.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C6",
+        "Value": "2.2uF 50V X7R 10%",
+        "Datasheet": "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL31B225KBHNNN",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN",
+        "Candidate_MPN": "CL31B225KBHNNNE",
+        "Candidate_LCSC": "C50254",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "2.2uF nominal adopted. VB-VS connectivity unchanged. Ceff, VBS minimum, startup and recharge NOT validated.",
+        "Original_Value": "1uF 50V X7R",
+        "MPN": "CL31B225KBHNNNE",
+        "LCSC": "C50254",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "JLCPCB_Class": "Basic (verified 2026-10-25)",
+        "Commercial_URL": "https://jlcpcb.com/partdetail/C50254",
+        "Previous_Review_Value": "1uF 50V X7R"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "BOOT",
+          "position_mm": [
+            153.9,
+            58.075
+          ],
+          "size_mm": [
+            1.15,
+            1.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "SW",
+          "position_mm": [
+            150.95,
+            58.075
+          ],
+          "size_mm": [
+            1.15,
+            1.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "TP9",
+      "value": "MCU_PWM",
+      "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+      "uuid": "34f7f8e0-d826-4a1c-9663-4f8a712b7086",
+      "position_mm": [
+        190.35,
+        54.875
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 0,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "TP9",
+        "Value": "MCU_PWM",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "No definido",
+        "Candidate_LCSC": "No verificado",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Fuera de migraci\u00f3n SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "MCU_PWM",
+          "position_mm": [
+            190.35,
+            54.875
+          ],
+          "size_mm": [
+            2.0,
+            2.0
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "R9",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "352acbe9-b6ee-492e-b670-4641b954ee31",
+      "position_mm": [
+        160.8,
+        62.25
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R9",
+        "Value": "10k 1%",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "Candidate_LCSC": "C25804",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Umbral VREF influido por tolerancia y TCR pareja R8/R9.",
+        "Original_Value": "10k 1%",
+        "MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "LCSC": "C25804"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VREF",
+          "position_mm": [
+            159.975,
+            62.25
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            161.625,
+            62.25
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "C5",
+      "value": "10uF 35V low ESR",
+      "footprint": "Buck_SMD:CAP_SVF_C6_PAN",
+      "uuid": "3a885228-5085-49a6-9da9-a0d8b582db4b",
+      "position_mm": [
+        199.95,
+        87.0551
+      ],
+      "rotation": 90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C5",
+        "Value": "10uF 35V low ESR",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Panasonic 50SVF10M",
+        "Candidate_LCSC": "C454354",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Margen corriente 11,7\u00d7 y tensi\u00f3n nominal \u22652,5\u00d7 frente a 20 V hipot\u00e9ticos. C_banco efectiva\u226516 \u00b5F a vida/temperatura no demostrada; ESR @10 kHz y estabilidad PI; land C6 y polaridad.",
+        "Original_Value": "10uF 35V low ESR",
+        "MPN": "Panasonic 50SVF10M",
+        "LCSC": "C454354"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VOUT",
+          "position_mm": [
+            199.95,
+            89.7602
+          ],
+          "size_mm": [
+            3.0988,
+            1.2192
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            199.95,
+            84.35
+          ],
+          "size_mm": [
+            3.0988,
+            1.2192
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "R3",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "3abb1716-b9e3-4085-b69d-f5342f8c22d7",
+      "position_mm": [
+        183.475,
+        54.05
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R3",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "Candidate_LCSC": "C25804",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Revisi\u00f3n inyecci\u00f3n hacia MCU apagado.",
+        "Original_Value": "10k",
+        "MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "LCSC": "C25804"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "DPRIME",
+          "position_mm": [
+            183.475,
+            53.225
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "+5V",
+          "position_mm": [
+            183.475,
+            54.875
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "TP7",
+      "value": "SD",
+      "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+      "uuid": "3baaf619-0e64-41c8-bc48-5a619f6aef2d",
+      "position_mm": [
+        183.2,
+        64.7862
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 0,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "TP7",
+        "Value": "SD",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "No definido",
+        "Candidate_LCSC": "No verificado",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Fuera de migraci\u00f3n SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "SD",
+          "position_mm": [
+            183.2,
+            64.7862
+          ],
+          "size_mm": [
+            2.0,
+            2.0
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "C10",
+      "value": "100nF 50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "uuid": "44d77cfd-768a-4d3e-8cc6-2f9fef321f28",
+      "position_mm": [
+        175.725,
+        57.575
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C10",
+        "Value": "100nF 50V",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Yageo CC0603KRX7R9BB104",
+        "Candidate_LCSC": "C14663",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Estabilidad con C11 y ESR del regulador UMW no demostrada; exigir evidencia capacitancia efectiva y ubicaci\u00f3n.",
+        "Original_Value": "100nF 50V",
+        "MPN": "Yageo CC0603KRX7R9BB104",
+        "LCSC": "C14663"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "+5V",
+          "position_mm": [
+            175.725,
+            56.8
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            175.725,
+            58.35
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "C11",
+      "value": "10uF 25V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "uuid": "4d67155c-0fcb-419e-87f5-41d326021993",
+      "position_mm": [
+        179.6,
+        57.75
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C11",
+        "Value": "10uF 25V",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "SYMBOL_REPLACEMENT / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Samsung CL21A106KAYNNNE",
+        "Candidate_LCSC": "C15850",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "MLCC X5R no polarizado sustituye capacitor polarizado. S\u00edmbolo adaptado con dibujo no polar y terminales en posiciones originales. Curva de DC bias del MPN y ESR/estabilidad del UMW 78M05 no certificadas para todo el rango.",
+        "Original_Value": "10uF 25V",
+        "MPN": "Samsung CL21A106KAYNNNE",
+        "LCSC": "C15850"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "+5V",
+          "position_mm": [
+            179.6,
+            56.8
+          ],
+          "size_mm": [
+            1.0,
+            1.45
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            179.6,
+            58.7
+          ],
+          "size_mm": [
+            1.0,
+            1.45
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "C3",
+      "value": "100nF 50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "uuid": "4f37d3b6-0329-41fb-b6ad-112b8f9b1fce",
+      "position_mm": [
+        132.0,
+        56.95
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C3",
+        "Value": "100nF 50V",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Yageo CC0603KRX7R9BB104",
+        "Candidate_LCSC": "C14663",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Retenci\u00f3n de \u226570 nF con DC/temperatura y proximidad Q1/D1; exigir evidencia capacitancia efectiva y ubicaci\u00f3n.",
+        "Original_Value": "100nF 50V",
+        "MPN": "Yageo CC0603KRX7R9BB104",
+        "LCSC": "C14663"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN",
+          "position_mm": [
+            132.0,
+            56.175
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            132.0,
+            57.725
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "L1",
+      "value": "330uH >=3A Isat VERIFY",
+      "footprint": "Buck:Inductor_25mm_P10mm_VERIFY",
+      "uuid": "5435edfd-6976-453c-9feb-629595be6591",
+      "position_mm": [
+        137.55,
+        90.75
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 0,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "L1",
+        "Value": "330uH >=3A Isat VERIFY",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "Murata 60B334C",
+        "Candidate_LCSC": "C6823957",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "No hay land KiCad verificado de Murata 60B334C; NO asignar THT a pieza SMD. L(I,T), acoplamiento y p\u00e9rdidas pendientes. Inductancia efectiva por bobina debe sostener L_total\u2265528 \u00b5H; a \u221215 % inicial quedan 561 \u00b5H y solo 5,9 % de p\u00e9rdida admisible. Curva L(I,T) y p\u00e9rdidas n\u00facleo ausentes; land Murata obligatorio."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "SW",
+          "position_mm": [
+            137.55,
+            85.75
+          ],
+          "size_mm": [
+            3.0,
+            3.0
+          ],
+          "drill_mm": [
+            1.3,
+            1.3
+          ],
+          "type": 0
+        },
+        {
+          "number": "2",
+          "net": "LMID",
+          "position_mm": [
+            137.55,
+            95.75
+          ],
+          "size_mm": [
+            3.0,
+            3.0
+          ],
+          "drill_mm": [
+            1.3,
+            1.3
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "U3",
+      "value": "SN74HCT14DR",
+      "footprint": "Buck_SMD:D14",
+      "uuid": "5c7ae90f-21cd-4406-ace8-6e10c46db37b",
+      "position_mm": [
+        178.525,
+        48.0112
+      ],
+      "rotation": 90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "U3",
+        "Value": "SN74HCT14DR",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "SN74HCT14DR",
+        "Candidate_LCSC": "C6769",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "TI SCLS225G, SOIC D14, paso1.27mm; pinout 1:1. Se conserva s\u00edmbolo funcional existente.",
+        "Original_Value": "SN74HCT14N",
+        "MPN": "SN74HCT14DR",
+        "LCSC": "C6769"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "DPRIME",
+          "position_mm": [
+            174.715,
+            50.475
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "HIN",
+          "position_mm": [
+            175.985,
+            50.475
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "3",
+          "net": "GND",
+          "position_mm": [
+            177.255,
+            50.475
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "4",
+          "net": "unconnected-(U3-2Y-Pad4)",
+          "position_mm": [
+            178.525,
+            50.475
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "5",
+          "net": "GND",
+          "position_mm": [
+            179.795,
+            50.475
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "6",
+          "net": "unconnected-(U3-3Y-Pad6)",
+          "position_mm": [
+            181.065,
+            50.475
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "7",
+          "net": "GND",
+          "position_mm": [
+            182.335,
+            50.475
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "8",
+          "net": "unconnected-(U3-4Y-Pad8)",
+          "position_mm": [
+            182.335,
+            45.5474
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "9",
+          "net": "GND",
+          "position_mm": [
+            181.065,
+            45.5474
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "10",
+          "net": "unconnected-(U3-5Y-Pad10)",
+          "position_mm": [
+            179.795,
+            45.5474
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "11",
+          "net": "GND",
+          "position_mm": [
+            178.525,
+            45.5474
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "12",
+          "net": "unconnected-(U3-6Y-Pad12)",
+          "position_mm": [
+            177.255,
+            45.5474
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "13",
+          "net": "GND",
+          "position_mm": [
+            175.985,
+            45.5474
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "14",
+          "net": "+5V",
+          "position_mm": [
+            174.715,
+            45.5474
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "TP4",
+      "value": "GATE",
+      "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+      "uuid": "5e6955ca-597d-4721-b70f-e2e7a7a13250",
+      "position_mm": [
+        133.45,
+        51.9
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 0,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "TP4",
+        "Value": "GATE",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "No definido",
+        "Candidate_LCSC": "No verificado",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Fuera de migraci\u00f3n SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "GATE",
+          "position_mm": [
+            133.45,
+            51.9
+          ],
+          "size_mm": [
+            2.0,
+            2.0
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "Q1",
+      "value": "IRFZ44N TO-220",
+      "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+      "uuid": "6ab5dc1a-49e4-41d5-a927-5bc1f0d8c727",
+      "position_mm": [
+        137.3,
+        53.62
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 1,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "Q1",
+        "Value": "IRFZ44N TO-220",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "package/TO_SOT/THT",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "IRFZ44NS",
+        "Candidate_LCSC": "C5199867",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Revisi\u00f3n/familia UMW y TO-263 pendientes de conciliar; se retiene original TO-220."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "GATE",
+          "position_mm": [
+            137.3,
+            53.62
+          ],
+          "size_mm": [
+            1.905,
+            2.0
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ],
+          "type": 0
+        },
+        {
+          "number": "2",
+          "net": "VIN",
+          "position_mm": [
+            137.3,
+            56.16
+          ],
+          "size_mm": [
+            1.905,
+            2.0
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ],
+          "type": 0
+        },
+        {
+          "number": "3",
+          "net": "SW",
+          "position_mm": [
+            137.3,
+            58.7
+          ],
+          "size_mm": [
+            1.905,
+            2.0
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "TP3",
+      "value": "SW",
+      "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+      "uuid": "7d547ce5-e484-46b1-bc9d-28d5b85df1ef",
+      "position_mm": [
+        137.3,
+        64.5
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 0,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "TP3",
+        "Value": "SW",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "No definido",
+        "Candidate_LCSC": "No verificado",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Fuera de migraci\u00f3n SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "SW",
+          "position_mm": [
+            137.3,
+            64.5
+          ],
+          "size_mm": [
+            2.0,
+            2.0
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "C13",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "uuid": "7ef3f76c-c829-4103-adaa-0d346e5ad20f",
+      "position_mm": [
+        177.25,
+        70.5
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C13",
+        "Value": "100nF",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Yageo CC0603KRX7R9BB104",
+        "Candidate_LCSC": "C14663",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Posici\u00f3n y retorno para latch NAND; exigir evidencia capacitancia efectiva y ubicaci\u00f3n.",
+        "Original_Value": "100nF",
+        "MPN": "Yageo CC0603KRX7R9BB104",
+        "LCSC": "C14663"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "+5V",
+          "position_mm": [
+            177.25,
+            69.725
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            177.25,
+            71.275
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "C15",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "uuid": "88830bb7-69cc-4b89-abd6-d814235a1f9b",
+      "position_mm": [
+        160.75,
+        65.6
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C15",
+        "Value": "100nF",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Yageo CC0603KRX7R9BB104",
+        "Candidate_LCSC": "C14663",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "\u03c4 = (15k||10k)\u00d7100nF =0,600 ms nominal; referencia tarda ~3ms en asentarse; exigir evidencia capacitancia efectiva y ubicaci\u00f3n.",
+        "Original_Value": "100nF",
+        "MPN": "Yageo CC0603KRX7R9BB104",
+        "LCSC": "C14663"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VREF",
+          "position_mm": [
+            159.975,
+            65.6
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            161.525,
+            65.6
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "U1",
+      "value": "IR2110STRPBF",
+      "footprint": "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm",
+      "uuid": "89903dd6-489e-41fd-8b1a-2b8be44c0624",
+      "position_mm": [
+        162.85,
+        54.9
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "U1",
+        "Value": "IR2110STRPBF",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "package/gullwing",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "IR2110STRPBF",
+        "Candidate_LCSC": "C2968",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "El s\u00edmbolo original YA tiene pinout SOIC16 pese a Value DIP14; se conserva mapa real 1:1. Datasheet Infineon rev.V pp.5,16 (MS-013AA); se corrige r\u00f3tulo a MPN SMD.",
+        "Original_Value": "IR2110PBF DIP14",
+        "MPN": "IR2110STRPBF",
+        "LCSC": "C2968"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "unconnected-(U1-LO-Pad1)",
+          "position_mm": [
+            158.2,
+            50.455
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            158.2,
+            51.725
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "3",
+          "net": "VIN",
+          "position_mm": [
+            158.2,
+            52.995
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "4",
+          "net": "unconnected-(U1-NC-Pad4)",
+          "position_mm": [
+            158.2,
+            54.265
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "5",
+          "net": "unconnected-(U1-NC-Pad5)",
+          "position_mm": [
+            158.2,
+            55.535
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "6",
+          "net": "SW",
+          "position_mm": [
+            158.2,
+            56.805
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "7",
+          "net": "BOOT",
+          "position_mm": [
+            158.2,
+            58.075
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "8",
+          "net": "HO",
+          "position_mm": [
+            158.2,
+            59.345
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "9",
+          "net": "unconnected-(U1-NC-Pad9)",
+          "position_mm": [
+            167.5,
+            59.345
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "10",
+          "net": "unconnected-(U1-NC-Pad10)",
+          "position_mm": [
+            167.5,
+            58.075
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "11",
+          "net": "+5V",
+          "position_mm": [
+            167.5,
+            56.805
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "12",
+          "net": "HIN",
+          "position_mm": [
+            167.5,
+            55.535
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "13",
+          "net": "SD",
+          "position_mm": [
+            167.5,
+            54.265
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "14",
+          "net": "GND",
+          "position_mm": [
+            167.5,
+            52.995
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "15",
+          "net": "GND",
+          "position_mm": [
+            167.5,
+            51.725
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "16",
+          "net": "unconnected-(U1-NC-Pad16)",
+          "position_mm": [
+            167.5,
+            50.455
+          ],
+          "size_mm": [
+            2.05,
+            0.6
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "U6",
+      "value": "INA180A1IDBVR",
+      "footprint": "Buck_SMD:DBV0005A_N",
+      "uuid": "8e3ebbe3-b7d6-44a4-a94d-4dd8b585c2df",
+      "position_mm": [
+        166.675001,
+        77.300001
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "U6",
+        "Value": "INA180A1IDBVR",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "INA180A1IDBVR",
+        "Candidate_LCSC": "C122228",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "TI SBOS741H p.4, pinout A 1OUT,2GND,3IN+,4IN-,5VS. Se conserva s\u00edmbolo funcional existente.",
+        "Original_Value": "INA180A1IDBVR",
+        "MPN": "INA180A1IDBVR",
+        "LCSC": "C122228"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "ISENSE",
+          "position_mm": [
+            165.3,
+            76.35
+          ],
+          "size_mm": [
+            0.599999,
+            1.0
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            165.3,
+            77.300001
+          ],
+          "size_mm": [
+            0.599999,
+            1.0
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "3",
+          "net": "IP",
+          "position_mm": [
+            165.3,
+            78.249999
+          ],
+          "size_mm": [
+            0.599999,
+            1.0
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "4",
+          "net": "VOUT",
+          "position_mm": [
+            168.05,
+            78.249999
+          ],
+          "size_mm": [
+            0.599999,
+            1.0
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "5",
+          "net": "+5V",
+          "position_mm": [
+            168.05,
+            76.35
+          ],
+          "size_mm": [
+            0.599999,
+            1.0
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "10R",
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "uuid": "8f2fcfb9-2ccf-4b38-9902-01315045a740",
+      "position_mm": [
+        147.35,
+        53.6
+      ],
+      "rotation": 180.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R1",
+        "Value": "10R",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0805W8F100JT5E",
+        "Candidate_LCSC": "C17415",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Curva de pulsos repetitivos no contrastada; 13,2 mW es potencia total simplificada, no la que disipa necesariamente R1.",
+        "Original_Value": "10R",
+        "MPN": "UNI-ROYAL 0805W8F100JT5E",
+        "LCSC": "C17415"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "HO",
+          "position_mm": [
+            148.2625,
+            53.6
+          ],
+          "size_mm": [
+            1.025,
+            1.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GATE",
+          "position_mm": [
+            146.4375,
+            53.6
+          ],
+          "size_mm": [
+            1.025,
+            1.4
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "C7",
+      "value": "100nF 50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "uuid": "8f662248-1cd2-4866-9add-a9957da275c1",
+      "position_mm": [
+        151.2,
+        53.775
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C7",
+        "Value": "100nF 50V",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Yageo CC0603KRX7R9BB104",
+        "Candidate_LCSC": "C14663",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "ASIGNACI\u00d3N CAD PROVISIONAL, NO APROBACI\u00d3N EL\u00c9CTRICA.  100 nF no demuestra reserva de carga de bootstrap; ver eventual C18 local; exigir evidencia capacitancia efectiva y ubicaci\u00f3n.",
+        "Original_Value": "100nF 50V",
+        "MPN": "Yageo CC0603KRX7R9BB104",
+        "LCSC": "C14663"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN",
+          "position_mm": [
+            151.2,
+            53.0
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            151.2,
+            54.55
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "RS1",
+      "value": "0.050R 1% 1W",
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "uuid": "926bf335-a51a-4c04-b92f-6b4574b23e38",
+      "position_mm": [
+        183.75,
+        92.75
+      ],
+      "rotation": 90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "RS1",
+        "Value": "0.050R 1% 1W",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "TA-I RLP25FEER050",
+        "Candidate_LCSC": "C160588",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "ASIGNACI\u00d3N CAD PROVISIONAL, NO APROBACI\u00d3N EL\u00c9CTRICA. Huella 2512 gen\u00e9rica PROVISIONAL; NO reproduce land TA-I a=4,b=2.1,L=4.1 mm. Mantener pendiente mec\u00e1nica/Kelvin/t\u00e9rmica. Con 1 oz (~35 \u00b5m) no atribuir 2 W. Demostrar derating y temperatura a 0,316 W; kelvin desde pads; land TA-I espec\u00edfico.",
+        "Original_Value": "0.050R 1% 1W",
+        "MPN": "TA-I RLP25FEER050",
+        "LCSC": "C160588"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "IP",
+          "position_mm": [
+            183.75,
+            95.7125
+          ],
+          "size_mm": [
+            1.225,
+            3.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "VOUT",
+          "position_mm": [
+            183.75,
+            89.7875
+          ],
+          "size_mm": [
+            1.225,
+            3.35
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "R14",
+      "value": "15k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "96a36107-819a-4f77-9922-03a98dd06eae",
+      "position_mm": [
+        190.45,
+        73.4
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R14",
+        "Value": "15k 1%",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN",
+        "Candidate_MPN": "0603WAF1502T5E",
+        "Candidate_LCSC": "C22809",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "15k candidate adopted for evaluation; ADC power-off/fault protection unresolved.",
+        "Original_Value": "3k 1%",
+        "MPN": "0603WAF1502T5E",
+        "LCSC": "C22809",
+        "Manufacturer": "UNI-ROYAL",
+        "Commercial_URL": "https://jlcpcb.com/partdetail/C22809",
+        "Previous_Review_Value": "3k 1%"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VOUT",
+          "position_mm": [
+            189.625,
+            73.4
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "VSENSE",
+          "position_mm": [
+            191.275,
+            73.4
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "C12",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "uuid": "978f907d-2b0f-4b4f-be31-76d25d9a9422",
+      "position_mm": [
+        183.475,
+        57.575
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C12",
+        "Value": "100nF",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Yageo CC0603KRX7R9BB104",
+        "Candidate_LCSC": "C14663",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Posici\u00f3n y retorno para conmutaci\u00f3n HCT14; exigir evidencia capacitancia efectiva y ubicaci\u00f3n.",
+        "Original_Value": "100nF",
+        "MPN": "Yageo CC0603KRX7R9BB104",
+        "LCSC": "C14663"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "+5V",
+          "position_mm": [
+            183.475,
+            56.8
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            183.475,
+            58.35
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "C2",
+      "value": "100uF 25V",
+      "footprint": "Buck_SMD:PCAP_SVP_E7_PAN",
+      "uuid": "987ff833-6fed-4a57-b8ad-702d0b31d7c1",
+      "position_mm": [
+        126.05,
+        59.65
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C2",
+        "Value": "100uF 25V",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Panasonic 25SVPF100M",
+        "Candidate_LCSC": "C136279",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Margen I_ripple 3,73\u00d7 y VDC 1,89\u00d7. Verificar C_banco efectiva\u2265160 \u00b5F con vida/temperatura y ESR @10k; land E7 y polaridad. 160 \u00b5F es m\u00ednimo por tolerancia inicial, no de vida.",
+        "Original_Value": "100uF 25V",
+        "MPN": "Panasonic 25SVPF100M",
+        "LCSC": "C136279"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN",
+          "position_mm": [
+            126.05,
+            56.1956
+          ],
+          "size_mm": [
+            3.302,
+            1.2192
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            126.05,
+            63.1044
+          ],
+          "size_mm": [
+            3.302,
+            1.2192
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "R4",
+      "value": "1k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "9f015114-a3ee-4de5-8e86-a3da62160055",
+      "position_mm": [
+        186.825,
+        54.05
+      ],
+      "rotation": 90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R4",
+        "Value": "1k",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF1001T5E",
+        "Candidate_LCSC": "C21190",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Corriente interfaz con MCU desconectado o sin alimentaci\u00f3n.",
+        "Original_Value": "1k",
+        "MPN": "UNI-ROYAL 0603WAF1001T5E",
+        "LCSC": "C21190"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "MCU_PWM",
+          "position_mm": [
+            186.825,
+            54.875
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "DPRIME",
+          "position_mm": [
+            186.825,
+            53.225
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "J2",
+      "value": "LOAD + / -",
+      "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+      "uuid": "a2b0e66b-157b-45ea-8f70-966d611d6117",
+      "position_mm": [
+        199.95,
+        105.2
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 1,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "J2",
+        "Value": "LOAD + / -",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "terminal_block/Phoenix",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "TB002-500-02BE",
+        "Candidate_LCSC": "C2757858",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Fuera de migraci\u00f3n SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VOUT",
+          "position_mm": [
+            199.95,
+            105.2
+          ],
+          "size_mm": [
+            2.6,
+            2.6
+          ],
+          "drill_mm": [
+            1.3,
+            1.3
+          ],
+          "type": 0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            204.95,
+            105.2
+          ],
+          "size_mm": [
+            2.6,
+            2.6
+          ],
+          "drill_mm": [
+            1.3,
+            1.3
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "J3",
+      "value": "NUCLEO-L432KC EXT USB",
+      "footprint": "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical",
+      "uuid": "a524e67e-1383-4679-870b-bfae1f48786b",
+      "position_mm": [
+        202.61,
+        58.61
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 1,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "J3",
+        "Value": "NUCLEO-L432KC EXT USB",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "connector/pin_header_socket",
+        "Migration_Status": "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN",
+        "Candidate_MPN": "TBD keyed IDC header 2x5 2.54mm",
+        "Candidate_LCSC": "NOT SELECTED",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "External NUCLEO powered via USB. No Buck 5V/VIN connection. NUC_3V3 supplies R13 pull-up only. PA0/PWM signal protection and board solder bridges remain blocking.",
+        "MPN": "TBD keyed IDC header 2x5 2.54mm",
+        "Manufacturer": "TBD",
+        "LCSC": "NOT SELECTED",
+        "Cable_Pinout": "1 UART_TX D1 PA9;2 GND;3 PWM D9 PA8;4 RUN D3 PB0;5 LATCH_RESET D6 PB1;6 NFAULT D4 PB7;7 VSENSE A0 PA0;8 GND;9 NUC_3V3 output from CN4.14;10 UART_RX D0 PA10;NO 5V OR VIN",
+        "Assembly": "NUCLEO external; NOT assembled by JLCPCB; header MPN/land provisional",
+        "Previous_Review_Value": "STM32 CABLE 2x5"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "UART_TX",
+          "position_mm": [
+            202.61,
+            58.61
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            205.15,
+            58.61
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        },
+        {
+          "number": "3",
+          "net": "MCU_PWM",
+          "position_mm": [
+            202.61,
+            61.15
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        },
+        {
+          "number": "4",
+          "net": "RUN",
+          "position_mm": [
+            205.15,
+            61.15
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        },
+        {
+          "number": "5",
+          "net": "RESET",
+          "position_mm": [
+            202.61,
+            63.69
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        },
+        {
+          "number": "6",
+          "net": "NFAULT_MCU",
+          "position_mm": [
+            205.15,
+            63.69
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        },
+        {
+          "number": "7",
+          "net": "VSENSE",
+          "position_mm": [
+            202.61,
+            66.23
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        },
+        {
+          "number": "8",
+          "net": "GND",
+          "position_mm": [
+            205.15,
+            66.23
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        },
+        {
+          "number": "9",
+          "net": "NUC_3V3",
+          "position_mm": [
+            202.61,
+            68.77
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        },
+        {
+          "number": "10",
+          "net": "UART_RX",
+          "position_mm": [
+            205.15,
+            68.77
+          ],
+          "size_mm": [
+            1.7,
+            1.7
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "a7ce5d11-13fb-4557-9c75-6d490397f07f",
+      "position_mm": [
+        146.4375,
+        57.25
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R2",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "Candidate_LCSC": "C25804",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Su descarga gate agrega consumo al bootstrap en cada ciclo; validar VBS.",
+        "Original_Value": "10k",
+        "MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "LCSC": "C25804"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "GATE",
+          "position_mm": [
+            146.4375,
+            56.425
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "SW",
+          "position_mm": [
+            146.4375,
+            58.075
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "U5",
+      "value": "LM393BIDR",
+      "footprint": "Buck_SMD:D0008A-MFG",
+      "uuid": "ac0c951f-7e56-4647-9164-c203e0328a44",
+      "position_mm": [
+        160.6,
+        72.4
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "U5",
+        "Value": "LM393BIDR",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "LM393BIDR",
+        "Candidate_LCSC": "C2865059",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Pinout 1:1 seg\u00fan TI SLCS005AH p.3; se conserva s\u00edmbolo con open_collector/input, evitando tipos err\u00f3neos tri_state del CAD descargado. Courtyard ausente en huella comercial.",
+        "Original_Value": "LM393P",
+        "MPN": "LM393BIDR",
+        "LCSC": "C2865059"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "NTRIP",
+          "position_mm": [
+            162.505,
+            69.7
+          ],
+          "size_mm": [
+            1.549999,
+            0.599999
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "ISENSE",
+          "position_mm": [
+            161.235,
+            69.7
+          ],
+          "size_mm": [
+            1.549999,
+            0.599999
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "3",
+          "net": "VREF",
+          "position_mm": [
+            159.965,
+            69.7
+          ],
+          "size_mm": [
+            1.549999,
+            0.599999
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "4",
+          "net": "GND",
+          "position_mm": [
+            158.695,
+            69.7
+          ],
+          "size_mm": [
+            1.549999,
+            0.599999
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "5",
+          "net": "VREF",
+          "position_mm": [
+            158.695,
+            75.1
+          ],
+          "size_mm": [
+            1.549999,
+            0.599999
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "6",
+          "net": "OVSENSE",
+          "position_mm": [
+            159.965,
+            75.1
+          ],
+          "size_mm": [
+            1.549999,
+            0.599999
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "7",
+          "net": "NTRIP",
+          "position_mm": [
+            161.235,
+            75.1
+          ],
+          "size_mm": [
+            1.549999,
+            0.599999
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "8",
+          "net": "+5V",
+          "position_mm": [
+            162.505,
+            75.1
+          ],
+          "size_mm": [
+            1.549999,
+            0.599999
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "C8",
+      "value": "100nF 50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "uuid": "ac9cd91c-7a4e-47db-8e7f-0aa4f51f4e51",
+      "position_mm": [
+        172.1,
+        57.575
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C8",
+        "Value": "100nF 50V",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Yageo CC0603KRX7R9BB104",
+        "Candidate_LCSC": "C14663",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Retenci\u00f3n \u226570 nF, pines reales del SOIC-16; exigir evidencia capacitancia efectiva y ubicaci\u00f3n.",
+        "Original_Value": "100nF 50V",
+        "MPN": "Yageo CC0603KRX7R9BB104",
+        "LCSC": "C14663"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "+5V",
+          "position_mm": [
+            172.1,
+            56.8
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            172.1,
+            58.35
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "D2",
+      "value": "UF4004",
+      "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+      "uuid": "af8e300e-45aa-4826-8a23-75a87cfc791a",
+      "position_mm": [
+        153.9,
+        63.4
+      ],
+      "rotation": 180.0,
+      "layer": "F.Cu",
+      "attributes": 1,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "D2",
+        "Value": "UF4004",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "diode/THT",
+        "Migration_Status": "BLOCKED / ORIGINAL RETAINED",
+        "Candidate_MPN": "US1G",
+        "Candidate_LCSC": "C3034075",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Falta ficha exacta ShunYe US1G; CAD descargado es CLD-Diode, funci\u00f3n incompatible. Reemplazo bloqueado."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "BOOT",
+          "position_mm": [
+            153.9,
+            63.4
+          ],
+          "size_mm": [
+            2.2,
+            2.2
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ],
+          "type": 0
+        },
+        {
+          "number": "2",
+          "net": "VIN",
+          "position_mm": [
+            143.74,
+            63.4
+          ],
+          "size_mm": [
+            2.2,
+            2.2
+          ],
+          "drill_mm": [
+            1.1,
+            1.1
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "L2",
+      "value": "330uH >=3A Isat VERIFY",
+      "footprint": "Buck:Inductor_25mm_P10mm_VERIFY",
+      "uuid": "b835e6f2-b411-46a7-b432-781848d9a1b6",
+      "position_mm": [
+        167.0,
+        95.75
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 0,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "L2",
+        "Value": "330uH >=3A Isat VERIFY",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "Murata 60B334C",
+        "Candidate_LCSC": "C6823957",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Igual L1; se conserva huella THT hist\u00f3rica solo como original NO MIGRADO. Comprobar influencia de proximidad/acoplamiento: L_eq = L1+L2\u00b12M. Validar I de saturaci\u00f3n por condici\u00f3n de 80 % del nominal y temperatura."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "LMID",
+          "position_mm": [
+            162.0,
+            95.75
+          ],
+          "size_mm": [
+            3.0,
+            3.0
+          ],
+          "drill_mm": [
+            1.3,
+            1.3
+          ],
+          "type": 0
+        },
+        {
+          "number": "2",
+          "net": "IP",
+          "position_mm": [
+            172.0,
+            95.75
+          ],
+          "size_mm": [
+            3.0,
+            3.0
+          ],
+          "drill_mm": [
+            1.3,
+            1.3
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "C14",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "uuid": "c2dbbc55-008e-44d0-9d29-911647bc8b2d",
+      "position_mm": [
+        180.25,
+        70.5
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C14",
+        "Value": "100nF",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Yageo CC0603KRX7R9BB104",
+        "Candidate_LCSC": "C14663",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Posici\u00f3n y retorno para comparador real; exigir evidencia capacitancia efectiva y ubicaci\u00f3n.",
+        "Original_Value": "100nF",
+        "MPN": "Yageo CC0603KRX7R9BB104",
+        "LCSC": "C14663"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "+5V",
+          "position_mm": [
+            180.25,
+            69.725
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            180.25,
+            71.275
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "D1",
+      "value": "SS34",
+      "footprint": "Diode_SMD:D_SMA",
+      "uuid": "ce8641e3-b29e-4bc3-982b-ab72307d929f",
+      "position_mm": [
+        146.05,
+        69.6
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "D1",
+        "Value": "SS34",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "SS34",
+        "Candidate_LCSC": "C8678",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "MDD SS34 SMA seg\u00fan ficha local pp.1,3; se rechaza SMB descargado. Pad1 K/banda,2 A; t\u00e9rmica/transitorios pendientes.",
+        "Original_Value": "1N5822 40V 3A",
+        "MPN": "SS34",
+        "LCSC": "C8678"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "SW",
+          "position_mm": [
+            144.05,
+            69.6
+          ],
+          "size_mm": [
+            2.5,
+            1.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            148.05,
+            69.6
+          ],
+          "size_mm": [
+            2.5,
+            1.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "C17",
+      "value": "1nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "uuid": "d801a143-9433-4fcd-a1a9-fe9b6d87cc23",
+      "position_mm": [
+        190.5,
+        66.23
+      ],
+      "rotation": 180.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C17",
+        "Value": "1nF",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Fenghua 0603CG102J500NT",
+        "Candidate_LCSC": "C1636",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "El filtro aten\u00faa 10kHz solo 0,11 %; revisar adquisici\u00f3n ADC y seguridad frente a sobrevoltaje, independiente del rating del capacitor.",
+        "Original_Value": "1nF",
+        "MPN": "Fenghua 0603CG102J500NT",
+        "LCSC": "C1636"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSENSE",
+          "position_mm": [
+            191.275,
+            66.23
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            189.725,
+            66.23
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "U4",
+      "value": "SN74HCT00DR",
+      "footprint": "Buck_SMD:D14",
+      "uuid": "d904b6b1-45d6-44c4-8880-8f21ad8451a7",
+      "position_mm": [
+        170.025,
+        67.25
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "U4",
+        "Value": "SN74HCT00DR",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "SN74HCT00DR",
+        "Candidate_LCSC": "C6764",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "TI SCLS062F p.3, SOIC D14, paso1.27mm; pinout 1:1. Se conserva s\u00edmbolo funcional existente.",
+        "Original_Value": "SN74HCT00N",
+        "MPN": "SN74HCT00DR",
+        "LCSC": "C6764"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "RESET",
+          "position_mm": [
+            173.835,
+            64.7862
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "NTRIP",
+          "position_mm": [
+            172.565,
+            64.7862
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "3",
+          "net": "NRESET",
+          "position_mm": [
+            171.295,
+            64.7862
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "4",
+          "net": "RUN",
+          "position_mm": [
+            170.025,
+            64.7862
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "5",
+          "net": "NFAULT",
+          "position_mm": [
+            168.755,
+            64.7862
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "6",
+          "net": "SD",
+          "position_mm": [
+            167.485,
+            64.7862
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "7",
+          "net": "GND",
+          "position_mm": [
+            166.215,
+            64.7862
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "8",
+          "net": "FAULT",
+          "position_mm": [
+            166.215,
+            69.7138
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "9",
+          "net": "NTRIP",
+          "position_mm": [
+            167.485,
+            69.7138
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "10",
+          "net": "NFAULT",
+          "position_mm": [
+            168.755,
+            69.7138
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "11",
+          "net": "NFAULT",
+          "position_mm": [
+            170.025,
+            69.7138
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "12",
+          "net": "NRESET",
+          "position_mm": [
+            171.295,
+            69.7138
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "13",
+          "net": "FAULT",
+          "position_mm": [
+            172.565,
+            69.7138
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "14",
+          "net": "+5V",
+          "position_mm": [
+            173.835,
+            69.7138
+          ],
+          "size_mm": [
+            1.9812,
+            0.5588
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "R12",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "d990f14f-6763-4733-97b5-7d8430325954",
+      "position_mm": [
+        173.39,
+        72.7
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R12",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "Candidate_LCSC": "C25804",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Corriente de base y pinout Q2 SMD.",
+        "Original_Value": "10k",
+        "MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "LCSC": "C25804"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "FAULT",
+          "position_mm": [
+            172.565,
+            72.7
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "FB",
+          "position_mm": [
+            174.215,
+            72.7
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "TP1",
+      "value": "VIN",
+      "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+      "uuid": "df89b0b4-3822-426c-a80a-0f8b80ca8d5d",
+      "position_mm": [
+        126.25,
+        49.5
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 0,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "TP1",
+        "Value": "VIN",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "No definido",
+        "Candidate_LCSC": "No verificado",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Fuera de migraci\u00f3n SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN",
+          "position_mm": [
+            126.25,
+            49.5
+          ],
+          "size_mm": [
+            2.0,
+            2.0
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "TP8",
+      "value": "NTRIP",
+      "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+      "uuid": "e500035e-9832-4a30-b6b6-8095f41280e2",
+      "position_mm": [
+        150.45,
+        75.1
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 0,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "TP8",
+        "Value": "NTRIP",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "No definido",
+        "Candidate_LCSC": "No verificado",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Fuera de migraci\u00f3n SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "NTRIP",
+          "position_mm": [
+            150.45,
+            75.1
+          ],
+          "size_mm": [
+            2.0,
+            2.0
+          ],
+          "drill_mm": [
+            1.0,
+            1.0
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "C9",
+      "value": "330nF 50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "uuid": "e5e9b201-b3a2-477e-a3c0-b0c40905c6ac",
+      "position_mm": [
+        154.925,
+        53.95
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C9",
+        "Value": "330nF 50V",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Samsung CL21B334KBFNNNE",
+        "Candidate_LCSC": "C73142",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "No trasladar CI nominal de aplicaci\u00f3n de UMW a m\u00ednimo efectivo garantizado; revisar necesidad de ESR/localidad.",
+        "Original_Value": "330nF 50V",
+        "MPN": "Samsung CL21B334KBFNNNE",
+        "LCSC": "C73142"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN",
+          "position_mm": [
+            154.925,
+            53.0
+          ],
+          "size_mm": [
+            1.0,
+            1.45
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            154.925,
+            54.9
+          ],
+          "size_mm": [
+            1.0,
+            1.45
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "value": "78M05",
+      "footprint": "Package_TO_SOT_SMD:TO-252-2",
+      "uuid": "e6bf4f43-e920-4813-a066-a78361597e14",
+      "position_mm": [
+        169.13,
+        40.51
+      ],
+      "rotation": 90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "U2",
+        "Value": "78M05",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "package/TO_SOT/SMD",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "78M05",
+        "Candidate_LCSC": "C347278",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "UMW 78Mxx pp.1,14: TO-252, 1 IN,2 GND/tab,3 OUT; 5V nominal conservado, t\u00e9rmica/estabilidad pendientes.",
+        "Original_Value": "L7805CV",
+        "MPN": "78M05",
+        "LCSC": "C347278"
+      },
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "position_mm": [
+            167.605,
+            40.925
+          ],
+          "size_mm": [
+            3.05,
+            2.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "",
+          "net": "",
+          "position_mm": [
+            170.655,
+            40.925
+          ],
+          "size_mm": [
+            3.05,
+            2.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "",
+          "net": "",
+          "position_mm": [
+            167.605,
+            37.575
+          ],
+          "size_mm": [
+            3.05,
+            2.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "",
+          "net": "",
+          "position_mm": [
+            170.655,
+            37.575
+          ],
+          "size_mm": [
+            3.05,
+            2.75
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "1",
+          "net": "VIN",
+          "position_mm": [
+            166.85,
+            45.55
+          ],
+          "size_mm": [
+            2.2,
+            1.2
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            169.13,
+            39.25
+          ],
+          "size_mm": [
+            6.4,
+            5.8
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "3",
+          "net": "+5V",
+          "position_mm": [
+            171.41,
+            45.55
+          ],
+          "size_mm": [
+            2.2,
+            1.2
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "R15",
+      "value": "2.2k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "e79949b0-4db2-4c11-9ac5-0da532de02ef",
+      "position_mm": [
+        190.45,
+        70.25
+      ],
+      "rotation": 180.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R15",
+        "Value": "2.2k 1%",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN",
+        "Candidate_MPN": "0603WAF2201T5E",
+        "Candidate_LCSC": "C4190",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "2.2k candidate adopted for evaluation; ADC gain 0.1279069767; protection unresolved.",
+        "Original_Value": "1k 1%",
+        "MPN": "0603WAF2201T5E",
+        "LCSC": "C4190",
+        "Manufacturer": "UNI-ROYAL",
+        "Commercial_URL": "https://www.lcsc.com/product-detail/C4190.html",
+        "Previous_Review_Value": "1k 1%"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSENSE",
+          "position_mm": [
+            191.275,
+            70.25
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            189.625,
+            70.25
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "J1",
+      "value": "12V FUSED INPUT",
+      "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+      "uuid": "f485078f-7149-4a35-8fb7-d960adff0b7c",
+      "position_mm": [
+        114.75,
+        37.9275
+      ],
+      "rotation": 180.0,
+      "layer": "F.Cu",
+      "attributes": 1,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "J1",
+        "Value": "12V FUSED INPUT",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "terminal_block/Phoenix",
+        "Migration_Status": "PENDING / ORIGINAL RETAINED",
+        "Candidate_MPN": "TB002-500-02BE",
+        "Candidate_LCSC": "C2757858",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Fuera de migraci\u00f3n SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN",
+          "position_mm": [
+            114.75,
+            37.9275
+          ],
+          "size_mm": [
+            2.6,
+            2.6
+          ],
+          "drill_mm": [
+            1.3,
+            1.3
+          ],
+          "type": 0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            109.75,
+            37.9275
+          ],
+          "size_mm": [
+            2.6,
+            2.6
+          ],
+          "drill_mm": [
+            1.3,
+            1.3
+          ],
+          "type": 0
+        }
+      ]
+    },
+    {
+      "ref": "C4",
+      "value": "10uF 35V low ESR",
+      "footprint": "Buck_SMD:CAP_SVF_C6_PAN",
+      "uuid": "f66fc550-a702-429a-82ce-65fd234de367",
+      "position_mm": [
+        191.25,
+        87.0551
+      ],
+      "rotation": 90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C4",
+        "Value": "10uF 35V low ESR",
+        "Datasheet": "",
+        "Description": "",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "Panasonic 50SVF10M",
+        "Candidate_LCSC": "C454354",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Margen corriente 11,7\u00d7 y tensi\u00f3n nominal \u22652,5\u00d7 frente a 20 V hipot\u00e9ticos. C_banco efectiva\u226516 \u00b5F a vida/temperatura no demostrada; ESR @10 kHz y estabilidad PI; land C6 y polaridad.",
+        "Original_Value": "10uF 35V low ESR",
+        "MPN": "Panasonic 50SVF10M",
+        "LCSC": "C454354"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "VOUT",
+          "position_mm": [
+            191.25,
+            89.7602
+          ],
+          "size_mm": [
+            3.0988,
+            1.2192
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            191.25,
+            84.35
+          ],
+          "size_mm": [
+            3.0988,
+            1.2192
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "C16",
+      "value": "220nF 50V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "uuid": "fbcc434e-9474-43aa-814d-d7b18b7525ed",
+      "position_mm": [
+        183.25,
+        70.5
+      ],
+      "rotation": -90.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "C16",
+        "Value": "220nF 50V X7R 10%",
+        "Datasheet": "${KIPRJMOD}/libraries/datasheets/Yageo_CC0603KRX7R9BB224.pdf",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN",
+        "Candidate_MPN": "CC0603KRX7R9BB224",
+        "Candidate_LCSC": "C107083",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "220nF nominal change accepted by user. Ceff >=100nF remains to be established.",
+        "MPN": "CC0603KRX7R9BB224",
+        "LCSC": "C107083",
+        "Manufacturer": "Yageo",
+        "Commercial_URL": "https://jlcpcb.com/partdetail/C107083",
+        "Previous_Review_Value": "100nF"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "+5V",
+          "position_mm": [
+            183.25,
+            69.725
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            183.25,
+            71.275
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    },
+    {
+      "ref": "R5",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "uuid": "fd06ab0a-a982-48d0-b50b-a640de326de0",
+      "position_mm": [
+        170.85,
+        61.45
+      ],
+      "rotation": 0.0,
+      "layer": "F.Cu",
+      "attributes": 2,
+      "dnp": false,
+      "exclude_bom": false,
+      "exclude_pos": false,
+      "fields": {
+        "Reference": "R5",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "",
+        "KiLib_Generator": "SMD_2terminal_chip_molded",
+        "Migration_Status": "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED",
+        "Candidate_MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "Candidate_LCSC": "C25804",
+        "Electrical_Approval": "PENDING - NOT APPROVED",
+        "Migration_Notes": "Pull-down RUN y estado arranque.",
+        "Original_Value": "10k",
+        "MPN": "UNI-ROYAL 0603WAF1002T5E",
+        "LCSC": "C25804"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "net": "RUN",
+          "position_mm": [
+            170.025,
+            61.45
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "position_mm": [
+            171.675,
+            61.45
+          ],
+          "size_mm": [
+            0.8,
+            0.95
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ],
+          "type": 1
+        }
+      ]
+    }
+  ],
+  "dimensions_including_edge_stroke_mm": [
+    105.6,
+    81.1
+  ],
+  "copper_layers": 2,
+  "board_thickness_mm": 1.6,
+  "aux_origin_mm": [
+    0.0,
+    0.0
+  ]
+}

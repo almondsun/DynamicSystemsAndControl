@@ -1,0 +1,122 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T00:18:39",
+    "ignored_checks": [
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.4",
+    "schematic_parity": [],
+    "source": "buck.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 105.4,
+                        "y": 31.45
+                    },
+                    "uuid": "c3b86ce8-e46c-4abd-9d86-c0e2c4132473"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 105.4,
+                        "y": 31.45
+                    },
+                    "uuid": "c3b86ce8-e46c-4abd-9d86-c0e2c4132473"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 105.4,
+                        "y": 31.45
+                    },
+                    "uuid": "c3b86ce8-e46c-4abd-9d86-c0e2c4132473"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 105.4,
+                        "y": 31.45
+                    },
+                    "uuid": "c3b86ce8-e46c-4abd-9d86-c0e2c4132473"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Items not allowed (rule 'Gate loop layer change needs review')",
+            "items": [
+                {
+                    "description": "Via [HO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 148.8,
+                        "y": 55.8
+                    },
+                    "uuid": "95187a20-abb5-41e9-85df-ac3931b25e76"
+                }
+            ],
+            "severity": "warning",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed (rule 'Gate loop layer change needs review')",
+            "items": [
+                {
+                    "description": "Via [HO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 157.45,
+                        "y": 60.8
+                    },
+                    "uuid": "feab11f8-88a8-4112-9903-034c0ba6908c"
+                }
+            ],
+            "severity": "warning",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 160.6,
+                        "y": 72.4
+                    },
+                    "uuid": "ac0c951f-7e56-4647-9164-c203e0328a44"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        }
+    ]
+}

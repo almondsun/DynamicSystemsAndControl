@@ -1,0 +1,117 @@
+{
+  "assigned": 39,
+  "provenance": [
+    {
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Capacitor_SMD.pretty\\C_0603_1608Metric.kicad_mod",
+      "source_sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+      "copy_sha256": "c7b676d47427ea715f702e4cdfd08c069da0c08404f4015f57b0becd40e08491",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Capacitor_SMD.pretty\\C_0805_2012Metric.kicad_mod",
+      "source_sha256": "e890bdf55fa18fc6df6878eb1b5251a991e1b93985509175eb269d3d002880b4",
+      "copy_sha256": "cca3b41ac4a534fcafd0b8b5eadf1c297d3d48685281ebf96b0abe510ae11581",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Capacitor_THT.pretty\\C_Disc_D5.0mm_W2.5mm_P5.00mm.kicad_mod",
+      "source_sha256": "581b39dd6ab8744b2031bb6274bcf4ac3345e3a2e46acef2bac31074825b8b05",
+      "copy_sha256": "0b0d851c0a52f6615efca9e64de9d903a572dda2b06ab77e7fe8195d69ce54d5",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Connector_PinHeader_2.54mm.pretty\\PinHeader_2x05_P2.54mm_Vertical.kicad_mod",
+      "source_sha256": "1c003758c6bb59c90b91e7652315777dbacbe89ce9a352693a56805290e42ac0",
+      "copy_sha256": "500b4a2598b490e040708f2ceab04d07dae4b19ab3a4f67e7211fa31e0059b4c",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Diode_SMD:D_SMA",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Diode_SMD.pretty\\D_SMA.kicad_mod",
+      "source_sha256": "e2d049a54ef961e231eb8e7e769078a3c44feb8475a7bdafba01c6646a5144f3",
+      "copy_sha256": "dc03836b612fd8bc22b3d863c11ee50a66a6ca3593445d5a24c04eb632a165e2",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Diode_THT.pretty\\D_DO-41_SOD81_P10.16mm_Horizontal.kicad_mod",
+      "source_sha256": "fdb8a0fafb90ba28fa9108225076263ede43610f2de398aeb6d4947e3eac85d8",
+      "copy_sha256": "7184029566c8db78af631103b7a0b0d2efd468771658d5f81c8a7093eee46efc",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Package_SO.pretty\\SOIC-16W_7.5x10.3mm_P1.27mm.kicad_mod",
+      "source_sha256": "79b58eec6e410d8b5af88b6687f2d1148d1e1605b9aaa57f5b707ab29b853e34",
+      "copy_sha256": "f767515adc18a94641f18c3c4cb2f7d2a274bbdf07f1369315bc203c8497bd30",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Package_TO_SOT_SMD.pretty\\SOT-23.kicad_mod",
+      "source_sha256": "7fb2859c6463f3a37966a1a20c31d8bfe7d4e8459d00bb165d5a7488270816c5",
+      "copy_sha256": "61fa0a64b96c42fe0b79e5153803cdb5dbd8d213d37007cbceccf3f06e2e7dcd",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Package_TO_SOT_SMD:TO-252-2",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Package_TO_SOT_SMD.pretty\\TO-252-2.kicad_mod",
+      "source_sha256": "cb366080aaffaf9f844ba3277472793c1ec65b776d0185bdceeca35fe25b487e",
+      "copy_sha256": "88fc7cd32de3004e63b060db1ed6a9da605443fea0069568609ef5f399e0d73e",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Package_TO_SOT_THT.pretty\\TO-220-3_Vertical.kicad_mod",
+      "source_sha256": "e116fbdc5f090042cbd25c86eaef6544bb417581019e1d2da0b5dc6e40b7b4bf",
+      "copy_sha256": "82d40d785f3bf495ae18a37a973c6bfc8e7bb4d1ab11ee039629245228b2d66d",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Resistor_SMD.pretty\\R_0603_1608Metric.kicad_mod",
+      "source_sha256": "03fc7902b2661df01b4d828fdb6eab9eddf974e7130ed2b98892607387a50c4b",
+      "copy_sha256": "a4e6a5d2c97c868fab11527116164acbe90d955ccc04e9e6900bb03dfd0547cf",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Resistor_SMD.pretty\\R_0805_2012Metric.kicad_mod",
+      "source_sha256": "949bbbe025b509557866ddd9fcb0403244571f3ceb4f954c9766ee622d18421c",
+      "copy_sha256": "bde1698b45a28d25a9b859ba55d7bdfa86e7d9f916014c2225d33b7f654cce88",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Resistor_SMD.pretty\\R_2512_6332Metric.kicad_mod",
+      "source_sha256": "a3a0a11d7a570eb6e8f456699f29a465e3a45980b89223ea253a94e5779102d9",
+      "copy_sha256": "1119422645d02b90335f0823ea09000b31f8593831e9ac717fe99379a4c418fc",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\Resistor_THT.pretty\\R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.kicad_mod",
+      "source_sha256": "075301a51b09edb0100d1a4efd026817f42db65a17b4e9e8a1c8776e69aa812d",
+      "copy_sha256": "ebecc4b267b633b087390bdff5542781b1c8e7ea92d453fa07ba7cbdeabf995b",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\TerminalBlock_Phoenix.pretty\\TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.kicad_mod",
+      "source_sha256": "5e763795a39861f76e524153036d7a3c939a595328d8b32cadc5aa17766ea3b8",
+      "copy_sha256": "e6dc741f010fdd32a1310ba570a2a2f891d2869071d9881e8f8095ff262e3638",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    },
+    {
+      "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+      "source": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\footprints\\TestPoint.pretty\\TestPoint_THTPad_D2.0mm_Drill1.0mm.kicad_mod",
+      "source_sha256": "f8383676add1f861160ed7eda486d1a583ecce463dd082c911c03bd1f0ff6aba",
+      "copy_sha256": "0e88fb871081bc1323426c0cb7cbc2398d5e2aaa48a4ffec4d1e9028bf686aeb",
+      "change": "Only 3D model paths localized; AST geometry unchanged"
+    }
+  ]
+}

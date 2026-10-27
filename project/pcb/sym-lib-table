@@ -1,1 +1,17 @@
-(sym_lib_table (version 7) (lib (name "Buck") (type "KiCad") (uri "${KIPRJMOD}/Buck.kicad_sym") (options "") (descr "Pin-level original design symbols")))
+(sym_lib_table
+  (version 7)
+  (lib
+    (name "Buck")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/Buck.kicad_sym")
+    (options "")
+    (descr "Pin-level original design symbols")
+  )
+  (lib
+    (name "Buck_SMD")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/libraries/symbols/Buck_SMD.kicad_sym")
+    (options "")
+    (descr "Downloaded SMD CAD; electrical approval pending")
+  )
+)

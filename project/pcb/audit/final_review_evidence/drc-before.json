@@ -1,0 +1,229 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T23:59:27",
+    "ignored_checks": [
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.4",
+    "schematic_parity": [],
+    "source": "buck.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 7 [GND] of U4 on F.Cu",
+                    "pos": {
+                        "x": 166.215,
+                        "y": 64.7862
+                    },
+                    "uuid": "80a1dba2-43c2-4728-b51f-65bbcead008d"
+                },
+                {
+                    "description": "Track [GND] on B.Cu, length 0.4243 mm",
+                    "pos": {
+                        "x": 162.3,
+                        "y": 66.95
+                    },
+                    "uuid": "01055f4c-d84a-4c5a-b8a0-5eb9bcb732ea"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R6 on F.Cu",
+                    "pos": {
+                        "x": 177.625,
+                        "y": 66.4362
+                    },
+                    "uuid": "83f5aad9-49a2-4590-91a4-93655615064a"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 105.4,
+                        "y": 31.45
+                    },
+                    "uuid": "c3b86ce8-e46c-4abd-9d86-c0e2c4132473"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 105.4,
+                        "y": 31.45
+                    },
+                    "uuid": "c3b86ce8-e46c-4abd-9d86-c0e2c4132473"
+                },
+                {
+                    "description": "Pad 2 [GND] of C16 on F.Cu",
+                    "pos": {
+                        "x": 183.25,
+                        "y": 71.275
+                    },
+                    "uuid": "d6fd701b-d68a-4f64-99c9-545e1db3ed84"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 105.4,
+                        "y": 31.45
+                    },
+                    "uuid": "c3b86ce8-e46c-4abd-9d86-c0e2c4132473"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 105.4,
+                        "y": 31.45
+                    },
+                    "uuid": "c3b86ce8-e46c-4abd-9d86-c0e2c4132473"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Footprint has malformed courtyard (not a closed shape)",
+            "items": [
+                {
+                    "description": "Footprint U6",
+                    "pos": {
+                        "x": 166.675001,
+                        "y": 77.300001
+                    },
+                    "uuid": "8e3ebbe3-b7d6-44a4-a94d-4dd8b585c2df"
+                }
+            ],
+            "severity": "error",
+            "type": "malformed_courtyard"
+        },
+        {
+            "description": "Items not allowed (rule 'Gate loop layer change needs review')",
+            "items": [
+                {
+                    "description": "Via [HO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 148.8,
+                        "y": 55.8
+                    },
+                    "uuid": "95187a20-abb5-41e9-85df-ac3931b25e76"
+                }
+            ],
+            "severity": "warning",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed (rule 'Gate loop layer change needs review')",
+            "items": [
+                {
+                    "description": "Via [HO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 157.45,
+                        "y": 60.8
+                    },
+                    "uuid": "feab11f8-88a8-4112-9903-034c0ba6908c"
+                }
+            ],
+            "severity": "warning",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 160.6,
+                        "y": 72.4
+                    },
+                    "uuid": "ac0c951f-7e56-4647-9164-c203e0328a44"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0832 mm)",
+            "items": [
+                {
+                    "description": "Footprint text of U4 (*)",
+                    "pos": {
+                        "x": 175.5368,
+                        "y": 64.5322
+                    },
+                    "uuid": "13f8ee5b-bbe4-4255-80da-a97694ee80b0"
+                },
+                {
+                    "description": "Footprint text of U4 (*)",
+                    "pos": {
+                        "x": 175.5368,
+                        "y": 64.5322
+                    },
+                    "uuid": "c40bc861-9f25-4a8c-98ee-d64a65c081b1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance (board setup constraints silk clearance 0.1500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Footprint text of U3 (*)",
+                    "pos": {
+                        "x": 173.0132,
+                        "y": 50.729
+                    },
+                    "uuid": "81ddcb51-5b40-4dbc-a0a1-96c5eacbbd5f"
+                },
+                {
+                    "description": "Footprint text of U3 (*)",
+                    "pos": {
+                        "x": 173.0132,
+                        "y": 50.729
+                    },
+                    "uuid": "f6a0c094-42ad-4f21-816d-ab024102ccb9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

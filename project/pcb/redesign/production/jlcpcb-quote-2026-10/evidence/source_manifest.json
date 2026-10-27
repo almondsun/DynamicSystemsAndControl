@@ -1,0 +1,687 @@
+[
+  {
+    "path": "project/pcb/redesign/buck.kicad_dru",
+    "snapshot": "buck.kicad_dru",
+    "sha256": "d57867fb41b72928cccf6a9e271acd0d63a1778459e7851f5dce405016e07d20"
+  },
+  {
+    "path": "project/pcb/redesign/buck.kicad_pcb",
+    "snapshot": "buck.kicad_pcb",
+    "sha256": "b36ae24a2b7476bdffe4aea791b446df31d33e03d4c126b70946e8e1632c1835"
+  },
+  {
+    "path": "project/pcb/redesign/buck.kicad_pro",
+    "snapshot": "buck.kicad_pro",
+    "sha256": "089583bcc3fad05282e111deba9a77c405e72bfa3cf78bc745fb27d040f80cfa"
+  },
+  {
+    "path": "project/pcb/redesign/buck.kicad_sch",
+    "snapshot": "buck.kicad_sch",
+    "sha256": "ca96214a667bd717c668609093a6f95027d0add8be7f1d2e50336af94f5cca9d"
+  },
+  {
+    "path": "project/pcb/redesign/Buck.kicad_sym",
+    "snapshot": "Buck.kicad_sym",
+    "sha256": "017b58e522210d3f07bf3238b01de6cd5e967a6c791ee3ae5a72b29a4a80a425"
+  },
+  {
+    "path": "project/pcb/redesign/buck_1.kicad_sch",
+    "snapshot": "buck_1.kicad_sch",
+    "sha256": "3f38487dbc932c14d8dc0967de86d26a638217ebc7f293f5fbcfa04556ba72d1"
+  },
+  {
+    "path": "project/pcb/redesign/buck_2.kicad_sch",
+    "snapshot": "buck_2.kicad_sch",
+    "sha256": "ce015a98822b19632461cd28f4d01b8358d1227209b0d5662933d06088f8be05"
+  },
+  {
+    "path": "project/pcb/redesign/buck_3.kicad_sch",
+    "snapshot": "buck_3.kicad_sch",
+    "sha256": "518e923cbf8f6891b7923232b6d8c3bea94f52bdc33547aca9183015e9bb4703"
+  },
+  {
+    "path": "project/pcb/redesign/buck_4.kicad_sch",
+    "snapshot": "buck_4.kicad_sch",
+    "sha256": "82be0b74412ea32f80640092f0adc700c36f17e22813e2ecdf78d921a6a08e56"
+  },
+  {
+    "path": "project/pcb/redesign/fp-lib-table",
+    "snapshot": "fp-lib-table",
+    "sha256": "4698926074642e4cbe0d9ed6062599613e6b5f7cc416e840f3990a133ae291b6"
+  },
+  {
+    "path": "project/pcb/redesign/sym-lib-table",
+    "snapshot": "sym-lib-table",
+    "sha256": "66c9531deb44dbb3f0af4882a81664790830c20e7aa308d96e6bac4c03657cdd"
+  },
+  {
+    "path": "project/pcb/redesign/Buck.pretty/Inductor_25mm_P10mm_VERIFY.kicad_mod",
+    "snapshot": "Buck.pretty/Inductor_25mm_P10mm_VERIFY.kicad_mod",
+    "sha256": "1d25258346039611375b1393f0a354b28e47e5758cd61b3673a34e640684d3ea"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/integration_data.json",
+    "snapshot": "libraries/integration_data.json",
+    "sha256": "32d8872196b027a5e999d5a075bd078f36464917bd52cd674755242b09a5a6ab"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/manifest.md",
+    "snapshot": "libraries/manifest.md",
+    "sha256": "80a8fe5c1e9761b23465d0dcdaf3143da9e44e59f041cab1b3c271d88b517c9f"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/README.md",
+    "snapshot": "libraries/README.md",
+    "sha256": "4847a4a04653060fff8d1754859a99e6261692e232ca34eb7261ad17537cb583"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/validate.py",
+    "snapshot": "libraries/validate.py",
+    "sha256": "3bdb87fb3769aa8c4807c11b51ac2efce2cab6a7aaf1043dec079658901c29b7"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/validation_results.json",
+    "snapshot": "libraries/validation_results.json",
+    "sha256": "312f278b06b2cc473bb241b26d1f203a10a500c2fa4daf9853a1ef8f26b82d1b"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/_sexpr.py",
+    "snapshot": "libraries/_sexpr.py",
+    "sha256": "b03d88f9d26c70149b986db1a408a82a9de237754a50cd0793972b5660923fc4"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/D0008A.stp",
+    "snapshot": "libraries/3dmodels/D0008A.stp",
+    "sha256": "92b7fdb99ac87c648f2d6e358ec5afc85a029466f4d9d2b2efc705eab9140bf5"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/D0014A.stp",
+    "snapshot": "libraries/3dmodels/D0014A.stp",
+    "sha256": "bf9112576a5c64b5b450fc4ca996247ce4f2e4a825a44dafc2453e0dfe2be627"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/DBV0005A.stp",
+    "snapshot": "libraries/3dmodels/DBV0005A.stp",
+    "sha256": "bce7b25e52a74ac515dc5236a6d5ee863c57e039a3a1aeaf26babdde195066c0"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/IR2110STRPBF.step",
+    "snapshot": "libraries/3dmodels/IR2110STRPBF.step",
+    "sha256": "7e327f3c93074ecca454949da7f087027f6122871c91d868631358b25752f9f3"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/Panasonic_C6.stp",
+    "snapshot": "libraries/3dmodels/Panasonic_C6.stp",
+    "sha256": "f673417772ce9ebeac01746b6d8825a0c39ff32c11075400e033f2760c3cd253"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/Panasonic_E7.stp",
+    "snapshot": "libraries/3dmodels/Panasonic_E7.stp",
+    "sha256": "1cdfa4e77658670bde999e47ecd70cd505b636638d26c4886558f133ce49d7ab"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+    "snapshot": "libraries/3dmodels/standard/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+    "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "snapshot": "libraries/3dmodels/standard/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+    "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "snapshot": "libraries/3dmodels/standard/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+    "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Capacitor_THT.3dshapes/C_Disc_D5.0mm_W2.5mm_P5.00mm.step",
+    "snapshot": "libraries/3dmodels/standard/Capacitor_THT.3dshapes/C_Disc_D5.0mm_W2.5mm_P5.00mm.step",
+    "sha256": "5739d7f7288da1879d2a2e4a8d7f4d1ac5e5ad712d777b40e647ec559cf8ecba"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Connector_IDC.3dshapes/IDC-Header_2x05_P2.54mm_Vertical.step",
+    "snapshot": "libraries/3dmodels/standard/Connector_IDC.3dshapes/IDC-Header_2x05_P2.54mm_Vertical.step",
+    "sha256": "4ac293d6a2a02e11fb656cd94214ca3eee4fdb4219ec44112b35866a7c7bb127"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x05_P2.54mm_Vertical.step",
+    "snapshot": "libraries/3dmodels/standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x05_P2.54mm_Vertical.step",
+    "sha256": "cd99322b0ccc253157acbe9c5c672ce9b37dbcd4d59fb001240a93110052cdce"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Diode_SMD.3dshapes/D_SMA.step",
+    "snapshot": "libraries/3dmodels/standard/Diode_SMD.3dshapes/D_SMA.step",
+    "sha256": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.step",
+    "snapshot": "libraries/3dmodels/standard/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.step",
+    "sha256": "c3e23d4b276811b74eecb329bd4480209ad3dbc8cf6e6e3f2a5b542c5ca343c1"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Package_SO.3dshapes/SOIC-16W_7.5x10.3mm_P1.27mm.step",
+    "snapshot": "libraries/3dmodels/standard/Package_SO.3dshapes/SOIC-16W_7.5x10.3mm_P1.27mm.step",
+    "sha256": "159663ceb2b4996b1b89d3111e4a355fc27de3e24d3570f50e5ed9086e0d73af"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+    "snapshot": "libraries/3dmodels/standard/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+    "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Package_TO_SOT_SMD.3dshapes/TO-252-2.step",
+    "snapshot": "libraries/3dmodels/standard/Package_TO_SOT_SMD.3dshapes/TO-252-2.step",
+    "sha256": "3eb4c99603a4fe837c2fe9308bc174769ded87a785a0df48d2dc441432ee8b4c"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step",
+    "snapshot": "libraries/3dmodels/standard/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step",
+    "sha256": "7cb065d935df5771f0ba6e48ddd180863a121af76483dad7f18e667a7b68204a"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+    "snapshot": "libraries/3dmodels/standard/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+    "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "snapshot": "libraries/3dmodels/standard/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+    "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+    "snapshot": "libraries/3dmodels/standard/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+    "sha256": "76b2052a3c120193de7cdc0af99157b6f375e9a4af7721e3e3d012968c877f27"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.step",
+    "snapshot": "libraries/3dmodels/standard/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.step",
+    "sha256": "46710ac36957e4073ef7e80153823ef7db1ea12932074cb71f43bc4b476a74dc"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/3dmodels/standard/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.step",
+    "snapshot": "libraries/3dmodels/standard/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.step",
+    "sha256": "82c2e0137d70c0af5b3162d03de0fd4aceddc144901304573cf93a5eefef264d"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/datasheets/Changjing_MMBT3904.pdf",
+    "snapshot": "libraries/datasheets/Changjing_MMBT3904.pdf",
+    "sha256": "6c2034cb0bd0d85be51c9c4f82aad838a688aa70c20de1a71681be8ec02b659b"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/datasheets/Infineon_IR2110.pdf",
+    "snapshot": "libraries/datasheets/Infineon_IR2110.pdf",
+    "sha256": "3de3f1ff4244dc9ffb5542cd5ad52bd970f4c0fc1cc45e67aa8962b52166786c"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/datasheets/MDD_SS34.pdf",
+    "snapshot": "libraries/datasheets/MDD_SS34.pdf",
+    "sha256": "fb4970875779696914d235bcf954240569302fb325399838f2861d474cbf9760"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/datasheets/TAI_RLP.pdf",
+    "snapshot": "libraries/datasheets/TAI_RLP.pdf",
+    "sha256": "d6e856889bd77d058b95b364e5a99fe0e050d02a5db31d09b9a9843e9aea80d1"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/datasheets/TI_INA180.pdf",
+    "snapshot": "libraries/datasheets/TI_INA180.pdf",
+    "sha256": "6dbf88e697e3a18dd5eeaf6e9e4f347b08a737149fdcbd9fa7588723037d8d60"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/datasheets/TI_SN74HCT14.pdf",
+    "snapshot": "libraries/datasheets/TI_SN74HCT14.pdf",
+    "sha256": "925eabf18762f43fff8c774e33c0b9d6e22293e95833adebfaab86728eb2cb0e"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/datasheets/TI_TMUX1511.pdf",
+    "snapshot": "libraries/datasheets/TI_TMUX1511.pdf",
+    "sha256": "04291b41a68347fedbbb0776aa44f500eaca65f2ca3af0e022ee60d41c7b1e9f"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/datasheets/UMW_78Mxx.pdf",
+    "snapshot": "libraries/datasheets/UMW_78Mxx.pdf",
+    "sha256": "162df1416fa16eadefc4d9fb2f46121df5c48569a40255a0ddfb9a01e14c166f"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/datasheets/UMW_IRFZ44N_family.pdf",
+    "snapshot": "libraries/datasheets/UMW_IRFZ44N_family.pdf",
+    "sha256": "ebcbb210b448e54f27f8ae13686619e83c1ca18d60dfc7d3fe8cbfd7609456b5"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/datasheets/UNI_ROYAL_SMD.pdf",
+    "snapshot": "libraries/datasheets/UNI_ROYAL_SMD.pdf",
+    "sha256": "6344d3f6a60ea3d3a4c4726f3562df5847a0e5910ce0bd4356328c1363a25f0d"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/datasheets/Vishay_DCRCW.pdf",
+    "snapshot": "libraries/datasheets/Vishay_DCRCW.pdf",
+    "sha256": "2c6c8fdc7f87032e3dc95ff9df0af2300638bc06c7ba25be99e266045c27bc85"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/datasheets/Yageo_CC0603KRX7R9BB224.pdf",
+    "snapshot": "libraries/datasheets/Yageo_CC0603KRX7R9BB224.pdf",
+    "sha256": "5168d240e399b6ada40ca758505f95bc7a7964b6e3a785d5854a70229939a0b6"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/CAP_SVF_C6_PAN-L.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/CAP_SVF_C6_PAN-L.kicad_mod",
+    "sha256": "e90c673683cb49240f466cdb8638ee6c8f7e9e8c1a80e75cebc97ac8a0367582"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/CAP_SVF_C6_PAN-M.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/CAP_SVF_C6_PAN-M.kicad_mod",
+    "sha256": "c38843730fa9b559cb8758748ff622b75b8c8439edcc7484a528f2914183bf76"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/CAP_SVF_C6_PAN.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/CAP_SVF_C6_PAN.kicad_mod",
+    "sha256": "d61c53dc1206ee83d579aa179a283dc29ea60838defc5076dade6230918ff7f2"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/CAP_SVF_E7_PAN-L.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/CAP_SVF_E7_PAN-L.kicad_mod",
+    "sha256": "e0f7c1dc30808a7f17c653b4ad338b1fc2bf37e27b8682884d7c8bbfe10f82bb"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/CAP_SVF_E7_PAN-M.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/CAP_SVF_E7_PAN-M.kicad_mod",
+    "sha256": "4a790a78c5674f8c28f228e35e34e641f4844380d4b4c10e7c86ac63f03e3ff9"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/CAP_SVF_E7_PAN.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/CAP_SVF_E7_PAN.kicad_mod",
+    "sha256": "fa4932ae457e5019a64ff8e9ba5c801ace7418638a60c7889710c16c033b44a9"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/D0008A-IPC_A.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/D0008A-IPC_A.kicad_mod",
+    "sha256": "883750551c88e3a885571c0ca175f4e1006fc9c6af47aac8cbad49547d88ea44"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/D0008A-IPC_B.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/D0008A-IPC_B.kicad_mod",
+    "sha256": "d50ad6214427f6b1550cbd8340035362fc2e607df5c7c0d3edba5f18d7c8e9b0"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/D0008A-IPC_C.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/D0008A-IPC_C.kicad_mod",
+    "sha256": "e00aa12c546e9caec2e270b45cada9d66649ebc1408b69dc876653eb7d457db9"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/D0008A-MFG.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/D0008A-MFG.kicad_mod",
+    "sha256": "7396f17d56fb8452ce13a55b11f2bf6a3d139aa59fc054278a09fe2e8620f382"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/D14-L.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/D14-L.kicad_mod",
+    "sha256": "c0e950dea8ef2bf6af4a2d696218b2194f8a29c940c7a8b0458decb58925c040"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/D14-M.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/D14-M.kicad_mod",
+    "sha256": "cefa2efa2ab6dc34e952ec89f38cb95cebe6c891642645b47a8df70cb52c002c"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/D14.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/D14.kicad_mod",
+    "sha256": "849e2ba3806efec501bb39326f3bbf3a9d67fb0759352b04d3af35ab0dbfd77a"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/DBV0005A_L.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/DBV0005A_L.kicad_mod",
+    "sha256": "e353bb9a6f3d97d190fe6b112ded183aa3ff9c251327a5bc51eb0286af61a104"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/DBV0005A_M.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/DBV0005A_M.kicad_mod",
+    "sha256": "78098c52c3f46f2f3d57a9e82dd7e9fa0e7cc776811b526ef61ede679934d5a4"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/DBV0005A_N.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/DBV0005A_N.kicad_mod",
+    "sha256": "383686009722e6a014b81fc10273e8a7f20ffbac251fb473eb65f9490889a833"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/PCAP_SVP_C6_PAN-L.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/PCAP_SVP_C6_PAN-L.kicad_mod",
+    "sha256": "a58bc21c12303c2ea68fd443caea2b699021eddc8d34607209ce9ac1c3693829"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/PCAP_SVP_C6_PAN-M.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/PCAP_SVP_C6_PAN-M.kicad_mod",
+    "sha256": "3d727df5167cd0bc1ef1e90f05d24c685737171b8e1ec14810931893c78fb98c"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/PCAP_SVP_C6_PAN.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/PCAP_SVP_C6_PAN.kicad_mod",
+    "sha256": "87452af07063c0deef9184f5faa15fe1e3ccc2aeacc9d8784af7ddeab6efec9e"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/PCAP_SVP_E7_PAN-L.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/PCAP_SVP_E7_PAN-L.kicad_mod",
+    "sha256": "346837b1b33f8f6df0a977dcc613f913ee707826efe0aade385245c2166fb19d"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/PCAP_SVP_E7_PAN-M.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/PCAP_SVP_E7_PAN-M.kicad_mod",
+    "sha256": "b20ffa6b98c156ba4afa3f746022965259a260487e59bbdcd5de5ebc152c5d3a"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/PCAP_SVP_E7_PAN.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/PCAP_SVP_E7_PAN.kicad_mod",
+    "sha256": "4133bcffe152c9efd3ab1369213a467ca3f8c964d9a8ef938607262bbe308312"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/RES_2512_WSL-L.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/RES_2512_WSL-L.kicad_mod",
+    "sha256": "463786b788570998a2c5754701922ea2529e2a4a04ed8fbf6f3d51b780eb2c8d"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/RES_2512_WSL-M.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/RES_2512_WSL-M.kicad_mod",
+    "sha256": "e167c9e1154471d436af371a932ac32eeabf526ec1ea23651e3d48f61101d040"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Buck_SMD.pretty/RES_2512_WSL.kicad_mod",
+    "snapshot": "libraries/footprints/Buck_SMD.pretty/RES_2512_WSL.kicad_mod",
+    "sha256": "f3f2c0761a95174e2a1376f97a81da0bb68723324e04870cc7300cfac2fa8c9b"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod",
+    "snapshot": "libraries/footprints/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod",
+    "sha256": "c7b676d47427ea715f702e4cdfd08c069da0c08404f4015f57b0becd40e08491"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Capacitor_SMD.pretty/C_0805_2012Metric.kicad_mod",
+    "snapshot": "libraries/footprints/Capacitor_SMD.pretty/C_0805_2012Metric.kicad_mod",
+    "sha256": "cca3b41ac4a534fcafd0b8b5eadf1c297d3d48685281ebf96b0abe510ae11581"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Capacitor_SMD.pretty/C_1206_3216Metric.kicad_mod",
+    "snapshot": "libraries/footprints/Capacitor_SMD.pretty/C_1206_3216Metric.kicad_mod",
+    "sha256": "a861aa6a9f2aa514c63dff68c512eec565ac2ebd58e4399aa39350310e454de8"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Capacitor_THT.pretty/C_Disc_D5.0mm_W2.5mm_P5.00mm.kicad_mod",
+    "snapshot": "libraries/footprints/Capacitor_THT.pretty/C_Disc_D5.0mm_W2.5mm_P5.00mm.kicad_mod",
+    "sha256": "0b0d851c0a52f6615efca9e64de9d903a572dda2b06ab77e7fe8195d69ce54d5"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Connector_IDC.pretty/IDC-Header_2x05_P2.54mm_Vertical.kicad_mod",
+    "snapshot": "libraries/footprints/Connector_IDC.pretty/IDC-Header_2x05_P2.54mm_Vertical.kicad_mod",
+    "sha256": "a1eb0d65df9aead1fa5c3fbf64709101bc9ce288abec3158b7ffc07c27b3e0cc"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Connector_PinHeader_2.54mm.pretty/PinHeader_2x05_P2.54mm_Vertical.kicad_mod",
+    "snapshot": "libraries/footprints/Connector_PinHeader_2.54mm.pretty/PinHeader_2x05_P2.54mm_Vertical.kicad_mod",
+    "sha256": "500b4a2598b490e040708f2ceab04d07dae4b19ab3a4f67e7211fa31e0059b4c"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Diode_SMD.pretty/D_SMA.kicad_mod",
+    "snapshot": "libraries/footprints/Diode_SMD.pretty/D_SMA.kicad_mod",
+    "sha256": "dc03836b612fd8bc22b3d863c11ee50a66a6ca3593445d5a24c04eb632a165e2"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Diode_THT.pretty/D_DO-41_SOD81_P10.16mm_Horizontal.kicad_mod",
+    "snapshot": "libraries/footprints/Diode_THT.pretty/D_DO-41_SOD81_P10.16mm_Horizontal.kicad_mod",
+    "sha256": "7184029566c8db78af631103b7a0b0d2efd468771658d5f81c8a7093eee46efc"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Package_SO.pretty/SOIC-16W_7.5x10.3mm_P1.27mm.kicad_mod",
+    "snapshot": "libraries/footprints/Package_SO.pretty/SOIC-16W_7.5x10.3mm_P1.27mm.kicad_mod",
+    "sha256": "f767515adc18a94641f18c3c4cb2f7d2a274bbdf07f1369315bc203c8497bd30"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+    "snapshot": "libraries/footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+    "sha256": "61fa0a64b96c42fe0b79e5153803cdb5dbd8d213d37007cbceccf3f06e2e7dcd"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Package_TO_SOT_SMD.pretty/TO-252-2.kicad_mod",
+    "snapshot": "libraries/footprints/Package_TO_SOT_SMD.pretty/TO-252-2.kicad_mod",
+    "sha256": "88fc7cd32de3004e63b060db1ed6a9da605443fea0069568609ef5f399e0d73e"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+    "snapshot": "libraries/footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+    "sha256": "82d40d785f3bf495ae18a37a973c6bfc8e7bb4d1ab11ee039629245228b2d66d"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Resistor_SMD.pretty/R_0603_1608Metric.kicad_mod",
+    "snapshot": "libraries/footprints/Resistor_SMD.pretty/R_0603_1608Metric.kicad_mod",
+    "sha256": "a4e6a5d2c97c868fab11527116164acbe90d955ccc04e9e6900bb03dfd0547cf"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Resistor_SMD.pretty/R_0805_2012Metric.kicad_mod",
+    "snapshot": "libraries/footprints/Resistor_SMD.pretty/R_0805_2012Metric.kicad_mod",
+    "sha256": "bde1698b45a28d25a9b859ba55d7bdfa86e7d9f916014c2225d33b7f654cce88"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Resistor_SMD.pretty/R_2512_6332Metric.kicad_mod",
+    "snapshot": "libraries/footprints/Resistor_SMD.pretty/R_2512_6332Metric.kicad_mod",
+    "sha256": "1119422645d02b90335f0823ea09000b31f8593831e9ac717fe99379a4c418fc"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/Resistor_THT.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.kicad_mod",
+    "snapshot": "libraries/footprints/Resistor_THT.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.kicad_mod",
+    "sha256": "ebecc4b267b633b087390bdff5542781b1c8e7ea92d453fa07ba7cbdeabf995b"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/TerminalBlock_Phoenix.pretty/TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.kicad_mod",
+    "snapshot": "libraries/footprints/TerminalBlock_Phoenix.pretty/TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.kicad_mod",
+    "sha256": "e6dc741f010fdd32a1310ba570a2a2f891d2869071d9881e8f8095ff262e3638"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/footprints/TestPoint.pretty/TestPoint_THTPad_D2.0mm_Drill1.0mm.kicad_mod",
+    "snapshot": "libraries/footprints/TestPoint.pretty/TestPoint_THTPad_D2.0mm_Drill1.0mm.kicad_mod",
+    "sha256": "0e88fb871081bc1323426c0cb7cbc2398d5e2aaa48a4ffec4d1e9028bf686aeb"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/IR2110SPBF/2026-10-25_03-07-42.kicad_sym",
+    "snapshot": "libraries/pending_review/IR2110SPBF/2026-10-25_03-07-42.kicad_sym",
+    "sha256": "2b7a3e378c4c5c29e34059cb887685faf4c642d81bf9b874111cc3a6a42adea4"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/IR2110SPBF/IR2110SPBF_INF-L.kicad_mod",
+    "snapshot": "libraries/pending_review/IR2110SPBF/IR2110SPBF_INF-L.kicad_mod",
+    "sha256": "f2de20535944c22fb69807933f27bc2c06ca1ae5e1e348dde90a59a7246ff669"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/IR2110SPBF/IR2110SPBF_INF-M.kicad_mod",
+    "snapshot": "libraries/pending_review/IR2110SPBF/IR2110SPBF_INF-M.kicad_mod",
+    "sha256": "1f50d1ab3258800ae4d5425346caf94a87d205c87b3ecda8916a1fd4a1c39cd7"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/IR2110SPBF/IR2110SPBF_INF.kicad_mod",
+    "snapshot": "libraries/pending_review/IR2110SPBF/IR2110SPBF_INF.kicad_mod",
+    "sha256": "aba89e3741704d557521a4b5b3f8525d91dc3e51b7e3d0c12e2d1819ca20e3c3"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/IR2110SPBF/IR2110SPBF_INF.step",
+    "snapshot": "libraries/pending_review/IR2110SPBF/IR2110SPBF_INF.step",
+    "sha256": "c115d946cb9e972abd365034db09b6471fea169b038bbb1e9fb19d68107a16f1"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/MMBT3904/how-to-import.htm",
+    "snapshot": "libraries/pending_review/MMBT3904/how-to-import.htm",
+    "sha256": "24e9a101a0ca11ff7db51062503d7e4ccdb70678f037eea9b38e7e61a762634f"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/MMBT3904/License.txt",
+    "snapshot": "libraries/pending_review/MMBT3904/License.txt",
+    "sha256": "d1957f3119c792a22dd4527618d283669dc65935448168b3a9924644695e51da"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/MMBT3904/MMBT3904.kicad_sym",
+    "snapshot": "libraries/pending_review/MMBT3904/MMBT3904.kicad_sym",
+    "sha256": "ed8e22973f0c335fcf29c3a60e7296fcdddd14e21450420dedac7af6edd7961a"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/MMBT3904/MMBT3904.step",
+    "snapshot": "libraries/pending_review/MMBT3904/MMBT3904.step",
+    "sha256": "16becd8daa5fe48232010a496d2762f22134ae5e16a3a2bcc1b38371896fedf2"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/MMBT3904/TRANS_MMBT3904.kicad_mod",
+    "snapshot": "libraries/pending_review/MMBT3904/TRANS_MMBT3904.kicad_mod",
+    "sha256": "16afcac3c470e37e399277e2e622be7aa6f3598a57cb765250ddc9d4ed496a08"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/SS34/2026-10-25_03-12-22.kicad_sym",
+    "snapshot": "libraries/pending_review/SS34/2026-10-25_03-12-22.kicad_sym",
+    "sha256": "d4a8e06df455f8f808ca351a3163d34480271749da30552909cf05c62d3e4a85"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/SS34/SMB_ONS.kicad_mod",
+    "snapshot": "libraries/pending_review/SS34/SMB_ONS.kicad_mod",
+    "sha256": "2899f9c662a1fa025b2ff26051031719a9290351ebc1fb9e4c27afeb693a7035"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/SS34/SMB_ONS.step",
+    "snapshot": "libraries/pending_review/SS34/SMB_ONS.step",
+    "sha256": "e2e06ffc85456e352f8ecb5d88f38f3a5f0a417b99cd103aa0f1b43234936329"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/TB002_500_02BE/how-to-import.htm",
+    "snapshot": "libraries/pending_review/TB002_500_02BE/how-to-import.htm",
+    "sha256": "64b13500cabbd1a4f3f14f6ecc3e7b432313dd8e1748ca70d86d2e7c9c43e8c2"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/TB002_500_02BE/License.txt",
+    "snapshot": "libraries/pending_review/TB002_500_02BE/License.txt",
+    "sha256": "f419ac734e6ea12b727966c46a9e9f65d26856be2e2122ebf7c8e575495c7274"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/TB002_500_02BE/TB002-500-02BE.IntLib",
+    "snapshot": "libraries/pending_review/TB002_500_02BE/TB002-500-02BE.IntLib",
+    "sha256": "9d4957b8127e2fc43cf222d60000e4dd07e67ced11b9c3b82016a181790abd82"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/US1G/cld-diode.kicad_sym",
+    "snapshot": "libraries/pending_review/US1G/cld-diode.kicad_sym",
+    "sha256": "8cdd66f37baf34d1955710e5a0f51ce974c04361b2a088c2f2ebe8c08fcef9b8"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/US1G/do-214ac-sma.stp",
+    "snapshot": "libraries/pending_review/US1G/do-214ac-sma.stp",
+    "sha256": "22ee5c46b38ca5ad252d0ac5984ca02611fe93e7a3a866595ca0de8b071f5237"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/pending_review/US1G/P25_DO-214AC_SMA.kicad_mod",
+    "snapshot": "libraries/pending_review/US1G/P25_DO-214AC_SMA.kicad_mod",
+    "sha256": "699c94ab69bf5a5a6db1d2179146cdded19005a3ec5fbbe902e876d5e270055d"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/symbols/Buck_Redesign.kicad_sym",
+    "snapshot": "libraries/symbols/Buck_Redesign.kicad_sym",
+    "sha256": "8b98b88c7380da1b42809fe7e278b67a5298122ccc858b377d836a54376f719e"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/symbols/Buck_SMD.kicad_sym",
+    "snapshot": "libraries/symbols/Buck_SMD.kicad_sym",
+    "sha256": "1ae6e76e5187658693a163ac7a483d5c57b32f8b6f0f6e42b55ee8be28f023af"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/validation/temporary_assembly.png",
+    "snapshot": "libraries/validation/temporary_assembly.png",
+    "sha256": "ff435cd96171e5c859b80dbf6f4a095d104e14aceae8f6210e53c0cdd1af4a1e"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/__pycache__/_sexpr.cpython-311.pyc",
+    "snapshot": "libraries/__pycache__/_sexpr.cpython-311.pyc",
+    "sha256": "17991b7a5c003c2264c1034e216e5140bb249f181f63ac6129007cd504df6f05"
+  },
+  {
+    "path": "project/pcb/redesign/libraries/__pycache__/_sexpr.cpython-312.pyc",
+    "snapshot": "libraries/__pycache__/_sexpr.cpython-312.pyc",
+    "sha256": "b4a8469ac2ad079406b82c5001bf818da5392a7566b54112231ccfe9b55f2221"
+  },
+  {
+    "path": "project/pcb/redesign/models/inductor-provisional.wrl",
+    "snapshot": "models/inductor-provisional.wrl",
+    "sha256": "aeb5fb9f0014e4241bb6a3ec92f2e328804127c392dc4fe88dc51f83aaa4aa63"
+  },
+  {
+    "path": "project/pcb/redesign/models/LICENSE-KiCad.md",
+    "snapshot": "models/LICENSE-KiCad.md",
+    "sha256": "b4345a3753b764727e9873b50ff563016966f09a8a62b96bbe220b0db5cfe680"
+  },
+  {
+    "path": "project/pcb/redesign/models/manifest.json",
+    "snapshot": "models/manifest.json",
+    "sha256": "884934cad5720f50a2959614b747cee31c6d025c5546e501ef08c8d87c3de15f"
+  },
+  {
+    "path": "project/pcb/redesign/models/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step",
+    "snapshot": "models/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step",
+    "sha256": "ad3e04e64bab221ffd96e65110bc6e02ade24b356eb1b8dcc9afb9d85be3a203"
+  },
+  {
+    "path": "project/pcb/redesign/models/Capacitor_THT.3dshapes/CP_Radial_D8.0mm_P3.50mm.step",
+    "snapshot": "models/Capacitor_THT.3dshapes/CP_Radial_D8.0mm_P3.50mm.step",
+    "sha256": "93edfe53799a12de5cc3af9277ac2f316d173b2820961c703903318cb3bfd507"
+  },
+  {
+    "path": "project/pcb/redesign/models/Capacitor_THT.3dshapes/C_Disc_D5.0mm_W2.5mm_P5.00mm.step",
+    "snapshot": "models/Capacitor_THT.3dshapes/C_Disc_D5.0mm_W2.5mm_P5.00mm.step",
+    "sha256": "ee61fb3238c6f5da996fd5e965ac74a51bf351560b56111c36541ff3f49247f4"
+  },
+  {
+    "path": "project/pcb/redesign/models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x05_P2.54mm_Vertical.step",
+    "snapshot": "models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x05_P2.54mm_Vertical.step",
+    "sha256": "11066daf302bf78cec34661b11cab76628443a565424b6c72a6dbd23927eb150"
+  },
+  {
+    "path": "project/pcb/redesign/models/Diode_THT.3dshapes/D_DO-201AD_P15.24mm_Horizontal.step",
+    "snapshot": "models/Diode_THT.3dshapes/D_DO-201AD_P15.24mm_Horizontal.step",
+    "sha256": "74dfc3e30557da83985dc913a3e74e2db498d62d061b20b48cba0cdf7b37301b"
+  },
+  {
+    "path": "project/pcb/redesign/models/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.step",
+    "snapshot": "models/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.step",
+    "sha256": "c3e23d4b276811b74eecb329bd4480209ad3dbc8cf6e6e3f2a5b542c5ca343c1"
+  },
+  {
+    "path": "project/pcb/redesign/models/Package_DIP.3dshapes/DIP-14_W7.62mm.step",
+    "snapshot": "models/Package_DIP.3dshapes/DIP-14_W7.62mm.step",
+    "sha256": "3dae072a95c64bee0d1e58be8e75383639f5017ab982de1749d05808a4eed058"
+  },
+  {
+    "path": "project/pcb/redesign/models/Package_DIP.3dshapes/DIP-8_W7.62mm.step",
+    "snapshot": "models/Package_DIP.3dshapes/DIP-8_W7.62mm.step",
+    "sha256": "4a377a56a8d9e9c0b86c095ef9ecc1869ac19e7f5069a3247b294250bf4f235d"
+  },
+  {
+    "path": "project/pcb/redesign/models/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+    "snapshot": "models/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+    "sha256": "8b525badbe21958ebd00367113a1afc110e622ce3a717ad3779c46a9adf1d286"
+  },
+  {
+    "path": "project/pcb/redesign/models/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step",
+    "snapshot": "models/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step",
+    "sha256": "7cb065d935df5771f0ba6e48ddd180863a121af76483dad7f18e667a7b68204a"
+  },
+  {
+    "path": "project/pcb/redesign/models/Package_TO_SOT_THT.3dshapes/TO-92_Inline_Wide.step",
+    "snapshot": "models/Package_TO_SOT_THT.3dshapes/TO-92_Inline_Wide.step",
+    "sha256": "85b7de23bf92112c1cc60ca5fdb644f1a44e150a99f8c6f4f5f29010f50282b9"
+  },
+  {
+    "path": "project/pcb/redesign/models/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+    "snapshot": "models/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+    "sha256": "038a11316eaffcc6c14d0f69ea3510d554312282452976a06fc4e18ee7cafea6"
+  },
+  {
+    "path": "project/pcb/redesign/models/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.step",
+    "snapshot": "models/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.step",
+    "sha256": "46710ac36957e4073ef7e80153823ef7db1ea12932074cb71f43bc4b476a74dc"
+  },
+  {
+    "path": "project/pcb/redesign/models/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.step",
+    "snapshot": "models/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.step",
+    "sha256": "f8bbead3a3ea025610eade704d45b425c67286044556010a63a86ce85410314a"
+  }
+]

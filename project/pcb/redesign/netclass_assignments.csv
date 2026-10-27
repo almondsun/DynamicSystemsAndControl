@@ -1,0 +1,41 @@
+﻿Net,Netclass,Track_target_mm,Clearance_mm,Via_diameter_mm,Via_drill_mm,Review
++5V,SUPPLY_5V,0.5,0.25,0.8,0.4,Preliminary
+BOOT,GATE_DRIVER,0.5,0.25,0.6,0.3,Preliminary
+DPRIME,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+FAULT,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+FB,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+GATE,GATE_DRIVER,0.5,0.25,0.6,0.3,Preliminary
+GND,POWER_GND,0.25,0.2,0.8,0.4,GND power return uses plane/manual review
+HIN,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+HO,GATE_DRIVER,0.5,0.25,0.6,0.3,Preliminary
+IP,POWER_INDUCTOR,2.0,0.25,0.8,0.4,IP/VOUT Kelvin branches require manual width review
+ISENSE,ANALOG_SENSE,0.25,0.25,0.6,0.3,Preliminary
+LMID,POWER_INDUCTOR,2.0,0.25,0.8,0.4,Preliminary
+MCU_PWM,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+NFAULT,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+NFAULT_MCU,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+NRESET,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+NTRIP,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+NUC_3V3,SUPPLY_3V3,0.35,0.25,0.8,0.4,Preliminary
+OVSENSE,ANALOG_SENSE,0.25,0.25,0.6,0.3,Preliminary
+RESET,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+RUN,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+SD,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+SW,POWER_SWITCH,2.0,0.25,0.8,0.4,Preliminary
+UART_RX,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+UART_TX,DIGITAL_CONTROL,0.25,0.2,0.6,0.3,Preliminary
+VIN,POWER_INPUT,3.0,0.25,0.8,0.4,Preliminary
+VOUT,POWER_OUTPUT,2.0,0.25,0.8,0.4,IP/VOUT Kelvin branches require manual width review
+VREF,ANALOG_SENSE,0.25,0.25,0.6,0.3,Preliminary
+VSENSE,ANALOG_SENSE,0.25,0.25,0.6,0.3,Preliminary
+unconnected-(U1-LO-Pad1),Default,0.25,0.2,0.6,0.3,Preliminary
+unconnected-(U1-NC-Pad10),Default,0.25,0.2,0.6,0.3,Preliminary
+unconnected-(U1-NC-Pad16),Default,0.25,0.2,0.6,0.3,Preliminary
+unconnected-(U1-NC-Pad4),Default,0.25,0.2,0.6,0.3,Preliminary
+unconnected-(U1-NC-Pad5),Default,0.25,0.2,0.6,0.3,Preliminary
+unconnected-(U1-NC-Pad9),Default,0.25,0.2,0.6,0.3,Preliminary
+unconnected-(U3-2Y-Pad4),Default,0.25,0.2,0.6,0.3,Preliminary
+unconnected-(U3-3Y-Pad6),Default,0.25,0.2,0.6,0.3,Preliminary
+unconnected-(U3-4Y-Pad8),Default,0.25,0.2,0.6,0.3,Preliminary
+unconnected-(U3-5Y-Pad10),Default,0.25,0.2,0.6,0.3,Preliminary
+unconnected-(U3-6Y-Pad12),Default,0.25,0.2,0.6,0.3,Preliminary

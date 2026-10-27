@@ -1,0 +1,44 @@
+{
+  "symbols": 9,
+  "footprints": 25,
+  "stored_models": 6,
+  "linked_unique_models": 5,
+  "unlinked_models": [
+    "IR2110STRPBF.step"
+  ],
+  "same_geometry_pairs": [],
+  "warnings": [
+    "D0008A-IPC_A: courtyard absent in supplier footprint",
+    "D0008A-IPC_B: courtyard absent in supplier footprint",
+    "D0008A-IPC_C: courtyard absent in supplier footprint",
+    "D0008A-MFG: courtyard absent in supplier footprint"
+  ],
+  "preserved_pin_names_types_and_numbers": true,
+  "existing_table_entries_preserved": true,
+  "active_paths_portable": true,
+  "electrical_approval": false,
+  "branch": "Kicad-PCB",
+  "protected_files_unchanged": 12,
+  "changed_protected_files": [],
+  "original_download_archives_unchanged": 15,
+  "source_member_hashes_unchanged": 65,
+  "native_symbols_validated": 9,
+  "native_svg_previews": 15,
+  "native_footprints_loaded": 25,
+  "temporary_board_reloaded": 25,
+  "step_assembly_exported": true,
+  "native_3d_models_visible": 5,
+  "documentation_local_links_checked": 30,
+  "interactive_gui_check": false,
+  "no_schematic_or_pcb_modification": true,
+  "no_commit_push_or_branch_change": true,
+  "pending_manual": [
+    "IR2110SPBF vs IR2110STRPBF",
+    "Diotec MMBT3904 vs Changjing",
+    "SS34 SMB vs MDD SMA",
+    "US1G archive contains CLD-Diode",
+    "Altium native conversion absent",
+    "LM393B ERC types and courtyard",
+    "Exact land/pin1/polarity qualification"
+  ]
+}

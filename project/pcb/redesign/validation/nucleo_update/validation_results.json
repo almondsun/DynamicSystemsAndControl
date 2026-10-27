@@ -1,0 +1,304 @@
+{
+  "components": 57,
+  "nets_before": 38,
+  "nets_after": 40,
+  "allowed_net_changes_only": true,
+  "endpoint_differences": [
+    {
+      "ref": "J3",
+      "pin": "9",
+      "before": "+3V3",
+      "after": "NUC_3V3"
+    },
+    {
+      "ref": "R13",
+      "pin": "1",
+      "before": "+3V3",
+      "after": "NUC_3V3"
+    },
+    {
+      "ref": "J3",
+      "pin": "10",
+      "before": "GND",
+      "after": "UART_RX"
+    },
+    {
+      "ref": "J3",
+      "pin": "1",
+      "before": "+5V",
+      "after": "UART_TX"
+    }
+  ],
+  "value_changes": [
+    {
+      "ref": "C6",
+      "old": "1uF 50V X7R",
+      "new": "2.2uF 50V X7R 10%"
+    },
+    {
+      "ref": "C16",
+      "old": "100nF",
+      "new": "220nF 50V X7R 10%"
+    },
+    {
+      "ref": "R10",
+      "old": "31k 1%",
+      "new": "30.9k 1%"
+    },
+    {
+      "ref": "J3",
+      "old": "STM32 CABLE 2x5",
+      "new": "NUCLEO-L432KC EXT USB"
+    },
+    {
+      "ref": "R14",
+      "old": "3k 1%",
+      "new": "15k 1%"
+    },
+    {
+      "ref": "R15",
+      "old": "1k 1%",
+      "new": "2.2k 1%"
+    }
+  ],
+  "instance_pin_uuids_preserved": true,
+  "wires_hierarchy_preserved": true,
+  "protected_files_unchanged": 273,
+  "footprints": {
+    "Buck_SMD:PCAP_SVP_E7_PAN": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Buck_SMD.pretty\\PCAP_SVP_E7_PAN.kicad_mod",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "source_sha256": "4133bcffe152c9efd3ab1369213a467ca3f8c964d9a8ef938607262bbe308312"
+    },
+    "Capacitor_SMD:C_0603_1608Metric": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Capacitor_SMD.pretty\\C_0603_1608Metric.kicad_mod",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "source_sha256": "c7b676d47427ea715f702e4cdfd08c069da0c08404f4015f57b0becd40e08491"
+    },
+    "Buck_SMD:CAP_SVF_C6_PAN": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Buck_SMD.pretty\\CAP_SVF_C6_PAN.kicad_mod",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "source_sha256": "d61c53dc1206ee83d579aa179a283dc29ea60838defc5076dade6230918ff7f2"
+    },
+    "Diode_SMD:D_SMA": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Diode_SMD.pretty\\D_SMA.kicad_mod",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "source_sha256": "dc03836b612fd8bc22b3d863c11ee50a66a6ca3593445d5a24c04eb632a165e2"
+    },
+    "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\TerminalBlock_Phoenix.pretty\\TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.kicad_mod",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "source_sha256": "e6dc741f010fdd32a1310ba570a2a2f891d2869071d9881e8f8095ff262e3638"
+    },
+    "Buck:Inductor_25mm_P10mm_VERIFY": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\Buck.pretty\\Inductor_25mm_P10mm_VERIFY.kicad_mod",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "source_sha256": "1d25258346039611375b1393f0a354b28e47e5758cd61b3673a34e640684d3ea"
+    },
+    "Package_TO_SOT_THT:TO-220-3_Vertical": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Package_TO_SOT_THT.pretty\\TO-220-3_Vertical.kicad_mod",
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ],
+      "source_sha256": "82d40d785f3bf495ae18a37a973c6bfc8e7bb4d1ab11ee039629245228b2d66d"
+    },
+    "Resistor_SMD:R_2512_6332Metric": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Resistor_SMD.pretty\\R_2512_6332Metric.kicad_mod",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "source_sha256": "1119422645d02b90335f0823ea09000b31f8593831e9ac717fe99379a4c418fc"
+    },
+    "Capacitor_SMD:C_1206_3216Metric": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Capacitor_SMD.pretty\\C_1206_3216Metric.kicad_mod",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "source_sha256": "a861aa6a9f2aa514c63dff68c512eec565ac2ebd58e4399aa39350310e454de8"
+    },
+    "Capacitor_SMD:C_0805_2012Metric": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Capacitor_SMD.pretty\\C_0805_2012Metric.kicad_mod",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "source_sha256": "cca3b41ac4a534fcafd0b8b5eadf1c297d3d48685281ebf96b0abe510ae11581"
+    },
+    "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Diode_THT.pretty\\D_DO-41_SOD81_P10.16mm_Horizontal.kicad_mod",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "source_sha256": "7184029566c8db78af631103b7a0b0d2efd468771658d5f81c8a7093eee46efc"
+    },
+    "Resistor_SMD:R_0805_2012Metric": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Resistor_SMD.pretty\\R_0805_2012Metric.kicad_mod",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "source_sha256": "bde1698b45a28d25a9b859ba55d7bdfa86e7d9f916014c2225d33b7f654cce88"
+    },
+    "Resistor_SMD:R_0603_1608Metric": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Resistor_SMD.pretty\\R_0603_1608Metric.kicad_mod",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "source_sha256": "a4e6a5d2c97c868fab11527116164acbe90d955ccc04e9e6900bb03dfd0547cf"
+    },
+    "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Package_SO.pretty\\SOIC-16W_7.5x10.3mm_P1.27mm.kicad_mod",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "source_sha256": "f767515adc18a94641f18c3c4cb2f7d2a274bbdf07f1369315bc203c8497bd30"
+    },
+    "Package_TO_SOT_SMD:TO-252-2": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Package_TO_SOT_SMD.pretty\\TO-252-2.kicad_mod",
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ],
+      "source_sha256": "88fc7cd32de3004e63b060db1ed6a9da605443fea0069568609ef5f399e0d73e"
+    },
+    "Buck_SMD:D14": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Buck_SMD.pretty\\D14.kicad_mod",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "source_sha256": "849e2ba3806efec501bb39326f3bbf3a9d67fb0759352b04d3af35ab0dbfd77a"
+    },
+    "Package_TO_SOT_SMD:SOT-23": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Package_TO_SOT_SMD.pretty\\SOT-23.kicad_mod",
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ],
+      "source_sha256": "61fa0a64b96c42fe0b79e5153803cdb5dbd8d213d37007cbceccf3f06e2e7dcd"
+    },
+    "Buck_SMD:D0008A-MFG": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Buck_SMD.pretty\\D0008A-MFG.kicad_mod",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "source_sha256": "7396f17d56fb8452ce13a55b11f2bf6a3d139aa59fc054278a09fe2e8620f382"
+    },
+    "Buck_SMD:DBV0005A_N": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Buck_SMD.pretty\\DBV0005A_N.kicad_mod",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "source_sha256": "f0ef98a574f46f8239f7c7560007c8c3d36061a18eb5a47257469416c1962054"
+    },
+    "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\Connector_IDC.pretty\\IDC-Header_2x05_P2.54mm_Vertical.kicad_mod",
+      "pads": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "source_sha256": "a1eb0d65df9aead1fa5c3fbf64709101bc9ce288abec3158b7ffc07c27b3e0cc"
+    },
+    "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm": {
+      "path": "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\footprints\\TestPoint.pretty\\TestPoint_THTPad_D2.0mm_Drill1.0mm.kicad_mod",
+      "pads": [
+        "1"
+      ],
+      "source_sha256": "0e88fb871081bc1323426c0cb7cbc2398d5e2aaa48a4ffec4d1e9028bf686aeb"
+    }
+  },
+  "model_paths": [
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\D0008A.stp",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\D0014A.stp",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\DBV0005A.stp",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\Panasonic_C6.stp",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\Panasonic_E7.stp",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Capacitor_SMD.3dshapes\\C_0603_1608Metric.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Capacitor_SMD.3dshapes\\C_0805_2012Metric.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Capacitor_SMD.3dshapes\\C_1206_3216Metric.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Connector_IDC.3dshapes\\IDC-Header_2x05_P2.54mm_Vertical.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Diode_SMD.3dshapes\\D_SMA.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Diode_THT.3dshapes\\D_DO-41_SOD81_P10.16mm_Horizontal.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Package_SO.3dshapes\\SOIC-16W_7.5x10.3mm_P1.27mm.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Package_TO_SOT_SMD.3dshapes\\SOT-23.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Package_TO_SOT_SMD.3dshapes\\TO-252-2.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Package_TO_SOT_THT.3dshapes\\TO-220-3_Vertical.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Resistor_SMD.3dshapes\\R_0603_1608Metric.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Resistor_SMD.3dshapes\\R_0805_2012Metric.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\Resistor_SMD.3dshapes\\R_2512_6332Metric.step",
+    "C:\\dev\\7mo\\control\\DynamicSystemsAndControl\\project\\pcb\\redesign\\libraries\\3dmodels\\standard\\TerminalBlock_Phoenix.3dshapes\\TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.step"
+  ],
+  "electrical_approval": false
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "library": "Resistor_SMD:R_0603_1608Metric",
+    "path": "${KICAD10_FOOTPRINT_DIR}\\Resistor_SMD.pretty\\R_0603_1608Metric.kicad_mod",
+    "sha256": "03fc7902b2661df01b4d828fdb6eab9eddf974e7130ed2b98892607387a50c4b",
+    "pads": [
+      {
+        "number": "1",
+        "at_mm": "-0.825 0",
+        "size_mm": "0.8 0.95"
+      },
+      {
+        "number": "2",
+        "at_mm": "0.825 0",
+        "size_mm": "0.8 0.95"
+      }
+    ],
+    "polarity": "nonpolar"
+  },
+  {
+    "library": "Resistor_SMD:R_0805_2012Metric",
+    "path": "${KICAD10_FOOTPRINT_DIR}\\Resistor_SMD.pretty\\R_0805_2012Metric.kicad_mod",
+    "sha256": "949bbbe025b509557866ddd9fcb0403244571f3ceb4f954c9766ee622d18421c",
+    "pads": [
+      {
+        "number": "1",
+        "at_mm": "-0.9125 0",
+        "size_mm": "1.025 1.4"
+      },
+      {
+        "number": "2",
+        "at_mm": "0.9125 0",
+        "size_mm": "1.025 1.4"
+      }
+    ],
+    "polarity": "nonpolar"
+  },
+  {
+    "library": "Resistor_SMD:R_2512_6332Metric",
+    "path": "${KICAD10_FOOTPRINT_DIR}\\Resistor_SMD.pretty\\R_2512_6332Metric.kicad_mod",
+    "sha256": "a3a0a11d7a570eb6e8f456699f29a465e3a45980b89223ea253a94e5779102d9",
+    "pads": [
+      {
+        "number": "1",
+        "at_mm": "-2.9625 0",
+        "size_mm": "1.225 3.35"
+      },
+      {
+        "number": "2",
+        "at_mm": "2.9625 0",
+        "size_mm": "1.225 3.35"
+      }
+    ],
+    "polarity": "nonpolar"
+  },
+  {
+    "library": "Capacitor_SMD:C_0603_1608Metric",
+    "path": "${KICAD10_FOOTPRINT_DIR}\\Capacitor_SMD.pretty\\C_0603_1608Metric.kicad_mod",
+    "sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+    "pads": [
+      {
+        "number": "1",
+        "at_mm": "-0.775 0",
+        "size_mm": "0.9 0.95"
+      },
+      {
+        "number": "2",
+        "at_mm": "0.775 0",
+        "size_mm": "0.9 0.95"
+      }
+    ],
+    "polarity": "nonpolar"
+  },
+  {
+    "library": "Capacitor_SMD:C_0805_2012Metric",
+    "path": "${KICAD10_FOOTPRINT_DIR}\\Capacitor_SMD.pretty\\C_0805_2012Metric.kicad_mod",
+    "sha256": "e890bdf55fa18fc6df6878eb1b5251a991e1b93985509175eb269d3d002880b4",
+    "pads": [
+      {
+        "number": "1",
+        "at_mm": "-0.95 0",
+        "size_mm": "1 1.45"
+      },
+      {
+        "number": "2",
+        "at_mm": "0.95 0",
+        "size_mm": "1 1.45"
+      }
+    ],
+    "polarity": "nonpolar"
+  },
+  {
+    "library": "Capacitor_SMD:C_1206_3216Metric",
+    "path": "${KICAD10_FOOTPRINT_DIR}\\Capacitor_SMD.pretty\\C_1206_3216Metric.kicad_mod",
+    "sha256": "420c3ac494743fbc47653b6e7d0107d51620e25c77eaf73f083e799807fd1381",
+    "pads": [
+      {
+        "number": "1",
+        "at_mm": "-1.475 0",
+        "size_mm": "1.15 1.8"
+      },
+      {
+        "number": "2",
+        "at_mm": "1.475 0",
+        "size_mm": "1.15 1.8"
+      }
+    ],
+    "polarity": "nonpolar"
+  },
+  {
+    "library": "Capacitor_SMD:CP_Elec_8x6.9",
+    "path": "${KICAD10_FOOTPRINT_DIR}\\Capacitor_SMD.pretty\\CP_Elec_8x6.9.kicad_mod",
+    "sha256": "b92b52ab718d64806862ab24faebafd68ab6bbe4b6cfef63b422d883cfaf5d58",
+    "pads": [
+      {
+        "number": "1",
+        "at_mm": "-3.475 0",
+        "size_mm": "4.15 1.9"
+      },
+      {
+        "number": "2",
+        "at_mm": "3.475 0",
+        "size_mm": "4.15 1.9"
+      }
+    ],
+    "polarity": "1positive 2negative from F.Fab plus marking"
+  },
+  {
+    "library": "Capacitor_SMD:CP_Elec_6.3x5.9",
+    "path": "${KICAD10_FOOTPRINT_DIR}\\Capacitor_SMD.pretty\\CP_Elec_6.3x5.9.kicad_mod",
+    "sha256": "0dab9313a8c3b7d8b627b40db8671b79a29ba7ad6fc2a17deaf93a632191ba2a",
+    "pads": [
+      {
+        "number": "1",
+        "at_mm": "-2.8 0",
+        "size_mm": "3.5 1.6"
+      },
+      {
+        "number": "2",
+        "at_mm": "2.8 0",
+        "size_mm": "3.5 1.6"
+      }
+    ],
+    "polarity": "1positive 2negative from F.Fab plus marking"
+  }
+]

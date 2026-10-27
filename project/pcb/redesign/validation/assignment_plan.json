@@ -1,0 +1,2878 @@
+[
+  {
+    "ref": "C4",
+    "old_value": "10uF 35V low ESR",
+    "old_mpn": "No declarado; rótulo histórico: 10uF 35V low ESR",
+    "new_mpn": "Panasonic 50SVF10M",
+    "code": "C454354",
+    "old_symbol": "Buck:C4",
+    "new_symbol": "Buck:C4",
+    "old_footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "footprint": "Buck_SMD:CAP_SVF_C6_PAN",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "+",
+        "original_net": "VOUT",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "-",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (rizado y tensión)",
+    "passive_approval": "PENDIENTE — ALTO",
+    "note": "Margen corriente 11,7× y tensión nominal ≥2,5× frente a 20 V hipotéticos. C_banco efectiva≥16 µF a vida/temperatura no demostrada; ESR @10 kHz y estabilidad PI; land C6 y polaridad.",
+    "file": "buck_1.kicad_sch"
+  },
+  {
+    "ref": "RS1",
+    "old_value": "0.050R 1% 1W",
+    "old_mpn": "No declarado; rótulo histórico: 0.050R 1% 1W",
+    "new_mpn": "TA-I RLP25FEER050",
+    "code": "C160588",
+    "old_symbol": "Buck:RS1",
+    "new_symbol": "Buck:RS1",
+    "old_footprint": "Resistor_SMD:R_2512_6332Metric",
+    "footprint": "Resistor_SMD:R_2512_6332Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "IP",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "VOUT",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (potencia calculada, no térmica)",
+    "passive_approval": "PENDIENTE — ALTO",
+    "note": "ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA. Huella 2512 genérica PROVISIONAL; NO reproduce land TA-I a=4,b=2.1,L=4.1 mm. Mantener pendiente mecánica/Kelvin/térmica. Con 1 oz (~35 µm) no atribuir 2 W. Demostrar derating y temperatura a 0,316 W; kelvin desde pads; land TA-I específico.",
+    "file": "buck_1.kicad_sch"
+  },
+  {
+    "ref": "J1",
+    "old_value": "12V FUSED INPUT",
+    "old_mpn": "No declarado; rótulo histórico: 12V FUSED INPUT",
+    "new_mpn": "TB002-500-02BE",
+    "code": "C2757858",
+    "old_symbol": "Buck:J1",
+    "new_symbol": "Buck:J1",
+    "old_footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "según red original",
+        "original_net": "VIN",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "según red original",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.",
+    "file": "buck_1.kicad_sch"
+  },
+  {
+    "ref": "D1",
+    "old_value": "1N5822 40V 3A",
+    "old_mpn": "No declarado; rótulo histórico: 1N5822 40V 3A",
+    "new_mpn": "SS34",
+    "code": "C8678",
+    "old_symbol": "Buck:D1",
+    "new_symbol": "Buck:D1",
+    "old_footprint": "Diode_THT:D_DO-201AD_P15.24mm_Horizontal",
+    "footprint": "Diode_SMD:D_SMA",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "K",
+        "original_net": "SW",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "A",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "MDD SS34 SMA según ficha local pp.1,3; se rechaza SMB descargado. Pad1 K/banda,2 A; térmica/transitorios pendientes.",
+    "file": "buck_1.kicad_sch"
+  },
+  {
+    "ref": "L1",
+    "old_value": "330uH >=3A Isat VERIFY",
+    "old_mpn": "No declarado; rótulo histórico: 330uH >=3A Isat VERIFY",
+    "new_mpn": "Murata 60B334C",
+    "code": "C6823957",
+    "old_symbol": "Buck:L1",
+    "new_symbol": "Buck:L1",
+    "old_footprint": "Buck:Inductor_25mm_P10mm_VERIFY",
+    "footprint": "Buck:Inductor_25mm_P10mm_VERIFY",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "SW",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "LMID",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "PENDIENTE",
+    "passive_approval": "PENDIENTE — CRÍTICO",
+    "note": "No hay land KiCad verificado de Murata 60B334C; NO asignar THT a pieza SMD. L(I,T), acoplamiento y pérdidas pendientes. Inductancia efectiva por bobina debe sostener L_total≥528 µH; a −15 % inicial quedan 561 µH y solo 5,9 % de pérdida admisible. Curva L(I,T) y pérdidas núcleo ausentes; land Murata obligatorio.",
+    "file": "buck_1.kicad_sch"
+  },
+  {
+    "ref": "C1",
+    "old_value": "100uF 25V",
+    "old_mpn": "No declarado; rótulo histórico: 100uF 25V",
+    "new_mpn": "Panasonic 25SVPF100M",
+    "code": "C136279",
+    "old_symbol": "Buck:C1",
+    "new_symbol": "Buck:C1",
+    "old_footprint": "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm",
+    "footprint": "Buck_SMD:PCAP_SVP_E7_PAN",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "+",
+        "original_net": "VIN",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "-",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (rizado y tensión)",
+    "passive_approval": "PENDIENTE — MEDIO",
+    "note": "Margen I_ripple 3,73× y VDC 1,89×. Verificar C_banco efectiva≥160 µF con vida/temperatura y ESR @10k; land E7 y polaridad. 160 µF es mínimo por tolerancia inicial, no de vida.",
+    "file": "buck_1.kicad_sch"
+  },
+  {
+    "ref": "C2",
+    "old_value": "100uF 25V",
+    "old_mpn": "No declarado; rótulo histórico: 100uF 25V",
+    "new_mpn": "Panasonic 25SVPF100M",
+    "code": "C136279",
+    "old_symbol": "Buck:C2",
+    "new_symbol": "Buck:C2",
+    "old_footprint": "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm",
+    "footprint": "Buck_SMD:PCAP_SVP_E7_PAN",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "+",
+        "original_net": "VIN",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "-",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (rizado y tensión)",
+    "passive_approval": "PENDIENTE — MEDIO",
+    "note": "Margen I_ripple 3,73× y VDC 1,89×. Verificar C_banco efectiva≥160 µF con vida/temperatura y ESR @10k; land E7 y polaridad. 160 µF es mínimo por tolerancia inicial, no de vida.",
+    "file": "buck_1.kicad_sch"
+  },
+  {
+    "ref": "C3",
+    "old_value": "100nF 50V",
+    "old_mpn": "No declarado; rótulo histórico: 100nF 50V",
+    "new_mpn": "Yageo CC0603KRX7R9BB104",
+    "code": "C14663",
+    "old_symbol": "Buck:C3",
+    "new_symbol": "Buck:C3",
+    "old_footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "VIN",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (tensión/temperatura nominal)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "Retención de ≥70 nF con DC/temperatura y proximidad Q1/D1; exigir evidencia capacitancia efectiva y ubicación.",
+    "file": "buck_1.kicad_sch"
+  },
+  {
+    "ref": "J2",
+    "old_value": "LOAD + / -",
+    "old_mpn": "No declarado; rótulo histórico: LOAD + / -",
+    "new_mpn": "TB002-500-02BE",
+    "code": "C2757858",
+    "old_symbol": "Buck:J2",
+    "new_symbol": "Buck:J2",
+    "old_footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "según red original",
+        "original_net": "VOUT",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "según red original",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.",
+    "file": "buck_1.kicad_sch"
+  },
+  {
+    "ref": "L2",
+    "old_value": "330uH >=3A Isat VERIFY",
+    "old_mpn": "No declarado; rótulo histórico: 330uH >=3A Isat VERIFY",
+    "new_mpn": "Murata 60B334C",
+    "code": "C6823957",
+    "old_symbol": "Buck:L2",
+    "new_symbol": "Buck:L2",
+    "old_footprint": "Buck:Inductor_25mm_P10mm_VERIFY",
+    "footprint": "Buck:Inductor_25mm_P10mm_VERIFY",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "LMID",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "IP",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "PENDIENTE",
+    "passive_approval": "PENDIENTE — CRÍTICO",
+    "note": "Igual L1; se conserva huella THT histórica solo como original NO MIGRADO. Comprobar influencia de proximidad/acoplamiento: L_eq = L1+L2±2M. Validar I de saturación por condición de 80 % del nominal y temperatura.",
+    "file": "buck_1.kicad_sch"
+  },
+  {
+    "ref": "C5",
+    "old_value": "10uF 35V low ESR",
+    "old_mpn": "No declarado; rótulo histórico: 10uF 35V low ESR",
+    "new_mpn": "Panasonic 50SVF10M",
+    "code": "C454354",
+    "old_symbol": "Buck:C5",
+    "new_symbol": "Buck:C5",
+    "old_footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "footprint": "Buck_SMD:CAP_SVF_C6_PAN",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "+",
+        "original_net": "VOUT",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "-",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (rizado y tensión)",
+    "passive_approval": "PENDIENTE — ALTO",
+    "note": "Margen corriente 11,7× y tensión nominal ≥2,5× frente a 20 V hipotéticos. C_banco efectiva≥16 µF a vida/temperatura no demostrada; ESR @10 kHz y estabilidad PI; land C6 y polaridad.",
+    "file": "buck_1.kicad_sch"
+  },
+  {
+    "ref": "Q1",
+    "old_value": "IRFZ44N TO-220",
+    "old_mpn": "No declarado; rótulo histórico: IRFZ44N TO-220",
+    "new_mpn": "IRFZ44NS",
+    "code": "C5199867",
+    "old_symbol": "Buck:Q1",
+    "new_symbol": "Buck:Q1",
+    "old_footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "G",
+        "original_net": "GATE",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "D",
+        "original_net": "VIN",
+        "original_at": [
+          "-12.7",
+          "-2.54",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "3",
+        "new_pin": "3",
+        "function": "S",
+        "original_net": "SW",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Revisión/familia UMW y TO-263 pendientes de conciliar; se retiene original TO-220.",
+    "file": "buck_1.kicad_sch"
+  },
+  {
+    "ref": "U1",
+    "old_value": "IR2110PBF DIP14",
+    "old_mpn": "No declarado; rótulo histórico: IR2110PBF DIP14",
+    "new_mpn": "IR2110STRPBF",
+    "code": "C2968",
+    "old_symbol": "Buck:U1",
+    "new_symbol": "Buck:U1",
+    "old_footprint": "Package_DIP:DIP-14_W7.62mm",
+    "footprint": "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "LO",
+        "original_net": "unconnected-(U1-LO-Pad1)",
+        "original_at": [
+          "-12.7",
+          "6.35",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "COM",
+        "original_net": "GND",
+        "original_at": [
+          "-12.7",
+          "3.81",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "3",
+        "new_pin": "3",
+        "function": "VCC",
+        "original_net": "VIN",
+        "original_at": [
+          "-12.7",
+          "1.27",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "4",
+        "new_pin": "4",
+        "function": "NC",
+        "original_net": "unconnected-(U1-NC-Pad4)",
+        "original_at": [
+          "-12.7",
+          "-1.27",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "5",
+        "new_pin": "5",
+        "function": "NC",
+        "original_net": "unconnected-(U1-NC-Pad5)",
+        "original_at": [
+          "-12.7",
+          "-3.81",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "6",
+        "new_pin": "6",
+        "function": "VS",
+        "original_net": "SW",
+        "original_at": [
+          "-12.7",
+          "-6.35",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "7",
+        "new_pin": "7",
+        "function": "VB",
+        "original_net": "BOOT",
+        "original_at": [
+          "-12.7",
+          "-8.89",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "8",
+        "new_pin": "8",
+        "function": "HO",
+        "original_net": "HO",
+        "original_at": [
+          "-12.7",
+          "-11.43",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "9",
+        "new_pin": "9",
+        "function": "NC",
+        "original_net": "unconnected-(U1-NC-Pad9)",
+        "original_at": [
+          "12.7",
+          "6.35",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "10",
+        "new_pin": "10",
+        "function": "NC",
+        "original_net": "unconnected-(U1-NC-Pad10)",
+        "original_at": [
+          "12.7",
+          "3.81",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "11",
+        "new_pin": "11",
+        "function": "VDD",
+        "original_net": "+5V",
+        "original_at": [
+          "12.7",
+          "1.27",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "12",
+        "new_pin": "12",
+        "function": "HIN",
+        "original_net": "HIN",
+        "original_at": [
+          "12.7",
+          "-1.27",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "13",
+        "new_pin": "13",
+        "function": "SD",
+        "original_net": "SD",
+        "original_at": [
+          "12.7",
+          "-3.81",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "14",
+        "new_pin": "14",
+        "function": "LIN",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "-6.35",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "15",
+        "new_pin": "15",
+        "function": "VSS",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "-8.89",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "16",
+        "new_pin": "16",
+        "function": "NC",
+        "original_net": "unconnected-(U1-NC-Pad16)",
+        "original_at": [
+          "12.7",
+          "-11.43",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "El símbolo original YA tiene pinout SOIC16 pese a Value DIP14; se conserva mapa real 1:1. Datasheet Infineon rev.V pp.5,16 (MS-013AA); se corrige rótulo a MPN SMD.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "R2",
+    "old_value": "10k",
+    "old_mpn": "No declarado; rótulo histórico: 10k",
+    "new_mpn": "UNI-ROYAL 0603WAF1002T5E",
+    "code": "C25804",
+    "old_symbol": "Buck:R2",
+    "new_symbol": "Buck:R2",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "GATE",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "SW",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — ALTO",
+    "note": "Su descarga gate agrega consumo al bootstrap en cada ciclo; validar VBS.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "U2",
+    "old_value": "L7805CV",
+    "old_mpn": "No declarado; rótulo histórico: L7805CV",
+    "new_mpn": "78M05",
+    "code": "C347278",
+    "old_symbol": "Buck:U2",
+    "new_symbol": "Buck:U2",
+    "old_footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "footprint": "Package_TO_SOT_SMD:TO-252-2",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "IN",
+        "original_net": "VIN",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "GND",
+        "original_net": "GND",
+        "original_at": [
+          "-12.7",
+          "-2.54",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "3",
+        "new_pin": "3",
+        "function": "OUT",
+        "original_net": "+5V",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "UMW 78Mxx pp.1,14: TO-252, 1 IN,2 GND/tab,3 OUT; 5V nominal conservado, térmica/estabilidad pendientes.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "D2",
+    "old_value": "UF4004",
+    "old_mpn": "No declarado; rótulo histórico: UF4004",
+    "new_mpn": "US1G",
+    "code": "C3034075",
+    "old_symbol": "Buck:D2",
+    "new_symbol": "Buck:D2",
+    "old_footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "classification": "BLOCKED",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "según red original",
+        "original_net": "BOOT",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "según red original",
+        "original_net": "VIN",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Falta ficha exacta ShunYe US1G; CAD descargado es CLD-Diode, función incompatible. Reemplazo bloqueado.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "R1",
+    "old_value": "10R",
+    "old_mpn": "No declarado; rótulo histórico: 10R",
+    "new_mpn": "UNI-ROYAL 0805W8F100JT5E",
+    "code": "C17415",
+    "old_symbol": "Buck:R1",
+    "new_symbol": "Buck:R1",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "HO",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GATE",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "PENDIENTE",
+    "passive_approval": "PENDIENTE — ALTO",
+    "note": "Curva de pulsos repetitivos no contrastada; 13,2 mW es potencia total simplificada, no la que disipa necesariamente R1.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "C11",
+    "old_value": "10uF 25V",
+    "old_mpn": "No declarado; rótulo histórico: 10uF 25V",
+    "new_mpn": "Samsung CL21A106KAYNNNE",
+    "code": "C15850",
+    "old_symbol": "Buck:C11",
+    "new_symbol": "Buck_Redesign:CL21A106KAYNNNE",
+    "old_footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "classification": "SYMBOL_REPLACEMENT",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "+5V",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (tensión nominal)",
+    "passive_approval": "PENDIENTE — MEDIO",
+    "note": "MLCC X5R no polarizado sustituye capacitor polarizado. Símbolo adaptado con dibujo no polar y terminales en posiciones originales. Curva de DC bias del MPN y ESR/estabilidad del UMW 78M05 no certificadas para todo el rango.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "C9",
+    "old_value": "330nF 50V",
+    "old_mpn": "No declarado; rótulo histórico: 330nF 50V",
+    "new_mpn": "Samsung CL21B334KBFNNNE",
+    "code": "C73142",
+    "old_symbol": "Buck:C9",
+    "new_symbol": "Buck:C9",
+    "old_footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "VIN",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (valor nominal/tensión)",
+    "passive_approval": "PENDIENTE — MEDIO",
+    "note": "No trasladar CI nominal de aplicación de UMW a mínimo efectivo garantizado; revisar necesidad de ESR/localidad.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "R4",
+    "old_value": "1k",
+    "old_mpn": "No declarado; rótulo histórico: 1k",
+    "new_mpn": "UNI-ROYAL 0603WAF1001T5E",
+    "code": "C21190",
+    "old_symbol": "Buck:R4",
+    "new_symbol": "Buck:R4",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "MCU_PWM",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "DPRIME",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — MEDIO",
+    "note": "Corriente interfaz con MCU desconectado o sin alimentación.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "R3",
+    "old_value": "10k",
+    "old_mpn": "No declarado; rótulo histórico: 10k",
+    "new_mpn": "UNI-ROYAL 0603WAF1002T5E",
+    "code": "C25804",
+    "old_symbol": "Buck:R3",
+    "new_symbol": "Buck:R3",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "DPRIME",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "+5V",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "Revisión inyección hacia MCU apagado.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "U3",
+    "old_value": "SN74HCT14N",
+    "old_mpn": "No declarado; rótulo histórico: SN74HCT14N",
+    "new_mpn": "SN74HCT14DR",
+    "code": "C6769",
+    "old_symbol": "Buck:U3",
+    "new_symbol": "Buck:U3",
+    "old_footprint": "Package_DIP:DIP-14_W7.62mm",
+    "footprint": "Buck_SMD:D14",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "1A",
+        "original_net": "DPRIME",
+        "original_at": [
+          "-12.7",
+          "6.35",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "1Y",
+        "original_net": "HIN",
+        "original_at": [
+          "-12.7",
+          "3.81",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "3",
+        "new_pin": "3",
+        "function": "2A",
+        "original_net": "GND",
+        "original_at": [
+          "-12.7",
+          "1.27",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "4",
+        "new_pin": "4",
+        "function": "2Y",
+        "original_net": "unconnected-(U3-2Y-Pad4)",
+        "original_at": [
+          "-12.7",
+          "-1.27",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "5",
+        "new_pin": "5",
+        "function": "3A",
+        "original_net": "GND",
+        "original_at": [
+          "-12.7",
+          "-3.81",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "6",
+        "new_pin": "6",
+        "function": "3Y",
+        "original_net": "unconnected-(U3-3Y-Pad6)",
+        "original_at": [
+          "-12.7",
+          "-6.35",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "7",
+        "new_pin": "7",
+        "function": "GND",
+        "original_net": "GND",
+        "original_at": [
+          "-12.7",
+          "-8.89",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "8",
+        "new_pin": "8",
+        "function": "4Y",
+        "original_net": "unconnected-(U3-4Y-Pad8)",
+        "original_at": [
+          "12.7",
+          "6.35",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "9",
+        "new_pin": "9",
+        "function": "4A",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "3.81",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "10",
+        "new_pin": "10",
+        "function": "5Y",
+        "original_net": "unconnected-(U3-5Y-Pad10)",
+        "original_at": [
+          "12.7",
+          "1.27",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "11",
+        "new_pin": "11",
+        "function": "5A",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "-1.27",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "12",
+        "new_pin": "12",
+        "function": "6Y",
+        "original_net": "unconnected-(U3-6Y-Pad12)",
+        "original_at": [
+          "12.7",
+          "-3.81",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "13",
+        "new_pin": "13",
+        "function": "6A",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "-6.35",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "14",
+        "new_pin": "14",
+        "function": "VCC",
+        "original_net": "+5V",
+        "original_at": [
+          "12.7",
+          "-8.89",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "TI SCLS225G, SOIC D14, paso1.27mm; pinout 1:1. Se conserva símbolo funcional existente.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "C7",
+    "old_value": "100nF 50V",
+    "old_mpn": "No declarado; rótulo histórico: 100nF 50V",
+    "new_mpn": "Yageo CC0603KRX7R9BB104",
+    "code": "C14663",
+    "old_symbol": "Buck:C7",
+    "new_symbol": "Buck:C7",
+    "old_footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "VIN",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (tensión/temperatura nominal)",
+    "passive_approval": "PENDIENTE — CRÍTICO",
+    "note": "ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA.  100 nF no demuestra reserva de carga de bootstrap; ver eventual C18 local; exigir evidencia capacitancia efectiva y ubicación.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "C12",
+    "old_value": "100nF",
+    "old_mpn": "No declarado; rótulo histórico: 100nF",
+    "new_mpn": "Yageo CC0603KRX7R9BB104",
+    "code": "C14663",
+    "old_symbol": "Buck:C12",
+    "new_symbol": "Buck:C12",
+    "old_footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "+5V",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (tensión/temperatura nominal)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "Posición y retorno para conmutación HCT14; exigir evidencia capacitancia efectiva y ubicación.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "C6",
+    "old_value": "1uF 50V X7R",
+    "old_mpn": "No declarado; rótulo histórico: 1uF 50V X7R",
+    "new_mpn": "Samsung CL21B105KBFNNNE",
+    "code": "C28323",
+    "old_symbol": "Buck:C6",
+    "new_symbol": "Buck:C6",
+    "old_footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "BOOT",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "SW",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "PENDIENTE",
+    "passive_approval": "PENDIENTE — CRÍTICO",
+    "note": "ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA.  No se demuestra objetivo Ceff≥1 µF. Evaluar C6 en 10–13 V DC, tiempos off de 5µs, carga inicial y VBS/VGS; reservar posibilidad segundo MLCC sin poblar a ciegas.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "C10",
+    "old_value": "100nF 50V",
+    "old_mpn": "No declarado; rótulo histórico: 100nF 50V",
+    "new_mpn": "Yageo CC0603KRX7R9BB104",
+    "code": "C14663",
+    "old_symbol": "Buck:C10",
+    "new_symbol": "Buck:C10",
+    "old_footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "+5V",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (tensión/temperatura nominal)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "Estabilidad con C11 y ESR del regulador UMW no demostrada; exigir evidencia capacitancia efectiva y ubicación.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "C8",
+    "old_value": "100nF 50V",
+    "old_mpn": "No declarado; rótulo histórico: 100nF 50V",
+    "new_mpn": "Yageo CC0603KRX7R9BB104",
+    "code": "C14663",
+    "old_symbol": "Buck:C8",
+    "new_symbol": "Buck:C8",
+    "old_footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "+5V",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (tensión/temperatura nominal)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "Retención ≥70 nF, pines reales del SOIC-16; exigir evidencia capacitancia efectiva y ubicación.",
+    "file": "buck_2.kicad_sch"
+  },
+  {
+    "ref": "C13",
+    "old_value": "100nF",
+    "old_mpn": "No declarado; rótulo histórico: 100nF",
+    "new_mpn": "Yageo CC0603KRX7R9BB104",
+    "code": "C14663",
+    "old_symbol": "Buck:C13",
+    "new_symbol": "Buck:C13",
+    "old_footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "+5V",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (tensión/temperatura nominal)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "Posición y retorno para latch NAND; exigir evidencia capacitancia efectiva y ubicación.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "R7",
+    "old_value": "4.7k",
+    "old_mpn": "No declarado; rótulo histórico: 4.7k",
+    "new_mpn": "UNI-ROYAL 0603WAF4701T5E",
+    "code": "C23162",
+    "old_symbol": "Buck:R7",
+    "new_symbol": "Buck:R7",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "NTRIP",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "+5V",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "VOL salida open collector LM393B.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "U6",
+    "old_value": "INA180A1IDBVR",
+    "old_mpn": "No declarado; rótulo histórico: INA180A1IDBVR",
+    "new_mpn": "INA180A1IDBVR",
+    "code": "C122228",
+    "old_symbol": "Buck:U6",
+    "new_symbol": "Buck:U6",
+    "old_footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "footprint": "Buck_SMD:DBV0005A_N",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "OUT",
+        "original_net": "ISENSE",
+        "original_at": [
+          "-12.7",
+          "1.27",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "GND",
+        "original_net": "GND",
+        "original_at": [
+          "-12.7",
+          "-1.27",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "3",
+        "new_pin": "3",
+        "function": "IN+",
+        "original_net": "IP",
+        "original_at": [
+          "-12.7",
+          "-3.81",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "4",
+        "new_pin": "4",
+        "function": "IN-",
+        "original_net": "VOUT",
+        "original_at": [
+          "12.7",
+          "1.27",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "5",
+        "new_pin": "5",
+        "function": "VS",
+        "original_net": "+5V",
+        "original_at": [
+          "12.7",
+          "-1.27",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "TI SBOS741H p.4, pinout A 1OUT,2GND,3IN+,4IN-,5VS. Se conserva símbolo funcional existente.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "R8",
+    "old_value": "15k 1%",
+    "old_mpn": "No declarado; rótulo histórico: 15k 1%",
+    "new_mpn": "UNI-ROYAL 0603WAF1502T5E",
+    "code": "C22809",
+    "old_symbol": "Buck:R8",
+    "new_symbol": "Buck:R8",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "+5V",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "VREF",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — MEDIO",
+    "note": "Umbral VREF influido por tolerancia y TCR pareja R8/R9.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "U4",
+    "old_value": "SN74HCT00N",
+    "old_mpn": "No declarado; rótulo histórico: SN74HCT00N",
+    "new_mpn": "SN74HCT00DR",
+    "code": "C6764",
+    "old_symbol": "Buck:U4",
+    "new_symbol": "Buck:U4",
+    "old_footprint": "Package_DIP:DIP-14_W7.62mm",
+    "footprint": "Buck_SMD:D14",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "1A",
+        "original_net": "RESET",
+        "original_at": [
+          "-12.7",
+          "6.35",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "1B",
+        "original_net": "NTRIP",
+        "original_at": [
+          "-12.7",
+          "3.81",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "3",
+        "new_pin": "3",
+        "function": "1Y",
+        "original_net": "NRESET",
+        "original_at": [
+          "-12.7",
+          "1.27",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "4",
+        "new_pin": "4",
+        "function": "2A",
+        "original_net": "RUN",
+        "original_at": [
+          "-12.7",
+          "-1.27",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "5",
+        "new_pin": "5",
+        "function": "2B",
+        "original_net": "NFAULT",
+        "original_at": [
+          "-12.7",
+          "-3.81",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "6",
+        "new_pin": "6",
+        "function": "2Y",
+        "original_net": "SD",
+        "original_at": [
+          "-12.7",
+          "-6.35",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "7",
+        "new_pin": "7",
+        "function": "GND",
+        "original_net": "GND",
+        "original_at": [
+          "-12.7",
+          "-8.89",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "8",
+        "new_pin": "8",
+        "function": "3Y",
+        "original_net": "FAULT",
+        "original_at": [
+          "12.7",
+          "6.35",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "9",
+        "new_pin": "9",
+        "function": "3A",
+        "original_net": "NTRIP",
+        "original_at": [
+          "12.7",
+          "3.81",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "10",
+        "new_pin": "10",
+        "function": "3B",
+        "original_net": "NFAULT",
+        "original_at": [
+          "12.7",
+          "1.27",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "11",
+        "new_pin": "11",
+        "function": "4Y",
+        "original_net": "NFAULT",
+        "original_at": [
+          "12.7",
+          "-1.27",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "12",
+        "new_pin": "12",
+        "function": "4A",
+        "original_net": "NRESET",
+        "original_at": [
+          "12.7",
+          "-3.81",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "13",
+        "new_pin": "13",
+        "function": "4B",
+        "original_net": "FAULT",
+        "original_at": [
+          "12.7",
+          "-6.35",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "14",
+        "new_pin": "14",
+        "function": "VCC",
+        "original_net": "+5V",
+        "original_at": [
+          "12.7",
+          "-8.89",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "TI SCLS062F p.3, SOIC D14, paso1.27mm; pinout 1:1. Se conserva símbolo funcional existente.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "R12",
+    "old_value": "10k",
+    "old_mpn": "No declarado; rótulo histórico: 10k",
+    "new_mpn": "UNI-ROYAL 0603WAF1002T5E",
+    "code": "C25804",
+    "old_symbol": "Buck:R12",
+    "new_symbol": "Buck:R12",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "FAULT",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "FB",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "Corriente de base y pinout Q2 SMD.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "Q2",
+    "old_value": "2N3904",
+    "old_mpn": "No declarado; rótulo histórico: 2N3904",
+    "new_mpn": "MMBT3904",
+    "code": "C20526",
+    "old_symbol": "Buck:Q2",
+    "new_symbol": "Buck_Redesign:MMBT3904_C20526",
+    "old_footprint": "Package_TO_SOT_THT:TO-92_Inline_Wide",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "classification": "SYMBOL_REPLACEMENT",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "2",
+        "function": "E",
+        "original_net": "GND",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "1",
+        "function": "B",
+        "original_net": "FB",
+        "original_at": [
+          "-12.7",
+          "-2.54",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "3",
+        "new_pin": "3",
+        "function": "C",
+        "original_net": "NFAULT_MCU",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Símbolo adaptado de Buck:Q2 para Changjing: 1E->2E,2B->1B,3C->3C. Sin mover cables, pines ni UUID de instancia.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "R10",
+    "old_value": "31k 1%",
+    "old_mpn": "No declarado; rótulo histórico: 31k 1%",
+    "new_mpn": "Vishay CRCW060330K9FKEA",
+    "code": "C844354",
+    "old_symbol": "Buck:R10",
+    "new_symbol": "Buck:R10",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "VOUT",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "OVSENSE",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — MEDIO",
+    "note": "MPN propuesto 30.9k incompatible con 31k original sin aceptar cambio. No se asigna MPN ni huella nuevos. Valor no es original 31kΩ; V_OVP nominal=8,18 V en vez de 8,20 V, diferencia 0,24 %; requiere aceptar funcionalmente cambio.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "C16",
+    "old_value": "100nF",
+    "old_mpn": "No declarado; rótulo histórico: 100nF",
+    "new_mpn": "Yageo CC0603KRX7R9BB224",
+    "code": "C107083",
+    "old_symbol": "Buck:C16",
+    "new_symbol": "Buck:C16",
+    "old_footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "+5V",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (valor nominal/tensión)",
+    "passive_approval": "PENDIENTE — MEDIO",
+    "note": "MPN propuesto 220nF incompatible con 100nF original sin aceptar cambio. No se asigna MPN ni huella nuevos. Valor elegido 220 nF difiere de esquema histórico 100nF. Ceff≥100nF no demostrada: DC bias/edad/posición; confirmar aceptación del cambio.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "U5",
+    "old_value": "LM393P",
+    "old_mpn": "No declarado; rótulo histórico: LM393P",
+    "new_mpn": "LM393BIDR",
+    "code": "C2865059",
+    "old_symbol": "Buck:U5",
+    "new_symbol": "Buck:U5",
+    "old_footprint": "Package_DIP:DIP-8_W7.62mm",
+    "footprint": "Buck_SMD:D0008A-MFG",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "OUT1",
+        "original_net": "NTRIP",
+        "original_at": [
+          "-12.7",
+          "2.54",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "IN1-",
+        "original_net": "ISENSE",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "3",
+        "new_pin": "3",
+        "function": "IN1+",
+        "original_net": "VREF",
+        "original_at": [
+          "-12.7",
+          "-2.54",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "4",
+        "new_pin": "4",
+        "function": "GND",
+        "original_net": "GND",
+        "original_at": [
+          "-12.7",
+          "-5.08",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "5",
+        "new_pin": "5",
+        "function": "IN2+",
+        "original_net": "VREF",
+        "original_at": [
+          "12.7",
+          "2.54",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "6",
+        "new_pin": "6",
+        "function": "IN2-",
+        "original_net": "OVSENSE",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "7",
+        "new_pin": "7",
+        "function": "OUT2",
+        "original_net": "NTRIP",
+        "original_at": [
+          "12.7",
+          "-2.54",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "8",
+        "new_pin": "8",
+        "function": "VCC",
+        "original_net": "+5V",
+        "original_at": [
+          "12.7",
+          "-5.08",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Pinout 1:1 según TI SLCS005AH p.3; se conserva símbolo con open_collector/input, evitando tipos erróneos tri_state del CAD descargado. Courtyard ausente en huella comercial.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "C15",
+    "old_value": "100nF",
+    "old_mpn": "No declarado; rótulo histórico: 100nF",
+    "new_mpn": "Yageo CC0603KRX7R9BB104",
+    "code": "C14663",
+    "old_symbol": "Buck:C15",
+    "new_symbol": "Buck:C15",
+    "old_footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "VREF",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (tensión/temperatura nominal)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "τ = (15k||10k)×100nF =0,600 ms nominal; referencia tarda ~3ms en asentarse; exigir evidencia capacitancia efectiva y ubicación.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "R13",
+    "old_value": "10k",
+    "old_mpn": "No declarado; rótulo histórico: 10k",
+    "new_mpn": "UNI-ROYAL 0603WAF1002T5E",
+    "code": "C25804",
+    "old_symbol": "Buck:R13",
+    "new_symbol": "Buck:R13",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "+3V3",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "NFAULT_MCU",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "Pull-up NFAULT_MCU a 3,3 V, no a 5 V.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "R9",
+    "old_value": "10k 1%",
+    "old_mpn": "No declarado; rótulo histórico: 10k 1%",
+    "new_mpn": "UNI-ROYAL 0603WAF1002T5E",
+    "code": "C25804",
+    "old_symbol": "Buck:R9",
+    "new_symbol": "Buck:R9",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "VREF",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — MEDIO",
+    "note": "Umbral VREF influido por tolerancia y TCR pareja R8/R9.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "R5",
+    "old_value": "10k",
+    "old_mpn": "No declarado; rótulo histórico: 10k",
+    "new_mpn": "UNI-ROYAL 0603WAF1002T5E",
+    "code": "C25804",
+    "old_symbol": "Buck:R5",
+    "new_symbol": "Buck:R5",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "RUN",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "Pull-down RUN y estado arranque.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "R11",
+    "old_value": "10k 1%",
+    "old_mpn": "No declarado; rótulo histórico: 10k 1%",
+    "new_mpn": "UNI-ROYAL 0603WAF1002T5E",
+    "code": "C25804",
+    "old_symbol": "Buck:R11",
+    "new_symbol": "Buck:R11",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "OVSENSE",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — MEDIO",
+    "note": "Tolerancia/TCR y valor final R10 afectan umbral OVP.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "R6",
+    "old_value": "10k",
+    "old_mpn": "No declarado; rótulo histórico: 10k",
+    "new_mpn": "UNI-ROYAL 0603WAF1002T5E",
+    "code": "C25804",
+    "old_symbol": "Buck:R6",
+    "new_symbol": "Buck:R6",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "RESET",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "Pull-down RESET y estado arranque.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "C14",
+    "old_value": "100nF",
+    "old_mpn": "No declarado; rótulo histórico: 100nF",
+    "new_mpn": "Yageo CC0603KRX7R9BB104",
+    "code": "C14663",
+    "old_symbol": "Buck:C14",
+    "new_symbol": "Buck:C14",
+    "old_footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "+5V",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (tensión/temperatura nominal)",
+    "passive_approval": "PENDIENTE — BAJO",
+    "note": "Posición y retorno para comparador real; exigir evidencia capacitancia efectiva y ubicación.",
+    "file": "buck_3.kicad_sch"
+  },
+  {
+    "ref": "TP5",
+    "old_value": "VOUT",
+    "old_mpn": "No declarado; rótulo histórico: VOUT",
+    "new_mpn": "No definido",
+    "code": "No verificado",
+    "old_symbol": "Buck:TP5",
+    "new_symbol": "Buck:TP5",
+    "old_footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "VOUT",
+        "original_net": "VOUT",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.",
+    "file": "buck_4.kicad_sch"
+  },
+  {
+    "ref": "R14",
+    "old_value": "3k 1%",
+    "old_mpn": "No declarado; rótulo histórico: 3k 1%",
+    "new_mpn": "UNI-ROYAL 0603WAF3001T5E",
+    "code": "C4211",
+    "old_symbol": "Buck:R14",
+    "new_symbol": "Buck:R14",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "VOUT",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "VSENSE",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC ≤13,2V)",
+    "passive_approval": "PENDIENTE — CRÍTICO",
+    "note": "ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA.  A 20V la potencia equivalente continua casi agota derating; determinar energía de pulso. Además VSENSE≈5,0V pone en riesgo PA0.",
+    "file": "buck_4.kicad_sch"
+  },
+  {
+    "ref": "TP9",
+    "old_value": "MCU_PWM",
+    "old_mpn": "No declarado; rótulo histórico: MCU_PWM",
+    "new_mpn": "No definido",
+    "code": "No verificado",
+    "old_symbol": "Buck:TP9",
+    "new_symbol": "Buck:TP9",
+    "old_footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "MCU_PWM",
+        "original_net": "MCU_PWM",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.",
+    "file": "buck_4.kicad_sch"
+  },
+  {
+    "ref": "TP3",
+    "old_value": "SW",
+    "old_mpn": "No declarado; rótulo histórico: SW",
+    "new_mpn": "No definido",
+    "code": "No verificado",
+    "old_symbol": "Buck:TP3",
+    "new_symbol": "Buck:TP3",
+    "old_footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "SW",
+        "original_net": "SW",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.",
+    "file": "buck_4.kicad_sch"
+  },
+  {
+    "ref": "TP2",
+    "old_value": "GND",
+    "old_mpn": "No declarado; rótulo histórico: GND",
+    "new_mpn": "No definido",
+    "code": "No verificado",
+    "old_symbol": "Buck:TP2",
+    "new_symbol": "Buck:TP2",
+    "old_footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "GND",
+        "original_net": "GND",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.",
+    "file": "buck_4.kicad_sch"
+  },
+  {
+    "ref": "TP1",
+    "old_value": "VIN",
+    "old_mpn": "No declarado; rótulo histórico: VIN",
+    "new_mpn": "No definido",
+    "code": "No verificado",
+    "old_symbol": "Buck:TP1",
+    "new_symbol": "Buck:TP1",
+    "old_footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "VIN",
+        "original_net": "VIN",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.",
+    "file": "buck_4.kicad_sch"
+  },
+  {
+    "ref": "TP6",
+    "old_value": "ISENSE",
+    "old_mpn": "No declarado; rótulo histórico: ISENSE",
+    "new_mpn": "No definido",
+    "code": "No verificado",
+    "old_symbol": "Buck:TP6",
+    "new_symbol": "Buck:TP6",
+    "old_footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "ISENSE",
+        "original_net": "ISENSE",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.",
+    "file": "buck_4.kicad_sch"
+  },
+  {
+    "ref": "R15",
+    "old_value": "1k 1%",
+    "old_mpn": "No declarado; rótulo histórico: 1k 1%",
+    "new_mpn": "UNI-ROYAL 0603WAF1001T5E",
+    "code": "C21190",
+    "old_symbol": "Buck:R15",
+    "new_symbol": "Buck:R15",
+    "old_footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "VSENSE",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (CC)",
+    "passive_approval": "PENDIENTE — CRÍTICO",
+    "note": "ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA.  El componente soporta potencia, pero el divisor R14/R15 no protege el ADC en transitorios.",
+    "file": "buck_4.kicad_sch"
+  },
+  {
+    "ref": "TP7",
+    "old_value": "SD",
+    "old_mpn": "No declarado; rótulo histórico: SD",
+    "new_mpn": "No definido",
+    "code": "No verificado",
+    "old_symbol": "Buck:TP7",
+    "new_symbol": "Buck:TP7",
+    "old_footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "SD",
+        "original_net": "SD",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.",
+    "file": "buck_4.kicad_sch"
+  },
+  {
+    "ref": "TP8",
+    "old_value": "NTRIP",
+    "old_mpn": "No declarado; rótulo histórico: NTRIP",
+    "new_mpn": "No definido",
+    "code": "No verificado",
+    "old_symbol": "Buck:TP8",
+    "new_symbol": "Buck:TP8",
+    "old_footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "NTRIP",
+        "original_net": "NTRIP",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.",
+    "file": "buck_4.kicad_sch"
+  },
+  {
+    "ref": "C17",
+    "old_value": "1nF",
+    "old_mpn": "No declarado; rótulo histórico: 1nF",
+    "new_mpn": "Fenghua 0603CG102J500NT",
+    "code": "C1636",
+    "old_symbol": "Buck:C17",
+    "new_symbol": "Buck:C17",
+    "old_footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "classification": "FOOTPRINT_ONLY",
+    "assigned": true,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "terminal no polar",
+        "original_net": "VSENSE",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "terminal no polar",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "0",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "APROBADO (tensión/estabilidad nominal)",
+    "passive_approval": "PENDIENTE — MEDIO",
+    "note": "El filtro atenúa 10kHz solo 0,11 %; revisar adquisición ADC y seguridad frente a sobrevoltaje, independiente del rating del capacitor.",
+    "file": "buck_4.kicad_sch"
+  },
+  {
+    "ref": "J3",
+    "old_value": "STM32 CABLE 2x5",
+    "old_mpn": "No declarado; rótulo histórico: STM32 CABLE 2x5",
+    "new_mpn": "61201021621",
+    "code": "No verificado",
+    "old_symbol": "Buck:J3",
+    "new_symbol": "Buck:J3",
+    "old_footprint": "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "+5V",
+        "original_net": "+5V",
+        "original_at": [
+          "-12.7",
+          "3.81",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "2",
+        "new_pin": "2",
+        "function": "GND",
+        "original_net": "GND",
+        "original_at": [
+          "-12.7",
+          "1.27",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "3",
+        "new_pin": "3",
+        "function": "MCU_PWM",
+        "original_net": "MCU_PWM",
+        "original_at": [
+          "-12.7",
+          "-1.27",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "4",
+        "new_pin": "4",
+        "function": "RUN",
+        "original_net": "RUN",
+        "original_at": [
+          "-12.7",
+          "-3.81",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "5",
+        "new_pin": "5",
+        "function": "RESET",
+        "original_net": "RESET",
+        "original_at": [
+          "-12.7",
+          "-6.35",
+          "0"
+        ]
+      },
+      {
+        "original_pin": "6",
+        "new_pin": "6",
+        "function": "NFAULT_MCU",
+        "original_net": "NFAULT_MCU",
+        "original_at": [
+          "12.7",
+          "3.81",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "7",
+        "new_pin": "7",
+        "function": "VSENSE",
+        "original_net": "VSENSE",
+        "original_at": [
+          "12.7",
+          "1.27",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "8",
+        "new_pin": "8",
+        "function": "GND",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "-1.27",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "9",
+        "new_pin": "9",
+        "function": "+3V3",
+        "original_net": "+3V3",
+        "original_at": [
+          "12.7",
+          "-3.81",
+          "180"
+        ]
+      },
+      {
+        "original_pin": "10",
+        "new_pin": "10",
+        "function": "GND",
+        "original_net": "GND",
+        "original_at": [
+          "12.7",
+          "-6.35",
+          "180"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.",
+    "file": "buck_4.kicad_sch"
+  },
+  {
+    "ref": "TP4",
+    "old_value": "GATE",
+    "old_mpn": "No declarado; rótulo histórico: GATE",
+    "new_mpn": "No definido",
+    "code": "No verificado",
+    "old_symbol": "Buck:TP4",
+    "new_symbol": "Buck:TP4",
+    "old_footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+    "classification": "PENDING",
+    "assigned": false,
+    "pins": [
+      {
+        "original_pin": "1",
+        "new_pin": "1",
+        "function": "GATE",
+        "original_net": "GATE",
+        "original_at": [
+          "-12.7",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "electrical": "Solo pinout documental; aptitud eléctrica pendiente",
+    "passive_approval": "No aplica",
+    "note": "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.",
+    "file": "buck_4.kicad_sch"
+  }
+]

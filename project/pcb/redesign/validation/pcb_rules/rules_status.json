@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-26",
+  "branch": "Kicad-PCB",
+  "kicad_version": "10.0.4",
+  "migration_finished_before_rules": true,
+  "active_project": "project/pcb/redesign/buck.kicad_pro",
+  "netclasses": 11,
+  "explicitly_assigned_nets": 29,
+  "default_unconnected_nets": 11,
+  "connectivity_changes_in_rules_phase": 0,
+  "protected_original_files_unchanged": 273,
+  "schematic_erc_errors": 0,
+  "schematic_erc_warnings": 2,
+  "erc_exit_code": 5,
+  "netlist_exit_code": 0,
+  "production_board": {
+    "layers": 2,
+    "thickness_mm": 1.6,
+    "tracks": 0,
+    "vias": 0,
+    "footprints": 0,
+    "zones": 0,
+    "outline_defined": false,
+    "drc_exit_code": 5,
+    "expected_violation": "invalid_outline"
+  },
+  "witness_drc": {
+    "exit_code": 5,
+    "intentional_violations": 16,
+    "unconnected_items": 2,
+    "tested_custom_rule_names": 5,
+    "rules_parsed": 8
+  },
+  "saturn": {
+    "installed_version": "8.48",
+    "controlled": false,
+    "reason": "Launch did not expose a targetable window; no Saturn calculation results obtained"
+  },
+  "thermal_approval": false,
+  "electrical_approval": false,
+  "mechanical_approval": false,
+  "ready_for_routing": false
+}

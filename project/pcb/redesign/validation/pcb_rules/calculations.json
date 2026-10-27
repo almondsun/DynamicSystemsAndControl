@@ -1,0 +1,505 @@
+{
+  "method_status": "Fallback estimates, NOT Saturn outputs. IPC2152 context/figure reviewed plus conservative chart fit and independent resistance/tolerance model; no modifiers or full thermal validation.",
+  "trace_chart_fit": [
+    {
+      "current_A": 1.458,
+      "rise_C": 10.0,
+      "area_sqmil_conservative_chart_fit": 71.31276668732518,
+      "drawn_width_mm_Cu30um_widthminus20pct": 1.917006023166446
+    },
+    {
+      "current_A": 1.458,
+      "rise_C": 20.0,
+      "area_sqmil_conservative_chart_fit": 46.82450765014901,
+      "drawn_width_mm_Cu30um_widthminus20pct": 1.258720806482089
+    },
+    {
+      "current_A": 1.47,
+      "rise_C": 10.0,
+      "area_sqmil_conservative_chart_fit": 72.1235956162624,
+      "drawn_width_mm_Cu30um_widthminus20pct": 1.9388024561578272
+    },
+    {
+      "current_A": 1.47,
+      "rise_C": 20.0,
+      "area_sqmil_conservative_chart_fit": 47.356904122052136,
+      "drawn_width_mm_Cu30um_widthminus20pct": 1.2730325109742981
+    },
+    {
+      "current_A": 2.0,
+      "rise_C": 10.0,
+      "area_sqmil_conservative_chart_fit": 110.28301385119923,
+      "drawn_width_mm_Cu30um_widthminus20pct": 2.9645912173433207
+    },
+    {
+      "current_A": 2.0,
+      "rise_C": 20.0,
+      "area_sqmil_conservative_chart_fit": 72.41266978742509,
+      "drawn_width_mm_Cu30um_widthminus20pct": 1.9465732516689653
+    },
+    {
+      "current_A": 2.5,
+      "rise_C": 10.0,
+      "area_sqmil_conservative_chart_fit": 150.0298273868073,
+      "drawn_width_mm_Cu30um_widthminus20pct": 4.033051809869692
+    },
+    {
+      "current_A": 2.5,
+      "rise_C": 20.0,
+      "area_sqmil_conservative_chart_fit": 98.51073133967608,
+      "drawn_width_mm_Cu30um_widthminus20pct": 2.648132642962725
+    }
+  ],
+  "trace_losses": [
+    {
+      "drawn_width_mm": 1.5,
+      "copper_um": 35,
+      "actual_width_factor": 1,
+      "case": "nominal",
+      "current_A": 1.47,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 3.7354975238095243,
+      "drop_mV_per10mm": 5.4911813600000015,
+      "loss_mW_per10mm": 8.072036599200002
+    },
+    {
+      "drawn_width_mm": 1.5,
+      "copper_um": 30,
+      "actual_width_factor": 0.8,
+      "case": "sensitivity NOT fab guarantee",
+      "current_A": 1.47,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 5.447600555555555,
+      "drop_mV_per10mm": 8.007972816666667,
+      "loss_mW_per10mm": 11.771720040499998
+    },
+    {
+      "drawn_width_mm": 1.5,
+      "copper_um": 35,
+      "actual_width_factor": 1,
+      "case": "nominal",
+      "current_A": 2.0,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 3.7354975238095243,
+      "drop_mV_per10mm": 7.4709950476190485,
+      "loss_mW_per10mm": 14.941990095238097
+    },
+    {
+      "drawn_width_mm": 1.5,
+      "copper_um": 30,
+      "actual_width_factor": 0.8,
+      "case": "sensitivity NOT fab guarantee",
+      "current_A": 2.0,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 5.447600555555555,
+      "drop_mV_per10mm": 10.89520111111111,
+      "loss_mW_per10mm": 21.79040222222222
+    },
+    {
+      "drawn_width_mm": 1.5,
+      "copper_um": 35,
+      "actual_width_factor": 1,
+      "case": "nominal",
+      "current_A": 2.5,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 3.7354975238095243,
+      "drop_mV_per10mm": 9.33874380952381,
+      "loss_mW_per10mm": 23.346859523809528
+    },
+    {
+      "drawn_width_mm": 1.5,
+      "copper_um": 30,
+      "actual_width_factor": 0.8,
+      "case": "sensitivity NOT fab guarantee",
+      "current_A": 2.5,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 5.447600555555555,
+      "drop_mV_per10mm": 13.619001388888886,
+      "loss_mW_per10mm": 34.04750347222222
+    },
+    {
+      "drawn_width_mm": 2.0,
+      "copper_um": 35,
+      "actual_width_factor": 1,
+      "case": "nominal",
+      "current_A": 1.47,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 2.801623142857143,
+      "drop_mV_per10mm": 4.118386020000001,
+      "loss_mW_per10mm": 6.0540274493999995
+    },
+    {
+      "drawn_width_mm": 2.0,
+      "copper_um": 30,
+      "actual_width_factor": 0.8,
+      "case": "sensitivity NOT fab guarantee",
+      "current_A": 1.47,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 4.0857004166666675,
+      "drop_mV_per10mm": 6.005979612500001,
+      "loss_mW_per10mm": 8.828790030375
+    },
+    {
+      "drawn_width_mm": 2.0,
+      "copper_um": 35,
+      "actual_width_factor": 1,
+      "case": "nominal",
+      "current_A": 2.0,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 2.801623142857143,
+      "drop_mV_per10mm": 5.603246285714286,
+      "loss_mW_per10mm": 11.206492571428573
+    },
+    {
+      "drawn_width_mm": 2.0,
+      "copper_um": 30,
+      "actual_width_factor": 0.8,
+      "case": "sensitivity NOT fab guarantee",
+      "current_A": 2.0,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 4.0857004166666675,
+      "drop_mV_per10mm": 8.171400833333335,
+      "loss_mW_per10mm": 16.34280166666667
+    },
+    {
+      "drawn_width_mm": 2.0,
+      "copper_um": 35,
+      "actual_width_factor": 1,
+      "case": "nominal",
+      "current_A": 2.5,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 2.801623142857143,
+      "drop_mV_per10mm": 7.004057857142858,
+      "loss_mW_per10mm": 17.510144642857146
+    },
+    {
+      "drawn_width_mm": 2.0,
+      "copper_um": 30,
+      "actual_width_factor": 0.8,
+      "case": "sensitivity NOT fab guarantee",
+      "current_A": 2.5,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 4.0857004166666675,
+      "drop_mV_per10mm": 10.21425104166667,
+      "loss_mW_per10mm": 25.53562760416667
+    },
+    {
+      "drawn_width_mm": 3.0,
+      "copper_um": 35,
+      "actual_width_factor": 1,
+      "case": "nominal",
+      "current_A": 1.47,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 1.8677487619047621,
+      "drop_mV_per10mm": 2.7455906800000007,
+      "loss_mW_per10mm": 4.036018299600001
+    },
+    {
+      "drawn_width_mm": 3.0,
+      "copper_um": 30,
+      "actual_width_factor": 0.8,
+      "case": "sensitivity NOT fab guarantee",
+      "current_A": 1.47,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 2.7238002777777774,
+      "drop_mV_per10mm": 4.003986408333334,
+      "loss_mW_per10mm": 5.885860020249999
+    },
+    {
+      "drawn_width_mm": 3.0,
+      "copper_um": 35,
+      "actual_width_factor": 1,
+      "case": "nominal",
+      "current_A": 2.0,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 1.8677487619047621,
+      "drop_mV_per10mm": 3.7354975238095243,
+      "loss_mW_per10mm": 7.4709950476190485
+    },
+    {
+      "drawn_width_mm": 3.0,
+      "copper_um": 30,
+      "actual_width_factor": 0.8,
+      "case": "sensitivity NOT fab guarantee",
+      "current_A": 2.0,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 2.7238002777777774,
+      "drop_mV_per10mm": 5.447600555555555,
+      "loss_mW_per10mm": 10.89520111111111
+    },
+    {
+      "drawn_width_mm": 3.0,
+      "copper_um": 35,
+      "actual_width_factor": 1,
+      "case": "nominal",
+      "current_A": 2.5,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 1.8677487619047621,
+      "drop_mV_per10mm": 4.669371904761905,
+      "loss_mW_per10mm": 11.673429761904764
+    },
+    {
+      "drawn_width_mm": 3.0,
+      "copper_um": 30,
+      "actual_width_factor": 0.8,
+      "case": "sensitivity NOT fab guarantee",
+      "current_A": 2.5,
+      "rho_at55C_ohm_m": 1.9611362000000002e-08,
+      "resistance_mohm_per10mm": 2.7238002777777774,
+      "drop_mV_per10mm": 6.809500694444443,
+      "loss_mW_per10mm": 17.02375173611111
+    }
+  ],
+  "via_sensitivity": [
+    {
+      "hole_mm": 0.3,
+      "plating_um_ASSUMED_not_minimum": 18,
+      "length_mm": 1.6,
+      "barrel_area_mm2": 0.017982476349147975,
+      "resistance_mohm_at55C": 1.7449309311332268,
+      "current_10C_conservative_equivalent_A": 0.7378502665494807,
+      "current_20C_conservative_equivalent_A": 1.0009708646094437
+    },
+    {
+      "hole_mm": 0.4,
+      "plating_um_ASSUMED_not_minimum": 18,
+      "length_mm": 1.6,
+      "barrel_area_mm2": 0.0236373431256096,
+      "resistance_mohm_at55C": 1.327483339953029,
+      "current_10C_conservative_equivalent_A": 0.8996247205745646,
+      "current_20C_conservative_equivalent_A": 1.2204347890103568
+    },
+    {
+      "hole_mm": 0.32,
+      "plating_um_ASSUMED_not_minimum": 15,
+      "length_mm": 1.76,
+      "barrel_area_mm2": 0.015786503084288712,
+      "resistance_mohm_at55C": 2.186424500455174,
+      "current_10C_conservative_equivalent_A": 0.6713664865606178,
+      "current_20C_conservative_equivalent_A": 0.9107786809714733
+    }
+  ],
+  "ideal_CCM_scenarios": [
+    {
+      "VIN_V": 10.8,
+      "VOUT_V": 5.0,
+      "load_ohm": 4.8,
+      "L_H_assumed": 0.000528,
+      "D_ideal": 0.4629629629629629,
+      "Iout_A": 1.0416666666666667,
+      "IL_RMS_A": 1.0519610405294835,
+      "IL_peak_A": 1.2959455667789002,
+      "IQ1_RMS_A": 0.7157688273845803,
+      "ID1_RMS_A": 0.7709066198550747,
+      "Iinput_mean_A_without_aux": 0.48225308641975306,
+      "Iinput_switch_RMS_A": 0.7157688273845803,
+      "CIN_bank_RMS_A": 0.528920575222896,
+      "COUT_bank_RMS_A": 0.14680799142903994
+    },
+    {
+      "VIN_V": 10.8,
+      "VOUT_V": 6.0,
+      "load_ohm": 4.8,
+      "L_H_assumed": 0.000528,
+      "D_ideal": 0.5555555555555555,
+      "Iout_A": 1.25,
+      "IL_RMS_A": 1.258473811562103,
+      "IL_peak_A": 1.5025252525252526,
+      "IQ1_RMS_A": 0.9380109968520409,
+      "ID1_RMS_A": 0.8389825410414021,
+      "Iinput_mean_A_without_aux": 0.6944444444444443,
+      "Iinput_switch_RMS_A": 0.9380109968520409,
+      "CIN_bank_RMS_A": 0.6305644644250156,
+      "COUT_bank_RMS_A": 0.14579552252263275
+    },
+    {
+      "VIN_V": 10.8,
+      "VOUT_V": 7.0,
+      "load_ohm": 4.8,
+      "L_H_assumed": 0.000528,
+      "D_ideal": 0.6481481481481481,
+      "Iout_A": 1.4583333333333335,
+      "IL_RMS_A": 1.4645371235496123,
+      "IL_peak_A": 1.691568462401796,
+      "IQ1_RMS_A": 1.1790644008965567,
+      "ID1_RMS_A": 0.8687209706191145,
+      "Iinput_mean_A_without_aux": 0.9452160493827161,
+      "Iinput_switch_RMS_A": 1.1790644008965567,
+      "CIN_bank_RMS_A": 0.7048116638158642,
+      "COUT_bank_RMS_A": 0.13465836455215388
+    },
+    {
+      "VIN_V": 12.0,
+      "VOUT_V": 5.0,
+      "load_ohm": 4.8,
+      "L_H_assumed": 0.000528,
+      "D_ideal": 0.4166666666666667,
+      "Iout_A": 1.0416666666666667,
+      "IL_RMS_A": 1.0538017673078888,
+      "IL_peak_A": 1.3178661616161618,
+      "IQ1_RMS_A": 0.6802261158312328,
+      "ID1_RMS_A": 0.8048543943611068,
+      "Iinput_mean_A_without_aux": 0.43402777777777785,
+      "Iinput_switch_RMS_A": 0.6802261158312328,
+      "CIN_bank_RMS_A": 0.5237627867423665,
+      "COUT_bank_RMS_A": 0.1594638527591296
+    },
+    {
+      "VIN_V": 12.0,
+      "VOUT_V": 6.0,
+      "load_ohm": 4.8,
+      "L_H_assumed": 0.000528,
+      "D_ideal": 0.5,
+      "Iout_A": 1.25,
+      "IL_RMS_A": 1.2607150939880771,
+      "IL_peak_A": 1.5340909090909092,
+      "IQ1_RMS_A": 0.891460192103205,
+      "ID1_RMS_A": 0.891460192103205,
+      "Iinput_mean_A_without_aux": 0.625,
+      "Iinput_switch_RMS_A": 0.891460192103205,
+      "CIN_bank_RMS_A": 0.6356699411681216,
+      "COUT_bank_RMS_A": 0.16401996283796186
+    },
+    {
+      "VIN_V": 12.0,
+      "VOUT_V": 7.0,
+      "load_ohm": 4.8,
+      "L_H_assumed": 0.000528,
+      "D_ideal": 0.5833333333333334,
+      "Iout_A": 1.4583333333333335,
+      "IL_RMS_A": 1.467025845528257,
+      "IL_peak_A": 1.7345328282828285,
+      "IQ1_RMS_A": 1.120459497264972,
+      "ID1_RMS_A": 0.9469611113644656,
+      "Iinput_mean_A_without_aux": 0.8506944444444445,
+      "Iinput_switch_RMS_A": 1.120459497264972,
+      "CIN_bank_RMS_A": 0.729210838648625,
+      "COUT_bank_RMS_A": 0.1594638527591296
+    },
+    {
+      "VIN_V": 13.2,
+      "VOUT_V": 5.0,
+      "load_ohm": 4.8,
+      "L_H_assumed": 0.000528,
+      "D_ideal": 0.3787878787878788,
+      "Iout_A": 1.0416666666666667,
+      "IL_RMS_A": 1.0554183141230853,
+      "IL_peak_A": 1.3358011937557392,
+      "IQ1_RMS_A": 0.6495650694615216,
+      "ID1_RMS_A": 0.8318491680117641,
+      "Iinput_mean_A_without_aux": 0.39457070707070707,
+      "Iinput_switch_RMS_A": 0.6495650694615216,
+      "CIN_bank_RMS_A": 0.5159929617604039,
+      "COUT_bank_RMS_A": 0.1698186483928393
+    },
+    {
+      "VIN_V": 13.2,
+      "VOUT_V": 6.0,
+      "load_ohm": 4.8,
+      "L_H_assumed": 0.000528,
+      "D_ideal": 0.4545454545454546,
+      "Iout_A": 1.25,
+      "IL_RMS_A": 1.262741563313823,
+      "IL_peak_A": 1.5599173553719008,
+      "IQ1_RMS_A": 0.8513401883127988,
+      "ID1_RMS_A": 0.9325964504992317,
+      "Iinput_mean_A_without_aux": 0.5681818181818182,
+      "Iinput_switch_RMS_A": 0.8513401883127988,
+      "CIN_bank_RMS_A": 0.6339949035473984,
+      "COUT_bank_RMS_A": 0.17893086855050386
+    },
+    {
+      "VIN_V": 13.2,
+      "VOUT_V": 7.0,
+      "load_ohm": 4.8,
+      "L_H_assumed": 0.000528,
+      "D_ideal": 0.5303030303030303,
+      "Iout_A": 1.4583333333333335,
+      "IL_RMS_A": 1.4693704433746606,
+      "IL_peak_A": 1.7696854912764004,
+      "IQ1_RMS_A": 1.0700235942966938,
+      "ID1_RMS_A": 1.00702482963998,
+      "Iinput_mean_A_without_aux": 0.7733585858585859,
+      "Iinput_switch_RMS_A": 1.0700235942966938,
+      "CIN_bank_RMS_A": 0.739504557139727,
+      "COUT_bank_RMS_A": 0.17975925220120062
+    }
+  ],
+  "netclass_mapping": {
+    "POWER_INPUT": [
+      "VIN"
+    ],
+    "POWER_SWITCH": [
+      "SW"
+    ],
+    "POWER_INDUCTOR": [
+      "LMID",
+      "IP"
+    ],
+    "POWER_OUTPUT": [
+      "VOUT"
+    ],
+    "POWER_GND": [
+      "GND"
+    ],
+    "GATE_DRIVER": [
+      "BOOT",
+      "HO",
+      "GATE"
+    ],
+    "SUPPLY_5V": [
+      "+5V"
+    ],
+    "SUPPLY_3V3": [
+      "NUC_3V3"
+    ],
+    "ANALOG_SENSE": [
+      "VSENSE",
+      "ISENSE",
+      "VREF",
+      "OVSENSE"
+    ],
+    "DIGITAL_CONTROL": [
+      "MCU_PWM",
+      "DPRIME",
+      "HIN",
+      "RUN",
+      "RESET",
+      "FAULT",
+      "FB",
+      "NFAULT",
+      "NFAULT_MCU",
+      "NRESET",
+      "NTRIP",
+      "SD",
+      "UART_TX",
+      "UART_RX"
+    ]
+  },
+  "widths_mm": {
+    "Default": 0.25,
+    "POWER_INPUT": 3.0,
+    "POWER_SWITCH": 2.0,
+    "POWER_INDUCTOR": 2.0,
+    "POWER_OUTPUT": 2.0,
+    "POWER_GND": 0.25,
+    "GATE_DRIVER": 0.5,
+    "SUPPLY_5V": 0.5,
+    "SUPPLY_3V3": 0.35,
+    "ANALOG_SENSE": 0.25,
+    "DIGITAL_CONTROL": 0.25
+  },
+  "all_unassigned_nets": [
+    "unconnected-(U1-LO-Pad1)",
+    "unconnected-(U1-NC-Pad10)",
+    "unconnected-(U1-NC-Pad16)",
+    "unconnected-(U1-NC-Pad4)",
+    "unconnected-(U1-NC-Pad5)",
+    "unconnected-(U1-NC-Pad9)",
+    "unconnected-(U3-2Y-Pad4)",
+    "unconnected-(U3-3Y-Pad6)",
+    "unconnected-(U3-4Y-Pad8)",
+    "unconnected-(U3-5Y-Pad10)",
+    "unconnected-(U3-6Y-Pad12)"
+  ]
+}

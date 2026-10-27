@@ -7,6 +7,8 @@ mediciones reales; no se presentan datos inventados.
 
 ## Documentos y modelo
 
+La selección SMD para JLCPCB se documenta en la [auditoría de componentes del Buck](pcb/audit/README.md): inventario, requisitos eléctricos y térmicos de los 35 pasivos, candidatos comerciales y bloqueos. Es una revisión documental posterior al diseño original; no aprueba componentes ni fabricación y no recalifica los resultados históricos para SMD.
+
 | Entrega | Archivo | Estado |
 |---|---|---|
 | 1. Modelo y simulación | [Informe PDF](reports/final/entrega_1.pdf) · [Fuente LaTeX](reports/final/entrega_1.tex) | Simulación completada |

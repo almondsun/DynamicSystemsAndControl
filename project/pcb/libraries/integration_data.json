@@ -1,0 +1,3810 @@
+{
+  "integrated": [
+    {
+      "mpn": "25SVF100M",
+      "reference": "C1/C2 alternativa",
+      "manufacturer": "Panasonic",
+      "lcsc": "C454370",
+      "symbol": "Buck_SMD:25SVF100M",
+      "footprint": "Buck_SMD:CAP_SVF_E7_PAN",
+      "variants": [
+        "CAP_SVF_E7_PAN-L",
+        "CAP_SVF_E7_PAN-M",
+        "CAP_SVF_E7_PAN"
+      ],
+      "model": "Panasonic_E7.stp",
+      "datasheet_url": "https://industrial.panasonic.com/ww/products/pt/os-con/models/25SVF100M",
+      "state": "INTEGRADO",
+      "validation": "PENDIENTE DE VALIDAR",
+      "electrical": "pendiente; no approved substitution"
+    },
+    {
+      "mpn": "25SVPF100M",
+      "reference": "C1/C2 alternativa",
+      "manufacturer": "Panasonic",
+      "lcsc": "C136279",
+      "symbol": "Buck_SMD:25SVPF100M",
+      "footprint": "Buck_SMD:PCAP_SVP_E7_PAN",
+      "variants": [
+        "PCAP_SVP_E7_PAN-L",
+        "PCAP_SVP_E7_PAN-M",
+        "PCAP_SVP_E7_PAN"
+      ],
+      "model": "Panasonic_E7.stp",
+      "datasheet_url": "https://industrial.panasonic.com/ww/products/pt/os-con/models/25SVPF100M",
+      "state": "INTEGRADO",
+      "validation": "PENDIENTE DE VALIDAR",
+      "electrical": "pendiente; no approved substitution"
+    },
+    {
+      "mpn": "50SVF10M",
+      "reference": "C4/C5 alternativa",
+      "manufacturer": "Panasonic",
+      "lcsc": "C454354",
+      "symbol": "Buck_SMD:50SVF10M",
+      "footprint": "Buck_SMD:CAP_SVF_C6_PAN",
+      "variants": [
+        "CAP_SVF_C6_PAN-L",
+        "CAP_SVF_C6_PAN-M",
+        "CAP_SVF_C6_PAN"
+      ],
+      "model": "Panasonic_C6.stp",
+      "datasheet_url": "https://industrial.panasonic.com/ww/products/pt/os-con/models/50SVF10M",
+      "state": "INTEGRADO",
+      "validation": "PENDIENTE DE VALIDAR",
+      "electrical": "pendiente; no approved substitution"
+    },
+    {
+      "mpn": "50SVPF10M",
+      "reference": "C4/C5 alternativa",
+      "manufacturer": "Panasonic",
+      "lcsc": "",
+      "symbol": "Buck_SMD:50SVPF10M",
+      "footprint": "Buck_SMD:PCAP_SVP_C6_PAN",
+      "variants": [
+        "PCAP_SVP_C6_PAN-L",
+        "PCAP_SVP_C6_PAN-M",
+        "PCAP_SVP_C6_PAN"
+      ],
+      "model": "Panasonic_C6.stp",
+      "datasheet_url": "https://industrial.panasonic.com/ww/products/pt/os-con/models/50SVPF10M",
+      "state": "INTEGRADO",
+      "validation": "PENDIENTE DE VALIDAR",
+      "electrical": "pendiente; no approved substitution"
+    },
+    {
+      "mpn": "INA180A1IDBVR",
+      "reference": "U6",
+      "manufacturer": "Texas Instruments",
+      "lcsc": "C122228",
+      "symbol": "Buck_SMD:INA180A1IDBVR",
+      "footprint": "Buck_SMD:DBV0005A_N",
+      "variants": [
+        "DBV0005A_L",
+        "DBV0005A_M",
+        "DBV0005A_N"
+      ],
+      "model": "DBV0005A.stp",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/ina180.pdf",
+      "state": "INTEGRADO",
+      "validation": "PENDIENTE DE VALIDAR",
+      "electrical": "pendiente; no approved substitution"
+    },
+    {
+      "mpn": "LM393BIDR",
+      "reference": "U5",
+      "manufacturer": "Texas Instruments",
+      "lcsc": "C2865059",
+      "symbol": "Buck_SMD:LM393BIDR",
+      "footprint": "Buck_SMD:D0008A-IPC_A",
+      "variants": [
+        "D0008A-IPC_A",
+        "D0008A-IPC_B",
+        "D0008A-IPC_C",
+        "D0008A-MFG"
+      ],
+      "model": "D0008A.stp",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/lm393.pdf",
+      "state": "INTEGRADO",
+      "validation": "PENDIENTE DE VALIDAR",
+      "electrical": "pendiente; no approved substitution"
+    },
+    {
+      "mpn": "SN74HCT00DR",
+      "reference": "U4",
+      "manufacturer": "Texas Instruments",
+      "lcsc": "C6764",
+      "symbol": "Buck_SMD:SN74HCT00DR",
+      "footprint": "Buck_SMD:D14",
+      "variants": [
+        "D14-L",
+        "D14-M",
+        "D14"
+      ],
+      "model": "D0014A.stp",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/sn74hct00.pdf",
+      "state": "INTEGRADO",
+      "validation": "PENDIENTE DE VALIDAR",
+      "electrical": "pendiente; no approved substitution"
+    },
+    {
+      "mpn": "SN74HCT14DR",
+      "reference": "U3",
+      "manufacturer": "Texas Instruments",
+      "lcsc": "C6769",
+      "symbol": "Buck_SMD:SN74HCT14DR",
+      "footprint": "Buck_SMD:D14",
+      "variants": [
+        "D14-L",
+        "D14-M",
+        "D14"
+      ],
+      "model": "D0014A.stp",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/sn74hct14.pdf",
+      "state": "INTEGRADO",
+      "validation": "PENDIENTE DE VALIDAR",
+      "electrical": "pendiente; no approved substitution"
+    },
+    {
+      "mpn": "WSL2512R0500FEA",
+      "reference": "RS1 alternativa",
+      "manufacturer": "Vishay Dale",
+      "lcsc": "C413486",
+      "symbol": "Buck_SMD:WSL2512R0500FEA",
+      "footprint": "Buck_SMD:RES_2512_WSL",
+      "variants": [
+        "RES_2512_WSL-L",
+        "RES_2512_WSL-M",
+        "RES_2512_WSL"
+      ],
+      "model": null,
+      "datasheet_url": "https://www.vishay.com/docs/30100/wsl.pdf",
+      "state": "INTEGRADO",
+      "validation": "PENDIENTE DE VALIDAR",
+      "electrical": "pendiente; no approved substitution"
+    }
+  ],
+  "pending": [
+    {
+      "archive": "IR2110SPBF.zip",
+      "reason": "MPN descargado SPBF distinto de candidato STRPBF. No se renombra ni se asigna por suposición; comprobar código de pedido y encapsulado.",
+      "directory": "libraries/pending_review/IR2110SPBF",
+      "state": "PENDIENTE DE VALIDAR"
+    },
+    {
+      "archive": "MMBT3904.zip",
+      "reason": "MANUFACTURER=Diotec Semiconductor en el símbolo; candidato comercial Changjing/C20526. No se acredita identidad por el nombre MMBT3904.",
+      "directory": "libraries/pending_review/MMBT3904",
+      "state": "PENDIENTE DE VALIDAR"
+    },
+    {
+      "archive": "SS34.zip",
+      "reason": "Huella SMB_ONS y Reference=U; candidato MDD/C8678 es SMA. Fabricante/paquete no conciliados.",
+      "directory": "libraries/pending_review/SS34",
+      "state": "PENDIENTE DE VALIDAR"
+    },
+    {
+      "archive": "US1G.zip",
+      "reason": "Símbolo real CLD-Diode (current limiting diode), no rectificador US1G. Huella contiene rutas absolutas F:/ y referencia a modelo no incluido con ese nombre.",
+      "directory": "libraries/pending_review/US1G",
+      "state": "PENDIENTE DE VALIDAR"
+    },
+    {
+      "archive": "TB002_500_02BE.zip",
+      "reason": "Biblioteca Altium IntLib sin símbolo/footprint KiCad nativo; no se realiza conversión sin herramienta que conserve pines y geometría.",
+      "directory": "libraries/pending_review/TB002_500_02BE",
+      "state": "PENDIENTE DE VALIDAR"
+    }
+  ],
+  "footprints": {
+    "CAP_SVF_E7_PAN-L": {
+      "components": [
+        "25SVF100M"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-3.3528",
+            "0"
+          ],
+          "size": [
+            "3.0988",
+            "1.1176"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "3.3528",
+            "0"
+          ],
+          "size": [
+            "3.0988",
+            "1.1176"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "Panasonic_E7.stp",
+      "geometry_changed": false,
+      "source_header": "CAP_SVF_E7_PAN",
+      "header_renamed_to_match_variant_file": true
+    },
+    "CAP_SVF_E7_PAN-M": {
+      "components": [
+        "25SVF100M"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-3.4544",
+            "0"
+          ],
+          "size": [
+            "3.7084",
+            "1.3208"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "3.4544",
+            "0"
+          ],
+          "size": [
+            "3.7084",
+            "1.3208"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "Panasonic_E7.stp",
+      "geometry_changed": false,
+      "source_header": "CAP_SVF_E7_PAN",
+      "header_renamed_to_match_variant_file": true
+    },
+    "CAP_SVF_E7_PAN": {
+      "components": [
+        "25SVF100M"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-3.4036",
+            "0"
+          ],
+          "size": [
+            "3.4036",
+            "1.2192"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "3.4036",
+            "0"
+          ],
+          "size": [
+            "3.4036",
+            "1.2192"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "Panasonic_E7.stp",
+      "geometry_changed": false,
+      "source_header": "CAP_SVF_E7_PAN",
+      "header_renamed_to_match_variant_file": false
+    },
+    "PCAP_SVP_E7_PAN-L": {
+      "components": [
+        "25SVPF100M"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-3.4036",
+            "0"
+          ],
+          "size": [
+            "2.9972",
+            "1.1176"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "3.4036",
+            "0"
+          ],
+          "size": [
+            "2.9972",
+            "1.1176"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "Panasonic_E7.stp",
+      "geometry_changed": false,
+      "source_header": "PCAP_SVP_E7_PAN",
+      "header_renamed_to_match_variant_file": true
+    },
+    "PCAP_SVP_E7_PAN-M": {
+      "components": [
+        "25SVPF100M"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-3.5052",
+            "0"
+          ],
+          "size": [
+            "3.6068",
+            "1.3208"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "3.5052",
+            "0"
+          ],
+          "size": [
+            "3.6068",
+            "1.3208"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "Panasonic_E7.stp",
+      "geometry_changed": false,
+      "source_header": "PCAP_SVP_E7_PAN",
+      "header_renamed_to_match_variant_file": true
+    },
+    "PCAP_SVP_E7_PAN": {
+      "components": [
+        "25SVPF100M"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-3.4544",
+            "0"
+          ],
+          "size": [
+            "3.302",
+            "1.2192"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "3.4544",
+            "0"
+          ],
+          "size": [
+            "3.302",
+            "1.2192"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "Panasonic_E7.stp",
+      "geometry_changed": false,
+      "source_header": "PCAP_SVP_E7_PAN",
+      "header_renamed_to_match_variant_file": false
+    },
+    "CAP_SVF_C6_PAN-L": {
+      "components": [
+        "50SVF10M"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.6543",
+            "0"
+          ],
+          "size": [
+            "2.794",
+            "1.1176"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.6543",
+            "0"
+          ],
+          "size": [
+            "2.794",
+            "1.1176"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "Panasonic_C6.stp",
+      "geometry_changed": false,
+      "source_header": "CAP_SVF_C6_PAN",
+      "header_renamed_to_match_variant_file": true
+    },
+    "CAP_SVF_C6_PAN-M": {
+      "components": [
+        "50SVF10M"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.7559",
+            "0"
+          ],
+          "size": [
+            "3.4036",
+            "1.3208"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.7559",
+            "0"
+          ],
+          "size": [
+            "3.4036",
+            "1.3208"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "Panasonic_C6.stp",
+      "geometry_changed": false,
+      "source_header": "CAP_SVF_C6_PAN",
+      "header_renamed_to_match_variant_file": true
+    },
+    "CAP_SVF_C6_PAN": {
+      "components": [
+        "50SVF10M"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.7051",
+            "0"
+          ],
+          "size": [
+            "3.0988",
+            "1.2192"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.7051",
+            "0"
+          ],
+          "size": [
+            "3.0988",
+            "1.2192"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "Panasonic_C6.stp",
+      "geometry_changed": false,
+      "source_header": "CAP_SVF_C6_PAN",
+      "header_renamed_to_match_variant_file": false
+    },
+    "PCAP_SVP_C6_PAN-L": {
+      "components": [
+        "50SVPF10M"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.7051",
+            "0"
+          ],
+          "size": [
+            "2.6924",
+            "1.1176"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.7051",
+            "0"
+          ],
+          "size": [
+            "2.6924",
+            "1.1176"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "Panasonic_C6.stp",
+      "geometry_changed": false,
+      "source_header": "PCAP_SVP_C6_PAN",
+      "header_renamed_to_match_variant_file": true
+    },
+    "PCAP_SVP_C6_PAN-M": {
+      "components": [
+        "50SVPF10M"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.8067",
+            "0"
+          ],
+          "size": [
+            "3.302",
+            "1.3208"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.8067",
+            "0"
+          ],
+          "size": [
+            "3.302",
+            "1.3208"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "Panasonic_C6.stp",
+      "geometry_changed": false,
+      "source_header": "PCAP_SVP_C6_PAN",
+      "header_renamed_to_match_variant_file": true
+    },
+    "PCAP_SVP_C6_PAN": {
+      "components": [
+        "50SVPF10M"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.7559",
+            "0"
+          ],
+          "size": [
+            "2.9972",
+            "1.2192"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.7559",
+            "0"
+          ],
+          "size": [
+            "2.9972",
+            "1.2192"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "Panasonic_C6.stp",
+      "geometry_changed": false,
+      "source_header": "PCAP_SVP_C6_PAN",
+      "header_renamed_to_match_variant_file": false
+    },
+    "DBV0005A_L": {
+      "components": [
+        "INA180A1IDBVR"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-1.275001",
+            "-0.950001",
+            "90"
+          ],
+          "size": [
+            "0.549999",
+            "0.800001"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-1.275001",
+            "0",
+            "90"
+          ],
+          "size": [
+            "0.549999",
+            "0.800001"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "3",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-1.275001",
+            "0.949998",
+            "90"
+          ],
+          "size": [
+            "0.549999",
+            "0.800001"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "1.274999",
+            "0.949998",
+            "90"
+          ],
+          "size": [
+            "0.549999",
+            "0.800001"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "5",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "1.274999",
+            "-0.950001",
+            "90"
+          ],
+          "size": [
+            "0.549999",
+            "0.800001"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "DBV0005A.stp",
+      "geometry_changed": false,
+      "source_header": "DBV0005A_N",
+      "header_renamed_to_match_variant_file": true
+    },
+    "DBV0005A_M": {
+      "components": [
+        "INA180A1IDBVR"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-1.475001",
+            "-0.950001",
+            "90"
+          ],
+          "size": [
+            "0.650001",
+            "1.2"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-1.475001",
+            "0",
+            "90"
+          ],
+          "size": [
+            "0.650001",
+            "1.2"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "3",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-1.475001",
+            "0.949998",
+            "90"
+          ],
+          "size": [
+            "0.650001",
+            "1.2"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "1.474998",
+            "0.949998",
+            "90"
+          ],
+          "size": [
+            "0.650001",
+            "1.2"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "5",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "1.474998",
+            "-0.950001",
+            "90"
+          ],
+          "size": [
+            "0.650001",
+            "1.2"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "DBV0005A.stp",
+      "geometry_changed": false,
+      "source_header": "DBV0005A_N",
+      "header_renamed_to_match_variant_file": true
+    },
+    "DBV0005A_N": {
+      "components": [
+        "INA180A1IDBVR"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-1.375001",
+            "-0.950001",
+            "90"
+          ],
+          "size": [
+            "0.599999",
+            "1"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-1.375001",
+            "0",
+            "90"
+          ],
+          "size": [
+            "0.599999",
+            "1"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "3",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-1.375001",
+            "0.949998",
+            "90"
+          ],
+          "size": [
+            "0.599999",
+            "1"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "1.374999",
+            "0.949998",
+            "90"
+          ],
+          "size": [
+            "0.599999",
+            "1"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "5",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "1.374999",
+            "-0.950001",
+            "90"
+          ],
+          "size": [
+            "0.599999",
+            "1"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "DBV0005A.stp",
+      "geometry_changed": false,
+      "source_header": "DBV0005A_N",
+      "header_renamed_to_match_variant_file": false
+    },
+    "D0008A-IPC_A": {
+      "components": [
+        "LM393BIDR"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.413599",
+            "-1.905"
+          ],
+          "size": [
+            "2.469157",
+            "0.622132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.413599",
+            "-0.635"
+          ],
+          "size": [
+            "2.469157",
+            "0.622132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "3",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.413599",
+            "0.635"
+          ],
+          "size": [
+            "2.469157",
+            "0.622132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.413599",
+            "1.905"
+          ],
+          "size": [
+            "2.469157",
+            "0.622132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "5",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.413599",
+            "1.905"
+          ],
+          "size": [
+            "2.469157",
+            "0.622132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "6",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.413599",
+            "0.635"
+          ],
+          "size": [
+            "2.469157",
+            "0.622132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "7",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.413599",
+            "-0.635"
+          ],
+          "size": [
+            "2.469157",
+            "0.622132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "8",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.413599",
+            "-1.905"
+          ],
+          "size": [
+            "2.469157",
+            "0.622132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": false,
+      "silkscreen": true,
+      "model": "D0008A.stp",
+      "geometry_changed": false,
+      "source_header": "D0008A-IPC_A",
+      "header_renamed_to_match_variant_file": false
+    },
+    "D0008A-IPC_B": {
+      "components": [
+        "LM393BIDR"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.3636",
+            "-1.905"
+          ],
+          "size": [
+            "2.169158",
+            "0.582132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.3636",
+            "-0.635"
+          ],
+          "size": [
+            "2.169158",
+            "0.582132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "3",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.3636",
+            "0.635"
+          ],
+          "size": [
+            "2.169158",
+            "0.582132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.3636",
+            "1.905"
+          ],
+          "size": [
+            "2.169158",
+            "0.582132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "5",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.3636",
+            "1.905"
+          ],
+          "size": [
+            "2.169158",
+            "0.582132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "6",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.3636",
+            "0.635"
+          ],
+          "size": [
+            "2.169158",
+            "0.582132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "7",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.3636",
+            "-0.635"
+          ],
+          "size": [
+            "2.169158",
+            "0.582132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "8",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.3636",
+            "-1.905"
+          ],
+          "size": [
+            "2.169158",
+            "0.582132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": false,
+      "silkscreen": true,
+      "model": "D0008A.stp",
+      "geometry_changed": false,
+      "source_header": "D0008A-IPC_A",
+      "header_renamed_to_match_variant_file": true
+    },
+    "D0008A-IPC_C": {
+      "components": [
+        "LM393BIDR"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.3136",
+            "-1.905"
+          ],
+          "size": [
+            "1.869158",
+            "0.542132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.3136",
+            "-0.635"
+          ],
+          "size": [
+            "1.869158",
+            "0.542132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "3",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.3136",
+            "0.635"
+          ],
+          "size": [
+            "1.869158",
+            "0.542132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.3136",
+            "1.905"
+          ],
+          "size": [
+            "1.869158",
+            "0.542132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "5",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.3136",
+            "1.905"
+          ],
+          "size": [
+            "1.869158",
+            "0.542132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "6",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.3136",
+            "0.635"
+          ],
+          "size": [
+            "1.869158",
+            "0.542132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "7",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.3136",
+            "-0.635"
+          ],
+          "size": [
+            "1.869158",
+            "0.542132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "8",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.3136",
+            "-1.905"
+          ],
+          "size": [
+            "1.869158",
+            "0.542132"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": false,
+      "silkscreen": true,
+      "model": "D0008A.stp",
+      "geometry_changed": false,
+      "source_header": "D0008A-IPC_A",
+      "header_renamed_to_match_variant_file": true
+    },
+    "D0008A-MFG": {
+      "components": [
+        "LM393BIDR"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.7",
+            "-1.905"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.7",
+            "-0.635"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "3",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.7",
+            "0.635"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.7",
+            "1.905"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "5",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.7",
+            "1.905"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "6",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.7",
+            "0.635"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "7",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.7",
+            "-0.635"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "8",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.7",
+            "-1.905"
+          ],
+          "size": [
+            "1.549999",
+            "0.599999"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": false,
+      "silkscreen": true,
+      "model": "D0008A.stp",
+      "geometry_changed": false,
+      "source_header": "D0008A-IPC_A",
+      "header_renamed_to_match_variant_file": true
+    },
+    "D14-L": {
+      "components": [
+        "SN74HCT00DR",
+        "SN74HCT14DR"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.413",
+            "-3.81"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.413",
+            "-2.54"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "3",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.413",
+            "-1.27"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.413",
+            "0"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "5",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.413",
+            "1.27"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "6",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.413",
+            "2.54"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "7",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.413",
+            "3.81"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "8",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.413",
+            "3.81"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "9",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.413",
+            "2.54"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "10",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.413",
+            "1.27"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "11",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.413",
+            "0"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "12",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.413",
+            "-1.27"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "13",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.413",
+            "-2.54"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "14",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.413",
+            "-3.81"
+          ],
+          "size": [
+            "1.6764",
+            "0.508"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "D0014A.stp",
+      "geometry_changed": false,
+      "source_header": "D14",
+      "header_renamed_to_match_variant_file": true
+    },
+    "D14-M": {
+      "components": [
+        "SN74HCT00DR",
+        "SN74HCT14DR"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.5146",
+            "-3.81"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.5146",
+            "-2.54"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "3",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.5146",
+            "-1.27"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.5146",
+            "0"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "5",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.5146",
+            "1.27"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "6",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.5146",
+            "2.54"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "7",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.5146",
+            "3.81"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "8",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.5146",
+            "3.81"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "9",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.5146",
+            "2.54"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "10",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.5146",
+            "1.27"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "11",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.5146",
+            "0"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "12",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.5146",
+            "-1.27"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "13",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.5146",
+            "-2.54"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "14",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.5146",
+            "-3.81"
+          ],
+          "size": [
+            "2.286",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "D0014A.stp",
+      "geometry_changed": false,
+      "source_header": "D14",
+      "header_renamed_to_match_variant_file": true
+    },
+    "D14": {
+      "components": [
+        "SN74HCT00DR",
+        "SN74HCT14DR"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.4638",
+            "-3.81"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.4638",
+            "-2.54"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "3",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.4638",
+            "-1.27"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.4638",
+            "0"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "5",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.4638",
+            "1.27"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "6",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.4638",
+            "2.54"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "7",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.4638",
+            "3.81"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "8",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.4638",
+            "3.81"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "9",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.4638",
+            "2.54"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "10",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.4638",
+            "1.27"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "11",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.4638",
+            "0"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "12",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.4638",
+            "-1.27"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "13",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.4638",
+            "-2.54"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "14",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.4638",
+            "-3.81"
+          ],
+          "size": [
+            "1.9812",
+            "0.5588"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": "D0014A.stp",
+      "geometry_changed": false,
+      "source_header": "D14",
+      "header_renamed_to_match_variant_file": false
+    },
+    "RES_2512_WSL-L": {
+      "components": [
+        "WSL2512R0500FEA"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.1463",
+            "0"
+          ],
+          "size": [
+            "2.6162",
+            "3.3782"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.1463",
+            "0"
+          ],
+          "size": [
+            "2.6162",
+            "3.3782"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": null,
+      "geometry_changed": false,
+      "source_header": "RES_2512_WSL",
+      "header_renamed_to_match_variant_file": true
+    },
+    "RES_2512_WSL-M": {
+      "components": [
+        "WSL2512R0500FEA"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.3495",
+            "0"
+          ],
+          "size": [
+            "3.0226",
+            "3.4798"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.3495",
+            "0"
+          ],
+          "size": [
+            "3.0226",
+            "3.4798"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": null,
+      "geometry_changed": false,
+      "source_header": "RES_2512_WSL",
+      "header_renamed_to_match_variant_file": true
+    },
+    "RES_2512_WSL": {
+      "components": [
+        "WSL2512R0500FEA"
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "-2.2479",
+            "0"
+          ],
+          "size": [
+            "2.8194",
+            "3.429"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "2",
+          "type": "smd",
+          "shape": "rect",
+          "at": [
+            "2.2479",
+            "0"
+          ],
+          "size": [
+            "2.8194",
+            "3.429"
+          ],
+          "layers": [
+            "F.Cu",
+            "F.Paste",
+            "F.Mask"
+          ]
+        }
+      ],
+      "courtyard": true,
+      "silkscreen": true,
+      "model": null,
+      "geometry_changed": false,
+      "source_header": "RES_2512_WSL",
+      "header_renamed_to_match_variant_file": false
+    }
+  },
+  "models": {
+    "Panasonic_E7.stp": {
+      "sha256": "1cdfa4e77658670bde999e47ecd70cd505b636638d26c4886558f133ce49d7ab",
+      "linked_footprints": [
+        "CAP_SVF_E7_PAN-L",
+        "CAP_SVF_E7_PAN-M",
+        "CAP_SVF_E7_PAN",
+        "PCAP_SVP_E7_PAN-L",
+        "PCAP_SVP_E7_PAN-M",
+        "PCAP_SVP_E7_PAN"
+      ],
+      "orientation": "scale1 / offset0 / rotation0: visible and apparently aligned in native isometric render; exact pin1/land and delivery tolerances remain pending"
+    },
+    "Panasonic_C6.stp": {
+      "sha256": "f673417772ce9ebeac01746b6d8825a0c39ff32c11075400e033f2760c3cd253",
+      "linked_footprints": [
+        "CAP_SVF_C6_PAN-L",
+        "CAP_SVF_C6_PAN-M",
+        "CAP_SVF_C6_PAN",
+        "PCAP_SVP_C6_PAN-L",
+        "PCAP_SVP_C6_PAN-M",
+        "PCAP_SVP_C6_PAN"
+      ],
+      "orientation": "scale1 / offset0 / rotation0: visible and apparently aligned in native isometric render; exact pin1/land and delivery tolerances remain pending"
+    },
+    "DBV0005A.stp": {
+      "sha256": "bce7b25e52a74ac515dc5236a6d5ee863c57e039a3a1aeaf26babdde195066c0",
+      "linked_footprints": [
+        "DBV0005A_L",
+        "DBV0005A_M",
+        "DBV0005A_N"
+      ],
+      "orientation": "scale1 / offset0 / rotation0: visible and apparently aligned in native isometric render; exact pin1/land and delivery tolerances remain pending"
+    },
+    "D0008A.stp": {
+      "sha256": "92b7fdb99ac87c648f2d6e358ec5afc85a029466f4d9d2b2efc705eab9140bf5",
+      "linked_footprints": [
+        "D0008A-IPC_A",
+        "D0008A-IPC_B",
+        "D0008A-IPC_C",
+        "D0008A-MFG"
+      ],
+      "orientation": "scale1 / offset0 / rotation0: visible and apparently aligned in native isometric render; exact pin1/land and delivery tolerances remain pending"
+    },
+    "D0014A.stp": {
+      "sha256": "bf9112576a5c64b5b450fc4ca996247ce4f2e4a825a44dafc2453e0dfe2be627",
+      "linked_footprints": [
+        "D14-L",
+        "D14-M",
+        "D14",
+        "D14-L",
+        "D14-M",
+        "D14"
+      ],
+      "orientation": "scale1 / offset0 / rotation0: visible and apparently aligned in native isometric render; exact pin1/land and delivery tolerances remain pending"
+    },
+    "IR2110STRPBF.step": {
+      "sha256": "7e327f3c93074ecca454949da7f087027f6122871c91d868631358b25752f9f3",
+      "linked_footprints": [],
+      "orientation": "unlinked; candidate footprint missing; no orientation approval"
+    }
+  },
+  "provenance": [
+    {
+      "zip": "25SVF100M.zip",
+      "zip_sha256": "05c871deb6d3d73ca97a647cedcdf8bd0008cf223b5acfbd9a7fa62f98bff007",
+      "member": "8 SIZE CODE E7.stp",
+      "sha256": "1cdfa4e77658670bde999e47ecd70cd505b636638d26c4886558f133ce49d7ab",
+      "destination": "libraries/3dmodels/Panasonic_E7.stp",
+      "destination_sha256": "1cdfa4e77658670bde999e47ecd70cd505b636638d26c4886558f133ce49d7ab",
+      "operation": "copy unchanged, deduplicate by hash"
+    },
+    {
+      "zip": "25SVF100M.zip",
+      "zip_sha256": "05c871deb6d3d73ca97a647cedcdf8bd0008cf223b5acfbd9a7fa62f98bff007",
+      "member": "KiCADv6/footprints.pretty/CAP_SVF_E7_PAN-L.kicad_mod",
+      "sha256": "5cf6da451e0e0704ce8cc50ee53dff42236e85982290ecd223b6cf6d477690e9",
+      "destination": "libraries/footprints/Buck_SMD.pretty/CAP_SVF_E7_PAN-L.kicad_mod",
+      "destination_sha256": "e0f7c1dc30808a7f17c653b4ad338b1fc2bf37e27b8682884d7c8bbfe10f82bb",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "25SVF100M.zip",
+      "zip_sha256": "05c871deb6d3d73ca97a647cedcdf8bd0008cf223b5acfbd9a7fa62f98bff007",
+      "member": "KiCADv6/footprints.pretty/CAP_SVF_E7_PAN-M.kicad_mod",
+      "sha256": "37b69abfaa83495f9558cee6ac89212cb3f4da1f082cff9c2cf78b48bf5771ee",
+      "destination": "libraries/footprints/Buck_SMD.pretty/CAP_SVF_E7_PAN-M.kicad_mod",
+      "destination_sha256": "4a790a78c5674f8c28f228e35e34e641f4844380d4b4c10e7c86ac63f03e3ff9",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "25SVF100M.zip",
+      "zip_sha256": "05c871deb6d3d73ca97a647cedcdf8bd0008cf223b5acfbd9a7fa62f98bff007",
+      "member": "KiCADv6/footprints.pretty/CAP_SVF_E7_PAN.kicad_mod",
+      "sha256": "dbdb82fdaee79d0e5e2b716609ec07d2c6ff3230a2b1d548bc2c75bd508d6689",
+      "destination": "libraries/footprints/Buck_SMD.pretty/CAP_SVF_E7_PAN.kicad_mod",
+      "destination_sha256": "fa4932ae457e5019a64ff8e9ba5c801ace7418638a60c7889710c16c033b44a9",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "25SVPF100M.zip",
+      "zip_sha256": "4bd6bfbcd3f3fae1bb5a9eb0a23241d86b8b5e6dff081afc444f10188b715dde",
+      "member": "8 SIZE CODE E7.stp",
+      "sha256": "1cdfa4e77658670bde999e47ecd70cd505b636638d26c4886558f133ce49d7ab",
+      "destination": "libraries/3dmodels/Panasonic_E7.stp",
+      "destination_sha256": "1cdfa4e77658670bde999e47ecd70cd505b636638d26c4886558f133ce49d7ab",
+      "operation": "copy unchanged, deduplicate by hash"
+    },
+    {
+      "zip": "25SVPF100M.zip",
+      "zip_sha256": "4bd6bfbcd3f3fae1bb5a9eb0a23241d86b8b5e6dff081afc444f10188b715dde",
+      "member": "KiCADv6/footprints.pretty/PCAP_SVP_E7_PAN-L.kicad_mod",
+      "sha256": "d458d5bbdd790c4ec888f6cbbd5b45dd9e58a75a2d6bbe2681ba7b7e25172761",
+      "destination": "libraries/footprints/Buck_SMD.pretty/PCAP_SVP_E7_PAN-L.kicad_mod",
+      "destination_sha256": "346837b1b33f8f6df0a977dcc613f913ee707826efe0aade385245c2166fb19d",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "25SVPF100M.zip",
+      "zip_sha256": "4bd6bfbcd3f3fae1bb5a9eb0a23241d86b8b5e6dff081afc444f10188b715dde",
+      "member": "KiCADv6/footprints.pretty/PCAP_SVP_E7_PAN-M.kicad_mod",
+      "sha256": "937cf8e8e1b6ece1d16e0e37d60b438f6dbc173cc2c931f77acc1ce84c1ace78",
+      "destination": "libraries/footprints/Buck_SMD.pretty/PCAP_SVP_E7_PAN-M.kicad_mod",
+      "destination_sha256": "b20ffa6b98c156ba4afa3f746022965259a260487e59bbdcd5de5ebc152c5d3a",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "25SVPF100M.zip",
+      "zip_sha256": "4bd6bfbcd3f3fae1bb5a9eb0a23241d86b8b5e6dff081afc444f10188b715dde",
+      "member": "KiCADv6/footprints.pretty/PCAP_SVP_E7_PAN.kicad_mod",
+      "sha256": "9f91ec0f3e32b4c03ffca7f08d5e2eea6fee62c8126082c795ab2a48ea56402c",
+      "destination": "libraries/footprints/Buck_SMD.pretty/PCAP_SVP_E7_PAN.kicad_mod",
+      "destination_sha256": "4133bcffe152c9efd3ab1369213a467ca3f8c964d9a8ef938607262bbe308312",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "50SVF10M.zip",
+      "zip_sha256": "516d34af6650c441be243e2ddecddf8e33d2ce6722aef787674c4ee2de461bd6",
+      "member": "6.3 SIZE CODE C6.stp",
+      "sha256": "f673417772ce9ebeac01746b6d8825a0c39ff32c11075400e033f2760c3cd253",
+      "destination": "libraries/3dmodels/Panasonic_C6.stp",
+      "destination_sha256": "f673417772ce9ebeac01746b6d8825a0c39ff32c11075400e033f2760c3cd253",
+      "operation": "copy unchanged, deduplicate by hash"
+    },
+    {
+      "zip": "50SVF10M.zip",
+      "zip_sha256": "516d34af6650c441be243e2ddecddf8e33d2ce6722aef787674c4ee2de461bd6",
+      "member": "KiCADv6/footprints.pretty/CAP_SVF_C6_PAN-L.kicad_mod",
+      "sha256": "378aba4ffc6c0928e581a1b6ea33ba1f2ec1d9b0c675fcd56c532a99035d71ca",
+      "destination": "libraries/footprints/Buck_SMD.pretty/CAP_SVF_C6_PAN-L.kicad_mod",
+      "destination_sha256": "e90c673683cb49240f466cdb8638ee6c8f7e9e8c1a80e75cebc97ac8a0367582",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "50SVF10M.zip",
+      "zip_sha256": "516d34af6650c441be243e2ddecddf8e33d2ce6722aef787674c4ee2de461bd6",
+      "member": "KiCADv6/footprints.pretty/CAP_SVF_C6_PAN-M.kicad_mod",
+      "sha256": "bc0afad9d8b405b9732e0eb36fd4ae6f9c2248997f63a364d788e12cd6364f1a",
+      "destination": "libraries/footprints/Buck_SMD.pretty/CAP_SVF_C6_PAN-M.kicad_mod",
+      "destination_sha256": "c38843730fa9b559cb8758748ff622b75b8c8439edcc7484a528f2914183bf76",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "50SVF10M.zip",
+      "zip_sha256": "516d34af6650c441be243e2ddecddf8e33d2ce6722aef787674c4ee2de461bd6",
+      "member": "KiCADv6/footprints.pretty/CAP_SVF_C6_PAN.kicad_mod",
+      "sha256": "f368a142e523e570f33769c6be898e734c2496335d05ae80464a3a05da818a13",
+      "destination": "libraries/footprints/Buck_SMD.pretty/CAP_SVF_C6_PAN.kicad_mod",
+      "destination_sha256": "d61c53dc1206ee83d579aa179a283dc29ea60838defc5076dade6230918ff7f2",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "50SVPF10M.zip",
+      "zip_sha256": "1fdab8489e641617dc4d90b623a1345c4037ea61d49e12701e86188b5f050bca",
+      "member": "6.3 SIZE CODE C6.stp",
+      "sha256": "f673417772ce9ebeac01746b6d8825a0c39ff32c11075400e033f2760c3cd253",
+      "destination": "libraries/3dmodels/Panasonic_C6.stp",
+      "destination_sha256": "f673417772ce9ebeac01746b6d8825a0c39ff32c11075400e033f2760c3cd253",
+      "operation": "copy unchanged, deduplicate by hash"
+    },
+    {
+      "zip": "50SVPF10M.zip",
+      "zip_sha256": "1fdab8489e641617dc4d90b623a1345c4037ea61d49e12701e86188b5f050bca",
+      "member": "KiCADv6/footprints.pretty/PCAP_SVP_C6_PAN-L.kicad_mod",
+      "sha256": "05746be985664e33b69c04ba5ecfc9498bcb884342dd2eb9185ce605e19f6739",
+      "destination": "libraries/footprints/Buck_SMD.pretty/PCAP_SVP_C6_PAN-L.kicad_mod",
+      "destination_sha256": "a58bc21c12303c2ea68fd443caea2b699021eddc8d34607209ce9ac1c3693829",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "50SVPF10M.zip",
+      "zip_sha256": "1fdab8489e641617dc4d90b623a1345c4037ea61d49e12701e86188b5f050bca",
+      "member": "KiCADv6/footprints.pretty/PCAP_SVP_C6_PAN-M.kicad_mod",
+      "sha256": "e29533511efc7affc32ab383ae49f22a1b13a5b1fec4c9bfce552aac74d3c240",
+      "destination": "libraries/footprints/Buck_SMD.pretty/PCAP_SVP_C6_PAN-M.kicad_mod",
+      "destination_sha256": "3d727df5167cd0bc1ef1e90f05d24c685737171b8e1ec14810931893c78fb98c",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "50SVPF10M.zip",
+      "zip_sha256": "1fdab8489e641617dc4d90b623a1345c4037ea61d49e12701e86188b5f050bca",
+      "member": "KiCADv6/footprints.pretty/PCAP_SVP_C6_PAN.kicad_mod",
+      "sha256": "ca7c4c2539a8f8fd47e02e09b7783e8acbe64523c3defb844a1d299651f9992b",
+      "destination": "libraries/footprints/Buck_SMD.pretty/PCAP_SVP_C6_PAN.kicad_mod",
+      "destination_sha256": "87452af07063c0deef9184f5faa15fe1e3ccc2aeacc9d8784af7ddeab6efec9e",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "INA180A1IDBVR.zip",
+      "zip_sha256": "b7ab96ff04bed1f992a6aa2132403cc2966e49f466fc937762edae1e324d008f",
+      "member": "DBV0005A.stp",
+      "sha256": "bce7b25e52a74ac515dc5236a6d5ee863c57e039a3a1aeaf26babdde195066c0",
+      "destination": "libraries/3dmodels/DBV0005A.stp",
+      "destination_sha256": "bce7b25e52a74ac515dc5236a6d5ee863c57e039a3a1aeaf26babdde195066c0",
+      "operation": "copy unchanged, deduplicate by hash"
+    },
+    {
+      "zip": "INA180A1IDBVR.zip",
+      "zip_sha256": "b7ab96ff04bed1f992a6aa2132403cc2966e49f466fc937762edae1e324d008f",
+      "member": "KiCADv6/footprints.pretty/DBV0005A_L.kicad_mod",
+      "sha256": "91153ee3a713e1783ed7a1e66db73b8a86c7d2f57c4a72de44bf678efe26249d",
+      "destination": "libraries/footprints/Buck_SMD.pretty/DBV0005A_L.kicad_mod",
+      "destination_sha256": "e353bb9a6f3d97d190fe6b112ded183aa3ff9c251327a5bc51eb0286af61a104",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "INA180A1IDBVR.zip",
+      "zip_sha256": "b7ab96ff04bed1f992a6aa2132403cc2966e49f466fc937762edae1e324d008f",
+      "member": "KiCADv6/footprints.pretty/DBV0005A_M.kicad_mod",
+      "sha256": "0378fe84d5aecf936d79479355b2fef9e9bafdafc4713cb38efb4e1bacd38af9",
+      "destination": "libraries/footprints/Buck_SMD.pretty/DBV0005A_M.kicad_mod",
+      "destination_sha256": "78098c52c3f46f2f3d57a9e82dd7e9fa0e7cc776811b526ef61ede679934d5a4",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "INA180A1IDBVR.zip",
+      "zip_sha256": "b7ab96ff04bed1f992a6aa2132403cc2966e49f466fc937762edae1e324d008f",
+      "member": "KiCADv6/footprints.pretty/DBV0005A_N.kicad_mod",
+      "sha256": "57828886d7bcad21a65fe55884efcd360453add034634c92f202bad6ed84c6b0",
+      "destination": "libraries/footprints/Buck_SMD.pretty/DBV0005A_N.kicad_mod",
+      "destination_sha256": "f0ef98a574f46f8239f7c7560007c8c3d36061a18eb5a47257469416c1962054",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "LM393BIDR.zip",
+      "zip_sha256": "899b1529068515be00809ab9201964b3acb2ad1cd11ab01e2c8df29d0a45cd83",
+      "member": "D0008A.stp",
+      "sha256": "92b7fdb99ac87c648f2d6e358ec5afc85a029466f4d9d2b2efc705eab9140bf5",
+      "destination": "libraries/3dmodels/D0008A.stp",
+      "destination_sha256": "92b7fdb99ac87c648f2d6e358ec5afc85a029466f4d9d2b2efc705eab9140bf5",
+      "operation": "copy unchanged, deduplicate by hash"
+    },
+    {
+      "zip": "LM393BIDR.zip",
+      "zip_sha256": "899b1529068515be00809ab9201964b3acb2ad1cd11ab01e2c8df29d0a45cd83",
+      "member": "KiCADv6/footprints.pretty/D0008A-IPC_A.kicad_mod",
+      "sha256": "54badbb1ad542268c03e0983d81b8a0a8886854e415ccbca2bc441a0f43bdb3a",
+      "destination": "libraries/footprints/Buck_SMD.pretty/D0008A-IPC_A.kicad_mod",
+      "destination_sha256": "883750551c88e3a885571c0ca175f4e1006fc9c6af47aac8cbad49547d88ea44",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "LM393BIDR.zip",
+      "zip_sha256": "899b1529068515be00809ab9201964b3acb2ad1cd11ab01e2c8df29d0a45cd83",
+      "member": "KiCADv6/footprints.pretty/D0008A-IPC_B.kicad_mod",
+      "sha256": "cd42e2f37294275e48e1e6272c956d730b8daad91eb71845eda485ae23959d1c",
+      "destination": "libraries/footprints/Buck_SMD.pretty/D0008A-IPC_B.kicad_mod",
+      "destination_sha256": "d50ad6214427f6b1550cbd8340035362fc2e607df5c7c0d3edba5f18d7c8e9b0",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "LM393BIDR.zip",
+      "zip_sha256": "899b1529068515be00809ab9201964b3acb2ad1cd11ab01e2c8df29d0a45cd83",
+      "member": "KiCADv6/footprints.pretty/D0008A-IPC_C.kicad_mod",
+      "sha256": "8b5b5e06f85c25c4a2061e7b702a2ed9b64c43c55be911ab9c2706109064cf2f",
+      "destination": "libraries/footprints/Buck_SMD.pretty/D0008A-IPC_C.kicad_mod",
+      "destination_sha256": "e00aa12c546e9caec2e270b45cada9d66649ebc1408b69dc876653eb7d457db9",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "LM393BIDR.zip",
+      "zip_sha256": "899b1529068515be00809ab9201964b3acb2ad1cd11ab01e2c8df29d0a45cd83",
+      "member": "KiCADv6/footprints.pretty/D0008A-MFG.kicad_mod",
+      "sha256": "4d12598636dd77e353f36ae28ef707624f4ef5d720a2f9cc62c62a9fb90a7d89",
+      "destination": "libraries/footprints/Buck_SMD.pretty/D0008A-MFG.kicad_mod",
+      "destination_sha256": "7396f17d56fb8452ce13a55b11f2bf6a3d139aa59fc054278a09fe2e8620f382",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "SN74HCT00DR.zip",
+      "zip_sha256": "a2b305493cc9b34bf3c94196befad2dbf0040cdbe7c9817f1d40e67ecac34fc5",
+      "member": "D0014A.stp",
+      "sha256": "bf9112576a5c64b5b450fc4ca996247ce4f2e4a825a44dafc2453e0dfe2be627",
+      "destination": "libraries/3dmodels/D0014A.stp",
+      "destination_sha256": "bf9112576a5c64b5b450fc4ca996247ce4f2e4a825a44dafc2453e0dfe2be627",
+      "operation": "copy unchanged, deduplicate by hash"
+    },
+    {
+      "zip": "SN74HCT00DR.zip",
+      "zip_sha256": "a2b305493cc9b34bf3c94196befad2dbf0040cdbe7c9817f1d40e67ecac34fc5",
+      "member": "KiCADv6/footprints.pretty/D14-L.kicad_mod",
+      "sha256": "213210837b56427272474b14f032f379c19ac56633ea3d2766adc842cfee4069",
+      "destination": "libraries/footprints/Buck_SMD.pretty/D14-L.kicad_mod",
+      "destination_sha256": "c0e950dea8ef2bf6af4a2d696218b2194f8a29c940c7a8b0458decb58925c040",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "SN74HCT00DR.zip",
+      "zip_sha256": "a2b305493cc9b34bf3c94196befad2dbf0040cdbe7c9817f1d40e67ecac34fc5",
+      "member": "KiCADv6/footprints.pretty/D14-M.kicad_mod",
+      "sha256": "462edf9b1a77f3bb5e1c881bcf2fd53a4c2acaf783a23f02b8c8a5ef10432362",
+      "destination": "libraries/footprints/Buck_SMD.pretty/D14-M.kicad_mod",
+      "destination_sha256": "cefa2efa2ab6dc34e952ec89f38cb95cebe6c891642645b47a8df70cb52c002c",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "SN74HCT00DR.zip",
+      "zip_sha256": "a2b305493cc9b34bf3c94196befad2dbf0040cdbe7c9817f1d40e67ecac34fc5",
+      "member": "KiCADv6/footprints.pretty/D14.kicad_mod",
+      "sha256": "20486223956ce6fdc96d09202105b38b18cc88e428d54b729ac03ae1aa070ed4",
+      "destination": "libraries/footprints/Buck_SMD.pretty/D14.kicad_mod",
+      "destination_sha256": "849e2ba3806efec501bb39326f3bbf3a9d67fb0759352b04d3af35ab0dbfd77a",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "SN74HCT14DR.zip",
+      "zip_sha256": "da7eb641de5e939280d2f965c132b26595d266b5e91197230cac1648cdbef484",
+      "member": "D0014A.stp",
+      "sha256": "bf9112576a5c64b5b450fc4ca996247ce4f2e4a825a44dafc2453e0dfe2be627",
+      "destination": "libraries/3dmodels/D0014A.stp",
+      "destination_sha256": "bf9112576a5c64b5b450fc4ca996247ce4f2e4a825a44dafc2453e0dfe2be627",
+      "operation": "copy unchanged, deduplicate by hash"
+    },
+    {
+      "zip": "SN74HCT14DR.zip",
+      "zip_sha256": "da7eb641de5e939280d2f965c132b26595d266b5e91197230cac1648cdbef484",
+      "member": "KiCADv6/footprints.pretty/D14-L.kicad_mod",
+      "sha256": "aa00bba6e51820c722d005b58b6b71cf2d0c03eaaa65558e8ccff5973adce216",
+      "destination": "libraries/footprints/Buck_SMD.pretty/D14-L.kicad_mod",
+      "destination_sha256": "c0e950dea8ef2bf6af4a2d696218b2194f8a29c940c7a8b0458decb58925c040",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "SN74HCT14DR.zip",
+      "zip_sha256": "da7eb641de5e939280d2f965c132b26595d266b5e91197230cac1648cdbef484",
+      "member": "KiCADv6/footprints.pretty/D14-M.kicad_mod",
+      "sha256": "29ab4ddb098891a9248f7c421f8b2f3e1d27fdb0a3e4814d2bb4575b81607ef7",
+      "destination": "libraries/footprints/Buck_SMD.pretty/D14-M.kicad_mod",
+      "destination_sha256": "cefa2efa2ab6dc34e952ec89f38cb95cebe6c891642645b47a8df70cb52c002c",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "SN74HCT14DR.zip",
+      "zip_sha256": "da7eb641de5e939280d2f965c132b26595d266b5e91197230cac1648cdbef484",
+      "member": "KiCADv6/footprints.pretty/D14.kicad_mod",
+      "sha256": "36e8106a581c150117874a1373ff7d6e3adc3acffd55a01ce064db1b6fee9d7b",
+      "destination": "libraries/footprints/Buck_SMD.pretty/D14.kicad_mod",
+      "destination_sha256": "849e2ba3806efec501bb39326f3bbf3a9d67fb0759352b04d3af35ab0dbfd77a",
+      "operation": "unchanged geometry; add project-relative model link"
+    },
+    {
+      "zip": "WSL2512R0500FEA.zip",
+      "zip_sha256": "6efe99bedc6f5ce69351fad9dd89ea72b0ee1f2fcf11cca8388464f4dbd4c90b",
+      "member": "KiCADv6/footprints.pretty/RES_2512_WSL-L.kicad_mod",
+      "sha256": "77ed6d109eee53aa4146342a3f2559c75c67d9cabaa1f0a164fd95d784d79c7a",
+      "destination": "libraries/footprints/Buck_SMD.pretty/RES_2512_WSL-L.kicad_mod",
+      "destination_sha256": "463786b788570998a2c5754701922ea2529e2a4a04ed8fbf6f3d51b780eb2c8d",
+      "operation": "unchanged geometry, no model available"
+    },
+    {
+      "zip": "WSL2512R0500FEA.zip",
+      "zip_sha256": "6efe99bedc6f5ce69351fad9dd89ea72b0ee1f2fcf11cca8388464f4dbd4c90b",
+      "member": "KiCADv6/footprints.pretty/RES_2512_WSL-M.kicad_mod",
+      "sha256": "8bef9622e1492db63e45ba068abd7588f4ba03efca75ac9e78777b6d047e9c4e",
+      "destination": "libraries/footprints/Buck_SMD.pretty/RES_2512_WSL-M.kicad_mod",
+      "destination_sha256": "e167c9e1154471d436af371a932ac32eeabf526ec1ea23651e3d48f61101d040",
+      "operation": "unchanged geometry, no model available"
+    },
+    {
+      "zip": "WSL2512R0500FEA.zip",
+      "zip_sha256": "6efe99bedc6f5ce69351fad9dd89ea72b0ee1f2fcf11cca8388464f4dbd4c90b",
+      "member": "KiCADv6/footprints.pretty/RES_2512_WSL.kicad_mod",
+      "sha256": "e67384eaa5503bc98475d2d63901b9dc7952b0a673e8355719058f54eac2a4e8",
+      "destination": "libraries/footprints/Buck_SMD.pretty/RES_2512_WSL.kicad_mod",
+      "destination_sha256": "f3f2c0761a95174e2a1376f97a81da0bb68723324e04870cc7300cfac2fa8c9b",
+      "operation": "unchanged geometry, no model available"
+    },
+    {
+      "zip": "25SVF100M.zip",
+      "zip_sha256": "05c871deb6d3d73ca97a647cedcdf8bd0008cf223b5acfbd9a7fa62f98bff007",
+      "member": "KiCADv6/2026-10-25_02-51-07.kicad_sym",
+      "sha256": "08a9c829659ff47d106c1b76414e2bcd0c8511e6cd8fb9558ac7964c08d07a4d",
+      "destination": "libraries/symbols/Buck_SMD.kicad_sym",
+      "destination_sha256": "1ae6e76e5187658693a163ac7a483d5c57b32f8b6f0f6e42b55ee8be28f023af",
+      "operation": "merge symbol and update metadata, unchanged pin signature"
+    },
+    {
+      "zip": "25SVPF100M.zip",
+      "zip_sha256": "4bd6bfbcd3f3fae1bb5a9eb0a23241d86b8b5e6dff081afc444f10188b715dde",
+      "member": "KiCADv6/2026-10-25_02-44-25.kicad_sym",
+      "sha256": "5fb574905213fcc9ad9c56d8502acd96f7f00e59c61b98f49a9a0a91f4bdc47a",
+      "destination": "libraries/symbols/Buck_SMD.kicad_sym",
+      "destination_sha256": "1ae6e76e5187658693a163ac7a483d5c57b32f8b6f0f6e42b55ee8be28f023af",
+      "operation": "merge symbol and update metadata, unchanged pin signature"
+    },
+    {
+      "zip": "50SVF10M.zip",
+      "zip_sha256": "516d34af6650c441be243e2ddecddf8e33d2ce6722aef787674c4ee2de461bd6",
+      "member": "KiCADv6/2026-10-25_02-52-45.kicad_sym",
+      "sha256": "bd518d9d180753e736fb05fadbbd84db702b21e78c5df5f287f273fdcd8f10ca",
+      "destination": "libraries/symbols/Buck_SMD.kicad_sym",
+      "destination_sha256": "1ae6e76e5187658693a163ac7a483d5c57b32f8b6f0f6e42b55ee8be28f023af",
+      "operation": "merge symbol and update metadata, unchanged pin signature"
+    },
+    {
+      "zip": "50SVPF10M.zip",
+      "zip_sha256": "1fdab8489e641617dc4d90b623a1345c4037ea61d49e12701e86188b5f050bca",
+      "member": "KiCADv6/2026-10-25_02-54-20.kicad_sym",
+      "sha256": "05787ad46cbd0285aaa163afc50a81ee839f5cf221f8799800be44baabd68f43",
+      "destination": "libraries/symbols/Buck_SMD.kicad_sym",
+      "destination_sha256": "1ae6e76e5187658693a163ac7a483d5c57b32f8b6f0f6e42b55ee8be28f023af",
+      "operation": "merge symbol and update metadata, unchanged pin signature"
+    },
+    {
+      "zip": "INA180A1IDBVR.zip",
+      "zip_sha256": "b7ab96ff04bed1f992a6aa2132403cc2966e49f466fc937762edae1e324d008f",
+      "member": "KiCADv6/2026-10-25_03-11-24.kicad_sym",
+      "sha256": "b115d9c5287394c90f642f2451af6e5e0006fa3d0fd1cf9f901d5e8167787ba0",
+      "destination": "libraries/symbols/Buck_SMD.kicad_sym",
+      "destination_sha256": "1ae6e76e5187658693a163ac7a483d5c57b32f8b6f0f6e42b55ee8be28f023af",
+      "operation": "merge symbol and update metadata, unchanged pin signature"
+    },
+    {
+      "zip": "LM393BIDR.zip",
+      "zip_sha256": "899b1529068515be00809ab9201964b3acb2ad1cd11ab01e2c8df29d0a45cd83",
+      "member": "KiCADv6/2026-10-25_03-10-50.kicad_sym",
+      "sha256": "1ed606902bf8f0d4cf00ddbe1c57cde4bf412a80d695ef213bb930bdd0656196",
+      "destination": "libraries/symbols/Buck_SMD.kicad_sym",
+      "destination_sha256": "1ae6e76e5187658693a163ac7a483d5c57b32f8b6f0f6e42b55ee8be28f023af",
+      "operation": "merge symbol and update metadata, unchanged pin signature"
+    },
+    {
+      "zip": "SN74HCT00DR.zip",
+      "zip_sha256": "a2b305493cc9b34bf3c94196befad2dbf0040cdbe7c9817f1d40e67ecac34fc5",
+      "member": "KiCADv6/2026-10-25_03-10-10.kicad_sym",
+      "sha256": "63163066425e0aabaabcb2cf447c564c810a0d1cdad325e0595e5ae1d0f08dff",
+      "destination": "libraries/symbols/Buck_SMD.kicad_sym",
+      "destination_sha256": "1ae6e76e5187658693a163ac7a483d5c57b32f8b6f0f6e42b55ee8be28f023af",
+      "operation": "merge symbol and update metadata, unchanged pin signature"
+    },
+    {
+      "zip": "SN74HCT14DR.zip",
+      "zip_sha256": "da7eb641de5e939280d2f965c132b26595d266b5e91197230cac1648cdbef484",
+      "member": "KiCADv6/2026-10-23_16-23-33.kicad_sym",
+      "sha256": "d899201bfed6f29ab2a57f574279e259425659f25f477928baff0f92cffca202",
+      "destination": "libraries/symbols/Buck_SMD.kicad_sym",
+      "destination_sha256": "1ae6e76e5187658693a163ac7a483d5c57b32f8b6f0f6e42b55ee8be28f023af",
+      "operation": "merge symbol and update metadata, unchanged pin signature"
+    },
+    {
+      "zip": "WSL2512R0500FEA.zip",
+      "zip_sha256": "6efe99bedc6f5ce69351fad9dd89ea72b0ee1f2fcf11cca8388464f4dbd4c90b",
+      "member": "KiCADv6/2026-10-25_02-57-58.kicad_sym",
+      "sha256": "d3a28ecc147b6e561956ac92a4aa65f049e77b2e0c71d879754081c7c3d2435d",
+      "destination": "libraries/symbols/Buck_SMD.kicad_sym",
+      "destination_sha256": "1ae6e76e5187658693a163ac7a483d5c57b32f8b6f0f6e42b55ee8be28f023af",
+      "operation": "merge symbol and update metadata, unchanged pin signature"
+    },
+    {
+      "zip": "IR2110SPBF.zip",
+      "zip_sha256": "792cde37a805857955443f21478fb37c6f137d3ce8f8398a45dae97590889a50",
+      "member": "IR2110SPBF_INF.step",
+      "sha256": "c115d946cb9e972abd365034db09b6471fea169b038bbb1e9fb19d68107a16f1",
+      "destination": "libraries/pending_review/IR2110SPBF/IR2110SPBF_INF.step",
+      "destination_sha256": "c115d946cb9e972abd365034db09b6471fea169b038bbb1e9fb19d68107a16f1",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "IR2110SPBF.zip",
+      "zip_sha256": "792cde37a805857955443f21478fb37c6f137d3ce8f8398a45dae97590889a50",
+      "member": "KiCADv6/2026-10-25_03-07-42.kicad_sym",
+      "sha256": "2b7a3e378c4c5c29e34059cb887685faf4c642d81bf9b874111cc3a6a42adea4",
+      "destination": "libraries/pending_review/IR2110SPBF/2026-10-25_03-07-42.kicad_sym",
+      "destination_sha256": "2b7a3e378c4c5c29e34059cb887685faf4c642d81bf9b874111cc3a6a42adea4",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "IR2110SPBF.zip",
+      "zip_sha256": "792cde37a805857955443f21478fb37c6f137d3ce8f8398a45dae97590889a50",
+      "member": "KiCADv6/footprints.pretty/IR2110SPBF_INF-L.kicad_mod",
+      "sha256": "f2de20535944c22fb69807933f27bc2c06ca1ae5e1e348dde90a59a7246ff669",
+      "destination": "libraries/pending_review/IR2110SPBF/IR2110SPBF_INF-L.kicad_mod",
+      "destination_sha256": "f2de20535944c22fb69807933f27bc2c06ca1ae5e1e348dde90a59a7246ff669",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "IR2110SPBF.zip",
+      "zip_sha256": "792cde37a805857955443f21478fb37c6f137d3ce8f8398a45dae97590889a50",
+      "member": "KiCADv6/footprints.pretty/IR2110SPBF_INF-M.kicad_mod",
+      "sha256": "1f50d1ab3258800ae4d5425346caf94a87d205c87b3ecda8916a1fd4a1c39cd7",
+      "destination": "libraries/pending_review/IR2110SPBF/IR2110SPBF_INF-M.kicad_mod",
+      "destination_sha256": "1f50d1ab3258800ae4d5425346caf94a87d205c87b3ecda8916a1fd4a1c39cd7",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "IR2110SPBF.zip",
+      "zip_sha256": "792cde37a805857955443f21478fb37c6f137d3ce8f8398a45dae97590889a50",
+      "member": "KiCADv6/footprints.pretty/IR2110SPBF_INF.kicad_mod",
+      "sha256": "aba89e3741704d557521a4b5b3f8525d91dc3e51b7e3d0c12e2d1819ca20e3c3",
+      "destination": "libraries/pending_review/IR2110SPBF/IR2110SPBF_INF.kicad_mod",
+      "destination_sha256": "aba89e3741704d557521a4b5b3f8525d91dc3e51b7e3d0c12e2d1819ca20e3c3",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "MMBT3904.zip",
+      "zip_sha256": "e1d560849fbf45bbd8526d234c26c38c723028b2975ed325c541a702df164e10",
+      "member": "MMBT3904.kicad_sym",
+      "sha256": "ed8e22973f0c335fcf29c3a60e7296fcdddd14e21450420dedac7af6edd7961a",
+      "destination": "libraries/pending_review/MMBT3904/MMBT3904.kicad_sym",
+      "destination_sha256": "ed8e22973f0c335fcf29c3a60e7296fcdddd14e21450420dedac7af6edd7961a",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "MMBT3904.zip",
+      "zip_sha256": "e1d560849fbf45bbd8526d234c26c38c723028b2975ed325c541a702df164e10",
+      "member": "TRANS_MMBT3904.kicad_mod",
+      "sha256": "16afcac3c470e37e399277e2e622be7aa6f3598a57cb765250ddc9d4ed496a08",
+      "destination": "libraries/pending_review/MMBT3904/TRANS_MMBT3904.kicad_mod",
+      "destination_sha256": "16afcac3c470e37e399277e2e622be7aa6f3598a57cb765250ddc9d4ed496a08",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "MMBT3904.zip",
+      "zip_sha256": "e1d560849fbf45bbd8526d234c26c38c723028b2975ed325c541a702df164e10",
+      "member": "MMBT3904.step",
+      "sha256": "16becd8daa5fe48232010a496d2762f22134ae5e16a3a2bcc1b38371896fedf2",
+      "destination": "libraries/pending_review/MMBT3904/MMBT3904.step",
+      "destination_sha256": "16becd8daa5fe48232010a496d2762f22134ae5e16a3a2bcc1b38371896fedf2",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "MMBT3904.zip",
+      "zip_sha256": "e1d560849fbf45bbd8526d234c26c38c723028b2975ed325c541a702df164e10",
+      "member": "how-to-import.htm",
+      "sha256": "24e9a101a0ca11ff7db51062503d7e4ccdb70678f037eea9b38e7e61a762634f",
+      "destination": "libraries/pending_review/MMBT3904/how-to-import.htm",
+      "destination_sha256": "24e9a101a0ca11ff7db51062503d7e4ccdb70678f037eea9b38e7e61a762634f",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "MMBT3904.zip",
+      "zip_sha256": "e1d560849fbf45bbd8526d234c26c38c723028b2975ed325c541a702df164e10",
+      "member": "License.txt",
+      "sha256": "d1957f3119c792a22dd4527618d283669dc65935448168b3a9924644695e51da",
+      "destination": "libraries/pending_review/MMBT3904/License.txt",
+      "destination_sha256": "d1957f3119c792a22dd4527618d283669dc65935448168b3a9924644695e51da",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "SS34.zip",
+      "zip_sha256": "dc6dfa7e3d55cf0409264660b01e4465171d7f12812100558a46d2bd3d871500",
+      "member": "SMB_ONS.step",
+      "sha256": "e2e06ffc85456e352f8ecb5d88f38f3a5f0a417b99cd103aa0f1b43234936329",
+      "destination": "libraries/pending_review/SS34/SMB_ONS.step",
+      "destination_sha256": "e2e06ffc85456e352f8ecb5d88f38f3a5f0a417b99cd103aa0f1b43234936329",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "SS34.zip",
+      "zip_sha256": "dc6dfa7e3d55cf0409264660b01e4465171d7f12812100558a46d2bd3d871500",
+      "member": "KiCADv6/2026-10-25_03-12-22.kicad_sym",
+      "sha256": "d4a8e06df455f8f808ca351a3163d34480271749da30552909cf05c62d3e4a85",
+      "destination": "libraries/pending_review/SS34/2026-10-25_03-12-22.kicad_sym",
+      "destination_sha256": "d4a8e06df455f8f808ca351a3163d34480271749da30552909cf05c62d3e4a85",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "SS34.zip",
+      "zip_sha256": "dc6dfa7e3d55cf0409264660b01e4465171d7f12812100558a46d2bd3d871500",
+      "member": "KiCADv6/footprints.pretty/SMB_ONS.kicad_mod",
+      "sha256": "2899f9c662a1fa025b2ff26051031719a9290351ebc1fb9e4c27afeb693a7035",
+      "destination": "libraries/pending_review/SS34/SMB_ONS.kicad_mod",
+      "destination_sha256": "2899f9c662a1fa025b2ff26051031719a9290351ebc1fb9e4c27afeb693a7035",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "US1G.zip",
+      "zip_sha256": "ee9b140336326c486cd4503a9307394cf32b00090271b7b552118b5bce8dd7b5",
+      "member": "do-214ac-sma.stp",
+      "sha256": "22ee5c46b38ca5ad252d0ac5984ca02611fe93e7a3a866595ca0de8b071f5237",
+      "destination": "libraries/pending_review/US1G/do-214ac-sma.stp",
+      "destination_sha256": "22ee5c46b38ca5ad252d0ac5984ca02611fe93e7a3a866595ca0de8b071f5237",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "US1G.zip",
+      "zip_sha256": "ee9b140336326c486cd4503a9307394cf32b00090271b7b552118b5bce8dd7b5",
+      "member": "KiCad/cld-diode.kicad_sym",
+      "sha256": "8cdd66f37baf34d1955710e5a0f51ce974c04361b2a088c2f2ebe8c08fcef9b8",
+      "destination": "libraries/pending_review/US1G/cld-diode.kicad_sym",
+      "destination_sha256": "8cdd66f37baf34d1955710e5a0f51ce974c04361b2a088c2f2ebe8c08fcef9b8",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "US1G.zip",
+      "zip_sha256": "ee9b140336326c486cd4503a9307394cf32b00090271b7b552118b5bce8dd7b5",
+      "member": "KiCad/P25_DO-214AC_SMA.kicad_mod",
+      "sha256": "699c94ab69bf5a5a6db1d2179146cdded19005a3ec5fbbe902e876d5e270055d",
+      "destination": "libraries/pending_review/US1G/P25_DO-214AC_SMA.kicad_mod",
+      "destination_sha256": "699c94ab69bf5a5a6db1d2179146cdded19005a3ec5fbbe902e876d5e270055d",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "TB002_500_02BE.zip",
+      "zip_sha256": "513b4ed719fdc5ba893195aff0836a2e77d2d210e7be5caca8fcdea9b9e50902",
+      "member": "TB002-500-02BE.IntLib",
+      "sha256": "9d4957b8127e2fc43cf222d60000e4dd07e67ced11b9c3b82016a181790abd82",
+      "destination": "libraries/pending_review/TB002_500_02BE/TB002-500-02BE.IntLib",
+      "destination_sha256": "9d4957b8127e2fc43cf222d60000e4dd07e67ced11b9c3b82016a181790abd82",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "TB002_500_02BE.zip",
+      "zip_sha256": "513b4ed719fdc5ba893195aff0836a2e77d2d210e7be5caca8fcdea9b9e50902",
+      "member": "how-to-import.htm",
+      "sha256": "64b13500cabbd1a4f3f14f6ecc3e7b432313dd8e1748ca70d86d2e7c9c43e8c2",
+      "destination": "libraries/pending_review/TB002_500_02BE/how-to-import.htm",
+      "destination_sha256": "64b13500cabbd1a4f3f14f6ecc3e7b432313dd8e1748ca70d86d2e7c9c43e8c2",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "TB002_500_02BE.zip",
+      "zip_sha256": "513b4ed719fdc5ba893195aff0836a2e77d2d210e7be5caca8fcdea9b9e50902",
+      "member": "License.txt",
+      "sha256": "f419ac734e6ea12b727966c46a9e9f65d26856be2e2122ebf7c8e575495c7274",
+      "destination": "libraries/pending_review/TB002_500_02BE/License.txt",
+      "destination_sha256": "f419ac734e6ea12b727966c46a9e9f65d26856be2e2122ebf7c8e575495c7274",
+      "operation": "quarantined unchanged; not registered"
+    },
+    {
+      "zip": "IR2110STRPBF.zip",
+      "zip_sha256": "e50329e32e4c2d1ab5a75433b42e5e1c60892591881915e9b301e905f48f48ef",
+      "member": "IR2110STRPBF.STEP",
+      "sha256": "7e327f3c93074ecca454949da7f087027f6122871c91d868631358b25752f9f3",
+      "destination": "libraries/3dmodels/IR2110STRPBF.step",
+      "destination_sha256": "7e327f3c93074ecca454949da7f087027f6122871c91d868631358b25752f9f3",
+      "operation": "copy exact-name model only; unlinked because candidate footprint unresolved"
+    }
+  ],
+  "source_symbols": {
+    "25SVF100M": {
+      "pins": [
+        [
+          "1",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "1",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "2",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "2",
+          "",
+          "unspecified",
+          "line"
+        ]
+      ],
+      "reference": "C",
+      "value": "25SVF100M"
+    },
+    "25SVPF100M": {
+      "pins": [
+        [
+          "1",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "1",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "2",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "2",
+          "",
+          "unspecified",
+          "line"
+        ]
+      ],
+      "reference": "C",
+      "value": "25SVPF100M"
+    },
+    "50SVF10M": {
+      "pins": [
+        [
+          "1",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "1",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "2",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "2",
+          "",
+          "unspecified",
+          "line"
+        ]
+      ],
+      "reference": "C",
+      "value": "50SVF10M"
+    },
+    "50SVPF10M": {
+      "pins": [
+        [
+          "1",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "1",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "2",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "2",
+          "",
+          "unspecified",
+          "line"
+        ]
+      ],
+      "reference": "C",
+      "value": "50SVPF10M"
+    },
+    "INA180A1IDBVR": {
+      "pins": [
+        [
+          "1",
+          "OUT",
+          "output",
+          "line"
+        ],
+        [
+          "2",
+          "GND",
+          "power_in",
+          "line"
+        ],
+        [
+          "3",
+          "IN+",
+          "input",
+          "line"
+        ],
+        [
+          "4",
+          "IN-",
+          "input",
+          "line"
+        ],
+        [
+          "5",
+          "VS",
+          "power_in",
+          "line"
+        ]
+      ],
+      "reference": "U",
+      "value": "INA180A1IDBVR"
+    },
+    "LM393BIDR": {
+      "pins": [
+        [
+          "1",
+          "1OUT",
+          "unspecified",
+          "line"
+        ],
+        [
+          "2",
+          "1IN-",
+          "tri_state",
+          "line"
+        ],
+        [
+          "3",
+          "1IN+",
+          "tri_state",
+          "line"
+        ],
+        [
+          "4",
+          "GND",
+          "power_in",
+          "line"
+        ],
+        [
+          "5",
+          "2IN+",
+          "tri_state",
+          "line"
+        ],
+        [
+          "6",
+          "2IN-",
+          "tri_state",
+          "line"
+        ],
+        [
+          "7",
+          "2OUT",
+          "unspecified",
+          "line"
+        ],
+        [
+          "8",
+          "VCC",
+          "power_in",
+          "line"
+        ]
+      ],
+      "reference": "U",
+      "value": "LM393BIDR"
+    },
+    "SN74HCT00DR": {
+      "pins": [
+        [
+          "1",
+          "1A",
+          "input",
+          "line"
+        ],
+        [
+          "10",
+          "3B",
+          "input",
+          "line"
+        ],
+        [
+          "11",
+          "4Y",
+          "output",
+          "line"
+        ],
+        [
+          "12",
+          "4A",
+          "input",
+          "line"
+        ],
+        [
+          "13",
+          "4B",
+          "input",
+          "line"
+        ],
+        [
+          "14",
+          "VCC",
+          "power_in",
+          "line"
+        ],
+        [
+          "2",
+          "1B",
+          "input",
+          "line"
+        ],
+        [
+          "3",
+          "1Y",
+          "output",
+          "line"
+        ],
+        [
+          "4",
+          "2A",
+          "input",
+          "line"
+        ],
+        [
+          "5",
+          "2B",
+          "input",
+          "line"
+        ],
+        [
+          "6",
+          "2Y",
+          "output",
+          "line"
+        ],
+        [
+          "7",
+          "GND",
+          "power_in",
+          "line"
+        ],
+        [
+          "8",
+          "3Y",
+          "output",
+          "line"
+        ],
+        [
+          "9",
+          "3A",
+          "input",
+          "line"
+        ]
+      ],
+      "reference": "U",
+      "value": "SN74HCT00DR"
+    },
+    "SN74HCT14DR": {
+      "pins": [
+        [
+          "1",
+          "1A",
+          "input",
+          "line"
+        ],
+        [
+          "10",
+          "5Y",
+          "output",
+          "line"
+        ],
+        [
+          "11",
+          "5A",
+          "input",
+          "line"
+        ],
+        [
+          "12",
+          "6Y",
+          "output",
+          "line"
+        ],
+        [
+          "13",
+          "6A",
+          "input",
+          "line"
+        ],
+        [
+          "14",
+          "VCC",
+          "power_in",
+          "line"
+        ],
+        [
+          "2",
+          "1Y",
+          "output",
+          "line"
+        ],
+        [
+          "3",
+          "2A",
+          "input",
+          "line"
+        ],
+        [
+          "4",
+          "2Y",
+          "output",
+          "line"
+        ],
+        [
+          "5",
+          "3A",
+          "input",
+          "line"
+        ],
+        [
+          "6",
+          "3Y",
+          "output",
+          "line"
+        ],
+        [
+          "7",
+          "GND",
+          "power_in",
+          "line"
+        ],
+        [
+          "8",
+          "4Y",
+          "output",
+          "line"
+        ],
+        [
+          "9",
+          "4A",
+          "input",
+          "line"
+        ]
+      ],
+      "reference": "U",
+      "value": "SN74HCT14DR"
+    },
+    "WSL2512R0500FEA": {
+      "pins": [
+        [
+          "1",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "1",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "2",
+          "",
+          "unspecified",
+          "line"
+        ],
+        [
+          "2",
+          "",
+          "unspecified",
+          "line"
+        ]
+      ],
+      "reference": "R",
+      "value": "WSL2512R0500FEA"
+    }
+  },
+  "original_tables": {
+    "sym-lib-table": "(sym_lib_table (version 7) (lib (name \"Buck\") (type \"KiCad\") (uri \"${KIPRJMOD}/Buck.kicad_sym\") (options \"\") (descr \"Pin-level original design symbols\")))\n",
+    "fp-lib-table": "(fp_lib_table (version 7) (lib (name \"Buck\") (type \"KiCad\") (uri \"${KIPRJMOD}/Buck.pretty\") (options \"\") (descr \"Project-specific provisional inductor geometry\"))(lib (name \"Capacitor_THT\") (type \"KiCad\") (uri \"${KICAD10_FOOTPRINT_DIR}/Capacitor_THT.pretty\") (options \"\") (descr \"KiCad standard library\"))(lib (name \"Connector_PinHeader_2.54mm\") (type \"KiCad\") (uri \"${KICAD10_FOOTPRINT_DIR}/Connector_PinHeader_2.54mm.pretty\") (options \"\") (descr \"KiCad standard library\"))(lib (name \"Diode_THT\") (type \"KiCad\") (uri \"${KICAD10_FOOTPRINT_DIR}/Diode_THT.pretty\") (options \"\") (descr \"KiCad standard library\"))(lib (name \"Package_DIP\") (type \"KiCad\") (uri \"${KICAD10_FOOTPRINT_DIR}/Package_DIP.pretty\") (options \"\") (descr \"KiCad standard library\"))(lib (name \"Package_TO_SOT_SMD\") (type \"KiCad\") (uri \"${KICAD10_FOOTPRINT_DIR}/Package_TO_SOT_SMD.pretty\") (options \"\") (descr \"KiCad standard library\"))(lib (name \"Package_TO_SOT_THT\") (type \"KiCad\") (uri \"${KICAD10_FOOTPRINT_DIR}/Package_TO_SOT_THT.pretty\") (options \"\") (descr \"KiCad standard library\"))(lib (name \"Resistor_SMD\") (type \"KiCad\") (uri \"${KICAD10_FOOTPRINT_DIR}/Resistor_SMD.pretty\") (options \"\") (descr \"KiCad standard library\"))(lib (name \"Resistor_THT\") (type \"KiCad\") (uri \"${KICAD10_FOOTPRINT_DIR}/Resistor_THT.pretty\") (options \"\") (descr \"KiCad standard library\"))(lib (name \"TerminalBlock_Phoenix\") (type \"KiCad\") (uri \"${KICAD10_FOOTPRINT_DIR}/TerminalBlock_Phoenix.pretty\") (options \"\") (descr \"KiCad standard library\"))(lib (name \"TestPoint\") (type \"KiCad\") (uri \"${KICAD10_FOOTPRINT_DIR}/TestPoint.pretty\") (options \"\") (descr \"KiCad standard library\")))\n"
+  },
+  "scope": "CAD integration only; all electrical validation remains pending",
+  "datasheets": {
+    "Infineon_IR2110.pdf": {
+      "source": "${REPO_ROOT}\\project\\pcb\\vendor_assets_local\\datasheets\\C2968.pdf",
+      "sha256": "3de3f1ff4244dc9ffb5542cd5ad52bd970f4c0fc1cc45e67aa8962b52166786c",
+      "scope": "local manufacturer document; applicability/revision described in audit"
+    },
+    "UMW_78Mxx.pdf": {
+      "source": "${REPO_ROOT}\\project\\pcb\\vendor_assets_local\\datasheets\\C347278.pdf",
+      "sha256": "162df1416fa16eadefc4d9fb2f46121df5c48569a40255a0ddfb9a01e14c166f",
+      "scope": "local manufacturer document; applicability/revision described in audit"
+    },
+    "UMW_IRFZ44N_family.pdf": {
+      "source": "${REPO_ROOT}\\project\\pcb\\vendor_assets_local\\datasheets\\C5199867.pdf",
+      "sha256": "ebcbb210b448e54f27f8ae13686619e83c1ca18d60dfc7d3fe8cbfd7609456b5",
+      "scope": "local manufacturer document; applicability/revision described in audit"
+    },
+    "Changjing_MMBT3904.pdf": {
+      "source": "${REPO_ROOT}\\project\\pcb\\vendor_assets_local\\datasheets\\C20526.pdf",
+      "sha256": "6c2034cb0bd0d85be51c9c4f82aad838a688aa70c20de1a71681be8ec02b659b",
+      "scope": "local manufacturer document; applicability/revision described in audit"
+    },
+    "MDD_SS34.pdf": {
+      "source": "${REPO_ROOT}\\project\\pcb\\vendor_assets_local\\datasheets\\C8678.pdf",
+      "sha256": "fb4970875779696914d235bcf954240569302fb325399838f2861d474cbf9760",
+      "scope": "local manufacturer document; applicability/revision described in audit"
+    },
+    "TI_SN74HCT14.pdf": {
+      "source": "${REPO_ROOT}\\project\\pcb\\vendor_assets_local\\datasheets\\sn74hct14.pdf",
+      "sha256": "925eabf18762f43fff8c774e33c0b9d6e22293e95833adebfaab86728eb2cb0e",
+      "scope": "local manufacturer document; applicability/revision described in audit"
+    },
+    "TAI_RLP.pdf": {
+      "source": "${DOWNLOADS}\\C160588.pdf",
+      "sha256": "d6e856889bd77d058b95b364e5a99fe0e050d02a5db31d09b9a9843e9aea80d1",
+      "scope": "local manufacturer document; applicability/revision described in audit"
+    }
+  },
+  "native_validation": {
+    "sdk": "10.0.4",
+    "symbol_upgrade": true,
+    "symbol_svg_exports": 15,
+    "footprints_loaded": 25,
+    "temporary_board_reopened": 25,
+    "step_assembly_exported": true,
+    "linked_models_rendered": 5,
+    "render_file": "artifacts/buck_library_integration/models_with_cache.png",
+    "electrical_tests": false
+  }
+}

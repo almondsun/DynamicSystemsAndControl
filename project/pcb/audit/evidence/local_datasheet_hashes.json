@@ -1,0 +1,26 @@
+[
+  {
+    "path": "${REPO_ROOT}\\project\\pcb\\vendor_assets_local\\datasheets\\C2968.pdf",
+    "sha256": "3de3f1ff4244dc9ffb5542cd5ad52bd970f4c0fc1cc45e67aa8962b52166786c"
+  },
+  {
+    "path": "${REPO_ROOT}\\project\\pcb\\vendor_assets_local\\datasheets\\C347278.pdf",
+    "sha256": "162df1416fa16eadefc4d9fb2f46121df5c48569a40255a0ddfb9a01e14c166f"
+  },
+  {
+    "path": "${REPO_ROOT}\\project\\pcb\\vendor_assets_local\\datasheets\\C5199867.pdf",
+    "sha256": "ebcbb210b448e54f27f8ae13686619e83c1ca18d60dfc7d3fe8cbfd7609456b5"
+  },
+  {
+    "path": "${REPO_ROOT}\\project\\pcb\\vendor_assets_local\\datasheets\\C8678.pdf",
+    "sha256": "fb4970875779696914d235bcf954240569302fb325399838f2861d474cbf9760"
+  },
+  {
+    "path": "${REPO_ROOT}\\project\\pcb\\vendor_assets_local\\datasheets\\C20526.pdf",
+    "sha256": "6c2034cb0bd0d85be51c9c4f82aad838a688aa70c20de1a71681be8ec02b659b"
+  },
+  {
+    "path": "${REPO_ROOT}\\project\\pcb\\vendor_assets_local\\datasheets\\sn74hct14.pdf",
+    "sha256": "925eabf18762f43fff8c774e33c0b9d6e22293e95833adebfaab86728eb2cb0e"
+  }
+]

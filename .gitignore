@@ -26,3 +26,11 @@ venv/
 !.env.example
 *.pem
 *.key
+
+# Commercial downloads and local classification metadata (review rights before sharing)
+/project/pcb/vendor_assets_local/
+
+# Local KiCad history and manual backup, kept on disk
+/project/pcb/.history/
+/project/pcb/redesign/.history/
+/project/pcb/Buck.bak

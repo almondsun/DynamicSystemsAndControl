@@ -1,0 +1,30 @@
+(version 1)
+(rule "Standard two-layer through vias only"
+  (constraint disallow micro_via blind_via buried_via))
+(rule "No open via holes in SMD pads"
+  (condition "B.Pad_Type == 'SMD'")
+  (constraint physical_hole_clearance (min 0.20mm)))
+(rule "Courtyard assembly preference"
+  (constraint courtyard_clearance (min 0.25mm)))
+(rule "SW separation from analog"
+  (condition "(A.NetName == 'SW' && B.hasNetclass('ANALOG_SENSE')) || (B.NetName == 'SW' && A.hasNetclass('ANALOG_SENSE'))")
+  (constraint clearance (min 0.50mm)))
+(rule "SW layer change needs review"
+  (severity warning)
+  (condition "A.NetName == 'SW'")
+  (constraint disallow via))
+(rule "Gate loop layer change needs review"
+  (severity warning)
+  (condition "A.hasNetclass('GATE_DRIVER')")
+  (constraint disallow via))
+(rule "VIN width review outside pads"
+  (severity warning)
+  (condition "A.Type == 'Track' && A.NetName == 'VIN' && !A.intersectsCourtyard('*')")
+  (constraint track_width (min 3.0mm) (opt 3.0mm)))
+(rule "SW and LMID width review outside pads"
+  (severity warning)
+  (condition "A.Type == 'Track' && (A.NetName == 'SW' || A.NetName == 'LMID') && !A.intersectsCourtyard('*')")
+  (constraint track_width (min 2.0mm) (opt 2.0mm)))
+(rule "Minimum thermal relief spoke count 1"
+	(constraint min_resolved_spokes 1)
+)

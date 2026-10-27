@@ -1,0 +1,30 @@
+{
+  "review_date": "2026-10-27",
+  "scope": "Catalog MPN/code/package identity for quote only; no land, thermal, electrical or live PCBA stock approval.",
+  "parts": {
+    "C136279": ["25SVPF100M", "SMD D8x6.9mm", "PCAP_SVP_E7_PAN", "https://jlcpcb.com/partdetail/PANASONIC-25SVPF100M/C136279"],
+    "C454354": ["50SVF10M", "SMD D6.3x5.9mm", "CAP_SVF_C6_PAN", "https://lcsc.com/product-detail/Solid-Polymer-Electrolytic-Capacitor_PANASONIC-50SVF10M_C454354.html"],
+    "C14663": ["CC0603KRX7R9BB104", "0603", "C_0603_1608Metric", "https://jlcpcb.com/partdetail/C14663"],
+    "C8678": ["SS34", "SMA DO-214AC", "D_SMA", "https://jlcpcb.com/partdetail/C8678"],
+    "C160588": ["RLP25FEER050", "2512", "R_2512_6332Metric", "https://jlcpcb.com/partdetail/ta_iTech-RLP25FEER050/C160588"],
+    "C50254": ["CL31B225KBHNNNE", "1206", "C_1206_3216Metric", "https://jlcpcb.com/partdetail/C50254"],
+    "C73142": ["CL21B334KBFNNNE", "0805", "C_0805_2012Metric", "https://jlcpcb.com/partdetail/74255-CL21B334KBFNNNE/C73142"],
+    "C15850": ["CL21A106KAYNNNE", "0805", "C_0805_2012Metric", "https://jlcpcb.com/partdetail/C15850"],
+    "C17415": ["0805W8F100JT5E", "0805", "R_0805_2012Metric", "https://jlcpcb.com/partdetail/0805W8F100JT5E/C17415"],
+    "C25804": ["0603WAF1002T5E", "0603", "R_0603_1608Metric", "https://jlcpcb.com/partdetail/C25804"],
+    "C21190": ["0603WAF1001T5E", "0603", "R_0603_1608Metric", "https://jlcpcb.com/partdetail/C21190"],
+    "C2968": ["IR2110STRPBF", "SOIC-16 300mil", "SOIC-16W_7.5x10.3mm_P1.27mm", "https://jlcpcb.com/partdetail/IR2110STRPBF/C2968"],
+    "C347278": ["78M05", "TO-252", "TO-252-2", "https://jlcpcb.com/partdetail/78M05/C347278"],
+    "C6769": ["SN74HCT14DR", "SOIC-14", "D14", "https://www.lcsc.com/product-detail/C6769.html"],
+    "C107083": ["CC0603KRX7R9BB224", "0603", "C_0603_1608Metric", "https://jlcpcb.com/partdetail/YAGEO-CC0603KRX7R9BB224/C107083"],
+    "C20526": ["MMBT3904", "SOT-23", "SOT-23", "https://jlcpcb.com/partdetail/21237-MMBT3904/C20526"],
+    "C23162": ["0603WAF4701T5E", "0603", "R_0603_1608Metric", "https://jlcpcb.com/partdetail/C23162"],
+    "C22809": ["0603WAF1502T5E", "0603", "R_0603_1608Metric", "https://jlcpcb.com/partdetail/0603WAF1502T5E/C22809"],
+    "C844354": ["CRCW060330K9FKEA", "0603", "R_0603_1608Metric", "https://jlcpcb.com/partdetail/VishayIntertech-CRCW060330K9FKEA/C844354"],
+    "C6764": ["SN74HCT00DR", "SOIC-14", "D14", "https://www.lcsc.com/product-detail/C6764.html"],
+    "C2865059": ["LM393BIDR", "SOIC-8", "D0008A-MFG", "https://www.lcsc.com/product-detail/C2865059.html"],
+    "C122228": ["INA180A1IDBVR", "SOT-23-5", "DBV0005A_N", "https://jlcpcb.com/partdetail/INA180A1IDBVR/C122228"],
+    "C1636": ["0603CG102J500NT", "0603", "C_0603_1608Metric", "https://jlcpcb.com/partdetail/1988-0603CG102J500NT/C1636"],
+    "C4190": ["0603WAF2201T5E", "0603", "R_0603_1608Metric", "https://jlcpcb.com/partdetail/C4190"]
+  }
+}

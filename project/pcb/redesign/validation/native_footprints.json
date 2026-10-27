@@ -1,0 +1,230 @@
+{
+  "kicad": "10.0.4",
+  "loaded": [
+    {
+      "footprint": "Buck_SMD:CAP_SVF_C6_PAN",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "Diode_SMD:D_SMA",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "Buck:Inductor_25mm_P10mm_VERIFY",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "Buck_SMD:PCAP_SVP_E7_PAN",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "footprint": "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ]
+    },
+    {
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "Package_TO_SOT_SMD:TO-252-2",
+      "native_loaded": true,
+      "pads": [
+        "",
+        "",
+        "",
+        "",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "Buck_SMD:D14",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "footprint": "Buck_SMD:DBV0005A_N",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "footprint": "Buck_SMD:D0008A-MFG",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "footprint": "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm",
+      "native_loaded": true,
+      "pads": [
+        "1"
+      ]
+    },
+    {
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical",
+      "native_loaded": true,
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    }
+  ]
+}

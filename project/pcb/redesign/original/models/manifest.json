@@ -1,0 +1,62 @@
+{
+  "Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.step",
+    "sha256": "46710ac36957e4073ef7e80153823ef7db1ea12932074cb71f43bc4b476a74dc"
+  },
+  "Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step",
+    "sha256": "39dc7bf95fed00917ab20af81ff9e25a70f8d003bc07cffea11840489a11933e"
+  },
+  "TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.step",
+    "sha256": "f8bbead3a3ea025610eade704d45b425c67286044556010a63a86ce85410314a"
+  },
+  "Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x05_P2.54mm_Vertical.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x05_P2.54mm_Vertical.step",
+    "sha256": "cd99322b0ccc253157acbe9c5c672ce9b37dbcd4d59fb001240a93110052cdce"
+  },
+  "Capacitor_THT.3dshapes/C_Disc_D5.0mm_W2.5mm_P5.00mm.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Capacitor_THT.3dshapes/C_Disc_D5.0mm_W2.5mm_P5.00mm.step",
+    "sha256": "5739d7f7288da1879d2a2e4a8d7f4d1ac5e5ad712d777b40e647ec559cf8ecba"
+  },
+  "Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.step",
+    "sha256": "c3e23d4b276811b74eecb329bd4480209ad3dbc8cf6e6e3f2a5b542c5ca343c1"
+  },
+  "Diode_THT.3dshapes/D_DO-201AD_P15.24mm_Horizontal.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Diode_THT.3dshapes/D_DO-201AD_P15.24mm_Horizontal.step",
+    "sha256": "74dfc3e30557da83985dc913a3e74e2db498d62d061b20b48cba0cdf7b37301b"
+  },
+  "Package_DIP.3dshapes/DIP-14_W7.62mm.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Package_DIP.3dshapes/DIP-14_W7.62mm.step",
+    "sha256": "3dae072a95c64bee0d1e58be8e75383639f5017ab982de1749d05808a4eed058"
+  },
+  "Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step",
+    "sha256": "7cb065d935df5771f0ba6e48ddd180863a121af76483dad7f18e667a7b68204a"
+  },
+  "Package_DIP.3dshapes/DIP-8_W7.62mm.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Package_DIP.3dshapes/DIP-8_W7.62mm.step",
+    "sha256": "4a377a56a8d9e9c0b86c095ef9ecc1869ac19e7f5069a3247b294250bf4f235d"
+  },
+  "Capacitor_THT.3dshapes/CP_Radial_D8.0mm_P3.50mm.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Capacitor_THT.3dshapes/CP_Radial_D8.0mm_P3.50mm.step",
+    "sha256": "abedfe603cd28231e16fb158d7b3f8875be74514f602e356364f48f073d0ef8e"
+  },
+  "Resistor_SMD.3dshapes/R_2512_6332Metric.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+    "sha256": "76b2052a3c120193de7cdc0af99157b6f375e9a4af7721e3e3d012968c877f27"
+  },
+  "Package_TO_SOT_SMD.3dshapes/SOT-23-5.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+    "sha256": "3b70f1b6dd947543fda90b947f91f2e2804766c39b78e56c87f1448dfd575ed8"
+  },
+  "Package_TO_SOT_THT.3dshapes/TO-92_Inline_Wide.step": {
+    "url": "https://raw.githubusercontent.com/KiCad/kicad-packages3D/master/Package_TO_SOT_THT.3dshapes/TO-92_Inline_Wide.step",
+    "sha256": "85b7de23bf92112c1cc60ca5fdb644f1a44e150a99f8c6f4f5f29010f50282b9"
+  },
+  "inductor-provisional.wrl": {
+    "source": "Generated provisional envelope; diameter 25 mm, thickness 10 mm, pitch 10 mm; supplier geometry unverified",
+    "sha256": "0e99dbe9f09200ea2ef6f68541a300137b847431a09b190d2b3053345ecd57be"
+  }
+}

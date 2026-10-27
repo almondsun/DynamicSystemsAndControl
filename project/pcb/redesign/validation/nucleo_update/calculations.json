@@ -1,0 +1,309 @@
+{
+  "adc": {
+    "gain": 0.12790697674418605,
+    "gain_1pct_min": 0.12569252077562326,
+    "gain_1pct_max": 0.13015463917525774,
+    "gain_85C_budget_min": 0.1243796906691964,
+    "gain_85C_budget_max": 0.13151926850610182,
+    "rth_ohm": 1918.6046511627908,
+    "tau_C17_1nF_s": 1.918604651162791e-06,
+    "fc_Hz": 82953.4854903212,
+    "mag_10kHz": 0.9928121578320537,
+    "phase_10kHz_deg": -6.873807672481108,
+    "output_volts_per_count": 0.0063003663003662995,
+    "rows": [
+      {
+        "vout_V": 5,
+        "vadc_nom_V": 0.6395348837209303,
+        "vadc_min_1pct_V": 0.6284626038781163,
+        "vadc_max_1pct_V": 0.6507731958762887,
+        "vadc_max_85C_budget_V": 0.6575963425305091,
+        "codes_endpoint_3V3": 793.6046511627908,
+        "off_clamp_0V3_countercase_A": 0.00017696969696969698,
+        "R14_power_W": 0.001267577068685776,
+        "R15_power_W": 0.00018591130340724714
+      },
+      {
+        "vout_V": 6,
+        "vadc_nom_V": 0.7674418604651163,
+        "vadc_min_1pct_V": 0.7541551246537396,
+        "vadc_max_1pct_V": 0.7809278350515465,
+        "vadc_max_85C_budget_V": 0.7891156110366109,
+        "codes_endpoint_3V3": 952.325581395349,
+        "off_clamp_0V3_countercase_A": 0.00024363636363636365,
+        "R14_power_W": 0.0018253109789075177,
+        "R15_power_W": 0.0002677122769064359
+      },
+      {
+        "vout_V": 7,
+        "vadc_nom_V": 0.8953488372093024,
+        "vadc_min_1pct_V": 0.8798476454293629,
+        "vadc_max_1pct_V": 0.9110824742268042,
+        "vadc_max_85C_budget_V": 0.9206348795427127,
+        "codes_endpoint_3V3": 1111.0465116279072,
+        "off_clamp_0V3_countercase_A": 0.00031030303030303027,
+        "R14_power_W": 0.002484451054624121,
+        "R15_power_W": 0.00036438615467820445
+      },
+      {
+        "vout_V": 8.18,
+        "vadc_nom_V": 1.0462790697674418,
+        "vadc_min_1pct_V": 1.0281648199445983,
+        "vadc_max_1pct_V": 1.0646649484536084,
+        "vadc_max_85C_budget_V": 1.0758276163799128,
+        "codes_endpoint_3V3": 1298.3372093023254,
+        "off_clamp_0V3_countercase_A": 0.0003889696969696969,
+        "R14_power_W": 0.003392664954029205,
+        "R15_power_W": 0.0004975908599242834
+      },
+      {
+        "vout_V": 12,
+        "vadc_nom_V": 1.5348837209302326,
+        "vadc_min_1pct_V": 1.5083102493074791,
+        "vadc_max_1pct_V": 1.561855670103093,
+        "vadc_max_85C_budget_V": 1.5782312220732218,
+        "codes_endpoint_3V3": 1904.651162790698,
+        "off_clamp_0V3_countercase_A": 0.0006436363636363636,
+        "R14_power_W": 0.007301243915630071,
+        "R15_power_W": 0.0010708491076257436
+      },
+      {
+        "vout_V": 13.2,
+        "vadc_nom_V": 1.6883720930232557,
+        "vadc_min_1pct_V": 1.659141274238227,
+        "vadc_max_1pct_V": 1.7180412371134022,
+        "vadc_max_85C_budget_V": 1.736054344280544,
+        "codes_endpoint_3V3": 2095.1162790697676,
+        "off_clamp_0V3_countercase_A": 0.0007236363636363636,
+        "R14_power_W": 0.008834505137912384,
+        "R15_power_W": 0.0012957274202271497
+      },
+      {
+        "vout_V": 20,
+        "vadc_nom_V": 2.558139534883721,
+        "vadc_min_1pct_V": 2.513850415512465,
+        "vadc_max_1pct_V": 2.6030927835051547,
+        "vadc_max_85C_budget_V": 2.6303853701220365,
+        "codes_endpoint_3V3": 3174.418604651163,
+        "off_clamp_0V3_countercase_A": 0.0011769696969696972,
+        "R14_power_W": 0.020281233098972416,
+        "R15_power_W": 0.002974580854515954
+      },
+      {
+        "vout_V": 24,
+        "vadc_nom_V": 3.0697674418604652,
+        "vadc_min_1pct_V": 3.0166204986149583,
+        "vadc_max_1pct_V": 3.123711340206186,
+        "vadc_max_85C_budget_V": 3.1564624441464435,
+        "codes_endpoint_3V3": 3809.302325581396,
+        "off_clamp_0V3_countercase_A": 0.0014436363636363637,
+        "R14_power_W": 0.029204975662520283,
+        "R15_power_W": 0.0042833964305029745
+      }
+    ],
+    "supply_scenarios": [
+      {
+        "vref_V": 3.0,
+        "vout_full_scale_nom_V": 23.454545454545453,
+        "vout_full_scale_worst_1pct_V": 23.04950495049505,
+        "max_code_at24V_1pct": 4263.865979381444
+      },
+      {
+        "vref_V": 3.135,
+        "vout_full_scale_nom_V": 24.509999999999998,
+        "vout_full_scale_worst_1pct_V": 24.086732673267324,
+        "max_code_at24V_1pct": 4080.25452572387
+      },
+      {
+        "vref_V": 3.3,
+        "vout_full_scale_nom_V": 25.799999999999997,
+        "vout_full_scale_worst_1pct_V": 25.354455445544552,
+        "max_code_at24V_1pct": 3876.2417994376765
+      },
+      {
+        "vref_V": 3.465,
+        "vout_full_scale_nom_V": 27.089999999999996,
+        "vout_full_scale_worst_1pct_V": 26.62217821782178,
+        "max_code_at24V_1pct": 3691.658856607311
+      }
+    ],
+    "estimate_gain_error_min": -0.06410763751483994,
+    "estimate_gain_error_max": 0.07112908794948947,
+    "sampling_cycles": 247.5,
+    "adc_clock_Hz": 20000000.0,
+    "sampling_s": 1.2375e-05,
+    "conversion_s": 1.3e-05,
+    "trigger_phase_s": 5e-05,
+    "C17_fullscale_settle_half_LSB_s": 1.7288380259314916e-05
+  },
+  "bootstrap": {
+    "Ihold_budget_A": 0.0016233333333333334,
+    "gate_Q_HYPOTHESIS_C": 1e-07,
+    "Qls_HYPOTHESIS_C": 5e-09,
+    "rows": [
+      {
+        "duty": 0.05,
+        "ton_s": 5e-06,
+        "toff_s": 9.499999999999999e-05,
+        "Q_C": 1.1311666666666666e-07,
+        "I_recharge_A": 0.0014807017543859648,
+        "dV_nom_2u2_V": 0.051416666666666666,
+        "dV_0bias_tol_T_V": 0.06721132897603485,
+        "dV_beta05_V": 0.1344226579520697
+      },
+      {
+        "duty": 0.4,
+        "ton_s": 4e-05,
+        "toff_s": 5.9999999999999995e-05,
+        "Q_C": 1.6993333333333336e-07,
+        "I_recharge_A": 0.003122222222222223,
+        "dV_nom_2u2_V": 0.07724242424242425,
+        "dV_0bias_tol_T_V": 0.10097048920578333,
+        "dV_beta05_V": 0.20194097841156666
+      },
+      {
+        "duty": 0.5,
+        "ton_s": 5e-05,
+        "toff_s": 5e-05,
+        "Q_C": 1.8616666666666666e-07,
+        "I_recharge_A": 0.004013333333333333,
+        "dV_nom_2u2_V": 0.08462121212121211,
+        "dV_0bias_tol_T_V": 0.11061596355714003,
+        "dV_beta05_V": 0.22123192711428005
+      },
+      {
+        "duty": 0.6,
+        "ton_s": 5.9999999999999995e-05,
+        "toff_s": 4e-05,
+        "Q_C": 2.024e-07,
+        "I_recharge_A": 0.005350000000000001,
+        "dV_nom_2u2_V": 0.092,
+        "dV_0bias_tol_T_V": 0.12026143790849673,
+        "dV_beta05_V": 0.24052287581699347
+      },
+      {
+        "duty": 0.65,
+        "ton_s": 6.500000000000001e-05,
+        "toff_s": 3.5e-05,
+        "Q_C": 2.105166666666667e-07,
+        "I_recharge_A": 0.006304761904761906,
+        "dV_nom_2u2_V": 0.09568939393939395,
+        "dV_0bias_tol_T_V": 0.1250841750841751,
+        "dV_beta05_V": 0.2501683501683502
+      },
+      {
+        "duty": 0.95,
+        "ton_s": 9.499999999999999e-05,
+        "toff_s": 5.000000000000005e-06,
+        "Q_C": 2.592166666666667e-07,
+        "I_recharge_A": 0.05213333333333329,
+        "dV_nom_2u2_V": 0.11782575757575758,
+        "dV_0bias_tol_T_V": 0.1540205981382452,
+        "dV_beta05_V": 0.3080411962764904
+      }
+    ],
+    "Ceff_sensitivity_not_manufacturer_curves": [
+      {
+        "retention_DC_age_HYPOTHESIS": 1,
+        "Ceff_F": 1.683e-06,
+        "dV_95_V": 0.1540205981382452,
+        "VBS_min_at10V8_VF0V9_VS0_V": 9.745979401861755,
+        "VBS_min_at12_VF0V9_VS0_V": 10.945979401861754
+      },
+      {
+        "retention_DC_age_HYPOTHESIS": 0.75,
+        "Ceff_F": 1.26225e-06,
+        "dV_95_V": 0.2053607975176603,
+        "VBS_min_at10V8_VF0V9_VS0_V": 9.69463920248234,
+        "VBS_min_at12_VF0V9_VS0_V": 10.89463920248234
+      },
+      {
+        "retention_DC_age_HYPOTHESIS": 0.5,
+        "Ceff_F": 8.415e-07,
+        "dV_95_V": 0.3080411962764904,
+        "VBS_min_at10V8_VF0V9_VS0_V": 9.59195880372351,
+        "VBS_min_at12_VF0V9_VS0_V": 10.79195880372351
+      },
+      {
+        "retention_DC_age_HYPOTHESIS": 0.25,
+        "Ceff_F": 4.2075e-07,
+        "dV_95_V": 0.6160823925529808,
+        "VBS_min_at10V8_VF0V9_VS0_V": 9.28391760744702,
+        "VBS_min_at12_VF0V9_VS0_V": 10.483917607447019
+      }
+    ],
+    "RC_recharge_HYPOTHESES": [
+      {
+        "R_path_HYPOTHESIS_ohm": 1,
+        "C_F": 2.2e-06,
+        "tau_s": 2.2e-06,
+        "periodic_min_drop_at95pct_V": 0.13135987058473633,
+        "startup_to10V_if_ceiling11V1_s": 5.08559684273072e-06
+      },
+      {
+        "R_path_HYPOTHESIS_ohm": 1,
+        "C_F": 8.415e-07,
+        "tau_s": 8.415e-07,
+        "periodic_min_drop_at95pct_V": 0.3088526675527623,
+        "startup_to10V_if_ceiling11V1_s": 1.9452407923445004e-06
+      },
+      {
+        "R_path_HYPOTHESIS_ohm": 5,
+        "C_F": 2.2e-06,
+        "tau_s": 1.1e-05,
+        "periodic_min_drop_at95pct_V": 0.3225773487570716,
+        "startup_to10V_if_ceiling11V1_s": 2.54279842136536e-05
+      },
+      {
+        "R_path_HYPOTHESIS_ohm": 5,
+        "C_F": 8.415e-07,
+        "tau_s": 4.2075e-06,
+        "periodic_min_drop_at95pct_V": 0.4430477692537736,
+        "startup_to10V_if_ceiling11V1_s": 9.726203961722503e-06
+      },
+      {
+        "R_path_HYPOTHESIS_ohm": 10,
+        "C_F": 2.2e-06,
+        "tau_s": 2.2e-05,
+        "periodic_min_drop_at95pct_V": 0.5795758418208636,
+        "startup_to10V_if_ceiling11V1_s": 5.08559684273072e-05
+      },
+      {
+        "R_path_HYPOTHESIS_ohm": 10,
+        "C_F": 8.415e-07,
+        "tau_s": 8.415e-06,
+        "periodic_min_drop_at95pct_V": 0.6876175159359462,
+        "startup_to10V_if_ceiling11V1_s": 1.9452407923445005e-05
+      },
+      {
+        "R_path_HYPOTHESIS_ohm": 25,
+        "C_F": 2.2e-06,
+        "tau_s": 5.5e-05,
+        "periodic_min_drop_at95pct_V": 1.3558887085706466,
+        "startup_to10V_if_ceiling11V1_s": 0.000127139921068268
+      },
+      {
+        "R_path_HYPOTHESIS_ohm": 25,
+        "C_F": 8.415e-07,
+        "tau_s": 2.10375e-05,
+        "periodic_min_drop_at95pct_V": 1.4561992291190462,
+        "startup_to10V_if_ceiling11V1_s": 4.863101980861251e-05
+      }
+    ],
+    "VBS_recommended_min_V": 10.0,
+    "charge_ceiling_10V8_VF0V9_VS0_V": 9.9,
+    "initial_charge_nom_at11V1_C": 2.442e-05,
+    "initial_charge_nom_at12V3_C": 2.7060000000000002e-05,
+    "startup_L660uH_C2u2_f0_Hz": 4176.734056225697
+  },
+  "minor": {
+    "ovp_old_V": 8.2,
+    "ovp_new_V": 8.18,
+    "ovp_delta_pct": -0.24390243902439046,
+    "ovp_res_supply_only_min_V": 7.563069010493864,
+    "ovp_res_supply_only_max_V": 8.824941701584988,
+    "C16_tolerance_T_only_F": 1.6830000000000002e-07,
+    "C16_required_DC_age_retention": 0.5941770647653,
+    "C16_illustrative_DC095_age090_F": 1.4389650000000002e-07
+  }
+}
