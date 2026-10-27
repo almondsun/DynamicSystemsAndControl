@@ -1,5 +1,5 @@
 {
- "checked_utc": "2026-10-27T17:24:56+00:00",
+ "checked_utc": "2026-10-27T18:29:10+00:00",
  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList",
  "parts": [
   {
@@ -24,7 +24,7 @@
    "brand": "Samsung Electro-Mechanics",
    "package": "0805",
    "library": "base",
-   "stock": 8758952,
+   "stock": 8758865,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -63,7 +63,7 @@
    "brand": "YAGEO",
    "package": "0603",
    "library": "base",
-   "stock": 41578532,
+   "stock": 41579235,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -89,7 +89,7 @@
    "brand": "Samsung Electro-Mechanics",
    "package": "1206",
    "library": "base",
-   "stock": 385892,
+   "stock": 385832,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -115,7 +115,7 @@
    "brand": "MDD(Microdiode Semiconductor)",
    "package": "SMA(DO-214AC)",
    "library": "base",
-   "stock": 3554546,
+   "stock": 3554994,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -128,22 +128,9 @@
    "brand": "Diodes Incorporated",
    "package": "SOD-323",
    "library": "expand",
-   "stock": 110056,
+   "stock": 110016,
    "buyable": "1",
    "min_purchase": 1
-  },
-  {
-   "lcsc": "C6823957",
-   "designators": "L1,L2",
-   "qty_per_board": 2,
-   "bom_mpn": "60B334C",
-   "mpn": "60B334C",
-   "brand": "Murata Electronics",
-   "package": "SMD,27x19.5mm",
-   "library": "expand",
-   "stock": 0,
-   "buyable": "1",
-   "min_purchase": 2
   },
   {
    "lcsc": "C20526",
@@ -154,7 +141,7 @@
    "brand": "Jiangsu Changjing Electronics Technology Co., Ltd.",
    "package": "SOT-23",
    "library": "base",
-   "stock": 2151171,
+   "stock": 2151236,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -167,20 +154,20 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0805",
    "library": "base",
-   "stock": 5871807,
+   "stock": 5871682,
    "buyable": "1",
    "min_purchase": 1
   },
   {
-   "lcsc": "C844354",
+   "lcsc": "C23022",
    "designators": "R10",
    "qty_per_board": 1,
-   "bom_mpn": "CRCW060330K9FKEA",
-   "mpn": "CRCW060330K9FKEA",
-   "brand": "Vishay Intertech",
+   "bom_mpn": "0603WAF3092T5E",
+   "mpn": "0603WAF3092T5E",
+   "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "expand",
-   "stock": 5,
+   "stock": 121690,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -193,7 +180,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 5837069,
+   "stock": 5836202,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -206,7 +193,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 17664045,
+   "stock": 17662246,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -219,7 +206,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 3078899,
+   "stock": 3078844,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -232,7 +219,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 38807824,
+   "stock": 38803778,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -245,7 +232,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 33623870,
+   "stock": 33623024,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -258,7 +245,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 16653390,
+   "stock": 16652646,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -271,7 +258,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 3734533,
+   "stock": 3734577,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -323,7 +310,7 @@
    "brand": "UMW(Youtai Semiconductor Co., Ltd.)",
    "package": "TO-252",
    "library": "expand",
-   "stock": 248148,
+   "stock": 248256,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -375,7 +362,7 @@
    "brand": "Texas Instruments",
    "package": "SOT-23-5",
    "library": "expand",
-   "stock": 79029,
+   "stock": 79004,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -401,7 +388,7 @@
    "brand": "Texas Instruments",
    "package": "TSSOP-14",
    "library": "expand",
-   "stock": 2688,
+   "stock": 2678,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -414,7 +401,7 @@
    "brand": "Texas Instruments",
    "package": "SOT-23-6",
    "library": "expand",
-   "stock": 50117,
+   "stock": 50122,
    "buyable": "1",
    "min_purchase": 1
   }

@@ -1,12 +1,12 @@
 # Buck Rev B — informe de liberación del prototipo
 
-**Estado: PROTOTIPO PENDIENTE DE PUESTA EN MARCHA. NO RECOMENDADO PAGAR TODAVÍA.** Los archivos CAD y de fabricación están completos y verificados en computador, pero quedan bloqueos de suministro y de revisión en el portal que el plan exige cerrar antes del pedido (sección 7). No es un diseño validado térmica ni experimentalmente. No se accedió a cuentas, no se subió nada ni se pagó.
+**Estado: LISTO PARA PEDIR COMO PROTOTIPO DE LABORATORIO** — PCB con ensamblaje SMT superior de 62 piezas en JLCPCB; L1/L2 y las piezas THT se sueldan a mano (sección 7). Verificado en computador; no es un diseño validado térmica ni experimentalmente. No se accedió a cuentas, no se subió nada a JLCPCB ni se pagó: el pedido lo hace el usuario.
 
 | Identificación | Valor |
 |---|---|
 | Revisión | B, 2026-10-27 (título de hojas «REV B PROTOTYPE») |
 | Proyecto | `project/pcb/redesign/buck.kicad_pro` (KiCad 10.0.7) |
-| PCB SHA-256 | `d1dda4c1ab6b64db18240570a3af670aa0abed413a410cefdd3bfeda5349d6b5` |
+| PCB SHA-256 | `745381f255f3c3d0d3f8d2cd6daa28ff16a616c3eb416cacf81813b22210c963` |
 | Paquete | `production/jlcpcb-revB-2026-10-27/` (hashes en `SHA256SUMS.txt`) |
 | Revisión A preservada | `history/revA_quote_20261027/` (PCB `b36ae24a…`, idéntica a la cotización Rev A) y su paquete `production/jlcpcb-quote-2026-10/` sin cambios |
 | Placa | 2 capas, FR-4 1,6 mm, 1 oz, contorno sin cambios 105,55 × 81,05 mm, sin orificios de fijación |
@@ -17,7 +17,7 @@
 
 ## 2. Puerta 1
 
-Detalle en [revB_gate1_components.md](revB_gate1_components.md). Herramientas y dibujos: **cerradas**. Suministro para ensamblaje JLCPCB: **no cerrada** (L1/L2 sin stock en JLCPCB ni LCSC).
+Detalle en [revB_gate1_components.md](revB_gate1_components.md). Herramientas y dibujos: **cerradas**. Suministro para ensamblaje JLCPCB: **cerrada por decisión** (sección 7): L1/L2 sin stock en JLCPCB/LCSC se montan a mano.
 
 ## 3. Cambios eléctricos
 
@@ -90,8 +90,8 @@ Generadas desde el dibujo del fabricante (`revb_tools/footprints_revb.py`, bibli
 | Reglas añadidas | Una: holgura 0,19 mm solo entre pads del mismo encapsulado U7/U8; el land TI PW0014A tiene 0,20 mm entre pads, menor que la holgura de clase. No relaja otras holguras ni oculta avisos |
 | Gerbers | ZIP íntegro (CRC), 12 archivos; renderizados con pygerber 2.4.3 e inspeccionados: cobre, máscara (vías tapadas), pasta, serigrafía y contorno |
 | Taladros | 415 PTH, 0 NPTH: vías 0,3 (43) y 0,4 (344), TP 1,0 (9), J3/D2 1,1 (12), J1/J2 1,3 (4), Q1 1,4 (3) |
-| BOM/CPL | 32 líneas / 64 colocaciones en cara superior, conciliadas con netlist y posiciones nativas; sin duplicados ni MPN contradictorios |
-| Stock JLCPCB del BOM final | 31/32 líneas con stock ≥ 5 placas (`evidence/jlc_stock_revB.json`, 2026-10-27 17:21 UTC); L1/L2: 0 |
+| BOM/CPL | 31 líneas / 62 colocaciones en cara superior (L1/L2 fuera, montaje manual), conciliadas con netlist y posiciones nativas; sin duplicados ni MPN contradictorios |
+| Stock JLCPCB del BOM final | 31/31 líneas con stock para ≥ 20 placas (`evidence/jlc_stock_revB.json`, 2026-10-27 18:29 UTC) |
 | Firmware | Prueba de host (ASan/UBSan) en verde; imagen ARM **no compilada** (sin `arm-none-eabi-gcc` en este equipo) |
 | Revisión independiente del layout | Sin hallazgos críticos; confirmó DRC/paridad, Kelvin, analógicas ≥ 30 mm de SW, ausencia de vías en el lazo de puerta, holguras taladro/pin (Q1 0,22 mm, J3 0,195 mm), vías tapadas e integridad del paquete. Aplicado: enlace S→K directo, centroide de U2 en la CPL (−42,84 mm), regla de radios térmicos restaurada a 2 |
 
@@ -101,16 +101,23 @@ Avisos DRC justificados individualmente:
 2. `VIN width review` — VIN 0,5 mm en F.Cu (121,0; 96,9), 1,0 mm: alimentación VCC de U1 (≤ 1 mA medio).
 3. `VIN width review` — VIN 0,5 mm en B.Cu (123,4; 96,9), 2,4 mm: mismo ramal VCC.
 
-## 7. Bloqueos y decisiones pendientes (no son aprobaciones condicionadas)
+## 7. Decisiones para el pedido (2026-10-27)
 
-1. **L1/L2 Murata 60B334C sin stock en JLCPCB ni LCSC** (DigiKey 582). Decidir: Global Sourcing en la cuenta JLCPCB, consigna, o placa sin L1/L2 y soldadura manual (huella idéntica). Sin esto el ensamblaje SMT pedido por el plan no es posible.
-2. **Sustitución LM4040AIM3-2.5/NOPB → LM4040AIM3X-2.5/NOPB** (mismo dispositivo según TI, otra bobina): requiere su aceptación.
-3. **R10 (C844354) con 5 unidades en JLCPCB**, sin margen de merma para 5 placas. Alternativa propuesta, no aplicada: UNI-ROYAL 0603WAF3092T5E (C23022, 121 690 uds.).
-4. **Visualizador de ensamblaje de JLCPCB**: comprobar las 64 rotaciones (prioridad: pin 1 de U1–U10, C1/C2/C4/C5, D1, D3–D5, Q2, L1/L2). La CPL usa las rotaciones nativas de KiCad sin correcciones adivinadas.
-5. **Compilar el firmware ARM** (`firmware_l432kc/build.py`) en un equipo con la cadena GCC ARM antes de programar.
-6. Comprar a mano: UF4004-E3/54 (LCSC sin stock; DigiKey), TB002-500-02BE ×2, 61201021621, IRFZ44NPBF, IDC 61201023021 y cable 63911015521CAB (`manual_assembly_revB.csv`).
-7. Puesta en marcha según [revB_first_power_on.md](revB_first_power_on.md): incluye la medida de NUC_3V3 frente al umbral de U9 (M1), el bootstrap a 12 V y la calibración ADC. `BUCK_BOARD_REVIEWED` sigue en 0.
-8. Mecánica: sin orificios de fijación (usar soporte aislante por los bordes); la pestaña de Q1 (drenador = VIN) queda a 1,3 mm del terminal SW de L1: soldar Q1 perpendicular (≈ 5° de inclinación la acercaría al contacto). J1 y L1/L2 llegan al borde; JLCPCB podría pedir rieles. Serigrafía de 0,8 mm y líneas de 0,12 mm pueden salir tenues (cosmético).
+Tomadas tras una segunda opinión externa (no formal) que señalaba la separación Q1–L1, el suministro de L1/L2, las condiciones de bootstrap, los transitorios de apagado y la revisión del pedido real:
+
+| Punto | Decisión aplicada |
+|---|---|
+| Pestaña de Q1 (VIN) junto al terminal SW de L1 | Cadena L1→L2→RS1→salida desplazada 2 mm: separación **1,28 → 3,29 mm** con dimensiones máximas (E de Infineon, 23,5 mm de Murata); courtyards a 2,35 mm. Rerruteado; DRC 0/0/0 |
+| L1/L2 sin stock JLCPCB/LCSC | **No los coloca JLCPCB**: fuera de BOM/CPL, comprar 60B334C (DigiKey 811-2464-ND) y soldar a mano; la pasta queda en sus pads |
+| LM4040AIM3-2.5/NOPB sin stock | **Aceptada** la variante LM4040AIM3X-2.5/NOPB (C111866), mismo dispositivo según TI SNOS633N §11 |
+| R10 con 5 unidades | **Cambiada** a UNI-ROYAL 0603WAF3092T5E (C23022): 30,9 kΩ 1 % 0603, ±100 ppm/°C como la anterior; el umbral OVP no cambia |
+| Firmware ARM sin compilar | No bloquea la fabricación; compilar con `build.py` antes de programar |
+
+Al pedir (pasos del usuario en el portal, ver `production/.../README.md`): revisar Gerbers en el visor, confirmar 31 líneas y 62 colocaciones sin sustituciones automáticas y comprobar las rotaciones en el visualizador (tabla en el README). Comprar aparte las piezas de `manual_assembly_revB.csv`.
+
+## 7b. Uso previsto y límites de esta placa
+
+Primera placa **exclusivamente para laboratorio**: entrada regulada de **12 V** con límite de corriente, **carga resistiva** (6 Ω del curso), pruebas de arranque y protección **supervisadas** según [revB_first_power_on.md](revB_first_power_on.md). Fuera de alcance: 10,8 V o menos (VBS < 10 V posible por debajo de ≈ 11,2 V), arranque con salida precargada y cargas electrónicas o sensibles. Al apagar Q1 por protección, la energía de L1/L2 (½·L·I² ≈ 1,3 mJ a 2 A) pasa a C4/C5; sin carga, una transferencia ideal daría ≈ 13 V de pico: dentro de los 50 V de C4/C5 y 40 V de D1, pero los transitorios reales no se han medido. Sin orificios de fijación: soporte aislante por los bordes; soldar Q1 perpendicular a la placa.
 
 ## 8. Entregables
 

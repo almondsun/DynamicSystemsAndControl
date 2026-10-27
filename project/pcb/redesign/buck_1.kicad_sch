@@ -3565,7 +3565,8 @@
     (pin "2"
       (uuid "6ad3f173-ff20-467b-bf42-b8d3bf7f54c4")
     )
-    (property "MPN" "60B334C" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Murata Power Solutions" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C6823957" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "JLC_SMT_TOP_SUPPLY_BLOCKED" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "MPN" "60B334C" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Murata Power Solutions" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C6823957" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "MANUAL_SMD_DNP_AT_JLC" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "Supply_Note" "JLC/LCSC stock 0 on 2026-10-27; buy 60B334C (DigiKey 811-2464-ND) and hand-solder" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
     (instances
       (project "buck"
         (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
@@ -4406,7 +4407,8 @@
     (pin "1"
       (uuid "38de74b3-1ce4-4f07-9f1f-a7af0db2db4a")
     )
-    (property "MPN" "60B334C" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Murata Power Solutions" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C6823957" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "JLC_SMT_TOP_SUPPLY_BLOCKED" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "MPN" "60B334C" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Murata Power Solutions" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C6823957" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "MANUAL_SMD_DNP_AT_JLC" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "Supply_Note" "JLC/LCSC stock 0 on 2026-10-27; buy 60B334C (DigiKey 811-2464-ND) and hand-solder" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27))))
     (instances
       (project "buck"
         (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"

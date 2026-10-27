@@ -1,4 +1,4 @@
-"""Rev B placement: reference -> (x mm, y mm, rotation deg). Board 105.38..210.98 x 31.43..112.53.
+"""Rev B placement (output chain moved +2 mm for >= 3 mm between the Q1 tab and L1 SW clip): reference -> (x mm, y mm, rotation deg). Board 105.38..210.98 x 31.43..112.53.
 
 Switching cell (bottom-left): Q1 rot 270 gives G/D/S top-to-bottom with the drain tab facing L1;
 U1 rot 180 sits left of Q1 so HO (top) and VS (lower) reach G and S without crossing; S, D1
@@ -14,8 +14,8 @@ PLACEMENT = {
     "C3": (129.6, 82.4, 180),
     # Switching cell: Q1 G/D/S at y 87.4/89.94/92.48; S, D1 cathode and L1 pad 1 within ~6 mm.
     "Q1": (129.6, 87.4, 270),
-    "D1": (129.8, 99.6, 180),
-    "TP3": (131.0, 104.2, 0),
+    "D1": (131.3, 99.6, 180),
+    "TP3": (133.0, 104.2, 0),
     "TP4": (126.2, 81.0, 0),
     # Gate driver: U1 right column (HO, VB, VS) faces Q1; D2 cathode pad sits inside the HO/VS loop,
     # HO passes under the D2 body, VS runs under C6 to S, R2 sits beside the drain pad.
@@ -27,16 +27,16 @@ PLACEMENT = {
     "C7": (122.5, 94.6, 0),
     "TP2": (114.0, 108.5, 0),
     # Inductors, shunt, output.
-    "L1": (146.0, 98.5, 0),
-    "L2": (171.2, 98.5, 0),
-    "RS1": (188.4, 98.5, 0),
-    "U6": (188.4, 92.5, 0),
-    "C16": (190.7, 89.5, 0),
-    "C4": (198.5, 98.5, 0),
-    "C5": (198.5, 90.0, 0),
-    "J2": (196.0, 107.4, 0),
-    "TP5": (189.5, 106.0, 0),
-    "TP6": (185.5, 86.5, 0),
+    "L1": (148.0, 98.5, 0),
+    "L2": (173.2, 98.5, 0),
+    "RS1": (190.4, 98.5, 0),
+    "U6": (190.4, 92.5, 0),
+    "C16": (192.7, 89.5, 0),
+    "C4": (200.5, 98.5, 0),
+    "C5": (200.5, 90.0, 0),
+    "J2": (198.0, 107.4, 0),
+    "TP5": (191.5, 106.0, 0),
+    "TP6": (187.5, 86.5, 0),
     # Supplies (78M05 next to J1).
     "U2": (127.0, 42.0, 90),
     "C9": (121.0, 46.5, 90),

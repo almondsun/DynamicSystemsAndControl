@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_sch</source>
-    <date>2026-10-27T11:15:59</date>
+    <date>2026-10-27T13:25:45</date>
     <tool>Eeschema 10.0.7</tool>
     <textvar name="BUCK_RULES_STATUS">PRELIMINARY - ELECTRICAL AND MECHANICAL HOLDS REMAIN</textvar>
     <textvar name="STACKUP_TARGET">2L FR4 1.6mm nominal; finished Cu 1oz each side (35um nominal, NOT guaranteed minimum)</textvar>
@@ -435,7 +435,8 @@
         <field name="MPN">60B334C</field>
         <field name="Manufacturer">Murata Power Solutions</field>
         <field name="LCSC">C6823957</field>
-        <field name="Assembly">JLC_SMT_TOP_SUPPLY_BLOCKED</field>
+        <field name="Assembly">MANUAL_SMD_DNP_AT_JLC</field>
+        <field name="Supply_Note">JLC/LCSC stock 0 on 2026-10-27; buy 60B334C (DigiKey 811-2464-ND) and hand-solder</field>
         <field name="Migration_Status">REV B - PART FIXED BY RELEASE PLAN</field>
         <field name="Candidate_MPN">Murata 60B334C</field>
         <field name="Candidate_LCSC">C6823957</field>
@@ -449,7 +450,8 @@
       <property name="MPN" value="60B334C"/>
       <property name="Manufacturer" value="Murata Power Solutions"/>
       <property name="LCSC" value="C6823957"/>
-      <property name="Assembly" value="JLC_SMT_TOP_SUPPLY_BLOCKED"/>
+      <property name="Assembly" value="MANUAL_SMD_DNP_AT_JLC"/>
+      <property name="Supply_Note" value="JLC/LCSC stock 0 on 2026-10-27; buy 60B334C (DigiKey 811-2464-ND) and hand-solder"/>
       <property name="Migration_Status" value="REV B - PART FIXED BY RELEASE PLAN"/>
       <property name="Candidate_MPN" value="Murata 60B334C"/>
       <property name="Candidate_LCSC" value="C6823957"/>
@@ -476,7 +478,8 @@
         <field name="MPN">60B334C</field>
         <field name="Manufacturer">Murata Power Solutions</field>
         <field name="LCSC">C6823957</field>
-        <field name="Assembly">JLC_SMT_TOP_SUPPLY_BLOCKED</field>
+        <field name="Assembly">MANUAL_SMD_DNP_AT_JLC</field>
+        <field name="Supply_Note">JLC/LCSC stock 0 on 2026-10-27; buy 60B334C (DigiKey 811-2464-ND) and hand-solder</field>
         <field name="Migration_Status">REV B - PART FIXED BY RELEASE PLAN</field>
         <field name="Candidate_MPN">Murata 60B334C</field>
         <field name="Candidate_LCSC">C6823957</field>
@@ -490,7 +493,8 @@
       <property name="MPN" value="60B334C"/>
       <property name="Manufacturer" value="Murata Power Solutions"/>
       <property name="LCSC" value="C6823957"/>
-      <property name="Assembly" value="JLC_SMT_TOP_SUPPLY_BLOCKED"/>
+      <property name="Assembly" value="MANUAL_SMD_DNP_AT_JLC"/>
+      <property name="Supply_Note" value="JLC/LCSC stock 0 on 2026-10-27; buy 60B334C (DigiKey 811-2464-ND) and hand-solder"/>
       <property name="Migration_Status" value="REV B - PART FIXED BY RELEASE PLAN"/>
       <property name="Candidate_MPN" value="Murata 60B334C"/>
       <property name="Candidate_LCSC" value="C6823957"/>
@@ -1589,30 +1593,32 @@
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <datasheet>${KIPRJMOD}/libraries/datasheets/Vishay_DCRCW.pdf</datasheet>
       <fields>
+        <field name="Substitution_Note">Rev B order: CRCW060330K9FKEA (C844354) had 5 in JLC stock; same 30.9k 1% 0603, +-100 ppm</field>
         <field name="Migration_Status">NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN</field>
         <field name="Candidate_MPN">CRCW060330K9FKEA</field>
         <field name="Candidate_LCSC">C844354</field>
         <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
         <field name="Migration_Notes">30.9k accepted by user. Nominal OVP 8.20 to 8.18V.</field>
-        <field name="MPN">CRCW060330K9FKEA</field>
-        <field name="LCSC">C844354</field>
-        <field name="Manufacturer">Vishay</field>
-        <field name="Commercial_URL">https://jlcpcb.com/partdetail/VishayIntertech-CRCW060330K9FKEA/C844354</field>
+        <field name="MPN">0603WAF3092T5E</field>
+        <field name="LCSC">C23022</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C23022</field>
         <field name="Previous_Review_Value">31k 1%</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet">${KIPRJMOD}/libraries/datasheets/Vishay_DCRCW.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="R10" description=""/>
+      <property name="Substitution_Note" value="Rev B order: CRCW060330K9FKEA (C844354) had 5 in JLC stock; same 30.9k 1% 0603, +-100 ppm"/>
       <property name="Migration_Status" value="NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN"/>
       <property name="Candidate_MPN" value="CRCW060330K9FKEA"/>
       <property name="Candidate_LCSC" value="C844354"/>
       <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
       <property name="Migration_Notes" value="30.9k accepted by user. Nominal OVP 8.20 to 8.18V."/>
-      <property name="MPN" value="CRCW060330K9FKEA"/>
-      <property name="LCSC" value="C844354"/>
-      <property name="Manufacturer" value="Vishay"/>
-      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/VishayIntertech-CRCW060330K9FKEA/C844354"/>
+      <property name="MPN" value="0603WAF3092T5E"/>
+      <property name="LCSC" value="C23022"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C23022"/>
       <property name="Previous_Review_Value" value="31k 1%"/>
       <property name="Sheetname" value="Independent protection"/>
       <property name="Sheetfile" value="buck_3.kicad_sch"/>
