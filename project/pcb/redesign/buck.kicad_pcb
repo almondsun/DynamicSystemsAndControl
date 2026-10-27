@@ -18557,7 +18557,7 @@
 				)
 			)
 		)
-		(property "Assembly" "JLC_SMT_TOP"
+		(property "Assembly" "MANUAL_SMD_DNP_AT_JLC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18569,7 +18569,7 @@
 				)
 			)
 		)
-		(property "Supply_Note" "Replaces 2 x 60B334C (no JLC/LCSC stock); JLC stock 17 on 2026-10-27; 680 uH = +3 % vs 660 uH"
+		(property "Supply_Note" "Not placed by JLC: 6000B peak reflow 245 C < Economic PCBA 255+/-5 C and body 0.48 mm from board edge; buy 60B684C (LCSC C6095796, stock 17 on 2026-10-27) and hand-solder"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18593,7 +18593,7 @@
 				)
 			)
 		)
-		(property "Migration_Status" "REV B - SINGLE 680uH INDUCTOR"
+		(property "Migration_Status" "REV B - SINGLE 680uH INDUCTOR, HAND-SOLDERED"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)

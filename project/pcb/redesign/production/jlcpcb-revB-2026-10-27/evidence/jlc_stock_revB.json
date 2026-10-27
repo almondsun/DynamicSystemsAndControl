@@ -1,5 +1,5 @@
 {
- "checked_utc": "2026-10-27T19:31:26+00:00",
+ "checked_utc": "2026-10-27T19:52:10+00:00",
  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList",
  "parts": [
   {
@@ -24,7 +24,7 @@
    "brand": "Samsung Electro-Mechanics",
    "package": "0805",
    "library": "base",
-   "stock": 8758716,
+   "stock": 8758649,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -63,7 +63,7 @@
    "brand": "YAGEO",
    "package": "0603",
    "library": "base",
-   "stock": 41570633,
+   "stock": 41557886,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -89,7 +89,7 @@
    "brand": "Samsung Electro-Mechanics",
    "package": "1206",
    "library": "base",
-   "stock": 385830,
+   "stock": 385810,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -115,7 +115,7 @@
    "brand": "MDD(Microdiode Semiconductor)",
    "package": "SMA(DO-214AC)",
    "library": "base",
-   "stock": 3554921,
+   "stock": 3554838,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -133,19 +133,6 @@
    "min_purchase": 1
   },
   {
-   "lcsc": "C6095796",
-   "designators": "L1",
-   "qty_per_board": 1,
-   "bom_mpn": "60B684C",
-   "mpn": "60B684C",
-   "brand": "Murata Electronics",
-   "package": "SMD,27x19.5mm",
-   "library": "expand",
-   "stock": 17,
-   "buyable": "1",
-   "min_purchase": 1
-  },
-  {
    "lcsc": "C20526",
    "designators": "Q2",
    "qty_per_board": 1,
@@ -154,7 +141,7 @@
    "brand": "Jiangsu Changjing Electronics Technology Co., Ltd.",
    "package": "SOT-23",
    "library": "base",
-   "stock": 2151079,
+   "stock": 2151049,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -167,7 +154,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0805",
    "library": "base",
-   "stock": 5871682,
+   "stock": 5871662,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -193,7 +180,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 5835693,
+   "stock": 5834773,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -206,7 +193,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 17661405,
+   "stock": 17660276,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -219,7 +206,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 3078742,
+   "stock": 3078732,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -232,7 +219,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 38797375,
+   "stock": 38795402,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -245,7 +232,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 33621982,
+   "stock": 33620658,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -258,7 +245,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 16650365,
+   "stock": 16650313,
    "buyable": "1",
    "min_purchase": 1
   },
@@ -271,7 +258,7 @@
    "brand": "UNI-ROYAL(Uniroyal Elec)",
    "package": "0603",
    "library": "base",
-   "stock": 3734525,
+   "stock": 3734255,
    "buyable": "1",
    "min_purchase": 1
   },

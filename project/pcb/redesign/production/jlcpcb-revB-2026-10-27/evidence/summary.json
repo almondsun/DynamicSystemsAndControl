@@ -5,11 +5,11 @@
  "drc_parity": 0,
  "erc_errors": 0,
  "erc_warnings": 2,
- "bom_lines": 32,
- "cpl_parts": 63,
- "manual_rows": 14,
+ "bom_lines": 31,
+ "cpl_parts": 62,
+ "manual_rows": 15,
  "gerber_zip_files": 12,
  "problems": [],
- "board_sha256": "9cb758e93f206784ae35fcfe1db60a2def58e6aaddbb9a22d034e13bf41a9ec2",
+ "board_sha256": "ee424698b431ce423ca0664407f9331b4e0f952d4aec9421b8bc89f30235b530",
  "kicad": "10.0.7"
 }

@@ -10,7 +10,7 @@ Registrar en cada paso: fecha, placa (número de serie escrito a mano), valor me
 
 1. Inspección visual con lupa: pin 1 de U1–U9 y de U10 (SOT-23, cátodo = pin 1), banda de D1–D5, polaridad «+» de C1/C2/C4/C5, orientación de Q1 (G-D-S, pestaña hacia L1), banda de D2 hacia C6/U1, llave de J3 hacia el interior de la placa, entrada de cable de J1 (borde superior) y J2 (borde inferior).
 2. Resistencias a GND (DMM, sin cables): VIN > 1 kΩ tras cargar C1/C2, +5V > 1 kΩ, VOUT ≈ 12 kΩ (divisores 17,2 kΩ ‖ 40,9 kΩ), NUC_3V3 abierto o > 100 kΩ, SW sin corto a VIN ni GND.
-3. Bobina: L1 (60B684C) entre 578 y 782 µH (680 µH ±15 %) con LCR a 10 kHz si hay medidor, medida en circuito entre TP3 (SW) y el pad 2 de L1 con nivel de prueba ≤ 0,1 V para no polarizar D1; resistencia ≤ 135 mΩ (4 hilos).
+3. Bobina: L1 (60B684C) entre 578 y 782 µH (680 µH ±15 %) con LCR a 10 kHz si hay medidor; resistencia ≤ 135 mΩ (4 hilos). Lo más simple es medirla suelta antes de soldarla. En circuito, medir entre TP3 (SW) y el pad 2 de L1 con nivel de prueba ≤ 0,1 V para no polarizar D1. Revisar que la soldadura moje todo el pad de 3 × 14 mm en los dos terminales.
 
 ## 1. Buck solo (sin cable J3), sin carga
 
@@ -67,4 +67,4 @@ Requiere una compilación de revisión **solo en banco** acordada por el equipo,
 ## Notas de seguridad
 
 - Calibrar inyectando tensión externa en J2 con VIN desconectado polariza el diodo interno de Q1 y alimenta C1/C2 y U2: no hacerlo.
-- La placa no tiene orificios de fijación: sujetar por los bordes sobre soporte aislante; L1 (≈ 37 g, 20 mm de alto) requiere fijación mecánica si se transporta montada.
+- La placa no tiene orificios de fijación: sujetar por los bordes sobre soporte aislante, salvo el borde inferior junto a L1 (el cuerpo queda a 0,48 mm). L1 (≈ 37 g, 20 mm de alto) requiere fijación mecánica si se transporta montada.

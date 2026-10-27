@@ -1,12 +1,12 @@
 # Buck Rev B — informe de liberación del prototipo
 
-**Estado: LISTO PARA PEDIR COMO PROTOTIPO DE LABORATORIO** — PCB con ensamblaje SMT superior de 63 piezas en JLCPCB, incluida la bobina única L1 (Murata 60B684C, 680 µH); solo las piezas THT se sueldan a mano (secciones 7 y 7c). Verificado en computador; no es un diseño validado térmica ni experimentalmente. No se accedió a cuentas, no se subió nada a JLCPCB ni se pagó: el pedido lo hace el usuario.
+**Estado: LISTO PARA PEDIR COMO PROTOTIPO DE LABORATORIO** — PCB con ensamblaje SMT superior de 62 piezas en JLCPCB (Economic PCBA). La bobina única L1 (Murata 60B684C, 680 µH) se compra aparte y se suelda a mano junto con las piezas THT (secciones 7, 7c y 7d). Verificado en computador; no es un diseño validado térmica ni experimentalmente. No se accedió a cuentas, no se subió nada a JLCPCB ni se pagó: el pedido lo hace el usuario.
 
 | Identificación | Valor |
 |---|---|
 | Revisión | B, 2026-10-27 (título de hojas «REV B PROTOTYPE») |
 | Proyecto | `project/pcb/redesign/buck.kicad_pro` (KiCad 10.0.7) |
-| PCB SHA-256 | `9cb758e93f206784ae35fcfe1db60a2def58e6aaddbb9a22d034e13bf41a9ec2` |
+| PCB SHA-256 | `ee424698b431ce423ca0664407f9331b4e0f952d4aec9421b8bc89f30235b530` |
 | Paquete | `production/jlcpcb-revB-2026-10-27/` (hashes en `SHA256SUMS.txt`) |
 | Revisión A preservada | `history/revA_quote_20261027/` (PCB `b36ae24a…`, idéntica a la cotización Rev A) y su paquete `production/jlcpcb-quote-2026-10/` sin cambios |
 | Placa | 2 capas, FR-4 1,6 mm, 1 oz, contorno sin cambios 105,55 × 81,05 mm, sin orificios de fijación |
@@ -17,7 +17,7 @@
 
 ## 2. Puerta 1
 
-Detalle en [revB_gate1_components.md](revB_gate1_components.md). Herramientas y dibujos: **cerradas**. Suministro para ensamblaje JLCPCB: **cerrada** (secciones 7 y 7c): L1+L2 sin stock en JLCPCB/LCSC se sustituyen por una 60B684C que JLCPCB tiene en stock y coloca.
+Detalle en [revB_gate1_components.md](revB_gate1_components.md). Herramientas y dibujos: **cerradas**. Suministro para ensamblaje JLCPCB: **cerrada** (secciones 7, 7c y 7d). L1+L2, sin stock en JLCPCB/LCSC, se sustituyen por una 60B684C con stock en LCSC. JLCPCB no la coloca: se compra aparte y se suelda a mano.
 
 ## 3. Cambios eléctricos
 
@@ -90,8 +90,8 @@ Generadas desde el dibujo del fabricante (`revb_tools/footprints_revb.py`, bibli
 | Reglas añadidas | Una: holgura 0,19 mm solo entre pads del mismo encapsulado U7/U8; el land TI PW0014A tiene 0,20 mm entre pads, menor que la holgura de clase. No relaja otras holguras ni oculta avisos |
 | Gerbers | ZIP íntegro (CRC), 12 archivos; renderizados con pygerber 2.4.3 e inspeccionados: cobre, máscara (vías tapadas), pasta, serigrafía y contorno |
 | Taladros | 417 PTH, 0 NPTH: vías 0,3 (39) y 0,4 (350), TP 1,0 (9), J3/D2 1,1 (12), J1/J2 1,3 (4), Q1 1,4 (3) |
-| BOM/CPL | 32 líneas / 63 colocaciones en cara superior (L1 incluida), conciliadas con netlist y posiciones nativas; sin duplicados ni MPN contradictorios. Montaje manual solo J1, J2, J3, Q1 y D2 |
-| Stock JLCPCB del BOM final | 32/32 líneas con stock para 5 placas (`evidence/jlc_stock_revB.json`, 2026-10-27 19:31 UTC). Limitan L1 (17 unidades, 17 placas) y C4/C5 (96, 48 placas) |
+| BOM/CPL | 31 líneas / 62 colocaciones en cara superior, conciliadas con netlist y posiciones nativas; sin duplicados ni MPN contradictorios. Montaje manual: L1, J1, J2, J3, Q1 y D2 |
+| Stock JLCPCB del BOM final | 31/31 líneas con stock para 5 placas (`evidence/jlc_stock_revB.json`, 2026-10-27 19:52 UTC); la más ajustada es C4/C5 (96 unidades, 48 placas). L1 en LCSC: 17 unidades |
 | Firmware | Prueba de host (ASan/UBSan) en verde; imagen ARM **no compilada** (sin `arm-none-eabi-gcc` en este equipo) |
 | Revisión independiente del layout | Sin hallazgos críticos; confirmó DRC/paridad, Kelvin, analógicas ≥ 30 mm de SW, ausencia de vías en el lazo de puerta, holguras taladro/pin (Q1 0,22 mm, J3 0,195 mm), vías tapadas e integridad del paquete. Aplicado: enlace S→K directo, centroide de U2 en la CPL (−42,84 mm), regla de radios térmicos restaurada a 2 |
 
@@ -108,12 +108,12 @@ Tomadas tras una segunda opinión externa (no formal) que señalaba la separaci�
 | Punto | Decisión aplicada |
 |---|---|
 | Pestaña de Q1 (VIN) junto al terminal SW de L1 | Cadena de salida desplazada 2 mm: separación **1,28 → 3,29 mm** con dimensiones máximas (E de Infineon, 23,5 mm de Murata); courtyards a 2,35 mm. Rerruteado; DRC 0/0/0. Se conserva con la bobina única (3,285 mm) |
-| L1/L2 sin stock JLCPCB/LCSC | **Sustituidas** por una sola Murata 60B684C (C6095796) que coloca JLCPCB (sección 7c). La decisión anterior del mismo día (comprar 60B334C a DigiKey y soldar a mano) queda sin efecto |
+| L1/L2 sin stock JLCPCB/LCSC | **Sustituidas** por una sola Murata 60B684C (C6095796, sección 7c), comprada aparte y soldada a mano (sección 7d). La decisión anterior del mismo día (comprar 2 × 60B334C a DigiKey) queda sin efecto |
 | LM4040AIM3-2.5/NOPB sin stock | **Aceptada** la variante LM4040AIM3X-2.5/NOPB (C111866), mismo dispositivo según TI SNOS633N §11 |
 | R10 con 5 unidades | **Cambiada** a UNI-ROYAL 0603WAF3092T5E (C23022): 30,9 kΩ 1 % 0603, ±100 ppm/°C como la anterior; el umbral OVP no cambia |
 | Firmware ARM sin compilar | No bloquea la fabricación; compilar con `build.py` antes de programar |
 
-Al pedir (pasos del usuario en el portal, ver `production/.../README.md`): revisar Gerbers en el visor, confirmar 32 líneas y 63 colocaciones sin sustituciones automáticas, confirmar que JLCPCB acepta colocar L1 (≈ 37 g, 20 mm de alto) y comprobar las rotaciones en el visualizador (tabla en el README). Comprar aparte las piezas de `manual_assembly_revB.csv`.
+Al pedir (pasos del usuario en el portal, ver `production/.../README.md`): revisar Gerbers en el visor, elegir Economic PCBA, confirmar 31 líneas y 62 colocaciones sin sustituciones automáticas y comprobar las rotaciones en el visualizador (tabla en el README). Comprar aparte la 60B684C (LCSC C6095796). Comprar aparte las piezas de `manual_assembly_revB.csv`.
 
 ## 7b. Uso previsto y límites de esta placa
 
@@ -130,14 +130,25 @@ L1+L2 (2 × Murata 60B334C en serie) no tienen stock en JLCPCB ni LCSC. Se susti
 | Resonancia LC de salida | 1,37 kHz frente a 1,39 kHz (−1,5 %). Las ganancias PI del firmware no cambian |
 | Pérdidas en el cobre | ≈ 0,37 W en una sola pieza a 1,47 A RMS y 85 °C (antes 0,22 W en cada una de las dos, 0,43 W en total). La curva temperatura–corriente de la serie 6000B sugiere ≈ 10 °C de subida a 1,5 A; se mide en la puesta en marcha |
 | Acoplamiento magnético | Desaparece el acoplamiento no caracterizado entre L1 y L2 |
-| L(I) | La hoja no da la curva L(I) hasta el pico de ≈ 1,7 A (7 V, 4,8 Ω): se mide el rizado en la puesta en marcha ([revB_first_power_on.md](revB_first_power_on.md), paso 5.4) |
+| L(I) | La nota 2 de la hoja define los 3 A como la corriente a la que L cae al 75 % o la temperatura sube 40 °C, lo que ocurra antes. El pico de operación es ≈ 1,7 A (7 V, 4,8 Ω) y el disparo por sobrecorriente ≈ 2,0 A (VREF = 5 V · 10k/25k = 2,0 V frente a ISENSE = 1 V/A). La hoja no da la curva completa: se mide el rizado en la puesta en marcha ([revB_first_power_on.md](revB_first_power_on.md), paso 5.4) |
 | Esquemático | ERC 0 errores, los mismos 2 avisos UART. `netdiff.py` contra la netlist anterior: solo L2 eliminada, valor de L1 «330uH 60B334C» → «680uH 60B684C» y L1.2 LMID → IP |
 | Layout | L1 → RS1 por una pista F.Cu de 3,5 mm que entra a RS1 por su extremo exterior. Las pistas Kelvin a U6 no cambian. Separación pestaña de Q1 → terminal SW de L1: 3,285 mm (sin cambio). DRC 0 errores, 0 pendientes, 0 paridad, los mismos 3 avisos de ancho. Se quitaron las referencias a LMID de la regla de ancho de SW y de las clases de red |
-| Fabricación | BOM 32 líneas / CPL 63 colocaciones (L1 en (148,0; −98,5), rot 0). Gerbers renderizados con pygerber: L1 con máscara abierta y pasta en ambos pads |
-| Riesgo de pedido | Pieza de ≈ 37 g y 20 mm de alto en la cola de SMT: confirmar en el portal que JLCPCB la acepta (ver README del paquete) |
+| Fabricación | Gerbers renderizados con pygerber: L1 con máscara abierta y pasta en ambos pads. El montaje queda fuera de JLCPCB (sección 7d) |
+
+## 7d. L1 fuera del ensamblaje JLCPCB (2026-10-27)
+
+Una segunda opinión externa (no formal) sobre el commit `6908b4d` señaló dos problemas para que JLCPCB coloque L1. Ambos se verificaron:
+
+| Punto | Verificación | Decisión |
+|---|---|---|
+| Temperatura de reflujo | Murata KMP_6000B_B01 p.1: pico de reflujo 245 °C, J-STD-020D.1, terminales de estaño puro. JLCPCB (página de capacidades de PCBA): Economic 255 ± 5 °C sin ajuste; Standard 240 ± 5 °C | Economic PCBA supera la especificación de la bobina |
+| Distancia al borde | pcbnew: el contorno F.Fab de L1 llega a y = 112,05 mm y el borde está en 112,525 mm, es decir, **0,48 mm**; el courtyard toca el borde. Ninguna otra pieza SMD está a menos de 4,17 mm | Se mantiene la posición: moverla obliga a rehacer la cadena de salida |
+| Corriente | Disparo por sobrecorriente ≈ 2,0 A de pico frente a 3 A nominales (sección 7c) | Sin cambio |
+
+**Decisión:** L1 pasa a `MANUAL_SMD_DNP_AT_JLC` (`revb_tools/sch_l1_hand_solder.py`; campos del símbolo y de la huella sincronizados). Se pide Economic PCBA para las 62 piezas restantes. La 60B684C se compra aparte (LCSC C6095796) y se suelda a mano según el README del paquete. El cobre, la máscara y la pasta no cambian: los Gerbers son idénticos a los de `6908b4d` salvo las cabeceras, y los pads de L1 llegan estañados. Resultado: ERC 0/2, DRC 0 errores, 0 pendientes y 0 paridad, con los mismos 3 avisos; BOM 31 líneas y CPL 62 colocaciones. Para una próxima revisión, alejar L1 ≥ 2,5 mm del borde si se quiere que JLCPCB la coloque.
 
 ## 8. Entregables
 
 `production/jlcpcb-revB-2026-10-27/`: `gerbers_revB.zip` (+ `gerbers/` y mapas de taladro PDF), `bom_jlcpcb_revB.csv`, `cpl_jlcpcb_revB.csv`, `manual_assembly_revB.csv`, `assembly_top_revB.pdf`, `schematic_revB.pdf`, `evidence/` (ERC/DRC JSON y RPT, netlist, posiciones, comandos, resumen, stock) y `SHA256SUMS.txt`. Editables: `buck.kicad_pro`, `buck*.kicad_sch`, `buck.kicad_pcb`, `buck.kicad_dru`, bibliotecas en `libraries/`.
 
-Reproducir desde `revb_tools/`: `sch_single_inductor.py` (L1+L2 → 60B684C, una sola vez), `pcb_update.py` (netlist → PCB), `route_revb.py` (ruteo), `silk_revb.py`, `export_revb.py`, `jlc_stock.py`. El ruteo es determinista dado `placement.py` y las rutas manuales de `route_revb.py`.
+Reproducir desde `revb_tools/`: `sch_single_inductor.py` (L1+L2 → 60B684C, una sola vez), `sch_l1_hand_solder.py` (L1 fuera del ensamblaje JLCPCB, una sola vez), `pcb_update.py` (netlist → PCB), `route_revb.py` (ruteo), `silk_revb.py`, `export_revb.py`, `jlc_stock.py`. El ruteo es determinista dado `placement.py` y las rutas manuales de `route_revb.py`.

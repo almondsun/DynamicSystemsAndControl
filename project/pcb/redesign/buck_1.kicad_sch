@@ -3503,8 +3503,8 @@
     (pin "2"
       (uuid "6ad3f173-ff20-467b-bf42-b8d3bf7f54c4")
     )
-    (property "MPN" "60B684C" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Murata Power Solutions" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C6095796" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "JLC_SMT_TOP" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Supply_Note" "Replaces 2 x 60B334C (no JLC/LCSC stock); JLC stock 17 on 2026-10-27; 680 uH = +3 % vs 660 uH" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "MPN" "60B684C" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Murata Power Solutions" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C6095796" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "MANUAL_SMD_DNP_AT_JLC" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "Supply_Note" "Not placed by JLC: 6000B peak reflow 245 C < Economic PCBA 255+/-5 C and body 0.48 mm from board edge; buy 60B684C (LCSC C6095796, stock 17 on 2026-10-27) and hand-solder" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
     (property "Commercial_URL" "https://jlcpcb.com/partdetail/C6095796" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
     (instances
       (project "buck"
@@ -3514,7 +3514,7 @@
         )
       )
     )
-    (property "Migration_Status" "REV B - SINGLE 680uH INDUCTOR"
+    (property "Migration_Status" "REV B - SINGLE 680uH INDUCTOR, HAND-SOLDERED"
       (at 347.98 35.56 0)
       (effects
         (font
