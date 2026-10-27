@@ -21,9 +21,9 @@
   (severity warning)
   (condition "A.Type == 'Track' && A.NetName == 'VIN' && !A.intersectsCourtyard('*')")
   (constraint track_width (min 3.0mm) (opt 3.0mm)))
-(rule "SW and LMID width review outside pads"
+(rule "SW width review outside pads"
   (severity warning)
-  (condition "A.Type == 'Track' && (A.NetName == 'SW' || A.NetName == 'LMID') && !A.intersectsCourtyard('*')")
+  (condition "A.Type == 'Track' && A.NetName == 'SW' && !A.intersectsCourtyard('*')")
   (constraint track_width (min 2.0mm) (opt 2.0mm)))
 
 (rule "TI PW0014A land: 0.20 mm gap between pads of the same package (SCLS749C/SCDS390B)"

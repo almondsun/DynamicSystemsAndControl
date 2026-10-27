@@ -1,4 +1,4 @@
-"""Rev B placement (output chain moved +2 mm for >= 3 mm between the Q1 tab and L1 SW clip): reference -> (x mm, y mm, rotation deg). Board 105.38..210.98 x 31.43..112.53.
+"""Rev B placement (single 680 uH L1, L2 removed; output chain moved +2 mm for >= 3 mm between the Q1 tab and L1 SW clip): reference -> (x mm, y mm, rotation deg). Board 105.38..210.98 x 31.43..112.53.
 
 Switching cell (bottom-left): Q1 rot 270 gives G/D/S top-to-bottom with the drain tab facing L1;
 U1 rot 180 sits left of Q1 so HO (top) and VS (lower) reach G and S without crossing; S, D1
@@ -28,7 +28,6 @@ PLACEMENT = {
     "TP2": (114.0, 108.5, 0),
     # Inductors, shunt, output.
     "L1": (148.0, 98.5, 0),
-    "L2": (173.2, 98.5, 0),
     "RS1": (190.4, 98.5, 0),
     "U6": (190.4, 92.5, 0),
     "C16": (192.7, 89.5, 0),

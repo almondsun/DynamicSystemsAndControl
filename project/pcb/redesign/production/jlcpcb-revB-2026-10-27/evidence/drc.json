@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/drc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-10-27T13:28:59",
+    "date": "2026-10-27T14:31:02",
     "ignored_checks": [
         {
             "description": "Track endpoint not centered on via",
@@ -27,6 +27,21 @@
     "unconnected_items": [],
     "violations": [
         {
+            "description": "Track width (rule 'SW width review outside pads' min width 2.0000 mm; actual 0.5000 mm)",
+            "items": [
+                {
+                    "description": "Track [SW] on F.Cu, length 2.1550 mm",
+                    "pos": {
+                        "x": 119.65,
+                        "y": 89.945
+                    },
+                    "uuid": "c9464678-e79a-4b1a-adfc-735fac2ddc20"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_width"
+        },
+        {
             "description": "Track width (rule 'VIN width review outside pads' min width 3.0000 mm; actual 0.5000 mm)",
             "items": [
                 {
@@ -35,7 +50,7 @@
                         "x": 121.0,
                         "y": 96.9
                     },
-                    "uuid": "7aa28819-1aa8-429f-b6a8-e6e691360d99"
+                    "uuid": "2b03f007-2a9d-4965-880f-e18cdbfe69d1"
                 }
             ],
             "severity": "warning",
@@ -50,22 +65,7 @@
                         "x": 123.4,
                         "y": 96.9
                     },
-                    "uuid": "37bc35ce-0f3a-4317-8334-36aef7de8ac5"
-                }
-            ],
-            "severity": "warning",
-            "type": "track_width"
-        },
-        {
-            "description": "Track width (rule 'SW and LMID width review outside pads' min width 2.0000 mm; actual 0.5000 mm)",
-            "items": [
-                {
-                    "description": "Track [SW] on F.Cu, length 2.1550 mm",
-                    "pos": {
-                        "x": 119.65,
-                        "y": 89.945
-                    },
-                    "uuid": "a7931b83-1005-4cb3-8eb4-bc9a88db9446"
+                    "uuid": "940c1287-27a5-42a0-bbd7-2fc5a210cafd"
                 }
             ],
             "severity": "warning",

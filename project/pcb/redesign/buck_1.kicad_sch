@@ -2183,17 +2183,7 @@
     )
     (uuid "ad81ff7c-77f1-563e-b976-16012c0c6e70")
   )
-  (wire
-    (pts
-      (xy 63.5 78.74)
-      (xy 68.58 78.74)
-    )
-    (stroke
-      (width 0)
-      (type default)
-    )
-    (uuid "b21e2eb8-df2f-5a8d-a659-16a04cd56c9d")
-  )
+  
   (wire
     (pts
       (xy 162.56 35.56)
@@ -2227,17 +2217,7 @@
     )
     (uuid "d7671c8c-e84a-5413-8622-7f198f1b2e0a")
   )
-  (wire
-    (pts
-      (xy 38.1 78.74)
-      (xy 33.02 78.74)
-    )
-    (stroke
-      (width 0)
-      (type default)
-    )
-    (uuid "d9152c07-7a5d-53c9-90f3-13ae21a3fc7d")
-  )
+  
   (wire
     (pts
       (xy 38.1 121.92)
@@ -2554,7 +2534,7 @@
       )
     )
   )
-  (global_label "LMID"
+  (global_label "IP"
     (shape passive)
     (at 365.76 35.56 0)
     (effects
@@ -2576,28 +2556,7 @@
       )
     )
   )
-  (global_label "IP"
-    (shape passive)
-    (at 68.58 78.74 0)
-    (effects
-      (font
-        (size 0.85 0.85)
-      )
-      (justify left)
-    )
-    (uuid "99e4e7c7-dd15-58b9-8408-d48eb5a1338d")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 68.58 78.74 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-        (font
-          (size 1.27 1.27)
-        )
-      )
-    )
-  )
+  
   (global_label "GND"
     (shape passive)
     (at 68.58 121.92 0)
@@ -2686,28 +2645,7 @@
       )
     )
   )
-  (global_label "LMID"
-    (shape passive)
-    (at 33.02 78.74 180)
-    (effects
-      (font
-        (size 0.85 0.85)
-      )
-      (justify right)
-    )
-    (uuid "bfbc5b8e-364a-52df-bb6e-37960557a4fc")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 33.02 78.74 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-        (font
-          (size 1.27 1.27)
-        )
-      )
-    )
-  )
+  
   (global_label "SW"
     (shape passive)
     (at 231.14 35.56 180)
@@ -3518,7 +3456,7 @@
         )
       )
     )
-    (property "Value" "330uH 60B334C"
+    (property "Value" "680uH 60B684C"
       (at 347.98 42.1 0)
       (show_name no)
       (do_not_autoplace no)
@@ -3565,8 +3503,9 @@
     (pin "2"
       (uuid "6ad3f173-ff20-467b-bf42-b8d3bf7f54c4")
     )
-    (property "MPN" "60B334C" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Murata Power Solutions" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C6823957" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "MANUAL_SMD_DNP_AT_JLC" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Supply_Note" "JLC/LCSC stock 0 on 2026-10-27; buy 60B334C (DigiKey 811-2464-ND) and hand-solder" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "MPN" "60B684C" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Murata Power Solutions" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C6095796" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "JLC_SMT_TOP" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "Supply_Note" "Replaces 2 x 60B334C (no JLC/LCSC stock); JLC stock 17 on 2026-10-27; 680 uH = +3 % vs 660 uH" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
+    (property "Commercial_URL" "https://jlcpcb.com/partdetail/C6095796" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
     (instances
       (project "buck"
         (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
@@ -3575,7 +3514,7 @@
         )
       )
     )
-    (property "Migration_Status" "REV B - PART FIXED BY RELEASE PLAN"
+    (property "Migration_Status" "REV B - SINGLE 680uH INDUCTOR"
       (at 347.98 35.56 0)
       (effects
         (font
@@ -4339,130 +4278,7 @@
       )
     )
   )
-  (symbol
-    (lib_id "Buck:L2")
-    (at 50.8 78.74 0)
-    (unit 1)
-    (body_style 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (in_pos_files yes)
-    (dnp no)
-    (uuid "a55d4453-b7b6-5840-b94b-65f34282e682")
-    (property "Reference" "L2"
-      (at 50.8 72.2 0)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-        (font
-          (size 1.27 1.27)
-        )
-      )
-    )
-    (property "Value" "330uH 60B334C"
-      (at 50.8 85.28 0)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-        (font
-          (size 0.95 0.95)
-        )
-      )
-    )
-    (property "Footprint" "Buck_RevB:L_Murata_6000B_27.0x23.5mm"
-      (at 50.8 78.74 0)
-      (hide yes)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-        (font
-          (size 1 1)
-        )
-      )
-    )
-    (property "Datasheet" "https://www.murata.com/products/power/power-magnetics (KMP_6000B_B01)"
-      (at 50.8 78.74 0)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-        (font
-          (size 1.27 1.27)
-        )
-      )
-    )
-    (property "Description" ""
-      (at 50.8 78.74 0)
-      (show_name no)
-      (do_not_autoplace no)
-      (effects
-        (font
-          (size 1.27 1.27)
-        )
-      )
-    )
-    (pin "2"
-      (uuid "5ac81712-2b7f-403e-8544-97b8890e8ac9")
-    )
-    (pin "1"
-      (uuid "38de74b3-1ce4-4f07-9f1f-a7af0db2db4a")
-    )
-    (property "MPN" "60B334C" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Murata Power Solutions" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C6823957" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "MANUAL_SMD_DNP_AT_JLC" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27))))
-    (property "Supply_Note" "JLC/LCSC stock 0 on 2026-10-27; buy 60B334C (DigiKey 811-2464-ND) and hand-solder" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27))))
-    (instances
-      (project "buck"
-        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
-          (reference "L2")
-          (unit 1)
-        )
-      )
-    )
-    (property "Migration_Status" "REV B - PART FIXED BY RELEASE PLAN"
-      (at 50.8 78.74 0)
-      (effects
-        (font
-          (size 1 1)
-        )
-        (hide yes)
-      )
-    )
-    (property "Candidate_MPN" "Murata 60B334C"
-      (at 50.8 78.74 0)
-      (effects
-        (font
-          (size 1 1)
-        )
-        (hide yes)
-      )
-    )
-    (property "Candidate_LCSC" "C6823957"
-      (at 50.8 78.74 0)
-      (effects
-        (font
-          (size 1 1)
-        )
-        (hide yes)
-      )
-    )
-    (property "Electrical_Approval" "PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"
-      (at 50.8 78.74 0)
-      (effects
-        (font
-          (size 1 1)
-        )
-        (hide yes)
-      )
-    )
-    (property "Migration_Notes" "Igual L1; se conserva huella THT histórica solo como original NO MIGRADO. Comprobar influencia de proximidad/acoplamiento: L_eq = L1+L2±2M. Validar I de saturación por condición de 80 % del nominal y temperatura."
-      (at 50.8 78.74 0)
-      (effects
-        (font
-          (size 1 1)
-        )
-        (hide yes)
-      )
-    )
-  )
+  
   (symbol
     (lib_id "Buck:C5")
     (at 347.98 121.92 0)

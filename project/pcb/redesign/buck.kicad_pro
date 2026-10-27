@@ -711,10 +711,6 @@
       },
       {
         "netclass": "POWER_INDUCTOR",
-        "pattern": "LMID"
-      },
-      {
-        "netclass": "POWER_INDUCTOR",
         "pattern": "IP"
       },
       {

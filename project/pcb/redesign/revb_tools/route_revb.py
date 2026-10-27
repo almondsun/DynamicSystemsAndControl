@@ -45,9 +45,8 @@ MANUAL = [
     # Direct source -> freewheel cathode link: closes the hot loop without detouring through L1.
     ("SW", F, 1.2, [(130.4, 93.2), (133.1, 98.9)]),
     ("SW", F, 1.0, [(133.0, 104.2), (137.0, 104.2)]),
-    # LMID and IP, power entering RS1 from the outer ends only (TA-I Kelvin land).
-    ("LMID", F, 8.0, [(159.0, 98.5), (162.2, 98.5)]),
-    ("IP", F, 3.5, [(184.6, 98.5), (185.5, 98.5)]),
+    # L1 pad 2 -> RS1 (IP), power entering RS1 from the outer end only (TA-I Kelvin land).
+    ("IP", F, 3.5, [(158.9, 98.5), (185.5, 98.5)]),
     ("VOUT", F, 3.5, [(195.3, 98.5), (196.5, 98.5)]),
     ("VOUT", F, 2.0, [(197.7, 90.0), (197.7, 98.5)]),
     ("VOUT", F, 2.0, [(197.7, 98.5), (198.0, 107.4)]),
@@ -86,7 +85,7 @@ SIGNALS = [
 ]
 SW_ANALOG_CLEARANCE = 0.5
 ANALOG = {"ISENSE", "OVSENSE", "VREF", "VSENSE", "VSENSE_PROT", "VSENSE_DIV", "REF_2V5", "NUC_SENSE", "PG_DELAY"}
-POWER_NETS = {"SW", "LMID", "IP", "GND", "VIN"}
+POWER_NETS = {"SW", "IP", "GND", "VIN"}
 
 
 def mm2(v):
@@ -395,7 +394,7 @@ def main() -> None:
     board = pcbnew.LoadBoard(sys.argv[1])
     manual(board)
     grid = router.Grid(board)
-    for name, bbx in (("L1", board.FindFootprintByReference("L1")), ("L2", board.FindFootprintByReference("L2"))):
+    for name, bbx in (("L1", board.FindFootprintByReference("L1")),):
         c = bbx.GetCourtyard(pcbnew.F_CrtYd).BBox()
         grid.add_keepout(name, router.MM(c.GetX()), router.MM(c.GetY()), router.MM(c.GetRight()),
                          router.MM(c.GetBottom()), (0, 1), lambda n: n not in POWER_NETS)

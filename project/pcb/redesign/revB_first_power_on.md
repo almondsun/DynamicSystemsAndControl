@@ -10,7 +10,7 @@ Registrar en cada paso: fecha, placa (número de serie escrito a mano), valor me
 
 1. Inspección visual con lupa: pin 1 de U1–U9 y de U10 (SOT-23, cátodo = pin 1), banda de D1–D5, polaridad «+» de C1/C2/C4/C5, orientación de Q1 (G-D-S, pestaña hacia L1), banda de D2 hacia C6/U1, llave de J3 hacia el interior de la placa, entrada de cable de J1 (borde superior) y J2 (borde inferior).
 2. Resistencias a GND (DMM, sin cables): VIN > 1 kΩ tras cargar C1/C2, +5V > 1 kΩ, VOUT ≈ 12 kΩ (divisores 17,2 kΩ ‖ 40,9 kΩ), NUC_3V3 abierto o > 100 kΩ, SW sin corto a VIN ni GND.
-3. Bobinas: L1 y L2 entre 300 y 380 µH cada una con LCR a 10 kHz si hay medidor; resistencia ≤ 80 mΩ.
+3. Bobina: L1 (60B684C) entre 578 y 782 µH (680 µH ±15 %) con LCR a 10 kHz si hay medidor, medida en circuito entre TP3 (SW) y el pad 2 de L1 con nivel de prueba ≤ 0,1 V para no polarizar D1; resistencia ≤ 135 mΩ (4 hilos).
 
 ## 1. Buck solo (sin cable J3), sin carga
 
@@ -62,9 +62,9 @@ Requiere una compilación de revisión **solo en banco** acordada por el equipo,
 1. Con el convertidor en lazo abierto y carga de 6 Ω, medir VOUT con DMM y las cuentas ADC (consola) en dos puntos (≈ 5 V y 7 V). Actualizar `BUCK_ADC_VOLTS_PER_COUNT`/`BUCK_ADC_OFFSET_VOLTS`; el valor nominal es 6,4844 mV/cuenta.
 2. Disparo por corriente: verificar el umbral del comparador sobre ISENSE (TP6) con corriente limitada por la fuente; tiempo SD-alto < 10 µs.
 3. Disparo por tensión: OVSENSE contra VREF (umbral nominal 8,18 V de VOUT, 7,56–8,83 V por tolerancias).
-4. Solo entonces revisar la autorización de `BUCK_BOARD_REVIEWED=1` para los ensayos del curso (12 V, 5–7 V, 6 Ω, 10 kHz) con temperatura de L1/L2, Q1, D1 y RS1 registrada a los 10 min.
+4. Solo entonces revisar la autorización de `BUCK_BOARD_REVIEWED=1` para los ensayos del curso (12 V, 5–7 V, 6 Ω, 10 kHz) con temperatura de L1, Q1, D1 y RS1 registrada a los 10 min. Medir también el rizado de corriente de L1 a 7 V con la carga más baja usada (con 4,8 Ω, ≈ 1,7 A de pico; esperado ≈ 0,43 A pico a pico a 12 V): la hoja de Murata no da la curva L(I), así que una caída de inductancia solo se ve midiendo.
 
 ## Notas de seguridad
 
 - Calibrar inyectando tensión externa en J2 con VIN desconectado polariza el diodo interno de Q1 y alimenta C1/C2 y U2: no hacerlo.
-- La placa no tiene orificios de fijación: sujetar por los bordes sobre soporte aislante; L1/L2 (37 g c/u) requieren fijación mecánica si se transporta montada.
+- La placa no tiene orificios de fijación: sujetar por los bordes sobre soporte aislante; L1 (≈ 37 g, 20 mm de alto) requiere fijación mecánica si se transporta montada.

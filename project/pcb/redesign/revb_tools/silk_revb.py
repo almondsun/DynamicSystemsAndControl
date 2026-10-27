@@ -24,7 +24,7 @@ LABELS = [
     ("VOUT", 191.5, 108.4, 0.8, 0),
     ("ISENSE", 187.5, 84.1, 0.8, 0),
 ]
-KEEP_SILK_REF = {"Q1", "D2", "L1", "L2"}
+KEEP_SILK_REF = {"Q1", "D2", "L1"}
 
 
 def main() -> None:

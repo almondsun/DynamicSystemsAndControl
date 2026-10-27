@@ -9,7 +9,7 @@ import sys
 import pcbnew
 
 MM = pcbnew.ToMM
-POWER = {"VIN": "#d62728", "SW": "#ff7f0e", "LMID": "#bcbd22", "IP": "#8c564b", "VOUT": "#9467bd",
+POWER = {"VIN": "#d62728", "SW": "#ff7f0e", "IP": "#8c564b", "VOUT": "#9467bd",
          "GND": "#7f7f7f", "+5V": "#e377c2", "NUC_3V3": "#17becf", "BOOT": "#1f77b4", "HO": "#1f77b4",
          "GATE": "#1f77b4"}
 
