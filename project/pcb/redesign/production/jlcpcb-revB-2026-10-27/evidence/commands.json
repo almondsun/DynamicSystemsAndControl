@@ -1,0 +1,255 @@
+[
+ {
+  "command": [
+   "kicad-cli",
+   "version"
+  ],
+  "returncode": 0,
+  "stdout": "10.0.7\n",
+  "stderr": ""
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "sch",
+   "erc",
+   "--severity-all",
+   "--format",
+   "json",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/erc.json",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_sch"
+  ],
+  "returncode": 0,
+  "stdout": "Found 2 violations\nSaved ERC Report to /home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/erc.json\n",
+  "stderr": ""
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "sch",
+   "erc",
+   "--severity-all",
+   "--format",
+   "report",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/erc.rpt",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_sch"
+  ],
+  "returncode": 0,
+  "stdout": "Found 2 violations\nSaved ERC Report to /home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/erc.rpt\n",
+  "stderr": ""
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "pcb",
+   "drc",
+   "--schematic-parity",
+   "--refill-zones",
+   "--severity-all",
+   "--all-track-errors",
+   "--format",
+   "json",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/drc.json",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_pcb"
+  ],
+  "returncode": 0,
+  "stdout": "Found 3 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to /home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/drc.json\n",
+  "stderr": "12:48:55 PM: Debug: Adding duplicate image handler for 'PNG file'\n12:48:55 PM: Debug: Adding duplicate image handler for 'JPEG file'\n12:48:55 PM: Debug: Adding duplicate image handler for 'TIFF file'\n12:48:55 PM: Debug: Adding duplicate image handler for 'GIF file'\n12:48:55 PM: Debug: Adding duplicate image handler for 'PNM file'\n12:48:55 PM: Debug: Adding duplicate image handler for 'PCX file'\n12:48:55 PM: Debug: Adding duplicate image handler for 'IFF file'\n12:48:55 PM: Debug: Adding duplicate image handler for 'Windows icon file'\n12:48:55 PM: Debug: Adding duplicate image handler for 'Windows cursor file'\n12:48:55 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n12:48:55 PM: Debug: Adding duplicate image handler for 'TGA file'\n12:48:55 PM: Debug: Adding duplicate image handler for 'XPM file'\n"
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "pcb",
+   "drc",
+   "--schematic-parity",
+   "--refill-zones",
+   "--severity-all",
+   "--all-track-errors",
+   "--format",
+   "report",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/drc.rpt",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_pcb"
+  ],
+  "returncode": 0,
+  "stdout": "Found 3 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to /home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/drc.rpt\n",
+  "stderr": "12:48:58 PM: Debug: Adding duplicate image handler for 'PNG file'\n12:48:58 PM: Debug: Adding duplicate image handler for 'JPEG file'\n12:48:58 PM: Debug: Adding duplicate image handler for 'TIFF file'\n12:48:58 PM: Debug: Adding duplicate image handler for 'GIF file'\n12:48:58 PM: Debug: Adding duplicate image handler for 'PNM file'\n12:48:58 PM: Debug: Adding duplicate image handler for 'PCX file'\n12:48:58 PM: Debug: Adding duplicate image handler for 'IFF file'\n12:48:58 PM: Debug: Adding duplicate image handler for 'Windows icon file'\n12:48:58 PM: Debug: Adding duplicate image handler for 'Windows cursor file'\n12:48:58 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n12:48:58 PM: Debug: Adding duplicate image handler for 'TGA file'\n12:48:58 PM: Debug: Adding duplicate image handler for 'XPM file'\n"
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "sch",
+   "export",
+   "netlist",
+   "--format",
+   "kicadxml",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/netlist.xml",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_sch"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "sch",
+   "export",
+   "pdf",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/schematic_revB.pdf",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_sch"
+  ],
+  "returncode": 0,
+  "stdout": "Plotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/schematic_revB.pdf'.\nDone.\n",
+  "stderr": ""
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "pcb",
+   "export",
+   "gerbers",
+   "--check-zones",
+   "--layers",
+   "F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_pcb"
+  ],
+  "returncode": 0,
+  "stdout": "Plotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-F_Cu.gtl'.\nPlotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-B_Cu.gbl'.\nPlotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-F_Paste.gtp'.\nPlotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-B_Paste.gbp'.\nPlotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-F_Silkscreen.gto'.\nPlotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-B_Silkscreen.gbo'.\nPlotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-F_Mask.gts'.\nPlotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-B_Mask.gbs'.\nPlotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-Edge_Cuts.gm1'.\n",
+  "stderr": "12:49:02 PM: Debug: Adding duplicate image handler for 'PNG file'\n12:49:02 PM: Debug: Adding duplicate image handler for 'JPEG file'\n12:49:02 PM: Debug: Adding duplicate image handler for 'TIFF file'\n12:49:02 PM: Debug: Adding duplicate image handler for 'GIF file'\n12:49:02 PM: Debug: Adding duplicate image handler for 'PNM file'\n12:49:02 PM: Debug: Adding duplicate image handler for 'PCX file'\n12:49:02 PM: Debug: Adding duplicate image handler for 'IFF file'\n12:49:02 PM: Debug: Adding duplicate image handler for 'Windows icon file'\n12:49:02 PM: Debug: Adding duplicate image handler for 'Windows cursor file'\n12:49:02 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n12:49:02 PM: Debug: Adding duplicate image handler for 'TGA file'\n12:49:02 PM: Debug: Adding duplicate image handler for 'XPM file'\n"
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "pcb",
+   "export",
+   "drill",
+   "--format",
+   "excellon",
+   "--drill-origin",
+   "absolute",
+   "--excellon-units",
+   "mm",
+   "--excellon-zeros-format",
+   "decimal",
+   "--excellon-separate-th",
+   "--generate-map",
+   "--map-format",
+   "pdf",
+   "--generate-report",
+   "--report-path",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/drill-report.txt",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_pcb"
+  ],
+  "returncode": 0,
+  "stdout": "Created file '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-PTH.drl'\nCreated file '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-NPTH.drl'\nCreated file '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-PTH-drl_map.pdf'.\nCreated file '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/gerbers/buck-NPTH-drl_map.pdf'.\nDone.\n",
+  "stderr": "12:49:04 PM: Debug: Adding duplicate image handler for 'PNG file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'JPEG file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'TIFF file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'GIF file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'PNM file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'PCX file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'IFF file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'Windows icon file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'Windows cursor file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'TGA file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'XPM file'\n"
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "pcb",
+   "export",
+   "pos",
+   "--format",
+   "csv",
+   "--units",
+   "mm",
+   "--side",
+   "both",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/positions-native.csv",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_pcb"
+  ],
+  "returncode": 0,
+  "stdout": "Wrote position data to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/positions-native.csv'.\n",
+  "stderr": "12:49:04 PM: Debug: Adding duplicate image handler for 'PNG file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'JPEG file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'TIFF file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'GIF file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'PNM file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'PCX file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'IFF file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'Windows icon file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'Windows cursor file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'TGA file'\n12:49:04 PM: Debug: Adding duplicate image handler for 'XPM file'\n"
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "pcb",
+   "export",
+   "pos",
+   "--format",
+   "csv",
+   "--units",
+   "mm",
+   "--side",
+   "both",
+   "--smd-only",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/positions-smd.csv",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_pcb"
+  ],
+  "returncode": 0,
+  "stdout": "Wrote position data to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/positions-smd.csv'.\n",
+  "stderr": "12:49:05 PM: Debug: Adding duplicate image handler for 'PNG file'\n12:49:05 PM: Debug: Adding duplicate image handler for 'JPEG file'\n12:49:05 PM: Debug: Adding duplicate image handler for 'TIFF file'\n12:49:05 PM: Debug: Adding duplicate image handler for 'GIF file'\n12:49:05 PM: Debug: Adding duplicate image handler for 'PNM file'\n12:49:05 PM: Debug: Adding duplicate image handler for 'PCX file'\n12:49:05 PM: Debug: Adding duplicate image handler for 'IFF file'\n12:49:05 PM: Debug: Adding duplicate image handler for 'Windows icon file'\n12:49:05 PM: Debug: Adding duplicate image handler for 'Windows cursor file'\n12:49:05 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n12:49:05 PM: Debug: Adding duplicate image handler for 'TGA file'\n12:49:05 PM: Debug: Adding duplicate image handler for 'XPM file'\n"
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "pcb",
+   "export",
+   "pdf",
+   "--layers",
+   "F.Fab,F.Silkscreen,F.Courtyard,Edge.Cuts",
+   "--mode-single",
+   "--include-border-title",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/assembly_top_revB.pdf",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_pcb"
+  ],
+  "returncode": 0,
+  "stdout": "Plotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/assembly_top_revB.pdf'.\nDone.\n",
+  "stderr": "12:49:06 PM: Debug: Adding duplicate image handler for 'PNG file'\n12:49:06 PM: Debug: Adding duplicate image handler for 'JPEG file'\n12:49:06 PM: Debug: Adding duplicate image handler for 'TIFF file'\n12:49:06 PM: Debug: Adding duplicate image handler for 'GIF file'\n12:49:06 PM: Debug: Adding duplicate image handler for 'PNM file'\n12:49:06 PM: Debug: Adding duplicate image handler for 'PCX file'\n12:49:06 PM: Debug: Adding duplicate image handler for 'IFF file'\n12:49:06 PM: Debug: Adding duplicate image handler for 'Windows icon file'\n12:49:06 PM: Debug: Adding duplicate image handler for 'Windows cursor file'\n12:49:06 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n12:49:06 PM: Debug: Adding duplicate image handler for 'TGA file'\n12:49:06 PM: Debug: Adding duplicate image handler for 'XPM file'\n"
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "pcb",
+   "export",
+   "svg",
+   "--layers",
+   "F.Cu,F.Silkscreen,F.Mask,Edge.Cuts",
+   "--mode-single",
+   "--fit-page-to-board",
+   "--exclude-drawing-sheet",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/front.svg",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_pcb"
+  ],
+  "returncode": 0,
+  "stdout": "Plotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/front.svg'.\nDone.\n",
+  "stderr": "12:49:07 PM: Debug: Adding duplicate image handler for 'PNG file'\n12:49:07 PM: Debug: Adding duplicate image handler for 'JPEG file'\n12:49:07 PM: Debug: Adding duplicate image handler for 'TIFF file'\n12:49:07 PM: Debug: Adding duplicate image handler for 'GIF file'\n12:49:07 PM: Debug: Adding duplicate image handler for 'PNM file'\n12:49:07 PM: Debug: Adding duplicate image handler for 'PCX file'\n12:49:07 PM: Debug: Adding duplicate image handler for 'IFF file'\n12:49:07 PM: Debug: Adding duplicate image handler for 'Windows icon file'\n12:49:07 PM: Debug: Adding duplicate image handler for 'Windows cursor file'\n12:49:07 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n12:49:07 PM: Debug: Adding duplicate image handler for 'TGA file'\n12:49:07 PM: Debug: Adding duplicate image handler for 'XPM file'\n"
+ },
+ {
+  "command": [
+   "kicad-cli",
+   "pcb",
+   "export",
+   "svg",
+   "--layers",
+   "B.Cu,B.Silkscreen,Edge.Cuts",
+   "--mode-single",
+   "--fit-page-to-board",
+   "--exclude-drawing-sheet",
+   "--mirror",
+   "--output",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/back.svg",
+   "/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_pcb"
+  ],
+  "returncode": 0,
+  "stdout": "Plotted to '/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/production/jlcpcb-revB-2026-10-27/evidence/back.svg'.\nDone.\n",
+  "stderr": "12:49:08 PM: Debug: Adding duplicate image handler for 'PNG file'\n12:49:08 PM: Debug: Adding duplicate image handler for 'JPEG file'\n12:49:08 PM: Debug: Adding duplicate image handler for 'TIFF file'\n12:49:08 PM: Debug: Adding duplicate image handler for 'GIF file'\n12:49:08 PM: Debug: Adding duplicate image handler for 'PNM file'\n12:49:08 PM: Debug: Adding duplicate image handler for 'PCX file'\n12:49:08 PM: Debug: Adding duplicate image handler for 'IFF file'\n12:49:08 PM: Debug: Adding duplicate image handler for 'Windows icon file'\n12:49:08 PM: Debug: Adding duplicate image handler for 'Windows cursor file'\n12:49:08 PM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n12:49:08 PM: Debug: Adding duplicate image handler for 'TGA file'\n12:49:08 PM: Debug: Adding duplicate image handler for 'XPM file'\n"
+ }
+]

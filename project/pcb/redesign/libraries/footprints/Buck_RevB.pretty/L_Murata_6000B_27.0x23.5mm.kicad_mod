@@ -1,0 +1,101 @@
+(footprint "L_Murata_6000B_27.0x23.5mm"
+	(version 20260206)
+	(generator "revb_tools")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Murata Power Solutions 6000B SMD power inductor (60B334C). Pads 3 x 14 mm at 20.8 mm centres; body 23.5 max across terminals x 27.0 max, 20.0 max height, 37 g. Source: Murata KMP_6000B_B01 p.1 Mechanical Dimensions and Recommended Pad Layout")
+	(tags "RevB manufacturer land")
+	(property "Reference" "REF**"
+		(at 0 -15 0)
+		(layer "F.SilkS")
+		(uuid "6617cf6b-50b8-5def-b1b2-6e148c558c65")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Murata_6000B_27.0x23.5mm"
+		(at 0 15 0)
+		(layer "F.Fab")
+		(uuid "769bbdab-ef4b-5216-a197-137725226efd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a2facb1d-2f8f-5ee7-9137-0c42964343b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Murata Power Solutions 6000B SMD power inductor (60B334C). Pads 3 x 14 mm at 20.8 mm centres; body 23.5 max across terminals x 27.0 max, 20.0 max height, 37 g."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "12580e1c-51d8-5478-8af0-a0bf713c74e5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -12.4 -14)
+		(end 12.4 14)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "10677b58-01b1-5547-bb7a-ca8a971eba6a")
+	)
+	(fp_rect
+		(start -11.75 -13.5)
+		(end 11.75 13.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b1f11620-0945-5b64-89e6-dd1298551a64")
+	)
+	(fp_circle
+		(center -10.4 -8.3)
+		(end -10.25 -8.3)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "afa313b7-ccb9-5c7f-a3ed-8890c8307754")
+	)
+	(pad "1" smd rect
+		(at -10.4 0)
+		(size 3 14)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2ab50ccf-3d51-5d3e-9ded-908c48e03142")
+	)
+	(pad "2" smd rect
+		(at 10.4 0)
+		(size 3 14)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e04d3023-688a-58d8-9053-e8a2a237cbf6")
+	)
+	(embedded_fonts no)
+)

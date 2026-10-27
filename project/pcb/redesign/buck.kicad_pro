@@ -816,6 +816,50 @@
       {
         "netclass": "DIGITAL_CONTROL",
         "pattern": "UART_RX"
+      },
+      {
+        "netclass": "DIGITAL_CONTROL",
+        "pattern": "PWM_IN"
+      },
+      {
+        "netclass": "DIGITAL_CONTROL",
+        "pattern": "RUN_5V"
+      },
+      {
+        "netclass": "DIGITAL_CONTROL",
+        "pattern": "RESET_5V"
+      },
+      {
+        "netclass": "DIGITAL_CONTROL",
+        "pattern": "NUC_PG"
+      },
+      {
+        "netclass": "DIGITAL_CONTROL",
+        "pattern": "BUF_OE_N"
+      },
+      {
+        "netclass": "DIGITAL_CONTROL",
+        "pattern": "ADC_EN"
+      },
+      {
+        "netclass": "ANALOG_SENSE",
+        "pattern": "VSENSE_DIV"
+      },
+      {
+        "netclass": "ANALOG_SENSE",
+        "pattern": "VSENSE_PROT"
+      },
+      {
+        "netclass": "ANALOG_SENSE",
+        "pattern": "NUC_SENSE"
+      },
+      {
+        "netclass": "ANALOG_SENSE",
+        "pattern": "REF_2V5"
+      },
+      {
+        "netclass": "ANALOG_SENSE",
+        "pattern": "PG_DELAY"
       }
     ]
   },

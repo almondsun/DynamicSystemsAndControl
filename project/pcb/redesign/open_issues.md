@@ -1,5 +1,7 @@
 # Bloqueos abiertos antes de layout Buck SMD
 
+> **Actualización Rev B (2026-10-27):** el layout, la interfaz entre dominios (U7–U10, D3–D5), el sensado Kelvin, los lands del fabricante y el paquete JLCPCB están en [revB_release_report.md](revB_release_report.md). Cerrados en CAD/cálculo: interfaz ADC/PWM/RUN/RESET, lands de L1/L2/Q1/D2/J1–J3, courtyard de U5, vías de HO. Siguen abiertos: suministro de L1/L2 para ensamblaje JLCPCB, revisión del visualizador JLCPCB, compilación ARM y toda la validación física (bootstrap, ADC, protecciones, térmica). La tabla siguiente es el estado previo a Rev B.
+
 Estado tras revisión NUCLEO: **NO LIBERAR para potencia o fabricación**. Existe esquemático exportable y firmware compilado de revisión; no existe validación física. Una fase posterior puede definir reglas preliminares, sin convertir estos pendientes en aprobaciones.
 
 |Prioridad|Elemento|Bloqueo|Criterio de cierre|

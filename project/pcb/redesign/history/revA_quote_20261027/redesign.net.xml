@@ -1,0 +1,3308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\dev\7mo\control\DynamicSystemsAndControl\project\pcb\redesign\buck.kicad_sch</source>
+    <date>2026-10-25T23:29:44</date>
+    <tool>Eeschema 10.0.4</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Buck 12V / 6V - REVIEW ONLY</title>
+        <company>UNAL Manizales</company>
+        <rev>A</rev>
+        <date/>
+        <source>buck.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/">
+      <title_block>
+        <title>Power stage - REV A / HOLD FABRICATION</title>
+        <company>UNAL Manizales - Sistemas Dinamicos y Control</company>
+        <rev>A</rev>
+        <date/>
+        <source>buck_1.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/">
+      <title_block>
+        <title>Gate driver and supplies - REV A / HOLD FABRICATION</title>
+        <company>UNAL Manizales - Sistemas Dinamicos y Control</company>
+        <rev>A</rev>
+        <date/>
+        <source>buck_2.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/">
+      <title_block>
+        <title>Independent protection - REV A / HOLD FABRICATION</title>
+        <company>UNAL Manizales - Sistemas Dinamicos y Control</company>
+        <rev>A</rev>
+        <date/>
+        <source>buck_3.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/">
+      <title_block>
+        <title>STM32 interface and test points - REV A / HOLD FABRICATION</title>
+        <company>UNAL Manizales - Sistemas Dinamicos y Control</company>
+        <rev>A</rev>
+        <date/>
+        <source>buck_4.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100uF 25V</value>
+      <footprint>Buck_SMD:PCAP_SVP_E7_PAN</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Panasonic 25SVPF100M</field>
+        <field name="Candidate_LCSC">C136279</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Margen I_ripple 3,73× y VDC 1,89×. Verificar C_banco efectiva≥160 µF con vida/temperatura y ESR @10k; land E7 y polaridad. 160 µF es mínimo por tolerancia inicial, no de vida.</field>
+        <field name="Original_Value">100uF 25V</field>
+        <field name="MPN">Panasonic 25SVPF100M</field>
+        <field name="LCSC">C136279</field>
+        <field name="Footprint">Buck_SMD:PCAP_SVP_E7_PAN</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C1" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Panasonic 25SVPF100M"/>
+      <property name="Candidate_LCSC" value="C136279"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Margen I_ripple 3,73× y VDC 1,89×. Verificar C_banco efectiva≥160 µF con vida/temperatura y ESR @10k; land E7 y polaridad. 160 µF es mínimo por tolerancia inicial, no de vida."/>
+      <property name="Original_Value" value="100uF 25V"/>
+      <property name="MPN" value="Panasonic 25SVPF100M"/>
+      <property name="LCSC" value="C136279"/>
+      <property name="Sheetname" value="Power stage"/>
+      <property name="Sheetfile" value="buck_1.kicad_sch"/>
+      <sheetpath names="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/"/>
+      <tstamps>516936d7-f937-542b-a09b-65bbd8dd101c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100uF 25V</value>
+      <footprint>Buck_SMD:PCAP_SVP_E7_PAN</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Panasonic 25SVPF100M</field>
+        <field name="Candidate_LCSC">C136279</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Margen I_ripple 3,73× y VDC 1,89×. Verificar C_banco efectiva≥160 µF con vida/temperatura y ESR @10k; land E7 y polaridad. 160 µF es mínimo por tolerancia inicial, no de vida.</field>
+        <field name="Original_Value">100uF 25V</field>
+        <field name="MPN">Panasonic 25SVPF100M</field>
+        <field name="LCSC">C136279</field>
+        <field name="Footprint">Buck_SMD:PCAP_SVP_E7_PAN</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C2" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Panasonic 25SVPF100M"/>
+      <property name="Candidate_LCSC" value="C136279"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Margen I_ripple 3,73× y VDC 1,89×. Verificar C_banco efectiva≥160 µF con vida/temperatura y ESR @10k; land E7 y polaridad. 160 µF es mínimo por tolerancia inicial, no de vida."/>
+      <property name="Original_Value" value="100uF 25V"/>
+      <property name="MPN" value="Panasonic 25SVPF100M"/>
+      <property name="LCSC" value="C136279"/>
+      <property name="Sheetname" value="Power stage"/>
+      <property name="Sheetfile" value="buck_1.kicad_sch"/>
+      <sheetpath names="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/"/>
+      <tstamps>7182954e-fda7-50d0-97a6-14d317f727ba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="Candidate_LCSC">C14663</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Retención de ≥70 nF con DC/temperatura y proximidad Q1/D1; exigir evidencia capacitancia efectiva y ubicación.</field>
+        <field name="Original_Value">100nF 50V</field>
+        <field name="MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C3" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="Candidate_LCSC" value="C14663"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Retención de ≥70 nF con DC/temperatura y proximidad Q1/D1; exigir evidencia capacitancia efectiva y ubicación."/>
+      <property name="Original_Value" value="100nF 50V"/>
+      <property name="MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="Power stage"/>
+      <property name="Sheetfile" value="buck_1.kicad_sch"/>
+      <sheetpath names="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/"/>
+      <tstamps>7ea4f70c-6201-52f6-b73f-d62f26445274</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>10uF 35V low ESR</value>
+      <footprint>Buck_SMD:CAP_SVF_C6_PAN</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Panasonic 50SVF10M</field>
+        <field name="Candidate_LCSC">C454354</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Margen corriente 11,7× y tensión nominal ≥2,5× frente a 20 V hipotéticos. C_banco efectiva≥16 µF a vida/temperatura no demostrada; ESR @10 kHz y estabilidad PI; land C6 y polaridad.</field>
+        <field name="Original_Value">10uF 35V low ESR</field>
+        <field name="MPN">Panasonic 50SVF10M</field>
+        <field name="LCSC">C454354</field>
+        <field name="Footprint">Buck_SMD:CAP_SVF_C6_PAN</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C4" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Panasonic 50SVF10M"/>
+      <property name="Candidate_LCSC" value="C454354"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Margen corriente 11,7× y tensión nominal ≥2,5× frente a 20 V hipotéticos. C_banco efectiva≥16 µF a vida/temperatura no demostrada; ESR @10 kHz y estabilidad PI; land C6 y polaridad."/>
+      <property name="Original_Value" value="10uF 35V low ESR"/>
+      <property name="MPN" value="Panasonic 50SVF10M"/>
+      <property name="LCSC" value="C454354"/>
+      <property name="Sheetname" value="Power stage"/>
+      <property name="Sheetfile" value="buck_1.kicad_sch"/>
+      <sheetpath names="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/"/>
+      <tstamps>09532927-4729-5a39-bea1-1a23d44e7ef8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>10uF 35V low ESR</value>
+      <footprint>Buck_SMD:CAP_SVF_C6_PAN</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Panasonic 50SVF10M</field>
+        <field name="Candidate_LCSC">C454354</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Margen corriente 11,7× y tensión nominal ≥2,5× frente a 20 V hipotéticos. C_banco efectiva≥16 µF a vida/temperatura no demostrada; ESR @10 kHz y estabilidad PI; land C6 y polaridad.</field>
+        <field name="Original_Value">10uF 35V low ESR</field>
+        <field name="MPN">Panasonic 50SVF10M</field>
+        <field name="LCSC">C454354</field>
+        <field name="Footprint">Buck_SMD:CAP_SVF_C6_PAN</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C5" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Panasonic 50SVF10M"/>
+      <property name="Candidate_LCSC" value="C454354"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Margen corriente 11,7× y tensión nominal ≥2,5× frente a 20 V hipotéticos. C_banco efectiva≥16 µF a vida/temperatura no demostrada; ESR @10 kHz y estabilidad PI; land C6 y polaridad."/>
+      <property name="Original_Value" value="10uF 35V low ESR"/>
+      <property name="MPN" value="Panasonic 50SVF10M"/>
+      <property name="LCSC" value="C454354"/>
+      <property name="Sheetname" value="Power stage"/>
+      <property name="Sheetfile" value="buck_1.kicad_sch"/>
+      <sheetpath names="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/"/>
+      <tstamps>b6e328d7-c520-5172-886c-a83ef8fca8f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>SS34</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">SS34</field>
+        <field name="Candidate_LCSC">C8678</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">MDD SS34 SMA según ficha local pp.1,3; se rechaza SMB descargado. Pad1 K/banda,2 A; térmica/transitorios pendientes.</field>
+        <field name="Original_Value">1N5822 40V 3A</field>
+        <field name="MPN">SS34</field>
+        <field name="LCSC">C8678</field>
+        <field name="Footprint">Diode_SMD:D_SMA</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="D1" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="SS34"/>
+      <property name="Candidate_LCSC" value="C8678"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="MDD SS34 SMA según ficha local pp.1,3; se rechaza SMB descargado. Pad1 K/banda,2 A; térmica/transitorios pendientes."/>
+      <property name="Original_Value" value="1N5822 40V 3A"/>
+      <property name="MPN" value="SS34"/>
+      <property name="LCSC" value="C8678"/>
+      <property name="Sheetname" value="Power stage"/>
+      <property name="Sheetfile" value="buck_1.kicad_sch"/>
+      <sheetpath names="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/"/>
+      <tstamps>401b85ab-3bbb-5e38-9075-df8f746d70d7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>12V FUSED INPUT</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">TB002-500-02BE</field>
+        <field name="Candidate_LCSC">C2757858</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="J1" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="TB002-500-02BE"/>
+      <property name="Candidate_LCSC" value="C2757858"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
+      <property name="Sheetname" value="Power stage"/>
+      <property name="Sheetfile" value="buck_1.kicad_sch"/>
+      <sheetpath names="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/"/>
+      <tstamps>33ca0f0c-60cf-56ca-afe8-82ae25236e1d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>LOAD + / -</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">TB002-500-02BE</field>
+        <field name="Candidate_LCSC">C2757858</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
+        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="J2" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="TB002-500-02BE"/>
+      <property name="Candidate_LCSC" value="C2757858"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
+      <property name="Sheetname" value="Power stage"/>
+      <property name="Sheetfile" value="buck_1.kicad_sch"/>
+      <sheetpath names="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/"/>
+      <tstamps>865e2587-99d3-5e67-a5a6-0555a5a52214</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>330uH &gt;=3A Isat VERIFY</value>
+      <footprint>Buck:Inductor_25mm_P10mm_VERIFY</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">Murata 60B334C</field>
+        <field name="Candidate_LCSC">C6823957</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">No hay land KiCad verificado de Murata 60B334C; NO asignar THT a pieza SMD. L(I,T), acoplamiento y pérdidas pendientes. Inductancia efectiva por bobina debe sostener L_total≥528 µH; a −15 % inicial quedan 561 µH y solo 5,9 % de pérdida admisible. Curva L(I,T) y pérdidas núcleo ausentes; land Murata obligatorio.</field>
+        <field name="Footprint">Buck:Inductor_25mm_P10mm_VERIFY</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="L1" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="Murata 60B334C"/>
+      <property name="Candidate_LCSC" value="C6823957"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="No hay land KiCad verificado de Murata 60B334C; NO asignar THT a pieza SMD. L(I,T), acoplamiento y pérdidas pendientes. Inductancia efectiva por bobina debe sostener L_total≥528 µH; a −15 % inicial quedan 561 µH y solo 5,9 % de pérdida admisible. Curva L(I,T) y pérdidas núcleo ausentes; land Murata obligatorio."/>
+      <property name="Sheetname" value="Power stage"/>
+      <property name="Sheetfile" value="buck_1.kicad_sch"/>
+      <sheetpath names="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/"/>
+      <tstamps>4656c9d3-5641-565e-8936-114e18c8e614</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L2">
+      <value>330uH &gt;=3A Isat VERIFY</value>
+      <footprint>Buck:Inductor_25mm_P10mm_VERIFY</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">Murata 60B334C</field>
+        <field name="Candidate_LCSC">C6823957</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Igual L1; se conserva huella THT histórica solo como original NO MIGRADO. Comprobar influencia de proximidad/acoplamiento: L_eq = L1+L2±2M. Validar I de saturación por condición de 80 % del nominal y temperatura.</field>
+        <field name="Footprint">Buck:Inductor_25mm_P10mm_VERIFY</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="L2" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="Murata 60B334C"/>
+      <property name="Candidate_LCSC" value="C6823957"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Igual L1; se conserva huella THT histórica solo como original NO MIGRADO. Comprobar influencia de proximidad/acoplamiento: L_eq = L1+L2±2M. Validar I de saturación por condición de 80 % del nominal y temperatura."/>
+      <property name="Sheetname" value="Power stage"/>
+      <property name="Sheetfile" value="buck_1.kicad_sch"/>
+      <sheetpath names="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/"/>
+      <tstamps>a55d4453-b7b6-5840-b94b-65f34282e682</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>IRFZ44N TO-220</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">IRFZ44NS</field>
+        <field name="Candidate_LCSC">C5199867</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Revisión/familia UMW y TO-263 pendientes de conciliar; se retiene original TO-220.</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="Q1" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="IRFZ44NS"/>
+      <property name="Candidate_LCSC" value="C5199867"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Revisión/familia UMW y TO-263 pendientes de conciliar; se retiene original TO-220."/>
+      <property name="Sheetname" value="Power stage"/>
+      <property name="Sheetfile" value="buck_1.kicad_sch"/>
+      <sheetpath names="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/"/>
+      <tstamps>d5b68a24-1977-5108-87c5-74c8504871c2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RS1">
+      <value>0.050R 1% 1W</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">TA-I RLP25FEER050</field>
+        <field name="Candidate_LCSC">C160588</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA. Huella 2512 genérica PROVISIONAL; NO reproduce land TA-I a=4,b=2.1,L=4.1 mm. Mantener pendiente mecánica/Kelvin/térmica. Con 1 oz (~35 µm) no atribuir 2 W. Demostrar derating y temperatura a 0,316 W; kelvin desde pads; land TA-I específico.</field>
+        <field name="Original_Value">0.050R 1% 1W</field>
+        <field name="MPN">TA-I RLP25FEER050</field>
+        <field name="LCSC">C160588</field>
+        <field name="Footprint">Resistor_SMD:R_2512_6332Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="RS1" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="TA-I RLP25FEER050"/>
+      <property name="Candidate_LCSC" value="C160588"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA. Huella 2512 genérica PROVISIONAL; NO reproduce land TA-I a=4,b=2.1,L=4.1 mm. Mantener pendiente mecánica/Kelvin/térmica. Con 1 oz (~35 µm) no atribuir 2 W. Demostrar derating y temperatura a 0,316 W; kelvin desde pads; land TA-I específico."/>
+      <property name="Original_Value" value="0.050R 1% 1W"/>
+      <property name="MPN" value="TA-I RLP25FEER050"/>
+      <property name="LCSC" value="C160588"/>
+      <property name="Sheetname" value="Power stage"/>
+      <property name="Sheetfile" value="buck_1.kicad_sch"/>
+      <sheetpath names="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/"/>
+      <tstamps>0f6f783b-5fa7-55d8-9dd7-4dfdca9baa1f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>2.2uF 50V X7R 10%</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL31B225KBHNNN</datasheet>
+      <fields>
+        <field name="Migration_Status">NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN</field>
+        <field name="Candidate_MPN">CL31B225KBHNNNE</field>
+        <field name="Candidate_LCSC">C50254</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">2.2uF nominal adopted. VB-VS connectivity unchanged. Ceff, VBS minimum, startup and recharge NOT validated.</field>
+        <field name="Original_Value">1uF 50V X7R</field>
+        <field name="MPN">CL31B225KBHNNNE</field>
+        <field name="LCSC">C50254</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="JLCPCB_Class">Basic (verified 2026-10-25)</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C50254</field>
+        <field name="Previous_Review_Value">1uF 50V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL31B225KBHNNN</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C6" description=""/>
+      <property name="Migration_Status" value="NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN"/>
+      <property name="Candidate_MPN" value="CL31B225KBHNNNE"/>
+      <property name="Candidate_LCSC" value="C50254"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="2.2uF nominal adopted. VB-VS connectivity unchanged. Ceff, VBS minimum, startup and recharge NOT validated."/>
+      <property name="Original_Value" value="1uF 50V X7R"/>
+      <property name="MPN" value="CL31B225KBHNNNE"/>
+      <property name="LCSC" value="C50254"/>
+      <property name="Manufacturer" value="Samsung Electro-Mechanics"/>
+      <property name="JLCPCB_Class" value="Basic (verified 2026-10-25)"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C50254"/>
+      <property name="Previous_Review_Value" value="1uF 50V X7R"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>9b526e9d-8570-5825-af73-361331edfaba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="Candidate_LCSC">C14663</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA.  100 nF no demuestra reserva de carga de bootstrap; ver eventual C18 local; exigir evidencia capacitancia efectiva y ubicación.</field>
+        <field name="Original_Value">100nF 50V</field>
+        <field name="MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C7" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="Candidate_LCSC" value="C14663"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA.  100 nF no demuestra reserva de carga de bootstrap; ver eventual C18 local; exigir evidencia capacitancia efectiva y ubicación."/>
+      <property name="Original_Value" value="100nF 50V"/>
+      <property name="MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>7a60d172-e93c-5263-972f-6b44f8253aba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="Candidate_LCSC">C14663</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Retención ≥70 nF, pines reales del SOIC-16; exigir evidencia capacitancia efectiva y ubicación.</field>
+        <field name="Original_Value">100nF 50V</field>
+        <field name="MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C8" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="Candidate_LCSC" value="C14663"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Retención ≥70 nF, pines reales del SOIC-16; exigir evidencia capacitancia efectiva y ubicación."/>
+      <property name="Original_Value" value="100nF 50V"/>
+      <property name="MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>fcff5ebf-9af6-5d19-8ac2-10c97b89a9fb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>330nF 50V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Samsung CL21B334KBFNNNE</field>
+        <field name="Candidate_LCSC">C73142</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">No trasladar CI nominal de aplicación de UMW a mínimo efectivo garantizado; revisar necesidad de ESR/localidad.</field>
+        <field name="Original_Value">330nF 50V</field>
+        <field name="MPN">Samsung CL21B334KBFNNNE</field>
+        <field name="LCSC">C73142</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C9" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Samsung CL21B334KBFNNNE"/>
+      <property name="Candidate_LCSC" value="C73142"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="No trasladar CI nominal de aplicación de UMW a mínimo efectivo garantizado; revisar necesidad de ESR/localidad."/>
+      <property name="Original_Value" value="330nF 50V"/>
+      <property name="MPN" value="Samsung CL21B334KBFNNNE"/>
+      <property name="LCSC" value="C73142"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>41eb0761-84a9-5a5e-aa87-109ac103debf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="Candidate_LCSC">C14663</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Estabilidad con C11 y ESR del regulador UMW no demostrada; exigir evidencia capacitancia efectiva y ubicación.</field>
+        <field name="Original_Value">100nF 50V</field>
+        <field name="MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C10" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="Candidate_LCSC" value="C14663"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Estabilidad con C11 y ESR del regulador UMW no demostrada; exigir evidencia capacitancia efectiva y ubicación."/>
+      <property name="Original_Value" value="100nF 50V"/>
+      <property name="MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>fa4fef5f-68d5-5877-87c2-3e0daa2fb6fd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>10uF 25V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Migration_Status">SYMBOL_REPLACEMENT / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Samsung CL21A106KAYNNNE</field>
+        <field name="Candidate_LCSC">C15850</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">MLCC X5R no polarizado sustituye capacitor polarizado. Símbolo adaptado con dibujo no polar y terminales en posiciones originales. Curva de DC bias del MPN y ESR/estabilidad del UMW 78M05 no certificadas para todo el rango.</field>
+        <field name="Original_Value">10uF 25V</field>
+        <field name="MPN">Samsung CL21A106KAYNNNE</field>
+        <field name="LCSC">C15850</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="CL21A106KAYNNNE" description=""/>
+      <property name="Migration_Status" value="SYMBOL_REPLACEMENT / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Samsung CL21A106KAYNNNE"/>
+      <property name="Candidate_LCSC" value="C15850"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="MLCC X5R no polarizado sustituye capacitor polarizado. Símbolo adaptado con dibujo no polar y terminales en posiciones originales. Curva de DC bias del MPN y ESR/estabilidad del UMW 78M05 no certificadas para todo el rango."/>
+      <property name="Original_Value" value="10uF 25V"/>
+      <property name="MPN" value="Samsung CL21A106KAYNNNE"/>
+      <property name="LCSC" value="C15850"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>3dcd6da0-4729-5046-857e-a5bb8fea28de</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="Candidate_LCSC">C14663</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Posición y retorno para conmutación HCT14; exigir evidencia capacitancia efectiva y ubicación.</field>
+        <field name="Original_Value">100nF</field>
+        <field name="MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C12" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="Candidate_LCSC" value="C14663"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Posición y retorno para conmutación HCT14; exigir evidencia capacitancia efectiva y ubicación."/>
+      <property name="Original_Value" value="100nF"/>
+      <property name="MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>7b5eb037-5d10-5cc8-903a-dec0baa31e46</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>UF4004</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="Migration_Status">BLOCKED / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">US1G</field>
+        <field name="Candidate_LCSC">C3034075</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Falta ficha exacta ShunYe US1G; CAD descargado es CLD-Diode, función incompatible. Reemplazo bloqueado.</field>
+        <field name="Footprint">Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="D2" description=""/>
+      <property name="Migration_Status" value="BLOCKED / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="US1G"/>
+      <property name="Candidate_LCSC" value="C3034075"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Falta ficha exacta ShunYe US1G; CAD descargado es CLD-Diode, función incompatible. Reemplazo bloqueado."/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>3901b28b-38fc-5b5a-aaf1-f22c31c03006</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>10R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">UNI-ROYAL 0805W8F100JT5E</field>
+        <field name="Candidate_LCSC">C17415</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Curva de pulsos repetitivos no contrastada; 13,2 mW es potencia total simplificada, no la que disipa necesariamente R1.</field>
+        <field name="Original_Value">10R</field>
+        <field name="MPN">UNI-ROYAL 0805W8F100JT5E</field>
+        <field name="LCSC">C17415</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R1" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="UNI-ROYAL 0805W8F100JT5E"/>
+      <property name="Candidate_LCSC" value="C17415"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Curva de pulsos repetitivos no contrastada; 13,2 mW es potencia total simplificada, no la que disipa necesariamente R1."/>
+      <property name="Original_Value" value="10R"/>
+      <property name="MPN" value="UNI-ROYAL 0805W8F100JT5E"/>
+      <property name="LCSC" value="C17415"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>3d44eb22-59ab-5fc8-8d52-58ee8c35f146</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="Candidate_LCSC">C25804</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Su descarga gate agrega consumo al bootstrap en cada ciclo; validar VBS.</field>
+        <field name="Original_Value">10k</field>
+        <field name="MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R2" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="Candidate_LCSC" value="C25804"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Su descarga gate agrega consumo al bootstrap en cada ciclo; validar VBS."/>
+      <property name="Original_Value" value="10k"/>
+      <property name="MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>21812b5b-3a35-57a6-b11f-edcd2a42cae6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="Candidate_LCSC">C25804</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Revisión inyección hacia MCU apagado.</field>
+        <field name="Original_Value">10k</field>
+        <field name="MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R3" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="Candidate_LCSC" value="C25804"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Revisión inyección hacia MCU apagado."/>
+      <property name="Original_Value" value="10k"/>
+      <property name="MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>68e740d1-36a3-5c0c-98f2-5102608fe34e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">UNI-ROYAL 0603WAF1001T5E</field>
+        <field name="Candidate_LCSC">C21190</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Corriente interfaz con MCU desconectado o sin alimentación.</field>
+        <field name="Original_Value">1k</field>
+        <field name="MPN">UNI-ROYAL 0603WAF1001T5E</field>
+        <field name="LCSC">C21190</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R4" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="UNI-ROYAL 0603WAF1001T5E"/>
+      <property name="Candidate_LCSC" value="C21190"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Corriente interfaz con MCU desconectado o sin alimentación."/>
+      <property name="Original_Value" value="1k"/>
+      <property name="MPN" value="UNI-ROYAL 0603WAF1001T5E"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>6422da9f-0231-5d57-bb2a-ab78b9167b55</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>IR2110STRPBF</value>
+      <footprint>Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">IR2110STRPBF</field>
+        <field name="Candidate_LCSC">C2968</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">El símbolo original YA tiene pinout SOIC16 pese a Value DIP14; se conserva mapa real 1:1. Datasheet Infineon rev.V pp.5,16 (MS-013AA); se corrige rótulo a MPN SMD.</field>
+        <field name="Original_Value">IR2110PBF DIP14</field>
+        <field name="MPN">IR2110STRPBF</field>
+        <field name="LCSC">C2968</field>
+        <field name="Footprint">Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="U1" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="IR2110STRPBF"/>
+      <property name="Candidate_LCSC" value="C2968"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="El símbolo original YA tiene pinout SOIC16 pese a Value DIP14; se conserva mapa real 1:1. Datasheet Infineon rev.V pp.5,16 (MS-013AA); se corrige rótulo a MPN SMD."/>
+      <property name="Original_Value" value="IR2110PBF DIP14"/>
+      <property name="MPN" value="IR2110STRPBF"/>
+      <property name="LCSC" value="C2968"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>175bef12-2134-536c-a3c5-5bbf7e8c3948</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>78M05</value>
+      <footprint>Package_TO_SOT_SMD:TO-252-2</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">78M05</field>
+        <field name="Candidate_LCSC">C347278</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">UMW 78Mxx pp.1,14: TO-252, 1 IN,2 GND/tab,3 OUT; 5V nominal conservado, térmica/estabilidad pendientes.</field>
+        <field name="Original_Value">L7805CV</field>
+        <field name="MPN">78M05</field>
+        <field name="LCSC">C347278</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TO-252-2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="U2" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="78M05"/>
+      <property name="Candidate_LCSC" value="C347278"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="UMW 78Mxx pp.1,14: TO-252, 1 IN,2 GND/tab,3 OUT; 5V nominal conservado, térmica/estabilidad pendientes."/>
+      <property name="Original_Value" value="L7805CV"/>
+      <property name="MPN" value="78M05"/>
+      <property name="LCSC" value="C347278"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>376f8dc3-d8c3-574e-8fe9-6e95f98ecd87</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>SN74HCT14DR</value>
+      <footprint>Buck_SMD:D14</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">SN74HCT14DR</field>
+        <field name="Candidate_LCSC">C6769</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">TI SCLS225G, SOIC D14, paso1.27mm; pinout 1:1. Se conserva símbolo funcional existente.</field>
+        <field name="Original_Value">SN74HCT14N</field>
+        <field name="MPN">SN74HCT14DR</field>
+        <field name="LCSC">C6769</field>
+        <field name="Footprint">Buck_SMD:D14</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="U3" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="SN74HCT14DR"/>
+      <property name="Candidate_LCSC" value="C6769"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="TI SCLS225G, SOIC D14, paso1.27mm; pinout 1:1. Se conserva símbolo funcional existente."/>
+      <property name="Original_Value" value="SN74HCT14N"/>
+      <property name="MPN" value="SN74HCT14DR"/>
+      <property name="LCSC" value="C6769"/>
+      <property name="Sheetname" value="Gate driver and supplies"/>
+      <property name="Sheetfile" value="buck_2.kicad_sch"/>
+      <sheetpath names="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/"/>
+      <tstamps>73ff6e1d-de28-5420-97d4-72fbe524e7a7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="Candidate_LCSC">C14663</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Posición y retorno para latch NAND; exigir evidencia capacitancia efectiva y ubicación.</field>
+        <field name="Original_Value">100nF</field>
+        <field name="MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C13" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="Candidate_LCSC" value="C14663"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Posición y retorno para latch NAND; exigir evidencia capacitancia efectiva y ubicación."/>
+      <property name="Original_Value" value="100nF"/>
+      <property name="MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>10aaae6d-3c37-5c41-85b4-202a1cd013ee</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="Candidate_LCSC">C14663</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Posición y retorno para comparador real; exigir evidencia capacitancia efectiva y ubicación.</field>
+        <field name="Original_Value">100nF</field>
+        <field name="MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C14" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="Candidate_LCSC" value="C14663"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Posición y retorno para comparador real; exigir evidencia capacitancia efectiva y ubicación."/>
+      <property name="Original_Value" value="100nF"/>
+      <property name="MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>f8e80e3d-962d-5052-8c3d-25e939f80d33</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="Candidate_LCSC">C14663</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">τ = (15k||10k)×100nF =0,600 ms nominal; referencia tarda ~3ms en asentarse; exigir evidencia capacitancia efectiva y ubicación.</field>
+        <field name="Original_Value">100nF</field>
+        <field name="MPN">Yageo CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C15" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="Candidate_LCSC" value="C14663"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="τ = (15k||10k)×100nF =0,600 ms nominal; referencia tarda ~3ms en asentarse; exigir evidencia capacitancia efectiva y ubicación."/>
+      <property name="Original_Value" value="100nF"/>
+      <property name="MPN" value="Yageo CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>b496e35e-b113-5619-9358-78af03a4d93c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>220nF 50V X7R 10%</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>${KIPRJMOD}/libraries/datasheets/Yageo_CC0603KRX7R9BB224.pdf</datasheet>
+      <fields>
+        <field name="Migration_Status">NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN</field>
+        <field name="Candidate_MPN">CC0603KRX7R9BB224</field>
+        <field name="Candidate_LCSC">C107083</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">220nF nominal change accepted by user. Ceff &gt;=100nF remains to be established.</field>
+        <field name="MPN">CC0603KRX7R9BB224</field>
+        <field name="LCSC">C107083</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C107083</field>
+        <field name="Previous_Review_Value">100nF</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">${KIPRJMOD}/libraries/datasheets/Yageo_CC0603KRX7R9BB224.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C16" description=""/>
+      <property name="Migration_Status" value="NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN"/>
+      <property name="Candidate_MPN" value="CC0603KRX7R9BB224"/>
+      <property name="Candidate_LCSC" value="C107083"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="220nF nominal change accepted by user. Ceff &gt;=100nF remains to be established."/>
+      <property name="MPN" value="CC0603KRX7R9BB224"/>
+      <property name="LCSC" value="C107083"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C107083"/>
+      <property name="Previous_Review_Value" value="100nF"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>9a211a04-d8c2-5db3-b02e-9fff5756eeab</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q2">
+      <value>MMBT3904</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="Migration_Status">SYMBOL_REPLACEMENT / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">MMBT3904</field>
+        <field name="Candidate_LCSC">C20526</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Símbolo adaptado de Buck:Q2 para Changjing: 1E-&gt;2E,2B-&gt;1B,3C-&gt;3C. Sin mover cables, pines ni UUID de instancia.</field>
+        <field name="Original_Value">2N3904</field>
+        <field name="MPN">MMBT3904</field>
+        <field name="LCSC">C20526</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="MMBT3904_C20526" description=""/>
+      <property name="Migration_Status" value="SYMBOL_REPLACEMENT / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="MMBT3904"/>
+      <property name="Candidate_LCSC" value="C20526"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Símbolo adaptado de Buck:Q2 para Changjing: 1E-&gt;2E,2B-&gt;1B,3C-&gt;3C. Sin mover cables, pines ni UUID de instancia."/>
+      <property name="Original_Value" value="2N3904"/>
+      <property name="MPN" value="MMBT3904"/>
+      <property name="LCSC" value="C20526"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>8f44f006-5f2f-5a49-b9d9-68aa1529c607</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="Candidate_LCSC">C25804</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Pull-down RUN y estado arranque.</field>
+        <field name="Original_Value">10k</field>
+        <field name="MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R5" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="Candidate_LCSC" value="C25804"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Pull-down RUN y estado arranque."/>
+      <property name="Original_Value" value="10k"/>
+      <property name="MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>ca31bf15-dff2-5808-9b59-d26446fc6d68</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="Candidate_LCSC">C25804</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Pull-down RESET y estado arranque.</field>
+        <field name="Original_Value">10k</field>
+        <field name="MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R6" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="Candidate_LCSC" value="C25804"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Pull-down RESET y estado arranque."/>
+      <property name="Original_Value" value="10k"/>
+      <property name="MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>dca28b78-cc63-5796-8dfb-76e9dbd28756</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">UNI-ROYAL 0603WAF4701T5E</field>
+        <field name="Candidate_LCSC">C23162</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">VOL salida open collector LM393B.</field>
+        <field name="Original_Value">4.7k</field>
+        <field name="MPN">UNI-ROYAL 0603WAF4701T5E</field>
+        <field name="LCSC">C23162</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R7" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="UNI-ROYAL 0603WAF4701T5E"/>
+      <property name="Candidate_LCSC" value="C23162"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="VOL salida open collector LM393B."/>
+      <property name="Original_Value" value="4.7k"/>
+      <property name="MPN" value="UNI-ROYAL 0603WAF4701T5E"/>
+      <property name="LCSC" value="C23162"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>10c75fbb-fa98-5f77-a985-47ddca25867e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>15k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">UNI-ROYAL 0603WAF1502T5E</field>
+        <field name="Candidate_LCSC">C22809</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Umbral VREF influido por tolerancia y TCR pareja R8/R9.</field>
+        <field name="Original_Value">15k 1%</field>
+        <field name="MPN">UNI-ROYAL 0603WAF1502T5E</field>
+        <field name="LCSC">C22809</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R8" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="UNI-ROYAL 0603WAF1502T5E"/>
+      <property name="Candidate_LCSC" value="C22809"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Umbral VREF influido por tolerancia y TCR pareja R8/R9."/>
+      <property name="Original_Value" value="15k 1%"/>
+      <property name="MPN" value="UNI-ROYAL 0603WAF1502T5E"/>
+      <property name="LCSC" value="C22809"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>376e9b96-0b68-585b-a190-e3a8cc524784</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="Candidate_LCSC">C25804</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Umbral VREF influido por tolerancia y TCR pareja R8/R9.</field>
+        <field name="Original_Value">10k 1%</field>
+        <field name="MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R9" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="Candidate_LCSC" value="C25804"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Umbral VREF influido por tolerancia y TCR pareja R8/R9."/>
+      <property name="Original_Value" value="10k 1%"/>
+      <property name="MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>b8dc2187-044b-5652-b3d7-28ef92f050c8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>30.9k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>${KIPRJMOD}/libraries/datasheets/Vishay_DCRCW.pdf</datasheet>
+      <fields>
+        <field name="Migration_Status">NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN</field>
+        <field name="Candidate_MPN">CRCW060330K9FKEA</field>
+        <field name="Candidate_LCSC">C844354</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">30.9k accepted by user. Nominal OVP 8.20 to 8.18V.</field>
+        <field name="MPN">CRCW060330K9FKEA</field>
+        <field name="LCSC">C844354</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/VishayIntertech-CRCW060330K9FKEA/C844354</field>
+        <field name="Previous_Review_Value">31k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">${KIPRJMOD}/libraries/datasheets/Vishay_DCRCW.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R10" description=""/>
+      <property name="Migration_Status" value="NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN"/>
+      <property name="Candidate_MPN" value="CRCW060330K9FKEA"/>
+      <property name="Candidate_LCSC" value="C844354"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="30.9k accepted by user. Nominal OVP 8.20 to 8.18V."/>
+      <property name="MPN" value="CRCW060330K9FKEA"/>
+      <property name="LCSC" value="C844354"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/VishayIntertech-CRCW060330K9FKEA/C844354"/>
+      <property name="Previous_Review_Value" value="31k 1%"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>972d4275-5b2a-59f9-a2f3-46a53eba85cf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="Candidate_LCSC">C25804</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Tolerancia/TCR y valor final R10 afectan umbral OVP.</field>
+        <field name="Original_Value">10k 1%</field>
+        <field name="MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R11" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="Candidate_LCSC" value="C25804"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Tolerancia/TCR y valor final R10 afectan umbral OVP."/>
+      <property name="Original_Value" value="10k 1%"/>
+      <property name="MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>db35a14b-a655-54b9-999f-1309b326975d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="Candidate_LCSC">C25804</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Corriente de base y pinout Q2 SMD.</field>
+        <field name="Original_Value">10k</field>
+        <field name="MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R12" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="Candidate_LCSC" value="C25804"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Corriente de base y pinout Q2 SMD."/>
+      <property name="Original_Value" value="10k"/>
+      <property name="MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>60bb2ea4-0456-5932-84d5-8c2b00d098db</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="Candidate_LCSC">C25804</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Pull-up NFAULT_MCU a 3,3 V, no a 5 V.</field>
+        <field name="Original_Value">10k</field>
+        <field name="MPN">UNI-ROYAL 0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R13" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="Candidate_LCSC" value="C25804"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Pull-up NFAULT_MCU a 3,3 V, no a 5 V."/>
+      <property name="Original_Value" value="10k"/>
+      <property name="MPN" value="UNI-ROYAL 0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>b83ec975-697e-56bf-92c6-c6d8d3a92b5e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>SN74HCT00DR</value>
+      <footprint>Buck_SMD:D14</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">SN74HCT00DR</field>
+        <field name="Candidate_LCSC">C6764</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">TI SCLS062F p.3, SOIC D14, paso1.27mm; pinout 1:1. Se conserva símbolo funcional existente.</field>
+        <field name="Original_Value">SN74HCT00N</field>
+        <field name="MPN">SN74HCT00DR</field>
+        <field name="LCSC">C6764</field>
+        <field name="Footprint">Buck_SMD:D14</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="U4" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="SN74HCT00DR"/>
+      <property name="Candidate_LCSC" value="C6764"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="TI SCLS062F p.3, SOIC D14, paso1.27mm; pinout 1:1. Se conserva símbolo funcional existente."/>
+      <property name="Original_Value" value="SN74HCT00N"/>
+      <property name="MPN" value="SN74HCT00DR"/>
+      <property name="LCSC" value="C6764"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>5251e4fb-340e-5044-8d77-26dc87fa754a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>LM393BIDR</value>
+      <footprint>Buck_SMD:D0008A-MFG</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">LM393BIDR</field>
+        <field name="Candidate_LCSC">C2865059</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Pinout 1:1 según TI SLCS005AH p.3; se conserva símbolo con open_collector/input, evitando tipos erróneos tri_state del CAD descargado. Courtyard ausente en huella comercial.</field>
+        <field name="Original_Value">LM393P</field>
+        <field name="MPN">LM393BIDR</field>
+        <field name="LCSC">C2865059</field>
+        <field name="Footprint">Buck_SMD:D0008A-MFG</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="U5" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="LM393BIDR"/>
+      <property name="Candidate_LCSC" value="C2865059"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Pinout 1:1 según TI SLCS005AH p.3; se conserva símbolo con open_collector/input, evitando tipos erróneos tri_state del CAD descargado. Courtyard ausente en huella comercial."/>
+      <property name="Original_Value" value="LM393P"/>
+      <property name="MPN" value="LM393BIDR"/>
+      <property name="LCSC" value="C2865059"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>9d040b5a-b392-586d-befc-7f0a67659948</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>INA180A1IDBVR</value>
+      <footprint>Buck_SMD:DBV0005A_N</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">INA180A1IDBVR</field>
+        <field name="Candidate_LCSC">C122228</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">TI SBOS741H p.4, pinout A 1OUT,2GND,3IN+,4IN-,5VS. Se conserva símbolo funcional existente.</field>
+        <field name="Original_Value">INA180A1IDBVR</field>
+        <field name="MPN">INA180A1IDBVR</field>
+        <field name="LCSC">C122228</field>
+        <field name="Footprint">Buck_SMD:DBV0005A_N</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="U6" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="INA180A1IDBVR"/>
+      <property name="Candidate_LCSC" value="C122228"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="TI SBOS741H p.4, pinout A 1OUT,2GND,3IN+,4IN-,5VS. Se conserva símbolo funcional existente."/>
+      <property name="Original_Value" value="INA180A1IDBVR"/>
+      <property name="MPN" value="INA180A1IDBVR"/>
+      <property name="LCSC" value="C122228"/>
+      <property name="Sheetname" value="Independent protection"/>
+      <property name="Sheetfile" value="buck_3.kicad_sch"/>
+      <sheetpath names="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/"/>
+      <tstamps>359bd006-c631-5d66-8bdf-9fa169adb7ca</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Candidate_MPN">Fenghua 0603CG102J500NT</field>
+        <field name="Candidate_LCSC">C1636</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">El filtro atenúa 10kHz solo 0,11 %; revisar adquisición ADC y seguridad frente a sobrevoltaje, independiente del rating del capacitor.</field>
+        <field name="Original_Value">1nF</field>
+        <field name="MPN">Fenghua 0603CG102J500NT</field>
+        <field name="LCSC">C1636</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="C17" description=""/>
+      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Candidate_MPN" value="Fenghua 0603CG102J500NT"/>
+      <property name="Candidate_LCSC" value="C1636"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="El filtro atenúa 10kHz solo 0,11 %; revisar adquisición ADC y seguridad frente a sobrevoltaje, independiente del rating del capacitor."/>
+      <property name="Original_Value" value="1nF"/>
+      <property name="MPN" value="Fenghua 0603CG102J500NT"/>
+      <property name="LCSC" value="C1636"/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>ce0cae8b-9bbc-56e5-9072-194ff2f4c9b4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>NUCLEO-L432KC EXT USB</value>
+      <footprint>Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Migration_Status">NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN</field>
+        <field name="Candidate_MPN">TBD keyed IDC header 2x5 2.54mm</field>
+        <field name="Candidate_LCSC">NOT SELECTED</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">External NUCLEO powered via USB. No Buck 5V/VIN connection. NUC_3V3 supplies R13 pull-up only. PA0/PWM signal protection and board solder bridges remain blocking.</field>
+        <field name="MPN">TBD keyed IDC header 2x5 2.54mm</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="LCSC">NOT SELECTED</field>
+        <field name="Cable_Pinout">1 UART_TX D1 PA9;2 GND;3 PWM D9 PA8;4 RUN D3 PB0;5 LATCH_RESET D6 PB1;6 NFAULT D4 PB7;7 VSENSE A0 PA0;8 GND;9 NUC_3V3 output from CN4.14;10 UART_RX D0 PA10;NO 5V OR VIN</field>
+        <field name="Assembly">NUCLEO external; NOT assembled by JLCPCB; header MPN/land provisional</field>
+        <field name="Previous_Review_Value">STM32 CABLE 2x5</field>
+        <field name="Footprint">Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="J3_NUCLEO_L432KC" description=""/>
+      <property name="Migration_Status" value="NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN"/>
+      <property name="Candidate_MPN" value="TBD keyed IDC header 2x5 2.54mm"/>
+      <property name="Candidate_LCSC" value="NOT SELECTED"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="External NUCLEO powered via USB. No Buck 5V/VIN connection. NUC_3V3 supplies R13 pull-up only. PA0/PWM signal protection and board solder bridges remain blocking."/>
+      <property name="MPN" value="TBD keyed IDC header 2x5 2.54mm"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="LCSC" value="NOT SELECTED"/>
+      <property name="Cable_Pinout" value="1 UART_TX D1 PA9;2 GND;3 PWM D9 PA8;4 RUN D3 PB0;5 LATCH_RESET D6 PB1;6 NFAULT D4 PB7;7 VSENSE A0 PA0;8 GND;9 NUC_3V3 output from CN4.14;10 UART_RX D0 PA10;NO 5V OR VIN"/>
+      <property name="Assembly" value="NUCLEO external; NOT assembled by JLCPCB; header MPN/land provisional"/>
+      <property name="Previous_Review_Value" value="STM32 CABLE 2x5"/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>dba037a7-2769-5568-b108-cda852ab7035</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>15k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN</field>
+        <field name="Candidate_MPN">0603WAF1502T5E</field>
+        <field name="Candidate_LCSC">C22809</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">15k candidate adopted for evaluation; ADC power-off/fault protection unresolved.</field>
+        <field name="Original_Value">3k 1%</field>
+        <field name="MPN">0603WAF1502T5E</field>
+        <field name="LCSC">C22809</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C22809</field>
+        <field name="Previous_Review_Value">3k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R14" description=""/>
+      <property name="Migration_Status" value="NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN"/>
+      <property name="Candidate_MPN" value="0603WAF1502T5E"/>
+      <property name="Candidate_LCSC" value="C22809"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="15k candidate adopted for evaluation; ADC power-off/fault protection unresolved."/>
+      <property name="Original_Value" value="3k 1%"/>
+      <property name="MPN" value="0603WAF1502T5E"/>
+      <property name="LCSC" value="C22809"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C22809"/>
+      <property name="Previous_Review_Value" value="3k 1%"/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>1281fbf9-9c5d-5d43-86c1-20b4634c9c6a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>2.2k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Migration_Status">NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN</field>
+        <field name="Candidate_MPN">0603WAF2201T5E</field>
+        <field name="Candidate_LCSC">C4190</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">2.2k candidate adopted for evaluation; ADC gain 0.1279069767; protection unresolved.</field>
+        <field name="Original_Value">1k 1%</field>
+        <field name="MPN">0603WAF2201T5E</field>
+        <field name="LCSC">C4190</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Commercial_URL">https://www.lcsc.com/product-detail/C4190.html</field>
+        <field name="Previous_Review_Value">1k 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="R15" description=""/>
+      <property name="Migration_Status" value="NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN"/>
+      <property name="Candidate_MPN" value="0603WAF2201T5E"/>
+      <property name="Candidate_LCSC" value="C4190"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="2.2k candidate adopted for evaluation; ADC gain 0.1279069767; protection unresolved."/>
+      <property name="Original_Value" value="1k 1%"/>
+      <property name="MPN" value="0603WAF2201T5E"/>
+      <property name="LCSC" value="C4190"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Commercial_URL" value="https://www.lcsc.com/product-detail/C4190.html"/>
+      <property name="Previous_Review_Value" value="1k 1%"/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>9fa0a876-aa52-55af-8d6b-7653e344fb74</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>VIN</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">No definido</field>
+        <field name="Candidate_LCSC">No verificado</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
+        <field name="Footprint">TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="TP1" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="No definido"/>
+      <property name="Candidate_LCSC" value="No verificado"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>86789bec-f455-52f8-9dd2-75d2e232ebac</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">No definido</field>
+        <field name="Candidate_LCSC">No verificado</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
+        <field name="Footprint">TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="TP2" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="No definido"/>
+      <property name="Candidate_LCSC" value="No verificado"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>82d47b14-d7c9-563b-8e73-1b63333e18a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP3">
+      <value>SW</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">No definido</field>
+        <field name="Candidate_LCSC">No verificado</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
+        <field name="Footprint">TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="TP3" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="No definido"/>
+      <property name="Candidate_LCSC" value="No verificado"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>6ab45211-144f-5d28-929f-a75eaf7e0ea9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP4">
+      <value>GATE</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">No definido</field>
+        <field name="Candidate_LCSC">No verificado</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
+        <field name="Footprint">TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="TP4" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="No definido"/>
+      <property name="Candidate_LCSC" value="No verificado"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>ed1dfb76-4646-585a-bc20-4dcc74d31d7d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP5">
+      <value>VOUT</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">No definido</field>
+        <field name="Candidate_LCSC">No verificado</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
+        <field name="Footprint">TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="TP5" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="No definido"/>
+      <property name="Candidate_LCSC" value="No verificado"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>0b9a5136-4f43-56ac-9904-59e245d2848c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP6">
+      <value>ISENSE</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">No definido</field>
+        <field name="Candidate_LCSC">No verificado</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
+        <field name="Footprint">TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="TP6" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="No definido"/>
+      <property name="Candidate_LCSC" value="No verificado"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>909512b2-d506-5b26-a64d-47d7c50a0e37</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP7">
+      <value>SD</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">No definido</field>
+        <field name="Candidate_LCSC">No verificado</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
+        <field name="Footprint">TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="TP7" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="No definido"/>
+      <property name="Candidate_LCSC" value="No verificado"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>a594e3c6-c7a4-536d-8948-d10f2142a4a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP8">
+      <value>NTRIP</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">No definido</field>
+        <field name="Candidate_LCSC">No verificado</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
+        <field name="Footprint">TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="TP8" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="No definido"/>
+      <property name="Candidate_LCSC" value="No verificado"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>b01364d3-be97-525b-a7e0-616402e27f96</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP9">
+      <value>MCU_PWM</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <fields>
+        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="Candidate_MPN">No definido</field>
+        <field name="Candidate_LCSC">No verificado</field>
+        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
+        <field name="Footprint">TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck" part="TP9" description=""/>
+      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="Candidate_MPN" value="No definido"/>
+      <property name="Candidate_LCSC" value="No verificado"/>
+      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
+      <property name="Sheetname" value="STM32 interface and test points"/>
+      <property name="Sheetfile" value="buck_4.kicad_sch"/>
+      <sheetpath names="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/"/>
+      <tstamps>51476402-99a3-5677-aadf-0e787191e734</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Buck" part="C1">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100uF 25V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C10">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C12">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C13">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C14">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C15">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C16">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C17">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C2">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100uF 25V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C3">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C4">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10uF 35V low ESR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C5">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10uF 35V low ESR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C6">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1uF 50V X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C7">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C8">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="C9">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">330nF 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="D1">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N5822 40V 3A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="D2">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">UF4004</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="J1">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">12V FUSED INPUT</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="J2">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">LOAD + / -</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="L1">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">330uH &gt;=3A Isat VERIFY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="L2">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">330uH &gt;=3A Isat VERIFY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="Q1">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRFZ44N TO-220</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R1">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R10">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">31k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R11">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R12">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R13">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R14">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">3k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R15">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">1k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R2">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R3">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R4">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">1k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R5">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R6">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R7">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R8">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">15k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="R9">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k 1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="RS1">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">0.050R 1% 1W</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="TP1">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">VIN</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="TP2">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">GND</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="TP3">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">SW</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SW" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="TP4">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">GATE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GATE" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="TP5">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">VOUT</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VOUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="TP6">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">ISENSE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="ISENSE" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="TP7">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">SD</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="TP8">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">NTRIP</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NTRIP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="TP9">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">MCU_PWM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="MCU_PWM" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="U1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IR2110STRPBF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="LO" type="output"/>
+        <pin num="2" name="COM" type="power_in"/>
+        <pin num="3" name="VCC" type="power_in"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="VS" type="input"/>
+        <pin num="7" name="VB" type="power_in"/>
+        <pin num="8" name="HO" type="output"/>
+        <pin num="9" name="NC" type="no_connect"/>
+        <pin num="10" name="NC" type="no_connect"/>
+        <pin num="11" name="VDD" type="power_in"/>
+        <pin num="12" name="HIN" type="input"/>
+        <pin num="13" name="SD" type="input"/>
+        <pin num="14" name="LIN" type="power_in"/>
+        <pin num="15" name="VSS" type="power_in"/>
+        <pin num="16" name="NC" type="no_connect"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="U2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L7805CV</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="U3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74HCT14DR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1A" type="input"/>
+        <pin num="2" name="1Y" type="output"/>
+        <pin num="3" name="2A" type="input"/>
+        <pin num="4" name="2Y" type="output"/>
+        <pin num="5" name="3A" type="input"/>
+        <pin num="6" name="3Y" type="output"/>
+        <pin num="7" name="GND" type="input"/>
+        <pin num="8" name="4Y" type="output"/>
+        <pin num="9" name="4A" type="input"/>
+        <pin num="10" name="5Y" type="output"/>
+        <pin num="11" name="5A" type="input"/>
+        <pin num="12" name="6Y" type="output"/>
+        <pin num="13" name="6A" type="input"/>
+        <pin num="14" name="VCC" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="U4">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74HCT00DR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1A" type="input"/>
+        <pin num="2" name="1B" type="input"/>
+        <pin num="3" name="1Y" type="output"/>
+        <pin num="4" name="2A" type="input"/>
+        <pin num="5" name="2B" type="input"/>
+        <pin num="6" name="2Y" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="3Y" type="output"/>
+        <pin num="9" name="3A" type="input"/>
+        <pin num="10" name="3B" type="input"/>
+        <pin num="11" name="4Y" type="output"/>
+        <pin num="12" name="4A" type="input"/>
+        <pin num="13" name="4B" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="U5">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM393BIDR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT1" type="open_collector"/>
+        <pin num="2" name="IN1-" type="input"/>
+        <pin num="3" name="IN1+" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="IN2+" type="input"/>
+        <pin num="6" name="IN2-" type="input"/>
+        <pin num="7" name="OUT2" type="open_collector"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck" part="U6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">INA180A1IDBVR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="IN+" type="input"/>
+        <pin num="4" name="IN-" type="input"/>
+        <pin num="5" name="VS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck_Redesign" part="CL21A106KAYNNNE">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10uF 25V</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck_Redesign" part="J3_NUCLEO_L432KC">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">NUCLEO-L432KC EXT USB</field>
+        <field name="Footprint">Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="UART_TX" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="MCU_PWM" type="passive"/>
+        <pin num="4" name="RUN" type="passive"/>
+        <pin num="5" name="RESET" type="passive"/>
+        <pin num="6" name="NFAULT_MCU" type="passive"/>
+        <pin num="7" name="VSENSE" type="passive"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="NUC_3V3" type="passive"/>
+        <pin num="10" name="UART_RX" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck_Redesign" part="MMBT3904_C20526">
+      <docs>${KIPRJMOD}/libraries/datasheets/Changjing_MMBT3904.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">MMBT3904</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">${KIPRJMOD}/libraries/datasheets/Changjing_MMBT3904.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="passive"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Buck">
+      <uri>${KIPRJMOD}/Buck.kicad_sym</uri>
+    </library>
+    <library logical="Buck_Redesign">
+      <uri>${KIPRJMOD}/libraries/symbols/Buck_Redesign.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="VDD_11" pintype="power_in"/>
+      <node ref="U2" pin="3" pinfunction="OUT_3" pintype="power_out"/>
+      <node ref="U3" pin="14" pinfunction="VCC_14" pintype="input"/>
+      <node ref="U4" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U5" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U6" pin="5" pinfunction="VS_5" pintype="power_in"/>
+    </net>
+    <net code="2" name="BOOT" class="Default">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="VB_7" pintype="power_in"/>
+    </net>
+    <net code="3" name="DPRIME" class="Default">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="1A_1" pintype="input"/>
+    </net>
+    <net code="4" name="FAULT" class="Default">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U4" pin="13" pinfunction="4B_13" pintype="input"/>
+      <node ref="U4" pin="8" pinfunction="3Y_8" pintype="output"/>
+    </net>
+    <net code="5" name="FB" class="Default">
+      <node ref="Q2" pin="1" pinfunction="B_1" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+    </net>
+    <net code="6" name="GATE" class="Default">
+      <node ref="Q1" pin="1" pinfunction="G_1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="GATE_1" pintype="passive"/>
+    </net>
+    <net code="7" name="GND" class="Power,Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D1" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pintype="passive"/>
+      <node ref="J2" pin="2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="J3" pin="8" pinfunction="GND_8" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="E_2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="GND_1" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="LIN_14" pintype="power_in"/>
+      <node ref="U1" pin="15" pinfunction="VSS_15" pintype="power_in"/>
+      <node ref="U1" pin="2" pinfunction="COM_2" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U3" pin="11" pinfunction="5A_11" pintype="input"/>
+      <node ref="U3" pin="13" pinfunction="6A_13" pintype="input"/>
+      <node ref="U3" pin="3" pinfunction="2A_3" pintype="input"/>
+      <node ref="U3" pin="5" pinfunction="3A_5" pintype="input"/>
+      <node ref="U3" pin="7" pinfunction="GND_7" pintype="input"/>
+      <node ref="U3" pin="9" pinfunction="4A_9" pintype="input"/>
+      <node ref="U4" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U5" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="GND_2" pintype="power_in"/>
+    </net>
+    <net code="8" name="HIN" class="Default">
+      <node ref="U1" pin="12" pinfunction="HIN_12" pintype="input"/>
+      <node ref="U3" pin="2" pinfunction="1Y_2" pintype="output"/>
+    </net>
+    <net code="9" name="HO" class="Default">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="HO_8" pintype="output"/>
+    </net>
+    <net code="10" name="IP" class="Power,Default">
+      <node ref="L2" pin="2" pintype="passive"/>
+      <node ref="RS1" pin="1" pintype="passive"/>
+      <node ref="U6" pin="3" pinfunction="IN+_3" pintype="input"/>
+    </net>
+    <net code="11" name="ISENSE" class="Default">
+      <node ref="TP6" pin="1" pinfunction="ISENSE_1" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="IN1-_2" pintype="input"/>
+      <node ref="U6" pin="1" pinfunction="OUT_1" pintype="output"/>
+    </net>
+    <net code="12" name="LMID" class="Power,Default">
+      <node ref="L1" pin="2" pintype="passive"/>
+      <node ref="L2" pin="1" pintype="passive"/>
+    </net>
+    <net code="13" name="MCU_PWM" class="Default">
+      <node ref="J3" pin="3" pinfunction="MCU_PWM_3" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="TP9" pin="1" pinfunction="MCU_PWM_1" pintype="passive"/>
+    </net>
+    <net code="14" name="NFAULT" class="Default">
+      <node ref="U4" pin="10" pinfunction="3B_10" pintype="input"/>
+      <node ref="U4" pin="11" pinfunction="4Y_11" pintype="output"/>
+      <node ref="U4" pin="5" pinfunction="2B_5" pintype="input"/>
+    </net>
+    <net code="15" name="NFAULT_MCU" class="Default">
+      <node ref="J3" pin="6" pinfunction="NFAULT_MCU_6" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="C_3" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+    </net>
+    <net code="16" name="NRESET" class="Default">
+      <node ref="U4" pin="12" pinfunction="4A_12" pintype="input"/>
+      <node ref="U4" pin="3" pinfunction="1Y_3" pintype="output"/>
+    </net>
+    <net code="17" name="NTRIP" class="Default">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="NTRIP_1" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="1B_2" pintype="input"/>
+      <node ref="U4" pin="9" pinfunction="3A_9" pintype="input"/>
+      <node ref="U5" pin="1" pinfunction="OUT1_1" pintype="open_collector"/>
+      <node ref="U5" pin="7" pinfunction="OUT2_7" pintype="open_collector"/>
+    </net>
+    <net code="18" name="NUC_3V3" class="Default">
+      <node ref="J3" pin="9" pinfunction="NUC_3V3_9" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+    </net>
+    <net code="19" name="OVSENSE" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="IN2-_6" pintype="input"/>
+    </net>
+    <net code="20" name="RESET" class="Default">
+      <node ref="J3" pin="5" pinfunction="RESET_5" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="1A_1" pintype="input"/>
+    </net>
+    <net code="21" name="RUN" class="Default">
+      <node ref="J3" pin="4" pinfunction="RUN_4" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="2A_4" pintype="input"/>
+    </net>
+    <net code="22" name="SD" class="Default">
+      <node ref="TP7" pin="1" pinfunction="SD_1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="SD_13" pintype="input"/>
+      <node ref="U4" pin="6" pinfunction="2Y_6" pintype="output"/>
+    </net>
+    <net code="23" name="SW" class="Power,Default">
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pintype="passive"/>
+      <node ref="L1" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="S_3" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="SW_1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="VS_6" pintype="input"/>
+    </net>
+    <net code="24" name="UART_RX" class="Default">
+      <node ref="J3" pin="10" pinfunction="UART_RX_10" pintype="passive"/>
+    </net>
+    <net code="25" name="UART_TX" class="Default">
+      <node ref="J3" pin="1" pinfunction="UART_TX_1" pintype="passive"/>
+    </net>
+    <net code="26" name="VIN" class="Power,Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D2" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="D_2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="VIN_1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="VCC_3" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="IN_1" pintype="power_in"/>
+    </net>
+    <net code="27" name="VOUT" class="Power,Default">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="J2" pin="1" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="RS1" pin="2" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="VOUT_1" pintype="passive"/>
+      <node ref="U6" pin="4" pinfunction="IN-_4" pintype="input"/>
+    </net>
+    <net code="28" name="VREF" class="Default">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="IN1+_3" pintype="input"/>
+      <node ref="U5" pin="5" pinfunction="IN2+_5" pintype="input"/>
+    </net>
+    <net code="29" name="VSENSE" class="Default">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="J3" pin="7" pinfunction="VSENSE_7" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="30" name="unconnected-(U1-LO-Pad1)" class="Default">
+      <node ref="U1" pin="1" pinfunction="LO_1" pintype="output+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(U1-NC-Pad4)" class="Default">
+      <node ref="U1" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U1-NC-Pad5)" class="Default">
+      <node ref="U1" pin="5" pinfunction="NC_5" pintype="no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(U1-NC-Pad9)" class="Default">
+      <node ref="U1" pin="9" pinfunction="NC_9" pintype="no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U1-NC-Pad10)" class="Default">
+      <node ref="U1" pin="10" pinfunction="NC_10" pintype="no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(U1-NC-Pad16)" class="Default">
+      <node ref="U1" pin="16" pinfunction="NC_16" pintype="no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U3-2Y-Pad4)" class="Default">
+      <node ref="U3" pin="4" pinfunction="2Y_4" pintype="output+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U3-3Y-Pad6)" class="Default">
+      <node ref="U3" pin="6" pinfunction="3Y_6" pintype="output+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U3-4Y-Pad8)" class="Default">
+      <node ref="U3" pin="8" pinfunction="4Y_8" pintype="output+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(U3-5Y-Pad10)" class="Default">
+      <node ref="U3" pin="10" pinfunction="5Y_10" pintype="output+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U3-6Y-Pad12)" class="Default">
+      <node ref="U3" pin="12" pinfunction="6Y_12" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

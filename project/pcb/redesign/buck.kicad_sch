@@ -5,8 +5,8 @@
   (uuid "94b2b377-c0d1-5fce-91fa-ae8f86f36484")
   (paper "A4")
   (title_block
-    (title "Buck 12V / 6V - REVIEW ONLY")
-    (rev "A")
+    (title "Buck 12V / 6V - REV B PROTOTYPE")
+    (rev "B")
     (company "UNAL Manizales")
   )
   (lib_symbols)
@@ -182,6 +182,7 @@
       )
     )
   )
+  (sheet (at 30 155) (size 130 18) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "c642e27a-c5c7-5007-9ad6-b14d2594c686") (property "Sheetname" "Power-domain interface" (at 30 154 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Sheetfile" "buck_5.kicad_sch" (at 30 175 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (instances (project "buck" (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484" (page "6")))))
   (sheet_instances
     (path "/"
       (page "1")

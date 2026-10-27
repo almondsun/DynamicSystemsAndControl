@@ -1,0 +1,15 @@
+{
+ "drc_errors": 0,
+ "drc_warnings": 3,
+ "drc_unconnected": 0,
+ "drc_parity": 0,
+ "erc_errors": 0,
+ "erc_warnings": 2,
+ "bom_lines": 32,
+ "cpl_parts": 64,
+ "manual_rows": 16,
+ "gerber_zip_files": 12,
+ "problems": [],
+ "board_sha256": "d1dda4c1ab6b64db18240570a3af670aa0abed413a410cefdd3bfeda5349d6b5",
+ "kicad": "10.0.7"
+}

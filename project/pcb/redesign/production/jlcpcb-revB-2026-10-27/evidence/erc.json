@@ -1,0 +1,93 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T12:48:54",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/94b2b377-c0d1-5fce-91fa-ae8f86f36484",
+            "violations": [
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'UART_TX'",
+                            "pos": {
+                                "x": 330.2,
+                                "y": 31.75
+                            },
+                            "uuid": "e9dc5a73-b0d0-5c78-b15d-e258cd10fc35"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'UART_RX'",
+                            "pos": {
+                                "x": 365.76,
+                                "y": 41.91
+                            },
+                            "uuid": "6d39e42b-ab90-5e66-afb2-37cbe637a79c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                }
+            ]
+        },
+        {
+            "path": "/Power stage/",
+            "uuid_path": "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0",
+            "violations": []
+        },
+        {
+            "path": "/Gate driver and supplies/",
+            "uuid_path": "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/fbdf1364-0f3f-5e5b-98a0-861b21661de2",
+            "violations": []
+        },
+        {
+            "path": "/Independent protection/",
+            "uuid_path": "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/45634feb-701a-5cd8-91ce-d8feeefcff15",
+            "violations": []
+        },
+        {
+            "path": "/STM32 interface and test points/",
+            "uuid_path": "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/cfe27333-b53c-553c-abde-2d207f66651e",
+            "violations": []
+        },
+        {
+            "path": "/Power-domain interface/",
+            "uuid_path": "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/c642e27a-c5c7-5007-9ad6-b14d2594c686",
+            "violations": []
+        }
+    ],
+    "source": "buck.kicad_sch"
+}

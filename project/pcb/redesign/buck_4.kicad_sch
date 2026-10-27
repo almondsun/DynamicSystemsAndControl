@@ -5,8 +5,8 @@
   (uuid "39758c43-fbf8-5353-8a68-68bcc8fe2409")
   (paper "A3")
   (title_block
-    (title "STM32 interface and test points - REV A / HOLD FABRICATION")
-    (rev "A")
+    (title "STM32 interface and test points - REV B PROTOTYPE")
+    (rev "B")
     (company "UNAL Manizales - Sistemas Dinamicos y Control")
   )
   (lib_symbols
@@ -2181,7 +2181,7 @@
       )
     )
   )
-  (global_label "VSENSE"
+  (global_label "VSENSE_DIV"
     (shape passive)
     (at 132.08 35.56 180)
     (effects
@@ -2555,7 +2555,7 @@
       )
     )
   )
-  (global_label "VSENSE"
+  (global_label "VSENSE_DIV"
     (shape passive)
     (at 68.58 35.56 0)
     (effects
@@ -4139,7 +4139,7 @@
         )
       )
     )
-    (property "Value" "NUCLEO-L432KC EXT USB"
+    (property "Value" "NUCLEO IF 61201021621"
       (at 347.98 45.91 0)
       (show_name no)
       (do_not_autoplace no)
@@ -4149,7 +4149,7 @@
         )
       )
     )
-    (property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
+    (property "Footprint" "Buck_RevB:Wurth_WR-BHD_61201021621_2x05_P2.54mm_Vertical"
       (at 347.98 35.56 0)
       (hide yes)
       (show_name no)
@@ -4160,7 +4160,7 @@
         )
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.we-online.com/components/products/datasheet/61201021621.pdf"
       (at 347.98 35.56 0)
       (show_name no)
       (do_not_autoplace no)
@@ -4218,7 +4218,7 @@
         )
       )
     )
-    (property "Migration_Status" "NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN"
+    (property "Migration_Status" "REV B - PART FIXED BY RELEASE PLAN"
       (at 347.98 35.56 0)
       (effects
         (font
@@ -4245,7 +4245,7 @@
         (hide yes)
       )
     )
-    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+    (property "Electrical_Approval" "PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"
       (at 347.98 35.56 0)
       (effects
         (font
@@ -4254,7 +4254,7 @@
         (hide yes)
       )
     )
-    (property "Migration_Notes" "External NUCLEO powered via USB. No Buck 5V/VIN connection. NUC_3V3 supplies R13 pull-up only. PA0/PWM signal protection and board solder bridges remain blocking."
+    (property "Migration_Notes" "Rev B: J3 signals pass through U7/U8; NUC_3V3 powers U8 and R13/R18/R22 and is supervised by U9. Harness per assembly doc."
       (at 347.98 35.56 0)
       (effects
         (font
@@ -4263,7 +4263,7 @@
         (hide yes)
       )
     )
-    (property "MPN" "TBD keyed IDC header 2x5 2.54mm"
+    (property "MPN" "61201021621"
       (at 347.98 35.56 0)
       (effects
         (font
@@ -4272,7 +4272,7 @@
         (hide yes)
       )
     )
-    (property "Manufacturer" "TBD"
+    (property "Manufacturer" "Wurth Elektronik"
       (at 347.98 35.56 0)
       (effects
         (font
@@ -4281,7 +4281,7 @@
         (hide yes)
       )
     )
-    (property "LCSC" "NOT SELECTED"
+    (property "LCSC" "C4355000"
       (at 347.98 35.56 0)
       (effects
         (font
@@ -4299,7 +4299,7 @@
         (hide yes)
       )
     )
-    (property "Assembly" "NUCLEO external; NOT assembled by JLCPCB; header MPN/land provisional"
+    (property "Assembly" "MANUAL_THT"
       (at 347.98 35.56 0)
       (effects
         (font

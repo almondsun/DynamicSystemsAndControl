@@ -5,8 +5,8 @@
   (uuid "824ca2fe-0fae-57c5-baf5-9c126fa1476e")
   (paper "A3")
   (title_block
-    (title "Power stage - REV A / HOLD FABRICATION")
-    (rev "A")
+    (title "Power stage - REV B PROTOTYPE")
+    (rev "B")
     (company "UNAL Manizales - Sistemas Dinamicos y Control")
   )
   (lib_symbols
@@ -2948,7 +2948,7 @@
         )
       )
     )
-    (property "Value" "10uF 35V low ESR"
+    (property "Value" "10uF 50V 50SVF10M"
       (at 248.92 128.46 0)
       (show_name no)
       (do_not_autoplace no)
@@ -2958,7 +2958,7 @@
         )
       )
     )
-    (property "Footprint" "Buck_SMD:CAP_SVF_C6_PAN"
+    (property "Footprint" "Buck_RevB:CP_Panasonic_SVF_C6_Land"
       (at 248.92 121.92 0)
       (hide yes)
       (show_name no)
@@ -3003,7 +3003,7 @@
         )
       )
     )
-    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+    (property "Migration_Status" "REV B - LAND CORRECTED TO MANUFACTURER DRAWING"
       (at 248.92 121.92 0)
       (effects
         (font
@@ -3097,7 +3097,7 @@
         )
       )
     )
-    (property "Value" "0.050R 1% 1W"
+    (property "Value" "0.050R 1% 2W RLP25FEER050"
       (at 149.86 85.28 0)
       (show_name no)
       (do_not_autoplace no)
@@ -3107,7 +3107,7 @@
         )
       )
     )
-    (property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+    (property "Footprint" "Buck_RevB:R_TAI_RLP25_2512_Kelvin"
       (at 149.86 78.74 0)
       (hide yes)
       (show_name no)
@@ -3152,7 +3152,7 @@
         )
       )
     )
-    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+    (property "Migration_Status" "REV B - LAND CORRECTED TO MANUFACTURER DRAWING"
       (at 149.86 78.74 0)
       (effects
         (font
@@ -3246,7 +3246,7 @@
         )
       )
     )
-    (property "Value" "12V FUSED INPUT"
+    (property "Value" "12V IN TB002-500-02BE"
       (at 50.8 42.1 0)
       (show_name no)
       (do_not_autoplace no)
@@ -3256,7 +3256,7 @@
         )
       )
     )
-    (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+    (property "Footprint" "Buck_RevB:TerminalBlock_SameSky_TB002-500-02_1x02_P5.00mm"
       (at 50.8 35.56 0)
       (hide yes)
       (show_name no)
@@ -3267,7 +3267,7 @@
         )
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.sameskydevices.com/product/resource/tb002-500.pdf"
       (at 50.8 35.56 0)
       (show_name no)
       (do_not_autoplace no)
@@ -3293,6 +3293,7 @@
     (pin "1"
       (uuid "aa9aa847-999e-4613-8c30-7c9172167784")
     )
+    (property "MPN" "TB002-500-02BE" (at 50.8 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Same Sky" (at 50.8 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C2757858" (at 50.8 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "MANUAL_THT" (at 50.8 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
     (instances
       (project "buck"
         (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
@@ -3301,7 +3302,7 @@
         )
       )
     )
-    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+    (property "Migration_Status" "REV B - PART FIXED BY RELEASE PLAN"
       (at 50.8 35.56 0)
       (effects
         (font
@@ -3328,7 +3329,7 @@
         (hide yes)
       )
     )
-    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+    (property "Electrical_Approval" "PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"
       (at 50.8 35.56 0)
       (effects
         (font
@@ -3517,7 +3518,7 @@
         )
       )
     )
-    (property "Value" "330uH >=3A Isat VERIFY"
+    (property "Value" "330uH 60B334C"
       (at 347.98 42.1 0)
       (show_name no)
       (do_not_autoplace no)
@@ -3527,7 +3528,7 @@
         )
       )
     )
-    (property "Footprint" "Buck:Inductor_25mm_P10mm_VERIFY"
+    (property "Footprint" "Buck_RevB:L_Murata_6000B_27.0x23.5mm"
       (at 347.98 35.56 0)
       (hide yes)
       (show_name no)
@@ -3538,7 +3539,7 @@
         )
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.murata.com/products/power/power-magnetics (KMP_6000B_B01)"
       (at 347.98 35.56 0)
       (show_name no)
       (do_not_autoplace no)
@@ -3564,6 +3565,7 @@
     (pin "2"
       (uuid "6ad3f173-ff20-467b-bf42-b8d3bf7f54c4")
     )
+    (property "MPN" "60B334C" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Murata Power Solutions" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C6823957" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "JLC_SMT_TOP_SUPPLY_BLOCKED" (at 347.98 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
     (instances
       (project "buck"
         (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
@@ -3572,7 +3574,7 @@
         )
       )
     )
-    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+    (property "Migration_Status" "REV B - PART FIXED BY RELEASE PLAN"
       (at 347.98 35.56 0)
       (effects
         (font
@@ -3599,7 +3601,7 @@
         (hide yes)
       )
     )
-    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+    (property "Electrical_Approval" "PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"
       (at 347.98 35.56 0)
       (effects
         (font
@@ -3723,7 +3725,7 @@
         )
       )
     )
-    (property "Footprint" "Buck_SMD:PCAP_SVP_E7_PAN"
+    (property "Footprint" "Buck_RevB:CP_Panasonic_SVPF_E7_Land"
       (at 347.98 78.74 0)
       (hide yes)
       (show_name no)
@@ -3768,7 +3770,7 @@
         )
       )
     )
-    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+    (property "Migration_Status" "REV B - LAND CORRECTED TO MANUFACTURER DRAWING"
       (at 347.98 78.74 0)
       (effects
         (font
@@ -3872,7 +3874,7 @@
         )
       )
     )
-    (property "Footprint" "Buck_SMD:PCAP_SVP_E7_PAN"
+    (property "Footprint" "Buck_RevB:CP_Panasonic_SVPF_E7_Land"
       (at 50.8 121.92 0)
       (hide yes)
       (show_name no)
@@ -3917,7 +3919,7 @@
         )
       )
     )
-    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+    (property "Migration_Status" "REV B - LAND CORRECTED TO MANUFACTURER DRAWING"
       (at 50.8 121.92 0)
       (effects
         (font
@@ -4234,7 +4236,7 @@
         )
       )
     )
-    (property "Value" "LOAD + / -"
+    (property "Value" "LOAD TB002-500-02BE"
       (at 248.92 85.28 0)
       (show_name no)
       (do_not_autoplace no)
@@ -4244,7 +4246,7 @@
         )
       )
     )
-    (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+    (property "Footprint" "Buck_RevB:TerminalBlock_SameSky_TB002-500-02_1x02_P5.00mm"
       (at 248.92 78.74 0)
       (hide yes)
       (show_name no)
@@ -4255,7 +4257,7 @@
         )
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.sameskydevices.com/product/resource/tb002-500.pdf"
       (at 248.92 78.74 0)
       (show_name no)
       (do_not_autoplace no)
@@ -4281,6 +4283,7 @@
     (pin "2"
       (uuid "d6400255-0d8a-4860-af86-4d5ea30d673e")
     )
+    (property "MPN" "TB002-500-02BE" (at 248.92 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Same Sky" (at 248.92 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C2757858" (at 248.92 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "MANUAL_THT" (at 248.92 78.74 0) (hide yes) (effects (font (size 1.27 1.27))))
     (instances
       (project "buck"
         (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
@@ -4289,7 +4292,7 @@
         )
       )
     )
-    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+    (property "Migration_Status" "REV B - PART FIXED BY RELEASE PLAN"
       (at 248.92 78.74 0)
       (effects
         (font
@@ -4316,7 +4319,7 @@
         (hide yes)
       )
     )
-    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+    (property "Electrical_Approval" "PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"
       (at 248.92 78.74 0)
       (effects
         (font
@@ -4356,7 +4359,7 @@
         )
       )
     )
-    (property "Value" "330uH >=3A Isat VERIFY"
+    (property "Value" "330uH 60B334C"
       (at 50.8 85.28 0)
       (show_name no)
       (do_not_autoplace no)
@@ -4366,7 +4369,7 @@
         )
       )
     )
-    (property "Footprint" "Buck:Inductor_25mm_P10mm_VERIFY"
+    (property "Footprint" "Buck_RevB:L_Murata_6000B_27.0x23.5mm"
       (at 50.8 78.74 0)
       (hide yes)
       (show_name no)
@@ -4377,7 +4380,7 @@
         )
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.murata.com/products/power/power-magnetics (KMP_6000B_B01)"
       (at 50.8 78.74 0)
       (show_name no)
       (do_not_autoplace no)
@@ -4403,6 +4406,7 @@
     (pin "1"
       (uuid "38de74b3-1ce4-4f07-9f1f-a7af0db2db4a")
     )
+    (property "MPN" "60B334C" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Murata Power Solutions" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C6823957" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "JLC_SMT_TOP_SUPPLY_BLOCKED" (at 50.8 78.74 0) (hide yes) (effects (font (size 1.27 1.27))))
     (instances
       (project "buck"
         (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
@@ -4411,7 +4415,7 @@
         )
       )
     )
-    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+    (property "Migration_Status" "REV B - PART FIXED BY RELEASE PLAN"
       (at 50.8 78.74 0)
       (effects
         (font
@@ -4438,7 +4442,7 @@
         (hide yes)
       )
     )
-    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+    (property "Electrical_Approval" "PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"
       (at 50.8 78.74 0)
       (effects
         (font
@@ -4478,7 +4482,7 @@
         )
       )
     )
-    (property "Value" "10uF 35V low ESR"
+    (property "Value" "10uF 50V 50SVF10M"
       (at 347.98 128.46 0)
       (show_name no)
       (do_not_autoplace no)
@@ -4488,7 +4492,7 @@
         )
       )
     )
-    (property "Footprint" "Buck_SMD:CAP_SVF_C6_PAN"
+    (property "Footprint" "Buck_RevB:CP_Panasonic_SVF_C6_Land"
       (at 347.98 121.92 0)
       (hide yes)
       (show_name no)
@@ -4533,7 +4537,7 @@
         )
       )
     )
-    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+    (property "Migration_Status" "REV B - LAND CORRECTED TO MANUFACTURER DRAWING"
       (at 347.98 121.92 0)
       (effects
         (font
@@ -4775,7 +4779,7 @@
         )
       )
     )
-    (property "Value" "IRFZ44N TO-220"
+    (property "Value" "IRFZ44NPBF"
       (at 149.86 42.1 0)
       (show_name no)
       (do_not_autoplace no)
@@ -4785,7 +4789,7 @@
         )
       )
     )
-    (property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+    (property "Footprint" "Buck_RevB:TO-220-3_Vertical_Drill1.4"
       (at 149.86 35.56 0)
       (hide yes)
       (show_name no)
@@ -4796,7 +4800,7 @@
         )
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irfz44n-datasheet-en.pdf"
       (at 149.86 35.56 0)
       (show_name no)
       (do_not_autoplace no)
@@ -4825,6 +4829,7 @@
     (pin "1"
       (uuid "a551061d-fd82-4b0b-a3f0-ab4d0ab1edb2")
     )
+    (property "MPN" "IRFZ44NPBF" (at 149.86 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Infineon" (at 149.86 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C2586" (at 149.86 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "MANUAL_THT" (at 149.86 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
     (instances
       (project "buck"
         (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
@@ -4833,7 +4838,7 @@
         )
       )
     )
-    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+    (property "Migration_Status" "REV B - PART FIXED BY RELEASE PLAN"
       (at 149.86 35.56 0)
       (effects
         (font
@@ -4860,7 +4865,7 @@
         (hide yes)
       )
     )
-    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+    (property "Electrical_Approval" "PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"
       (at 149.86 35.56 0)
       (effects
         (font

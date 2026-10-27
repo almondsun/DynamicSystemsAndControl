@@ -5,8 +5,8 @@
   (uuid "f876e7fc-5b36-5176-9c54-de085773d419")
   (paper "A3")
   (title_block
-    (title "Independent protection - REV A / HOLD FABRICATION")
-    (rev "A")
+    (title "Independent protection - REV B PROTOTYPE")
+    (rev "B")
     (company "UNAL Manizales - Sistemas Dinamicos y Control")
   )
   (lib_symbols
@@ -3597,7 +3597,7 @@
       )
     )
   )
-  (global_label "RESET"
+  (global_label "RESET_5V"
     (shape passive)
     (at 33.02 29.21 180)
     (effects
@@ -4257,7 +4257,7 @@
       )
     )
   )
-  (global_label "RUN"
+  (global_label "RUN_5V"
     (shape passive)
     (at 33.02 36.83 180)
     (effects
@@ -5070,7 +5070,7 @@
         )
       )
     )
-    (property "Footprint" "Buck_SMD:DBV0005A_N"
+    (property "Footprint" "Buck_RevB:TI_DBV0005A_SOT-23-5"
       (at 50.8 165.1 0)
       (hide yes)
       (show_name no)
@@ -5124,7 +5124,7 @@
         )
       )
     )
-    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+    (property "Migration_Status" "REV B - LAND CORRECTED TO MANUFACTURER DRAWING"
       (at 50.8 165.1 0)
       (effects
         (font
@@ -5377,7 +5377,7 @@
         )
       )
     )
-    (property "Footprint" "Buck_SMD:D14"
+    (property "Footprint" "Buck_RevB:TI_D0014A_SOIC-14"
       (at 50.8 35.56 0)
       (hide yes)
       (show_name no)
@@ -5458,7 +5458,7 @@
         )
       )
     )
-    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+    (property "Migration_Status" "REV B - LAND CORRECTED TO MANUFACTURER DRAWING"
       (at 50.8 35.56 0)
       (effects
         (font
@@ -6199,7 +6199,7 @@
         )
       )
     )
-    (property "Footprint" "Buck_SMD:D0008A-MFG"
+    (property "Footprint" "Buck_RevB:TI_D0008A_SOIC-8"
       (at 149.86 78.74 0)
       (hide yes)
       (show_name no)
@@ -6262,7 +6262,7 @@
         )
       )
     )
-    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+    (property "Migration_Status" "REV B - LAND CORRECTED TO MANUFACTURER DRAWING"
       (at 149.86 78.74 0)
       (effects
         (font

@@ -1,0 +1,4882 @@
+(kicad_sch
+  (version 20260306)
+  (generator "eeschema")
+  (generator_version "10.0")
+  (uuid "824ca2fe-0fae-57c5-baf5-9c126fa1476e")
+  (paper "A3")
+  (title_block
+    (title "Power stage - REV A / HOLD FABRICATION")
+    (rev "A")
+    (company "UNAL Manizales - Sistemas Dinamicos y Control")
+  )
+  (lib_symbols
+    (symbol "Buck:C1"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "100uF 25V"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "C1_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -1.27 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -5 2)
+            (xy -3 2)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -4 1)
+            (xy -4 3)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -1.27 -3.81)
+            (xy -1.27 3.81)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy 10.16 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.27 -3.81)
+            (xy 1.27 3.81)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "C1_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:C2"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "100uF 25V"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "C2_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -1.27 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -5 2)
+            (xy -3 2)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -4 1)
+            (xy -4 3)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -1.27 -3.81)
+            (xy -1.27 3.81)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy 10.16 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.27 -3.81)
+            (xy 1.27 3.81)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "C2_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:C3"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "100nF 50V"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "C3_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -1.27 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -1.27 -3.81)
+            (xy -1.27 3.81)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy 10.16 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.27 -3.81)
+            (xy 1.27 3.81)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "C3_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:C4"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "10uF 35V low ESR"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "C4_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -1.27 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -5 2)
+            (xy -3 2)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -4 1)
+            (xy -4 3)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -1.27 -3.81)
+            (xy -1.27 3.81)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy 10.16 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.27 -3.81)
+            (xy 1.27 3.81)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "C4_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:C5"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "10uF 35V low ESR"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "C5_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -1.27 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -5 2)
+            (xy -3 2)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -4 1)
+            (xy -4 3)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -1.27 -3.81)
+            (xy -1.27 3.81)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy 10.16 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 1.27 -3.81)
+            (xy 1.27 3.81)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "C5_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:D1"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "D"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "1N5822 40V 3A"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "D1_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -2.54 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -2.54 -2.54)
+            (xy -2.54 2.54)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 2.54 0)
+            (xy 10.16 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 2.54 -2.54)
+            (xy -2.54 0)
+            (xy 2.54 2.54)
+            (xy 2.54 -2.54)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "D1_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:J1"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "12V FUSED INPUT"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "J1_0_1"
+        (rectangle
+          (start -10.16 2.54)
+          (end 10.16 -2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "J1_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:J2"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "LOAD + / -"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "J2_0_1"
+        (rectangle
+          (start -10.16 2.54)
+          (end 10.16 -2.54)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "J2_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:L1"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "L"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "330uH >=3A Isat VERIFY"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "L1_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -3.81 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -3.81 0)
+            (xy -3.6195 0.5562)
+            (xy -3.429 1.058)
+            (xy -3.2385 1.4562)
+            (xy -3.048 1.7119)
+            (xy -2.8575 1.8)
+            (xy -2.667 1.7119)
+            (xy -2.4765 1.4562)
+            (xy -2.286 1.058)
+            (xy -2.0955 0.5562)
+            (xy -1.905 0)
+            (xy -1.7145 0.5562)
+            (xy -1.524 1.058)
+            (xy -1.3335 1.4562)
+            (xy -1.143 1.7119)
+            (xy -0.9525 1.8)
+            (xy -0.762 1.7119)
+            (xy -0.5715 1.4562)
+            (xy -0.381 1.058)
+            (xy -0.1905 0.5562)
+            (xy 0 0)
+            (xy 0.1905 0.5562)
+            (xy 0.381 1.058)
+            (xy 0.5715 1.4562)
+            (xy 0.762 1.7119)
+            (xy 0.9525 1.8)
+            (xy 1.143 1.7119)
+            (xy 1.3335 1.4562)
+            (xy 1.524 1.058)
+            (xy 1.7145 0.5562)
+            (xy 1.905 0)
+            (xy 2.0955 0.5562)
+            (xy 2.286 1.058)
+            (xy 2.4765 1.4562)
+            (xy 2.667 1.7119)
+            (xy 2.8575 1.8)
+            (xy 3.048 1.7119)
+            (xy 3.2385 1.4562)
+            (xy 3.429 1.058)
+            (xy 3.6195 0.5562)
+            (xy 3.81 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 3.81 0)
+            (xy 10.16 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "L1_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:L2"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "L"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "330uH >=3A Isat VERIFY"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "L2_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -3.81 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy -3.81 0)
+            (xy -3.6195 0.5562)
+            (xy -3.429 1.058)
+            (xy -3.2385 1.4562)
+            (xy -3.048 1.7119)
+            (xy -2.8575 1.8)
+            (xy -2.667 1.7119)
+            (xy -2.4765 1.4562)
+            (xy -2.286 1.058)
+            (xy -2.0955 0.5562)
+            (xy -1.905 0)
+            (xy -1.7145 0.5562)
+            (xy -1.524 1.058)
+            (xy -1.3335 1.4562)
+            (xy -1.143 1.7119)
+            (xy -0.9525 1.8)
+            (xy -0.762 1.7119)
+            (xy -0.5715 1.4562)
+            (xy -0.381 1.058)
+            (xy -0.1905 0.5562)
+            (xy 0 0)
+            (xy 0.1905 0.5562)
+            (xy 0.381 1.058)
+            (xy 0.5715 1.4562)
+            (xy 0.762 1.7119)
+            (xy 0.9525 1.8)
+            (xy 1.143 1.7119)
+            (xy 1.3335 1.4562)
+            (xy 1.524 1.058)
+            (xy 1.7145 0.5562)
+            (xy 1.905 0)
+            (xy 2.0955 0.5562)
+            (xy 2.286 1.058)
+            (xy 2.4765 1.4562)
+            (xy 2.667 1.7119)
+            (xy 2.8575 1.8)
+            (xy 3.048 1.7119)
+            (xy 3.2385 1.4562)
+            (xy 3.429 1.058)
+            (xy 3.6195 0.5562)
+            (xy 3.81 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 3.81 0)
+            (xy 10.16 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "L2_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:PWR_FLAG"
+      (power global)
+      (pin_names
+        (offset 0)
+      )
+      (exclude_from_sim no)
+      (in_bom no)
+      (on_board no)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#FLG"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "PWR_FLAG"
+        (at 0 3 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "PWR_FLAG_1_1"
+        (pin power_out line
+          (at 0 0 90)
+          (length 0)
+          (name "pwr"
+            (effects
+              (font
+                (size 1 1)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 1 1)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:Q1"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "Q"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "IRFZ44N TO-220"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "Q1_0_1"
+        (rectangle
+          (start -10.16 2.032)
+          (end 10.16 -3.81)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type background)
+          )
+        )
+      )
+      (symbol "Q1_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name "G"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at -12.7 -2.54 0)
+          (length 2.54)
+          (name "D"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name "S"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "3"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+    (symbol "Buck:RS1"
+      (pin_names
+        (offset 0.5)
+      )
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 0 5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Value" "0.050R 1% 1W"
+        (at 0 -5.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1 1)
+          )
+        )
+      )
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (property "Description" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+          )
+        )
+      )
+      (symbol "RS1_0_1"
+        (polyline
+          (pts
+            (xy -10.16 0)
+            (xy -3.81 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (rectangle
+          (start -3.81 1.27)
+          (end 3.81 -1.27)
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+        (polyline
+          (pts
+            (xy 3.81 0)
+            (xy 10.16 0)
+          )
+          (stroke
+            (width 0.254)
+            (type default)
+          )
+          (fill
+            (type none)
+          )
+        )
+      )
+      (symbol "RS1_1_1"
+        (pin passive line
+          (at -12.7 0 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "1"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+        (pin passive line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+          (number "2"
+            (effects
+              (font
+                (size 0.85 0.85)
+              )
+            )
+          )
+        )
+      )
+      (embedded_fonts no)
+    )
+  )
+  (wire
+    (pts
+      (xy 236.22 35.56)
+      (xy 231.14 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "08a18df4-9ba3-5623-ae89-34f424deeca9")
+  )
+  (wire
+    (pts
+      (xy 360.68 35.56)
+      (xy 365.76 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "15ba1285-08a7-5faf-b417-f673912306d1")
+  )
+  (wire
+    (pts
+      (xy 335.28 78.74)
+      (xy 330.2 78.74)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "236ec2f8-a8fa-55ad-992a-c8034bc9f42d")
+  )
+  (wire
+    (pts
+      (xy 162.56 121.92)
+      (xy 167.64 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "23967491-36c7-5ca8-8966-013a99642f5f")
+  )
+  (wire
+    (pts
+      (xy 134.62 166.37)
+      (xy 129.54 166.37)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "264a4915-382a-4adf-9933-84cda12945f9")
+  )
+  (wire
+    (pts
+      (xy 335.28 121.92)
+      (xy 330.2 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "36c94d19-1d76-534b-8c2b-b9e99ff15ced")
+  )
+  (wire
+    (pts
+      (xy 63.5 121.92)
+      (xy 68.58 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "39e0c990-27c5-52fa-8dc0-132e87504b19")
+  )
+  (wire
+    (pts
+      (xy 137.16 121.92)
+      (xy 132.08 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "44fd00c2-fa9c-5e74-8ce9-446615181964")
+  )
+  (wire
+    (pts
+      (xy 38.1 35.56)
+      (xy 33.02 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "485e6208-7189-5d9b-a6b1-a6eedba6448b")
+  )
+  (wire
+    (pts
+      (xy 261.62 121.92)
+      (xy 266.7 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "4af418a9-7500-5fcb-836d-a47f690b17fe")
+  )
+  (wire
+    (pts
+      (xy 137.16 78.74)
+      (xy 132.08 78.74)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "5e5b5bd4-bc12-5324-99f9-e8cc6f15c1b5")
+  )
+  (wire
+    (pts
+      (xy 261.62 35.56)
+      (xy 266.7 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "68a3e127-2875-543d-905f-7994075b626b")
+  )
+  (wire
+    (pts
+      (xy 360.68 78.74)
+      (xy 365.76 78.74)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "74afcfa4-3883-5f1c-8273-c9871a057a63")
+  )
+  (wire
+    (pts
+      (xy 360.68 121.92)
+      (xy 365.76 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "8757795f-e0d2-5402-91f7-e43a17f629f1")
+  )
+  (wire
+    (pts
+      (xy 261.62 78.74)
+      (xy 266.7 78.74)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "97da36a4-0f6e-54e0-80ce-ec7943d08284")
+  )
+  (wire
+    (pts
+      (xy 162.56 78.74)
+      (xy 167.64 78.74)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "ad81ff7c-77f1-563e-b976-16012c0c6e70")
+  )
+  (wire
+    (pts
+      (xy 63.5 78.74)
+      (xy 68.58 78.74)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "b21e2eb8-df2f-5a8d-a659-16a04cd56c9d")
+  )
+  (wire
+    (pts
+      (xy 162.56 35.56)
+      (xy 167.64 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "d534410d-b50d-5bfd-91b3-96be2386e223")
+  )
+  (wire
+    (pts
+      (xy 236.22 121.92)
+      (xy 231.14 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "d57ccd72-c58e-538e-97db-5198067a40c2")
+  )
+  (wire
+    (pts
+      (xy 236.22 78.74)
+      (xy 231.14 78.74)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "d7671c8c-e84a-5413-8622-7f198f1b2e0a")
+  )
+  (wire
+    (pts
+      (xy 38.1 78.74)
+      (xy 33.02 78.74)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "d9152c07-7a5d-53c9-90f3-13ae21a3fc7d")
+  )
+  (wire
+    (pts
+      (xy 38.1 121.92)
+      (xy 33.02 121.92)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "dbf5c720-a814-58de-b68d-fe7cd8c3116d")
+  )
+  (wire
+    (pts
+      (xy 137.16 35.56)
+      (xy 132.08 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "de86f183-86ed-5a03-a973-473b8b127d47")
+  )
+  (wire
+    (pts
+      (xy 335.28 35.56)
+      (xy 330.2 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "e51486b5-1bdc-5021-b72a-c6854c1bdb49")
+  )
+  (wire
+    (pts
+      (xy 137.16 38.1)
+      (xy 132.08 38.1)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "f18995fc-8f64-583c-a0df-36c57da177e9")
+  )
+  (wire
+    (pts
+      (xy 63.5 35.56)
+      (xy 68.58 35.56)
+    )
+    (stroke
+      (width 0)
+      (type default)
+    )
+    (uuid "fa0f01c4-36a9-518e-a661-a2053e5c0f59")
+  )
+  (global_label "IP"
+    (shape passive)
+    (at 132.08 78.74 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "00979553-7b5f-58af-9b3e-81b3d5e9db2a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 132.08 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VOUT"
+    (shape passive)
+    (at 231.14 121.92 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "0acf20bb-c957-52f7-b48e-deae1f3a6edd")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 231.14 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 266.7 78.74 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "1701e4aa-610d-566e-8388-5b603b08b4c8")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 266.7 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VOUT"
+    (shape passive)
+    (at 167.64 78.74 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "1891711b-3d75-5417-b284-dfe9dc20ed61")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 167.64 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 365.76 121.92 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "1a29cc37-6143-5bda-83a8-f2efed0486d7")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 365.76 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VIN"
+    (shape passive)
+    (at 330.2 78.74 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "1db46803-2018-50a9-893b-e29e49666bfb")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 330.2 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "BOOT"
+    (shape passive)
+    (at 218.44 166.37 0)
+    (effects
+      (font
+        (size 1 1)
+      )
+    )
+    (uuid "36c7b258-9394-5b0f-95e5-ef61822daded")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 218.44 166.37 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 266.7 35.56 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "39806775-5f8c-5101-862f-76f546a02dbc")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 266.7 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VIN"
+    (shape passive)
+    (at 40.64 166.37 0)
+    (effects
+      (font
+        (size 1 1)
+      )
+    )
+    (uuid "55f559be-d993-5caf-bfe1-74f6888a13f9")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 40.64 166.37 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "SW"
+    (shape passive)
+    (at 330.2 35.56 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "67dc0168-9c01-540d-aee5-b7610a483a20")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 330.2 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VIN"
+    (shape passive)
+    (at 33.02 35.56 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "6a27a223-4e10-5e4b-9f0e-a688e28c3df1")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 33.02 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "NUC_3V3"
+    (shape passive)
+    (at 307.34 166.37 0)
+    (effects
+      (font
+        (size 1 1)
+      )
+    )
+    (uuid "8965714a-cf42-5f2a-8f50-85f254a4a10d")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 307.34 166.37 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "LMID"
+    (shape passive)
+    (at 365.76 35.56 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "909bdc41-599e-5b32-8e6b-af8a36abc4f4")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 365.76 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "IP"
+    (shape passive)
+    (at 68.58 78.74 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "99e4e7c7-dd15-58b9-8408-d48eb5a1338d")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 68.58 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 68.58 121.92 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "aa278998-dd9f-5f26-a547-3374ca363136")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 68.58 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 68.58 35.56 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "aa3fdbca-32a6-5ade-9fe6-53c02af86218")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 68.58 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 365.76 78.74 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "af944569-7d6e-5821-94bc-119f1ec187a0")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 365.76 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GATE"
+    (shape passive)
+    (at 132.08 35.56 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "b172cb48-0cdc-5cf7-aa0f-9c1bdedc4863")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 132.08 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "LMID"
+    (shape passive)
+    (at 33.02 78.74 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "bfbc5b8e-364a-52df-bb6e-37960557a4fc")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 33.02 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "SW"
+    (shape passive)
+    (at 231.14 35.56 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "d4f5d8ec-298f-5793-8661-2117fdb3414f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 231.14 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VOUT"
+    (shape passive)
+    (at 231.14 78.74 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "d8476098-b883-5684-b85f-08e0ad8e4c95")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 231.14 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VIN"
+    (shape passive)
+    (at 132.08 38.1 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "de2d9e1a-a583-50e6-a1aa-78f8a4e34c23")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 132.08 38.1 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "SW"
+    (shape passive)
+    (at 167.64 35.56 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "de7036dd-6a5b-5f27-acaa-4e969a91d6d3")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 167.64 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VIN"
+    (shape passive)
+    (at 33.02 121.92 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "de8da2c4-f7d0-5dbe-b8b9-d16bf0b8bac8")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 33.02 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 167.64 121.92 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "ded9d84b-d57a-5547-8e98-a27aa27bd3b0")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 167.64 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VIN"
+    (shape passive)
+    (at 132.08 121.92 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "e09bbee3-8b27-5dcc-be9c-56d24871c557")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 132.08 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "VOUT"
+    (shape passive)
+    (at 330.2 121.92 180)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify right)
+    )
+    (uuid "e41f393a-7c75-5160-a0a3-e040644d0dd6")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 330.2 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 134.62 166.37 0)
+    (effects
+      (font
+        (size 1 1)
+      )
+    )
+    (uuid "e87e83b6-f174-51b4-bae6-b3cadd2047ed")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 134.62 166.37 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (global_label "GND"
+    (shape passive)
+    (at 266.7 121.92 0)
+    (effects
+      (font
+        (size 0.85 0.85)
+      )
+      (justify left)
+    )
+    (uuid "e93ea50b-5b90-52f7-ac9b-6b6e8d6192ba")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 266.7 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:C4")
+    (at 248.92 121.92 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "09532927-4729-5a39-bea1-1a23d44e7ef8")
+    (property "Reference" "C4"
+      (at 248.92 115.38 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "10uF 35V low ESR"
+      (at 248.92 128.46 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Buck_SMD:CAP_SVF_C6_PAN"
+      (at 248.92 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 248.92 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 248.92 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "2"
+      (uuid "0441c91b-63b8-4b78-b221-8fe9932bfee2")
+    )
+    (pin "1"
+      (uuid "b4862e1e-bff6-4a25-9885-0ab6a480e2fd")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "C4")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "Panasonic 50SVF10M"
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C454354"
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Margen corriente 11,7× y tensión nominal ≥2,5× frente a 20 V hipotéticos. C_banco efectiva≥16 µF a vida/temperatura no demostrada; ESR @10 kHz y estabilidad PI; land C6 y polaridad."
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Original_Value" "10uF 35V low ESR"
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "Panasonic 50SVF10M"
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C454354"
+      (at 248.92 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:RS1")
+    (at 149.86 78.74 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "0f6f783b-5fa7-55d8-9dd7-4dfdca9baa1f")
+    (property "Reference" "RS1"
+      (at 149.86 72.2 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "0.050R 1% 1W"
+      (at 149.86 85.28 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+      (at 149.86 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 149.86 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 149.86 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "2"
+      (uuid "cd95095d-3d2e-4885-a31b-b93f8691c508")
+    )
+    (pin "1"
+      (uuid "4d489298-1328-4155-b1dc-295e8d86d121")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "RS1")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "TA-I RLP25FEER050"
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C160588"
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "ASIGNACIÓN CAD PROVISIONAL, NO APROBACIÓN ELÉCTRICA. Huella 2512 genérica PROVISIONAL; NO reproduce land TA-I a=4,b=2.1,L=4.1 mm. Mantener pendiente mecánica/Kelvin/térmica. Con 1 oz (~35 µm) no atribuir 2 W. Demostrar derating y temperatura a 0,316 W; kelvin desde pads; land TA-I específico."
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Original_Value" "0.050R 1% 1W"
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "TA-I RLP25FEER050"
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C160588"
+      (at 149.86 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:J1")
+    (at 50.8 35.56 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "33ca0f0c-60cf-56ca-afe8-82ae25236e1d")
+    (property "Reference" "J1"
+      (at 50.8 29.02 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "12V FUSED INPUT"
+      (at 50.8 42.1 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+      (at 50.8 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 50.8 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 50.8 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "2"
+      (uuid "41720552-05f9-4d82-a0c2-548daafaa2e5")
+    )
+    (pin "1"
+      (uuid "aa9aa847-999e-4613-8c30-7c9172167784")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "J1")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "TB002-500-02BE"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C2757858"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      (at 50.8 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:D1")
+    (at 248.92 35.56 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "401b85ab-3bbb-5e38-9075-df8f746d70d7")
+    (property "Reference" "D1"
+      (at 248.92 29.02 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "SS34"
+      (at 248.92 42.1 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Diode_SMD:D_SMA"
+      (at 248.92 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 248.92 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 248.92 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "2"
+      (uuid "c1a305b8-5db5-4324-a5c9-dbea784d575a")
+    )
+    (pin "1"
+      (uuid "1cb459da-9e11-4779-a5c4-8a4bab577eaa")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "D1")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "SS34"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C8678"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "MDD SS34 SMA según ficha local pp.1,3; se rechaza SMB descargado. Pad1 K/banda,2 A; térmica/transitorios pendientes."
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Original_Value" "1N5822 40V 3A"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "SS34"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C8678"
+      (at 248.92 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:L1")
+    (at 347.98 35.56 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "4656c9d3-5641-565e-8936-114e18c8e614")
+    (property "Reference" "L1"
+      (at 347.98 29.02 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "330uH >=3A Isat VERIFY"
+      (at 347.98 42.1 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Buck:Inductor_25mm_P10mm_VERIFY"
+      (at 347.98 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 347.98 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 347.98 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "b7f1d2a2-6077-4dd0-b183-2de4504f4b37")
+    )
+    (pin "2"
+      (uuid "6ad3f173-ff20-467b-bf42-b8d3bf7f54c4")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "L1")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "Murata 60B334C"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C6823957"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "No hay land KiCad verificado de Murata 60B334C; NO asignar THT a pieza SMD. L(I,T), acoplamiento y pérdidas pendientes. Inductancia efectiva por bobina debe sostener L_total≥528 µH; a −15 % inicial quedan 561 µH y solo 5,9 % de pérdida admisible. Curva L(I,T) y pérdidas núcleo ausentes; land Murata obligatorio."
+      (at 347.98 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:PWR_FLAG")
+    (at 40.64 166.37 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board no)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "4f050f1e-4c85-53c7-821e-ac55811cc644")
+    (property "Reference" "#FLG01"
+      (at 40.64 166.37 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Value" "PWR_FLAG"
+      (at 40.64 163.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 40.64 166.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 40.64 166.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 40.64 166.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "b95433e1-dae1-4b81-9947-00a7013452db")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "#FLG01")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:C1")
+    (at 347.98 78.74 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "516936d7-f937-542b-a09b-65bbd8dd101c")
+    (property "Reference" "C1"
+      (at 347.98 72.2 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "100uF 25V"
+      (at 347.98 85.28 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Buck_SMD:PCAP_SVP_E7_PAN"
+      (at 347.98 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 347.98 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 347.98 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "6bee099f-5a7e-4418-a6ec-3d3021bece6e")
+    )
+    (pin "2"
+      (uuid "63c7ad27-d513-4078-81e0-dce8c8d69d0d")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "C1")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "Panasonic 25SVPF100M"
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C136279"
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Margen I_ripple 3,73× y VDC 1,89×. Verificar C_banco efectiva≥160 µF con vida/temperatura y ESR @10k; land E7 y polaridad. 160 µF es mínimo por tolerancia inicial, no de vida."
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Original_Value" "100uF 25V"
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "Panasonic 25SVPF100M"
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C136279"
+      (at 347.98 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:C2")
+    (at 50.8 121.92 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "7182954e-fda7-50d0-97a6-14d317f727ba")
+    (property "Reference" "C2"
+      (at 50.8 115.38 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "100uF 25V"
+      (at 50.8 128.46 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Buck_SMD:PCAP_SVP_E7_PAN"
+      (at 50.8 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 50.8 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 50.8 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "5a7634aa-ee40-4e00-af49-882a37da90e1")
+    )
+    (pin "2"
+      (uuid "c2c88aa3-cbce-42e8-bcf8-549e7de8003b")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "C2")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "Panasonic 25SVPF100M"
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C136279"
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Margen I_ripple 3,73× y VDC 1,89×. Verificar C_banco efectiva≥160 µF con vida/temperatura y ESR @10k; land E7 y polaridad. 160 µF es mínimo por tolerancia inicial, no de vida."
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Original_Value" "100uF 25V"
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "Panasonic 25SVPF100M"
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C136279"
+      (at 50.8 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:PWR_FLAG")
+    (at 307.34 166.37 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board no)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "7cb3d9dc-e56f-512a-be11-3839218e63f1")
+    (property "Reference" "#FLG04"
+      (at 307.34 166.37 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Value" "PWR_FLAG"
+      (at 307.34 163.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 307.34 166.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 307.34 166.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 307.34 166.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "19ae4c21-7678-4c7b-85bf-71d0bce44d32")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "#FLG04")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:C3")
+    (at 149.86 121.92 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "7ea4f70c-6201-52f6-b73f-d62f26445274")
+    (property "Reference" "C3"
+      (at 149.86 115.38 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "100nF 50V"
+      (at 149.86 128.46 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 149.86 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 149.86 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 149.86 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "2"
+      (uuid "07202237-9f30-40d8-b261-073bbe1d8381")
+    )
+    (pin "1"
+      (uuid "3d11af9c-2f66-472e-a901-515948408bfb")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "C3")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "Yageo CC0603KRX7R9BB104"
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C14663"
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Retención de ≥70 nF con DC/temperatura y proximidad Q1/D1; exigir evidencia capacitancia efectiva y ubicación."
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Original_Value" "100nF 50V"
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "Yageo CC0603KRX7R9BB104"
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C14663"
+      (at 149.86 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:J2")
+    (at 248.92 78.74 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "865e2587-99d3-5e67-a5a6-0555a5a52214")
+    (property "Reference" "J2"
+      (at 248.92 72.2 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "LOAD + / -"
+      (at 248.92 85.28 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+      (at 248.92 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 248.92 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 248.92 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "41e2a4c7-ad24-4c77-84e8-3729426c1a9c")
+    )
+    (pin "2"
+      (uuid "d6400255-0d8a-4860-af86-4d5ea30d673e")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "J2")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 248.92 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "TB002-500-02BE"
+      (at 248.92 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C2757858"
+      (at 248.92 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 248.92 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."
+      (at 248.92 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:L2")
+    (at 50.8 78.74 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "a55d4453-b7b6-5840-b94b-65f34282e682")
+    (property "Reference" "L2"
+      (at 50.8 72.2 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "330uH >=3A Isat VERIFY"
+      (at 50.8 85.28 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Buck:Inductor_25mm_P10mm_VERIFY"
+      (at 50.8 78.74 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 50.8 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 50.8 78.74 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "2"
+      (uuid "5ac81712-2b7f-403e-8544-97b8890e8ac9")
+    )
+    (pin "1"
+      (uuid "38de74b3-1ce4-4f07-9f1f-a7af0db2db4a")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "L2")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 50.8 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "Murata 60B334C"
+      (at 50.8 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C6823957"
+      (at 50.8 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 50.8 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Igual L1; se conserva huella THT histórica solo como original NO MIGRADO. Comprobar influencia de proximidad/acoplamiento: L_eq = L1+L2±2M. Validar I de saturación por condición de 80 % del nominal y temperatura."
+      (at 50.8 78.74 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:C5")
+    (at 347.98 121.92 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "b6e328d7-c520-5172-886c-a83ef8fca8f7")
+    (property "Reference" "C5"
+      (at 347.98 115.38 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "10uF 35V low ESR"
+      (at 347.98 128.46 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Buck_SMD:CAP_SVF_C6_PAN"
+      (at 347.98 121.92 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 347.98 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 347.98 121.92 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "2"
+      (uuid "c738cc56-3921-40ef-b455-535d27d23c42")
+    )
+    (pin "1"
+      (uuid "3edf057b-67f3-4cbf-975f-ebecd48c15d3")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "C5")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "Panasonic 50SVF10M"
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C454354"
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Margen corriente 11,7× y tensión nominal ≥2,5× frente a 20 V hipotéticos. C_banco efectiva≥16 µF a vida/temperatura no demostrada; ESR @10 kHz y estabilidad PI; land C6 y polaridad."
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Original_Value" "10uF 35V low ESR"
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "MPN" "Panasonic 50SVF10M"
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "LCSC" "C454354"
+      (at 347.98 121.92 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:PWR_FLAG")
+    (at 218.44 166.37 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board no)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "b779789e-e00b-561e-9989-327ef5ca90df")
+    (property "Reference" "#FLG03"
+      (at 218.44 166.37 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Value" "PWR_FLAG"
+      (at 218.44 163.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 218.44 166.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 218.44 166.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 218.44 166.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "363b8d73-64a0-455f-91dd-8b62cdc0e37c")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "#FLG03")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:PWR_FLAG")
+    (at 129.54 166.37 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board no)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "b920632e-6f41-5ca8-9685-114a7fe0e824")
+    (property "Reference" "#FLG02"
+      (at 129.54 166.37 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Value" "PWR_FLAG"
+      (at 129.54 163.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Footprint" ""
+      (at 129.54 166.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 129.54 166.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 129.54 166.37 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "1"
+      (uuid "1c3670f9-b9bd-4431-892e-83c8113aebb0")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "#FLG02")
+          (unit 1)
+        )
+      )
+    )
+  )
+  (symbol
+    (lib_id "Buck:Q1")
+    (at 149.86 35.56 0)
+    (unit 1)
+    (body_style 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (dnp no)
+    (uuid "d5b68a24-1977-5108-87c5-74c8504871c2")
+    (property "Reference" "Q1"
+      (at 149.86 29.02 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Value" "IRFZ44N TO-220"
+      (at 149.86 42.1 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 0.95 0.95)
+        )
+      )
+    )
+    (property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+      (at 149.86 35.56 0)
+      (hide yes)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Datasheet" ""
+      (at 149.86 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (property "Description" ""
+      (at 149.86 35.56 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27)
+        )
+      )
+    )
+    (pin "3"
+      (uuid "ef4815f3-1d75-46c7-aa30-123fcb1919d3")
+    )
+    (pin "2"
+      (uuid "b336e7aa-6a4a-4847-ac40-9f9b6ee823c0")
+    )
+    (pin "1"
+      (uuid "a551061d-fd82-4b0b-a3f0-ab4d0ab1edb2")
+    )
+    (instances
+      (project "buck"
+        (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/e29e3f6c-31ac-5304-9825-4ea039ba59c0"
+          (reference "Q1")
+          (unit 1)
+        )
+      )
+    )
+    (property "Migration_Status" "PENDING / ORIGINAL RETAINED"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_MPN" "IRFZ44NS"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Candidate_LCSC" "C5199867"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+    (property "Migration_Notes" "Revisión/familia UMW y TO-263 pendientes de conciliar; se retiene original TO-220."
+      (at 149.86 35.56 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        (hide yes)
+      )
+    )
+  )
+)

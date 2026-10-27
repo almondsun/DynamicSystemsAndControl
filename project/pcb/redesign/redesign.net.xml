@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>C:\dev\7mo\control\DynamicSystemsAndControl\project\pcb\redesign\buck.kicad_sch</source>
-    <date>2026-10-25T23:29:44</date>
-    <tool>Eeschema 10.0.4</tool>
+    <source>/home/voxter/Code/DynamicSystemsAndControl/project/pcb/redesign/buck.kicad_sch</source>
+    <date>2026-10-27T11:15:59</date>
+    <tool>Eeschema 10.0.7</tool>
+    <textvar name="BUCK_RULES_STATUS">PRELIMINARY - ELECTRICAL AND MECHANICAL HOLDS REMAIN</textvar>
+    <textvar name="STACKUP_TARGET">2L FR4 1.6mm nominal; finished Cu 1oz each side (35um nominal, NOT guaranteed minimum)</textvar>
+    <textvar name="THERMAL_BUDGET">Ambient45C; trace rise10C target /20C comparison; Cu30um and width-20pct sensitivity; Saturn pending</textvar>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>Buck 12V / 6V - REVIEW ONLY</title>
+        <title>Buck 12V / 6V - REV B PROTOTYPE</title>
         <company>UNAL Manizales</company>
-        <rev>A</rev>
+        <rev>B</rev>
         <date/>
         <source>buck.kicad_sch</source>
         <comment number="1" value=""/>
@@ -24,9 +27,9 @@
     </sheet>
     <sheet number="2" name="/Power stage/" tstamps="/e29e3f6c-31ac-5304-9825-4ea039ba59c0/">
       <title_block>
-        <title>Power stage - REV A / HOLD FABRICATION</title>
+        <title>Power stage - REV B PROTOTYPE</title>
         <company>UNAL Manizales - Sistemas Dinamicos y Control</company>
-        <rev>A</rev>
+        <rev>B</rev>
         <date/>
         <source>buck_1.kicad_sch</source>
         <comment number="1" value=""/>
@@ -42,9 +45,9 @@
     </sheet>
     <sheet number="3" name="/Gate driver and supplies/" tstamps="/fbdf1364-0f3f-5e5b-98a0-861b21661de2/">
       <title_block>
-        <title>Gate driver and supplies - REV A / HOLD FABRICATION</title>
+        <title>Gate driver and supplies - REV B PROTOTYPE</title>
         <company>UNAL Manizales - Sistemas Dinamicos y Control</company>
-        <rev>A</rev>
+        <rev>B</rev>
         <date/>
         <source>buck_2.kicad_sch</source>
         <comment number="1" value=""/>
@@ -60,9 +63,9 @@
     </sheet>
     <sheet number="4" name="/Independent protection/" tstamps="/45634feb-701a-5cd8-91ce-d8feeefcff15/">
       <title_block>
-        <title>Independent protection - REV A / HOLD FABRICATION</title>
+        <title>Independent protection - REV B PROTOTYPE</title>
         <company>UNAL Manizales - Sistemas Dinamicos y Control</company>
-        <rev>A</rev>
+        <rev>B</rev>
         <date/>
         <source>buck_3.kicad_sch</source>
         <comment number="1" value=""/>
@@ -78,11 +81,29 @@
     </sheet>
     <sheet number="5" name="/STM32 interface and test points/" tstamps="/cfe27333-b53c-553c-abde-2d207f66651e/">
       <title_block>
-        <title>STM32 interface and test points - REV A / HOLD FABRICATION</title>
+        <title>STM32 interface and test points - REV B PROTOTYPE</title>
         <company>UNAL Manizales - Sistemas Dinamicos y Control</company>
-        <rev>A</rev>
+        <rev>B</rev>
         <date/>
         <source>buck_4.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/">
+      <title_block>
+        <title>Power-domain interface - REV B PROTOTYPE</title>
+        <company>UNAL Manizales - Sistemas Dinamicos y Control</company>
+        <rev>B</rev>
+        <date/>
+        <source>buck_5.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -98,9 +119,9 @@
   <components>
     <comp ref="C1">
       <value>100uF 25V</value>
-      <footprint>Buck_SMD:PCAP_SVP_E7_PAN</footprint>
+      <footprint>Buck_RevB:CP_Panasonic_SVPF_E7_Land</footprint>
       <fields>
-        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Migration_Status">REV B - LAND CORRECTED TO MANUFACTURER DRAWING</field>
         <field name="Candidate_MPN">Panasonic 25SVPF100M</field>
         <field name="Candidate_LCSC">C136279</field>
         <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
@@ -108,12 +129,12 @@
         <field name="Original_Value">100uF 25V</field>
         <field name="MPN">Panasonic 25SVPF100M</field>
         <field name="LCSC">C136279</field>
-        <field name="Footprint">Buck_SMD:PCAP_SVP_E7_PAN</field>
+        <field name="Footprint">Buck_RevB:CP_Panasonic_SVPF_E7_Land</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="C1" description=""/>
-      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Migration_Status" value="REV B - LAND CORRECTED TO MANUFACTURER DRAWING"/>
       <property name="Candidate_MPN" value="Panasonic 25SVPF100M"/>
       <property name="Candidate_LCSC" value="C136279"/>
       <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
@@ -136,9 +157,9 @@
     </comp>
     <comp ref="C2">
       <value>100uF 25V</value>
-      <footprint>Buck_SMD:PCAP_SVP_E7_PAN</footprint>
+      <footprint>Buck_RevB:CP_Panasonic_SVPF_E7_Land</footprint>
       <fields>
-        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Migration_Status">REV B - LAND CORRECTED TO MANUFACTURER DRAWING</field>
         <field name="Candidate_MPN">Panasonic 25SVPF100M</field>
         <field name="Candidate_LCSC">C136279</field>
         <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
@@ -146,12 +167,12 @@
         <field name="Original_Value">100uF 25V</field>
         <field name="MPN">Panasonic 25SVPF100M</field>
         <field name="LCSC">C136279</field>
-        <field name="Footprint">Buck_SMD:PCAP_SVP_E7_PAN</field>
+        <field name="Footprint">Buck_RevB:CP_Panasonic_SVPF_E7_Land</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="C2" description=""/>
-      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Migration_Status" value="REV B - LAND CORRECTED TO MANUFACTURER DRAWING"/>
       <property name="Candidate_MPN" value="Panasonic 25SVPF100M"/>
       <property name="Candidate_LCSC" value="C136279"/>
       <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
@@ -211,10 +232,10 @@
       </units>
     </comp>
     <comp ref="C4">
-      <value>10uF 35V low ESR</value>
-      <footprint>Buck_SMD:CAP_SVF_C6_PAN</footprint>
+      <value>10uF 50V 50SVF10M</value>
+      <footprint>Buck_RevB:CP_Panasonic_SVF_C6_Land</footprint>
       <fields>
-        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Migration_Status">REV B - LAND CORRECTED TO MANUFACTURER DRAWING</field>
         <field name="Candidate_MPN">Panasonic 50SVF10M</field>
         <field name="Candidate_LCSC">C454354</field>
         <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
@@ -222,12 +243,12 @@
         <field name="Original_Value">10uF 35V low ESR</field>
         <field name="MPN">Panasonic 50SVF10M</field>
         <field name="LCSC">C454354</field>
-        <field name="Footprint">Buck_SMD:CAP_SVF_C6_PAN</field>
+        <field name="Footprint">Buck_RevB:CP_Panasonic_SVF_C6_Land</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="C4" description=""/>
-      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Migration_Status" value="REV B - LAND CORRECTED TO MANUFACTURER DRAWING"/>
       <property name="Candidate_MPN" value="Panasonic 50SVF10M"/>
       <property name="Candidate_LCSC" value="C454354"/>
       <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
@@ -249,10 +270,10 @@
       </units>
     </comp>
     <comp ref="C5">
-      <value>10uF 35V low ESR</value>
-      <footprint>Buck_SMD:CAP_SVF_C6_PAN</footprint>
+      <value>10uF 50V 50SVF10M</value>
+      <footprint>Buck_RevB:CP_Panasonic_SVF_C6_Land</footprint>
       <fields>
-        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Migration_Status">REV B - LAND CORRECTED TO MANUFACTURER DRAWING</field>
         <field name="Candidate_MPN">Panasonic 50SVF10M</field>
         <field name="Candidate_LCSC">C454354</field>
         <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
@@ -260,12 +281,12 @@
         <field name="Original_Value">10uF 35V low ESR</field>
         <field name="MPN">Panasonic 50SVF10M</field>
         <field name="LCSC">C454354</field>
-        <field name="Footprint">Buck_SMD:CAP_SVF_C6_PAN</field>
+        <field name="Footprint">Buck_RevB:CP_Panasonic_SVF_C6_Land</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="C5" description=""/>
-      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Migration_Status" value="REV B - LAND CORRECTED TO MANUFACTURER DRAWING"/>
       <property name="Candidate_MPN" value="Panasonic 50SVF10M"/>
       <property name="Candidate_LCSC" value="C454354"/>
       <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
@@ -325,23 +346,32 @@
       </units>
     </comp>
     <comp ref="J1">
-      <value>12V FUSED INPUT</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal</footprint>
+      <value>12V IN TB002-500-02BE</value>
+      <footprint>Buck_RevB:TerminalBlock_SameSky_TB002-500-02_1x02_P5.00mm</footprint>
+      <datasheet>https://www.sameskydevices.com/product/resource/tb002-500.pdf</datasheet>
       <fields>
-        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="MPN">TB002-500-02BE</field>
+        <field name="Manufacturer">Same Sky</field>
+        <field name="LCSC">C2757858</field>
+        <field name="Assembly">MANUAL_THT</field>
+        <field name="Migration_Status">REV B - PART FIXED BY RELEASE PLAN</field>
         <field name="Candidate_MPN">TB002-500-02BE</field>
         <field name="Candidate_LCSC">C2757858</field>
-        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
         <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal</field>
-        <field name="Datasheet"/>
+        <field name="Footprint">Buck_RevB:TerminalBlock_SameSky_TB002-500-02_1x02_P5.00mm</field>
+        <field name="Datasheet">https://www.sameskydevices.com/product/resource/tb002-500.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="J1" description=""/>
-      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="MPN" value="TB002-500-02BE"/>
+      <property name="Manufacturer" value="Same Sky"/>
+      <property name="LCSC" value="C2757858"/>
+      <property name="Assembly" value="MANUAL_THT"/>
+      <property name="Migration_Status" value="REV B - PART FIXED BY RELEASE PLAN"/>
       <property name="Candidate_MPN" value="TB002-500-02BE"/>
       <property name="Candidate_LCSC" value="C2757858"/>
-      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
       <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
       <property name="Sheetname" value="Power stage"/>
       <property name="Sheetfile" value="buck_1.kicad_sch"/>
@@ -357,23 +387,32 @@
       </units>
     </comp>
     <comp ref="J2">
-      <value>LOAD + / -</value>
-      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal</footprint>
+      <value>LOAD TB002-500-02BE</value>
+      <footprint>Buck_RevB:TerminalBlock_SameSky_TB002-500-02_1x02_P5.00mm</footprint>
+      <datasheet>https://www.sameskydevices.com/product/resource/tb002-500.pdf</datasheet>
       <fields>
-        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="MPN">TB002-500-02BE</field>
+        <field name="Manufacturer">Same Sky</field>
+        <field name="LCSC">C2757858</field>
+        <field name="Assembly">MANUAL_THT</field>
+        <field name="Migration_Status">REV B - PART FIXED BY RELEASE PLAN</field>
         <field name="Candidate_MPN">TB002-500-02BE</field>
         <field name="Candidate_LCSC">C2757858</field>
-        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
         <field name="Migration_Notes">Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios.</field>
-        <field name="Footprint">TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal</field>
-        <field name="Datasheet"/>
+        <field name="Footprint">Buck_RevB:TerminalBlock_SameSky_TB002-500-02_1x02_P5.00mm</field>
+        <field name="Datasheet">https://www.sameskydevices.com/product/resource/tb002-500.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="J2" description=""/>
-      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="MPN" value="TB002-500-02BE"/>
+      <property name="Manufacturer" value="Same Sky"/>
+      <property name="LCSC" value="C2757858"/>
+      <property name="Assembly" value="MANUAL_THT"/>
+      <property name="Migration_Status" value="REV B - PART FIXED BY RELEASE PLAN"/>
       <property name="Candidate_MPN" value="TB002-500-02BE"/>
       <property name="Candidate_LCSC" value="C2757858"/>
-      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
       <property name="Migration_Notes" value="Fuera de migración SMD segura: conservar conector/punto de prueba THT; MPN/montaje exacto no cerrado. Sin cambios."/>
       <property name="Sheetname" value="Power stage"/>
       <property name="Sheetfile" value="buck_1.kicad_sch"/>
@@ -389,23 +428,32 @@
       </units>
     </comp>
     <comp ref="L1">
-      <value>330uH &gt;=3A Isat VERIFY</value>
-      <footprint>Buck:Inductor_25mm_P10mm_VERIFY</footprint>
+      <value>330uH 60B334C</value>
+      <footprint>Buck_RevB:L_Murata_6000B_27.0x23.5mm</footprint>
+      <datasheet>https://www.murata.com/products/power/power-magnetics (KMP_6000B_B01)</datasheet>
       <fields>
-        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="MPN">60B334C</field>
+        <field name="Manufacturer">Murata Power Solutions</field>
+        <field name="LCSC">C6823957</field>
+        <field name="Assembly">JLC_SMT_TOP_SUPPLY_BLOCKED</field>
+        <field name="Migration_Status">REV B - PART FIXED BY RELEASE PLAN</field>
         <field name="Candidate_MPN">Murata 60B334C</field>
         <field name="Candidate_LCSC">C6823957</field>
-        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
         <field name="Migration_Notes">No hay land KiCad verificado de Murata 60B334C; NO asignar THT a pieza SMD. L(I,T), acoplamiento y pérdidas pendientes. Inductancia efectiva por bobina debe sostener L_total≥528 µH; a −15 % inicial quedan 561 µH y solo 5,9 % de pérdida admisible. Curva L(I,T) y pérdidas núcleo ausentes; land Murata obligatorio.</field>
-        <field name="Footprint">Buck:Inductor_25mm_P10mm_VERIFY</field>
-        <field name="Datasheet"/>
+        <field name="Footprint">Buck_RevB:L_Murata_6000B_27.0x23.5mm</field>
+        <field name="Datasheet">https://www.murata.com/products/power/power-magnetics (KMP_6000B_B01)</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="L1" description=""/>
-      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="MPN" value="60B334C"/>
+      <property name="Manufacturer" value="Murata Power Solutions"/>
+      <property name="LCSC" value="C6823957"/>
+      <property name="Assembly" value="JLC_SMT_TOP_SUPPLY_BLOCKED"/>
+      <property name="Migration_Status" value="REV B - PART FIXED BY RELEASE PLAN"/>
       <property name="Candidate_MPN" value="Murata 60B334C"/>
       <property name="Candidate_LCSC" value="C6823957"/>
-      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
       <property name="Migration_Notes" value="No hay land KiCad verificado de Murata 60B334C; NO asignar THT a pieza SMD. L(I,T), acoplamiento y pérdidas pendientes. Inductancia efectiva por bobina debe sostener L_total≥528 µH; a −15 % inicial quedan 561 µH y solo 5,9 % de pérdida admisible. Curva L(I,T) y pérdidas núcleo ausentes; land Murata obligatorio."/>
       <property name="Sheetname" value="Power stage"/>
       <property name="Sheetfile" value="buck_1.kicad_sch"/>
@@ -421,23 +469,32 @@
       </units>
     </comp>
     <comp ref="L2">
-      <value>330uH &gt;=3A Isat VERIFY</value>
-      <footprint>Buck:Inductor_25mm_P10mm_VERIFY</footprint>
+      <value>330uH 60B334C</value>
+      <footprint>Buck_RevB:L_Murata_6000B_27.0x23.5mm</footprint>
+      <datasheet>https://www.murata.com/products/power/power-magnetics (KMP_6000B_B01)</datasheet>
       <fields>
-        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="MPN">60B334C</field>
+        <field name="Manufacturer">Murata Power Solutions</field>
+        <field name="LCSC">C6823957</field>
+        <field name="Assembly">JLC_SMT_TOP_SUPPLY_BLOCKED</field>
+        <field name="Migration_Status">REV B - PART FIXED BY RELEASE PLAN</field>
         <field name="Candidate_MPN">Murata 60B334C</field>
         <field name="Candidate_LCSC">C6823957</field>
-        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
         <field name="Migration_Notes">Igual L1; se conserva huella THT histórica solo como original NO MIGRADO. Comprobar influencia de proximidad/acoplamiento: L_eq = L1+L2±2M. Validar I de saturación por condición de 80 % del nominal y temperatura.</field>
-        <field name="Footprint">Buck:Inductor_25mm_P10mm_VERIFY</field>
-        <field name="Datasheet"/>
+        <field name="Footprint">Buck_RevB:L_Murata_6000B_27.0x23.5mm</field>
+        <field name="Datasheet">https://www.murata.com/products/power/power-magnetics (KMP_6000B_B01)</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="L2" description=""/>
-      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="MPN" value="60B334C"/>
+      <property name="Manufacturer" value="Murata Power Solutions"/>
+      <property name="LCSC" value="C6823957"/>
+      <property name="Assembly" value="JLC_SMT_TOP_SUPPLY_BLOCKED"/>
+      <property name="Migration_Status" value="REV B - PART FIXED BY RELEASE PLAN"/>
       <property name="Candidate_MPN" value="Murata 60B334C"/>
       <property name="Candidate_LCSC" value="C6823957"/>
-      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
       <property name="Migration_Notes" value="Igual L1; se conserva huella THT histórica solo como original NO MIGRADO. Comprobar influencia de proximidad/acoplamiento: L_eq = L1+L2±2M. Validar I de saturación por condición de 80 % del nominal y temperatura."/>
       <property name="Sheetname" value="Power stage"/>
       <property name="Sheetfile" value="buck_1.kicad_sch"/>
@@ -453,23 +510,32 @@
       </units>
     </comp>
     <comp ref="Q1">
-      <value>IRFZ44N TO-220</value>
-      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <value>IRFZ44NPBF</value>
+      <footprint>Buck_RevB:TO-220-3_Vertical_Drill1.4</footprint>
+      <datasheet>https://www.infineon.com/assets/row/public/documents/24/49/infineon-irfz44n-datasheet-en.pdf</datasheet>
       <fields>
-        <field name="Migration_Status">PENDING / ORIGINAL RETAINED</field>
+        <field name="MPN">IRFZ44NPBF</field>
+        <field name="Manufacturer">Infineon</field>
+        <field name="LCSC">C2586</field>
+        <field name="Assembly">MANUAL_THT</field>
+        <field name="Migration_Status">REV B - PART FIXED BY RELEASE PLAN</field>
         <field name="Candidate_MPN">IRFZ44NS</field>
         <field name="Candidate_LCSC">C5199867</field>
-        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
         <field name="Migration_Notes">Revisión/familia UMW y TO-263 pendientes de conciliar; se retiene original TO-220.</field>
-        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
-        <field name="Datasheet"/>
+        <field name="Footprint">Buck_RevB:TO-220-3_Vertical_Drill1.4</field>
+        <field name="Datasheet">https://www.infineon.com/assets/row/public/documents/24/49/infineon-irfz44n-datasheet-en.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="Q1" description=""/>
-      <property name="Migration_Status" value="PENDING / ORIGINAL RETAINED"/>
+      <property name="MPN" value="IRFZ44NPBF"/>
+      <property name="Manufacturer" value="Infineon"/>
+      <property name="LCSC" value="C2586"/>
+      <property name="Assembly" value="MANUAL_THT"/>
+      <property name="Migration_Status" value="REV B - PART FIXED BY RELEASE PLAN"/>
       <property name="Candidate_MPN" value="IRFZ44NS"/>
       <property name="Candidate_LCSC" value="C5199867"/>
-      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
       <property name="Migration_Notes" value="Revisión/familia UMW y TO-263 pendientes de conciliar; se retiene original TO-220."/>
       <property name="Sheetname" value="Power stage"/>
       <property name="Sheetfile" value="buck_1.kicad_sch"/>
@@ -486,10 +552,10 @@
       </units>
     </comp>
     <comp ref="RS1">
-      <value>0.050R 1% 1W</value>
-      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <value>0.050R 1% 2W RLP25FEER050</value>
+      <footprint>Buck_RevB:R_TAI_RLP25_2512_Kelvin</footprint>
       <fields>
-        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Migration_Status">REV B - LAND CORRECTED TO MANUFACTURER DRAWING</field>
         <field name="Candidate_MPN">TA-I RLP25FEER050</field>
         <field name="Candidate_LCSC">C160588</field>
         <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
@@ -497,12 +563,12 @@
         <field name="Original_Value">0.050R 1% 1W</field>
         <field name="MPN">TA-I RLP25FEER050</field>
         <field name="LCSC">C160588</field>
-        <field name="Footprint">Resistor_SMD:R_2512_6332Metric</field>
+        <field name="Footprint">Buck_RevB:R_TAI_RLP25_2512_Kelvin</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="RS1" description=""/>
-      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Migration_Status" value="REV B - LAND CORRECTED TO MANUFACTURER DRAWING"/>
       <property name="Candidate_MPN" value="TA-I RLP25FEER050"/>
       <property name="Candidate_LCSC" value="C160588"/>
       <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
@@ -799,23 +865,32 @@
       </units>
     </comp>
     <comp ref="D2">
-      <value>UF4004</value>
+      <value>UF4004-E3/54</value>
       <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>https://www.vishay.com/docs/88755/uf4001.pdf</datasheet>
       <fields>
-        <field name="Migration_Status">BLOCKED / ORIGINAL RETAINED</field>
+        <field name="MPN">UF4004-E3/54</field>
+        <field name="Manufacturer">Vishay</field>
+        <field name="LCSC">C5137033</field>
+        <field name="Assembly">MANUAL_THT</field>
+        <field name="Migration_Status">REV B - PART FIXED BY RELEASE PLAN</field>
         <field name="Candidate_MPN">US1G</field>
         <field name="Candidate_LCSC">C3034075</field>
-        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
         <field name="Migration_Notes">Falta ficha exacta ShunYe US1G; CAD descargado es CLD-Diode, función incompatible. Reemplazo bloqueado.</field>
         <field name="Footprint">Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.vishay.com/docs/88755/uf4001.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="D2" description=""/>
-      <property name="Migration_Status" value="BLOCKED / ORIGINAL RETAINED"/>
+      <property name="MPN" value="UF4004-E3/54"/>
+      <property name="Manufacturer" value="Vishay"/>
+      <property name="LCSC" value="C5137033"/>
+      <property name="Assembly" value="MANUAL_THT"/>
+      <property name="Migration_Status" value="REV B - PART FIXED BY RELEASE PLAN"/>
       <property name="Candidate_MPN" value="US1G"/>
       <property name="Candidate_LCSC" value="C3034075"/>
-      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
       <property name="Migration_Notes" value="Falta ficha exacta ShunYe US1G; CAD descargado es CLD-Diode, función incompatible. Reemplazo bloqueado."/>
       <property name="Sheetname" value="Gate driver and supplies"/>
       <property name="Sheetfile" value="buck_2.kicad_sch"/>
@@ -1075,9 +1150,9 @@
     </comp>
     <comp ref="U3">
       <value>SN74HCT14DR</value>
-      <footprint>Buck_SMD:D14</footprint>
+      <footprint>Buck_RevB:TI_D0014A_SOIC-14</footprint>
       <fields>
-        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Migration_Status">REV B - LAND CORRECTED TO MANUFACTURER DRAWING</field>
         <field name="Candidate_MPN">SN74HCT14DR</field>
         <field name="Candidate_LCSC">C6769</field>
         <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
@@ -1085,12 +1160,12 @@
         <field name="Original_Value">SN74HCT14N</field>
         <field name="MPN">SN74HCT14DR</field>
         <field name="LCSC">C6769</field>
-        <field name="Footprint">Buck_SMD:D14</field>
+        <field name="Footprint">Buck_RevB:TI_D0014A_SOIC-14</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="U3" description=""/>
-      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Migration_Status" value="REV B - LAND CORRECTED TO MANUFACTURER DRAWING"/>
       <property name="Candidate_MPN" value="SN74HCT14DR"/>
       <property name="Candidate_LCSC" value="C6769"/>
       <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
@@ -1668,9 +1743,9 @@
     </comp>
     <comp ref="U4">
       <value>SN74HCT00DR</value>
-      <footprint>Buck_SMD:D14</footprint>
+      <footprint>Buck_RevB:TI_D0014A_SOIC-14</footprint>
       <fields>
-        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Migration_Status">REV B - LAND CORRECTED TO MANUFACTURER DRAWING</field>
         <field name="Candidate_MPN">SN74HCT00DR</field>
         <field name="Candidate_LCSC">C6764</field>
         <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
@@ -1678,12 +1753,12 @@
         <field name="Original_Value">SN74HCT00N</field>
         <field name="MPN">SN74HCT00DR</field>
         <field name="LCSC">C6764</field>
-        <field name="Footprint">Buck_SMD:D14</field>
+        <field name="Footprint">Buck_RevB:TI_D0014A_SOIC-14</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="U4" description=""/>
-      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Migration_Status" value="REV B - LAND CORRECTED TO MANUFACTURER DRAWING"/>
       <property name="Candidate_MPN" value="SN74HCT00DR"/>
       <property name="Candidate_LCSC" value="C6764"/>
       <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
@@ -1718,9 +1793,9 @@
     </comp>
     <comp ref="U5">
       <value>LM393BIDR</value>
-      <footprint>Buck_SMD:D0008A-MFG</footprint>
+      <footprint>Buck_RevB:TI_D0008A_SOIC-8</footprint>
       <fields>
-        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Migration_Status">REV B - LAND CORRECTED TO MANUFACTURER DRAWING</field>
         <field name="Candidate_MPN">LM393BIDR</field>
         <field name="Candidate_LCSC">C2865059</field>
         <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
@@ -1728,12 +1803,12 @@
         <field name="Original_Value">LM393P</field>
         <field name="MPN">LM393BIDR</field>
         <field name="LCSC">C2865059</field>
-        <field name="Footprint">Buck_SMD:D0008A-MFG</field>
+        <field name="Footprint">Buck_RevB:TI_D0008A_SOIC-8</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="U5" description=""/>
-      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Migration_Status" value="REV B - LAND CORRECTED TO MANUFACTURER DRAWING"/>
       <property name="Candidate_MPN" value="LM393BIDR"/>
       <property name="Candidate_LCSC" value="C2865059"/>
       <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
@@ -1762,9 +1837,9 @@
     </comp>
     <comp ref="U6">
       <value>INA180A1IDBVR</value>
-      <footprint>Buck_SMD:DBV0005A_N</footprint>
+      <footprint>Buck_RevB:TI_DBV0005A_SOT-23-5</footprint>
       <fields>
-        <field name="Migration_Status">FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED</field>
+        <field name="Migration_Status">REV B - LAND CORRECTED TO MANUFACTURER DRAWING</field>
         <field name="Candidate_MPN">INA180A1IDBVR</field>
         <field name="Candidate_LCSC">C122228</field>
         <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
@@ -1772,12 +1847,12 @@
         <field name="Original_Value">INA180A1IDBVR</field>
         <field name="MPN">INA180A1IDBVR</field>
         <field name="LCSC">C122228</field>
-        <field name="Footprint">Buck_SMD:DBV0005A_N</field>
+        <field name="Footprint">Buck_RevB:TI_DBV0005A_SOT-23-5</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck" part="U6" description=""/>
-      <property name="Migration_Status" value="FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"/>
+      <property name="Migration_Status" value="REV B - LAND CORRECTED TO MANUFACTURER DRAWING"/>
       <property name="Candidate_MPN" value="INA180A1IDBVR"/>
       <property name="Candidate_LCSC" value="C122228"/>
       <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
@@ -1840,35 +1915,36 @@
       </units>
     </comp>
     <comp ref="J3">
-      <value>NUCLEO-L432KC EXT USB</value>
-      <footprint>Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical</footprint>
+      <value>NUCLEO IF 61201021621</value>
+      <footprint>Buck_RevB:Wurth_WR-BHD_61201021621_2x05_P2.54mm_Vertical</footprint>
+      <datasheet>https://www.we-online.com/components/products/datasheet/61201021621.pdf</datasheet>
       <fields>
-        <field name="Migration_Status">NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN</field>
+        <field name="Migration_Status">REV B - PART FIXED BY RELEASE PLAN</field>
         <field name="Candidate_MPN">TBD keyed IDC header 2x5 2.54mm</field>
         <field name="Candidate_LCSC">NOT SELECTED</field>
-        <field name="Electrical_Approval">PENDING - NOT APPROVED</field>
-        <field name="Migration_Notes">External NUCLEO powered via USB. No Buck 5V/VIN connection. NUC_3V3 supplies R13 pull-up only. PA0/PWM signal protection and board solder bridges remain blocking.</field>
-        <field name="MPN">TBD keyed IDC header 2x5 2.54mm</field>
-        <field name="Manufacturer">TBD</field>
-        <field name="LCSC">NOT SELECTED</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Notes">Rev B: J3 signals pass through U7/U8; NUC_3V3 powers U8 and R13/R18/R22 and is supervised by U9. Harness per assembly doc.</field>
+        <field name="MPN">61201021621</field>
+        <field name="Manufacturer">Wurth Elektronik</field>
+        <field name="LCSC">C4355000</field>
         <field name="Cable_Pinout">1 UART_TX D1 PA9;2 GND;3 PWM D9 PA8;4 RUN D3 PB0;5 LATCH_RESET D6 PB1;6 NFAULT D4 PB7;7 VSENSE A0 PA0;8 GND;9 NUC_3V3 output from CN4.14;10 UART_RX D0 PA10;NO 5V OR VIN</field>
-        <field name="Assembly">NUCLEO external; NOT assembled by JLCPCB; header MPN/land provisional</field>
+        <field name="Assembly">MANUAL_THT</field>
         <field name="Previous_Review_Value">STM32 CABLE 2x5</field>
-        <field name="Footprint">Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical</field>
-        <field name="Datasheet"/>
+        <field name="Footprint">Buck_RevB:Wurth_WR-BHD_61201021621_2x05_P2.54mm_Vertical</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/61201021621.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Buck_Redesign" part="J3_NUCLEO_L432KC" description=""/>
-      <property name="Migration_Status" value="NUCLEO UPDATE - USER ACCEPTED NOMINAL CHANGE; ELECTRICAL REVIEW OPEN"/>
+      <property name="Migration_Status" value="REV B - PART FIXED BY RELEASE PLAN"/>
       <property name="Candidate_MPN" value="TBD keyed IDC header 2x5 2.54mm"/>
       <property name="Candidate_LCSC" value="NOT SELECTED"/>
-      <property name="Electrical_Approval" value="PENDING - NOT APPROVED"/>
-      <property name="Migration_Notes" value="External NUCLEO powered via USB. No Buck 5V/VIN connection. NUC_3V3 supplies R13 pull-up only. PA0/PWM signal protection and board solder bridges remain blocking."/>
-      <property name="MPN" value="TBD keyed IDC header 2x5 2.54mm"/>
-      <property name="Manufacturer" value="TBD"/>
-      <property name="LCSC" value="NOT SELECTED"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Notes" value="Rev B: J3 signals pass through U7/U8; NUC_3V3 powers U8 and R13/R18/R22 and is supervised by U9. Harness per assembly doc."/>
+      <property name="MPN" value="61201021621"/>
+      <property name="Manufacturer" value="Wurth Elektronik"/>
+      <property name="LCSC" value="C4355000"/>
       <property name="Cable_Pinout" value="1 UART_TX D1 PA9;2 GND;3 PWM D9 PA8;4 RUN D3 PB0;5 LATCH_RESET D6 PB1;6 NFAULT D4 PB7;7 VSENSE A0 PA0;8 GND;9 NUC_3V3 output from CN4.14;10 UART_RX D0 PA10;NO 5V OR VIN"/>
-      <property name="Assembly" value="NUCLEO external; NOT assembled by JLCPCB; header MPN/land provisional"/>
+      <property name="Assembly" value="MANUAL_THT"/>
       <property name="Previous_Review_Value" value="STM32 CABLE 2x5"/>
       <property name="Sheetname" value="STM32 interface and test points"/>
       <property name="Sheetfile" value="buck_4.kicad_sch"/>
@@ -2253,6 +2329,834 @@
       <units>
         <unit name="A">
           <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Purpose">U7 VCC bypass</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="C_RevB" description=""/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Purpose" value="U7 VCC bypass"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C14663"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>dff1f6a3-ae84-5af5-b168-a34dbfa2323d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Purpose">U8 VDD bypass</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="C_RevB" description=""/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Purpose" value="U8 VDD bypass"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C14663"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>9c4493d8-1eb1-5773-be86-1fd45f745980</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Purpose">U9 VDD bypass</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="C_RevB" description=""/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Purpose" value="U9 VDD bypass"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C14663"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>a1c479cf-1d4a-5bb9-a3f1-f02736d19d3d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603CG102J500NT</field>
+        <field name="LCSC">C1636</field>
+        <field name="Manufacturer">FH</field>
+        <field name="Purpose">U9 SENSE bypass (TI recommends 1-10 nF)</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C1636</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="C_RevB" description=""/>
+      <property name="MPN" value="0603CG102J500NT"/>
+      <property name="LCSC" value="C1636"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="Purpose" value="U9 SENSE bypass (TI recommends 1-10 nF)"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C1636"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>4958e43b-017d-5175-83af-86658ea62ad8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CC0603KRX7R9BB104</field>
+        <field name="LCSC">C14663</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="Purpose">REF_2V5 bypass</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C14663</field>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="C_RevB" description=""/>
+      <property name="MPN" value="CC0603KRX7R9BB104"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="Purpose" value="REF_2V5 bypass"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C14663"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>6d8bb4ff-71dc-5de0-9018-e1a54925702b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>BAT54WS-7-F</value>
+      <footprint>Buck_RevB:Diodes_SOD323</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/BAT54WS.pdf</datasheet>
+      <fields>
+        <field name="MPN">BAT54WS-7-F</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="LCSC">C124205</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C124205</field>
+        <field name="Footprint">Buck_RevB:Diodes_SOD323</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/BAT54WS.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="BAT54WS" description=""/>
+      <property name="MPN" value="BAT54WS-7-F"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="LCSC" value="C124205"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C124205"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>62146c48-74a8-5eee-92f5-e649635b4ad7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D4">
+      <value>BAT54WS-7-F</value>
+      <footprint>Buck_RevB:Diodes_SOD323</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/BAT54WS.pdf</datasheet>
+      <fields>
+        <field name="MPN">BAT54WS-7-F</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="LCSC">C124205</field>
+        <field name="Purpose">Clamps VSENSE_DIV to REF_2V5 + VF</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C124205</field>
+        <field name="Footprint">Buck_RevB:Diodes_SOD323</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/BAT54WS.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="BAT54WS" description=""/>
+      <property name="MPN" value="BAT54WS-7-F"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="LCSC" value="C124205"/>
+      <property name="Purpose" value="Clamps VSENSE_DIV to REF_2V5 + VF"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C124205"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>a7cd4d26-2574-557a-92ed-d112545f2374</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D5">
+      <value>BAT54WS-7-F</value>
+      <footprint>Buck_RevB:Diodes_SOD323</footprint>
+      <datasheet>https://www.diodes.com/datasheet/download/BAT54WS.pdf</datasheet>
+      <fields>
+        <field name="MPN">BAT54WS-7-F</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="LCSC">C124205</field>
+        <field name="Purpose">Sets the fault latch while the interface is disabled</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C124205</field>
+        <field name="Footprint">Buck_RevB:Diodes_SOD323</field>
+        <field name="Datasheet">https://www.diodes.com/datasheet/download/BAT54WS.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="BAT54WS" description=""/>
+      <property name="MPN" value="BAT54WS-7-F"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="LCSC" value="C124205"/>
+      <property name="Purpose" value="Sets the fault latch while the interface is disabled"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C124205"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>f281ee26-ea4f-5cb9-98bf-79df6d03ea71</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Purpose">RUN_5V low while U7 is high-impedance</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="R_RevB" description=""/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Purpose" value="RUN_5V low while U7 is high-impedance"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C25804"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>802798b3-21b2-52a0-9946-dc26a33a48cd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Purpose">RESET_5V low while U7 is high-impedance</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="R_RevB" description=""/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Purpose" value="RESET_5V low while U7 is high-impedance"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C25804"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>9200a611-48d4-5bc0-9b04-168e72157079</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Purpose">Default d'=1 (switch off) while PA8 floats; 3.3 V domain only</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C25803</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="R_RevB" description=""/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Purpose" value="Default d'=1 (switch off) while PA8 floats; 3.3 V domain only"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C25803"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>32bd6342-dd5e-57a6-ad3c-3abe483511d9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>22k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF2202T5E</field>
+        <field name="LCSC">C31850</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Purpose">TPS3808 open-drain pull-up (datasheet 10k-1M)</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C31850</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="R_RevB" description=""/>
+      <property name="MPN" value="0603WAF2202T5E"/>
+      <property name="LCSC" value="C31850"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Purpose" value="TPS3808 open-drain pull-up (datasheet 10k-1M)"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C31850"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>d522b784-b38f-5189-8a63-dceb637eb076</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>1k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF1001T5E</field>
+        <field name="LCSC">C21190</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Purpose">Series limit between clamp node and TMUX1511 S1</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C21190</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="R_RevB" description=""/>
+      <property name="MPN" value="0603WAF1001T5E"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Purpose" value="Series limit between clamp node and TMUX1511 S1"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C21190"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>9d92a225-bc01-5506-a999-ff0cbddf40a7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>100k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Purpose">MCU-side discharge while TMUX1511 is off</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C25803</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="R_RevB" description=""/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Purpose" value="MCU-side discharge while TMUX1511 is off"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C25803"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>88868a20-b3e7-5b90-8b2b-d23461c09aaf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF1002T5E</field>
+        <field name="LCSC">C25804</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Purpose">Limits any SENSE current while U9 is unpowered</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C25804</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="R_RevB" description=""/>
+      <property name="MPN" value="0603WAF1002T5E"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Purpose" value="Limits any SENSE current while U9 is unpowered"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C25804"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>eb744642-9fb4-5ae5-a91a-cc95ee3243c9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R23">
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF2201T5E</field>
+        <field name="LCSC">C4190</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Purpose">Biases U10 at (5-2.5)/2.2k ~ 1.1 mA, above IRMIN 65 uA</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C4190</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="R_RevB" description=""/>
+      <property name="MPN" value="0603WAF2201T5E"/>
+      <property name="LCSC" value="C4190"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Purpose" value="Biases U10 at (5-2.5)/2.2k ~ 1.1 mA, above IRMIN 65 uA"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C4190"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>58399d75-66e6-5cc2-b13a-a522e9560b45</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R24">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">0603WAF1003T5E</field>
+        <field name="LCSC">C25803</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="Purpose">U9 CT to VDD: reset delay 180-420 ms (SBVS050N 6.6)</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C25803</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="R_RevB" description=""/>
+      <property name="MPN" value="0603WAF1003T5E"/>
+      <property name="LCSC" value="C25803"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="Purpose" value="U9 CT to VDD: reset delay 180-420 ms (SBVS050N 6.6)"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C25803"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>ef9eef5e-4dac-5bdc-b4a5-b8f304b2b0f6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>SN74LV4T125PWR</value>
+      <footprint>Buck_RevB:TI_PW0014A_TSSOP-14</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lv4t125.pdf</datasheet>
+      <fields>
+        <field name="MPN">SN74LV4T125PWR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C90755</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C90755</field>
+        <field name="Footprint">Buck_RevB:TI_PW0014A_TSSOP-14</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lv4t125.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="SN74LV4T125PW" description=""/>
+      <property name="MPN" value="SN74LV4T125PWR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C90755"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C90755"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>2b9b1339-1e15-50a0-a583-58061485f928</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>TMUX1511PWR</value>
+      <footprint>Buck_RevB:TI_PW0014A_TSSOP-14</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tmux1511.pdf</datasheet>
+      <fields>
+        <field name="MPN">TMUX1511PWR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C2866750</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C2866750</field>
+        <field name="Footprint">Buck_RevB:TI_PW0014A_TSSOP-14</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tmux1511.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="TMUX1511PW" description=""/>
+      <property name="MPN" value="TMUX1511PWR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C2866750"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C2866750"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>feb70883-8084-5a69-84c2-67b06a0c07d1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+            <pin num="14"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U9">
+      <value>TPS3808G33DBVR</value>
+      <footprint>Buck_RevB:TI_DBV0006A_SOT-23-6</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps3808.pdf</datasheet>
+      <fields>
+        <field name="MPN">TPS3808G33DBVR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C43698</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C43698</field>
+        <field name="Footprint">Buck_RevB:TI_DBV0006A_SOT-23-6</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps3808.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="TPS3808G33DBV" description=""/>
+      <property name="MPN" value="TPS3808G33DBVR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C43698"/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C43698"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>2b040fae-fd04-54f0-8ef6-74e5f398c6ef</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>LM4040AIM3X-2.5/NOPB</value>
+      <footprint>Buck_RevB:TI_DBZ0003A_SOT-23-3</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/lm4040-n.pdf</datasheet>
+      <fields>
+        <field name="MPN">LM4040AIM3X-2.5/NOPB</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C111866</field>
+        <field name="Substitution_Note">Plan named LM4040AIM3-2.5/NOPB (0 stock, not buyable at JLC/LCSC). TI SNOS633N s.11: X suffix has the same electrical properties; only reel differs (both marking R2A).</field>
+        <field name="Assembly">JLC_SMT_TOP</field>
+        <field name="Electrical_Approval">PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED</field>
+        <field name="Migration_Status">REV B - NEW POWER-DOMAIN INTERFACE</field>
+        <field name="Commercial_URL">https://jlcpcb.com/partdetail/C111866</field>
+        <field name="Purpose">Biased 2.5 V reference for the D4 clamp; never on the measurement node</field>
+        <field name="Footprint">Buck_RevB:TI_DBZ0003A_SOT-23-3</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/lm4040-n.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Buck_Redesign" part="LM4040AIM3X-2.5" description=""/>
+      <property name="MPN" value="LM4040AIM3X-2.5/NOPB"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C111866"/>
+      <property name="Substitution_Note" value="Plan named LM4040AIM3-2.5/NOPB (0 stock, not buyable at JLC/LCSC). TI SNOS633N s.11: X suffix has the same electrical properties; only reel differs (both marking R2A)."/>
+      <property name="Assembly" value="JLC_SMT_TOP"/>
+      <property name="Electrical_Approval" value="PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"/>
+      <property name="Migration_Status" value="REV B - NEW POWER-DOMAIN INTERFACE"/>
+      <property name="Commercial_URL" value="https://jlcpcb.com/partdetail/C111866"/>
+      <property name="Purpose" value="Biased 2.5 V reference for the D4 clamp; never on the measurement node"/>
+      <property name="Sheetname" value="Power-domain interface"/>
+      <property name="Sheetfile" value="buck_5.kicad_sch"/>
+      <sheetpath names="/Power-domain interface/" tstamps="/c642e27a-c5c7-5007-9ad6-b14d2594c686/"/>
+      <tstamps>3ad4193e-272b-59d1-a2ab-71dbf6167316</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="3"/>
             <pin num="1"/>
           </pins>
         </unit>
@@ -3002,11 +3906,37 @@
         <pin num="5" name="VS" type="power_in"/>
       </pins>
     </libpart>
+    <libpart lib="Buck_Redesign" part="BAT54WS">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">BAT54WS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Buck_Redesign" part="CL21A106KAYNNNE">
       <fields>
         <field name="Reference">C</field>
         <field name="Value">10uF 25V</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck_Redesign" part="C_RevB">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_RevB</field>
+        <field name="Footprint"/>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
@@ -3036,6 +3966,20 @@
         <pin num="10" name="UART_RX" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Buck_Redesign" part="LM4040AIM3X-2.5">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM4040AIM3X-2.5</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+        <pin num="3" name="A_NC" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Buck_Redesign" part="MMBT3904_C20526">
       <docs>${KIPRJMOD}/libraries/datasheets/Changjing_MMBT3904.pdf</docs>
       <fields>
@@ -3051,6 +3995,86 @@
         <pin num="3" name="C" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Buck_Redesign" part="R_RevB">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_RevB</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck_Redesign" part="SN74LV4T125PW">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LV4T125PW</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1~{OE}" type="input"/>
+        <pin num="2" name="1A" type="input"/>
+        <pin num="3" name="1Y" type="tri_state"/>
+        <pin num="4" name="2~{OE}" type="input"/>
+        <pin num="5" name="2A" type="input"/>
+        <pin num="6" name="2Y" type="tri_state"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="3Y" type="tri_state"/>
+        <pin num="9" name="3A" type="input"/>
+        <pin num="10" name="3~{OE}" type="input"/>
+        <pin num="11" name="4Y" type="tri_state"/>
+        <pin num="12" name="4A" type="input"/>
+        <pin num="13" name="4~{OE}" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck_Redesign" part="TMUX1511PW">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TMUX1511PW</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SEL1" type="input"/>
+        <pin num="2" name="S1" type="passive"/>
+        <pin num="3" name="D1" type="passive"/>
+        <pin num="4" name="SEL2" type="input"/>
+        <pin num="5" name="S2" type="passive"/>
+        <pin num="6" name="D2" type="passive"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="D3" type="passive"/>
+        <pin num="9" name="S3" type="passive"/>
+        <pin num="10" name="SEL3" type="input"/>
+        <pin num="11" name="D4" type="passive"/>
+        <pin num="12" name="S4" type="passive"/>
+        <pin num="13" name="SEL4" type="input"/>
+        <pin num="14" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buck_Redesign" part="TPS3808G33DBV">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3808G33DBV</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="~{RESET}" type="open_collector"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="~{MR}" type="input"/>
+        <pin num="4" name="CT" type="passive"/>
+        <pin num="5" name="SENSE" type="input"/>
+        <pin num="6" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Buck">
@@ -3061,14 +4085,19 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="+5V" class="Default">
+    <net code="1" name="+5V" class="SUPPLY_5V,Default">
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C11" pin="1" pintype="passive"/>
       <node ref="C12" pin="1" pintype="passive"/>
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="C14" pin="1" pintype="passive"/>
       <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
       <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
       <node ref="R7" pin="2" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
@@ -3078,33 +4107,48 @@
       <node ref="U4" pin="14" pinfunction="VCC_14" pintype="power_in"/>
       <node ref="U5" pin="8" pinfunction="VCC_8" pintype="power_in"/>
       <node ref="U6" pin="5" pinfunction="VS_5" pintype="power_in"/>
+      <node ref="U7" pin="13" pinfunction="4~{OE}_13" pintype="input"/>
+      <node ref="U7" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U9" pin="6" pinfunction="VDD_6" pintype="power_in"/>
     </net>
-    <net code="2" name="BOOT" class="Default">
+    <net code="2" name="ADC_EN" class="DIGITAL_CONTROL,Default">
+      <node ref="D5" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="3Y_6" pintype="output"/>
+      <node ref="U8" pin="1" pinfunction="SEL1_1" pintype="input"/>
+    </net>
+    <net code="3" name="BOOT" class="GATE_DRIVER,Default">
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="D2" pin="1" pintype="passive"/>
       <node ref="U1" pin="7" pinfunction="VB_7" pintype="power_in"/>
     </net>
-    <net code="3" name="DPRIME" class="Default">
-      <node ref="R3" pin="1" pintype="passive"/>
-      <node ref="R4" pin="2" pintype="passive"/>
-      <node ref="U3" pin="1" pinfunction="1A_1" pintype="input"/>
+    <net code="4" name="BUF_OE_N" class="DIGITAL_CONTROL,Default">
+      <node ref="U3" pin="4" pinfunction="2Y_4" pintype="output"/>
+      <node ref="U3" pin="5" pinfunction="3A_5" pintype="input"/>
+      <node ref="U7" pin="1" pinfunction="1~{OE}_1" pintype="input"/>
+      <node ref="U7" pin="10" pinfunction="3~{OE}_10" pintype="input"/>
+      <node ref="U7" pin="4" pinfunction="2~{OE}_4" pintype="input"/>
     </net>
-    <net code="4" name="FAULT" class="Default">
+    <net code="5" name="DPRIME" class="DIGITAL_CONTROL,Default">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="1A_1" pintype="input"/>
+      <node ref="U7" pin="3" pinfunction="1Y_3" pintype="tri_state"/>
+    </net>
+    <net code="6" name="FAULT" class="DIGITAL_CONTROL,Default">
       <node ref="R12" pin="1" pintype="passive"/>
       <node ref="U4" pin="13" pinfunction="4B_13" pintype="input"/>
       <node ref="U4" pin="8" pinfunction="3Y_8" pintype="output"/>
     </net>
-    <net code="5" name="FB" class="Default">
+    <net code="7" name="FB" class="DIGITAL_CONTROL,Default">
       <node ref="Q2" pin="1" pinfunction="B_1" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
     </net>
-    <net code="6" name="GATE" class="Default">
+    <net code="8" name="GATE" class="GATE_DRIVER,Default">
       <node ref="Q1" pin="1" pinfunction="G_1" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="R2" pin="1" pintype="passive"/>
       <node ref="TP4" pin="1" pinfunction="GATE_1" pintype="passive"/>
     </net>
-    <net code="7" name="GND" class="Power,Default">
+    <net code="9" name="GND" class="POWER_GND,Default">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="2" pintype="passive"/>
       <node ref="C11" pin="2" pintype="passive"/>
@@ -3114,7 +4158,12 @@
       <node ref="C15" pin="2" pintype="passive"/>
       <node ref="C16" pin="2" pintype="passive"/>
       <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
@@ -3122,6 +4171,7 @@
       <node ref="C8" pin="2" pintype="passive"/>
       <node ref="C9" pin="2" pintype="passive"/>
       <node ref="D1" pin="2" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="J1" pin="2" pintype="passive"/>
       <node ref="J2" pin="2" pintype="passive"/>
       <node ref="J3" pin="2" pinfunction="GND_2" pintype="passive"/>
@@ -3129,6 +4179,9 @@
       <node ref="Q2" pin="2" pinfunction="E_2" pintype="passive"/>
       <node ref="R11" pin="2" pintype="passive"/>
       <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="R9" pin="2" pintype="passive"/>
@@ -3136,59 +4189,73 @@
       <node ref="U1" pin="14" pinfunction="LIN_14" pintype="power_in"/>
       <node ref="U1" pin="15" pinfunction="VSS_15" pintype="power_in"/>
       <node ref="U1" pin="2" pinfunction="COM_2" pintype="power_in"/>
+      <node ref="U10" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U10" pin="3" pinfunction="A_NC_3" pintype="passive"/>
       <node ref="U2" pin="2" pinfunction="GND_2" pintype="power_in"/>
       <node ref="U3" pin="11" pinfunction="5A_11" pintype="input"/>
       <node ref="U3" pin="13" pinfunction="6A_13" pintype="input"/>
-      <node ref="U3" pin="3" pinfunction="2A_3" pintype="input"/>
-      <node ref="U3" pin="5" pinfunction="3A_5" pintype="input"/>
       <node ref="U3" pin="7" pinfunction="GND_7" pintype="input"/>
       <node ref="U3" pin="9" pinfunction="4A_9" pintype="input"/>
       <node ref="U4" pin="7" pinfunction="GND_7" pintype="power_in"/>
       <node ref="U5" pin="4" pinfunction="GND_4" pintype="power_in"/>
       <node ref="U6" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U7" pin="12" pinfunction="4A_12" pintype="input"/>
+      <node ref="U7" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U8" pin="10" pinfunction="SEL3_10" pintype="input"/>
+      <node ref="U8" pin="11" pinfunction="D4_11" pintype="passive"/>
+      <node ref="U8" pin="12" pinfunction="S4_12" pintype="passive"/>
+      <node ref="U8" pin="13" pinfunction="SEL4_13" pintype="input"/>
+      <node ref="U8" pin="4" pinfunction="SEL2_4" pintype="input"/>
+      <node ref="U8" pin="5" pinfunction="S2_5" pintype="passive"/>
+      <node ref="U8" pin="6" pinfunction="D2_6" pintype="passive"/>
+      <node ref="U8" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U8" pin="8" pinfunction="D3_8" pintype="passive"/>
+      <node ref="U8" pin="9" pinfunction="S3_9" pintype="passive"/>
+      <node ref="U9" pin="2" pinfunction="GND_2" pintype="power_in"/>
     </net>
-    <net code="8" name="HIN" class="Default">
+    <net code="10" name="HIN" class="DIGITAL_CONTROL,Default">
       <node ref="U1" pin="12" pinfunction="HIN_12" pintype="input"/>
       <node ref="U3" pin="2" pinfunction="1Y_2" pintype="output"/>
     </net>
-    <net code="9" name="HO" class="Default">
+    <net code="11" name="HO" class="GATE_DRIVER,Default">
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="HO_8" pintype="output"/>
     </net>
-    <net code="10" name="IP" class="Power,Default">
+    <net code="12" name="IP" class="POWER_INDUCTOR,Default">
       <node ref="L2" pin="2" pintype="passive"/>
       <node ref="RS1" pin="1" pintype="passive"/>
       <node ref="U6" pin="3" pinfunction="IN+_3" pintype="input"/>
     </net>
-    <net code="11" name="ISENSE" class="Default">
+    <net code="13" name="ISENSE" class="ANALOG_SENSE,Default">
       <node ref="TP6" pin="1" pinfunction="ISENSE_1" pintype="passive"/>
       <node ref="U5" pin="2" pinfunction="IN1-_2" pintype="input"/>
       <node ref="U6" pin="1" pinfunction="OUT_1" pintype="output"/>
     </net>
-    <net code="12" name="LMID" class="Power,Default">
+    <net code="14" name="LMID" class="POWER_INDUCTOR,Default">
       <node ref="L1" pin="2" pintype="passive"/>
       <node ref="L2" pin="1" pintype="passive"/>
     </net>
-    <net code="13" name="MCU_PWM" class="Default">
+    <net code="15" name="MCU_PWM" class="DIGITAL_CONTROL,Default">
       <node ref="J3" pin="3" pinfunction="MCU_PWM_3" pintype="passive"/>
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="TP9" pin="1" pinfunction="MCU_PWM_1" pintype="passive"/>
     </net>
-    <net code="14" name="NFAULT" class="Default">
+    <net code="16" name="NFAULT" class="DIGITAL_CONTROL,Default">
       <node ref="U4" pin="10" pinfunction="3B_10" pintype="input"/>
       <node ref="U4" pin="11" pinfunction="4Y_11" pintype="output"/>
       <node ref="U4" pin="5" pinfunction="2B_5" pintype="input"/>
     </net>
-    <net code="15" name="NFAULT_MCU" class="Default">
+    <net code="17" name="NFAULT_MCU" class="DIGITAL_CONTROL,Default">
       <node ref="J3" pin="6" pinfunction="NFAULT_MCU_6" pintype="passive"/>
       <node ref="Q2" pin="3" pinfunction="C_3" pintype="passive"/>
       <node ref="R13" pin="2" pintype="passive"/>
     </net>
-    <net code="16" name="NRESET" class="Default">
+    <net code="18" name="NRESET" class="DIGITAL_CONTROL,Default">
       <node ref="U4" pin="12" pinfunction="4A_12" pintype="input"/>
       <node ref="U4" pin="3" pinfunction="1Y_3" pintype="output"/>
     </net>
-    <net code="17" name="NTRIP" class="Default">
+    <net code="19" name="NTRIP" class="DIGITAL_CONTROL,Default">
+      <node ref="D5" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R7" pin="1" pintype="passive"/>
       <node ref="TP8" pin="1" pinfunction="NTRIP_1" pintype="passive"/>
       <node ref="U4" pin="2" pinfunction="1B_2" pintype="input"/>
@@ -3196,31 +4263,70 @@
       <node ref="U5" pin="1" pinfunction="OUT1_1" pintype="open_collector"/>
       <node ref="U5" pin="7" pinfunction="OUT2_7" pintype="open_collector"/>
     </net>
-    <net code="18" name="NUC_3V3" class="Default">
+    <net code="20" name="NUC_3V3" class="SUPPLY_3V3,Default">
+      <node ref="C19" pin="1" pintype="passive"/>
       <node ref="J3" pin="9" pinfunction="NUC_3V3_9" pintype="passive"/>
       <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="U8" pin="14" pinfunction="VDD_14" pintype="power_in"/>
     </net>
-    <net code="19" name="OVSENSE" class="Default">
+    <net code="21" name="NUC_PG" class="DIGITAL_CONTROL,Default">
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="2A_3" pintype="input"/>
+      <node ref="U9" pin="1" pinfunction="~{RESET}_1" pintype="open_collector"/>
+    </net>
+    <net code="22" name="NUC_SENSE" class="ANALOG_SENSE,Default">
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="U9" pin="5" pinfunction="SENSE_5" pintype="input"/>
+    </net>
+    <net code="23" name="OVSENSE" class="ANALOG_SENSE,Default">
       <node ref="R10" pin="2" pintype="passive"/>
       <node ref="R11" pin="1" pintype="passive"/>
       <node ref="U5" pin="6" pinfunction="IN2-_6" pintype="input"/>
     </net>
-    <net code="20" name="RESET" class="Default">
+    <net code="24" name="PG_DELAY" class="ANALOG_SENSE,Default">
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="U9" pin="4" pinfunction="CT_4" pintype="passive"/>
+    </net>
+    <net code="25" name="PWM_IN" class="DIGITAL_CONTROL,Default">
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U7" pin="2" pinfunction="1A_2" pintype="input"/>
+    </net>
+    <net code="26" name="REF_2V5" class="ANALOG_SENSE,Default">
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="U10" pin="1" pinfunction="K_1" pintype="passive"/>
+    </net>
+    <net code="27" name="RESET" class="DIGITAL_CONTROL,Default">
       <node ref="J3" pin="5" pinfunction="RESET_5" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
-      <node ref="U4" pin="1" pinfunction="1A_1" pintype="input"/>
+      <node ref="U7" pin="9" pinfunction="3A_9" pintype="input"/>
     </net>
-    <net code="21" name="RUN" class="Default">
+    <net code="28" name="RESET_5V" class="DIGITAL_CONTROL,Default">
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="1A_1" pintype="input"/>
+      <node ref="U7" pin="8" pinfunction="3Y_8" pintype="tri_state"/>
+    </net>
+    <net code="29" name="RUN" class="DIGITAL_CONTROL,Default">
       <node ref="J3" pin="4" pinfunction="RUN_4" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
-      <node ref="U4" pin="4" pinfunction="2A_4" pintype="input"/>
+      <node ref="U7" pin="5" pinfunction="2A_5" pintype="input"/>
     </net>
-    <net code="22" name="SD" class="Default">
+    <net code="30" name="RUN_5V" class="DIGITAL_CONTROL,Default">
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="2A_4" pintype="input"/>
+      <node ref="U7" pin="6" pinfunction="2Y_6" pintype="tri_state"/>
+    </net>
+    <net code="31" name="SD" class="DIGITAL_CONTROL,Default">
       <node ref="TP7" pin="1" pinfunction="SD_1" pintype="passive"/>
       <node ref="U1" pin="13" pinfunction="SD_13" pintype="input"/>
       <node ref="U4" pin="6" pinfunction="2Y_6" pintype="output"/>
     </net>
-    <net code="23" name="SW" class="Power,Default">
+    <net code="32" name="SW" class="POWER_SWITCH,Default">
       <node ref="C6" pin="2" pintype="passive"/>
       <node ref="D1" pin="1" pintype="passive"/>
       <node ref="L1" pin="1" pintype="passive"/>
@@ -3229,13 +4335,13 @@
       <node ref="TP3" pin="1" pinfunction="SW_1" pintype="passive"/>
       <node ref="U1" pin="6" pinfunction="VS_6" pintype="input"/>
     </net>
-    <net code="24" name="UART_RX" class="Default">
+    <net code="33" name="UART_RX" class="DIGITAL_CONTROL,Default">
       <node ref="J3" pin="10" pinfunction="UART_RX_10" pintype="passive"/>
     </net>
-    <net code="25" name="UART_TX" class="Default">
+    <net code="34" name="UART_TX" class="DIGITAL_CONTROL,Default">
       <node ref="J3" pin="1" pinfunction="UART_TX_1" pintype="passive"/>
     </net>
-    <net code="26" name="VIN" class="Power,Default">
+    <net code="35" name="VIN" class="POWER_INPUT,Default">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="C3" pin="1" pintype="passive"/>
@@ -3248,7 +4354,7 @@
       <node ref="U1" pin="3" pinfunction="VCC_3" pintype="power_in"/>
       <node ref="U2" pin="1" pinfunction="IN_1" pintype="power_in"/>
     </net>
-    <net code="27" name="VOUT" class="Power,Default">
+    <net code="36" name="VOUT" class="POWER_OUTPUT,Default">
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="J2" pin="1" pintype="passive"/>
@@ -3258,51 +4364,62 @@
       <node ref="TP5" pin="1" pinfunction="VOUT_1" pintype="passive"/>
       <node ref="U6" pin="4" pinfunction="IN-_4" pintype="input"/>
     </net>
-    <net code="28" name="VREF" class="Default">
+    <net code="37" name="VREF" class="ANALOG_SENSE,Default">
       <node ref="C15" pin="1" pintype="passive"/>
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="R9" pin="1" pintype="passive"/>
       <node ref="U5" pin="3" pinfunction="IN1+_3" pintype="input"/>
       <node ref="U5" pin="5" pinfunction="IN2+_5" pintype="input"/>
     </net>
-    <net code="29" name="VSENSE" class="Default">
+    <net code="38" name="VSENSE" class="ANALOG_SENSE,Default">
       <node ref="C17" pin="1" pintype="passive"/>
       <node ref="J3" pin="7" pinfunction="VSENSE_7" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="U8" pin="3" pinfunction="D1_3" pintype="passive"/>
+    </net>
+    <net code="39" name="VSENSE_DIV" class="ANALOG_SENSE,Default">
+      <node ref="D3" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R14" pin="2" pintype="passive"/>
       <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
     </net>
-    <net code="30" name="unconnected-(U1-LO-Pad1)" class="Default">
+    <net code="40" name="VSENSE_PROT" class="ANALOG_SENSE,Default">
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U8" pin="2" pinfunction="S1_2" pintype="passive"/>
+    </net>
+    <net code="41" name="unconnected-(U1-LO-Pad1)" class="Default">
       <node ref="U1" pin="1" pinfunction="LO_1" pintype="output+no_connect"/>
     </net>
-    <net code="31" name="unconnected-(U1-NC-Pad4)" class="Default">
+    <net code="42" name="unconnected-(U1-NC-Pad4)" class="Default">
       <node ref="U1" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
-    <net code="32" name="unconnected-(U1-NC-Pad5)" class="Default">
+    <net code="43" name="unconnected-(U1-NC-Pad5)" class="Default">
       <node ref="U1" pin="5" pinfunction="NC_5" pintype="no_connect"/>
     </net>
-    <net code="33" name="unconnected-(U1-NC-Pad9)" class="Default">
+    <net code="44" name="unconnected-(U1-NC-Pad9)" class="Default">
       <node ref="U1" pin="9" pinfunction="NC_9" pintype="no_connect"/>
     </net>
-    <net code="34" name="unconnected-(U1-NC-Pad10)" class="Default">
+    <net code="45" name="unconnected-(U1-NC-Pad10)" class="Default">
       <node ref="U1" pin="10" pinfunction="NC_10" pintype="no_connect"/>
     </net>
-    <net code="35" name="unconnected-(U1-NC-Pad16)" class="Default">
+    <net code="46" name="unconnected-(U1-NC-Pad16)" class="Default">
       <node ref="U1" pin="16" pinfunction="NC_16" pintype="no_connect"/>
     </net>
-    <net code="36" name="unconnected-(U3-2Y-Pad4)" class="Default">
-      <node ref="U3" pin="4" pinfunction="2Y_4" pintype="output+no_connect"/>
-    </net>
-    <net code="37" name="unconnected-(U3-3Y-Pad6)" class="Default">
-      <node ref="U3" pin="6" pinfunction="3Y_6" pintype="output+no_connect"/>
-    </net>
-    <net code="38" name="unconnected-(U3-4Y-Pad8)" class="Default">
+    <net code="47" name="unconnected-(U3-4Y-Pad8)" class="Default">
       <node ref="U3" pin="8" pinfunction="4Y_8" pintype="output+no_connect"/>
     </net>
-    <net code="39" name="unconnected-(U3-5Y-Pad10)" class="Default">
+    <net code="48" name="unconnected-(U3-5Y-Pad10)" class="Default">
       <node ref="U3" pin="10" pinfunction="5Y_10" pintype="output+no_connect"/>
     </net>
-    <net code="40" name="unconnected-(U3-6Y-Pad12)" class="Default">
+    <net code="49" name="unconnected-(U3-6Y-Pad12)" class="Default">
       <node ref="U3" pin="12" pinfunction="6Y_12" pintype="output+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U7-4Y-Pad11)" class="Default">
+      <node ref="U7" pin="11" pinfunction="4Y_11" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U9-~{MR}-Pad3)" class="Default">
+      <node ref="U9" pin="3" pinfunction="~{MR}_3" pintype="input+no_connect"/>
     </net>
   </nets>
 </export>

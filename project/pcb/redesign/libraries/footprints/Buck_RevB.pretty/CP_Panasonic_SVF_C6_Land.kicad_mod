@@ -1,0 +1,142 @@
+(footprint "CP_Panasonic_SVF_C6_Land"
+	(version 20260206)
+	(generator "revb_tools")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Panasonic OS-CON SVF size C6 (50SVF10M), 6.6 x 6.6 mm base. Land a=2.1 gap, b=9.1 outer, c=1.6 wide: pads 3.5 x 1.6 mm at +-2.80 mm. Pad 1 = + (chamfered base-plate side). Source: Panasonic AAB8000COL10 (31-Oct-25) Land Pattern table, size C6; AAB8000C211 p.1 dimensions")
+	(tags "RevB manufacturer land")
+	(property "Reference" "REF**"
+		(at 0 -4.65 0)
+		(layer "F.SilkS")
+		(uuid "5cf06b2d-786e-573e-90ec-67b18f200094")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CP_Panasonic_SVF_C6_Land"
+		(at 0 4.65 0)
+		(layer "F.Fab")
+		(uuid "aa6f2108-5400-5b51-aade-413f7a47dbaf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c972c244-157b-5170-9291-d87bf09bc471")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Panasonic OS-CON SVF size C6 (50SVF10M), 6.6 x 6.6 mm base. Land a=2.1 gap, b=9.1 outer, c=1.6 wide: pads 3.5 x 1.6 mm at +-2.80 mm. Pad 1 = + (chamfered base-plate side)."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1729d5c8-c708-52de-857e-2f3089c62345")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -4.8 -3.65)
+		(end 4.8 3.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "3afe4082-2da7-5969-ba20-c9e69ebd3acc")
+	)
+	(fp_rect
+		(start -3.4 -3.4)
+		(end 3.4 3.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "556ca22a-4661-5ca4-b281-14c6a8c88529")
+	)
+	(fp_circle
+		(center -4.8 -1.4)
+		(end -4.65 -1.4)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "e1238d58-c8c7-5985-992a-6bade5eb3815")
+	)
+	(fp_line
+		(start -5.3 -1.4)
+		(end -4.3 -1.4)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1541e883-c1d5-5f9e-acc1-ba50058f8b23")
+	)
+	(fp_line
+		(start -5.3 -1.4)
+		(end -4.3 -1.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6267980a-5e61-5911-b57c-46d1a9a1156c")
+	)
+	(fp_line
+		(start -4.8 -1.9)
+		(end -4.8 -0.9)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "43f04840-d4f9-5747-a5b8-7c79eed5a557")
+	)
+	(fp_line
+		(start -4.8 -1.9)
+		(end -4.8 -0.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9efab56f-bac9-5aea-8fc7-aee0f31444ec")
+	)
+	(pad "1" smd rect
+		(at -2.8 0)
+		(size 3.5 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dc0334df-8d99-555e-ad06-f5da23534fda")
+	)
+	(pad "2" smd roundrect
+		(at 2.8 0)
+		(size 3.5 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "4a2844de-3895-5475-88e0-686f4757e9b1")
+	)
+	(embedded_fonts no)
+)

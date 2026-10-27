@@ -1,6 +1,9 @@
 #include "runtime.h"
 #include "calibration.h"
 #include <math.h>
+/* Rev B: VOUT below half the reference for 2 ms in CLOSED mode (VIN below the IR2110
+ * UVLO, interface disabled) is a fault, so the PI cannot wind up and restart at full duty. */
+#define BUCK_COLLAPSE_TICKS 20u
 void runtime_init(BuckRuntime *r)
 {
     *r = (BuckRuntime){0};
@@ -15,6 +18,7 @@ void runtime_stop(BuckRuntime *r)
     buck_reset(&r->pi);
     r->ramp_duty = 0;
     r->ramp_ticks = 0;
+    r->low_ticks = 0;
     r->last_command = r->applied_command = 1;
 }
 bool runtime_start(BuckRuntime *r, BuckMode mode, float value, bool fault_pin)
@@ -60,8 +64,9 @@ float runtime_tick(BuckRuntime *r, uint16_t mean_adc, bool fresh, bool fault_pin
         if (r->mode != BUCK_FAULT) dp = 1-r->ramp_duty;
     } else if (r->mode == BUCK_OPEN) dp = r->open_dprime;
     else if (r->mode == BUCK_CLOSED) {
+        r->low_ticks = v < .5f * r->reference ? r->low_ticks + 1 : 0;
         dp = buck_update(&r->pi, v, r->reference, true);
-        if (r->pi.fault) r->mode = BUCK_FAULT;
+        if (r->pi.fault || r->low_ticks > BUCK_COLLAPSE_TICKS) r->mode = BUCK_FAULT;
     }
     if (r->mode == BUCK_FAULT || r->mode == BUCK_OFF) dp = 1;
     if (r->capture) {

@@ -5,8 +5,8 @@
   (uuid "368fe8d0-f93f-52b5-a4e6-7e69fcbc5ddf")
   (paper "A3")
   (title_block
-    (title "Gate driver and supplies - REV A / HOLD FABRICATION")
-    (rev "A")
+    (title "Gate driver and supplies - REV B PROTOTYPE")
+    (rev "B")
     (company "UNAL Manizales - Sistemas Dinamicos y Control")
   )
   (lib_symbols
@@ -2846,14 +2846,10 @@
     (at 360.68 120.65)
     (uuid "6ac46e22-86fb-51e0-8c90-4804663f2a8c")
   )
-  (no_connect
-    (at 335.28 128.27)
-    (uuid "937083a4-5477-54ab-b731-3d568218ab31")
-  )
-  (no_connect
-    (at 335.28 123.19)
-    (uuid "c012ebdf-2a32-5ee1-9272-1960cf595de8")
-  )
+  (wire (pts (xy 335.28 128.27) (xy 330.2 128.27)) (stroke (width 0) (type default)) (uuid "06fa77ad-74df-589d-a0b2-6c1d0c4a39ea"))
+  (global_label "ADC_EN" (shape passive) (at 330.2 128.27 180) (effects (font (size 0.85 0.85)) (justify right)) (uuid "766d61eb-16ed-5d77-b675-1e36eeb433cd") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 330.2 128.27 0) (hide yes) (effects (font (size 1.27 1.27)))))
+  (wire (pts (xy 335.28 123.19) (xy 330.2 123.19)) (stroke (width 0) (type default)) (uuid "3d7c5bc0-f00a-5b08-9b14-f427397a9fb1"))
+  (global_label "BUF_OE_N" (shape passive) (at 330.2 123.19 180) (effects (font (size 0.85 0.85)) (justify right)) (uuid "91c2d80a-ab9a-5d5b-918a-e31520f7658a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 330.2 123.19 0) (hide yes) (effects (font (size 1.27 1.27)))))
   (no_connect
     (at 360.68 125.73)
     (uuid "cda70160-4fb0-574f-a974-4770da12a49d")
@@ -3676,7 +3672,7 @@
       )
     )
   )
-  (global_label "GND"
+  (global_label "BUF_OE_N"
     (shape passive)
     (at 330.2 125.73 180)
     (effects
@@ -3764,7 +3760,7 @@
       )
     )
   )
-  (global_label "DPRIME"
+  (global_label "PWM_IN"
     (shape passive)
     (at 167.64 165.1 0)
     (effects
@@ -4270,7 +4266,7 @@
       )
     )
   )
-  (global_label "GND"
+  (global_label "NUC_PG"
     (shape passive)
     (at 330.2 120.65 180)
     (effects
@@ -4893,7 +4889,7 @@
         )
       )
     )
-    (property "Value" "UF4004"
+    (property "Value" "UF4004-E3/54"
       (at 149.86 42.1 0)
       (show_name no)
       (do_not_autoplace no)
@@ -4914,7 +4910,7 @@
         )
       )
     )
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.vishay.com/docs/88755/uf4001.pdf"
       (at 149.86 35.56 0)
       (show_name no)
       (do_not_autoplace no)
@@ -4940,6 +4936,7 @@
     (pin "1"
       (uuid "0dd4907d-c254-4515-8e58-cb236515e55d")
     )
+    (property "MPN" "UF4004-E3/54" (at 149.86 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Manufacturer" "Vishay" (at 149.86 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "LCSC" "C5137033" (at 149.86 35.56 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Assembly" "MANUAL_THT" (at 149.86 35.56 0) (hide yes) (effects (font (size 1.27 1.27))))
     (instances
       (project "buck"
         (path "/94b2b377-c0d1-5fce-91fa-ae8f86f36484/fbdf1364-0f3f-5e5b-98a0-861b21661de2"
@@ -4948,7 +4945,7 @@
         )
       )
     )
-    (property "Migration_Status" "BLOCKED / ORIGINAL RETAINED"
+    (property "Migration_Status" "REV B - PART FIXED BY RELEASE PLAN"
       (at 149.86 35.56 0)
       (effects
         (font
@@ -4975,7 +4972,7 @@
         (hide yes)
       )
     )
-    (property "Electrical_Approval" "PENDING - NOT APPROVED"
+    (property "Electrical_Approval" "PENDING - PROTOTYPE BRING-UP; NOT ELECTRICALLY VALIDATED"
       (at 149.86 35.56 0)
       (effects
         (font
@@ -5770,7 +5767,7 @@
         )
       )
     )
-    (property "Footprint" "Buck_SMD:D14"
+    (property "Footprint" "Buck_RevB:TI_D0014A_SOIC-14"
       (at 347.98 121.92 0)
       (hide yes)
       (show_name no)
@@ -5851,7 +5848,7 @@
         )
       )
     )
-    (property "Migration_Status" "FOOTPRINT_ONLY / PROVISIONAL - REVIEW REQUIRED"
+    (property "Migration_Status" "REV B - LAND CORRECTED TO MANUFACTURER DRAWING"
       (at 347.98 121.92 0)
       (effects
         (font

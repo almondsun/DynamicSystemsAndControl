@@ -1,0 +1,25 @@
+** Drc report for buck.kicad_pcb **
+** Created on 2026-10-27T12:48:59 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 3 DRC violations **
+[track_width]: Track width (rule 'SW and LMID width review outside pads' min width 2.0000 mm; actual 0.5000 mm)
+    Rule: SW and LMID width review outside pads; warning
+    @(119.6500 mm, 89.9450 mm): Track [SW] on F.Cu, length 2.1550 mm
+[track_width]: Track width (rule 'VIN width review outside pads' min width 3.0000 mm; actual 0.5000 mm)
+    Rule: VIN width review outside pads; warning
+    @(121.0000 mm, 96.9000 mm): Track [VIN] on F.Cu, length 1.0078 mm
+[track_width]: Track width (rule 'VIN width review outside pads' min width 3.0000 mm; actual 0.5000 mm)
+    Rule: VIN width review outside pads; warning
+    @(123.4000 mm, 96.9000 mm): Track [VIN] on B.Cu, length 2.4000 mm
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+
+** End of Report **

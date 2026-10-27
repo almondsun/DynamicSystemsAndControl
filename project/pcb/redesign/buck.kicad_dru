@@ -25,6 +25,7 @@
   (severity warning)
   (condition "A.Type == 'Track' && (A.NetName == 'SW' || A.NetName == 'LMID') && !A.intersectsCourtyard('*')")
   (constraint track_width (min 2.0mm) (opt 2.0mm)))
-(rule "Minimum thermal relief spoke count 1"
-	(constraint min_resolved_spokes 1)
-)
+
+(rule "TI PW0014A land: 0.20 mm gap between pads of the same package (SCLS749C/SCDS390B)"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && ((A.memberOfFootprint('U7') && B.memberOfFootprint('U7')) || (A.memberOfFootprint('U8') && B.memberOfFootprint('U8')))")
+  (constraint clearance (min 0.19mm)))

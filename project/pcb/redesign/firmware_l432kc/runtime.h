@@ -11,7 +11,7 @@ typedef struct {
     float reference, open_dprime, ramp_duty, adc_volts_per_count, adc_offset;
     float last_command, applied_command;
     uint32_t tick, ramp_ticks;
-    uint16_t count;
+    uint16_t count, low_ticks;
     bool capture;
     BuckSample samples[BUCK_CAPTURE_COUNT];
 } BuckRuntime;

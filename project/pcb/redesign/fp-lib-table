@@ -105,4 +105,11 @@
     (options "")
     (descr "Review-only local footprint; mechanical qualification pending")
   )
+  (lib
+    (name "Buck_RevB")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/libraries/footprints/Buck_RevB.pretty")
+    (options "")
+    (descr "Rev B lands copied from manufacturer drawings; see revb_tools/footprints_revb.py")
+  )
 )

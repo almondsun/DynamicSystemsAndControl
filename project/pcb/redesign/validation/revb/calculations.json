@@ -1,0 +1,214 @@
+{
+  "adc": {
+    "k_unloaded": 0.12790697674418605,
+    "rth_ohm": 1918.6046511627908,
+    "k_loaded_nominal": 0.12427732734150913,
+    "k_loaded_min": 0.1220929472880067,
+    "k_loaded_max": 0.1264916460085965,
+    "volts_per_count_nominal": 0.006484375091575091,
+    "gain_change_vs_revA_percent": -2.837725896638321,
+    "source_resistance_max_ohm": 2923.104651162791,
+    "c17_tau_us": 2.923104651162791,
+    "c17_fc_khz": 54.44722720706717,
+    "phase_at_10khz_deg": -10.40719100441892,
+    "vadc_at": {
+      "5V": 0.6214,
+      "6V": 0.7457,
+      "7V": 0.8699,
+      "8.3V": 1.0315
+    }
+  },
+  "clamp": {
+    "topology": "U10 reference (R23 2.2k from +5V, C22) + D4 tap->REF_2V5 + D3 GND->tap",
+    "lm4040_bias_ma": {
+      "min_ma": 1.004050405040504,
+      "max_ma": 1.2713498622589532
+    },
+    "ref_2v5_max_v": 2.527,
+    "tap_abs_max_v_clamp_10ma": 2.927,
+    "adc_pin_abs_max_v": 2.898019801980198,
+    "vdda_min_when_switch_on": 3.0239499999999997,
+    "headroom_v": 0.12593019801980176,
+    "vout_measurement_ceiling_nominal": 21.34528314871091,
+    "positive": [
+      {
+        "vout": 7,
+        "tap_unclamped_v": 0.8953,
+        "clamp_current_ma_est": 0.0,
+        "tap_v_max": 0.8953,
+        "adc_pin_v_max": 0.8865
+      },
+      {
+        "vout": 8.3,
+        "tap_unclamped_v": 1.0616,
+        "clamp_current_ma_est": 0.0,
+        "tap_v_max": 1.0616,
+        "adc_pin_v_max": 1.0511
+      },
+      {
+        "vout": 13.2,
+        "tap_unclamped_v": 1.6884,
+        "clamp_current_ma_est": 0.0,
+        "tap_v_max": 1.6884,
+        "adc_pin_v_max": 1.6717
+      },
+      {
+        "vout": 20,
+        "tap_unclamped_v": 2.5581,
+        "clamp_current_ma_est": 0.0,
+        "tap_v_max": 2.5581,
+        "adc_pin_v_max": 2.5328
+      },
+      {
+        "vout": 24,
+        "tap_unclamped_v": 3.0698,
+        "clamp_current_ma_est": 0.193,
+        "tap_v_max": 2.847,
+        "adc_pin_v_max": 2.8188
+      },
+      {
+        "vout": 30,
+        "tap_unclamped_v": 3.8372,
+        "clamp_current_ma_est": 0.593,
+        "tap_v_max": 2.847,
+        "adc_pin_v_max": 2.8188
+      },
+      {
+        "vout": 48,
+        "tap_unclamped_v": 6.1395,
+        "clamp_current_ma_est": 1.793,
+        "tap_v_max": 2.927,
+        "adc_pin_v_max": 2.898
+      }
+    ],
+    "negative": [
+      {
+        "vout": -1,
+        "diode_current_ma": 0.0,
+        "tmux_pin_v_min": -0.1279,
+        "within_tmux_abs_max": true
+      },
+      {
+        "vout": -5,
+        "diode_current_ma": 0.2082,
+        "tmux_pin_v_min": -0.32,
+        "within_tmux_abs_max": true
+      },
+      {
+        "vout": -12,
+        "diode_current_ma": 0.6749,
+        "tmux_pin_v_min": -0.32,
+        "within_tmux_abs_max": true
+      },
+      {
+        "vout": -24,
+        "diode_current_ma": 1.4749,
+        "tmux_pin_v_min": -0.4,
+        "within_tmux_abs_max": true
+      }
+    ],
+    "diode_leak_error_mv_at_vout_per_1uA": 15.0,
+    "note": "BAT54WS IR 2 uA max at 25 V/25 C (DS30098); typical 0.045 uA at 25 C and ~1.8 uA at 75 C near 0.9-1.6 V reverse (Fig. 2): D3 and D4 leak in opposite directions on the tap."
+  },
+  "supervisor": {
+    "vit_nominal": 3.07,
+    "vit_min": 3.0239499999999997,
+    "vit_max": 3.1160499999999995,
+    "series_r_shift_percent": 0.25,
+    "sense_backfeed_limit_ma_if_internal_diode": 0.2865,
+    "release_delay_ms_ct_to_vdd_via_r24": [
+      180,
+      300,
+      420
+    ],
+    "sense_to_reset_us_typ": 20,
+    "release_threshold_max_v": 3.201951249999999,
+    "sense_filter_tau_us": 10.0
+  },
+  "bootstrap": {
+    "vin": 12.0,
+    "vs_off_assumed_v": 0.0,
+    "rows": [
+      {
+        "vout": 5.0,
+        "duty": 0.4167,
+        "ton_us": 41.67,
+        "q_nc": 126.0,
+        "beta_dc_bias": 1.0,
+        "ceff_uf": 1.683,
+        "droop_v": 0.0748,
+        "vbs_min_v": 10.925,
+        "meets_10v": true,
+        "above_uvlo_max": true,
+        "recharge_avg_ma": 2.159
+      },
+      {
+        "vout": 5.0,
+        "duty": 0.4167,
+        "ton_us": 41.67,
+        "q_nc": 126.0,
+        "beta_dc_bias": 0.5,
+        "ceff_uf": 0.8415,
+        "droop_v": 0.1497,
+        "vbs_min_v": 10.85,
+        "meets_10v": true,
+        "above_uvlo_max": true,
+        "recharge_avg_ma": 2.159
+      },
+      {
+        "vout": 6.0,
+        "duty": 0.5,
+        "ton_us": 50.0,
+        "q_nc": 137.6,
+        "beta_dc_bias": 1.0,
+        "ceff_uf": 1.683,
+        "droop_v": 0.0817,
+        "vbs_min_v": 10.918,
+        "meets_10v": true,
+        "above_uvlo_max": true,
+        "recharge_avg_ma": 2.751
+      },
+      {
+        "vout": 6.0,
+        "duty": 0.5,
+        "ton_us": 50.0,
+        "q_nc": 137.6,
+        "beta_dc_bias": 0.5,
+        "ceff_uf": 0.8415,
+        "droop_v": 0.1635,
+        "vbs_min_v": 10.837,
+        "meets_10v": true,
+        "above_uvlo_max": true,
+        "recharge_avg_ma": 2.751
+      },
+      {
+        "vout": 7.0,
+        "duty": 0.5833,
+        "ton_us": 58.33,
+        "q_nc": 149.1,
+        "beta_dc_bias": 1.0,
+        "ceff_uf": 1.683,
+        "droop_v": 0.0886,
+        "vbs_min_v": 10.911,
+        "meets_10v": true,
+        "above_uvlo_max": true,
+        "recharge_avg_ma": 3.58
+      },
+      {
+        "vout": 7.0,
+        "duty": 0.5833,
+        "ton_us": 58.33,
+        "q_nc": 149.1,
+        "beta_dc_bias": 0.5,
+        "ceff_uf": 0.8415,
+        "droop_v": 0.1772,
+        "vbs_min_v": 10.823,
+        "meets_10v": true,
+        "above_uvlo_max": true,
+        "recharge_avg_ma": 3.58
+      }
+    ],
+    "vin_min_for_10v_worst_row": 11.177,
+    "note": "VS taken as 0 V during OFF (D1 conduction would add ~0.3 V margin); no claim for 10.8 V input or pre-charged output."
+  }
+}
