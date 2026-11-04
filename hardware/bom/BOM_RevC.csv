@@ -1,0 +1,29 @@
+Designator,Value,Package,LCSC,Library,Qty_per_board,Source,Notes
+"L1,L2",SRR1280-331K 330uH 1.1A Isat1.4A DCR0.6R,SMD 12.5x12.5mm,C2041412,Extended,2,JLCPCB (reservados en My Parts Lib),En serie = 660uH; usar stock reservado
+Q1,AOD4184A 40V 7mOhm,TO-252,C99124,Extended,1,JLCPCB,G=1 D=2/pestana S=3 - verificar datasheet
+D1,SS34 40V 3A,SMA,C8678,Basic,1,JLCPCB,Catodo a SW
+"C1,C2,C3,C6,C7",10uF 50V X5R,1206,C13585,Basic,5,JLCPCB,
+C8,10uF 50V X5R,1206,C13585,Basic,0,JLCPCB,DNP - posicion de reserva
+C4,100nF 50V X7R,0603,C14663,Basic,1,JLCPCB,Junto al drenador de Q1
+C9,1uF 50V X7R,0805,C28323,Basic,1,JLCPCB,Bootstrap BOOT-SW
+"C10,C11",4.7nF 50V X7R,0603,C53987,Basic,2,JLCPCB,Filtro ADC
+"Q2,Q3",MMBT3904,SOT-23,C20526,Basic,2,JLCPCB,
+Q4,MMBT2222A,SOT-23,C8512,Basic,1,JLCPCB,NPN del totem
+Q5,S8550,SOT-23,C105432,Basic,1,JLCPCB,PNP del totem
+"Q6,Q7",AO3400A,SOT-23,C20917,Basic,2,JLCPCB,Conmutacion de carga
+D2,1N4148W,SOD-123,C81598,Basic,1,JLCPCB,Diodo de bootstrap
+R1,1k 1%,0603,C21190,Basic,1,JLCPCB,
+"R2,R13,R14",100k 1%,0603,C25803,Basic,3,JLCPCB,
+"R3,R6,R8,R10",10k 1%,0603,C25804,Basic,4,JLCPCB,
+R4,1.2k 1%,0805,C17379,Basic,1,JLCPCB,~44 mW promedio
+R5,10R 1%,0603,C22859,Basic,1,JLCPCB,Resistencia de compuerta
+"R7,R9",30k 1%,0603,C22984,Basic,2,JLCPCB,Divisores x0.25
+"R11,R12",100R 1%,0603,C22775,Basic,2,JLCPCB,Compuerta de Q6/Q7
+"J1,J2,J3,J4",Bornera 2P paso 5.0mm (KF301),THT,,,4,Local,Verificar paso 5.0 o 5.08 mm
+"J5,J6",Header hembra 1x15 2.54mm,THT,,,2,Local,NUCLEO-L432KC CN3/CN4
+C5,Electrolitico 100uF 25V radial 6.3mm,THT,,,0,Local,DNP - opcional
+"TP1-TP8",Test point,THT pad,,,8,—,Solo pads en la PCB
+"H1-H4",Agujero M3,NPTH 3.2mm,,,0,—,ELIMINADOS 2026-11-03 (sin agujeros M3; excluidos de la placa en el esquematico)
+RCARGA_BASE,3.6R 10W x2 en serie (7.2R),Fuera de placa,,,2,Local,A J2
+RCARGA_A,36R 5W,Fuera de placa,,,1,Local,A J3
+RCARGA_B,24R 5W,Fuera de placa,,,1,Local,A J4
