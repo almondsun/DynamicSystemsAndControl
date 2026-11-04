@@ -567,11 +567,43 @@
     "netclass_patterns": [
       {
         "netclass": "Power",
-        "pattern": "VIN, SW, VOUT, VMID, LOAD_A, LOAD_B"
+        "pattern": "VIN"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "SW"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VOUT"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VMID"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "LOAD_A"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "LOAD_B"
       },
       {
         "netclass": "Drive",
-        "pattern": "GATE, BOOT, DRV_E, DRV_B"
+        "pattern": "GATE"
+      },
+      {
+        "netclass": "Drive",
+        "pattern": "BOOT"
+      },
+      {
+        "netclass": "Drive",
+        "pattern": "DRV_E"
+      },
+      {
+        "netclass": "Drive",
+        "pattern": "DRV_B"
       }
     ]
   },
