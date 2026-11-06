@@ -297,14 +297,14 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+	(footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 		(layer "F.Cu")
 		(uuid "04402e6b-8630-4a2c-8f4f-bd5a7e9550a5")
 		(at 164 114.5)
-		(descr "THT pad as test Point, diameter 1.5mm, hole diameter 0.7mm")
+		(descr "THT pad as test Point, diameter 2.0mm, hole diameter 1.0mm")
 		(tags "test point THT pad")
 		(property "Reference" "TP8"
-			(at 0 -1.648 0)
+			(at 0 -1.998 0)
 			(layer "F.SilkS")
 			(uuid "afd1aeeb-8cb6-4d18-aab1-27d2893180d6")
 			(effects
@@ -315,7 +315,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 0 1.75 0)
+			(at 0 2.05 0)
 			(layer "F.Fab")
 			(uuid "063ec9cc-0d21-4057-baff-c1d1c90fcc79")
 			(effects
@@ -356,7 +356,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cd012c32-a778-4483-9bfb-60b691d10b3c")
+			(uuid "5e49180c-c5a9-44c2-bdc9-f426fba7a6a2")
 			(effects
 				(font
 					(size 1 1)
@@ -377,7 +377,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 1.2)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -388,7 +388,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1.5 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -398,7 +398,7 @@
 			(uuid "02de179a-8012-44d7-ac25-7843d9833f91")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 0)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "3595c44d-d9b9-4d1f-bcdf-3b2a23500425")
 			(effects
@@ -410,8 +410,8 @@
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
-			(size 1.5 1.5)
-			(drill 0.7)
+			(size 2 2)
+			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
@@ -993,7 +993,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "33b52e65-954c-4cd6-9ea1-6f11255987b6")
-		(at 143.06 149.24 -90)
+		(at 143.06 152.24 -90)
 		(descr "Through hole straight socket strip, 1x15, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x15 2.54mm single row")
 		(property "Reference" "J6"
@@ -1332,9 +1332,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(J6-Pin_9-Pad9)")
+			(net "Net-(J6-Pin_9)")
 			(pinfunction "Pin_9_9")
-			(pintype "passive+no_connect")
+			(pintype "passive")
 			(uuid "34bf0dae-7846-4ada-ab57-4a8048d3801b")
 		)
 		(pad "10" thru_hole circle
@@ -1709,10 +1709,134 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+		(layer "F.Cu")
+		(uuid "35e1f019-d7c3-40b3-8178-3ea374748a72")
+		(at 129.5 156)
+		(descr "THT pad as test Point, diameter 2.0mm, hole diameter 1.0mm")
+		(tags "test point THT pad")
+		(property "Reference" "TP10"
+			(at 3.199999 0 0)
+			(layer "F.SilkS")
+			(uuid "9ed7f3c1-daac-4088-bcc1-c201014d27ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TRIG"
+			(at 0 2.05 0)
+			(layer "F.Fab")
+			(uuid "65c0043d-6d48-4d02-bf93-7371523c2fdb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a696140-89c5-4350-9102-bc07beeee09d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a6737a7-200c-4283-aa0c-36c897cec752")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a490e19-5047-4706-8887-3969353cf7d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/97572e0f-bf13-4c72-b567-4949d32c5485")
+		(sheetname "/")
+		(sheetfile "pcb_revC.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 0 1.2)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "665293d5-d4fa-40dd-a86a-e5828b4bbe95")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.5 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "d1003894-f049-464b-b09c-7b3b1b30f0e9")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(layer "F.Fab")
+			(uuid "a970ca26-f08d-46aa-9654-968ce5644e82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "Net-(J6-Pin_9)")
+			(pinfunction "1_1")
+			(pintype "passive")
+			(uuid "e67409b5-bedc-47c3-b119-e9d4aec7ae21")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "3c3595bf-f934-4a2e-904a-abd8304d8610")
-		(at 112.3 152.5)
+		(at 112.3 155.5)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R7"
@@ -1883,7 +2007,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "3ee84b41-9c99-40c0-850b-eafde5d5c362")
-		(at 125.6 152.5 180)
+		(at 125.6 155.5 180)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R9"
@@ -2051,14 +2175,14 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+	(footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 		(layer "F.Cu")
 		(uuid "4096bea9-0177-4114-a732-f77d8c8f403d")
 		(at 125.5 115.8)
-		(descr "THT pad as test Point, diameter 1.5mm, hole diameter 0.7mm")
+		(descr "THT pad as test Point, diameter 2.0mm, hole diameter 1.0mm")
 		(tags "test point THT pad")
 		(property "Reference" "TP3"
-			(at 0 -1.648 0)
+			(at 0 -1.998 0)
 			(layer "F.SilkS")
 			(uuid "f928239c-164b-413a-a0f4-ef5e81e3046d")
 			(effects
@@ -2069,7 +2193,7 @@
 			)
 		)
 		(property "Value" "GATE"
-			(at 0 1.75 0)
+			(at 0 2.05 0)
 			(layer "F.Fab")
 			(uuid "d651e6d8-8494-4698-8c48-c15d204691f8")
 			(effects
@@ -2110,7 +2234,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d1af8da2-9c04-4c31-9d57-dc8686d8d919")
+			(uuid "0e63e135-b5b4-4a2b-882f-4151feefa2cf")
 			(effects
 				(font
 					(size 1 1)
@@ -2131,7 +2255,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 1.2)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2142,7 +2266,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1.5 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -2152,7 +2276,7 @@
 			(uuid "0ec7b4a2-4175-4092-88af-a97e7ae60333")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 0)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "ab8a40b1-f7c1-4636-a6cd-f666118701b2")
 			(effects
@@ -2164,8 +2288,8 @@
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
-			(size 1.5 1.5)
-			(drill 0.7)
+			(size 2 2)
+			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GATE")
@@ -3376,7 +3500,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "5de583ab-1b44-48b0-ac46-1eefcb6fd587")
-		(at 143.06 134 -90)
+		(at 143.06 137 -90)
 		(descr "Through hole straight socket strip, 1x15, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x15 2.54mm single row")
 		(property "Reference" "J5"
@@ -4128,14 +4252,14 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+	(footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 		(layer "F.Cu")
 		(uuid "65bb5272-df42-41d8-a57a-1617a2abdd9b")
 		(at 102.5 125.5)
-		(descr "THT pad as test Point, diameter 1.5mm, hole diameter 0.7mm")
+		(descr "THT pad as test Point, diameter 2.0mm, hole diameter 1.0mm")
 		(tags "test point THT pad")
 		(property "Reference" "TP1"
-			(at 0 -1.648 0)
+			(at 0 -1.998 0)
 			(layer "F.SilkS")
 			(uuid "152133f9-3a4b-4d39-a80a-798e2f861312")
 			(effects
@@ -4146,7 +4270,7 @@
 			)
 		)
 		(property "Value" "VIN"
-			(at 0 1.75 0)
+			(at 0 2.05 0)
 			(layer "F.Fab")
 			(uuid "befc2775-fc7f-4c23-a025-1f5716f6796f")
 			(effects
@@ -4187,7 +4311,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "21b101c5-c318-4775-8db2-61877be75907")
+			(uuid "67534bf6-63ef-4f96-b928-4292d146e5d6")
 			(effects
 				(font
 					(size 1 1)
@@ -4208,7 +4332,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 1.2)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -4219,7 +4343,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1.5 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -4229,7 +4353,7 @@
 			(uuid "7b7d4634-5494-4d2c-84a1-853812eba03e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 0)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "b400722f-7de9-485b-8a1d-2cc061c289bf")
 			(effects
@@ -4241,8 +4365,8 @@
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
-			(size 1.5 1.5)
-			(drill 0.7)
+			(size 2 2)
+			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VIN")
@@ -4597,7 +4721,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "7b6d2a3a-ec56-4bcd-83c2-b76c9222147d")
-		(at 122.2 153.3 -90)
+		(at 122.2 156.3 -90)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R10"
@@ -5192,7 +5316,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.250241 -1.839)
@@ -6652,14 +6776,14 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+	(footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 		(layer "F.Cu")
 		(uuid "9186b771-397b-4cd3-bbc6-bdf3ad315622")
 		(at 135.5 117.5)
-		(descr "THT pad as test Point, diameter 1.5mm, hole diameter 0.7mm")
+		(descr "THT pad as test Point, diameter 2.0mm, hole diameter 1.0mm")
 		(tags "test point THT pad")
 		(property "Reference" "TP2"
-			(at 0 -1.648 0)
+			(at 0 -1.998 0)
 			(layer "F.SilkS")
 			(uuid "a1fe1c2c-5d47-480d-bbf3-ba25375a85a0")
 			(effects
@@ -6670,7 +6794,7 @@
 			)
 		)
 		(property "Value" "SW"
-			(at 0 1.75 0)
+			(at 0 2.05 0)
 			(layer "F.Fab")
 			(uuid "3c5148dc-5ee4-4a0b-ac86-961a24f14d95")
 			(effects
@@ -6711,7 +6835,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f2177d6f-0233-4bfd-8e04-f06d5424089c")
+			(uuid "1584b9e4-5930-490d-8ecd-843412b27937")
 			(effects
 				(font
 					(size 1 1)
@@ -6732,7 +6856,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 1.2)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6743,7 +6867,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1.5 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -6753,7 +6877,7 @@
 			(uuid "fe913e86-fc80-408e-b13f-f1f522e73d08")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 0)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "9cd7e9c6-ded0-4555-bde5-ddc84049d002")
 			(effects
@@ -6765,8 +6889,8 @@
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
-			(size 1.5 1.5)
-			(drill 0.7)
+			(size 2 2)
+			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "SW")
@@ -7576,14 +7700,14 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+	(footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 		(layer "F.Cu")
 		(uuid "a305452b-00cd-49b4-8b88-adc44a8c8e08")
 		(at 105.5 125.5)
-		(descr "THT pad as test Point, diameter 1.5mm, hole diameter 0.7mm")
+		(descr "THT pad as test Point, diameter 2.0mm, hole diameter 1.0mm")
 		(tags "test point THT pad")
 		(property "Reference" "TP6"
-			(at 0 -1.648 0)
+			(at 0 -1.998 0)
 			(layer "F.SilkS")
 			(uuid "54e3049b-0757-41a3-a4b1-2d160f707ab7")
 			(effects
@@ -7594,7 +7718,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 0 1.75 0)
+			(at 0 2.05 0)
 			(layer "F.Fab")
 			(uuid "83ee4c72-9d00-4a56-944c-ffd9031d8e42")
 			(effects
@@ -7635,7 +7759,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "477c33d0-b9e8-4db4-977a-93c11866abb8")
+			(uuid "7241f60b-14a7-477c-99e9-48a9b5909ac8")
 			(effects
 				(font
 					(size 1 1)
@@ -7656,7 +7780,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 1.2)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -7667,7 +7791,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1.5 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -7677,7 +7801,7 @@
 			(uuid "a57e095d-2226-475c-8f17-49b187f84119")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 0)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "58540f8f-2528-4839-8bbc-8cc7911529cb")
 			(effects
@@ -7689,8 +7813,8 @@
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
-			(size 1.5 1.5)
-			(drill 0.7)
+			(size 2 2)
+			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
@@ -8036,7 +8160,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "a58cb4df-d8cd-430c-a4a1-265b9005f2fb")
-		(at 117.66 153.3 -90)
+		(at 117.66 156.3 -90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C10"
@@ -8546,14 +8670,14 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+	(footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 		(layer "F.Cu")
 		(uuid "ad60f6cc-ab03-4bfc-945b-f61f11518b53")
 		(at 138.5 117.5)
-		(descr "THT pad as test Point, diameter 1.5mm, hole diameter 0.7mm")
+		(descr "THT pad as test Point, diameter 2.0mm, hole diameter 1.0mm")
 		(tags "test point THT pad")
 		(property "Reference" "TP7"
-			(at 0 -1.648 0)
+			(at 0 -1.998 0)
 			(layer "F.SilkS")
 			(uuid "e398eceb-8142-4517-96ab-64eb25e4e3fa")
 			(effects
@@ -8564,7 +8688,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 0 1.75 0)
+			(at 0 2.05 0)
 			(layer "F.Fab")
 			(uuid "21999d33-5920-4eb3-93e6-9d5fcf37a6a8")
 			(effects
@@ -8605,7 +8729,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "460df6a7-f032-4c19-aa9b-aad0d9e415fa")
+			(uuid "da3ab07c-f3fc-45fd-9095-18125ab4df86")
 			(effects
 				(font
 					(size 1 1)
@@ -8626,7 +8750,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 1.2)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -8637,7 +8761,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1.5 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -8647,7 +8771,7 @@
 			(uuid "54a9bbde-5529-4bee-96e2-589eef455050")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 0)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "bd71b82a-120f-4f90-9629-9912d86e0e1a")
 			(effects
@@ -8659,8 +8783,8 @@
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
-			(size 1.5 1.5)
-			(drill 0.7)
+			(size 2 2)
+			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
@@ -9223,7 +9347,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "b4fd7f9d-284c-4a29-bd02-7a4c2f706f76")
-		(at 120.2 153.3 -90)
+		(at 120.2 156.3 -90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C11"
@@ -11441,6 +11565,130 @@
 			)
 		)
 	)
+	(footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+		(layer "F.Cu")
+		(uuid "ebcfeaca-beba-43c7-bd8a-e46af5c36bd9")
+		(at 127 127.5)
+		(descr "THT pad as test Point, diameter 2.0mm, hole diameter 1.0mm")
+		(tags "test point THT pad")
+		(property "Reference" "TP9"
+			(at 0 -1.998 0)
+			(layer "F.SilkS")
+			(uuid "5e68f3e8-adf6-4e9f-b489-f870c0fa2a26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "BOOT"
+			(at 0 2.05 0)
+			(layer "F.Fab")
+			(uuid "4922a58d-4c16-4e55-8498-ab32992dd339")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c284c4a-e7be-45a9-b3e1-a5575ba4f289")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ec275b8-2866-49e9-b1f5-ae5125c8778a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2458ff49-8f9d-43c7-a579-a342d6e61bce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/63e4b213-819b-44bf-ae2c-ba8ee7a272f2")
+		(sheetname "/")
+		(sheetfile "pcb_revC.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 0 1.2)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "f771af28-de4f-423a-b762-3949ed26d642")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.5 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ab133978-bbdd-4b00-8c22-517dd33cccc7")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(layer "F.Fab")
+			(uuid "33eddd96-7284-4066-9cdd-27798f7caa46")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2 2)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "BOOT")
+			(pinfunction "1_1")
+			(pintype "passive")
+			(uuid "4f256d5a-f17a-40d6-9d6d-0771652fb294")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "f34a6f98-4e07-4c8b-90d5-af11169e6d4a")
@@ -11612,14 +11860,14 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+	(footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 		(layer "F.Cu")
 		(uuid "f4e0549d-6d1c-4609-add8-51f8eed6732f")
 		(at 161 114.5)
-		(descr "THT pad as test Point, diameter 1.5mm, hole diameter 0.7mm")
+		(descr "THT pad as test Point, diameter 2.0mm, hole diameter 1.0mm")
 		(tags "test point THT pad")
 		(property "Reference" "TP4"
-			(at 0 -1.648 0)
+			(at 0 -1.998 0)
 			(layer "F.SilkS")
 			(uuid "0a738acc-3082-44b2-ae24-5467fb1950bf")
 			(effects
@@ -11630,7 +11878,7 @@
 			)
 		)
 		(property "Value" "VOUT"
-			(at 0 1.75 0)
+			(at 0 2.05 0)
 			(layer "F.Fab")
 			(uuid "b5721227-b09c-4bb5-83b8-edf08d748927")
 			(effects
@@ -11671,7 +11919,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7335bd2e-239f-4bbf-9a3f-88b587322434")
+			(uuid "f43d14c8-7150-45ad-8ccf-d7ead5f4165f")
 			(effects
 				(font
 					(size 1 1)
@@ -11692,7 +11940,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 1.2)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -11703,7 +11951,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1.5 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -11713,7 +11961,7 @@
 			(uuid "577ef710-9b85-4cf1-9ce1-291c81a7d077")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 0)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "86360977-8515-48e8-badf-9f1ce57c5c78")
 			(effects
@@ -11725,8 +11973,8 @@
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
-			(size 1.5 1.5)
-			(drill 0.7)
+			(size 2 2)
+			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VOUT")
@@ -12555,7 +12803,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "f887cb5b-e956-4065-8f4d-e76ffd99852b")
-		(at 115.66 153.3 -90)
+		(at 115.66 156.3 -90)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R8"
@@ -12723,14 +12971,14 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+	(footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 		(layer "F.Cu")
 		(uuid "fab73750-7dfd-4010-8071-8999286bcf2e")
 		(at 111.5 126)
-		(descr "THT pad as test Point, diameter 1.5mm, hole diameter 0.7mm")
+		(descr "THT pad as test Point, diameter 2.0mm, hole diameter 1.0mm")
 		(tags "test point THT pad")
 		(property "Reference" "TP5"
-			(at 0 -1.648 0)
+			(at 0 -1.998 0)
 			(layer "F.SilkS")
 			(uuid "f6ec2e4e-3317-4108-9790-ae05dc97c89e")
 			(effects
@@ -12741,7 +12989,7 @@
 			)
 		)
 		(property "Value" "PWM"
-			(at 0 1.75 0)
+			(at 0 2.05 0)
 			(layer "F.Fab")
 			(uuid "f275e1b4-e5cf-4799-acbd-c1a782060d11")
 			(effects
@@ -12782,7 +13030,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "69558eb2-cd48-42ca-8ce1-f83727f4abbc")
+			(uuid "c52823ec-db36-4595-aff4-a30b6ca8c295")
 			(effects
 				(font
 					(size 1 1)
@@ -12803,7 +13051,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 0 0.95)
+			(end 0 1.2)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -12814,7 +13062,7 @@
 		)
 		(fp_circle
 			(center 0 0)
-			(end 1.25 0)
+			(end 1.5 0)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -12824,7 +13072,7 @@
 			(uuid "7940b8ff-808a-4962-9c9c-ccdab63aa4a5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 0)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "0dc3c5ec-10ec-4d01-9de4-9e13a040bf5e")
 			(effects
@@ -12836,8 +13084,8 @@
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
-			(size 1.5 1.5)
-			(drill 0.7)
+			(size 2 2)
+			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PWM")
@@ -13018,20 +13266,91 @@
 			)
 		)
 	)
-	(gr_rect
-		(start 100.13 132.62)
-		(end 150.43 150.62)
+	(gr_line
+		(start 102.1 135.35)
+		(end 102.1 153.89)
 		(stroke
-			(width 0.15)
+			(width 0.18)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "12faadd7-85d5-4b36-89ec-819603b81c70")
+	)
+	(gr_line
+		(start 102.1 135.35)
+		(end 105.71 135.35)
+		(stroke
+			(width 0.18)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d292baf8-7da0-40b4-8374-343e4c83dc78")
+	)
+	(gr_line
+		(start 102.1 153.89)
+		(end 105.71 153.89)
+		(stroke
+			(width 0.18)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c1ac9fd7-6667-4351-ac4b-7a32eb3c6903")
+	)
+	(gr_line
+		(start 144.85 135.35)
+		(end 152.36 135.35)
+		(stroke
+			(width 0.18)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a5eadf2f-fb73-49c8-99a4-74374f887e5b")
+	)
+	(gr_line
+		(start 144.85 153.89)
+		(end 152.36 153.89)
+		(stroke
+			(width 0.18)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "ca4c0f51-37b4-4fa6-acd1-8fa8d5176803")
+	)
+	(gr_line
+		(start 152.36 135.35)
+		(end 152.36 153.89)
+		(stroke
+			(width 0.18)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fae36e74-8817-4dc5-89b4-53668daa4ffb")
+	)
+	(gr_rect
+		(start 102.1 135.35)
+		(end 152.36 153.89)
+		(stroke
+			(width 0.1)
 			(type default)
 		)
 		(fill no)
 		(layer "Dwgs.User")
-		(uuid "776a5965-8df0-4f4c-bd49-22f32978bd7d")
+		(uuid "5d845dd9-af15-485c-82c4-3e7b7ff4b564")
+	)
+	(gr_rect
+		(start 152.36 139.12)
+		(end 178.5 150.12)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "e6e2c500-0fac-45f1-a05d-248b33f95612")
 	)
 	(gr_rect
 		(start 100 100)
-		(end 178.5 157)
+		(end 178.5 160)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -13040,33 +13359,69 @@
 		(layer "Edge.Cuts")
 		(uuid "4e2384a3-0f09-4fde-9236-4bcb5bd80a7a")
 	)
-	(gr_text "keep both ends clear of tall parts"
-		(at 125.28 145.62 0)
+	(gr_text "D1"
+		(at 147.97825 137 0)
+		(layer "F.SilkS")
+		(uuid "e7094803-7f8f-4f05-890e-adcd08298133")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.18)
+			)
+		)
+	)
+	(gr_text "VIN"
+		(at 148.37825 152.24 0)
+		(layer "F.SilkS")
+		(uuid "a6544506-bf9a-42c8-8a23-5b316ce23fd3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.18)
+			)
+		)
+	)
+	(gr_text "USB ->"
+		(at 157.16 144.62 0)
+		(layer "F.SilkS")
+		(uuid "2c51dab9-3263-46bc-a868-c19b0bc09504")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+		)
+	)
+	(gr_text "NUCLEO-L432KC outline (ST UM1956 Fig. 5: 18.54 x 50.29 mm)"
+		(at 127.5 141.62 0)
 		(layer "Dwgs.User")
-		(uuid "d1a7e79a-02f0-4d08-a9e7-bc4aff473328")
+		(uuid "434f7c55-d414-4a37-89ea-67f665f0be95")
 		(effects
 			(font
 				(size 0.8 0.8)
+				(thickness 0.1)
 			)
 		)
 	)
-	(gr_text "NUCLEO-L432KC (approx. outline)"
-		(at 125.28 139.62 0)
+	(gr_text "USB at pin-1 end (D1 / VIN) ->"
+		(at 127.5 143.12 0)
 		(layer "Dwgs.User")
-		(uuid "53f7e6f1-1062-4f72-a19f-7358899be580")
+		(uuid "9793244c-46b9-44f3-99a5-945c159ec444")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.8 0.8)
+				(thickness 0.1)
 			)
 		)
 	)
-	(gr_text "<- USB end assumed (pin 15) - VERIFY"
-		(at 125.28 142.62 0)
+	(gr_text "USB plug corridor: no tall parts"
+		(at 165.5 148.42 0)
 		(layer "Dwgs.User")
-		(uuid "ec100c0e-3b1c-4871-a77c-82bd72abe5e9")
+		(uuid "81500fa7-59d5-4461-b551-4f7904a295bb")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.8 0.8)
+				(thickness 0.1)
 			)
 		)
 	)
