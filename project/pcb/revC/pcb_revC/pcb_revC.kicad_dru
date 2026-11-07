@@ -1,0 +1,28 @@
+(version 1)
+# Buck Rev C custom design rules (router stage S1, 2026-11-05).
+# Netclasses (.kicad_pro): Power = VIN, SW, VOUT, VMID, LOAD_A, LOAD_B ; Drive = GATE, BOOT, DRV_E, DRV_B.
+
+# Power nets keep 0.3 mm from any other net (tracks, pads, zones, vias).
+(rule "Power clearance 0.3 mm"
+  (condition "(A.hasNetclass('Power') || B.hasNetclass('Power')) && A.Net != B.Net")
+  (constraint clearance (min 0.3mm)))
+
+# Power tracks are full width.  VIN, SW and VOUT carry their main current in ZONES; the only tracks
+# on those nets are the owner-approved thin branches (VIN -> R3 / D2 anode / R9 at 0.25-0.5 mm,
+# SW -> driver at 0.5 mm, VOUT Kelvin tap -> R7 at 0.25 mm), so they get their own minimums below.
+(rule "Power track min width 1.5 mm"
+  (condition "A.hasNetclass('Power') && A.NetName != 'VIN' && A.NetName != 'SW' && A.NetName != 'VOUT'")
+  (constraint track_width (min 1.5mm)))
+
+(rule "VIN / VOUT branch tracks min width 0.25 mm"
+  (condition "A.NetName == 'VIN' || A.NetName == 'VOUT'")
+  (constraint track_width (min 0.25mm)))
+
+(rule "SW driver branch min width 0.5 mm"
+  (condition "A.NetName == 'SW'")
+  (constraint track_width (min 0.5mm)))
+
+# Gate-drive loop nets.
+(rule "Drive track min width 0.5 mm"
+  (condition "A.hasNetclass('Drive')")
+  (constraint track_width (min 0.5mm)))

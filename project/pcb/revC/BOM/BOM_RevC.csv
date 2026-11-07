@@ -19,10 +19,10 @@ R4,1.2k 1%,0805,C17379,Basic,1,JLCPCB,~44 mW promedio
 R5,10R 1%,0603,C22859,Basic,1,JLCPCB,Resistencia de compuerta
 "R7,R9",30k 1%,0603,C22984,Basic,2,JLCPCB,Divisores x0.25
 "R11,R12",100R 1%,0603,C22775,Basic,2,JLCPCB,Compuerta de Q6/Q7
-"J1,J2,J3,J4",Bornera 2P paso 5.0mm (KF301),THT,,,4,Local,Verificar paso 5.0 o 5.08 mm
+"J1,J2,J3,J4",Bornera 2P paso 5.0mm (KF301-5.0-2P),THT,,,4,Local,Paso 5.0 mm (huella Phoenix MKDS 5.00 mm) - no 5.08
 "J5,J6",Header hembra 1x15 2.54mm,THT,,,2,Local,NUCLEO-L432KC CN3/CN4
-C5,Electrolitico 100uF 25V radial 6.3mm,THT,,,0,Local,DNP - opcional
-"TP1-TP8",Test point,THT pad,,,8,—,Solo pads en la PCB
+C5,Electrolitico 100uF 25V o 35V radial 6.3mm paso 2.5mm 105C bajo ESR,THT,,,1,Local,Montar (soldar a mano). Rizado >= 0.3 A a 100 kHz. + = pad cuadrado (VIN)
+"TP1-TP10",Test point pad 2.0mm / taladro 1.0mm,THT pad,,,10,Local,Pines macho 2.54 mm opcionales (VIN SW GATE VOUT PWM GND x3 BOOT TRIG)
 "H1-H4",Agujero M3,NPTH 3.2mm,,,0,—,ELIMINADOS 2026-11-03 (sin agujeros M3; excluidos de la placa en el esquematico)
 RCARGA_BASE,3.6R 10W x2 en serie (7.2R),Fuera de placa,,,2,Local,A J2
 RCARGA_A,36R 5W,Fuera de placa,,,1,Local,A J3
