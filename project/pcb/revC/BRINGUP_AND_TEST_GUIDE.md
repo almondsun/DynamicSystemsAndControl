@@ -208,6 +208,17 @@ slightly higher.
 - Add **anti-windup** to the integrator. The tests need d ≤ 0.70 in steady
   state.
 
+### Controller (designed in Entrega 3, `entrega3/`)
+- PI run once per PWM period (20 kHz): `e = vref − vout_adc`,
+  `I = I + KiTs·e` (skip this update while the output is clamped and `e`
+  pushes further into the clamp), `d = clamp(Kp·e + I, 0, 0.85)`, write `d`
+  to the CCR preload so it applies in the next period.
+- **Kp = 0.030477, KiTs = 0.0045716** (Ki = 91.43 s⁻¹ × Ts = 50 µs). At
+  10 kHz keep Kp and use KiTs = 0.0091432.
+- Expected in simulation: ts ≈ 4.6 ms, Mp ≈ 0 %, PM 97°, GM 11.3 dB.
+  Numbers and MATLAB scripts: `entrega3/results/e3_results.json`,
+  `entrega3/matlab/`.
+
 ### Start-up and safe state
 - At boot: PWM output off (CCR = 0), LSW_A = LSW_B = 0.
 - **Soft start:** ramp the reference (or the duty) over ≥ 50 ms. Your Entrega 2
@@ -222,8 +233,10 @@ slightly higher.
 - 12-bit, VREF = 3.3 V. **VOUT = code × 3.3 / 4095 × 4** (divider 30 k / 10 k).
   1 LSB ≈ 3.2 mV at VOUT.
 - Calibrate the gain once against the DMM: the resistors are 1 %.
-- Trigger the ADC from TIM1 at a fixed point of the PWM period (for example
-  the middle of the on-time), so the ripple doesn't alias.
+- Trigger the ADC from TIM1 at the **start of each PWM period** (update
+  event, TRGO), as in the Entrega 3 model. A fixed sampling point keeps the
+  ripple from aliasing. After the RC filter the ripple is ≈ 19 mV p-p
+  (at VOUT scale), so the sampling bias is < 10 mV.
 - There is an RC filter on each ADC pin: 7.5 kΩ / 4.7 nF, so τ = 35 µs and
   fc ≈ 4.5 kHz. Include it in the loop model.
 

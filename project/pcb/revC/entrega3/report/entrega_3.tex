@@ -1,0 +1,283 @@
+\RequirePackage[T1]{fontenc}
+\documentclass[conference,letterpaper]{IEEEtran}
+\usepackage[spanish,es-nodecimaldot,es-tabla,es-noshorthands]{babel}
+\usepackage{amsmath,amssymb,booktabs,tabularx}
+\usepackage{graphicx}
+\usepackage{tikz,circuitikz}
+\usetikzlibrary{arrows.meta,positioning,babel}
+\usepackage{float}
+\usepackage[nospread]{flushend}
+\usepackage[hidelinks]{hyperref}
+\raggedbottom
+\interdisplaylinepenalty=2500
+\setlength{\emergencystretch}{1em}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\graphicspath{{../figures/report/}}
+\newcommand{\unit}[1]{\,\mathrm{#1}}
+\begin{document}
+\title{Diseño del compensador y validación en simulación de un convertidor Buck}
+\author{\IEEEauthorblockN{Martín Ramírez Espinosa, Jerónimo Vargas Orozco\\Andrew Esteban Henao Becerra, Mateo Alexander Cardenas Cuesta}
+\IEEEauthorblockA{Universidad Nacional de Colombia, Sede Manizales\\\texttt{maramirezes@unal.edu.co}, \texttt{jevargaso@unal.edu.co}\\\texttt{anhenaobe@unal.edu.co}, \texttt{macardenascu@unal.edu.co}}}
+\hypersetup{pdftitle={Diseño del compensador y validación en simulación de un convertidor Buck},pdfauthor={Martín Ramírez Espinosa, Jerónimo Vargas Orozco, Andrew Esteban Henao Becerra, Mateo Alexander Cardenas Cuesta}}
+\maketitle
+\begin{center}\small Entrega 3: Diseño del compensador y validación en simulación\end{center}
+
+\begin{abstract}
+Se diseña un controlador PI digital que regula en $6\unit{V}$ la salida del convertidor Buck de la placa Rev C, que se usará en la entrega 4. La planta es el modelo promediado con las pérdidas del inductor y del diodo, con entrada $d$ porque el driver de la placa no invierte. El PI se diseña por respuesta en frecuencia con $\omega_c=1000\unit{rad/s}$ y el cero en $3\omega_c$, incluyendo el filtro RC del sensor y el retardo digital de $1.5\,T_s$. Con $K_p=0.0305\unit{V^{-1}}$ y $K_i=91.4\unit{V^{-1}s^{-1}}$ a $20\unit{kHz}$, el lazo discreto exacto tiene $97^\circ$ de margen de fase y $11.3\unit{dB}$ de margen de ganancia, y en 108 combinaciones de tolerancias no baja de $94.9^\circ$ y $8.3\unit{dB}$. La validación compara el modelo lineal, el promediado no lineal y el circuito conmutado ante los cuatro ensayos de la guía: los escalones de referencia establecen en $4.6\unit{ms}$ sin sobreimpulso y los cambios de carga de $\pm20\%$ se recuperan en $1.7$ y $3.0\unit{ms}$. Los resultados son de simulación.
+\end{abstract}
+\begin{IEEEkeywords}Convertidor Buck, control digital, PI, respuesta en frecuencia, márgenes de estabilidad, simulación conmutada.\end{IEEEkeywords}
+
+\section{Introducción}
+La entrega 3 del proyecto \cite{guide} pide diseñar un controlador con alguno de los procedimientos vistos en clase para regular la salida en $6\unit{V}$, explicar los pasos del diseño y las especificaciones de la respuesta, y analizar el desempeño ante cuatro ensayos: cambios de referencia de $6$ a $7\unit{V}$ y de $6$ a $5\unit{V}$, y aumento y reducción de la carga en $20\%$ con la referencia en $6\unit{V}$.
+
+En la entrega 2 \cite{e2} el convertidor de placa universal no mantenía apagado el MOSFET de canal P: su compuerta, apagada solo por una resistencia, volvía a conducir varias veces por periodo y el modelo identificado describía ese defecto, no la planta. Por eso el controlador de esta entrega se diseña sobre la placa Rev C, la que se implementará en la entrega 4, con MOSFET de canal N y driver bootstrap activo. La sección~\ref{sec:planta} describe la placa y su modelo, la~\ref{sec:esp} fija las especificaciones, la~\ref{sec:diseno} presenta el diseño y su implementación digital, y las secciones~\ref{sec:metodo} y~\ref{sec:res} describen y discuten la validación.
+
+\section{Planta: placa Rev C}\label{sec:planta}
+\subsection{Circuito y parámetros}
+La Fig.~\ref{fig:circuito} muestra la etapa de potencia. El MOSFET $Q_1$ (AOD4184A \cite{aod}) lo excita un driver bootstrap discreto de dos etapas inversoras más un totem pole, de modo que el PWM en alto enciende $Q_1$. La inductancia son dos SRR1280-331K \cite{srr} en serie y la salida se mide con un divisor $30/10\unit{k\Omega}$ y un capacitor de $4.7\unit{nF}$ antes del ADC de la NUCLEO-L432KC \cite{um1956}. La carga de $7.2\unit{\Omega}$ se conmuta en paralelo con $36$ y $24\unit{\Omega}$ para obtener $6$ y $4.8\unit{\Omega}$. La Tabla~\ref{tab:param} resume los parámetros; los de la parte inferior solo se usan en las simulaciones no lineales.
+
+\begin{figure}[H]\centering\resizebox{\columnwidth}{!}{\begin{circuitikz}[american,font=\small]
+\draw (0,0) node[ground]{} to[V,invert,l=$12\,\mathrm{V}$] (0,3) -- (1,3)
+node[nmos,rotate=90,anchor=D](M){};
+\draw (M.S) -- (3,3) node[circ,label=above:$sw$]{} to[L,l=$2\times330\,\mu\mathrm{H}$] (5.4,3)
+to[R,l=$r_L$] (7,3) node[circ,label=above:$v_o$]{} -- (11,3);
+\draw (3,0) node[ground]{} to[D,l_=SS34] (3,3);
+\draw (7,3) to[C,l=$2\times10\,\mu\mathrm{F}$] (7,0) node[ground]{};
+\draw (9.2,3) to[R,l=$R$] (9.2,0) node[ground]{};
+\draw (11,3) to[R,l=$30\,\mathrm{k}\Omega$] (11,1.5) node[circ]{} to[R,l=$10\,\mathrm{k}\Omega$] (11,0) node[ground]{};
+\draw (11,1.5) -- (12.6,1.5) node[circ,label=above:$v_m$]{} to[C,l=$4.7\,\mathrm{nF}$] (12.6,0) node[ground]{};
+\draw (12.6,1.5) -- (13.5,1.5) node[right]{ADC};
+\draw (M.G) -- ++(0,-.4) node[below]{$g$};
+\end{circuitikz}}\caption{Etapa de potencia y sensor de la placa Rev C. $Q_1$: AOD4184A; el driver bootstrap no inversor excita $g$. El divisor y el capacitor de $4.7\unit{nF}$ forman el filtro del ADC, con $\tau=35.25\unit{\mu s}$.}\label{fig:circuito}\end{figure}
+
+\begin{table}[H]\caption{Parámetros de la placa Rev C}\label{tab:param}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{lYl}\toprule
+Magnitud & Valor & Origen\\\midrule
+$V_{in}$ & $12\unit{V}$ & fuente de laboratorio\\
+$L$ & $2\times330=660\unit{\mu H}$ & SRR1280-331K \cite{srr}\\
+$r_L$ & $\le 2\times0.6=1.2\unit{\Omega}$ & DCR máxima \cite{srr}\\
+$C$ & $2\times10\unit{\mu F}$ (14 a $22\unit{\mu F}$) & X5R 1206, polarización DC\\
+$R$ & $7.2$ / $6$ / $4.8\unit{\Omega}$ & red de carga conmutada\\
+$V_F$ & $0.4\unit{V}$ a $1\unit{A}$ & SS34 \cite{ss34}\\
+$f_s$; $T_s$ & $20\unit{kHz}$; $50\unit{\mu s}$ & PWM = tasa de control\\
+$k$; $\tau$ & $0.25$; $35.25\unit{\mu s}$ & divisor y filtro del ADC\\
+ADC; PWM & 12 bits; $1/4000$ & STM32L432 \cite{rm0394}\\\midrule
+$R_{ds}$ & $7\unit{m\Omega}$ & AOD4184A \cite{aod}\\
+Diodo & $0.30\unit{V}+0.10\unit{\Omega}\cdot i$ & ajuste a \cite{ss34}\\
+ESR de $C$ & $1.5\unit{m\Omega}$ & cerámicos en paralelo\\
+Retardo del driver & $+0.23\unit{\mu s}$ de encendido & simulación del driver\\\bottomrule\end{tabularx}\end{table}
+
+\subsection{Entrada $d$ en lugar de $d'$}
+En la guía y en la entrega 1 \cite{e1} el driver invierte el PWM y la entrada del modelo es $d'=1-d$. El driver de la placa Rev C agrega una etapa inversora, por lo que el ciclo de trabajo del pin es el del MOSFET y la entrada natural es $d$. Ambas descripciones son equivalentes: como $\tilde d'=-\tilde d$,
+\begin{equation}
+G_{vd'}(s)=\frac{\tilde v_o(s)}{\tilde d'(s)}=-\,G_{vd}(s).\label{eq:dprima}
+\end{equation}
+La magnitud de la respuesta en frecuencia es la misma y la fase difiere en $180^\circ$; con $d$ el controlador tiene ganancias positivas y el firmware escribe $d$ directamente en el registro del temporizador. Con $d'$ y esta placa la realimentación quedaría positiva.
+
+\subsection{Modelo promediado con pérdidas}
+En conducción continua, promediando los intervalos de encendido y de conducción del diodo e incluyendo $r_L$ y $V_F$ \cite{erickson}:
+\begin{equation}
+\begin{aligned}
+L\,\dot{\bar\imath}_L &= d\,(V_{in}+V_F)-V_F-r_L\,\bar\imath_L-\bar v_o,\\
+C\,\dot{\bar v}_o &= \bar\imath_L-\bar v_o/R .
+\end{aligned}\label{eq:prom}
+\end{equation}
+En equilibrio, para $V_o=6\unit{V}$ y $R=6\unit{\Omega}$,
+\begin{equation}
+D=\frac{V_o\,(1+r_L/R)+V_F}{V_{in}+V_F}=0.613 .\label{eq:D}
+\end{equation}
+Linealizando \eqref{eq:prom} alrededor de ese punto,
+\begin{equation}
+G_{vd}(s)=\frac{V_{in}+V_F}{LC\,s^2+\left(\frac{L}{R}+r_LC\right)s+1+\frac{r_L}{R}},\label{eq:gvd}
+\end{equation}
+\begin{equation}
+G_{vd}(s)=\frac{9.394\times10^{8}}{s^2+10\,152\,s+9.091\times10^{7}} .\label{eq:gvdnum}
+\end{equation}
+La Tabla~\ref{tab:modelo} compara la planta con el modelo ideal de la entrega 1. Las pérdidas bajan la ganancia DC de $12$ a $10.3\unit{V}$ y aumentan el amortiguamiento. Con $C=14\unit{\mu F}$, el valor estimado bajo polarización, $\omega_n$ sube a $11.4\unit{krad/s}$ y $\zeta$ a $0.60$.
+
+\begin{table}[H]\caption{Modelo ideal de la entrega 1 y modelo de la placa Rev C}\label{tab:modelo}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{LYY}\toprule
+Magnitud & Entrega 1 ($d'$) & Rev C ($d$)\\\midrule
+Ganancia DC & $-12.00\unit{V}$ & $+10.33\unit{V}$\\
+$\omega_n$ (rad/s) & $8\,704$ & $9\,535$\\
+$\zeta$ & $0.479$ & $0.532$\\
+Polos (s$^{-1}$) & $-4\,167\pm j7\,642$ & $-5\,076\pm j8\,071$\\
+Punto de operación & $D'=0.5$ & $D=0.613$\\
+$\Delta i_{L,pp}$ & $0.455\unit{A}$ ($10\unit{kHz}$) & $0.223\unit{A}$ ($20\unit{kHz}$)\\
+$\Delta v_{o,pp}$ ideal & $0.284\unit{V}$ & $0.070\unit{V}$\\\bottomrule\end{tabularx}\end{table}
+
+Con $\Delta i_{L,pp}=0.22\unit{A}$ la corriente mínima del inductor en el punto nominal es $0.89\unit{A}$, y en todas las simulaciones conmutadas fue mayor de $0.67\unit{A}$: el modelo en conducción continua es válido en los cuatro ensayos.
+
+\subsection{Sensor y retardo digital}
+El divisor y el capacitor dan $H(s)=k/(1+\tau s)$; el firmware divide la lectura por $k$, de modo que en el lazo solo queda el polo en $1/\tau=28.4\unit{krad/s}$. El ADC muestrea al inicio de cada periodo (evento de actualización del temporizador), el PI calcula $d$ y el valor se carga en el registro de comparación, que se aplica en el periodo siguiente: un periodo de retardo de cálculo, más medio periodo equivalente de la retención del PWM. Para el diseño el lazo se aproxima como
+\begin{equation}
+L(s)\approx C(s)\,G_{vd}(s)\,\frac{1}{1+\tau s}\,e^{-1.5\,T_s s},\label{eq:lazo}
+\end{equation}
+y para la verificación se usa el modelo discreto exacto de la Sección~\ref{sec:verif}. La Fig.~\ref{fig:lazo} muestra el lazo.
+
+\begin{figure}[H]\centering\resizebox{\columnwidth}{!}{\begin{tikzpicture}[font=\small,>=Latex,blk/.style={draw,thick,minimum height=8mm,minimum width=11mm,align=center},node distance=5mm]
+\node (r) {$v_{ref}$};
+\node[draw,thick,circle,inner sep=2pt,right=5mm of r] (s) {};
+\node[blk,right=6mm of s] (c) {$C(z)$};
+\node[blk,right=of c] (z) {$z^{-1}$};
+\node[blk,right=of z] (h) {PWM\\(ZOH)};
+\node[blk,right=of h] (g) {$G_{vd}(s)$};
+\coordinate[right=6mm of g] (o);
+\node[right=4mm of o] (vo) {$v_o$};
+\node[blk,below=7mm of h] (rc) {$\dfrac{1}{1+\tau s}$};
+\node[blk,below=7mm of z] (adc) {ADC};
+\draw[->] (r) -- (s);
+\draw[->] (s) -- node[above]{$e$} (c);
+\draw[->] (c) -- (z);
+\draw[->] (z) -- node[above]{$d$} (h);
+\draw[->] (h) -- (g);
+\draw[->] (g) -- (vo);
+\draw[->] (o) |- (rc);
+\draw[->] (rc) -- (adc);
+\draw[->] (adc) -| node[pos=0.92,right]{$-$} node[pos=0.5,below]{$v_m$} (s);
+\end{tikzpicture}}\caption{Lazo de control digital. El ADC muestrea una vez por periodo y el ciclo de trabajo calculado se aplica en el periodo siguiente.}\label{fig:lazo}\end{figure}
+
+\section{Especificaciones}\label{sec:esp}
+La guía no fija valores, así que se adoptan los de la Tabla~\ref{tab:esp}. El tiempo de establecimiento se mide con una banda de $\pm2\%$ del cambio de referencia, sobre la media por periodo de $v_o$, como en la entrega 2 \cite{e2}. Los márgenes deben cumplirse también en las combinaciones de tolerancias de la Sección~\ref{sec:verif}, y el ciclo de trabajo no debe llegar a $0.85$, el límite de operación segura del bootstrap.
+
+\begin{table}[H]\caption{Especificaciones del sistema controlado}\label{tab:esp}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{Lc}\toprule
+Especificación & Meta\\\midrule
+Error en estado estable & 0 (acción integral)\\
+Sobreimpulso $M_p$ & $\le 5\%$\\
+Establecimiento $t_s$ (banda $\pm2\%$) & $\le 5\unit{ms}$\\
+Margen de fase / de ganancia & $\ge 60^\circ$ / $\ge 6\unit{dB}$\\
+Ciclo de trabajo en los ensayos & $\le 0.85$, sin saturar\\
+Recuperación tras la carga ($\pm20\unit{mV}$) & $\le 5\unit{ms}$\\\bottomrule\end{tabularx}\end{table}
+
+\section{Diseño del compensador}\label{sec:diseno}
+\subsection{Procedimiento por respuesta en frecuencia}
+Se usa un PI,
+\begin{equation}
+C(s)=K_p+\frac{K_i}{s}=K_p\,\frac{s+\omega_z}{s},\qquad K_i=K_p\,\omega_z,\label{eq:pi}
+\end{equation}
+siguiendo el método de diseño en frecuencia del curso \cite{clase}:
+\begin{enumerate}
+\item \emph{Estructura.} La planta es tipo cero; el integrador anula el error estacionario ante escalones de referencia y de carga. La planta no tiene polos inestables y su fase en la banda de interés es pequeña, así que no hace falta acción derivativa, que además amplificaría el rizado y el ruido del ADC.
+\item \emph{Frecuencia de cruce.} Para un lazo con margen de fase alto, $t_s\approx4/\omega_c$; la meta de $5\unit{ms}$ pide $\omega_c\gtrsim 800\unit{rad/s}$. Se elige $\omega_c=1000\unit{rad/s}\approx\omega_n/10$, lejos de la resonancia y de la zona donde pesa el retardo.
+\item \emph{Lectura del Bode.} En $\omega_c$, la planta con el sensor tiene $|G_{vd}H|=20.3\unit{dB}$ y $-8.5^\circ$, que con el retardo de $1.5\,T_s$ son $-12.9^\circ$ (Fig.~\ref{fig:planta}). El PI debe aportar $-20.3\unit{dB}$ en $\omega_c$.
+\item \emph{Ubicación del cero.} Un PI clásico pone $\omega_z$ por debajo de $\omega_c$; aquí eso obliga a $K_p\approx1/|G_{vd}H|$, que traslada el pico de resonancia a $0\unit{dB}$ y deja el margen de ganancia en $3.5\unit{dB}$ (Fig.~\ref{fig:cero}). Con $\omega_z=3\,\omega_c$, $K_p$ es tres veces menor, el lazo cae a $-20\unit{dB}$/déc sobre la resonancia y el margen de ganancia sube a $11.3\unit{dB}$; el cero todavía aporta $+72^\circ$ cerca de $\omega_n$.
+\item \emph{Ganancia.} Imponiendo $|L(j\omega_c)|=1$ en \eqref{eq:lazo},
+\begin{equation}
+K_p=\frac{1}{\left|\left(1+\frac{\omega_z}{j\omega_c}\right)G_{vd}(j\omega_c)H(j\omega_c)\right|}=0.0305\unit{V^{-1}},
+\end{equation}
+y $K_i=K_p\,\omega_z=91.4\unit{V^{-1}s^{-1}}$.
+\end{enumerate}
+En $\omega_c$ la fase se reparte así: planta $-6.5^\circ$, filtro RC $-2.0^\circ$, retardo $-4.3^\circ$ y PI $-71.4^\circ$, de modo que el margen de fase de la aproximación \eqref{eq:lazo} es $95.7^\circ$.
+
+\begin{figure}[H]\centering\includegraphics[width=\columnwidth]{fig_planta}\caption{Bode de la planta con el sensor (entrada $d$). En $\omega_c=1000\unit{rad/s}$: $20.3\unit{dB}$ y $-13^\circ$ incluyendo el retardo.}\label{fig:planta}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=\columnwidth]{fig_cero}\caption{Magnitud del lazo con el cero del PI en $\omega_c/5$ y en $3\,\omega_c$, ambos con $\omega_c\approx1000\unit{rad/s}$.}\label{fig:cero}\end{figure}
+
+\subsection{Verificación con el lazo discreto exacto}\label{sec:verif}
+Con $x=[\,\tilde\imath_L\;\tilde v_o\;\tilde v_m\,]^{\mathsf T}$, el modelo de planta y filtro $\dot x=Ax+B\tilde d$, $\tilde v_m=C_mx$ se discretiza con retención de orden cero \cite{astrom}, $A_d=e^{AT_s}$ y $B_d=\int_0^{T_s}e^{A\sigma}d\sigma\,B$, y el lazo es
+\begin{equation}
+L(z)=\left(K_p+\frac{K_iT_s\,z}{z-1}\right)z^{-1}\,C_m(zI-A_d)^{-1}B_d,\label{eq:lz}
+\end{equation}
+evaluado en $z=e^{j\omega T_s}$ hasta la frecuencia de Nyquist. La Fig.~\ref{fig:bode} y la Tabla~\ref{tab:margenes} muestran los márgenes nominales y en 108 combinaciones de tolerancias: $L\pm10\%$, $C\in\{14,20,22\}\unit{\mu F}$, $R\in\{4.8,6,7.2\}\unit{\Omega}$, $r_L\in\{0.9,1.2\}\unit{\Omega}$ y $V_{in}\in\{11.5,12.5\}\unit{V}$. El peor margen de ganancia aparece con $L=594\unit{\mu H}$, $C=22\unit{\mu F}$, $R=7.2\unit{\Omega}$, $r_L=0.9\unit{\Omega}$ y $V_{in}=12.5\unit{V}$, la combinación con más ganancia y menos amortiguamiento.
+
+\begin{table}[H]\caption{Márgenes del lazo discreto exacto}\label{tab:margenes}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{Lccc}\toprule
+Indicador & Nominal & Peor caso (108) & $10\unit{kHz}$\\\midrule
+$\omega_c$ (rad/s) & $1\,009$ & $915$ a $1\,144$ & $1\,017$\\
+Margen de fase & $97.0^\circ$ & $94.9^\circ$ & $94.0^\circ$ ($92.1^\circ$)\\
+Margen de ganancia & $11.3\unit{dB}$ & $8.3\unit{dB}$ & $8.7\unit{dB}$ ($6.0\unit{dB}$)\\\bottomrule\end{tabularx}\end{table}
+
+La última columna repite el análisis con el mismo PI a $10\unit{kHz}$, la frecuencia del circuito de referencia; entre paréntesis está su peor caso. El retardo, el doble en tiempo, deja el peor margen de ganancia justo en el límite y el rizado sube de $0.07$ a $0.28\unit{V}$ p-p, por lo que se elige $20\unit{kHz}$. Los polos del lazo cerrado nominal, llevados al plano $s$ con $s=\ln z/T_s$, son $-802\unit{s^{-1}}$ (dominante, $\tau=1.25\unit{ms}$), $-3\,007\pm j8\,907\unit{s^{-1}}$ y dos polos rápidos debidos al retardo.
+
+\begin{figure}[H]\centering\includegraphics[width=\columnwidth]{fig_bode}\caption{Bode del lazo discreto exacto \eqref{eq:lz}. La banda sombreada cubre las 108 combinaciones de tolerancias.}\label{fig:bode}\end{figure}
+
+\subsection{Implementación en el microcontrolador}
+El PI se discretiza con integración de Euler hacia atrás y se ejecuta una vez por periodo:
+\begin{equation}
+\begin{aligned}
+e[k]&=v_{ref}-v_m[k],\qquad I[k]=I[k-1]+K_iT_s\,e[k],\\
+d[k+1]&=\mathrm{sat}_{[0,\,0.85]}\big(K_p\,e[k]+I[k]\big),
+\end{aligned}\label{eq:ley}
+\end{equation}
+con $K_p=0.030477$ y $K_iT_s=0.0045716$. Si la salida satura y el error empuja más hacia el límite, la integral no se actualiza (anti-windup condicional). La lectura en voltios es $v_m=\text{código}\times3.3/4095\times4$, con una resolución de $3.2\unit{mV}$. El temporizador TIM1 genera $20\unit{kHz}$ con $\mathrm{ARR}=3999$ a $80\unit{MHz}$. Al encender, la integral parte de cero y la referencia sube en rampa durante al menos $50\unit{ms}$ para no saturar los inductores.
+
+\section{Método de validación}\label{sec:metodo}
+Se usan tres niveles de modelo, todos en MATLAB R2026b \cite{matlab} sin toolboxes:
+\begin{itemize}
+\item \emph{Lineal}: el modelo discreto de \eqref{eq:lz} en lazo cerrado, sin saturación ni cuantización. Es el modelo del diseño.
+\item \emph{Promediado no lineal}: \eqref{eq:prom} con $R_{ds}$, el diodo como $0.30\unit{V}+0.10\unit{\Omega}\cdot i$, la ESR, el retardo del driver, el filtro RC, el ADC de 12 bits, la resolución de $1/4000$ del PWM, la saturación y el anti-windup. Cada periodo se integra de forma exacta con la exponencial matricial.
+\item \emph{Conmutado}: el circuito por tramos (MOSFET encendido, diodo en conducción y conducción discontinua), con los mismos elementos y doce subpasos exactos por tramo.
+\end{itemize}
+En los tres, el ADC muestrea al inicio del periodo y el ciclo de trabajo se aplica en el periodo siguiente. Cada ensayo parte del estado estable en $6\unit{V}$ y $6\unit{\Omega}$ y el evento ocurre en $t=15\unit{ms}$. Como en la entrega 2 \cite{e2}, las métricas se calculan sobre la media de $v_o$ en cada periodo, que elimina el rizado: $t_r$ entre $10$ y $90\%$ del cambio, $M_p$ y $t_s$ con banda de $\pm2\%$ del cambio para la referencia; desviación máxima y tiempo hasta quedar dentro de $\pm20\unit{mV}$ para la carga; y el error final como la media de los últimos $2\unit{ms}$ menos la referencia. Los cambios de carga se comparan también con el lazo abierto, manteniendo el ciclo de trabajo que tenía el lazo cerrado antes del evento.
+
+\section{Resultados y discusión}\label{sec:res}
+\subsection{Cambios de referencia}
+La Fig.~\ref{fig:ref} y la Tabla~\ref{tab:ref} muestran los escalones de referencia. Los tres modelos se superponen: el lineal y el promediado difieren como máximo $4\unit{mV}$, y el conmutado difiere del promediado $7$ a $8\unit{mV}$ rms. Esa diferencia es casi toda un sesgo de régimen: el ADC toma el rizado siempre en el mismo punto del periodo, y tras el filtro el rizado que ve es de $19\unit{mV}$ p-p (Fig.~\ref{fig:rizado}). El error final queda por debajo de $10\unit{mV}$, unos tres pasos del ADC. La salida sube primero por la acción proporcional y la integral la lleva al valor final sin sobreimpulso, en $4.6\unit{ms}$ en ambos sentidos.
+
+\begin{figure*}[t]\centering\includegraphics[width=\textwidth]{fig_ref}\caption{Escalones de referencia $6\to7\unit{V}$ y $6\to5\unit{V}$. Arriba, $v_o$; abajo, el ciclo de trabajo aplicado.}\label{fig:ref}\end{figure*}
+
+\begin{table}[H]\caption{Escalones de referencia: métricas}\label{tab:ref}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{LYYY}\toprule
+Magnitud & Conmutado & Promediado & Lineal\\\midrule
+\multicolumn{4}{l}{$6\to7\unit{V}$}\\
+$t_r$ (ms) & $2.40$ & $2.42$ & $2.41$\\
+$M_p$ (\%) & $0.13$ & $0.13$ & $0.00$\\
+$t_s$ (ms) & $4.55$ & $4.55$ & $4.55$\\
+Error final (mV) & $-6.5$ & $-0.2$ & $0.0$\\
+$d$ final & $0.706$ & $0.706$ & $0.710$\\\midrule
+\multicolumn{4}{l}{$6\to5\unit{V}$}\\
+$t_r$ (ms) & $2.42$ & $2.43$ & $2.41$\\
+$M_p$ (\%) & $0.08$ & $0.13$ & $0.00$\\
+$t_s$ (ms) & $4.60$ & $4.60$ & $4.55$\\
+Error final (mV) & $-8.5$ & $-0.3$ & $0.0$\\
+$d$ final & $0.510$ & $0.511$ & $0.516$\\\bottomrule\end{tabularx}\end{table}
+
+\begin{figure}[H]\centering\includegraphics[width=\columnwidth]{fig_rizado}\caption{Régimen permanente del circuito conmutado a $20\unit{kHz}$ y $6\unit{\Omega}$: rizado de $v_o$, señal filtrada $v_m$ y muestras del ADC.}\label{fig:rizado}\end{figure}
+
+\subsection{Cambios de carga}
+La Fig.~\ref{fig:carga} y la Tabla~\ref{tab:carga} muestran los cambios de carga. En lazo abierto la salida queda en $6.17$ y $5.75\unit{V}$; con el PI vuelve a $6\unit{V}$ y entra en $\pm20\unit{mV}$ en $1.7$ y $3.0\unit{ms}$. El pico inicial es prácticamente el mismo con y sin control: ocurre unos $0.2\unit{ms}$ después del cambio, medio periodo de la resonancia, cuando el lazo de $\omega_c=1000\unit{rad/s}$ todavía no ha actuado. Su orden de magnitud lo da la impedancia característica del filtro, $\Delta I\sqrt{L/C}$, con $\Delta I\approx0.2\unit{A}$ y $\sqrt{L/C}=5.7\unit{\Omega}$. Reducirlo exigiría un lazo más rápido que la resonancia, que el retardo digital no permite; el PI cumple su función, que es eliminar el error de régimen de $\pm0.2\unit{V}$.
+
+\begin{figure*}[t]\centering\includegraphics[width=\textwidth]{fig_carga}\caption{Cambios de carga de $+20\%$ y $-20\%$ con la referencia en $6\unit{V}$, con el PI y en lazo abierto. La franja es la banda de $\pm2\%$.}\label{fig:carga}\end{figure*}
+
+\begin{table}[H]\caption{Cambios de carga: circuito conmutado}\label{tab:carga}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{Lcc}\toprule
+Magnitud & $6\to7.2\unit{\Omega}$ & $6\to4.8\unit{\Omega}$\\\midrule
+Desviación máxima con PI & $+0.561\unit{V}$ & $-0.725\unit{V}$\\
+Desviación máxima en lazo abierto & $+0.572\unit{V}$ & $-0.727\unit{V}$\\
+Valor final en lazo abierto & $6.168\unit{V}$ & $5.745\unit{V}$\\
+Tiempo a $\pm2\%$ ($\pm0.12\unit{V}$) & $0.90\unit{ms}$ & $0.35\unit{ms}$\\
+Tiempo a $\pm20\unit{mV}$ & $1.70\unit{ms}$ & $3.00\unit{ms}$\\
+Error final con PI & $-8.4\unit{mV}$ & $-8.0\unit{mV}$\\
+$d$ (mín. / máx.) & $0.584$ / $0.608$ & $0.608$ / $0.638$\\\bottomrule\end{tabularx}\end{table}
+
+\subsection{Robustez}
+Los cuatro ensayos se repitieron con el modelo promediado en 36 combinaciones de $L$, $C$, $r_L$ y $V_{in}$ (Fig.~\ref{fig:robustez}). El establecimiento en referencia queda entre $4.2$ y $4.8\unit{ms}$, el sobreimpulso no pasa de $0.17\%$, la desviación con la carga $-20\%$ va de $-0.68$ a $-0.79\unit{V}$ y la de $+20\%$ de $0.53$ a $0.66\unit{V}$, con recuperación a $\pm20\unit{mV}$ en menos de $2.7\unit{ms}$. El ciclo de trabajo se mantiene entre $0.47$ y $0.74$. Con $C=14\unit{\mu F}$ el rizado conmutado sube a $0.10\unit{V}$ p-p.
+
+\begin{figure*}[t]\centering\includegraphics[width=\textwidth]{fig_robustez}\caption{Modelo promediado con el PI digital en 36 combinaciones de tolerancias; en negro, el caso nominal.}\label{fig:robustez}\end{figure*}
+
+\subsection{Resumen y relación con la entrega 4}
+La Tabla~\ref{tab:resumen} compara los resultados con las especificaciones; todas se cumplen también en el peor caso. Los resultados son de simulación con parámetros de hoja de datos: $C$ efectivo, $r_L$ y $V_F$ reales pueden diferir, y no se modelan las transiciones de conmutación ni el ruido del ADC. En la entrega 4 se medirán $L$, $C$ y $r_L$ en la placa, se validará la planta en lazo abierto con un escalón de $d$ de $0.60$ a $0.70$, como en la entrega 2, y se cargarán las constantes de \eqref{eq:ley} para repetir los cuatro ensayos.
+
+\begin{table}[H]\caption{Especificaciones frente a resultados (peor caso entre paréntesis)}\label{tab:resumen}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{LcYc}\toprule
+Especificación & Meta & Simulado & Cumple\\\midrule
+Error estacionario & $0$ & $<10\unit{mV}$ & Sí\\
+$M_p$ & $\le5\%$ & $0.13\%$ ($0.17\%$) & Sí\\
+$t_s$ & $\le5\unit{ms}$ & $4.6\unit{ms}$ ($4.8\unit{ms}$) & Sí\\
+Margen de fase & $\ge60^\circ$ & $97^\circ$ ($94.9^\circ$) & Sí\\
+Margen de ganancia & $\ge6\unit{dB}$ & $11.3\unit{dB}$ ($8.3\unit{dB}$) & Sí\\
+$d$ máximo & $\le0.85$ & $0.71$ ($0.74$) & Sí\\
+Recuperación de carga & $\le5\unit{ms}$ & $1.7$ y $3.0\unit{ms}$ & Sí\\\bottomrule\end{tabularx}\end{table}
+
+\section{Conclusiones}
+Se diseñó por respuesta en frecuencia un PI digital para la placa Rev C, con la planta descrita por la entrada $d$, las pérdidas del inductor y del diodo, el filtro del sensor y el retardo de $1.5$ periodos del microcontrolador. Poner el cero del PI por encima del cruce evita que la ganancia proporcional levante la resonancia y da $11.3\unit{dB}$ de margen de ganancia. Los tres niveles de simulación coinciden y el diseño cumple las especificaciones en las combinaciones de tolerancias. Ante cambios de carga el pico inicial lo fija el filtro LC y el controlador elimina el error de régimen. La validación física queda para la entrega 4.
+
+\begin{thebibliography}{10}
+\bibitem{guide} J. D. Bastidas Rodríguez, ``Proyecto de curso: convertidor Buck con control de tensión de salida,'' Universidad Nacional de Colombia, Sede Manizales, 2025.
+\bibitem{e1} M. Ramírez Espinosa, J. Vargas Orozco, A. E. Henao Becerra y M. A. Cardenas Cuesta, ``Modelado y validación de un convertidor Buck,'' Entrega 1, Sistemas Dinámicos y Control, 2026.
+\bibitem{e2} M. Ramírez Espinosa, J. Vargas Orozco, A. E. Henao Becerra y M. A. Cardenas Cuesta, ``Implementación en lazo abierto y validación experimental de un convertidor Buck,'' Entrega 2, Sistemas Dinámicos y Control, 2026.
+\bibitem{clase} Material de Sistemas Dinámicos y Control, ``The frequency-response design method,'' Universidad Nacional de Colombia, material de clase.
+\bibitem{erickson} R. W. Erickson y D. Maksimović, \emph{Fundamentals of Power Electronics}, 3.ª ed. Cham, Suiza: Springer, 2020.
+\bibitem{astrom} K. J. Åström y B. Wittenmark, \emph{Computer-Controlled Systems: Theory and Design}, 3.ª ed. Upper Saddle River, NJ, EE.\,UU.: Prentice Hall, 1997.
+\bibitem{srr} Bourns, ``SRR1280 series shielded SMD power inductors,'' hoja de datos.
+\bibitem{aod} Alpha and Omega Semiconductor, ``AOD4184A 40V N-channel MOSFET,'' hoja de datos.
+\bibitem{ss34} MDD, ``SS34 surface mount Schottky barrier rectifier,'' hoja de datos.
+\bibitem{um1956} STMicroelectronics, ``UM1956: STM32 Nucleo-32 boards,'' manual de usuario.
+\bibitem{rm0394} STMicroelectronics, ``RM0394: STM32L4 series reference manual,'' manual de referencia.
+\bibitem{matlab} The MathWorks, \emph{MATLAB R2026b}, Natick, MA, EE.\,UU., 2026.
+\end{thebibliography}
+\end{document}
