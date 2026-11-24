@@ -1,4 +1,4 @@
-"""Entrega 4 test suite (BRINGUP_AND_TEST_GUIDE.md section 7.2) on the Buck Rev C.
+"""Entrega 4 test suite (laboratorio/guia-puesta-en-marcha.md section 7.2) on the Buck Rev C.
 
 Precondition: PI active at vref 6 V, nominal load (A=1, B=0), 12 V supply on.
 For each test and repetition: hold 1.5 s at the nominal point, run the event with

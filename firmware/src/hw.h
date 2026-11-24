@@ -1,6 +1,6 @@
 /* hw.h - NUCLEO-L432KC hardware layer for the Buck Rev C firmware.
  *
- * Pin map (BRINGUP_AND_TEST_GUIDE.md section 5):
+ * Pin map (laboratorio/guia-puesta-en-marcha.md section 5):
  *   PA8  (D9)  TIM1_CH1  PWM, active high: high = Q1 on
  *   PA12 (D2)  GPIO      LSW_A, 1 = 36 R load connected (J3)
  *   PB0  (D3)  GPIO      LSW_B, 1 = 24 R load connected (J4)

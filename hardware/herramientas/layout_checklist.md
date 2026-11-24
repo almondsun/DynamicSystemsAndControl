@@ -1,8 +1,8 @@
 # Buck Rev C routing review checklist (reviewer, S0)
 
-Board: `route_work/pcb_revC/pcb_revC.kicad_pcb` (2 layers, 1 oz = 35 um, 1.6 mm FR-4, 78.5 x 60 mm).
-Currents for sizing: 1.0-1.29 A rms steady, 1.4 A peak, 1.9 A fault (PID saturated, AGENTS #20).
-Checker: `review/check_layout.py <board> --stage Sx`. Each row ID below is printed by the checker,
+Board: `hardware/kicad/pcb_revC.kicad_pcb` (2 layers, 1 oz = 35 um, 1.6 mm FR-4, 78.5 x 60 mm).
+Currents for sizing: 1.0-1.29 A rms steady, 1.4 A peak, 1.9 A fault (PID saturated, issue #20 of the original Rev C AGENTS.md).
+Checker: `hardware/herramientas/check_layout.py <board> --stage Sx`. Each row ID below is printed by the checker,
 except the `MAN-R*` rows, which are manual checks on the renders.
 
 ## Stage semantics
@@ -29,7 +29,7 @@ S3 signals, S4 GND pours + stitching + teardrops + 0 unconnected, S5 silkscreen 
 | JLC | JLCPCB PCB manufacturing capabilities, https://jlcpcb.com/capabilities/pcb-capabilities (fetched 2026-11-05) |
 | KICAD | KiCad 10.0 PCB Editor manual (based on 10.0.8), https://docs.kicad.org/10.0/en/pcbnew/pcbnew.html: *Working with zones*, *Teardrops*, *Board Setup > Constraints*, *Custom design rules* |
 | SPEC | Owner-approved routing spec (in the reviewer brief) |
-| AG | `project/pcb/revC/AGENTS.md` (sec. 4, 7.1; issues #2, #16, #19, #20) |
+| AG | original Rev C `AGENTS.md` (sec. 4, 7.1; issues #2, #16, #19, #20), in the git history; summary in `AGENTS.md` |
 
 IPC-2152 width for 1 oz external copper at a 10 C rise (computed from the fits above):
 

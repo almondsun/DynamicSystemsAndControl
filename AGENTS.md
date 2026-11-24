@@ -1,322 +1,176 @@
-# Buck 12 V → 6 V — PCB Rev C (agent context)
+# Convertidor Buck 12 V → 6 V con control PI digital — contexto para agentes
 
-Read this first. Scope for any agent working here: **only `project/pcb/revC/`**.
-The rest of the repo (MATLAB/Simulink coursework, Buck Rev B, root `AGENTS.md`)
-is unrelated to this task. Don't use it as a reference and don't modify it.
+Lee esto primero. El repositorio contiene **solo** el proyecto final de *Sistemas
+Dinámicos y Control* (Universidad Nacional de Colombia, sede Manizales, 2026-2):
+el convertidor Buck Rev C, su firmware, el análisis, los datos de laboratorio, los
+cuatro informes y el material docente del curso (`curso/`).
 
-## 1. Purpose and hard constraints
+## 1. Estado (2026-11-24): proyecto terminado
 
-- University lab board: *Sistemas Dinámicos y Control*, Universidad Nacional de
-  Colombia (Manizales). Project: "Convertidor Buck con control de tensión de
-  salida" (`docs/Descripcion Proyecto Buck.pdf`, in Spanish; **ignore its
-  dates**, they are outdated).
-- The board is for **Entrega 4** (closed-loop PID control of Vout = 6 V on real
-  hardware). Entregas 2 and 3 are not done yet. The board is ordered early
-  because of shipping time.
-- **The board must work.** This goal is non-negotiable. It's a lab prototype,
-  not a product: it's always fed from a 12 V bench supply, with a scope, DMM
-  and other lab gear on hand. That's why the part count is minimal.
-- **Schedule:** design frozen by the end of the week of 2026-11-02 (around
-  2026-11-08). Order from JLCPCB with standard (cheap, slow) shipping. The
-  board must arrive **before 2026-12-10**.
-- **Assembly:** JLCPCB PCBA with as many in-stock parts as possible. When the
-  board arrives, the owner only hand-solders headers, terminal blocks, test
-  points and a few THT parts. The owner already bought the inductors and holds
-  them in the JLC "My Parts Lib".
-- Follow the JLCPCB 2-layer PCB and PCBA design rules.
-- Microcontroller: **NUCLEO-L432KC** (Nucleo-32, Arduino-Nano-like footprint),
-  owned by the student. It plugs in through female headers so it can be
-  removed and reused. It generates the PWM and reads the ADCs. Powered from
-  its own USB.
+| Entrega | Contenido | Estado |
+|---|---|---|
+| 1. Modelo y simulación | `informes/entrega-1/entrega_1.pdf` | Entregada (diseño original; sin fuentes en el repo) |
+| 2. Lazo abierto experimental | `informes/entrega-2/entrega_2.pdf` | Entregada sobre placa perforada con MOSFET canal P; falló por re-conducción (ver §8). La identificación válida de la planta está en la E4. |
+| 3. Diseño del PI | `analisis/entrega-3/`, `informes/entrega-3/` | Terminada sobre la planta Rev C |
+| 4. Controlador implementado | `firmware/`, `laboratorio/`, `analisis/entrega-4/`, `informes/entrega-4/` | Terminada: 4 ensayos × 3 repeticiones, todas las especificaciones cumplidas |
 
-## 2. Operating point and specs (from the course PDF and Figure 1)
+La placa Rev C se fabricó en JLCPCB (PCBA), se puso en marcha el 2026-11-23 y los
+ensayos de la E4 se hicieron el 2026-11-24. No hay trabajo de diseño pendiente.
 
-| Item | Value |
-|---|---|
-| Vin | 12 V bench supply |
-| Vout | 6 V nominal; reference steps 6→7 V and 6→5 V (Entrega 3/4) |
-| Load | 6 Ω nominal (1 A). Disturbance tests: R +20 % (7.2 Ω) and R −20 % (4.8 Ω) |
-| L | 660 µH (reference) → here 2 × 330 µH in series |
-| C | 20 µF (reference) → here 2 × 10 µF ceramic |
-| fsw | 10 kHz in the professor's reference simulation (Figure 1, "PWM 10k") — **not yet confirmed for this board** |
-| Reference parts | IRFZ14, 1N5822, 1N4148 bootstrap, 1 µF boot cap, 1.2 k pull-up, 2N2222 inverter, 2N3904/2N2907 totem pole |
-| Control input | Reference driver is *inverting* → plant input d' = 1 − d. **This board's driver is non-inverting** (extra stage Q2), so PWM high = MOSFET on and the input is **d** (see §4). |
-
-Load network on this board (very neat):
-- J2 base load 7.2 Ω (2 × 3.6 Ω 10 W in series, off-board) → +20 % case.
-- J3 36 Ω via Q6 → 7.2 ‖ 36 = **6.0 Ω** (nominal).
-- J4 24 Ω via Q7 → 7.2 ‖ 36 ‖ 24 = **4.8 Ω** (−20 % case).
-- Max steady output current ≈ 6 V / 4.8 Ω = 1.25 A (≈ 1.46 A at 7 V on 4.8 Ω,
-  although that combination is not a required test).
-
-## 3. Folder map
+## 2. Mapa del repositorio
 
 ```
-revC/
-├── AGENTS.md                  ← this file
-├── BOM/BOM_RevC.csv           ← master BOM (Spanish). LCSC #, Basic/Extended, Local = hand-solder
-├── BRINGUP_AND_TEST_GUIDE.md  ← what to do when the board arrives: inspection, staged power-up, firmware checklist, Entrega 4 tests
-├── entrega3/                  ← Entrega 3 (PI design + simulation on the Rev C plant): matlab/ (plain MATLAB, run e3_main then e3_figures), results/ (e3_results.json = every number in the slides), figures/ (PNG for slides, pdf/ for LaTeX)
-├── entrega4/                  ← Entrega 4 report (implementation + bench validation): python/e4_main.py (figures, plant re-check of the e3 sampled loop, results/e4_results.json), figures/report/ (PDF), report/entrega_4.tex → .pdf (IEEE, 6 pages, `latexmk -pdf`)
-├── firmware/bringup/          ← NUCLEO firmware (PlatformIO, STM32Cube HAL): open loop + Entrega 3 PI (console: s, d, step, x, pi, v, a, b, t, log, dump, cal, vmin), d ≤ 0.85, ISR trips, IWDG. tools/ = bench scripts (AD3 + serial). captures/ = steps C–E, duty-step fit, closed_loop/, entrega4/ (metrics + figure)
-├── firmware/backup/           ← flash image that was on the NUCLEO before (Zephyr PWM test), restorable with openocd
-├── production/                ← JLCPCB upload files (generated by tools/make_jlc_files.py): gerbers zip, BOM_JLC, CPL_JLC
-├── tools/place_revC.py        ← one-shot placement generator (record of placement rationale; see §9)
-├── tools/route_revC.py        ← one-shot routing/silkscreen generator (record; see §9)
-├── tools/check_layout.py, layout_checklist.md ← layout audit and its sourced checklist
-├── tools/make_jlc_files.py    ← regenerates production/ from the board (run with KiCad closed)
-├── docs/Descripcion Proyecto Buck.pdf   ← assignment (Spanish, dates outdated)
-└── pcb_revC/                  ← KiCad 10.0 project (kicad-cli 10.0.8 is installed)
-    ├── pcb_revC.kicad_pro     ← design rules + netclasses
-    ├── pcb_revC.kicad_sch     ← single-sheet schematic: POWER / DRIVER / LOAD / SENSE / NUCLEO
-    ├── pcb_revC.kicad_pcb     ← layout (see §7 status)
-    ├── buckRevC.kicad_sym     ← custom symbol AOD4184A (G=1, D=2, S=3)
-    ├── buckRevC.pretty/L_Bourns_SRR1280.kicad_mod ← inductor footprint (pads 2.9×5.4 mm, 9.7 mm pitch)
-    ├── buckRevC.pretty/IND-SMD_..-150M.kicad_mod, lib/ ← EasyEDA import leftovers (unused, lib/ is git-ignored)
-    └── .history/              ← KiCad local-history git repo (auto snapshots; don't touch)
+hardware/kicad/          proyecto KiCad 10 (pcb_revC.kicad_{pro,sch,pcb,dru}); símbolo propio
+                         AOD4184A (buckRevC.kicad_sym), huella L_Bourns_SRR1280 y su modelo 3D
+                         en lib/easyeda.3dshapes/ (la huella lo referencia con esa ruta relativa)
+hardware/bom/            BOM maestro (español): LCSC, Basic/Extended, "Local" = soldado a mano
+hardware/produccion/     archivos subidos a JLC: gerbers/, zip, BOM_JLC, CPL_JLC (generados)
+hardware/herramientas/   make_jlc_files.py (regenera produccion/), check_layout.py +
+                         layout_checklist.md (auditoría de layout con checklist con fuentes)
+firmware/                PlatformIO + STM32Cube HAL para la NUCLEO-L432KC (src/: main, hw, control)
+laboratorio/             guia-puesta-en-marcha.md (inspección, energizado por etapas, ensayos E4),
+                         scripts/ (cl_event.py, run_suite.py: AD3 + consola serie),
+                         datos/ (capturas crudas; ver §6)
+analisis/entrega-3/      MATLAB sin toolboxes: e3_main (diseño, simulación, resultados JSON/MAT),
+                         e3_figures('slides'|'report') → figuras/ y figuras/informe/
+analisis/entrega-4/      e4_main.py (figuras, métricas, error rms, márgenes con la planta
+                         identificada) + analyze_e4.py (port de e3_metrics.m y cargadores)
+informes/entrega-N/      PDF entregados; E3 y E4 con su .tex (IEEE, `latexmk -pdf`)
+curso/                   enunciado, programa, capítulos de teoría, talleres y ejemplos del docente
 ```
 
-The KiCad install is at `C:\Program Files\KiCad\10.0\bin\kicad-cli.exe`. Write
-any generated outputs (netlist, ERC/DRC reports, gerbers for checks) to a
-scratch folder, never into the project folder unless asked.
+Los PDF, PNG, CSV de `laboratorio/datos/`, `.mat`, `.zip`, `.step`, `.wrl` y `.slx`
+están en **Git LFS** (`git lfs install` antes de clonar). `hardware/**` es `-text`:
+los gerbers y archivos de KiCad se guardan byte a byte (los gerbers versionados
+tienen CRLF porque se generaron en Windows).
 
-## 4. Circuit summary (netlist as of 2026-11-03)
+## 3. Restricciones y reglas de trabajo
 
-**POWER:** J1 (12 V IN) → VIN. Input caps C1–C3 10 µF/50 V 1206 + C4 100 nF
-(the hot-loop cap; place it right at Q1's drain) + C5 100 µF electrolytic (DNP,
-optional). The high-side N-MOSFET **Q1 AOD4184A** (TO-252) has D = VIN and
-S = SW. Freewheel diode **D1 SS34** (K = SW, A = GND). L1 330 µH → VMID →
-L2 330 µH → VOUT. Output caps C6, C7 10 µF/50 V (C8 is a DNP spare). J2 is the
-base load.
+- **No modificar la placa ni la producción** sin pedido explícito: es el diseño
+  fabricado. Si se edita el KiCad, regenerar `hardware/produccion/` con
+  `make_jlc_files.py` (KiCad cerrado) y volver a correr ERC/DRC.
+- `place_revC.py`/`route_revC.py` (generadores de una sola vez) ya no existen; la
+  ubicación y el ruteo se editan en KiCad. Las zonas de cobre se rellenan con B.
+- Salidas de verificación (ERC/DRC, renders, gerbers de prueba) van a una carpeta
+  temporal, nunca dentro del repo. `check_layout.py` escribe en
+  `hardware/herramientas/runs/` (ignorado).
+- No inventar datos experimentales. Las métricas salen de `laboratorio/datos/` con
+  `analisis/entrega-4/e4_main.py`.
+- Herramientas instaladas en esta máquina (Linux): `kicad-cli` 10.0.8 con `pcbnew`
+  para Python del sistema, `pio`, `latexmk`. MATLAB no está en el PATH (usar la MCP
+  de MATLAB si está disponible para `analisis/entrega-3`).
 
-**DRIVER** (discrete bootstrap, derived from the reference circuit):
-- PWM (Nucleo D9/PA8) → R1 1 k → Q2 MMBT3904 (R2 100 k base pull-down) →
-  DRV_IN (R3 10 k pull-up to VIN) → Q3 MMBT3904 base → DRV_B.
-- DRV_B: R4 1.2 k (0805) pull-up to BOOT; drives the totem-pole bases
-  Q4 MMBT2222A (NPN, C = BOOT) and Q5 S8550 (PNP, C = SW).
-- Emitters (DRV_E) → R5 10 Ω → GATE. R6 10 k between GATE and SW.
-- Bootstrap: D2 1N4148W from VIN → BOOT; C9 1 µF between BOOT and SW.
-- Two inversions mean **PWM high ⇒ Q1 on**. If PWM floats or the Nucleo is
-  unplugged, R2 keeps Q2 off, Q3 on and the gate low, so **Q1 stays off by
-  default**. This is safer than the reference circuit, where a floating input
-  turns the MOSFET fully on.
+## 4. Punto de operación y especificaciones
 
-**LOAD:** Q6/Q7 AO3400A low-side switches for J3 (36 Ω) and J4 (24 Ω). Gates
-are driven from LSW_A (D2/PA12) and LSW_B (D3/PB0) through 100 Ω, with 100 k
-pull-downs (off by default).
-
-**SENSE:** VIN → R9 30 k / R10 10 k → VIN_SENSE (A2/PA3). VOUT → R7 30 k /
-R8 10 k → VOUT_SENSE (A1/PA1). Gain ×0.25, with 4.7 nF RC filters
-(fc ≈ 4.5 kHz, 7.5 kΩ source impedance).
-
-**NUCLEO:** J5 = CN3, J6 = CN4 (1×15 female sockets, 2.54 mm). Pins used:
-CN3-4 GND, CN3-5 LSW_A, CN3-6 LSW_B, CN3-12 PWM, CN4-2 GND, CN4-10 VIN_SENSE,
-CN4-11 VOUT_SENSE. All other pins are no-connect (Nucleo VIN/5V/3V3 are **not**
-tied to the board).
-Pin-function mapping (D9 = PA8 = TIM1_CH1, A1 = PA1, A2 = PA3, D2 = PA12,
-D3 = PB0) is from memory of ST UM1956. **Still to be confirmed against the
-datasheet and the physical board. The header row spacing is still to be
-measured** (Arduino Nano/Nucleo-32 is expected to be 15.24 mm / 600 mil).
-
-**Test points:** TP1 VIN, TP2 SW, TP3 GATE, TP4 VOUT, TP5 PWM, TP6–TP8 GND.
-**Mounting:** H1–H4 M3 (3.2 mm NPTH). Their use is undecided because of board
-space.
-
-## 5. Assembly / sourcing split
-
-- **JLC PCBA (SMD):** all resistors, ceramic caps, Q1–Q7, D1, D2, L1/L2.
-  Extended parts (each adds a JLC feeder fee): Q1 C99124, L1/L2 C2041412
-  (already bought, in My Parts Lib). Everything else is Basic per the BOM.
-- **Hand-solder (local):** J1–J4 terminal blocks (KF301, check 5.0 vs 5.08 mm
-  pitch), J5/J6 sockets, test points, optional C5, optional M3 standoffs.
-- The LCSC numbers in the BOM have **not yet been verified** against the JLC
-  catalogue (stock, Basic/Extended status, package, pinout). Check especially
-  C105432 (S8550 SOT-23), C8512 (MMBT2222A), C2041412 (inductor value/current).
-
-## 6. Design rules currently in `pcb_revC.kicad_pro`
-
-- Min clearance 0.2 mm, min track 0.2 mm, copper-to-edge 0.3 mm, vias
-  0.6/0.3 mm. All within JLC 2-layer standard capability.
-- Track widths are preset to 0.25, 0.5 and 1.5 mm.
-- Netclasses: Default 0.25 mm; Power 1.5 mm (via 0.8/0.4); Drive (no
-  overrides).
-- Netclass patterns are entered as a single comma-separated string
-  (`"VIN, SW, VOUT, VMID, LOAD_A, LOAD_B"` and `"GATE, BOOT, DRV_E, DRV_B"`).
-  KiCad matches patterns one entry per row, so these probably match no nets.
-  **To fix/verify** (see §8).
-
-## 7. Status
-
-| Date | State |
+| Magnitud | Valor |
 |---|---|
-| 2026-11-02 | Schematic finished (commit `5ad943b`). kicad-cli ERC: 0 errors / 0 warnings (4 check types ignored in project settings). |
-| 2026-11-03 | `pcb_revC.kicad_pcb` is **empty**: no footprints, no Edge.Cuts. The owner confirmed that no layout exists yet; only the schematic is done. Agent review started; this file was created. |
-| 2026-11-03 | The owner ran "Update PCB from Schematic". The agent then: fixed the netclass patterns (one per row; verified Power/Drive resolve on pads); set H1–H4 to `on_board no` in the schematic (no M3 holes) and removed their footprints; generated the **first placement draft** with `tools/place_revC.py` (KiCad pcbnew API). Board 78.5 × 57 mm, 2 layers. DRC: 0 errors, 0 courtyard overlaps, schematic parity OK; 82 unconnected (no routing yet); silk warnings left for the final cleanup. Backups of the pre-placement files are in the agent's scratchpad only. |
-| 2026-11-05 | The owner changed the schematic (TP1–TP8 → 1.0 mm drill footprint; added TP9 BOOT and TP10 on J6.9, the net is named `Net-(J6-Pin_9)` with no TRIG label yet; C5 no longer DNP; ERC 0/0) and ran "Update PCB". With KiCad closed, the agent then made a one-off pcbnew edit (not `place_revC.py`). Changes: moved J5, J6, R7–R10, C10, C11 +3 mm in y; Edge.Cuts bottom 157 → 160 mm (board 78.5 × 60); placed TP9 at (127.0, 127.5) and TP10 at (129.5, 156.0). It also replaced the User.Drawings NUCLEO outline (now x 102.50–152.56, y 135.62–153.62, USB at the pin-1 end; ends estimated from the photo) and added a USB plug corridor box (x 152.56–178.5, y 139.12–150.12; 2.1 mm clear of J4). F.Silkscreen got NUCLEO end brackets, "D1"/"VIN" at pin 1 and "USB ->". Only those 10 footprints changed position. DRC with parity: 0 footprint errors, same category counts as before the edit (84 unconnected, old silk/text warnings). The pre-edit backup is in the agent's scratchpad only (the git HEAD has the 2026-11-03 state). |
-| 2026-11-06 | **Routed and silkscreened** (owner commit `7ad93be` = pre-routing placement). Two agents worked on a scratch copy: a router (`tools/route_revC.py`, pcbnew API, stages S1–S5) and an independent reviewer. The reviewer audited every stage with `tools/check_layout.py` against the sourced checklist in `tools/layout_checklist.md` (TI AN-1149 SNVA021C, TI SLYT614, ROHM 60AN066E, IPC-2152 via Brooks/Adam, JLC capabilities, KiCad 10 manual). Final state in the project: DRC with parity shows **0 errors, 0 unconnected, 0 parity issues**, and 1 accepted warning (J1's library silk at the board edge). 0 footprints moved; JLC SMD spacing 0; Gerber + drill export OK (26 files). Final audit: **42 PASS, 7 WARN (accepted deviations, see #21), 1 FAIL = TDR-1, no teardrops yet** (owner GUI step, #21). Project-file changes: Drive width 0.5, Power clearance 0.3, `min_hole_clearance` 0.3, new `pcb_revC.kicad_dru`. Not committed. |
-| 2026-11-16 | Board ordered (JLC, in transit). **Entrega 3 done on the Rev C plant** (`entrega3/`): the classmate's draft (`docs/presentación_3.pdf`) used the old IR2110/IRFZ44N data and the Entrega 2 identified model, so the deck was rebuilt from scratch. Design: averaged model with rL = 1.2 Ω, VF = 0.4 V, input **d**; fs = 20 kHz; PI with ωc = 1000 rad/s, ωz = 3ωc → **Kp = 0.030477, Ki = 91.43 (KiTs = 0.0045716)**; 1.5 Ts delay + RC filter in the loop. Exact sampled-data loop: PM 97°, GM 11.3 dB (108 corners: ≥ 94.9°, ≥ 8.3 dB). Switched-circuit simulation: ts 4.6 ms, Mp 0.1 %, load ±20 % peaks +0.56/−0.73 V (set by the LC, same as open loop), d ≤ 0.71. Slides: claude.ai Slides artifact (Spanish, 15 slides, restyled to the Entrega 1 look of `docs/presentacion.pdf`: orange #F19820 / teal #0097B2 blobs, Roboto/Lato; includes a "¿Por qué d y no d′?" slide: G_vd′ = −G_vd). IEEE report: `entrega3/report/entrega_3.tex` → `.pdf` (6 pages, MiKTeX pdflatex ×2, figures from `figures/report/`, preamble copied from the Entrega 1 report). BRINGUP guide §5 updated: ADC sampled at the PWM update event + the PI constants. |
+| Vin | 12 V de fuente de laboratorio (límite 1.5 A; 100 mA en la puesta en marcha) |
+| Vout | 6 V nominal; escalones de referencia 6→7 V y 6→5 V |
+| Carga | 6 Ω nominal (1 A); perturbaciones +20 % (7.2 Ω) y −20 % (4.8 Ω) |
+| L | 2 × 330 µH SRR1280-331K en serie (DCR ≤ 0.6 Ω c/u, Irms 1.1 A, Isat 1.4 A) |
+| C | 2 × 10 µF cerámicos 50 V (C efectiva medida 14–17 µF por polarización DC) |
+| fsw | 20 kHz nominal (medida 19.84 kHz: tolerancia del oscilador MSI) |
+| Entrada de control | **d** (el driver es no inversor; el enunciado asume d' = 1 − d con su driver inversor) |
+| Especificaciones (E3) | ess = 0, Mp ≤ 5 %, ts ≤ 5 ms (±2 %), MF ≥ 60°, MG ≥ 6 dB, d ≤ 0.85, recuperación de carga ≤ 5 ms |
 
-| 2026-11-23 | **Bring-up steps A–E passed** (BRINGUP guide §4) with an **Analog Discovery 3** and `firmware/bringup/` (measured 19.84 kHz: MSI tolerance). A: 11 mA, BOOT 11.3 V, VIN_SENSE 3.0 V. C (d 0.10, 6 Ω): Vgs on 10.8 V / off 0.07 V, gate duty 0.1053 (driver adds ≈ +0.005), bootstrap 11.73 V, Iin 25 mA. D (d 0.60, 6 Ω): VOUT 6.16 V (AD3; ADC reads 0.7 % low), ripple 0.13 V p-p, bootstrap ≥ 11.54 V, Iin 0.62 A at 12.1 V, η ≈ 85 %. First bench leads dropped 1.1 V (~2 Ω); thick leads leave ≈ 0.3 Ω. E: all 5 points +4–5 % above the Entrega 3 simulation; DC fit **R_L ≈ 0.94 Ω, V_F ≈ 0.26 V** (d_eff = d + 0.0053), max error 11 mV; η 79–85 %. Open-loop duty step 0.60↔0.70 (6 Ω): ΔV 1.025 V (K ≈ 10.25 V/d), **ωn 10.2–11.1 krad/s, ζ 0.61–0.63**, Mp 8–9 %, ts 0.55 ms → **C_eff ≈ 14–17 µF** with L = 660 µH. The real plant sits between the Entrega 3 nominal (C 20 µF: ωn 9.5 k, ζ 0.53) and its C = 14 µF corner (11.4 k, 0.60), so the PI (ωc = 1000 rad/s) stays valid. **Firmware v2** (`firmware/bringup/`, same console + `pi on/off`, `v`, `dump`, `cal`, `vmin`): ADC injected group (VOUT, VIN) triggered by TIM1 TRGO every period, PI in the ADC ISR exactly as `e3_sim.m`, hard-float FPU (`fpu.py`; PlatformIO defaulted to soft-float), protections in the ISR, 2000-sample capture per event. Review caught `ScanConvMode` must be ENABLE or the HAL drops injected rank 2 (VIN); verified JSQR = 0x00020641 over SWD. **First closed loop on hardware:** soft start to 6 V on 6 Ω, VOUT 6.000 V (ADC) / 6.018 V (AD3), d 0.585 (model 0.587), ramp tracking lag 51.7 mV (type-1 theory 53 mV), no overshoot. Captures in `captures/closed_loop/`. **Next session:** optional DMM `cal`, then the four Entrega 4 tests (§7.2, 3 repetitions each). |
-| 2026-11-24 | **Entrega 4 tests done** (§7.2, 4 tests × 3 repetitions, no trips). DMM at J2 read 5.991 V for ADC 6.000 V → `cal 5.991` (998558 ppm, RAM only, redo after a reset) → DMM 6.000 V. Scripts in `firmware/bringup/tools/` (`cl_event.py` one event with AD3 CH1 = TRIG, CH2 = VOUT + firmware dump; `run_suite.py` the 4 tests; `analyze_e4.py` = port of `e3_metrics.m` + figure). Results in `captures/entrega4/` (`metrics_entrega4.csv`, `entrega4_tests.png`). AD3 (period-averaged, gain-corrected to the DMM 6.000 V) vs E3 switched sim: 6→7 V tr 2.59–2.65 ms (sim 2.40), Mp 0.46–0.51 % (0.13), ts 4.75–5.01 ms (4.53), ess ≤ 6 mV (ADC: < 1 mV); 6→5 V tr 2.47–2.51 (2.42), Mp 0.52–0.55 % (0.08), ts 4.47–4.67 (4.58); +20 % load ΔVmax +0.614…+0.621 V (+0.561), trec 0.47 ms (0.88), ts20 1.46–1.50 ms (1.68); −20 % load ΔVmax −0.757…−0.760 V (−0.725), trec 0.31 ms (0.33), ts20 2.43–2.68 ms (2.98). Repetitions overlap within a few mV. Steady d is 0.01 lower than the sim (sim used R_L 1.2 Ω / V_F 0.4 V; real 0.94 / 0.26). Duty never above 0.694 (clamp 0.85). |
+Red de carga: J2 carga base 7.2 Ω (2 × 3.6 Ω 10 W); J3 36 Ω vía Q6 → 6.0 Ω; J4 24 Ω
+vía Q7 → 4.8 Ω. Corriente máxima en régimen ≈ 1.25 A (no combinar 7 V con 4.8 Ω:
+supera la Irms de los inductores).
 
-### 7.1 Placement draft (2026-11-03): layout rationale
+## 5. Circuito (Rev C)
 
-Board outline: (100,100)–(178.5,157) mm. Power flows left → right along the
-top; the driver sits under Q1; the NUCLEO is along the bottom.
+- **Potencia:** J1 → VIN; C1–C3 10 µF/50 V 1206 + C4 100 nF (lazo caliente) + C5
+  100 µF electrolítico (soldado a mano). Q1 **AOD4184A** (TO-252, D = VIN, S = SW),
+  diodo D1 **SS34**, L1 → VMID → L2 → VOUT, C6/C7 (C8 sin montar).
+- **Driver bootstrap discreto, no inversor:** PWM (D9/PA8) → R1 1 k → Q2 MMBT3904
+  (R2 100 k a GND) → R3 10 k a VIN → Q3 MMBT3904 → DRV_B; R4 1.2 k a BOOT; tótem
+  Q4 MMBT2222A / Q5 S8550 → R5 10 Ω → GATE; R6 10 k G–S. Bootstrap D2 1N4148W +
+  C9 1 µF. PWM en alto ⇒ Q1 encendido; **con el PWM flotante o sin NUCLEO, Q1 queda
+  apagado** (más seguro que el circuito de referencia).
+- **Cargas:** Q6/Q7 AO3400A con LSW_A (D2/PA12) y LSW_B (D3/PB0), 100 Ω serie y
+  100 k a GND.
+- **Sensado:** divisores 30 k/10 k (×0.25) con 4.7 nF: VOUT_SENSE → A1/PA1,
+  VIN_SENSE → A2/PA3. TRIG (TP10) en A3/PA4 marca cada evento para el osciloscopio.
+- **NUCLEO-L432KC** en zócalos J5 (CN3) / J6 (CN4), filas a 15.24 mm, **USB hacia
+  J2–J4** (flecha "USB ->" en la serigrafía). Se alimenta por su USB; sus VIN/5V/3V3
+  no se conectan a la placa.
+- Puntos de prueba: TP1 VIN, TP2 SW, TP3 GATE, TP4 VOUT, TP5 PWM, TP6–TP8 GND,
+  TP9 BOOT, TP10 TRIG. Pinza de tierra del osciloscopio **solo en TP6–TP8**.
 
-- **Input / hot loop:** J1 is at the left edge (wire entry faces out; pin 1 VIN
-  top). C1–C3 + C4 are vertical, GND pads up, VIN pads down next to the Q1 tab.
-  Q1 is at rot 180 (tab = VIN faces the caps, leads face L1). D1 lies across
-  the top of Q1: K beside Q1's source, A beside C4's GND. Loop: C4 → tab → S →
-  D1 K → D1 A → C4 GND, about 13 × 4 mm. **Route it on the top layer with wide
-  copper.**
-- **Inductors:** L1 at rot 180 (pad 2 = SW faces Q1's source, 3.5 mm), L2 at
-  rot 0. VMID pads face each other (4.2 mm).
-- **Output:** C6–C8 between L2 and the terminals. J2/J3/J4 are stacked on the
-  right edge, wire entry facing out. Each block has pin 2 *above* pin 1
-  (J2: GND/VOUT, J3: LOAD_A/VOUT, J4: LOAD_B/VOUT).
-  Routing note: the VOUT pins alternate with the LOAD pins. Plan to run the
-  VOUT bus along the *right* of the J pins (x ≈ 176, under the terminal
-  bodies), or use short bottom-layer jumps for LOAD_A/LOAD_B.
-- **Load switches:** Q6+R11+R13 sit beside J3; Q7+R12+R14 beside J4. LSW_A
-  and LSW_B come from J5.5/J5.6 through the empty middle area.
-- **Driver** (under Q1, y 115–127): R5 runs straight down from Q1's gate
-  (3.5 mm). R6 sits between the gate and the SW trace. The SW trace comes down
-  from L1 pad 2 (x ≈ 132.7, under the L1 body) to Q5.C, R6 and C9. Q4 (rot
-  180) and Q5 (rot 0) have their emitters facing R5. BOOT is a short line at
-  y ≈ 124: D2.K → R4.1 → C9.1, with a short hop up to Q4.C. R4.2 is 1.9 mm
-  from Q4.B. DRV_E and DRV_B inherently cross between two SOT-23s, so **one via
-  on DRV_B** is expected. The chain Q3 ← Q2 ← R1 runs towards the PWM pin
-  J5.12.
-- **Test points:** TP3 GATE is next to R5/Q1. TP2 SW + TP7 GND sit side by
-  side under L1. TP4 VOUT + TP8 GND are by the output caps. TP1 VIN + TP6 GND
-  are under J1/C5. TP5 PWM is by R1.
-- **NUCLEO:** J5 = CN3 is the top row (pins y = 134), J6 = CN4 the bottom row
-  (y = 149.24), 15.24 mm apart. Pin 15 is at the left side and pin 1 at the
-  right (x = 143.06). **Verified from photos of the owner's board on
-  2026-11-05** (`docs/nulceo_top.jpeg`, `docs/nucleo_bottom.jpeg`): the
-  electrical mapping is correct, but the **USB is at the pin-1 (D1/VIN) end**,
-  not the Nano-style pin-15 end. So the USB plug points **+x, toward
-  J2–J4**. The reset button B1 and LD2/LD3 are at the D12/D13 end. The IDD
-  jumper on the NUCLEO's bottom side sits at the D13 end on the CN4 side,
-  pointing down at our board (nothing is under it). Both NUCLEO ends are kept
-  free of tall parts. The User.Drawings outline (x 100.06–150.50) still
-  assumes the old orientation with symmetric margins and must be redrawn. From
-  the photos, the margins are about 5 mm past the D12/D13 pins and about
-  9.5 mm past the VIN/D1 pins (USB end), plus the connector overhang; still
-  to be measured.
-- **Sense:** the R7–R10 / C10–C11 row sits just below J6.10/J6.11 (≈ 3.3 mm
-  to the ADC pins) for accessibility (not under the NUCLEO). Take the VIN and
-  VOUT taps from the input caps and from the output caps/J2.
-- Board size isn't a cost driver (< 100 × 100 mm at JLC). The bottom-right
-  area is intentionally free (plug corridor plus routing space).
+## 6. Firmware y datos
 
-## 8. Open issues / review log
+- `firmware/`: TIM1 genera el PWM (ARR = 3999 a 80 MHz). El evento de
+  actualización dispara el grupo inyectado del ADC (VOUT, VIN; `ScanConvMode`
+  **debe** ser ENABLE o el HAL descarta el rango 2). El PI corre en la ISR del ADC:
+  Kp = 0.030477, KiTs = 0.0045716 (Ki = 91.43 s⁻¹), anti-windup condicional,
+  d ∈ [0, 0.85], CCR con precarga ⇒ retardo de 1.5 Ts como en el diseño. FPU por
+  hardware vía `fpu.py` (PlatformIO usa soft-float por defecto).
+- Protecciones en la ISR (3 ms): VOUT > 8.5 V, VIN > 13 V, VIN < 9 V. Watchdog
+  0.5 s. Arranque suave sin salto (la integral toma el d vigente; la referencia sube
+  a 0.05 V/ms).
+- Consola serie (115200): `s`, `d`, `step`, `x`, `pi on/off`, `v`, `a`, `b`, `t`,
+  `log`, `dump` (2000 muestras por evento: 10 ms antes, 90 ms después), `cal`,
+  `vmin`. **`cal` vive en RAM**: repetirla tras cada reinicio (en la E4: multímetro
+  5.991 V con ADC 6.000 V → `cal 5.991`).
+- `laboratorio/datos/`: `stepC_*`, `stepD_*`, `stepE_table.txt` (puesta en marcha),
+  `dynamics_step_*` (escalón de d 0.60↔0.70 para identificar la planta),
+  `closed_loop/` (arranque en lazo cerrado), `entrega4/` (24 CSV `<ensayo>_r<n>_{ad3,fw}`
+  + `metrics_entrega4.csv` + figura). AD3 a 1 MS/s: CH1 = TRIG, CH2 = VOUT.
 
-Keep this list updated: change the status, don't delete entries.
+## 7. Resultados medidos (para no recalcularlos)
 
-| # | Area | Issue | Status |
-|---|---|---|---|
-| 1 | Layout | First placement draft done (§7.1). Next: owner review in KiCad, then routing. Silk cleanup at the end (ref text thickness 0.15 < 0.18 project rule, overlapping refs). **2026-11-06:** routing and silkscreen are done (§7, #21); silk cleanup is done (all text 1.0/0.18 mm, 0 overlaps, 0 silk on pads). Next: the owner's teardrop pass and review in KiCad. | owner review |
-| 2 | Rules | **Fixed 2026-11-03:** netclass patterns are now one per row (Power/Drive resolve). Original issue: patterns were comma-joined, so they matched nothing. Use one pattern per row (VIN, SW, VOUT, VMID, LOAD_A, LOAD_B → Power). GND: the owner will use a GND pour, placed last (Altium habit). Agreed, provided the hot-loop and output returns are short direct top-layer copper, power pads use solid or wide-spoke zone connections, and DRC shows no unconnected islands. | open |
-| 3 | Power | fsw: the owner is leaning towards **20 kHz** (to be justified to the professors). At 10 kHz: ΔI_L ≈ 0.45 A p-p, peak ≈ 1.48 A at 1.25 A load (> Isat 1.4 A), ΔVout ≈ 0.28 V p-p (more with DC-biased ceramics), audible. At 20 kHz: ΔI ≈ 0.23 A, peak ≈ 1.36 A, ΔVout ≈ 0.07 V. Inductor heating at −20 % is mostly I²·DCR (Irms 1.1 A < 1.25 A), so fsw barely changes it. | leaning 20 kHz |
-| 4 | Model | Driver is non-inverting, so the input is d (not d'). Inductor DCR ≈ 2 × 0.6 Ω means d ≈ 0.6 (not 0.5) for 6 V at 1 A. Ceramic output C derates with DC bias (an LCR meter at 0 V bias overstates it). All of this matters for Entregas 1–4. | note |
-| 5 | Driver | Totem-pole off-state is referenced to GND through Q3, not SW (same as the reference design). Expected Vgs(off) ≈ 0–1 V. Acceptable, but check TP3/TP2 on the scope. Propagation delay of the Q2/Q3 saturated stages limits fsw and min/max duty. **2026-11-05:** simulated OK (see #11): Vgs(off) ≈ 0.04 V 2 µs after turn-off; td_on ≈ 0.09 µs, td_off ≈ 0.32 µs (≈ +0.5 % duty at 20 kHz). Still check on the scope. | simulated OK |
-| 6 | Test points | TestPoint_THTPad D1.5 mm / drill 0.7 mm can't accept 2.54 mm header pins (need ~1.0 mm drill). The owner plans to solder test-point headers. **Fixed 2026-11-05:** all TPs now use `TestPoint_THTPad_D2.0mm_Drill1.0mm`. | closed |
-| 7 | Nucleo | Confirm the CN3/CN4 pinout (UM1956). Row spacing **assumed 15.24 mm** for now; the owner will measure it and J5/J6 will be adjusted. **2026-11-05:** pin labels read from photos of the owner's L432KC match the footprints (CN4: VIN, GND, RST, 5V, A7…A0, REF, 3V3, D13 for pins 1→15; CN3: D1/TX, D0/RX, RST, GND, D2…D12). The USB is at the pin-1 end, so the plug points +x toward J4. A standard micro-USB plug (~11 mm wide) centred at y ≈ 141.6 reaches y ≈ 136.1, while J4's courtyard ends at y = 137.0, so they may touch. Proposed fix: move J5, J6, R7–R10, C10, C11 down 3 mm and the bottom Edge.Cuts edge from y = 157 to 160. **Done 2026-11-05** (see §7), including the silkscreen brackets, the pin-1 labels and "USB ->". J5 is now at y = 137.00 and J6 at y = 152.24. Still open: row spacing (perfboard test) and the measured end margins (the outline uses photo estimates: 9.5 mm past pin 1, 5 mm past pin 15). **Confirmed from ST UM1956 Rev 6, Fig. 5 (mechanical drawing):** row spacing 600 mil = 15.24 mm; board 730 × 1980 mil = 18.54 × 50.29 mm; pin centres 1.65 mm from the long edges. Its top view (USB at top, CN3 on the left with D1/TX nearest the USB) matches the owner's photo. Scaled from that drawing, the end margins are ≈ 9.3 mm past pin 1 (USB end) and ≈ 5.4 mm past pin 15. To do (cosmetic, only with KiCad closed): move the outline/silk brackets to x 102.10–152.36, y 135.35–153.89. **Done 2026-11-05:** moved the User.Drawings outline, the plug corridor start (now x 152.36) and the F.Silkscreen brackets; DRC counts unchanged. | closed |
-| 8 | BOM | Verify LCSC parts/stock and Basic/Extended status. The CSV lists C5/C8 at qty 0 (DNP), consistent with the schematic. **2026-11-05, verified from JCET datasheets:** C105432 = JCET S8550 SOT-23 (1 = B, 2 = E, 3 = C; Vceo 25 V, 0.5 A; JLC Basic) and C8512 = JCET MMBT2222A SOT-23 (1 = B, 2 = E, 3 = C; Vceo 40 V; JLC Basic). Both match the symbols and footprints. C99124 = AOS AOD4184A (Vth 1.7/2.1/2.6 V, Qg 27 nC typ). C2041412 = Bourns SRR1280-331K (DCR 0.6 Ω max, **Irms 1.1 A**, Isat 1.4 A). Stock and the remaining parts not checked yet. | partly verified |
-| 9 | Mech | **Decided: no M3 holes.** H1–H4 are `on_board no` in the schematic, footprints removed, BOM row qty 0. | closed |
-| 10 | Libs | Inductor 3D model path is relative to `lib/`, which is git-ignored, so the 3D view breaks on a fresh clone. Cosmetic only. | low |
-| 11 | Review | **2026-11-05 schematic review** (after the Entrega 2 failure; see #17 for the real root cause). Netlist checked loop by loop: hot loop, output return, gate charge (C9 → Q4 → R5 → G, back via S = SW → C9), gate discharge (G → R5 → Q5 → SW), bootstrap recharge (VIN → D2 → C9 → SW → D1 → GND), and signal grounds (Nucleo GND on CN3-4 and CN4-2) are all closed. Q1 TO-252 pads: 1 = G, tab 2 = D = VIN, 3 = S = SW. The ngspice transient (KiCad ngspice.dll, approximate models, scratch only) shows Vgs 10.9–11.4 V on, bootstrap ≥ 11.5 V for d = 0.05–0.95, at 10 and 20 kHz, with 6 Ω and 4.8 Ω. Q1 loss ≈ 9 mW. Nucleo unplugged: Vgs = 0 and Iin ≈ 11 mA. No schematic errors found. | done |
-| 12 | Firmware | **PWM stuck at 100 % (simulated):** C9 drains through R6 (~1 mA, τ ≈ 10 ms). Vgs goes 10 → 4 V in 10 ms and ≈ 2.3 V at 20 ms. Q1 then runs in its linear region (Vds ≈ 3.5 V, ≈ 4 W, overheats) with Vout ≈ 7.1 V instead of ≈ 10 V, which looks like the Entrega 2 symptom. **Clamp d ≤ 0.95 with integrator anti-windup.** Soft-start: a d = 0.6 step at power-up gives an IL peak of ≈ 1.40 A at 6 Ω (≈ 1.59 A at 4.8 Ω, d = 0.65), at or above Isat, plus Vout overshoot to ≈ 6.8 V. Ramp the reference or duty over ~20–50 ms. | open (firmware) |
-| 13 | Test points | Plan (owner implementing in the schematic): **TP9 BOOT** (global label BOOT; V_C9 = TP9 − TP2, diagnoses the bootstrap directly), placed near C9/R4 (~(127, 127.5) mm). **TP10 TRIG** on J6.9 = CN4-9 = A3 = PA4 (remove the no-connect flag; global label TRIG). Place it below J6, outside the NUCLEO outline. PA4 is DAC1_OUT1 on the L432KC only. Use it for scope triggering on reference/load steps or for plotting d(t). All 10 TPs → `TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm` (closes #6). Scratch preview of the swap: positions kept, no clearance/courtyard violations, +9 silk overlaps (ref text over the bigger pads). **2026-11-05: done** in the schematic and PCB. TP9 is at (127.0, 127.5); TP10 is at (129.5, 156.0), with its reference text moved to the right of the pad. Remaining (cosmetic): TP10's net is `Net-(J6-Pin_9)`; add a global label `TRIG` on that wire, then Update PCB again. | done (net name cosmetic) |
-| 14 | Power | Proposed: fit C5 (100 µF electrolytic, hand-solder). Its ESR damps ceramic-input ringing when live bench leads are hot-plugged. Without it, VIN can briefly overshoot (up to ~2× VIN), and that overshoot carries through the bootstrap into Vgs and toward the 20 V Vgs limit. To do: uncheck DNP on C5 (to match J1–J6, which are hand-soldered and not DNP) and set the BOM row to qty 1, Local. **Done:** C5 is not DNP in the schematic/PCB, and the BOM row is qty 1, Local (2026-11-06). | closed |
-| 15 | Driver | R4 (1.2 k, 0805) dissipates ≈ 105 mW (simulated) whenever the board is powered with Q1 off (Nucleo unplugged or PWM low). That is ~84 % of the 0805 rating; ≈ 42 mW at d = 0.6. Optional: 1206. 2026-11-05: recommendation is to keep the 0805 (within rating, avoids a footprint/LCSC change). | keep |
-| 16 | Power | At 4.8 Ω the average IL is ≈ 1.29 A, above the SRR1280-331K Irms of 1.1 A, and the steady peak is ≈ 1.39 A (≈ Isat). Keep −20 % load tests short; avoid 7 V on 4.8 Ω. | note |
-| 17 | Context | **Entrega 2 root cause** (`docs/informe_entrega_2.pdf`): P-MOSFET FQP27P06 high side, turned off only by R2 = 1 kΩ to Vin. In the off-interval Cgd (Miller) pulled the gate back into threshold (Vgs −4.0 to −1.3 V); Q1 **re-conducted ~8×/period at 192 kHz**; effective duty 0.660 instead of 0.5. Rev C avoids this: N-MOSFET with the drain fixed at VIN, and the gate held by an active low-impedance totem pole. Simulated at d = 0.5: Vgs ≤ 0.05 V and SW at −0.37 V for the whole off-interval (also with Vth = 1.5 V and in DCM); ⟨v_sw⟩/Vin = 0.49. Entrega 2 firmware already has a 0 → d ramp (1 %/20 ms), a duty clamp and a 60 s watchdog; keep them. **Its step marker used D2/PA12, which is LSW_A (Q6, 36 Ω load) on Rev C: move the marker to TRIG.** | note |
-| 18 | Nucleo | Entrega 2 used a **NUCLEO-L412KB**, but this file and the BOM say L432KC. Both are Nucleo-32 (same pinout, PA8 = TIM1_CH1, PA1/PA3 ADC). The L412 has no DAC (TRIG then works as a GPIO only). Confirm which board is used for Entrega 4. **2026-11-05: the owner has the physical board, a NUCLEO-L432KC** (DAC on PA4 is available). Its physical orientation (which end has the USB, which side each header is on, row spacing) is being checked against the footprint assumption in §7.1. | closed (model); orientation → #7 |
-| 19 | Assembly | **2026-11-05, JLC SMD spacing check** against JLC's "Minimum Spacing Requirements for SMD Components" table (measured edge to edge of the outermost pad, lead or body). The table gives: chip↔chip 0.18 mm (0603/0805), 0.25 mm (with 1206), 0.35 mm (1206↔1206); chip↔SOT 0.2 mm; SOT↔SOT 0.4 mm. TO-252, SMA and SRR1280 are not listed, so they were conservatively treated as SOP class (0.4–0.5 mm). Result: **0 violations**; the inductor bodies were counted as 12.5 × 12.5 mm. Tightest pairs: D1–Q1 0.50 mm (hot loop, intentional) and C4–Q1 0.58 mm. THT note: the TP5 pad is 0.84 mm from R2, so take care with the iron. PWM routing: R1.1 (115.10, 126.83) is directly above J5.12 (115.12, 137.0) with nothing in between, so it is a straight top-layer trace. LSW_A/LSW_B cross once (J5.5 is right of J5.6, but R11 is above R12); suggestion: run LSW_B under the NUCLEO between the socket rows, then up to R12. | done |
-| 20 | Thermal | **2026-11-05 loss and stress simulation** (ngspice, scratch only). Model: bench leads 50 mΩ + 1 µH, ceramic input bank derated to 18 µF, C5 100 µF with 0.4 Ω ESR, Cout derated to 14 µF, DCR 0.6 Ω each. Losses for **L1 and L2 (each)**: 0.58 W at 6 Ω, **0.98 W at 4.8 Ω**, 0.40 W at 7.2 Ω, 0.80 W at 7 V/6 Ω, 0.42 W at 5 V/6 Ω. Bourns: Irms 1.1 A ⇒ 40 °C rise, i.e. ~55 °C/W, so the rise is ≈ 32 / **54** / 22 / 44 / 23 °C (part rated to 125 °C). D1 0.13–0.18 W (≈ +15 °C). Q1 7–13 mW. R4 25–51 mW (105 mW idle). C5 ripple 0.15–0.24 A rms; buy a 105 °C low-ESR part rated ≥ 0.3 A at 100 kHz. Input current: 0.85 A max in the required tests. Efficiency 77–82 %. Vgs 11.4–11.5 V and bootstrap ≥ 11.59 V in every case. **PID saturated at d = 0.95** (6 Ω / 4.8 Ω): Vout 9.5 / 9.1 V, IL 1.6 / 1.9 A, L loss 1.5 / 2.15 W each, which would overheat the inductors if held for minutes. Recommendations: operating duty clamp **0.85** (0.95 is only the bootstrap limit), bench current limit **1.5 A**, and silk polarity labels at J1–J4 (added 2026-11-06). | done (firmware/lab recommendations open) |
-| 21 | Routing | **2026-11-06:** routing and silkscreen are done. Copper summary, accepted deviations and the owner's remaining steps (rule-syntax check, teardrop pass, refill, DRC) are in §8.1. **2026-11-06, owner steps done** (board saved 20:08). Verified on a scratch copy: DRC with parity shows 0 errors, 0 unconnected and 1 accepted warning (J1 silk edge). Teardrops on 62/62 eligible connections (89 teardrop areas); the `.kicad_dru` is unchanged. `check_layout.py --stage S5`: **43 PASS, 7 WARN, 0 FAIL**. **Production files generated 2026-11-06** with `tools/make_jlc_files.py` into `production/`:
-- `pcb_revC_gerbers.zip`: 9 layers plus Excellon drill (178 holes = 128 vias + 50 PTH) and the job file. Settings per JLC's KiCad guide: Protel extensions, no X2, no netlist attributes, soldermask subtracted from silkscreen.
-- `pcb_revC_BOM_JLC.csv`: 34 parts in 19 lines.
-- `pcb_revC_CPL_JLC.csv`: the same 34 designators.
+- Puesta en marcha: Vgs 10.8 V encendido / 0.07 V apagado, bootstrap ≥ 11.5 V,
+  11 mA en reposo, η 79–85 %.
+- Planta identificada: r_L ≈ 0.94 Ω, V_F ≈ 0.26 V (efectivo, con d_ef = d + 0.0053),
+  C_ef 14.3–16.7 µF, ωn 10.2–11.1 krad/s, ζ 0.61–0.63, K ≈ 10.25 V por unidad de d.
+  Diseño E3: r_L 1.2 Ω, V_F 0.4 V, C 20 µF, ωn 9.5 krad/s, ζ 0.53.
+- Márgenes con la planta identificada: MF 97.3°, MG 11.6 dB ⇒ PI sin reajustes.
+- E4 (media de 3, osciloscopio corregido al multímetro; entre corchetes, simulación E3):
+  6→7 V tr 2.62 ms [2.40], Mp 0.48 % [0.13], ts 4.89 ms [4.53] (una repetición
+  5.01 ms; con el ADC del lazo 4.67 ms); 6→5 V tr 2.49 [2.42], Mp 0.53 % [0.08],
+  ts 4.55 [4.58]; carga +20 % pico +0.619 V [+0.561], ±20 mV en 1.47 ms [1.68];
+  carga −20 % pico −0.759 V [−0.725], ±20 mV en 2.54 ms [2.98]; ess < 1 mV (ADC);
+  d máx 0.694. Error rms medición–simulación: 10–16 mV en referencia, 33–43 mV en carga.
 
-C5, J1–J6 and TP1–TP10 are hand-soldered, and C8 is DNP; all are excluded. The master BOM is updated: C5 qty 1, Local; TP1–TP10. **JLC placement preview (2026-11-06):**
-- Q1, D1 and D2 are correct.
-- The SOT-23 parts Q2–Q7 showed their pin-1 dots 180° from KiCad's pin 1. That is the known KiCad-vs-JLC model offset.
-- `make_jlc_files.py` now adds `JLC_ROT_OFFSET = {"SOT-23": 180}` to the CPL. The regenerated CPL has Q2 270°, Q3/Q5/Q6/Q7 180° and Q4 0°.
-- Re-check the preview after re-uploading. "Confirm Parts Placement" stays on as a second check. Optional cosmetic: the first 7.4 mm of the VOUT Kelvin tap, C7.1 (160.03,107.50) → (160.03,113.53) → TP4 (161.00,114.50), lies inside the VOUT_bus fill and is electrically redundant; it may be deleted (then refill, re-run teardrops and DRC). | ready to order |
+## 8. Decisiones y problemas resueltos
 
-### 8.1 Routing summary (2026-11-06)
+- **Por qué Rev C:** la E2 usó un MOSFET canal P (FQP27P06) apagado solo por 1 kΩ
+  a Vin; la capacitancia Miller lo hacía re-conducir ~8 veces por periodo y el
+  modelo identificado describía ese defecto. Rev C usa canal N con tótem activo.
+- Inductores comprados antes del diseño (2 × 330 µH = 660 µH de referencia): no se
+  cambian.
+- fsw 20 kHz en vez de 10 kHz: rizado de corriente 0.23 A (pico 1.36 A < Isat) y
+  de tensión ≈ 0.07 V p-p calculado (medido 0.12–0.13 V por la C efectiva menor);
+  inaudible.
+- Límite de d = 0.85: a d = 1 el bootstrap se descarga en ~10 ms y Q1 entra en zona
+  lineal (~4 W). 0.95 es solo el límite del bootstrap.
+- Sin agujeros de montaje (espacio). GND como vertido final en ambas caras; cobre de
+  potencia como zonas en F.Cu; teardrops aplicados; DRC con 1 aviso aceptado (silk
+  de J1 en el borde).
+- Ensamble: JLC PCBA para todo el SMD (Q1 C99124 y L1/L2 C2041412 son Extended);
+  a mano: J1–J4 (KF301 5.0 mm), J5/J6, TP1–TP10, C5. Rotación de SOT-23 en el CPL
+  corregida 180° (`JLC_ROT_OFFSET` en `make_jlc_files.py`).
+- Cables de la fuente: los primeros tenían ~2 Ω (caída de 1.1 V a 0.6 A); usar
+  cables gruesos (≈ 0.3 Ω). El lazo compensa la caída, pero reduce el margen de d.
+- Térmico: los inductores llegan a ~60 °C a 6 Ω y ~80 °C a 4.8 Ω; mantener corto el
+  ensayo de −20 % (en la E4, ~6 s por repetición).
 
-**2026-11-06 routing summary.** Copper:
-- **Power copper as F.Cu zones:** VIN_input (also the Q1 heatsink), SW_node (19 mm² beyond the pads, ≥ 4.1 mm wide), VMID, VOUT_bus (bus right of the J pins), GND_hotloop, GND_outcaps.
-- **Global GND pours:** F.Cu and B.Cu at priority 0. B.Cu GND is unbroken under the power stage (100 % under the hot loop).
-- **Hot loop:** 32.5 mm², F.Cu only.
-- **Vias:** 121 GND vias (hot loop 8, output pocket 10, J1.2 5, J2.2 4, stitching ≤ 5 mm). No power vias.
-- **Tracks:** drive nets 0.5 mm, signals 0.3 mm, taps 0.25 mm. All segments at 45°; 0 bends ≤ 90° and 0 Y-junctions.
-
-**Accepted deviations:**
-- VOUT neck 1.91 mm over 3 mm above J2.2.
-- VIN→D2 0.25 × 1.6 mm neck through the Q3/Q4 gap.
-- DRV_B 10.1 mm on B.Cu with 3 vias (three enclosed F.Cu islands).
-- LSW_A and LSW_B each have a 1.6–1.8 mm B.Cu hop.
-- VOUT Kelvin tap: 108 mm, from C7.1 via the TP4 dead-end lobe, 2.75 mm from L2, under the NUCLEO.
-- VIN tap: 60 mm from TP1 along the left and bottom edges.
-- GND_F thermal gap 0.3 mm. J1.2 and J2.2 have 3 F.Cu + 4 B.Cu spokes.
-- A grounded 27.6 mm² GND_F piece by the Q1 gate.
-- Fill behaviour lives in zone settings: the Python filler ignores `.kicad_dru` zone rules. A KiCad refill reproduces the same fill.
-- 9 silk texts sit partly over tented vias. Vias are tented on both sides; order with "Via covering: Tented".
-- KiCad library silk lines are 0.12 mm (advisory).
-
-**Owner steps still open:**
-1. Board Setup → Custom Rules → "Check rule syntax" (5 rules, no errors). kicad-cli ignores a broken `.kicad_dru` silently.
-2. Edit → Edit Teardrops: PTH + SMD + vias, "Add teardrops with default values".
-3. Press B to refill.
-4. DRC with "Refill zones" and parity. Expect 0 errors, 0 unconnected, 1 warning (J1 silk edge).
-5. Save, then re-run `check_layout.py --stage S5` (TDR-1 should pass).
-
-Optional cosmetic: label TP10's net `TRIG` in the schematic.
-
-## 9. Decisions log
-
-- Two 330 µH SRR1280-331K in series (= 660 µH reference). Inductors already
-  purchased. Don't change them.
-- Microcontroller on removable female headers (reuse of the NUCLEO-L432KC).
-- Switched-load network 7.2 / 6 / 4.8 Ω for the ±20 % disturbance tests.
-- 2026-11-03: no mounting holes (board space).
-- 2026-11-03: GND is handled as the last copper pour (owner's Altium habit), not
-  in the Power netclass.
-- 2026-11-03: placement is done by script (`tools/place_revC.py`); after that,
-  edits are made manually in KiCad. **Don't re-run the script** once the owner
-  has moved parts by hand.
-- 2026-11-06: routing and silkscreen are done by script (`tools/route_revC.py`,
-  stages S1–S5; it rebuilds all copper and text from the unrouted board, using
-  paths relative to the agent's staging folder). It is a record, like
-  `place_revC.py`. **Don't re-run it** once the owner edits the routing by hand.
-  Further changes are made in KiCad.
-- 2026-11-06: power copper is KiCad zones (the equivalent of Altium polygons).
-  Edit corners in KiCad and refill with B. Zone fill settings (thermal gap
-  0.3 mm on GND_F, 0.5 mm elsewhere, 0.6 mm spokes, solid SMD power pads) live
-  in each zone's properties, not in `.kicad_dru`.
-- 2026-11-06: silkscreen convention. TPs show their signal name on F.Silk
-  (TPx reference on F.Fab). J1–J4 carry pin labels on both sides. The NUCLEO
-  has brackets plus "D1/TX"/"VIN"/"USB ->" and "CN3"/"CN4". All text is
-  ≥ 1.0 mm / 0.18 mm. Use "R", not "Ω".
-
-## 10. How to re-check quickly
+## 9. Cómo verificar rápido
 
 ```sh
-K="/c/Program Files/KiCad/10.0/bin/kicad-cli.exe"
-"$K" sch erc --severity-all -o <scratch>/erc.rpt pcb_revC/pcb_revC.kicad_sch
-"$K" sch export netlist --format kicadxml -o <scratch>/net.xml pcb_revC/pcb_revC.kicad_sch
-"$K" pcb drc --severity-all --schematic-parity -o <scratch>/drc.rpt pcb_revC/pcb_revC.kicad_pcb
-# full layout audit (copies the board to its own runs/ folder; run it from a scratch copy of tools/):
-"/c/Program Files/KiCad/10.0/bin/python.exe" -I check_layout.py pcb_revC/pcb_revC.kicad_pcb --stage S5
-```
-Expected today (2026-11-06, after the owner's teardrop pass):
-- DRC: 0 errors, 0 unconnected, 1 warning (J1 silk edge).
-- `check_layout.py`: 43 PASS, 7 WARN, 0 FAIL.
+# Hardware (salidas a una carpeta temporal)
+kicad-cli sch erc --severity-all -o /tmp/erc.rpt hardware/kicad/pcb_revC.kicad_sch           # 0 violaciones
+kicad-cli pcb drc --severity-all --schematic-parity -o /tmp/drc.rpt hardware/kicad/pcb_revC.kicad_pcb
+#   esperado: 0 sin conectar, 0 paridad, 1 aviso (silk_edge_clearance de J1)
+python3 -I hardware/herramientas/check_layout.py hardware/kicad/pcb_revC.kicad_pcb --stage S5 --no-export
+#   esperado: 0 FAIL (39 PASS, 9 WARN, 1 N/A). MAN-1 y MAN-2 quedan en WARN porque la línea base
+#   sin rutear y jlc_spacing.py no se versionaron; la revisión original dio 43 PASS / 7 WARN.
 
-After any board edit, re-run `tools/make_jlc_files.py`, with KiCad closed, so `production/` matches the board.
+# Firmware
+cd firmware && pio run                      # pio run -t upload para programar (ST-Link)
+
+# Análisis e informes
+python3 -I analisis/entrega-4/e4_main.py    # regenera resultados/e4_results.json y figuras/informe/
+cd informes/entrega-4 && latexmk -pdf entrega_4.tex
+# MATLAB: e3_main; e3_figures('report'); e3_figures('slides')  (desde analisis/entrega-3/matlab)
+```

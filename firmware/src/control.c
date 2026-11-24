@@ -1,6 +1,6 @@
 /* control.c - see control.h.
  *
- * PI exactly as in the Entrega 3 model (entrega3/matlab/e3_sim.m):
+ * PI exactly as in the Entrega 3 model (analisis/entrega-3/matlab/e3_sim.m):
  *   e = vref - vout          (vout = ADC reading referred to VOUT, volts)
  *   In = I + KiTs*e; u = Kp*e + In
  *   conditional integration: keep I when u is beyond a limit and e pushes further

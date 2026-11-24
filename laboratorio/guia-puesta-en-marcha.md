@@ -4,8 +4,9 @@ This guide covers what to do from the day the board arrives until the four
 Entrega 4 tests are done. Follow the sections in order. Section 4 (first
 power-up) is the one that protects the board; don't skip its steps.
 
-Expected values below come from the design checks in `AGENTS.md` (§8 #11, #12,
-#17, #20, #21): ngspice simulations with datasheet parameters and the inductor
+Expected values below come from the design checks recorded as issues #11, #12,
+#17, #20 and #21 of the original Rev C `AGENTS.md` (see the git history; summary in
+`AGENTS.md` §8): ngspice simulations with datasheet parameters and the inductor
 DCR at its 0.6 Ω maximum. Real readings will be close but not identical.
 
 ---
@@ -208,7 +209,7 @@ slightly higher.
 - Add **anti-windup** to the integrator. The tests need d ≤ 0.70 in steady
   state.
 
-### Controller (designed in Entrega 3, `entrega3/`)
+### Controller (designed in Entrega 3, `analisis/entrega-3/`)
 - PI run once per PWM period (20 kHz): `e = vref − vout_adc`,
   `I = I + KiTs·e` (skip this update while the output is clamped and `e`
   pushes further into the clamp), `d = clamp(Kp·e + I, 0, 0.85)`, write `d`
@@ -216,8 +217,8 @@ slightly higher.
 - **Kp = 0.030477, KiTs = 0.0045716** (Ki = 91.43 s⁻¹ × Ts = 50 µs). At
   10 kHz keep Kp and use KiTs = 0.0091432.
 - Expected in simulation: ts ≈ 4.6 ms, Mp ≈ 0 %, PM 97°, GM 11.3 dB.
-  Numbers and MATLAB scripts: `entrega3/results/e3_results.json`,
-  `entrega3/matlab/`.
+  Numbers and MATLAB scripts: `analisis/entrega-3/resultados/e3_results.json`,
+  `analisis/entrega-3/matlab/`.
 
 ### Start-up and safe state
 - At boot: PWM output off (CCR = 0), LSW_A = LSW_B = 0.
