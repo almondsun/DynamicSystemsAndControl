@@ -1,0 +1,226 @@
+\RequirePackage[T1]{fontenc}
+\documentclass[conference,letterpaper]{IEEEtran}
+\usepackage[spanish,es-nodecimaldot,es-tabla,es-noshorthands]{babel}
+\usepackage{amsmath,amssymb,booktabs,tabularx}
+\usepackage{graphicx}
+\usepackage{tikz,circuitikz}
+\usetikzlibrary{arrows.meta,positioning,babel}
+\usepackage{float}
+\usepackage[nospread]{flushend}
+\usepackage[hidelinks]{hyperref}
+\raggedbottom
+\interdisplaylinepenalty=2500
+\setlength{\emergencystretch}{1em}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\graphicspath{{../figures/report/}}
+\newcommand{\unit}[1]{\,\mathrm{#1}}
+\begin{document}
+\title{Implementación y validación experimental del controlador de un convertidor Buck}
+\author{\IEEEauthorblockN{Martín Ramírez Espinosa, Jerónimo Vargas Orozco\\Andrew Esteban Henao Becerra, Mateo Alexander Cardenas Cuesta}
+\IEEEauthorblockA{Universidad Nacional de Colombia, Sede Manizales\\\texttt{maramirezes@unal.edu.co}, \texttt{jevargaso@unal.edu.co}\\\texttt{anhenaobe@unal.edu.co}, \texttt{macardenascu@unal.edu.co}}}
+\hypersetup{pdftitle={Implementación y validación experimental del controlador de un convertidor Buck},pdfauthor={Martín Ramírez Espinosa, Jerónimo Vargas Orozco, Andrew Esteban Henao Becerra, Mateo Alexander Cardenas Cuesta}}
+\maketitle
+\begin{center}\small Entrega 4: Convertidor con controlador implementado\end{center}
+
+\begin{abstract}
+Se implementa en la placa Rev C el controlador PI digital diseñado en la entrega 3 y se verifica con los cuatro ensayos de la guía. La puesta en marcha por etapas confirma el driver (compuerta en $10.8\unit{V}$ encendida y $0.07\unit{V}$ apagada) y una eficiencia de $79$ a $85\%$. En lazo abierto se identifica la planta real: $r_L\approx0.94\unit{\Omega}$, $V_F\approx0.26\unit{V}$, capacitancia efectiva de $14$ a $17\unit{\mu F}$, $\omega_n$ de $10.2$ a $11.1\unit{krad/s}$ y $\zeta\approx0.62$. Con esa planta el lazo discreto conserva $97^\circ$ de margen de fase y $11.6\unit{dB}$ de margen de ganancia, de modo que el PI se implementa sin ajustes, con $K_p=0.0305\unit{V^{-1}}$ y $K_i=91.4\unit{V^{-1}s^{-1}}$ a $20\unit{kHz}$ en una NUCLEO-L432KC. En tres repeticiones de cada ensayo, los escalones de referencia establecen en $4.6$ a $4.9\unit{ms}$ con sobreimpulso de $0.5\%$, los cambios de carga de $\pm20\%$ producen picos de $+0.62$ y $-0.76\unit{V}$ y se recuperan en $1.5$ y $2.5\unit{ms}$, y el error en régimen es menor de $1\unit{mV}$ en el ADC del lazo. Las respuestas medidas coinciden con la simulación conmutada de la entrega 3, con un error rms de $10$ a $16\unit{mV}$ en los escalones de referencia.
+\end{abstract}
+\begin{IEEEkeywords}Convertidor Buck, control digital, PI, implementación en microcontrolador, identificación experimental, validación experimental.\end{IEEEkeywords}
+
+\section{Introducción}
+La entrega 4 del proyecto \cite{guide} pide implementar el controlador diseñado en la entrega 3, ajustar sus parámetros si hace falta y verificar su desempeño en las mismas condiciones: cambios de referencia de $6$ a $7\unit{V}$ y de $6$ a $5\unit{V}$, y aumento y reducción de la carga en $20\%$ con la referencia en $6\unit{V}$.
+
+En la entrega 3 \cite{e3} se diseñó por respuesta en frecuencia un PI digital para la placa Rev C, con la planta descrita por la entrada $d$, las pérdidas del inductor y del diodo, el filtro del sensor y el retardo de $1.5$ periodos. La validación fue solo de simulación, con parámetros de hoja de datos. Este informe cierra ese ciclo sobre el hardware. La Sección~\ref{sec:montaje} describe el montaje y la~\ref{sec:arranque} la puesta en marcha. La~\ref{sec:ident} identifica la planta real y verifica que el diseño sigue siendo válido. La~\ref{sec:impl} describe la implementación en el microcontrolador, y las secciones~\ref{sec:metodo} a~\ref{sec:disc} presentan los ensayos, los resultados y su discusión.
+
+\section{Montaje experimental}\label{sec:montaje}
+La placa Rev C, cuya etapa de potencia y sensor se muestran en la Fig.~1 de la entrega 3 \cite{e3}, tiene el MOSFET de canal N AOD4184A \cite{aod} excitado por un driver bootstrap discreto no inversor, dos inductores SRR1280-331K \cite{srr} en serie, dos cerámicos de $10\unit{\mu F}$ a la salida y el diodo SS34 \cite{ss34}. La salida y la entrada se miden con divisores $30/10\unit{k\Omega}$ y filtros de $4.7\unit{nF}$ hacia el ADC de la NUCLEO-L432KC \cite{um1956}, que también genera el PWM. La carga base de $7.2\unit{\Omega}$ se conmuta en paralelo con $36$ y $24\unit{\Omega}$ mediante dos MOSFET controlados por el microcontrolador, lo que da $6\unit{\Omega}$ nominal y $7.2$ y $4.8\unit{\Omega}$ para los ensayos de carga. Un pin del microcontrolador (TRIG) cambia de nivel en el mismo instante de cada evento y sirve de disparo para el osciloscopio. La Tabla~\ref{tab:montaje} resume los equipos.
+\begin{table}[H]\caption{Equipos y condiciones de medida}\label{tab:montaje}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{lL}\toprule
+Elemento & Uso\\\midrule
+Fuente de laboratorio & $12.0\unit{V}$, límite de $1.5\unit{A}$ (de $100\unit{mA}$ en la puesta en marcha)\\
+Analog Discovery 3 \cite{ad3} & Canal 1: TRIG (disparo); canal 2: $v_o$ en el punto de prueba; también $v_{GS}$ y el bootstrap en modo diferencial\\
+Multímetro & $v_o$ en la bornera de carga, referencia de calibración\\
+NUCLEO-L432KC & PWM, ADC, PI y registro de $v_m$ y $d$ en cada periodo\\
+Cargas & $2\times3.6\unit{\Omega}$ de $10\unit{W}$, $36$ y $24\unit{\Omega}$, al aire\\\bottomrule\end{tabularx}\end{table}
+
+Cada evento se registra por dos vías independientes: el osciloscopio, disparado por TRIG, y un búfer del firmware que guarda la referencia, la lectura del ADC y el ciclo de trabajo de cada periodo, $10\unit{ms}$ antes y $90\unit{ms}$ después del evento. Las lecturas del osciloscopio se promedian sobre un periodo de PWM para eliminar el rizado, como en la entrega 2 \cite{e2}.
+
+\section{Puesta en marcha}\label{sec:arranque}
+La placa se energizó por etapas, con un firmware de lazo abierto que arranca con el PWM apagado, limita $d\le0.85$ y sube el ciclo de trabajo en rampa de $1\%$ cada $20\unit{ms}$. La Tabla~\ref{tab:arranque} resume cada etapa. Sin el microcontrolador, la corriente de la fuente, la tensión de bootstrap y el estado apagado de $Q_1$ quedaron dentro del rango esperado. Con la NUCLEO conectada y el PWM apagado la placa consume $11\unit{mA}$, casi todos por la resistencia de polarización del driver. Con $d=0.10$ la compuerta conmuta limpiamente (Fig.~\ref{fig:vgs}): $10.8\unit{V}$ encendida y $0.07\unit{V}$ apagada, sin las reconducciones del MOSFET de canal P que invalidaron la entrega 2 \cite{e2}. El ciclo de trabajo en la compuerta es $0.105$: los retardos del driver alargan el encendido unos $0.25\unit{\mu s}$, como predijo la simulación del driver. El condensador de bootstrap se mantiene por encima de $11.5\unit{V}$ en todos los puntos de operación.
+
+\begin{table}[H]\caption{Puesta en marcha por etapas}\label{tab:arranque}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{lLY}\toprule
+Etapa & Condición & Medido\\\midrule
+A & Sin NUCLEO, $12\unit{V}$ & Corriente, $v_{BOOT}$ y $Q_1$ apagado dentro del rango esperado\\
+B & NUCLEO, PWM apagado & $11\unit{mA}$; PWM en $0\unit{V}$\\
+C & $d=0.10$, $6\unit{\Omega}$ & $v_{GS}$: $10.8$ / $0.07\unit{V}$; $25\unit{mA}$\\
+D & $d=0.60$, $6\unit{\Omega}$ & $v_o=6.16\unit{V}$; $0.62\unit{A}$; $\eta\approx85\%$\\
+E & Cinco puntos (Tabla~\ref{tab:dc}) & $\eta=79$ a $85\%$\\\bottomrule\end{tabularx}\end{table}
+
+\begin{figure}[H]\centering\includegraphics[width=\columnwidth]{fig_vgs}\caption{Arriba, tensión compuerta-fuente de $Q_1$ con $d=0.10$; abajo, tensión del condensador de bootstrap con $d=0.60$. Ambas medidas en modo diferencial.}\label{fig:vgs}\end{figure}
+
+En la etapa D apareció una caída de $1.1\unit{V}$ entre la fuente y la placa a $0.6\unit{A}$, unos $2\unit{\Omega}$ en los cables de prueba. Con cables de mayor calibre la caída bajó a $0.2\unit{V}$; esa diferencia se nota en la tabla siguiente como $V_{in}$ entre $11.8$ y $11.9\unit{V}$ en la placa.
+
+\section{Identificación de la planta}\label{sec:ident}
+\subsection{Ganancia DC}
+La Tabla~\ref{tab:dc} muestra la tensión de salida en lazo abierto en cinco puntos de operación. Todos quedan entre $3.8$ y $5.1\%$ por encima de la simulación de la entrega 3, que usó la resistencia máxima de los inductores y $V_F=0.4\unit{V}$. Ajustando el punto de equilibrio
+\begin{equation}
+V_o=\frac{d_{ef}\,(V_{in}+V_F)-V_F}{1+r_L/R},\qquad d_{ef}=d+0.0053,\label{eq:dc}
+\end{equation}
+por mínimos cuadrados a los cinco puntos, con el alargamiento del encendido medido en la compuerta, se obtiene $r_L=0.94\unit{\Omega}$ y $V_F=0.26\unit{V}$, con un error máximo de $11\unit{mV}$. El valor de $r_L$ es robusto: varía entre $0.88$ y $0.94\unit{\Omega}$ según cómo se trate el alargamiento del encendido. $V_F$ es un valor efectivo que absorbe ese alargamiento.
+
+\begin{table}[H]\caption{Lazo abierto: salida medida, simulada en la entrega 3 y con el modelo ajustado \eqref{eq:dc}}\label{tab:dc}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{ccYYYc}\toprule
+$R$ ($\Omega$) & $d$ & Medido (V) & Entrega 3 (V) & Ajuste (V) & $\eta$\\\midrule
+$6$ & $0.51$ & $5.234$ & $4.98$ & $5.230$ & $81\%$\\
+$6$ & $0.60$ & $6.156$ & $5.89$ & $6.153$ & $85\%$\\
+$6$ & $0.70$ & $7.174$ & $6.91$ & $7.163$ & $83\%$\\
+$7.2$ & $0.58$ & $6.093$ & $5.86$ & $6.100$ & $84\%$\\
+$4.8$ & $0.65$ & $6.405$ & $6.13$ & $6.416$ & $79\%$\\\bottomrule\end{tabularx}\end{table}
+
+La eficiencia se calcula con la corriente que indica la fuente, con resolución de $10\unit{mA}$, y con $R$ nominal, de modo que tiene una incertidumbre de unos $\pm3\%$. Las pérdidas en $4.8\unit{\Omega}$, $2.2\unit{W}$, se explican casi por completo con $r_LI_o^2=0.94\times1.33^2=1.7\unit{W}$ en los inductores.
+
+\subsection{Respuesta dinámica}
+Como en la entrega 2 \cite{e2}, se aplicó un escalón de $d$ de $0.60$ a $0.70$ y de vuelta, con $6\unit{\Omega}$, y se ajustó la respuesta de segundo orden a la media por periodo de $v_o$ (Fig.~\ref{fig:ident}). El ajuste tiene un error de $1.5\unit{mV}$ rms. La ganancia es $10.25\unit{V}$ por unidad de $d$ y $\omega_n$ y $\zeta$ son mayores que en el modelo de diseño (Tabla~\ref{tab:planta}). Con $L=660\unit{\mu H}$ y la ecuación de $\omega_n$ de la entrega 3, la capacitancia efectiva es de $14.3$ a $16.7\unit{\mu F}$: la polarización DC de los cerámicos reduce la capacitancia nominal de $20\unit{\mu F}$, como se había previsto. La diferencia entre subida y bajada se debe a que los dos escalones terminan en puntos de operación distintos.
+
+\begin{figure*}[t]\centering\includegraphics[width=\textwidth]{fig_ident}\caption{Escalones de ciclo de trabajo en lazo abierto con $6\unit{\Omega}$: medición, ajuste de segundo orden y predicción del modelo de la entrega 3.}\label{fig:ident}\end{figure*}
+
+\begin{table}[H]\caption{Modelo de diseño (entrega 3) y planta identificada}\label{tab:planta}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{LYY}\toprule
+Magnitud & Entrega 3 & Identificada\\\midrule
+$r_L$ & $1.2\unit{\Omega}$ & $0.94\unit{\Omega}$\\
+$V_F$ & $0.40\unit{V}$ & $0.26\unit{V}$ (efectivo)\\
+$C$ efectiva & $20\unit{\mu F}$ & $14.3$ a $16.7\unit{\mu F}$\\
+Ganancia DC (V por unidad de $d$) & $10.33$ & $10.25$\\
+$\omega_n$ (rad/s) & $9\,535$ & $10\,233$ a $11\,087$\\
+$\zeta$ & $0.532$ & $0.61$ a $0.63$\\\bottomrule\end{tabularx}\end{table}
+
+\subsection{Consecuencias para el diseño}\label{sec:margenes}
+El lazo discreto exacto de la entrega 3 se evaluó de nuevo con la planta identificada: $V_{in}=11.85\unit{V}$, $V_F=0.26\unit{V}$, $r_L=0.94\unit{\Omega}$, $C=15\unit{\mu F}$ y el periodo medido de $50.4\unit{\mu s}$. La implementación en Python reproduce los márgenes nominales de la entrega 3. La Tabla~\ref{tab:margenes} muestra que los márgenes casi no cambian: la planta real tiene más amortiguamiento, y $\omega_c=1000\unit{rad/s}$ queda una década por debajo de su resonancia. Por eso el PI se implementó sin ajustar sus parámetros.
+
+\begin{table}[H]\caption{Márgenes del lazo discreto con el PI de la entrega 3}\label{tab:margenes}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{LYYY}\toprule
+Planta & $\omega_c$ (rad/s) & MF & MG\\\midrule
+Entrega 3, nominal & $1\,008$ & $97.0^\circ$ & $11.3\unit{dB}$\\
+Identificada ($C=15\unit{\mu F}$) & $1\,021$ & $97.3^\circ$ & $11.6\unit{dB}$\\
+$C=14\unit{\mu F}$, $L=594\unit{\mu H}$ & $1\,021$ & $97.9^\circ$ & $11.3\unit{dB}$\\
+$C=17\unit{\mu F}$, $L=726\unit{\mu H}$ & $1\,022$ & $96.7^\circ$ & $11.8\unit{dB}$\\\bottomrule\end{tabularx}\end{table}
+
+\section{Implementación del controlador}\label{sec:impl}
+El firmware se escribió en C sobre la capa HAL de STM32 \cite{um1884}. El temporizador TIM1 genera el PWM con $\mathrm{ARR}=3999$ a $80\unit{MHz}$. El reloj interno del microcontrolador (MSI) tiene una tolerancia de algo menos de $1\%$, y la frecuencia medida es $19.84\unit{kHz}$. El evento de actualización de TIM1, al inicio de cada periodo, dispara por hardware la conversión del ADC de $v_m$ y de $V_{in}$. Al terminar, una interrupción ejecuta la ley de control de la entrega 3,
+\begin{equation}
+\begin{aligned}
+e[k]&=v_{ref}[k]-v_m[k],\qquad I[k]=I[k-1]+K_iT_s\,e[k],\\
+d[k+1]&=\mathrm{sat}_{[0,\,0.85]}\big(K_p\,e[k]+I[k]\big),
+\end{aligned}\label{eq:ley}
+\end{equation}
+con $K_p=0.030477$ y $K_iT_s=0.0045716$ y anti-windup condicional, y escribe $d$ en el registro de comparación con precarga, que se aplica en el periodo siguiente. Así el lazo tiene el retardo de $1.5\,T_s$ supuesto en el diseño. La interrupción usa la unidad de punto flotante; por el número de instrucciones del código compilado, su duración se estima en menos de $10\unit{\mu s}$ de los $50.4$ disponibles. Como $K_iT_s$ se aplica por muestra, el $K_i$ efectivo con el periodo real es $90.7\unit{V^{-1}s^{-1}}$, $0.8\%$ menos que el de diseño; el efecto es despreciable.
+
+\begin{figure}[H]\centering\includegraphics[width=\columnwidth]{fig_arranque}\caption{Arranque en lazo cerrado con $6\unit{\Omega}$: la referencia sube a $0.05\unit{V/ms}$ y la salida la sigue con un retraso constante. El registro del firmware cubre $90\unit{ms}$ después del arranque.}\label{fig:arranque}\end{figure}
+
+Además de la ley de control, el firmware incluye:
+\begin{itemize}
+\item \emph{Arranque suave sin salto:} al activar el lazo, la integral toma el ciclo de trabajo vigente y la referencia sube en rampa de $0.05\unit{V/ms}$ desde la salida medida. En la Fig.~\ref{fig:arranque} la salida sigue la rampa con un retraso de $52\unit{mV}$, que coincide con el error ante rampa de un lazo tipo 1, $\dot v_{ref}/K_v$ con $K_v=K_iK_0\approx950\unit{s^{-1}}$. Esto confirma que la ganancia integral del lazo es la de diseño.
+\item \emph{Protecciones en la interrupción:} el PWM se apaga si $v_o>8.5\unit{V}$, $V_{in}>13\unit{V}$ o $V_{in}<9\unit{V}$ durante $3\unit{ms}$. Un perro guardián reinicia el microcontrolador si el programa se bloquea. Ante cualquier reinicio el driver deja $Q_1$ apagado por hardware.
+\item \emph{Calibración:} el multímetro en la bornera de carga indicó $5.991\unit{V}$ cuando el lazo leía $6.000\unit{V}$. La ganancia de $v_m$ se corrigió en $-0.144\%$ y el multímetro pasó a indicar $6.000\unit{V}$.
+\item \emph{Consola serie:} comandos para cambiar la referencia, conmutar las cargas y descargar el registro de cada evento.
+\end{itemize}
+
+\section{Método de ensayo}\label{sec:metodo}
+Cada ensayo parte del lazo cerrado en $6\unit{V}$ con $6\unit{\Omega}$, estable al menos $1.5\unit{s}$. El evento es un escalón de referencia a $7$ o $5\unit{V}$, o la desconexión o conexión de una carga para pasar a $7.2$ o $4.8\unit{\Omega}$. Al terminar, el sistema vuelve al punto nominal. Cada ensayo se repitió tres veces de forma automática; el de $4.8\unit{\Omega}$ se mantuvo unos $6\unit{s}$ por repetición, porque en ese punto los inductores trabajan a su corriente nominal.
+
+Las métricas se calculan con las mismas definiciones de la entrega 3 \cite{e3}, sobre la media por periodo de $v_o$:
+\begin{itemize}
+\item \emph{Escalones de referencia:} $t_r$ entre $10$ y $90\%$; $M_p$ y $t_s$ con banda de $\pm2\%$ del cambio.
+\item \emph{Cambios de carga:} desviación máxima, tiempo para volver a $\pm2\%$ de la referencia y tiempo para quedar dentro de $\pm20\unit{mV}$.
+\item \emph{Error en régimen:} media de los últimos $2\unit{ms}$ menos la referencia.
+\end{itemize}
+Las curvas del osciloscopio se escalan para que la media antes del evento coincida con los $6.000\unit{V}$ verificados con el multímetro (corrección de $0.3$ a $0.45\%$). Las métricas también se calculan con la lectura del ADC del lazo, que es la variable que el controlador regula.
+
+\section{Resultados}\label{sec:res}
+\subsection{Cambios de referencia}
+La Fig.~\ref{fig:ref} y la Tabla~\ref{tab:ref} muestran los escalones de referencia. Las tres repeticiones se superponen y siguen la simulación conmutada de la entrega 3: la salida sube por la acción proporcional, con el pequeño escalón de la resonancia hacia $0.5\unit{ms}$, y la integral la lleva al valor final en $4.6$ a $4.9\unit{ms}$. El sobreimpulso es de $0.5\%$, unos $5\unit{mV}$. El ADC del lazo termina a menos de $1\unit{mV}$ de la referencia; el osciloscopio indica hasta $6\unit{mV}$, del orden de su propia exactitud tras la corrección de ganancia.
+
+\begin{figure*}[t]\centering\includegraphics[width=\textwidth]{fig_ref}\caption{Escalones de referencia $6\to7\unit{V}$ y $6\to5\unit{V}$: tres repeticiones medidas (osciloscopio, media por periodo) y simulación conmutada de la entrega 3. Abajo, el ciclo de trabajo registrado por el firmware.}\label{fig:ref}\end{figure*}
+
+\begin{table}[H]\caption{Escalones de referencia: media de tres repeticiones (rango entre corchetes)}\label{tab:ref}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{LYYY}\toprule
+Magnitud & Simulado (E3) & Medido & ADC del lazo\\\midrule
+\multicolumn{4}{l}{$6\to7\unit{V}$}\\
+$t_r$ (ms) & $2.40$ & $2.62$ [$2.59$, $2.65$] & $2.51$\\
+$M_p$ (\%) & $0.13$ & $0.48$ [$0.46$, $0.51$] & $0.42$\\
+$t_s$ (ms) & $4.53$ & $4.89$ [$4.75$, $5.01$] & $4.67$\\
+Error final (mV) & $-6.5$ & $-4.7$ & $-0.2$\\
+$d$ final & $0.706$ & $0.694$ & --\\\midrule
+\multicolumn{4}{l}{$6\to5\unit{V}$}\\
+$t_r$ (ms) & $2.42$ & $2.49$ [$2.47$, $2.51$] & $2.47$\\
+$M_p$ (\%) & $0.08$ & $0.53$ [$0.52$, $0.55$] & $0.41$\\
+$t_s$ (ms) & $4.58$ & $4.55$ [$4.47$, $4.67$] & $4.60$\\
+Error final (mV) & $-8.5$ & $+5.3$ & $+0.1$\\
+$d$ final & $0.510$ & $0.498$ & --\\\bottomrule\end{tabularx}\end{table}
+
+\subsection{Cambios de carga}
+La Fig.~\ref{fig:carga} y la Tabla~\ref{tab:carga} muestran los cambios de carga. Igual que en la simulación, el pico ocurre unos $0.11\unit{ms}$ después del evento ($0.125\unit{ms}$ en la simulación), antes de que el lazo actúe, y lo fija el filtro LC. Los picos medidos son $10\%$ y $5\%$ mayores que los simulados. La salida vuelve a la banda de $\pm2\%$ en menos de $0.5\unit{ms}$, el lazo elimina el error de régimen y el ciclo de trabajo pasa a un nuevo valor estable: $0.581$ y $0.620$.
+
+\begin{figure*}[t]\centering\includegraphics[width=\textwidth]{fig_carga}\caption{Cambios de carga de $+20\%$ y $-20\%$ con la referencia en $6\unit{V}$: tres repeticiones medidas y simulación conmutada de la entrega 3. La franja es la banda de $\pm2\%$.}\label{fig:carga}\end{figure*}
+
+\begin{table}[H]\caption{Cambios de carga: media de tres repeticiones (rango entre corchetes)}\label{tab:carga}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{LYY}\toprule
+Magnitud & Simulado (E3) & Medido\\\midrule
+\multicolumn{3}{l}{$6\to7.2\unit{\Omega}$ ($+20\%$)}\\
+Desviación máxima & $+0.561\unit{V}$ & $+0.619\unit{V}$ [$0.614$, $0.621$]\\
+Tiempo a $\pm2\%$ & $0.88\unit{ms}$ & $0.47\unit{ms}$\\
+Tiempo a $\pm20\unit{mV}$ & $1.68\unit{ms}$ & $1.47\unit{ms}$ [$1.46$, $1.50$]\\
+Error final & $-8.4\unit{mV}$ & $-0.3\unit{mV}$\\
+$d$ (mín. / máx.) & $0.584$ / $0.608$ & $0.571$ / $0.590$\\\midrule
+\multicolumn{3}{l}{$6\to4.8\unit{\Omega}$ ($-20\%$)}\\
+Desviación máxima & $-0.725\unit{V}$ & $-0.759\unit{V}$ [$-0.760$, $-0.757$]\\
+Tiempo a $\pm2\%$ & $0.33\unit{ms}$ & $0.31\unit{ms}$\\
+Tiempo a $\pm20\unit{mV}$ & $2.98\unit{ms}$ & $2.54\unit{ms}$ [$2.43$, $2.68$]\\
+Error final & $-8.0\unit{mV}$ & $-1.5\unit{mV}$\\
+$d$ (mín. / máx.) & $0.608$ / $0.638$ & $0.610$ / $0.627$\\\bottomrule\end{tabularx}\end{table}
+
+\subsection{Error frente a la simulación}
+Para cuantificar la coincidencia de las curvas completas, la media por periodo medida se interpoló en la malla de periodos de la simulación conmutada y se calculó la diferencia desde el evento hasta $10\unit{ms}$ (referencia) o $6\unit{ms}$ (carga). La Tabla~\ref{tab:error} resume el error rms y el máximo. Antes del evento ambas curvas difieren unos $9\unit{mV}$: es el sesgo de régimen de la simulación, causado por el muestreo del rizado en el ADC, ya discutido en la entrega 3 \cite{e3}.
+
+\begin{table}[H]\caption{Error entre la medición y la simulación conmutada: media de tres repeticiones (rango entre corchetes)}\label{tab:error}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{LYY}\toprule
+Ensayo & Error rms (mV) & Error máximo (mV)\\\midrule
+$6\to7\unit{V}$ & $10.2$ [$9.6$, $10.7$] & $50$ [$47$, $53$]\\
+$6\to5\unit{V}$ & $15.5$ [$15.0$, $15.9$] & $59$ [$58$, $60$]\\
+Carga $+20\%$ & $42.9$ [$41.9$, $43.6$] & $178$ [$175$, $181$]\\
+Carga $-20\%$ & $33.4$ [$33.2$, $33.6$] & $160$ [$160$, $161$]\\\bottomrule\end{tabularx}\end{table}
+
+En los escalones de referencia el error rms es de $1.0$ a $1.6\%$ del cambio de $1\unit{V}$, y el máximo aparece en el pequeño escalón de la resonancia, hacia $0.5\unit{ms}$. En los cambios de carga el error es mayor, pero no viene de la amplitud: los picos difieren solo $5$ a $10\%$. La oscilación medida se adelanta a la simulada porque su $\omega_n$ es mayor ($10.2$ a $11.1\unit{krad/s}$ frente a $9.5\unit{krad/s}$), y sobre pendientes de unos $10\unit{V/ms}$ un pequeño desfase en el tiempo produce diferencias puntuales grandes. Pasada la oscilación, la recuperación y el régimen coinciden.
+
+\subsection{Comparación con las especificaciones}
+La Tabla~\ref{tab:resumen} compara las mediciones con las especificaciones de la entrega 3. Todas se cumplen. El tiempo de establecimiento del escalón de $6$ a $7\unit{V}$ tiene una media de $4.89\unit{ms}$, y una de las tres repeticiones dio $5.01\unit{ms}$, en el límite. En esa zona la salida se acerca a la banda con pendiente muy pequeña, así que unos pocos milivoltios de ruido mueven el instante de cruce; con la lectura del ADC del lazo el valor es $4.67\unit{ms}$. El rizado de salida en régimen es de $0.12$ a $0.13\unit{V}$ pico a pico, más que los $0.07\unit{V}$ previstos con $20\unit{\mu F}$, lo que es coherente con la capacitancia efectiva identificada.
+
+\begin{table}[H]\caption{Especificaciones frente a resultados medidos}\label{tab:resumen}\centering\footnotesize\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\columnwidth}{LcYc}\toprule
+Especificación & Meta & Medido & Cumple\\\midrule
+Error estacionario & $0$ & $<1\unit{mV}$ (ADC), $\le6\unit{mV}$ & Sí\\
+$M_p$ & $\le5\%$ & $0.55\%$ (máx.) & Sí\\
+$t_s$ & $\le5\unit{ms}$ & $4.55$ y $4.89\unit{ms}$ (medias) & Sí\\
+Margen de fase$^{*}$ & $\ge60^\circ$ & $97.3^\circ$ & Sí\\
+Margen de ganancia$^{*}$ & $\ge6\unit{dB}$ & $11.6\unit{dB}$ & Sí\\
+$d$ máximo & $\le0.85$ & $0.694$ & Sí\\
+Recuperación de carga & $\le5\unit{ms}$ & $1.47$ y $2.54\unit{ms}$ & Sí\\\bottomrule\end{tabularx}
+\\[2pt]\footnotesize $^{*}$Calculados con la planta identificada (Sección~\ref{sec:margenes}).\end{table}
+
+\section{Discusión}\label{sec:disc}
+Las diferencias con la simulación se explican con la planta identificada:
+\begin{itemize}
+\item \emph{Capacitancia menor:} con $C\approx15\unit{\mu F}$ en lugar de $20\unit{\mu F}$, la resonancia es más rápida y la impedancia característica $\sqrt{L/C}$ es mayor. Por eso los picos ante la carga son algo más altos y la salida vuelve antes a la banda. Por la misma razón, el pequeño sobreimpulso de los escalones de referencia es de $0.5\%$ en lugar de $0.1\%$; sigue siendo diez veces menor que la especificación.
+\item \emph{Pérdidas menores:} con $r_L$ y $V_F$ reales menores que los supuestos, el ciclo de trabajo en régimen es unos $0.01$ menor que en la simulación. El integrador compensa esa diferencia sin error residual, que es justo la función de la acción integral ante incertidumbre del modelo.
+\item \emph{Frecuencia de conmutación:} el $0.8\%$ de error del reloj interno no tiene efecto apreciable. Si se quisiera eliminar, el reloj puede sincronizarse con el cristal de $32.768\unit{kHz}$ de la NUCLEO.
+\end{itemize}
+La repetibilidad es alta: entre repeticiones, los picos de carga difieren menos de $7\unit{mV}$ y los tiempos menos de $0.3\unit{ms}$. Una limitación del ensayo es la medida de $V_{in}$: depende de la resistencia de los cables de la fuente, que en la primera sesión fue de $2\unit{\Omega}$. El lazo la compensa, pero una caída grande en la entrada reduce el margen de $d$ hasta su límite de $0.85$.
+
+\section{Conclusiones}
+Se implementó en la placa Rev C el PI digital diseñado en la entrega 3, sin modificar sus parámetros. La puesta en marcha por etapas confirmó el funcionamiento del driver y del bootstrap, y la identificación en lazo abierto mostró una planta con menos pérdidas y menor capacitancia efectiva que el modelo de diseño. Aun así, el lazo conserva sus márgenes, porque la frecuencia de cruce está una década por debajo de la resonancia. En los cuatro ensayos de la guía las respuestas medidas reproducen la simulación de la entrega 3: escalones de referencia que establecen en menos de $5\unit{ms}$ con sobreimpulso de $0.5\%$, perturbaciones de carga corregidas en menos de $3\unit{ms}$ y error en régimen nulo dentro de la resolución del ADC. El modelado, el diseño y la implementación del proyecto quedan validados experimentalmente.
+
+\begin{thebibliography}{10}
+\bibitem{guide} J. D. Bastidas Rodríguez, ``Proyecto de curso: convertidor Buck con control de tensión de salida,'' Universidad Nacional de Colombia, Sede Manizales, 2025.
+\bibitem{e2} M. Ramírez Espinosa, J. Vargas Orozco, A. E. Henao Becerra y M. A. Cardenas Cuesta, ``Implementación en lazo abierto y validación experimental de un convertidor Buck,'' Entrega 2, Sistemas Dinámicos y Control, 2026.
+\bibitem{e3} M. Ramírez Espinosa, J. Vargas Orozco, A. E. Henao Becerra y M. A. Cardenas Cuesta, ``Diseño del compensador y validación en simulación de un convertidor Buck,'' Entrega 3, Sistemas Dinámicos y Control, 2026.
+\bibitem{srr} Bourns, ``SRR1280 series shielded SMD power inductors,'' hoja de datos.
+\bibitem{aod} Alpha and Omega Semiconductor, ``AOD4184A 40V N-channel MOSFET,'' hoja de datos.
+\bibitem{ss34} MDD, ``SS34 surface mount Schottky barrier rectifier,'' hoja de datos.
+\bibitem{um1956} STMicroelectronics, ``UM1956: STM32 Nucleo-32 boards,'' manual de usuario.
+\bibitem{um1884} STMicroelectronics, ``UM1884: Description of STM32L4/L4+ HAL and low-layer drivers,'' manual de usuario.
+\bibitem{ad3} Digilent, ``Analog Discovery 3 reference manual,'' manual de referencia.
+\end{thebibliography}
+\end{document}
