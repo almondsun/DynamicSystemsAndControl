@@ -1,0 +1,42 @@
+# PlatformIO / herramientas de compilación
+.pio/
+.cache/
+compile_commands.json
+DebugErc.log
+
+# KiCad: estado local del editor, historial y respaldos
+*.kicad_prl
+*.lck
+~*.lck
+.history/
+*-backups/
+fp-info-cache
+_autosave-*
+*.bak
+
+# Auditoría de layout (hardware/herramientas/check_layout.py escribe aquí)
+hardware/herramientas/runs/
+
+# LaTeX intermedios
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+
+# MATLAB / Python
+*.asv
+*.autosave
+slprj/
+*.slxc
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Sistema y credenciales
+.DS_Store
+.env
+.env.*

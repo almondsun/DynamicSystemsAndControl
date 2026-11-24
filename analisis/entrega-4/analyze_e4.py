@@ -1,6 +1,6 @@
 """Entrega 4 metrics and figures: bench captures vs the Entrega 3 switched simulation.
 
-Metric definitions are a port of entrega3/matlab/e3_metrics.m (per-period average of vo):
+Metric definitions are a port of analisis/entrega-3/matlab/e3_metrics.m (per-period average of vo):
   reference steps: tr 10-90 %, Mp (% of the change), ts (band +-2 % of the change), ess
   load steps:      dVmax (peak deviation), trec (back inside +-2 % of Vref), ts20 (+-20 mV), ess
 AD3 traces are averaged over one PWM period and gain-corrected so the pre-event mean is the

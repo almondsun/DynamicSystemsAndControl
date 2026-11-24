@@ -1,11 +1,11 @@
 """Entrega 4: numbers and report figures from the Rev C bench data.
 
-Reads the captures in firmware/bringup/captures/ (AD3 + firmware), the Entrega 4 metrics
-(metrics_entrega4.csv, from firmware/bringup/tools/analyze_e4.py) and the Entrega 3
-simulations (entrega3/results/e3_sims.mat). Writes entrega4/results/e4_results.json and the
-vector figures in entrega4/figures/report/ used by report/entrega_4.tex.
+Reads the captures in laboratorio/datos/ (AD3 + firmware), the Entrega 4 metrics
+(metrics_entrega4.csv, from analisis/entrega-4/analyze_e4.py) and the Entrega 3
+simulations (analisis/entrega-3/resultados/e3_sims.mat). Writes analisis/entrega-4/resultados/e4_results.json and the
+vector figures in analisis/entrega-4/figuras/informe/ used by informes/entrega-4/entrega_4.tex.
 
-Also re-evaluates the exact sampled-data loop of entrega3/matlab/e3_loop.m ('disc') with the
+Also re-evaluates the exact sampled-data loop of analisis/entrega-3/matlab/e3_loop.m ('disc') with the
 plant identified on the board, to check that the Entrega 3 PI needs no retuning.
 
 usage: python -I e4_main.py        (paths are relative to this file)
@@ -24,11 +24,12 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
-REVC = HERE.parents[1]
-CAP = REVC / "firmware" / "bringup" / "captures"
-OUT_FIG = REVC / "entrega4" / "figures" / "report"
-OUT_RES = REVC / "entrega4" / "results"
-sys.path.insert(0, str(REVC / "firmware" / "bringup" / "tools"))
+ROOT = HERE.parents[1]  # raiz del repositorio
+CAP = ROOT / "laboratorio" / "datos"
+E3_SIMS = ROOT / "analisis" / "entrega-3" / "resultados" / "e3_sims.mat"
+OUT_FIG = HERE / "figuras" / "informe"
+OUT_RES = HERE / "resultados"
+sys.path.insert(0, str(HERE))  # analyze_e4.py vive junto a este archivo (python -I no lo agrega)
 import analyze_e4 as a4  # noqa: E402  (metrics port of e3_metrics.m, loaders)
 
 KP, KI = 0.030477, 91.43
@@ -170,7 +171,7 @@ def fig_arranque():
 
 
 def fig_tests(labels, name, xlim):
-    sim = a4.load_sim(REVC / "entrega3" / "results" / "e3_sims.mat")
+    sim = a4.load_sim(E3_SIMS)
     fig = plt.figure(figsize=WIDE_IN)
     axes = fig.subplots(2, 2, sharex="col", gridspec_kw={"height_ratios": [2, 1]})
     for col, label in enumerate(labels):
@@ -219,7 +220,7 @@ def trace_errors():
     """Measured (AD3, period average) minus the E3 switched simulation, on the simulation's
     period grid from the event to the end of the figure window. 'bias-free' removes the
     pre-event difference (-2..0 ms), i.e. the simulation's steady-state ADC bias."""
-    sim = a4.load_sim(REVC / "entrega3" / "results" / "e3_sims.mat")
+    sim = a4.load_sim(E3_SIMS)
     out = {}
     for label, win_ms in ERROR_WINDOWS_MS.items():
         ts_, vs_, _ds = sim[a4.TESTS[label][0]]

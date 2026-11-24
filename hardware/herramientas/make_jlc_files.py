@@ -1,9 +1,10 @@
 """Generate the JLCPCB production files for Buck Rev C.
 
 Run with KiCad's Python (KiCad must be closed so the board on disk is current):
-    "C:\\Program Files\\KiCad\\10.0\\bin\\python.exe" -I tools/make_jlc_files.py
+    python3 -I hardware/herramientas/make_jlc_files.py          (Linux, pcbnew from the KiCad package)
+    "C:\\Program Files\\KiCad\\10.0\\bin\\python.exe" -I hardware/herramientas/make_jlc_files.py   (Windows)
 
-Writes to project/pcb/revC/production/:
+Writes to hardware/produccion/:
     gerbers/                       Gerber + Excellon drill files (JLC's KiCad settings)
     pcb_revC_gerbers.zip           the zip to upload as "Gerber file"
     pcb_revC_BOM_JLC.csv           BOM for PCB Assembly (Comment, Designator, Footprint, LCSC Part #)
@@ -18,11 +19,11 @@ from collections import OrderedDict
 import pcbnew
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-REVC = os.path.dirname(HERE)
-BOARD = os.path.join(REVC, "pcb_revC", "pcb_revC.kicad_pcb")
-OUT = os.path.join(REVC, "production")
+HW = os.path.dirname(HERE)  # hardware/
+BOARD = os.path.join(HW, "kicad", "pcb_revC.kicad_pcb")
+OUT = os.path.join(HW, "produccion")
 GERB = os.path.join(OUT, "gerbers")
-CLI = r"C:\Program Files\KiCad\10.0\bin\kicad-cli.exe"
+CLI = shutil.which("kicad-cli") or r"C:\Program Files\KiCad\10.0\bin\kicad-cli.exe"
 # JLC's part models are not always oriented like KiCad's footprints. Rotation added to
 # KiCad's value in the CPL, keyed by footprint-name prefix. SOT-23: JLC's 3D preview on
 # 2026-11-06 showed the pin-1 dots of Q2-Q7 exactly 180 deg from KiCad's pin 1 (Q1 TO-252,

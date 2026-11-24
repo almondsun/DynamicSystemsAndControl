@@ -1,13 +1,13 @@
 """check_layout.py -- independent routing audit for the Buck 12 V -> 6 V Rev C board (KiCad 10).
 
-usage:  "C:\\Program Files\\KiCad\\10.0\\bin\\python.exe" -I check_layout.py <board.kicad_pcb>
+usage:  python3 -I check_layout.py <board.kicad_pcb>   (KiCad's Python on Windows)
             [--stage S0..S5] [--baseline <pcb>] [--sch <kicad_sch>] [--render] [--no-export]
 
 Read-only on the board under test: the board, its .kicad_pro/.kicad_dru/.kicad_sch and libraries
-are first COPIED into review/runs/<stamp>/snap/ and every check (pcbnew API, kicad-cli DRC,
+are first COPIED into runs/<stamp>/snap/ (next to this script, git-ignored) and every check (pcbnew API, kicad-cli DRC,
 gerber/drill export, JLC spacing script) runs on that snapshot.  Nothing is ever saved back.
 
-Stage semantics (see checklist.md):
+Stage semantics (see layout_checklist.md):
   always   -> FAIL from S1 on (WARN at S0, i.e. the unrouted baseline)
   complete -> WARN at S0..S3, FAIL from S4 on (unconnected items, GND pours, teardrops, stitching)
   final    -> WARN at S0..S4, FAIL at S5 (silkscreen and labels)
@@ -19,7 +19,7 @@ import pcbnew
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SCRATCH = os.path.dirname(os.path.dirname(HERE))
-KCLI = r"C:\Program Files\KiCad\10.0\bin\kicad-cli.exe"
+KCLI = shutil.which("kicad-cli") or r"C:\Program Files\KiCad\10.0\bin\kicad-cli.exe"
 KPY = r"C:\Program Files\KiCad\10.0\bin\python.exe"
 PROJECT_DIR = r"C:\Users\voxte\DynamicSystemsAndControl\project\pcb\revC\pcb_revC"   # read-only fallback for sch/libs
 DEFAULT_BASELINE = os.path.join(HERE, "unrouted_baseline.kicad_pcb")

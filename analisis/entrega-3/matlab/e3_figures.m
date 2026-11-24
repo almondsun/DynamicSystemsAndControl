@@ -1,19 +1,19 @@
 function e3_figures(mode)
 %E3_FIGURES  Figures for the Entrega 3 slides and report (run e3_main first).
-%   e3_figures('slides') -> ../figures/*.png (2x, white background) and the
+%   e3_figures('slides') -> ../figuras/*.png (2x, white background) and the
 %                           equation images (transparent PNG)
-%   e3_figures('report') -> ../figures/report/*.pdf (vector, IEEE column sizes)
+%   e3_figures('report') -> ../figuras/informe/*.pdf (vector, IEEE column sizes)
 if nargin < 1, mode = 'slides'; end
 here = fileparts(mfilename('fullpath'));
 addpath(here);
-L = load(fullfile(here, '..', 'results', 'e3_sims.mat'));
+L = load(fullfile(here, '..', 'resultados', 'e3_sims.mat'));
 res = L.res; sims = L.sims; rob = L.rob; p = L.p; base = L.base;
 S = e3_style(mode);
 rep = strcmp(mode, 'report');
 if rep
-    figd = fullfile(here, '..', 'figures', 'report');
+    figd = fullfile(here, '..', 'figuras', 'informe');
 else
-    figd = fullfile(here, '..', 'figures');
+    figd = fullfile(here, '..', 'figuras');
 end
 if ~exist(figd, 'dir'), mkdir(figd); end
 tev = base.t_ev;

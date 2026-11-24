@@ -1,9 +1,9 @@
 %E3_MAIN  Entrega 3: PI design for the Rev C buck and its validation in simulation.
-%   Plain MATLAB (no toolboxes). Writes ../results/e3_results.json (all the
-%   numbers used in the slides and the report) and ../results/e3_sims.mat
+%   Plain MATLAB (no toolboxes). Writes ../resultados/e3_results.json (all the
+%   numbers used in the slides and the report) and ../resultados/e3_sims.mat
 %   (traces for e3_figures.m).
 here = fileparts(mfilename('fullpath'));
-outd = fullfile(here, '..', 'results');
+outd = fullfile(here, '..', 'resultados');
 if ~exist(outd, 'dir'), mkdir(outd); end
 addpath(here);
 
